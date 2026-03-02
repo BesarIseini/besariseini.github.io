@@ -1,117 +1,784 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>website4training</title>
-    <script type="module" crossorigin src="/assets/index-_6m6OuiI.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BHARhO8O.css">
-  </head>
-  <body>
-<!--    <div id="quiz">-->
-<!--      <h2 id="question-text"></h2>-->
-<!--      <div id="options"></div>-->
-<!--      <button id="submit">Submit</button>-->
-<!--    </div>-->
-    <div class="quiz-container">
-        <div class="question-numbering">
-            <center>
-                <h3 id="questions-left">
-                    18/20
-                </h3>
-            </center>
-            <div class="buttons" id="button-navigator-list">
-                <button class="question-navigator current">1</button>
-                <button class="question-navigator">2</button>
-                <button class="question-navigator">3</button>
-                <button class="question-navigator">4</button>
-            </div>
-            <div>
-                <center>
-                    <button id="flagQuestion">Flag Question</button>
-                </center>
-            </div>
-            <div id="warningSidebar">
+<!DOCTYPE html >
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        :root {
+            --font-sans: 'Geist', sans-serif;
+            --font-mono: 'Geist Mono', monospace;
+        }
+        body {
+            font-family: var(--font-sans);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-BG6XVCae.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D5AtV5Ca.css">
+</head>
+    <script src="https://unpkg.com/feather-icons"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<body style="overflow: hidden;" class="">
+<!-- Navbar -->
+<header class="bg-sidebar text-sidebar-foreground border-b border-sidebar-border">
+    <div class="flex items-center justify-between px-4 py-3">
 
-            </div>
-            <div>
-                <center>
-                    <p>Total Points</p>
-                    <b><span id="graded-points"></span>/<span id="total-points">0.00</span></b>
-                </center>
-            </div>
-        </div>
-        <div class="question">
-            <div class="timer" id="timer">00:00:00</div>
-            <div id="quiz">
-                <div id="warningTop"></div>
-                <h2 id="question-text"></h2>
-<!--                <img src="public/coconut.jpeg" height="225" width="225" class="question-img" id="question-img"/>-->
-                <div id="options"></div>
-                <div id="warningBottom"></div>
-                <div class="hidden" id="review-correct">
-                    <p>
-                        Correct: <span id="correct"></span>
-                    </p>
+        <div class="flex items-center gap-4">
+<!--            <button class="lg:hidden text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors">-->
+<!--                <i data-feather="menu" class="h-5 w-5"></i>-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--            </button>-->
+
+            <div class="flex items-center gap-3">
+                <div class="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
+                    <i data-feather="book-open" class="h-5 w-5 text-white"></i>
                 </div>
-                <button id="prev">Previous</button>
-                <button id="next">Next</button>
-                <button id="openModal">Open modal</button>
+                <div class="hidden sm:block">
+                    <h1 class="font-semibold text-lg leading-tight">SeisHub</h1>
+<!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
+                </div>
             </div>
         </div>
-        <div class="review-table" id="review-table">
-            <table>
-                <tr>
-                    <th>Status</th>
-                    <td>Finished</td>
-                </tr>
-                <tr>
-                    <th>Started</th>
-                    <td id="timeStarted">Today</td>
-                </tr>
-                <tr>
-                    <th>Completed</th>
-                    <td id="timeCompleted">Today +30</td>
-                </tr>
-                <tr>
-                    <th>Duration</th>
-                    <td id="quiz-duration">30min</td>
-                </tr>
-                <tr>
-                    <th>Points</th>
-                    <td id="table-points">100/100</td>
-                </tr>
-                <tr>
-                    <th>Positive Points</th>
-                    <td id="table-positive-points">100/100</td>
-                </tr>
-                <tr>
-                    <th>Negative Points</th>
-                    <td id="table-negative-points">100/100</td>
-                </tr>
-                <tr>
-                    <th colspan="2" id="review-button">Review</th>
-                </tr>
-                <tr>
-                    <th colspan="2">Exit</th>
-                </tr>
-            </table>
+
+        <div class="flex items-center gap-3">
+            <div class="hidden md:block text-right mr-4">
+                <p class="text-sm text-gray-500" id="nav-quiz-course-type">Demo Quiz</p>
+                <p class="font-medium text-sm" id="nav-quiz-title">Midterm Examination</p>
+            </div>
+
+            <div class="flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-lg bg-sidebar-accent">
+                <i data-feather="clock" class="h-5 w-5"></i>
+                <span class="font-semibold" id="timer">45:00</span>
+            </div>
+            <button
+                    id="toggleDarkModeBtn"
+                    class="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    aria-label="Toggle dark mode"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block dark:hidden">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M22 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden dark:block">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+<!--            <div class="relative">-->
+<!--                <button id="avatar-btn" class="flex items-center justify-center h-9 w-9 rounded-full bg-blue-600 hover:ring-2 hover:ring-gray-300 focus:outline-none transition-all">-->
+<!--                    <span class="text-white text-sm font-medium">JS</span>-->
+<!--                </button>-->
+
+<!--                <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg z-50" style="z-index: 100;">-->
+<!--                    <div class="px-3 py-2 border-b border-gray-100">-->
+<!--                        <p class="font-medium text-gray-900">John Student</p>-->
+<!--                        <p class="text-sm text-gray-500">john.student@university.edu</p>-->
+<!--                    </div>-->
+
+<!--                    <div class="py-1">-->
+<!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">-->
+<!--                            <i data-feather="user" class="mr-2 h-4 w-4"></i> Profile-->
+<!--                        </a>-->
+<!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">-->
+<!--                            <i data-feather="book-open" class="mr-2 h-4 w-4"></i> My Courses-->
+<!--                        </a>-->
+<!--                    </div>-->
+
+<!--                    <div class="border-t border-gray-100 py-1">-->
+<!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-red-600 hover:bg-red-50">-->
+<!--                            <i data-feather="log-out" class="mr-2 h-4 w-4"></i> Log out-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
     </div>
+</header>
+<!--Sidebar-->
+<div id="sidebar-overlay" class="hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"></div>
 
+<div class="flex flex-1 overflow-hidden relative w-full h-[calc(100vh-65px)]">
+<!--    Main Question-->
+    <main id = "quiz-container" class="flex-1 p-4 lg:p-8 overflow-y-auto w-full">
 
-    <div id="modalOverlay" class="modal-overlay hidden">
-        <div class="modal">
-            <h2>Submit Quiz?</h2>
-            <p id="preSubmitMessage">This is a simple modal window.</p>
+        <div class="max-w-4xl mx-auto bg-card text-card-foreground rounded-xl border border-border shadow-sm">
 
-            <div class="modal-actions">
-                <button id="submit">Finish Quiz</button>
-                <button id="closeModal">Close</button>
+            <div class="p-6 pb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 border-b border-border/50">
+
+                <div class="flex items-center gap-2 flex-wrap">
+            <span class="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-normal bg-secondary text-secondary-foreground">
+              Question&nbsp;<span id="questions-left-second"></span>
+            </span>
+                    <span id="question-type" class="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-normal bg-transparent text-foreground">
+              Multiple Choice
+            </span>
+                    <span class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
+              <span id="total-points"></span>&nbsp;marks
+            </span>
+                </div>
+
+                <button id="flag-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-3 border border-border bg-transparent hover:bg-muted transition-colors gap-2">
+                    <i data-lucide="flag" id="flag-icon" class="h-4 w-4"></i>
+                    <span id="flag-text">Flag Question</span>
+                </button>
+
+            </div>
+
+            <div class="p-6 space-y-6">
+                <div id="warningTop"></div>
+
+                <div class="space-y-2">
+                    <p class="text-lg font-medium leading-relaxed text-foreground" id="question-text">
+                        What is the time complexity of searching for an element in a perfectly balanced binary search tree?
+                    </p>
+                    <p class="text-sm leading-relaxed text-muted-foreground" id="question-description">
+                        Assume the tree has 'n' nodes and you are searching for a value that exists in the tree.
+                    </p>
+                </div>
+
+                <div id="image-container" class="relative rounded-lg border border-border overflow-hidden bg-muted/30 group">
+                    <button type="button" id="open-lightbox-btn" class="w-full cursor-zoom-in relative" aria-label="Enlarge image">
+                        <img id="image-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Binary Tree Diagram" class="w-full max-h-80 object-contain mx-auto" />
+                    </button>
+                    <div class="flex items-center gap-1.5 px-3 py-1.5 text-xs text-muted-foreground bg-muted/60 border-t border-border">
+                        <i data-lucide="image" class="h-3 w-3"></i>
+                        Click image to enlarge
+                    </div>
+                </div>
+
+                <div class="space-y-3" id="options-container">
+
+                    <label class="quiz-option flex cursor-pointer transition-all rounded-lg border-2 border-border p-4 items-center gap-4 hover:bg-muted/50 hover:border-primary/50">
+                        <input type="radio" name="quiz-answer" value="0" class="shrink-0 w-4 h-4 text-primary border-primary focus:ring-primary accent-primary" />
+                        <span class="flex-1 text-base">O(1)</span>
+                    </label>
+
+                    <label class="quiz-option flex cursor-pointer transition-all rounded-lg border-2 border-border p-4 items-center gap-4 hover:bg-muted/50 hover:border-primary/50">
+                        <input type="radio" name="quiz-answer" value="1" class="shrink-0 w-4 h-4 text-primary border-primary focus:ring-primary accent-primary" />
+                        <span class="flex-1 text-base">O(n)</span>
+                    </label>
+
+                    <label class="quiz-option flex cursor-pointer transition-all rounded-lg border-2 border-border p-4 items-center gap-4 hover:bg-muted/50 hover:border-primary/50">
+                        <input type="radio" name="quiz-answer" value="2" class="shrink-0 w-4 h-4 text-primary border-primary focus:ring-primary accent-primary" />
+                        <span class="flex-1 text-base">O(log n)</span>
+                    </label>
+
+                    <label class="quiz-option flex cursor-pointer transition-all rounded-lg border-2 border-border p-4 items-center gap-4 hover:bg-muted/50 hover:border-primary/50">
+                        <input type="radio" name="quiz-answer" value="3" class="shrink-0 w-4 h-4 text-primary border-primary focus:ring-primary accent-primary" />
+                        <span class="flex-1 text-base">O(n log n)</span>
+                    </label>
+
+                </div>
+
+                <p id="helper-text" class="text-sm text-muted-foreground italic">
+                    Select an answer to continue. You can change your answer later.
+                </p>
+                <div id="warningBottom"></div>
+
             </div>
         </div>
-    </div>
-  </body>
+<!--        Navigation-->
+        <div class="max-w-4xl mx-auto mt-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-card border border-border rounded-lg shadow-sm">
+
+                <button id="prev" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-border bg-transparent hover:bg-muted transition-colors w-full sm:w-auto gap-2 text-foreground">
+                    <i data-lucide="chevron-left" class="h-4 w-4"></i>
+                    Previous
+                </button>
+
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>Question</span>
+                    <span class="font-semibold text-foreground" id="current-questions-left">10</span>
+                    <span>of</span>
+                    <span class="font-semibold text-foreground" id="questions-left">10</span>
+                </div>
+
+                <div class="flex gap-2 w-full sm:w-auto">
+                    <button id="next" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-primary text-primary-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
+                        Next
+                        <i data-lucide="chevron-right" class="h-4 w-4"></i>
+                    </button>
+
+                    <button id="trigger-submit-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
+                        <i data-lucide="send" class="h-4 w-4"></i>
+                        Submit Quiz
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="submit-modal-backdrop" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm transition-opacity"></div>
+
+        <div id="submit-modal" class="hidden fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-card p-6 shadow-lg sm:rounded-lg text-card-foreground">
+
+            <div class="flex flex-col space-y-1.5 text-center sm:text-left">
+                <h2 class="text-lg font-semibold leading-none tracking-tight">Submit Quiz?</h2>
+                <p class="text-sm text-muted-foreground mt-2">
+                    Are you sure you want to submit your quiz? You will not be able to change your answers after submission.
+                </p>
+            </div>
+
+            <div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2 mt-4">
+                <button id="cancel-submit-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-border bg-transparent hover:bg-muted transition-colors mt-2 sm:mt-0">
+                    Cancel
+                </button>
+                <button id="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground hover:bg-success/90 transition-colors">
+                    Submit Quiz
+                </button>
+            </div>
+
+        </div>
+
+        <script>
+            // Initialize new Lucide icons
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            // Modal Elements
+            const submitBtn = document.getElementById('trigger-submit-btn');
+            const modal = document.getElementById('submit-modal');
+            const backdrop = document.getElementById('submit-modal-backdrop');
+            const cancelBtn = document.getElementById('cancel-submit-btn');
+            const confirmBtn = document.getElementById('confirm-submit-btn');
+
+            // Open Modal
+            submitBtn.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                backdrop.classList.remove('hidden');
+            });
+
+            // Close Modal Function
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                backdrop.classList.add('hidden');
+            };
+
+            // Close Events
+            cancelBtn.addEventListener('click', closeModal);
+            backdrop.addEventListener('click', closeModal);
+
+            // Close on Escape Key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+
+            // Confirm Submit Event (You can wire this up to whatever you need!)
+            confirmBtn.addEventListener('click', () => {
+                alert("Quiz Submitted successfully! (This is where your form logic goes)");
+                closeModal();
+            });
+        </script>
+    </main>
+<!--    Review screen-->
+    <div class="hidden flex-1 overflow-y-auto w-full p-4 lg:p-8 max-w-4xl mx-auto space-y-6 pb-24" id="quiz-review-container">
+
+        <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-6 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
+                        <i data-lucide="bar-chart-3" class="h-5 w-5 text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Quiz Results</h3>
+                        <p class="text-sm text-muted-foreground mt-1" id="review-title">General Knowledge Assessment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 pt-0">
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
+                        <i data-lucide="award" class="h-6 w-6 text-primary mb-1"></i>
+                        <p class="text-3xl font-bold text-success">A</p>
+                        <p class="text-xs text-muted-foreground mt-1">Grade</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
+                        <i data-lucide="target" class="h-6 w-6 text-primary mb-1"></i>
+                        <p class="text-3xl font-bold text-foreground" id="score-percentage">85%</p>
+                        <p class="text-xs text-muted-foreground mt-1">Score</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
+                        <i data-lucide="bar-chart-3" class="h-6 w-6 text-primary mb-1"></i>
+                        <p class="text-3xl font-bold text-foreground" id="score-number">85/100</p>
+                        <p class="text-xs text-muted-foreground mt-1">Marks Earned</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
+                        <i data-lucide="clock" class="h-6 w-6 text-primary mb-1"></i>
+                        <p class="text-2xl font-bold text-foreground" id="time-taken">14m 30s</p>
+                        <p class="text-xs text-muted-foreground mt-1">Time Taken (<span id="time-taken-percentage">48</span>%)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4 p-3 bg-muted/30 rounded-lg text-sm">
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-success"></i>
+                        <span class="text-foreground font-medium" id="correct-number">8</span>
+                        <span class="text-muted-foreground">Correct</span>
+                    </div>
+                    <div class="hidden sm:block h-4 w-px bg-border"></div>
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="alert-circle" class="h-4 w-4 text-warning"></i>
+                        <span class="text-foreground font-medium" id="partial-number">2</span>
+                        <span class="text-muted-foreground">Partial</span>
+                    </div>
+                    <div class="hidden sm:block h-4 w-px bg-border"></div>
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="x-circle" class="h-4 w-4 text-destructive"></i>
+                        <span class="text-foreground font-medium" id="incorrect-number">2</span>
+                        <span class="text-muted-foreground">Incorrect</span>
+                    </div>
+                    <div class="hidden sm:block h-4 w-px bg-border"></div>
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="minus-circle" class="h-4 w-4 text-muted-foreground"></i>
+                        <span class="text-foreground font-medium" id="unanswered-number">0</span>
+                        <span class="text-muted-foreground">Unanswered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm">
+            <div class="p-6">
+                <div class="flex items-center justify-between text-sm mb-2">
+                    <span class="font-medium text-foreground">Score Breakdown</span>
+                    <span class="text-muted-foreground" id="score-breakdown-score">85 of 100 marks</span>
+                </div>
+
+                <div class="w-full h-4 bg-muted rounded-full overflow-hidden flex">
+                    <div class="h-full bg-success transition-all duration-500" style="width: 50%;" id="correct-bar"></div>
+                    <div class="h-full bg-warning transition-all duration-500" style="width: 20%;" id="partial-bar"></div>
+                    <div class="h-full bg-destructive transition-all duration-500" style="width: 20%;" id="incorrect-bar"></div>
+                    <div class="h-full bg-secondary transition-all duration-500" style="width: 10%;" id="unanswered-bar"></div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4 mt-3 text-xs text-muted-foreground">
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-success"></div>Correct</div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-warning"></div>Partial</div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-destructive"></div>Incorrect</div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-secondary"></div>Unanswered</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="text-lg font-semibold leading-none tracking-tight">Question Review</h3>
+            </div>
+            <div class="p-0">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="border-y border-border bg-muted/50">
+                        <tr>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-12">#</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3">Question</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-28">Type</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-36">Your Answer</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-36">Correct Answer</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20">Marks</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20">Status</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-16"><span class="sr-only">Actions</span></th>
+                        </tr>
+                        </thead>
+                        <tbody class="divide-y divide-border" id="table-review-body">
+
+                        <tr class="transition-colors hover:bg-muted/30 bg-success/[0.03]">
+                            <td class="px-4 py-3 font-medium text-muted-foreground">1</td>
+                            <td class="px-4 py-3"><p class="font-medium text-foreground line-clamp-2">What is the capital of France?</p></td>
+                            <td class="px-4 py-3">
+                                <span class="inline-flex items-center rounded-md border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground">MCQ</span>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-sm text-success font-medium">Paris</span></td>
+                            <td class="px-4 py-3"><span class="text-sm text-success font-medium">Paris</span></td>
+                            <td class="text-center px-4 py-3">
+                                <span class="font-semibold text-foreground">10</span><span class="text-muted-foreground">/10</span>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <i data-lucide="check-circle-2" class="h-5 w-5 text-success mx-auto"></i>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-8 w-8">
+                                    <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="transition-colors hover:bg-muted/30 bg-warning/[0.03]">
+                            <td class="px-4 py-3 font-medium text-muted-foreground">2</td>
+                            <td class="px-4 py-3"><p class="font-medium text-foreground line-clamp-2">Water boils at __ and freezes at __.</p></td>
+                            <td class="px-4 py-3">
+                                <span class="inline-flex items-center rounded-md border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground">Fill in Blanks</span>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-sm text-warning font-medium">100, 32</span></td>
+                            <td class="px-4 py-3"><span class="text-sm text-success font-medium">100, 0</span></td>
+                            <td class="text-center px-4 py-3">
+                                <span class="font-semibold text-foreground">5</span><span class="text-muted-foreground">/10</span>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <i data-lucide="alert-circle" class="h-5 w-5 text-warning mx-auto"></i>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-8 w-8">
+                                    <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="transition-colors hover:bg-muted/30 bg-destructive/[0.03]">
+                            <td class="px-4 py-3 font-medium text-muted-foreground">3</td>
+                            <td class="px-4 py-3"><p class="font-medium text-foreground line-clamp-2">Earth's gravity pulls at what rate?</p></td>
+                            <td class="px-4 py-3">
+                                <span class="inline-flex items-center rounded-md border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground">Short Answer</span>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-sm text-destructive font-medium">9.5</span></td>
+                            <td class="px-4 py-3"><span class="text-sm text-success font-medium">9.8</span></td>
+                            <td class="text-center px-4 py-3">
+                                <span class="font-semibold text-foreground">0</span><span class="text-muted-foreground">/10</span>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <i data-lucide="x-circle" class="h-5 w-5 text-destructive mx-auto"></i>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-8 w-8">
+                                    <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="transition-colors hover:bg-muted/30">
+                            <td class="px-4 py-3 font-medium text-muted-foreground">4</td>
+                            <td class="px-4 py-3"><p class="font-medium text-foreground line-clamp-2">Who wrote "Hamlet"?</p></td>
+                            <td class="px-4 py-3">
+                                <span class="inline-flex items-center rounded-md border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold text-secondary-foreground">MCQ</span>
+                            </td>
+                            <td class="px-4 py-3">
+                                <span class="text-sm text-muted-foreground italic">Not answered</span>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-sm text-success font-medium">William Shakespeare</span></td>
+                            <td class="text-center px-4 py-3">
+                                <span class="font-semibold text-foreground">0</span><span class="text-muted-foreground">/10</span>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <i data-lucide="minus-circle" class="h-5 w-5 text-muted-foreground mx-auto"></i>
+                            </td>
+                            <td class="text-center px-4 py-3">
+                                <button class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-8 w-8">
+                                    <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm mb-8">
+            <div class="p-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Started</span>
+                        <span class="font-medium text-foreground" id="time-started">10/24/2023, 10:00 AM</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Completed</span>
+                        <span class="font-medium text-foreground" id="time-finished">10/24/2023, 10:14 AM</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Duration</span>
+                        <span class="font-medium text-foreground" id="time-duration">14m 30s</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Time Allowed</span>
+                        <span class="font-medium text-foreground" id="time-allowed">30 minutes</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Questions Attempted</span>
+                        <span class="font-medium text-foreground" id="time-attempts">10 of 10</span>
+                    </div>
+                    <div class="flex justify-between py-2 border-b border-border">
+                        <span class="text-muted-foreground">Accuracy</span>
+                        <span class="font-medium text-foreground" id="time-accuracy">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--    Sideebar non review -->
+    <aside id="quiz-sidebar" class="h-[calc(100vh-68px)] fixed lg:static inset-y-0 right-0 z-20 w-72 bg-card text-card-foreground border-l border-border flex flex-col transition-transform duration-300 ease-in-out translate-x-full lg:translate-x-0">
+
+<!--        <div class="flex items-center justify-between p-4 border-b border-border">-->
+<!--            <h2 class="font-semibold text-lg">Quiz Navigation</h2>-->
+<!--            <button id="close-sidebar-btn" class="lg:hidden inline-flex items-center justify-center rounded-md text-sm font-medium h-9 w-9 hover:bg-muted transition-colors">-->
+<!--                <i data-lucide="x" class="h-5 w-5 text-muted-foreground"></i>-->
+<!--                <span class="sr-only">Close navigation</span>-->
+<!--            </button>-->
+<!--        </div>-->
+
+        <div class="p-4 border-b border-border bg-muted/50">
+            <div class="grid grid-cols-3 gap-3 text-center">
+                <div>
+                    <p class="text-2xl font-bold text-primary" id="answered-total">2</p>
+                    <p class="text-xs text-muted-foreground">Answered</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-warning" id="flagged-total">0</p>
+                    <p class="text-xs text-muted-foreground">Flagged</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-foreground" id="remaining-total">8</p>
+                    <p class="text-xs text-muted-foreground">Remaining</p>
+                </div>
+            </div>
+
+            <div class="mt-3 h-2 bg-secondary rounded-full overflow-hidden">
+                <div class="h-full bg-primary transition-all duration-500" style="width: 20%;" id="remaining-bar"></div>
+            </div>
+            <p class="text-xs text-muted-foreground mt-2 text-center" id="total-marks">Total marks: 50</p>
+        </div>
+
+        <div class="p-4 border-b border-border bg-muted/30" id="back-to-summary">
+            <button id="btn-back-to-summary" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-4 py-2">
+                <i data-lucide="bar-chart-3" class="h-4 w-4 mr-2"></i>
+                Back to Summary
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-4">
+            <div class="grid grid-cols-5 gap-2" id="button-navigator-list">
+
+                <button class="q-nav-btn relative w-10 h-10 rounded-lg font-medium text-sm transition-all flex items-center justify-center ring-2 ring-primary ring-offset-2 ring-offset-card bg-secondary text-secondary-foreground">
+                    1
+                </button>
+
+                <button class="q-nav-btn relative w-10 h-10 rounded-lg font-medium text-sm transition-all flex items-center justify-center bg-success text-success-foreground">
+                    2
+                </button>
+
+                <button class="q-nav-btn relative w-10 h-10 rounded-lg font-medium text-sm transition-all flex items-center justify-center bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                    3
+                </button>
+
+                <button class="q-nav-btn relative w-10 h-10 rounded-lg font-medium text-sm transition-all flex items-center justify-center bg-secondary text-secondary-foreground hover:bg-secondary/80 ring-2 ring-warning">
+                    4
+                    <i data-lucide="flag" class="absolute -top-1 -right-1 h-3 w-3 text-warning fill-warning"></i>
+                </button>
+
+                <button class="q-nav-btn relative w-10 h-10 rounded-lg font-medium text-sm transition-all flex items-center justify-center bg-success text-success-foreground ring-2 ring-warning">
+                    5
+                    <i data-lucide="flag" class="absolute -top-1 -right-1 h-3 w-3 text-warning fill-warning"></i>
+                </button>
+
+            </div>
+        </div>
+        <div id="warningSidebar"></div>
+
+        <div class="p-4 border-t border-border bg-muted/30" id="quiz-taking-legend">
+            <p class="text-xs font-medium text-muted-foreground mb-2">Legend</p>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-secondary"></div>
+                    <span class="text-muted-foreground">Not answered</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-success"></div>
+                    <span class="text-muted-foreground">Answered</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-card ring-2 ring-primary"></div>
+                    <span class="text-muted-foreground">Current</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="relative w-4 h-4 rounded bg-secondary">
+                        <i data-lucide="flag" class="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 text-warning fill-warning"></i>
+                    </div>
+                    <span class="text-muted-foreground">Flagged</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 border-t border-border bg-muted/30" id="review-legend">
+            <p class="text-xs font-medium text-muted-foreground mb-2">Legend</p>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-success"></div>
+                    <span class="text-muted-foreground">Answered</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-warning"></div>
+                    <span class="text-muted-foreground">Partial</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-destructive"></div>
+                    <span class="text-muted-foreground">Incorrect</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-secondary"></div>
+                    <span class="text-muted-foreground">Not answered</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4 rounded bg-card ring-2 ring-primary"></div>
+                    <span class="text-muted-foreground">Current</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="relative w-4 h-4 rounded bg-secondary">
+                        <i data-lucide="flag" class="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 text-warning fill-warning"></i>
+                    </div>
+                    <span class="text-muted-foreground">Flagged</span>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <div id="image-lightbox" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" role="dialog">
+        <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center">
+            <img id="image-lightbox-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Enlarged view" class="w-full h-auto max-h-[85vh] object-contain rounded-lg" />
+            <p class="text-center text-sm text-white mt-4 bg-black/50 rounded-full px-4 py-1.5 inline-block cursor-pointer" id="close-lightbox-text">
+                Click anywhere to close
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    // 1. Re-initialize Icons
+    if (window.lucide) lucide.createIcons();
+
+    // 2. Flag Button Logic
+    const flagBtn = document.getElementById('flag-btn');
+    const flagIcon = document.getElementById('flag-icon');
+    const flagText = document.getElementById('flag-text');
+    let isFlagged = false;
+
+    flagBtn.addEventListener('click', () => {
+        isFlagged = !isFlagged;
+        if (isFlagged) {
+            flagBtn.classList.replace('border-border', 'border-transparent');
+            flagBtn.classList.replace('bg-transparent', 'bg-warning');
+            flagBtn.classList.add('text-warning-foreground');
+            flagIcon.classList.add('fill-current');
+            flagText.textContent = "Flagged";
+        } else {
+            flagBtn.classList.replace('border-transparent', 'border-border');
+            flagBtn.classList.replace('bg-warning', 'bg-transparent');
+            flagBtn.classList.remove('text-warning-foreground');
+            flagIcon.classList.remove('fill-current');
+            flagText.textContent = "Flag Question";
+        }
+    });
+
+    // 3. Option Selection Logic (Mimicking Shadcn Radio Group active state)
+    const options = document.querySelectorAll('.quiz-option');
+    const radios = document.querySelectorAll('input[name="quiz-answer"]');
+    const helperText = document.getElementById('helper-text');
+
+    radios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            // Reset all options to default border/bg
+            options.forEach(opt => {
+                opt.classList.remove('border-primary', 'bg-primary/5');
+                opt.classList.add('border-border');
+            });
+
+            // Highlight the selected option
+            if(e.target.checked) {
+                const parentLabel = e.target.closest('label');
+                parentLabel.classList.remove('border-border');
+                parentLabel.classList.add('border-primary', 'bg-primary/5');
+
+                // Hide the helper text once an answer is chosen
+                helperText.classList.add('hidden');
+            }
+        });
+    });
+
+    // 4. Lightbox Logic
+    const lightbox = document.getElementById('image-lightbox');
+    const openBtn = document.getElementById('open-lightbox-btn');
+
+    openBtn.addEventListener('click', () => {
+        lightbox.classList.remove('hidden');
+    });
+
+    // Close when clicking anywhere on the lightbox overlay
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.add('hidden');
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+            lightbox.classList.add('hidden');
+        }
+    });
+</script>
+
+
+<script>
+    // Re-initialize Lucide icons for the new elements
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+
+    // Mobile Sidebar Toggle Logic
+    const sidebar = document.getElementById('quiz-sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const closeBtn = document.getElementById('close-sidebar-btn');
+    // Note: You will need to add an id="open-sidebar-btn" to the hamburger menu icon in your Header component!
+    const openBtn = document.getElementById('open-sidebar-btn');
+
+    function openSidebar() {
+        sidebar.classList.remove('translate-x-full');
+        sidebar.classList.add('translate-x-0');
+        overlay.classList.remove('hidden');
+    }
+
+    function closeSidebar() {
+        sidebar.classList.add('translate-x-full');
+        sidebar.classList.remove('translate-x-0');
+        overlay.classList.add('hidden');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+    if (overlay) overlay.addEventListener('click', closeSidebar);
+</script>
+
+<script>
+    // 1. Initialize Feather Icons
+    lucide.createIcons();
+    feather.replace();
+
+    // 2. Simple Dropdown Toggle Logic
+    const avatarBtn = document.getElementById('avatar-btn');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    avatarBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('hidden');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!dropdownMenu.classList.contains('hidden') && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
 </html>
