@@ -16,31 +16,40 @@
             font-family: var(--font-sans);
         }
     </style>
-  <script type="module" crossorigin src="/assets/index-C-ZFtscK.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CMtQwfJo.css">
-</head>
+  <script type="module" crossorigin src="/assets/index-BY-49Ce4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-cJhYvMBm.css">
+</head>
     <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    const getDarkMode = localStorage.getItem('darkMode');
+    if(getDarkMode && getDarkMode === "dark") {
+        document.documentElement.classList.toggle('dark');
+    }
+</script>
 <body style="overflow: hidden;" class="">
 <!-- Navbar -->
 <header class="bg-sidebar text-sidebar-foreground border-b border-sidebar-border">
     <div class="flex items-center justify-between px-4 py-3">
 
         <div class="flex items-center gap-4">
-<!--            <button class="lg:hidden text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors">-->
-<!--                <i data-feather="menu" class="h-5 w-5"></i>-->
-<!--                <span class="sr-only">Toggle navigation</span>-->
-<!--            </button>-->
+            <button id="open-sidebar-btn" class="lg:hidden text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors">
+                <i data-feather="menu" class="h-5 w-5"></i>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
 
-            <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
-                    <i data-feather="book-open" class="h-5 w-5 text-white"></i>
+
+            <a href="selection.html">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
+                        <i data-feather="book-open" class="h-5 w-5 text-white"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-semibold text-lg leading-tight">SeisHub</h1>
+                        <!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
+                    </div>
                 </div>
-                <div class="hidden sm:block">
-                    <h1 class="font-semibold text-lg leading-tight">SeisHub</h1>
-<!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
-                </div>
-            </div>
+            </a>
         </div>
 
         <div class="flex items-center gap-3">
@@ -106,7 +115,7 @@
     </div>
 </header>
 <!--Sidebar-->
-<div id="sidebar-overlay" class="hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"></div>
+<div id="sidebar-overlay" class="hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-30 lg:hidden"></div>
 
 <div class="flex flex-1 overflow-hidden relative w-full h-[calc(100vh-65px)]">
 <!--    Main Question-->
@@ -155,6 +164,15 @@
                         <i data-lucide="image" class="h-3 w-3"></i>
                         Click image to enlarge
                     </div>
+                </div>
+
+                <div id="code-container">
+
+                </div>
+
+
+                <div id="table-container" class="rounded-md border-border bg-card overflow-x-auto w-full">
+
                 </div>
 
                 <div class="space-y-3" id="options-container">
@@ -210,10 +228,7 @@
                         <i data-lucide="chevron-right" class="h-4 w-4"></i>
                     </button>
 
-                    <button id="trigger-submit-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
-                        <i data-lucide="send" class="h-4 w-4"></i>
-                        Submit Quiz
-                    </button>
+
                 </div>
 
             </div>
@@ -221,7 +236,7 @@
 
         <div id="submit-modal-backdrop" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm transition-opacity"></div>
 
-        <div id="submit-modal" class="hidden fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-card p-6 shadow-lg sm:rounded-lg text-card-foreground">
+        <div id="submit-modal" style="z-index: 60;" class="hidden fixed left-[50%] top-[50%] grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-card p-6 shadow-lg sm:rounded-lg text-card-foreground">
 
             <div class="flex flex-col space-y-1.5 text-center sm:text-left">
                 <h2 class="text-lg font-semibold leading-none tracking-tight">Submit Quiz?</h2>
@@ -241,48 +256,7 @@
 
         </div>
 
-        <script>
-            // Initialize new Lucide icons
-            if (window.lucide) {
-                lucide.createIcons();
-            }
 
-            // Modal Elements
-            const submitBtn = document.getElementById('trigger-submit-btn');
-            const modal = document.getElementById('submit-modal');
-            const backdrop = document.getElementById('submit-modal-backdrop');
-            const cancelBtn = document.getElementById('cancel-submit-btn');
-            const confirmBtn = document.getElementById('confirm-submit-btn');
-
-            // Open Modal
-            submitBtn.addEventListener('click', () => {
-                modal.classList.remove('hidden');
-                backdrop.classList.remove('hidden');
-            });
-
-            // Close Modal Function
-            const closeModal = () => {
-                modal.classList.add('hidden');
-                backdrop.classList.add('hidden');
-            };
-
-            // Close Events
-            cancelBtn.addEventListener('click', closeModal);
-            backdrop.addEventListener('click', closeModal);
-
-            // Close on Escape Key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                    closeModal();
-                }
-            });
-
-            // Confirm Submit Event (You can wire this up to whatever you need!)
-            confirmBtn.addEventListener('click', () => {
-                alert("Quiz Submitted successfully! (This is where your form logic goes)");
-                closeModal();
-            });
-        </script>
     </main>
 <!--    Review screen-->
     <div class="hidden flex-1 overflow-y-auto w-full p-4 lg:p-8 max-w-4xl mx-auto space-y-6 pb-24" id="quiz-review-container">
@@ -521,7 +495,7 @@
 
     </div>
 <!--    Sideebar non review -->
-    <aside id="quiz-sidebar" class="h-[calc(100vh-68px)] fixed lg:static inset-y-0 right-0 z-20 w-72 bg-card text-card-foreground border-l border-border flex flex-col transition-transform duration-300 ease-in-out translate-x-full lg:translate-x-0">
+    <aside id="quiz-sidebar" class="h-[calc(100vh-68px)] fixed lg:static inset-y-0 right-0 z-40 w-72 bg-card text-card-foreground border-l border-border flex flex-col transition-transform duration-300 ease-in-out translate-x-full lg:translate-x-0">
 
 <!--        <div class="flex items-center justify-between p-4 border-b border-border">-->
 <!--            <h2 class="font-semibold text-lg">Quiz Navigation</h2>-->
@@ -557,6 +531,16 @@
             <button id="btn-back-to-summary" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-4 py-2">
                 <i data-lucide="bar-chart-3" class="h-4 w-4 mr-2"></i>
                 Back to Summary
+            </button>
+            <button id="btn-back-to-quiz" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-4 py-2">
+                <i data-lucide="bar-chart-3" class="h-4 w-4 mr-2"></i>
+                Back to Quiz
+            </button>
+        </div>
+        <div class="p-4 border-b border-border bg-muted/30" id="submit-quiz">
+            <button id="trigger-submit-btn" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
+                <i data-lucide="send" class="h-4 w-4"></i>
+                Submit Quiz
             </button>
         </div>
 
@@ -656,6 +640,48 @@
     </div>
 </div>
 <script>
+    // Initialize new Lucide icons
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+
+    // Modal Elements
+    const submitBtn = document.getElementById('trigger-submit-btn');
+    const modal = document.getElementById('submit-modal');
+    const backdrop = document.getElementById('submit-modal-backdrop');
+    const cancelBtn = document.getElementById('cancel-submit-btn');
+    const confirmBtn = document.getElementById('confirm-submit-btn');
+
+    // Open Modal
+    submitBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        backdrop.classList.remove('hidden');
+    });
+
+    // Close Modal Function
+    const closeModal = () => {
+        modal.classList.add('hidden');
+        backdrop.classList.add('hidden');
+    };
+
+    // Close Events
+    cancelBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+            closeModal();
+        }
+    });
+
+    // Confirm Submit Event (You can wire this up to whatever you need!)
+    // confirmBtn.addEventListener('click', () => {
+    //     alert("Quiz Submitted successfully! (This is where your form logic goes)");
+    //     closeModal();
+    // });
+</script>
+<script>
     // 1. Re-initialize Icons
     if (window.lucide) lucide.createIcons();
 
@@ -709,9 +735,9 @@
 
     // 4. Lightbox Logic
     const lightbox = document.getElementById('image-lightbox');
-    const openBtn = document.getElementById('open-lightbox-btn');
+    const openBtnLight = document.getElementById('open-lightbox-btn');
 
-    openBtn.addEventListener('click', () => {
+    openBtnLight.addEventListener('click', () => {
         lightbox.classList.remove('hidden');
     });
 
@@ -740,7 +766,7 @@
     const overlay = document.getElementById('sidebar-overlay');
     const closeBtn = document.getElementById('close-sidebar-btn');
     // Note: You will need to add an id="open-sidebar-btn" to the hamburger menu icon in your Header component!
-    const openBtn = document.getElementById('open-sidebar-btn');
+    const openBtnSide = document.getElementById('open-sidebar-btn');
 
     function openSidebar() {
         sidebar.classList.remove('translate-x-full');
@@ -754,7 +780,7 @@
         overlay.classList.add('hidden');
     }
 
-    if (openBtn) openBtn.addEventListener('click', openSidebar);
+    if (openBtnSide) openBtnSide.addEventListener('click', openSidebar);
     if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
     if (overlay) overlay.addEventListener('click', closeSidebar);
 </script>
@@ -779,7 +805,7 @@
             dropdownMenu.classList.add('hidden');
         }
     });
-</script>
+</script>
 
 </body>
 </html>
