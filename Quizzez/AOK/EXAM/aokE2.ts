@@ -557,14 +557,14 @@ endLoop:`
                         tolerance: { type: "strict" },
                         textBefore: "How many of those instructions are branch instructions? ",
                         textAfter: ".<br><br>",
-                        correct: 17
+                        correct: 9
                     },
                     {
                         type: "number",
                         tolerance: { type: "strict" },
                         textBefore: "If the CPI for every instruction is 1 and the processor has no branch prediction implemented, how many clock cycles will be needed to execute the program? ",
                         textAfter: ".<br>",
-                        correct: 94
+                        correct: 86
                     },
                     {
                         type: "number",
@@ -578,7 +578,7 @@ endLoop:`
                         tolerance: { type: "strict" },
                         textBefore: "Never Take: ",
                         textAfter: ".<br>",
-                        correct: 86
+                        correct: 78
                     },
                     {
                         type: "number",
@@ -592,14 +592,14 @@ endLoop:`
                         tolerance: { type: "strict" },
                         textBefore: "1-bit predictor (initial state: Not Taken): ",
                         textAfter: ".<br>",
-                        correct: 79
+                        correct: 78
                     },
                     {
                         type: "number",
                         tolerance: { type: "strict" },
                         textBefore: "2-bit predictor starting from state 01 (Weakly Taken): ",
                         textAfter: ".",
-                        correct: 79
+                        correct: 78
                     }
                 ],
                 warningMessage: []
