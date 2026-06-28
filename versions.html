@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Versions</title>
+    <style>
+        /* Headings */
+        h3 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            color: #34495e;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Lists */
+        ul {
+            list-style: disc inside;
+            margin: 0 0 1rem 1rem;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        /* Icons inside text (optional: makes emojis stand out) */
+        li::marker {
+            font-size: 1.1rem;
+        }
+
+        /* Inline code styling */
+        code {
+            background-color: #f0f0f0;
+            padding: 0 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        /* Strong text emphasis */
+        strong {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Versions</h1>
+        <div>
+            <section class="changelog">
+                <h3>Release v1.0.0 - 26/06/2026</h3>
+
+                <h4>🛠 Technical</h4>
+                <ul>
+                    <li>Demo course is now hidden on page load.</li>
+                    <li>Empty courses are now hidden on page load.</li>
+                </ul>
+
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
+                <h3>BETA 11 - 11/05/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>Added comprehensive <strong>keyboard shortcuts</strong> for faster quiz navigation and control.</li>
+                    <li><kbd>←</kbd> Previous Question</li>
+                    <li><kbd>→</kbd> Next Question</li>
+                    <li><kbd>1-9</kbd> (and multi-digit number combinations) Jump directly to a specific question.</li>
+                    <li><kbd>F</kbd> Flag the current question.</li>
+                    <li><kbd>Ctrl</kbd> + <kbd>Enter</kbd> Open the Finish Quiz confirmation dialog.</li>
+                    <li><kbd>D</kbd> Toggle Dark Mode.</li>
+                    <li><kbd>R</kbd> Jump to the next flagged question.</li>
+                    <li>The <strong>Quiz Logo</strong> is now clickable and returns to the Quiz Selection screen.</li>
+                </ul>
+
+                <h4>🎨 Improved</h4>
+                <ul>
+                    <li>Moved the <strong>Finish Quiz</strong> button to a more accessible location.</li>
+                    <li>Improved keyboard accessibility and overall navigation workflow.</li>
+                </ul>
+
+                <h4>🛠 Technical</h4>
+                <ul>
+                    <li>Improved input handling to prevent browser <strong>autofill suggestions</strong> from appearing in answer fields.</li>
+                    <li>Enhanced timer state persistence to ensure accurate updates after page refresh.</li>
+                    <li>Refined dependency resolution logic for independent and dependent questions.</li>
+                    <li>Corrected question and answer shuffle behavior to preserve proper ordering.</li>
+                </ul>
+
+                <h4>🐞 Bug Fixes</h4>
+                <ul>
+                    <li>Fixed the hamburger menu layout and behavior on mobile devices.</li>
+                    <li>Fixed dependent questions appearing before their required independent questions.</li>
+                    <li>Fixed an issue where opening a dependent question before its independent question displayed blank placeholders.</li>
+                    <li>Fixed question and answer shuffle inconsistencies.</li>
+                    <li>Fixed the timer not updating correctly after refreshing the page.</li>
+                </ul>
+
+                <h4>📌 Notes</h4>
+                <p>
+                    BETA 11 focuses on productivity and stability, introducing keyboard shortcuts, improved navigation, and critical fixes to question dependencies, mobile responsiveness, and session timing.
+                </p>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
+                <h3>BETA 10 - 01/05/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>Introduced <strong>Quiz Selection</strong>, allowing users to choose any quiz from any course.</li>
+                    <li>Added course sorting by <strong>semester</strong> for easier navigation.</li>
+                    <li>Added the ability to select the <strong>number of questions</strong> before starting a quiz.</li>
+                    <li>Added an option to <strong>shuffle questions</strong>, including the ability to customize the default behavior.</li>
+                    <li>Added support for <strong>Dependent</strong> and <strong>Independent Questions</strong>.</li>
+                    <li>Added support for <strong>Table</strong> question properties using the <code>table</code> property.</li>
+                    <li>Added support for <strong>Code</strong> question properties using the <code>code</code> property for displaying code snippets.</li>
+                    <li>Added session recovery, allowing users to <strong>continue a quiz after refreshing</strong> the page.</li>
+                </ul>
+
+                <h4>🎨 Improved</h4>
+                <ul>
+                    <li>Completely reworked <strong>Fill in the Blanks</strong> rendering.</li>
+                    <li>Added new render types, including:
+                        <ul>
+                            <li>Ordered Lists</li>
+                            <li>Unordered Lists</li>
+                            <li>TableN</li>
+                            <li>Table Horizontal (Start, Middle, End)</li>
+                            <li>Table Vertical (Start, Middle, End)</li>
+                        </ul>
+                    </li>
+                    <li>Input fields now automatically adjust their width based on expected answer length.</li>
+                    <li><strong>Dark Mode</strong> preference is now saved and restored automatically.</li>
+                </ul>
+
+                <h4>🛠 Technical</h4>
+                <ul>
+                    <li>Table property syntax:
+                        <ul>
+                            <li>Rows are separated using <code>;</code>.</li>
+                            <li>Columns are separated using <code>,</code>.</li>
+                            <li>Cells support <code>[col=n]</code> and <code>[row=n]</code> for <code>colspan</code> and <code>rowspan</code>.</li>
+                        </ul>
+                    </li>
+                    <li>Enhanced question rendering engine to support new <code>table</code> and <code>code</code> properties.</li>
+                    <li>Implemented persistent local storage for quiz progress and user preferences.</li>
+                    <li>Added dependency-based question logic to prevent answer disclosure in chained question scenarios.</li>
+                </ul>
+
+                <h4>🐞 Bug Fixes</h4>
+                <ul>
+                    <li>Fixed an issue where incorrect answers could result in <strong>negative points</strong>.</li>
+                </ul>
+
+                <h4>📌 Notes</h4>
+                <p>
+                    BETA 10 introduces major improvements to quiz customization, advanced question rendering, and session persistence. The addition of dependent and independent questions prevents answers from being revealed in multi-step question chains, bringing the platform closer to the RC1 milestone.
+                </p>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
+                <h3>BETA 9 - 02/03/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>Complete UI redesign with improved layout, spacing, and visual hierarchy.</li>
+                    <li>Added <strong>Dark Mode</strong> setting (user-toggleable).</li>
+                    <li>Improved navigation flow between questions.</li>
+                    <li>Refined visual feedback indicators for grading results.</li>
+                    <li>Enhanced responsiveness across different screen sizes.</li>
+                </ul>
+
+                <h4>🎨 Improved</h4>
+                <ul>
+                    <li>Updated button styles and interactive states.</li>
+                    <li>Improved consistency across question types.</li>
+                    <li>Better visual distinction between correct, approximate, and incorrect answers.</li>
+                </ul>
+
+                <h4>🛠 Technical</h4>
+                <ul>
+                    <li>Question Rendering System updated to <strong>v0.9.0</strong> to accommodate the new UI architecture.</li>
+                    <li>Improved component structure for better UI scalability.</li>
+                    <li>Optimized DOM updates for smoother rendering.</li>
+                </ul>
+
+                <h4>📌 Notes</h4>
+                <p>
+                    This beta focuses on visual refinement and user experience improvements in preparation for BETA 10 and the upcoming RC1 milestone.
+                </p>
+            </section>
+        </div>
+        <div>
+            <h3>BETA 8 - 11/02/2026</h3>
+
+            <h4>✨ Added</h4>
+            <ul>
+                <li>Reworked <strong>Single Choice</strong> and <strong>Multiple Choice</strong> question types — now support image-based options in addition to text.</li>
+                <li><code>description</code> property is now <strong>question-based</strong> (available for all types).</li>
+                <li>Fused <strong>String</strong> and <strong>Number</strong> tolerance systems into a unified system.</li>
+                <li>Fill in the Blanks can now distinguish between <strong>numbers and strings</strong>.</li>
+                <li>Added <strong>Synonym support</strong> for Short Text questions.</li>
+                <li>Questions are no longer regenerated when reselecting the same question.</li>
+                <li>Flagging a question no longer regenerates the question.</li>
+                <li>Added quiz-level property to optionally <strong>disable question shuffling</strong>.</li>
+                <li>Added a <strong>Demo Quiz</strong> for demonstration purposes.</li>
+            </ul>
+
+            <h4>🐛 Fixed</h4>
+            <ul>
+                <li>Fixed small typos in the Question Warning System.</li>
+                <li>Fixed bug where the <code>warning</code> property was not optional.</li>
+                <li>Fixed Single Choice state not saving correctly.</li>
+                <li>Fixed grading issues in Single and Multiple Choice.</li>
+                <li>Fixed Fill in the Blanks always grading as 0.</li>
+            </ul>
+
+            <h4>🛠 Technical</h4>
+            <ul>
+                <li>First build with <strong>zero compile errors</strong>.</li>
+                <li>Question Warning System updated to <strong>v2.0.1</strong>.</li>
+                <li>Question Rendering updated to <strong>v0.8.0</strong>.</li>
+                <li>Tolerance System released as <strong>v1.0.0</strong>.</li>
+            </ul>
+
+            <h4>📌 Notes</h4>
+            <p>
+                This beta focuses on internal stability, grading correctness, and system unification ahead of the planned UI overhaul.
+            </p>
+
+            <h4>🚀 Planned BETA 9</h4>
+            <ul>
+                <li>Full UI redesign and visual overhaul.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 7 — Text, Numeric & Tolerance Systems 09/02/2026</h3>
+
+            <h4>✅ Added</h4>
+            <ul>
+                <li>New question types:
+                    <ul>
+                        <li>Short Text</li>
+                        <li>Long Text</li>
+                        <li>Numeric</li>
+                        <li>Fill-in-the-Blanks</li>
+                    </ul>
+                </li>
+                <li>String tolerance system for text-based questions</li>
+                <li>Number tolerance system with multiple evaluation modes</li>
+                <li>Reworked the question warning system for improved flexibility, styling control, and extensibility</li>
+            </ul>
+
+            <h4>📝 Short Text Type</h4>
+            <ul>
+                <li>Single-word text answer</li>
+                <li>Consists of question, description, and input field</li>
+                <li>Includes a per-question string tolerance system (default = 1)</li>
+                <li>Input is restricted to one word (spaces are automatically removed, even when pasted)</li>
+                <li>Review feedback supports four outcomes:
+                    <ul>
+                        <li><strong>Perfect Answer</strong></li>
+                        <li><strong>Small Typo Answer (-20%)</strong></li>
+                        <li><strong>Your answer was wrong</strong></li>
+                        <li><strong>You haven’t answered</strong></li>
+                    </ul>
+                </li>
+                <li>Visual checkmark indicator:
+                    <ul>
+                        <li>Green = fully correct</li>
+                        <li>Yellow = small typo (within tolerance)</li>
+                        <li>Red = incorrect or missing</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>⚠️ Short Text Known Issues</h4>
+            <ul>
+                <li>Typo penalty is currently fixed at 80% (not configurable)</li>
+                <li>Does not account for synonyms or alternative correct answers</li>
+            </ul>
+
+            <h4>📝 Long Text Type</h4>
+            <ul>
+                <li>Supports multiple words</li>
+                <li>Consists of question, description, and input field</li>
+            </ul>
+
+            <h4>⚠️ Long Text Known Issues</h4>
+            <ul>
+                <li>Answers are manually reviewed (no automatic grading)</li>
+            </ul>
+
+            <h4>🔢 Numeric Type</h4>
+            <ul>
+                <li>Input restricted to numeric values only</li>
+                <li>Consists of question, description, and input field</li>
+                <li>Includes a per-question numeric tolerance system</li>
+                <li>Visual checkmark indicator:
+                    <ul>
+                        <li>Green = correct or within tolerance</li>
+                        <li>Red = incorrect or missing</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>🧩 Fill-in-the-Blanks Type</h4>
+            <ul>
+                <li>Consists of multiple Short Text inputs (numeric support planned)</li>
+                <li>Each input has its own visual correctness indicator</li>
+            </ul>
+
+            <h4>⚠️ Fill-in-the-Blanks Known Issues</h4>
+            <ul>
+                <li>Numeric values are currently treated as strings</li>
+            </ul>
+
+            <h4>🔤 String Tolerance System</h4>
+            <ul>
+                <li>Character swap counts as 1 difference</li>
+                <li>Extra or repeated character counts as 1 difference</li>
+                <li>Missing character counts as 1 difference</li>
+                <li>If total differences ≤ tolerance → 80% score</li>
+                <li>If total differences = 0 → 100% score</li>
+            </ul>
+
+            <h4>🔢 Number Tolerance System</h4>
+            <ul>
+                <li>Supported modes:
+                    <ul>
+                        <li><strong>Absolute</strong> — fixed ± range around correct answer</li>
+                        <li><strong>Percentage</strong> — ± percentage range</li>
+                        <li><strong>Range</strong> — explicit min/max bounds</li>
+                        <li><strong>Strict</strong> — exact match only</li>
+                    </ul>
+                </li>
+                <li>Evaluation returns:
+                    <ul>
+                        <li>0 → within tolerance</li>
+                        <li>1 → outside tolerance</li>
+                    </ul>
+                </li>
+                <li>Recommendations:
+                    <ul>
+                        <li>Absolute → floats</li>
+                        <li>Percentage → large numbers</li>
+                        <li>Range → explicit control</li>
+                        <li>Strict → integers</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>⚠️ Known Quiz Issues</h4>
+            <ul>
+                <li>String and Number tolerance systems are currently separate, causing awkward behavior in Fill-in-the-Blanks questions</li>
+            </ul>
+
+            <h4>⚠️ Question Warning Rework</h4>
+            <ul>
+                <li>Question warning rendering is now a separate core system from quiz rendering</li>
+                <li>Multiple warnings can now be rendered per question</li>
+                <li>Added new warning format: <strong>CUSTOM</strong></li>
+                <li>To apply custom styles, the warning format must be set to <strong>CUSTOM</strong></li>
+                <li><strong>NONE</strong> no longer applies any CSS class</li>
+                <li><strong>CUSTOM</strong> bypasses <strong>NONE</strong> unless overridden</li>
+                <li>Warning styles are now defined via optional structured properties</li>
+            </ul>
+
+            <h4>🛠️ Technical</h4>
+            <ul>
+                <li>Warning styling properties are grouped into optional sub-objects:
+                    <ul>
+                        <li>Text</li>
+                        <li>Layout</li>
+                        <li>Flex</li>
+                        <li>Visual</li>
+                        <li>Border</li>
+                        <li>Positioning</li>
+                    </ul>
+                </li>
+                <li>New optional styling properties include:
+                    <ul>
+                        <li>Border (width, color, style, radius)</li>
+                        <li>Padding and margin</li>
+                        <li>Text alignment and overflow control</li>
+                        <li>Positioning (top, left, right, bottom, z-index)</li>
+                        <li>Flex behavior</li>
+                        <li>Transform, opacity, visibility, display, pointer events</li>
+                    </ul>
+                </li>
+                <li>Renamed question types:
+                    <ul>
+                        <li>Short_Answer → Short_Text</li>
+                        <li>Long_Answer → Long_Text</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>📌 Planned Beta 8</h4>
+            <ul>
+                <li>Unify String and Number tolerance systems with automatic detection</li>
+                <li>Single-question rendering rework</li>
+                <li>Multiple-question rendering rework</li>
+                <li>Performance optimizations</li>
+                <li>More dynamic Short Text penalty configuration</li>
+                <li>New UI elements</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 6 — Review UX, Flags & Behavior Improvements <span>30/01/2026</span></h3>
+
+            <h4>✅ Added</h4>
+            <ul>
+                <li>Submit confirmation modal with:
+                    <ul>
+                        <li>General submission confirmation</li>
+                        <li>Special warning message when unanswered questions exist</li>
+                    </ul>
+                </li>
+                <li>Question flagging system</li>
+                <li>UI indicator for <strong>flagged questions</strong> in the button navigation list</li>
+                <li>UI indicator for <strong>answered questions</strong> in the button navigation list</li>
+                <li>Table-based review summary containing:
+                    <ul>
+                        <li>Status</li>
+                        <li>Started</li>
+                        <li>Completed</li>
+                        <li>Duration</li>
+                        <li>Total points</li>
+                        <li>Positive points</li>
+                        <li>Negative points</li>
+                    </ul>
+                </li>
+                <li>Warning message system for questions, with flexible placement:
+                    <ul>
+                        <li>Before the question</li>
+                        <li>After the answer options</li>
+                        <li>Inside the sidebar</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>🎨 Warning Message Styles</h4>
+            <ul>
+                <li>Supported styles:
+                    <ul>
+                        <li>None</li>
+                        <li>Default</li>
+                        <li>Bold</li>
+                        <li>Abstract</li>
+                    </ul>
+                </li>
+                <li>When <strong>None</strong> is selected, the following properties can be customized:
+                    <ul>
+                        <li>Font color</li>
+                        <li>Font size</li>
+                        <li>Bold</li>
+                        <li>Italic</li>
+                        <li>Underline</li>
+                        <li>Background color</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>🔄 Improved</h4>
+            <ul>
+                <li>During review, the <strong>correct answer is always displayed in green</strong>, regardless of user selection</li>
+                <li>Question order is now randomized per quiz attempt</li>
+                <li>Answer option order is now randomized per question</li>
+            </ul>
+
+            <h4>🛠️ Technical</h4>
+            <ul>
+                <li>Question type ordering updated:
+                    <ul>
+                        <li>Text-based questions now appear before drag-and-drop questions</li>
+                    </ul>
+                </li>
+                <li>Improved internal separation between quiz-taking and review behavior</li>
+            </ul>
+
+            <h4>🐛 Bug Fixes</h4>
+            <ul>
+                <li>Fixed an issue where single-choice and multiple-choice questions were always shown as correct during review</li>
+            </ul>
+
+            <h4>⚠️ Known Issues</h4>
+            <ul>
+                <li>Button navigation is scheduled for redesign to support cleaner CSS and animations</li>
+                <li>Rendering system will be reworked to allow smooth CSS transitions and animations</li>
+            </ul>
+
+            <h4>📌 Notes</h4>
+            <ul>
+                <li>This beta focuses on correctness, clarity, and review behavior rather than visual redesign</li>
+                <li>UI overhaul and animation work is planned for the next beta</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 5 — Review Experience & UI Enhancements <span>24/01/2026</span></h3>
+
+            <h4>✅ Added</h4>
+            <ul>
+                <li>Quick table-based review after finishing the quiz</li>
+                <li>Full detailed review view for all questions</li>
+                <li>Support for images inside questions</li>
+                <li>UI indicator showing the points assigned to each question</li>
+            </ul>
+
+            <h4>🛠️ Technical</h4>
+            <ul>
+                <li>Quiz flow divided into two explicit modes:
+                    <ul>
+                        <li><strong>Taking</strong></li>
+                        <li><strong>Review</strong></li>
+                    </ul>
+                </li>
+                <li>Default render logic refactored into a more modular structure</li>
+                <li>Rendering responsibilities further split for clarity and reuse</li>
+            </ul>
+
+            <h4>🐛 Bug Fixes</h4>
+            <ul>
+                <li>Fixed tracking of separate positive and negative point statistics</li>
+            </ul>
+
+            <h4>📌 Notes</h4>
+            <ul>
+                <li>Review mode is now a first-class part of the quiz flow</li>
+                <li>This beta focuses on visibility, feedback, and post-quiz clarity</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 4 — Question Type Expansion & Scoring Refactor <span>23/01/2026</span></h3>
+
+            <h4>✅ Added</h4>
+            <ul>
+                <li>New question types:
+                    <ul>
+                        <li>Multiple choice</li>
+                        <li>True / False</li>
+                    </ul>
+                </li>
+                <li>Per-question weight and point values</li>
+                <li>Type-specific grading logic per question</li>
+            </ul>
+
+            <h4>🔄 Improved</h4>
+            <ul>
+                <li>Rendering fully decoupled per question type</li>
+                <li>Grading logic decoupled per question type</li>
+                <li>Timer UI now displays <strong>“No Time Limit”</strong> instead of <code>00:00:00</code> when timers are disabled</li>
+                <li>Overall technical structure and organization</li>
+            </ul>
+
+            <h4>🐛 Fixed</h4>
+            <ul>
+                <li>Negative score calculation issues</li>
+                <li>Scoring inconsistencies across different question types</li>
+            </ul>
+
+            <h4>🛠️ Technical</h4>
+            <ul>
+                <li>Clear separation of responsibilities between rendering, grading, and scoring</li>
+                <li>Codebase reorganized for easier extension and maintenance</li>
+            </ul>
+
+            <h4>⚠️ Known Limitations</h4>
+            <ul>
+                <li>Question state is currently hard-coded to <code>[]</code> to support multiple-choice questions</li>
+                <li>Question state handling will be generalized in a future beta</li>
+            </ul>
+
+            <h4>📌 Notes</h4>
+            <ul>
+                <li>Architecture now supports adding new question types with minimal refactoring</li>
+                <li>This beta prioritizes correctness and scalability over UI polish</li>
+            </ul>
+
+        </div>
+        <div>
+            <h3>Beta 3 — Core Quiz Flow & State - 22/01/2026</h3>
+
+            <h4>✅ Added</h4>
+            <ul>
+                <li>Question state management (persistent answers across navigation)</li>
+                <li>Previous / Next question navigation</li>
+                <li>Automatic submission when timer expires</li>
+                <li>Early submission support (unanswered questions safely skipped)</li>
+                <li>Timer logic integration</li>
+                <li>Timer UI (countdown display)</li>
+            </ul>
+
+            <h4>🔄 Improved</h4>
+            <ul>
+                <li>Unified submission pipeline (manual submit & auto-submit use the same flow)</li>
+                <li>Navigation logic prevents invalid transitions (first / last question)</li>
+                <li>Internal safeguards against double submission</li>
+            </ul>
+
+            <h4>🛠️ Technical</h4>
+            <ul>
+                <li>Centralized quiz state as single source of truth</li>
+                <li>Submission guarded by <code>isSubmitted</code> flag</li>
+                <li>Question state tracking supports future review & stats features</li>
+            </ul>
+
+            <h4>⚠️ Known Limitations</h4>
+            <ul>
+                <li>Final grading logic is minimal and will be <strong>reworked</strong> when multiple question types are introduced</li>
+                <li>No final results screen yet (logic exists, UI will be added next)</li>
+                <li>Review mode not implemented</li>
+            </ul>
+
+            <h4>📌 Notes</h4>
+            <ul>
+                <li>Current grading assumes single-answer logic</li>
+                <li>Architecture is prepared for multiple question types (planned for Beta 4)</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 2 - 21/01/2026</h3>
+            <h5>New / Improvements</h5>
+            <ul>
+                <li>Implemented a navigation list allowing users to move between questions (question state is not yet saved)</li>
+                <li>Implemented a functional quiz ending (UI pending)</li>
+                <li>Implemented score and total score tracking</li>
+                <li>Added quiz progress display (current question / total questions)</li>
+                <li>Implemented an optional global timer for quizzes (UI not yet implemented)</li>
+                <li>Refactored quiz and question rendering into a more modular architecture, making it easier to add new question types</li>
+            </ul>
+            <h5>Known Issues</h5>
+            <ul>
+                <li>When backtracking without saved question state, users can repeatedly resubmit answers and gain unlimited points</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Beta 1 – 19/01/2026</h3>
+            <ul>
+                <li>Implemented 3 question types: Single Choice, Multiple Choice, True/False</li>
+                <li>Initial prototype of the quiz (Single Choice fully functional; other types not yet active)</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
