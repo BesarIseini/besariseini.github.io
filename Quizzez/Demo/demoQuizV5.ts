@@ -14,7 +14,7 @@ const demo = {
                 imageLink: "",
                 required: false,
                 renderType: "ordered",
-                answerOverride: true,
+                answerOverride: false,
                 tableN: {
                     rows: 2,
                     columns: 4,
@@ -121,12 +121,12 @@ const demo = {
     hasTimer: true,
      timer: 600,
     quizSettings: {
-        shuffleQuestions: true,
+        shuffleQuestions: false,
         title: "Version 1.1 - Select",
         courseId: "DM",
         duration: 600,
         date: new Date("2026-06-10"),
-        description: "This is a demo showcasing dependent and independent questions. Added in BETA 10.",
+        description: "This is a demo showcasing selection type added in v1.1.0",
         id: 4,
         type: "Practical",
         quizVersion: 13,
