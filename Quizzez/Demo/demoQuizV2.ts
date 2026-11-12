@@ -10,14 +10,23 @@ const demo = {
                 type: QuestionType.SINGLE_CHOICE,
                 obj: {
                     question: "What is 5 + 5?",
-                    description: "This is the question description.",
                     negativePoints: 10,
                     points: 10,
-                    hasImage: false,
-                    imageLink: "",
-                    required: false,
                     renderType: "text" as const,
-                    table: "[th][col=2] Header Col Size 2, Col 1; r2 c1, r2 c2, r2 c3;[col=3] r3 col size 3",
+                    content: [
+                        {
+                            type: "text",
+                            data: {
+                                text: "This is the question description."
+                            },
+                        },
+                        {
+                            type: "table",
+                            data: {
+                                table: "[th][col=2] Header Col Size 2, Col 1; r2 c1, r2 c2, r2 c3;[col=3] r3 col size 3",
+                            },
+                        }
+                    ],
                     options: [
                         { text: "6", isCorrect: false, id: 0 },
                         { text: "8", isCorrect: false, id: 1 },
@@ -35,26 +44,42 @@ const demo = {
             type: QuestionType.SINGLE_CHOICE,
             obj: {
                 question: "What is this?",
-                description: "Select the correct option that describes what this is.",
                 negativePoints: 10,
                 points: 10,
                 hasImage: true,
-                imageLink: "/ananas.jpeg",
-                required: false,
                 renderType: "text" as const,
-                code: [
+                content: [
                     {
-                        language: "C++",
-                        code: `int main() {
+                        type: "text",
+                        data: {
+                            text: "Select the correct option that describes what this is."
+                        },
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/ananas.jpeg",
+                            alt: "Ananas Fruit"
+                        },
+                    },
+                    {
+                        type: "code",
+                        data: {
+                            language: "C++",
+                            code: `int main() {
     std::cout << "Dynamic C++ block!" << std::endl;
     return 0;
 }`
+                        },
                     },
                     {
-                        language: "HTML",
-                        code: `<div class="container">
+                        type: "code",
+                        data: {
+                            language: "HTML",
+                            code: `<div class="container">
     <h1>Hello World</h1>
 </div>`
+                        }
                     }
                 ],
                 options: [
@@ -91,6 +116,7 @@ const demo = {
     hasTimer: true,
      timer: 30,
     quizSettings: {
+        key: "demo-v2",
         shuffleQuestions: false,
         title: "Tables & Code Snippets",
         courseId: "DM",

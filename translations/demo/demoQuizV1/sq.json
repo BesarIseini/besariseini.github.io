@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "UI_TRUE": "E vërtetë",
+    "UI_FALSE": "E gabuar",
+    "UI_NOT_ANSWERED": "Pa përgjigje",
+
+    "QUESTION_1_TITLE": "Sa bëjnë 5 + 5?",
+    "QUESTION_1_DESCRIPTION": "Ky është përshkrimi i pyetjes.",
+    "QUESTION_1_OPTION_1": "6",
+    "QUESTION_1_OPTION_2": "8",
+    "QUESTION_1_OPTION_3": "10",
+    "QUESTION_1_OPTION_4": "12",
+    "QUESTION_1_WARNING_1": "Kjo është një pyetje me zgjedhje të vetme.",
+
+    "QUESTION_2_TITLE": "Çfarë është kjo?",
+    "QUESTION_2_DESCRIPTION": "Zgjidhni opsionin e saktë që e përshkruan këtë.",
+    "QUESTION_2_IMAGE_SRC": "/ananas.jpeg",
+    "QUESTION_2_IMAGE_ALT": "Ananas",
+    "QUESTION_2_OPTION_1": "Ananas",
+    "QUESTION_2_OPTION_2": "Mollë",
+    "QUESTION_2_OPTION_3": "Arrë kokosi",
+    "QUESTION_2_OPTION_4": "Dardhë",
+    "QUESTION_2_WARNING_1": "Kjo pyetje ka pikë negative!",
+    "QUESTION_2_WARNING_2": "Kjo është një pyetje me zgjedhje të vetme.",
+
+    "QUESTION_3_TITLE": "Cila është arra e kokosit?",
+    "QUESTION_3_WARNING_1": "Kjo është një pyetje me zgjedhje të vetme.",
+
+    "QUESTION_4_TITLE": "Përputhni llojin e saktë!",
+    "QUESTION_4_IMAGE_SRC": "/ananas.jpeg",
+    "QUESTION_4_DESCRIPTION": "Përputhni përgjigjet me imazhin e dhënë.",
+    "QUESTION_4_IMAGE_ALT": "Ananas",
+    "QUESTION_4_WARNING_1": "Kjo është një pyetje me zgjedhje të shumëfishtë.",
+    "QUESTION_4_WARNING_2": "Kjo pyetje ka pikë negative!",
+
+    "QUESTION_5_TITLE": "Zgjidhni shkronjat",
+    "QUESTION_5_OPTION_1": "x",
+    "QUESTION_5_OPTION_2": "y",
+    "QUESTION_5_OPTION_3": "5",
+    "QUESTION_5_OPTION_4": "z",
+    "QUESTION_5_OPTION_5": "1",
+    "QUESTION_5_OPTION_6": "4",
+    "QUESTION_5_OPTION_7": "9",
+    "QUESTION_5_OPTION_8": "a",
+    "QUESTION_5_WARNING_1": "Kjo është një pyetje me zgjedhje të shumëfishtë.",
+    "QUESTION_5_WARNING_2": "Kjo pyetje ka pikë negative!",
+
+    "QUESTION_6_TITLE": "5 + 5 = 10",
+    "QUESTION_6_WARNING_1": "Kjo është një pyetje E vërtetë ose E gabuar.",
+
+    "QUESTION_7_TITLE": "Shkruani emrin e frutit.",
+    "QUESTION_7_DESCRIPTION": "Shkruani emrin e frutit në fushën e përgjigjes. Duhet të jetë një fjalë e vetme. Lejohet një gabim në një shkronjë.",
+    "QUESTION_7_IMAGE_SRC": "/ananas.jpeg",
+    "QUESTION_7_IMAGE_ALT": "Frut i panjohur",
+    "QUESTION_7_IMAGE_CAPTION": "Fig. 1.1",
+    "QUESTION_7_CORRECT": ["Ananas", "Ananasi"],
+    "QUESTION_7_WARNING_1": "Kjo është një pyetje me përgjigje të shkurtër.",
+    "QUESTION_7_WARNING_2": "Lejohen disa sinonime. Një gabim zbret 20% të pikëve. Dy gabime konsiderohen përgjigje e pasaktë.",
+    "QUESTION_7_WARNING_3": "Përgjigjet nuk dallojnë shkronjat e mëdha nga të voglat.",
+
+    "QUESTION_8_TITLE": "Shkruani 2 shifrat e para të numrit PI.",
+    "QUESTION_8_DESCRIPTION": "Përfshini '3.' në përgjigjen tuaj.",
+    "QUESTION_8_WARNING_1": "Kjo është një pyetje numerike.",
+    "QUESTION_8_WARNING_2": "Nuk ka tolerancë. Përgjigjja duhet të jetë e saktë.",
+
+    "QUESTION_9_TITLE": "Plotësoni boshllëqet.",
+    "QUESTION_9_PART_1_BEFORE": "Kryeqyteti i Gjermanisë është:",
+    "QUESTION_9_PART_1_AFTER": "(Pa dallim shkronjash, lejohet një gabim)",
+    "QUESTION_9_PART_2_BEFORE": "Kryeqyteti i Francës është:",
+    "QUESTION_9_PART_2_AFTER": "(Pa dallim shkronjash, lejohet një gabim)",
+    "QUESTION_9_PART_3_BEFORE": "2 shifrat e para të numrit PI janë:",
+    "QUESTION_9_PART_3_AFTER": "(Përgjigje strikte, përfshini '3.')",
+    "QUESTION_9_PART_4_BEFORE": "2 shifrat e para të numrit të Eulerit (e) janë:",
+    "QUESTION_9_PART_4_AFTER": "(Tolerancë absolute 0.02, përfshini '2.')",
+    "QUESTION_9_PART_1_CORRECT": "Berlin",
+    "QUESTION_9_PART_2_CORRECT": "Paris"
+  }
+}

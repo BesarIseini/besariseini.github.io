@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "title": "English",
+    "id": "en",
+    "flag": ""
+  },
+  "translation": {
+    "QUIZ_TITLE_1": "Demo Quiz",
+    "QUIZ_DESCRIPTION_1": "This is a demo quiz. Briefly explains all the question types available in SeisHub."
+
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seishub 1.3</title>
+    <title>Seishub 2.0</title>
     <script src="https://unpkg.com/lucide@latest"></script>
 <!--    <script src="https://unpkg.com/lucide@latest"></script>-->
     <style>
@@ -22,9 +22,12 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/about-CNKhFdoN.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-C9YtDgvl.js">
-  <link rel="stylesheet" crossorigin href="/assets/courseNameById-BEM_j0qf.css">
+  <script type="module" crossorigin src="/assets/about-DwzmU8qI.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/language-B6ddr21c.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-DqMymLy5.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-p-ut6us-.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-BDiCOtoN.js">
+  <link rel="stylesheet" crossorigin href="/assets/language-DujzZbQn.css">
 </head>
 <body>
 <script>
@@ -136,7 +139,7 @@
                             <i data-lucide="book-open"  class="h-5 w-5 text-white"></i>
                         </div>
                         <div class="hidden sm:block">
-                            <h1 class="font-semibold text-lg leading-tight">SeisHub</h1>
+                            <h1 class="font-semibold text-lg leading-tight" data-language-id="LOGO">BETA SeisHub</h1>
                             <!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
                         </div>
                     </div>
@@ -152,6 +155,23 @@
 <!--                        <i data-feather="clock" class="h-5 w-5"></i>-->
 <!--                        <span class="font-semibold" id="timer">45:00</span>-->
 <!--                    </div>-->
+                    <a
+                            href="./statistics.html"
+                            class="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                            aria-label="Statistics"
+                            title="Statistics"
+                    >
+                        <i data-lucide="chart-column" class="h-5 w-5"></i>
+                        <span class="sr-only" data-language-id="NAV_STATISTICS">Statistics</span>
+                    </a>
+                    <a href="/settings.html"
+                       class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                       aria-label="Settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </a>
                     <button
                             id="toggleDarkModeBtn"
                             class="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
@@ -207,8 +227,8 @@
         <main class="container mx-auto px-4 py-8 max-w-6xl" >
 <!--            filter-->
             <div class="mb-8">
-                <h1 class="text-3xl font-bold text-foreground mb-2">My Quizzes</h1>
-                <p class="text-muted-foreground">
+                <h1 class="text-3xl font-bold text-foreground mb-2" data-language-id="SELECTION_TITLE">My Quizzes</h1>
+                <p class="text-muted-foreground" data-language-id="SELECTION_TEXT">
                     Select a quiz to begin. Choose your preferred mode and settings before starting.
                 </p>
             </div>
@@ -228,16 +248,16 @@
                 </div>
 
                 <select id="filter-select" class="flex h-10 w-full sm:w-48 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
-                    <option value="0">All Semesters</option>
-                    <option value="1">1st Semester</option>
-                    <option value="2">2nd Semester</option>
-                    <option value="3">3rd Semester</option>
-                    <option value="4">4th Semester</option>
-                    <option value="5">5th Semester</option>
-                    <option value="6">6th Semester</option>
-                    <option value="7">7th Semester</option>
-                    <option value="8">8th Semester</option>
-                    <option value="-1">Demo Quizzes</option>
+                    <option value="0" data-language-id="FILTER_ALL">All Semesters</option>
+                    <option value="1" data-language-id="FILTER_1">1st Semester</option>
+                    <option value="2" data-language-id="FILTER_2">2nd Semester</option>
+                    <option value="3" data-language-id="FILTER_3">3rd Semester</option>
+                    <option value="4" data-language-id="FILTER_4">4th Semester</option>
+                    <option value="5" data-language-id="FILTER_5">5th Semester</option>
+                    <option value="6" data-language-id="FILTER_6">6th Semester</option>
+                    <option value="7" data-language-id="FILTER_7">7th Semester</option>
+                    <option value="8" data-language-id="FILTER_8">8th Semester</option>
+                    <option value="-1" data-language-id="FILTER_DEMO">Demo Quizzes</option>
                 </select>
             </div>
 
@@ -424,7 +444,7 @@
             <div class="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
                 <a href="" class="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                    <span class="text-sm font-medium">Back to Quizzes</span>
+                    <span class="text-sm font-medium" data-language-id="SELECTION_BACK_TO_QUIZ">Back to Quizzes</span>
                 </a>
                 <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground" id="selection-course-id-pill">
         BIO201
@@ -446,22 +466,38 @@
                 <div class="flex items-center gap-6 mt-4 text-sm text-muted-foreground">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2"/><path d="M12 17h.01"/></svg>
-                        <span><span id="selection-questions">25</span> questions available</span>
+                        <span><span id="selection-questions">25</span> <span data-language-id="SELECTION_QUIZ_QUESTIONS_AVAILABLE"></span></span>
                     </div>
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
-                        <span>~<span id="selection-time-estimation">38</span> min estimated</span>
+                        <span>~<span id="selection-time-estimation">38</span> <span data-language-id="SELECTION_QUIZ_ESTIMATED_TIME"></span></span>
                     </div>
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8">
                 <div class="lg:col-span-2 space-y-8">
-
-                    <section style="display: none;">
+                    <section id="quiz-language-section" style="display: none;">
+                        <div class="flex items-center gap-2 mb-4">
+                            <!-- Lucide Languages Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                            <h2 class="text-xl font-semibold text-foreground" data-language-id="SELECTION_QUIZ_LANGUAGE">Quiz Language</h2>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="p-6">
+                                <p class="text-sm text-muted-foreground mb-4" data-language-id="SELECTION_QUIZ_LANGUAGE_HINT">
+                                    Select the language for the quiz content.
+                                </p>
+                                <!-- Flex container for dynamically injected language radios -->
+                                <div class="flex flex-wrap gap-3" id="language-options-container">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
                         <div class="flex items-center gap-2 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                            <h2 class="text-xl font-semibold text-foreground">Select Mode</h2>
+                            <h2 class="text-xl font-semibold text-foreground" data-language-id="SELECTION_QUIZ_MODE_TITLE">Select Mode</h2>
                         </div>
 
                         <div class="grid sm:grid-cols-3 gap-4">
@@ -477,11 +513,11 @@
                                 </div>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mb-3 text-muted-foreground transition-colors group-has-[:checked]:text-primary"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                                <h3 class="font-semibold text-foreground mb-1">Learning Mode</h3>
-                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2">Study at your own pace with answers visible. Perfect for reviewing material and understanding concepts.</p>
+                                <h3 class="font-semibold text-foreground mb-1" data-language-id="SELECTION_LEARNING_MODE">Learning Mode</h3>
+                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2" data-language-id="SELECTION_LEARNING_MODE_DESCRIPTION">Study at your own pace with answers visible. Perfect for reviewing material and understanding concepts.</p>
                                 <div class="mt-auto space-y-1.5">
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>Answers always visible</span></div>
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>Detailed explanations</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_LEARNING_LIST_1">Answers always visible</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_LEARNING_LIST_2">Detailed explanations</span></div>
                                 </div>
                             </label>
 
@@ -496,11 +532,11 @@
                                 </div>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mb-3 text-muted-foreground transition-colors group-has-[:checked]:text-primary"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
-                                <h3 class="font-semibold text-foreground mb-1">Practice Mode</h3>
-                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2">Test your knowledge with immediate feedback. Great for active recall and identifying weak areas.</p>
+                                <h3 class="font-semibold text-foreground mb-1" data-language-id="SELECTION_PRACTICE_MODE">Practice Mode</h3>
+                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2" data-language-id="SELECTION_PRACTICE_MODE_DESCRIPTION">Test your knowledge with immediate feedback. Great for active recall and identifying weak areas.</p>
                                 <div class="mt-auto space-y-1.5">
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>Instant feedback</span></div>
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>Explanations after answering</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_PRACTICE_LIST_1">Instant feedback</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_PRACTICE_LIST_2">Explanations after answering</span></div>
                                 </div>
                             </label>
 
@@ -515,11 +551,11 @@
                                 </div>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mb-3 text-muted-foreground transition-colors group-has-[:checked]:text-primary"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                                <h3 class="font-semibold text-foreground mb-1">Exam Mode</h3>
-                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2">Simulate real exam conditions. Challenge yourself under timed, authentic test conditions.</p>
+                                <h3 class="font-semibold text-foreground mb-1" data-language-id="SELECTION_EXAM_MODE">Exam Mode</h3>
+                                <p class="text-sm text-muted-foreground mb-4 line-clamp-2" data-language-id="SELECTION_EXAM_MODE_DESCRIPTION">Simulate real exam conditions. Challenge yourself under timed, authentic test conditions.</p>
                                 <div class="mt-auto space-y-1.5">
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>No hints available</span></div>
-                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span>Results at the end</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_EXAM_LIST_1">No hints available</span></div>
+                                    <div class="flex items-center gap-2 text-xs text-muted-foreground"><svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg><span data-language-id="SELECTION_EXAM_LIST_2">Results at the end</span></div>
                                 </div>
                             </label>
                         </div>
@@ -529,7 +565,7 @@
                     <section>
                         <div class="flex items-center gap-2 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
-                            <h2 class="text-xl font-semibold text-foreground">Number of Questions</h2>
+                            <h2 class="text-xl font-semibold text-foreground" data-language-id="SELECTION_NUMBER_OF_QUESTIONS">Number of Questions</h2>
                         </div>
                         <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
                             <div class="p-6 pt-6 group/count">
@@ -557,7 +593,7 @@
 
                                     <label id="selection-100percent-container" class="cursor-pointer px-6 py-3 rounded-lg border-2 font-medium transition-all select-none border-border bg-card hover:border-primary/50 text-foreground has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary">
                                         <input type="radio" name="question-count" value="4" class="sr-only" checked quiz="selection-input">
-                                        All (<span id="selection-100percent">25</span>)
+                                         <span data-language-id="SELECTION_ALL">All</span> (<span id="selection-100percent">25</span>)
                                     </label>
 
                                     <label class="cursor-pointer px-6 py-3 rounded-lg border-2 font-medium transition-all select-none border-border bg-card hover:border-primary/50 text-foreground has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary">
@@ -569,7 +605,7 @@
 
                                 <div class="hidden mt-4 items-center gap-3 group-has-[#custom-count-radio:checked]/count:flex">
                                     <input id="selection-custom-input" type="number" placeholder="Enter 1-25" class="flex h-10 w-40 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
-                                    <span class="text-sm text-muted-foreground">of <span id="selection-custom-max">25</span> available questions</span>
+                                    <span class="text-sm text-muted-foreground"><span data-language-id="SELECTION_OF">of</span> <span id="selection-custom-max">25</span> <span data-language-id="SELECTION_NUMBER_AVAILABLE_QUESTIONS"></span></span>
                                 </div>
                             </div>
                         </div>
@@ -578,15 +614,15 @@
                     <section style="">
                         <div class="flex items-center gap-2 mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"/><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/><path d="m18 14 4 4-4 4"/></svg>
-                            <h2 class="text-xl font-semibold text-foreground">Additional Options</h2>
+                            <h2 class="text-xl font-semibold text-foreground" data-language-id="SELECTION_ADDITIONAL_OPTIONS_TITLE">Additional Options</h2>
                         </div>
                         <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
                             <div class="p-6 pt-6 space-y-6">
 
                                 <div class="flex items-center justify-between">
                                     <div class="space-y-1">
-                                        <label for="shuffle-questions" class="text-base font-medium cursor-pointer">Shuffle Questions</label>
-                                        <p class="text-sm text-muted-foreground">Randomize the order of questions each attempt</p>
+                                        <label for="shuffle-questions" class="text-base font-medium cursor-pointer" data-language-id="SELECTION_ADDITIONAL_OPTIONS_QUESTION_SHUFFLE">Shuffle Questions</label>
+                                        <p class="text-sm text-muted-foreground" data-language-id="SELECTION_ADDITIONAL_OPTIONS_QUESTION_SHUFFLE_DESCRIPTION">Randomize the order of questions each attempt</p>
                                     </div>
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" id="shuffle-questions" class="sr-only peer" quiz="selection-input" checked>
@@ -598,15 +634,15 @@
 
                                 <div class="flex items-center justify-between">
                                     <div class="space-y-1">
-                                        <label for="shuffle-answers" class="text-base font-medium cursor-pointer">Shuffle Answers</label>
-                                        <p class="text-sm text-muted-foreground">Randomize the order of answer choices</p>
+                                        <label for="shuffle-answers" class="text-base font-medium cursor-pointer" data-language-id="SELECTION_ADDITIONAL_OPTIONS_ANSWER_SHUFFLE">Shuffle Answers</label>
+                                        <p class="text-sm text-muted-foreground" data-language-id="SELECTION_ADDITIONAL_OPTIONS_ANSWER_SHUFFLE_DESCRIPTION">Randomize the order of answer choices</p>
                                     </div>
                                     <label class="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" id="shuffle-answers" class="sr-only peer" quiz="selection-input" checked>
                                         <div class="w-11 h-6 bg-input rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-primary after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-background after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
                                     </label>
                                 </div>
-input
+
 <!--                                <div class="shrink-0 bg-border h-[1px] w-full"></div>-->
 
 <!--                                <div class="flex items-center justify-between">-->
@@ -623,6 +659,58 @@ input
                             </div>
                         </div>
                     </section>
+
+                    <section id="quiz-history-section" style="display: block;">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i data-lucide="history" class="h-5 w-5 text-primary"></i>
+                            <h2 class="text-xl font-semibold text-foreground" data-language-id="SELECTION_HISTORY_TITLE">Your History</h2>
+                        </div>
+                        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                            <div class="p-6">
+                                <p class="text-sm text-muted-foreground mb-4" data-language-id="SELECTION_HISTORY_PREVIOUS_ATTEMPTS">Previous attempts for this specific quiz.</p>
+
+                                <!-- Empty State -->
+                                <div id="history-empty-state" class="flex flex-col items-center justify-center gap-2 py-6 text-center">
+                                    <i data-lucide="clipboard-list" class="h-8 w-8 text-muted-foreground"></i>
+                                    <p class="text-sm text-muted-foreground max-w-sm" data-language-id="SELECTION_HISTORY_NO_ATTEMPTS">You haven't taken this quiz yet. Your attempts will appear here.</p>
+                                </div>
+
+                                <!-- Populated State -->
+                                <div id="history-populated-state" class="hidden">
+                                    <div class="grid grid-cols-3 gap-3 mb-4">
+                                        <div class="rounded-lg border border-border bg-muted/40 p-3">
+                                            <div class="flex items-center gap-1.5 text-xs text-muted-foreground mb-1">
+                                                <i data-lucide="repeat" class="h-3.5 w-3.5"></i>  <span data-language-id="SELECTION_HISTORY_ATTEMPTS"></span>
+                                            </div>
+                                            <p id="history-count" class="text-2xl font-bold text-foreground tabular-nums">0</p>
+                                        </div>
+                                        <div class="rounded-lg border border-border bg-muted/40 p-3">
+                                            <div class="flex items-center gap-1.5 text-xs text-muted-foreground mb-1">
+                                                <i data-lucide="trophy" class="h-3.5 w-3.5"></i> <span data-language-id="SELECTION_HISTORY_BEST"></span>
+                                            </div>
+                                            <p id="history-best" class="text-2xl font-bold tabular-nums">0%</p>
+                                        </div>
+                                        <div class="rounded-lg border border-border bg-muted/40 p-3">
+                                            <div class="flex items-center gap-1.5 text-xs text-muted-foreground mb-1">
+                                                <i data-lucide="target" class="h-3.5 w-3.5"></i> <span data-language-id="SELECTION_HISTORY_AVERAGE"></span>
+                                            </div>
+                                            <p id="history-avg" class="text-2xl font-bold tabular-nums">0%</p>
+                                        </div>
+                                    </div>
+
+                                    <div id="history-attempts-list" class="space-y-2">
+                                        <!-- Populated via JS -->
+                                    </div>
+
+                                    <a href="./statistics.html" class="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
+
+                                        <span data-language-id="SELECTION_HISTORY_ALL_STATISTICS"></span>
+                                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
                 <div class="lg:col-span-1">
@@ -631,25 +719,33 @@ input
                             <div class="flex flex-col space-y-1.5 p-6">
                                 <h3 class="font-semibold leading-none tracking-tight flex items-center gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
-                                    Quiz Summary
+                                    <span data-language-id="SELECTION_SUMMARY_TITLE"></span>
                                 </h3>
-                                <p class="text-sm text-muted-foreground">Review your settings before starting</p>
+                                <p class="text-sm text-muted-foreground" data-language-id="SELECTION_SUMMARY_REVIEW">Review your settings before starting</p>
                             </div>
                             <div class="p-6 pt-0 space-y-4">
                                 <div class="space-y-3">
                                     <div class="flex justify-between items-center">
-                                        <span class="text-muted-foreground">Mode</span>
-                                        <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">Exam Mode</span>
+                                        <span class="text-muted-foreground" data-language-id="SELECTION_SUMMARY_MODE">Mode</span>
+                                        <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"><span id="mode-type">Exam Mode</span></span>
                                     </div>
                                     <div class="shrink-0 bg-border h-[1px] w-full"></div>
                                     <div class="flex justify-between items-center">
-                                        <span class="text-muted-foreground">Questions</span>
+                                        <span class="text-muted-foreground" data-language-id="SELECTION_SUMMARY_QUESTIONS">Questions</span>
                                         <span class="font-medium" id="final-questions">20</span>
                                     </div>
                                     <div class="shrink-0 bg-border h-[1px] w-full"></div>
                                     <div class="flex justify-between items-center">
-                                        <span class="text-muted-foreground">Est. Time</span>
-                                        <span class="font-medium">~<span id="final-time">30</span> min</span>
+                                        <span class="text-muted-foreground" data-language-id="SELECTION_SUMMARY_EST_TIME">Est. Time</span>
+                                        <span class="font-medium">~<span id="final-time">30</span> <span data-language-id="SELECTION_MINUTES_SHORT">min</span></span>
+                                    </div>
+                                    <div class="shrink-0 bg-border h-[1px] w-full" id="summary-lang-divider" style="display: none;"></div>
+                                    <div class="flex justify-between items-center" id="summary-lang-row" style="display: none;">
+                                        <span class="text-muted-foreground" data-language-id="SELECTION_SUMMARY_LANGUAGE">Language</span>
+                                        <span class="font-medium flex items-center gap-1.5 text-sm">
+        <span id="summary-lang-flag">🇬🇧</span>
+        <span id="summary-lang-text">English</span>
+    </span>
                                     </div>
 <!--                                    <div class="shrink-0 bg-border h-[1px] w-full"></div>-->
 <!--                                    <div class="flex justify-between items-center">-->
@@ -665,10 +761,10 @@ input
 
                                 <button id="submit-btn" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 w-full mt-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2"><polygon points="6 3 20 12 6 21 6 3"/></svg>
-                                    Start Quiz
+                                    <span data-language-id="SELECTION_SUMMARY_START_QUIZ"></span>
                                 </button>
 
-                                <p class="text-xs text-center text-muted-foreground">
+                                <p class="text-xs text-center text-muted-foreground" data-language-id="SELECTION_SUMMARY_CHANGE_ANYTIME">
                                     You can change settings at any time
                                 </p>
                             </div>
@@ -683,6 +779,18 @@ input
         if (window.lucide) {
             lucide.createIcons();
         }
+        const THEME_STORAGE_KEY = 'app-theme-color';
+        function applyThemeColor(color) {
+            // If 'blue' is default, we remove the attribute, otherwise we set it based on your CSS
+            if (color === 'blue') {
+                document.documentElement.removeAttribute('data-theme');
+            } else {
+                document.documentElement.setAttribute('data-theme', color);
+            }
+        }
+
+        let currentTheme = localStorage.getItem(THEME_STORAGE_KEY) || 'blue';
+        applyThemeColor(currentTheme);
         document.getElementById('toggleDarkModeBtn').addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
             const getStorage= localStorage.getItem("darkMode");
@@ -692,6 +800,7 @@ input
                 localStorage.setItem("darkMode", "dark");
             }
         })
-    </script>
+    </script>
+
 </body>
 </html>

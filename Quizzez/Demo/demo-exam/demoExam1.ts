@@ -15,6 +15,7 @@ const demoExam = {
     hasTimer: true,
      timer: 1200,
     quizSettings: {
+        key: "demo-exam-1",
         shuffleQuestions: false,
         title: "Demo Quiz",
         courseId: "DM",

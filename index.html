@@ -2,7 +2,7 @@
 <html lang="en" class="">
 <head>
     <meta charset="UTF-8">
-    <title>Seishub 1.3</title>
+    <title>Seishub 2.0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,36 @@
         body {
             font-family: var(--font-sans);
         }
+        #practice-flare {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            /* Centers it and pushes it 100% off the bottom of the screen */
+            transform: translateX(-50%) translateY(100%);
+            transition: transform 0.3s ease-out;
+            padding: 16px 32px;
+            border-radius: 8px 8px 0 0;
+            color: white;
+            font-weight: bold;
+            z-index: 50; /* Ensures it stays on top of the quiz content */
+        }
+
+        /* The class we add via JavaScript to show it */
+        .flare-visible {
+            transform: translateX(-50%) translateY(0) !important;
+        }
+
+        /* State colors */
+        .flare-correct { background-color: #22c55e; } /* Green */
+        .flare-partial { background-color: orange; } /* Green */
+        .flare-incorrect { background-color: #ef4444; } /* Red */
     </style>
-  <script type="module" crossorigin src="/assets/index-BSIHEH2_.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-C9YtDgvl.js">
-  <link rel="stylesheet" crossorigin href="/assets/courseNameById-BEM_j0qf.css">
-</head>
+  <script type="module" crossorigin src="/assets/index-Sm8JKx-F.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/language-B6ddr21c.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-DqMymLy5.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-BDiCOtoN.js">
+  <link rel="stylesheet" crossorigin href="/assets/language-DujzZbQn.css">
+</head>
     <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
@@ -36,7 +61,7 @@
         <div class="flex items-center gap-4">
             <button id="open-sidebar-btn" class="lg:hidden text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors">
                 <i data-feather="menu" class="h-5 w-5"></i>
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only" data-language-id="QUIZ_TOGGLE_NAVIGATION">Toggle navigation</span>
             </button>
 
 
@@ -46,7 +71,7 @@
                         <i data-feather="book-open" class="h-5 w-5 text-white"></i>
                     </div>
                     <div class="hidden sm:block">
-                        <h1 class="font-semibold text-lg leading-tight">SeisHub</h1>
+                        <h1 class="font-semibold text-lg leading-tight" data-language-id="LOGO">BETA SeisHub</h1>
                         <!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
                     </div>
                 </div>
@@ -67,6 +92,7 @@
                     id="toggleDarkModeBtn"
                     class="relative inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-background text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                     aria-label="Toggle dark mode"
+                    data-language-id="QUIZ_TOGGLE_DARK_MODE" data-translation-type="aria-label"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block dark:hidden">
                     <circle cx="12" cy="12" r="4"></circle>
@@ -128,13 +154,13 @@
 
                 <div class="flex items-center gap-2 flex-wrap">
             <span class="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-normal bg-secondary text-secondary-foreground">
-              Question&nbsp;<span id="questions-left-second"></span>
+              <span data-language-id="QUIZ_QUESTION">Question</span>&nbsp;<span id="questions-left-second"></span>
             </span>
                     <span id="question-type" class="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-normal bg-transparent text-foreground">
               Multiple Choice
             </span>
                     <span class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
-              <span id="total-points"></span>&nbsp;marks
+              <span id="total-points"></span>&nbsp;<span data-language-id="QUIZ_MARKS">marks</span>
             </span>
                 </div>
 
@@ -152,20 +178,58 @@
                     <p class="text-lg font-medium leading-relaxed text-foreground" id="question-text">
                         What is the time complexity of searching for an element in a perfectly balanced binary search tree?
                     </p>
-                    <p class="text-sm leading-relaxed text-muted-foreground" id="question-description">
-                        Assume the tree has 'n' nodes and you are searching for a value that exists in the tree.
-                    </p>
+<!--                    <p class="text-sm leading-relaxed text-muted-foreground" id="question-description">-->
+<!--                        Assume the tree has 'n' nodes and you are searching for a value that exists in the tree.-->
+<!--                    </p>-->
                 </div>
 
-                <div id="image-container" class="relative rounded-lg border border-border overflow-hidden bg-muted/30 group">
-                    <button type="button" id="open-lightbox-btn" class="w-full cursor-zoom-in relative" aria-label="Enlarge image">
-                        <img id="image-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Binary Tree Diagram" class="w-full max-h-80 object-contain mx-auto" />
-                    </button>
-                    <div class="flex items-center gap-1.5 px-3 py-1.5 text-xs text-muted-foreground bg-muted/60 border-t border-border">
-                        <i data-lucide="image" class="h-3 w-3"></i>
-                        Click image to enlarge
-                    </div>
-                </div>
+
+                <div id="images"></div>
+<!--                <div id="image-container" class="relative rounded-lg border border-border overflow-hidden bg-muted/30 group">-->
+<!--                    <button type="button" id="open-lightbox-btn" class="w-full cursor-zoom-in relative" aria-label="Enlarge image">-->
+<!--                        <img id="image-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Binary Tree Diagram" class="w-full max-h-80 object-contain mx-auto" />-->
+<!--                    </button>-->
+<!--                    <div class="flex items-center gap-1.5 px-3 py-1.5 text-xs text-muted-foreground bg-muted/60 border-t border-border">-->
+<!--                        <i data-lucide="image" class="h-3 w-3"></i>-->
+<!--                        Click image to enlarge-->
+<!--                    </div>-->
+<!--                    <div id="image-lightbox" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" role="dialog">-->
+<!--                        <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center">-->
+<!--                            <img id="image-lightbox-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Enlarged view" data-language-id="QUIZ_ENLARGED_VIEW" data-translation-type="alt" class="w-full h-auto max-h-[85vh] object-contain rounded-lg" />-->
+<!--                            <p class="text-center text-sm text-white mt-4 bg-black/50 rounded-full px-4 py-1.5 inline-block cursor-pointer" id="close-lightbox-text">-->
+<!--                                Click anywhere to close-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div id="video-container1" class="relative rounded-lg border border-border overflow-hidden bg-muted/30 group">-->
+<!--                    <div id="video-elements1">-->
+<!--                        <video id="video-element" controls class="w-full max-h-80 object-contain mx-auto bg-black/95">-->
+<!--                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">-->
+<!--                            Your browser does not support the video tag.-->
+<!--                        </video>-->
+<!--                    </div>-->
+<!--                    <div class="flex items-center gap-1.5 px-3 py-1.5 text-xs text-muted-foreground bg-muted/60 border-t border-border">-->
+<!--                        <i data-lucide="video" class="h-3 w-3"></i>-->
+<!--                        Video reference material-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div id="video-elements"></div>
+                <div id="audio-elements"></div>
+<!--                <div id="audio-container" class="relative rounded-lg border border-border overflow-hidden bg-muted/30 p-4">-->
+<!--                    <div class="flex items-center gap-3 mb-3">-->
+<!--                        <div class="flex items-center justify-center p-2 bg-primary/10 rounded-full">-->
+<!--                            <i data-lucide="headphones" class="h-4 w-4 text-primary"></i>-->
+<!--                        </div>-->
+<!--                        <div class="text-sm font-medium text-foreground">Audio Recording</div>-->
+<!--                    </div>-->
+<!--                    <div id="audio-elements" class="">-->
+<!--                        <audio id="audio-element" controls class="w-full h-10 outline-none">-->
+<!--                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">-->
+<!--                            Your browser does not support the audio element.-->
+<!--                        </audio>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div id="code-container">
 
@@ -175,6 +239,9 @@
                 <div id="table-container" class="rounded-md border-border bg-card overflow-x-auto w-full">
 
                 </div>
+
+                <div id="content-container"></div>
+
 
                 <div class="space-y-3" id="options-container">
 
@@ -200,7 +267,7 @@
 
                 </div>
 
-                <p id="helper-text" class="text-sm text-muted-foreground italic">
+                <p id="helper-text" class="text-sm text-muted-foreground italic" data-language-id="QUIZ_HELPER_TEXT">
                     Select an answer to continue. You can change your answer later.
                 </p>
                 <div id="warningBottom"></div>
@@ -213,19 +280,19 @@
 
                 <button id="prev" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-border bg-transparent hover:bg-muted transition-colors w-full sm:w-auto gap-2 text-foreground">
                     <i data-lucide="chevron-left" class="h-4 w-4"></i>
-                    Previous
+                    <span data-language-id="QUIZ_PREVIOUS">Previous</span>
                 </button>
 
                 <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>Question</span>
+                    <span data-language-id="QUIZ_QUESTION">Question</span>
                     <span class="font-semibold text-foreground" id="current-questions-left">10</span>
-                    <span>of</span>
+                    <span data-language-id="QUIZ_OF">of</span>
                     <span class="font-semibold text-foreground" id="questions-left">10</span>
                 </div>
 
                 <div class="flex gap-2 w-full sm:w-auto">
                     <button id="next" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-primary text-primary-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
-                        Next
+                        <span data-language-id="QUIZ_NEXT">Next</span>
                         <i data-lucide="chevron-right" class="h-4 w-4"></i>
                     </button>
 
@@ -240,17 +307,17 @@
         <div id="submit-modal" style="z-index: 60;" class="hidden fixed left-[50%] top-[50%] grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-card p-6 shadow-lg sm:rounded-lg text-card-foreground">
 
             <div class="flex flex-col space-y-1.5 text-center sm:text-left">
-                <h2 class="text-lg font-semibold leading-none tracking-tight">Submit Quiz?</h2>
-                <p class="text-sm text-muted-foreground mt-2">
+                <h2 class="text-lg font-semibold leading-none tracking-tight" data-language-id="QUIZ_SUBMIT_TITLE">Submit Quiz?</h2>
+                <p class="text-sm text-muted-foreground mt-2" data-language-id="QUIZ_SUBMIT_CONFIRM">
                     Are you sure you want to submit your quiz? You will not be able to change your answers after submission.
                 </p>
             </div>
 
             <div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2 mt-4">
-                <button id="cancel-submit-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-border bg-transparent hover:bg-muted transition-colors mt-2 sm:mt-0">
+                <button id="cancel-submit-btn" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 border border-border bg-transparent hover:bg-muted transition-colors mt-2 sm:mt-0" data-language-id="QUIZ_CANCEL">
                     Cancel
                 </button>
-                <button id="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground hover:bg-success/90 transition-colors">
+                <button id="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground hover:bg-success/90 transition-colors" data-language-id="QUIZ_SUBMIT">
                     Submit Quiz
                 </button>
             </div>
@@ -259,6 +326,17 @@
 
 
     </main>
+    <div id="global-image-lightbox" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" role="dialog">
+
+        <div id="global-lightbox-content" class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center">
+
+            <img id="global-lightbox-image" src="" alt="Enlarged view" data-language-id="QUIZ_ENLARGED_VIEW" data-translation-type="alt" class="w-full h-auto max-h-[85vh] object-contain rounded-lg" />
+
+            <p id="global-close-btn" class="text-center text-sm text-white mt-4 bg-black/50 rounded-full px-4 py-1.5 inline-block cursor-pointer" data-language-id="QUIZ_LIGHTBOX_CLOSE">
+                Click anywhere to close
+            </p>
+        </div>
+    </div>
 <!--    Review screen-->
     <div class="hidden flex-1 overflow-y-auto w-full p-4 lg:p-8 max-w-4xl mx-auto space-y-6 pb-24" id="quiz-review-container">
 
@@ -269,7 +347,7 @@
                         <i data-lucide="bar-chart-3" class="h-5 w-5 text-primary"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold leading-none tracking-tight">Quiz Results</h3>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight" data-language-id="REVIEW_TITLE">Quiz Results</h3>
                         <p class="text-sm text-muted-foreground mt-1" id="review-title">General Knowledge Assessment</p>
                     </div>
                 </div>
@@ -280,22 +358,22 @@
                     <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
                         <i data-lucide="award" class="h-6 w-6 text-primary mb-1"></i>
                         <p class="text-3xl font-bold" id="grade-review">A</p>
-                        <p class="text-xs text-muted-foreground mt-1">Grade</p>
+                        <p class="text-xs text-muted-foreground mt-1" data-language-id="REVIEW_GRADE">Grade</p>
                     </div>
                     <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
                         <i data-lucide="target" class="h-6 w-6 text-primary mb-1"></i>
                         <p class="text-3xl font-bold text-foreground" id="score-percentage">85%</p>
-                        <p class="text-xs text-muted-foreground mt-1">Score</p>
+                        <p class="text-xs text-muted-foreground mt-1" data-language-id="REVIEW_SCORE">Score</p>
                     </div>
                     <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
                         <i data-lucide="bar-chart-3" class="h-6 w-6 text-primary mb-1"></i>
                         <p class="text-3xl font-bold text-foreground" id="score-number">85/100</p>
-                        <p class="text-xs text-muted-foreground mt-1">Marks Earned</p>
+                        <p class="text-xs text-muted-foreground mt-1" data-language-id="REVIEW_MARKS_EARNED">Marks Earned</p>
                     </div>
                     <div class="flex flex-col items-center justify-center p-4 bg-muted/50 rounded-lg">
                         <i data-lucide="clock" class="h-6 w-6 text-primary mb-1"></i>
                         <p class="text-2xl font-bold text-foreground" id="time-taken">14m 30s</p>
-                        <p class="text-xs text-muted-foreground mt-1">Time Taken (<span id="time-taken-percentage">48</span>%)</p>
+                        <p class="text-xs text-muted-foreground mt-1"><span data-language-id="REVIEW_TIME_TAKEN">Time Taken</span> (<span id="time-taken-percentage">48</span>%)</p>
                     </div>
                 </div>
 
@@ -303,25 +381,25 @@
                     <div class="flex items-center gap-1.5">
                         <i data-lucide="check-circle-2" class="h-4 w-4 text-success"></i>
                         <span class="text-foreground font-medium" id="correct-number">8</span>
-                        <span class="text-muted-foreground">Correct</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_CORRECT">Correct</span>
                     </div>
                     <div class="hidden sm:block h-4 w-px bg-border"></div>
                     <div class="flex items-center gap-1.5">
                         <i data-lucide="alert-circle" class="h-4 w-4 text-warning"></i>
                         <span class="text-foreground font-medium" id="partial-number">2</span>
-                        <span class="text-muted-foreground">Partial</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_PARTIAL">Partial</span>
                     </div>
                     <div class="hidden sm:block h-4 w-px bg-border"></div>
                     <div class="flex items-center gap-1.5">
                         <i data-lucide="x-circle" class="h-4 w-4 text-destructive"></i>
                         <span class="text-foreground font-medium" id="incorrect-number">2</span>
-                        <span class="text-muted-foreground">Incorrect</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_INCORRECT">Incorrect</span>
                     </div>
                     <div class="hidden sm:block h-4 w-px bg-border"></div>
                     <div class="flex items-center gap-1.5">
                         <i data-lucide="minus-circle" class="h-4 w-4 text-muted-foreground"></i>
                         <span class="text-foreground font-medium" id="unanswered-number">0</span>
-                        <span class="text-muted-foreground">Unanswered</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_UNANSWERED">Unanswered</span>
                     </div>
                 </div>
             </div>
@@ -330,7 +408,7 @@
         <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm">
             <div class="p-6">
                 <div class="flex items-center justify-between text-sm mb-2">
-                    <span class="font-medium text-foreground">Score Breakdown</span>
+                    <span class="font-medium text-foreground" data-language-id="REVIEW_SCORE_BREAKDOWN">Score Breakdown</span>
                     <span class="text-muted-foreground" id="score-breakdown-score">85 of 100 marks</span>
                 </div>
 
@@ -342,17 +420,17 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-4 mt-3 text-xs text-muted-foreground">
-                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-success"></div>Correct</div>
-                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-warning"></div>Partial</div>
-                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-destructive"></div>Incorrect</div>
-                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-secondary"></div>Unanswered</div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-success"></div><span data-language-id="REVIEW_CORRECT">Correct</span></div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-warning"></div><span data-language-id="REVIEW_PARTIAL">Partial</span></div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-destructive"></div><span data-language-id="REVIEW_INCORRECT">Incorrect</span></div>
+                    <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-sm bg-secondary"></div><span data-language-id="REVIEW_UNANSWERED">Unanswered</span></div>
                 </div>
             </div>
         </div>
 
         <div class="rounded-xl border border-border bg-card text-card-foreground shadow-sm">
             <div class="flex flex-col space-y-1.5 p-6">
-                <h3 class="text-lg font-semibold leading-none tracking-tight">Question Review</h3>
+                <h3 class="text-lg font-semibold leading-none tracking-tight" data-language-id="REVIEW_QUESTION_REVIEW">Question Review</h3>
             </div>
             <div class="p-0">
                 <div class="overflow-x-auto">
@@ -360,13 +438,13 @@
                         <thead class="border-y border-border bg-muted/50">
                         <tr>
                             <th class="font-medium text-muted-foreground px-4 py-3 w-12">#</th>
-                            <th class="font-medium text-muted-foreground px-4 py-3">Question</th>
-                            <th class="font-medium text-muted-foreground px-4 py-3 w-28">Type</th>
-                            <th class="font-medium text-muted-foreground px-4 py-3 w-36">Your Answer</th>
-                            <th class="font-medium text-muted-foreground px-4 py-3 w-36">Correct Answer</th>
-                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20">Marks</th>
-                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20">Status</th>
-                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-16"><span class="sr-only">Actions</span></th>
+                            <th class="font-medium text-muted-foreground px-4 py-3" data-language-id="REVIEW_COL_QUESTION">Question</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-28" data-language-id="REVIEW_COL_TYPE">Type</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-36" data-language-id="REVIEW_COL_YOUR_ANSWER">Your Answer</th>
+                            <th class="font-medium text-muted-foreground px-4 py-3 w-36" data-language-id="REVIEW_COL_CORRECT_ANSWER">Correct Answer</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20" data-language-id="REVIEW_COL_MARKS">Marks</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-20" data-language-id="REVIEW_COL_STATUS">Status</th>
+                            <th class="text-center font-medium text-muted-foreground px-4 py-3 w-16"><span class="sr-only" data-language-id="REVIEW_COL_ACTIONS">Actions</span></th>
                         </tr>
                         </thead>
                         <tbody class="divide-y divide-border" id="table-review-body">
@@ -467,33 +545,36 @@
             <div class="p-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm">
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Started</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_STARTED">Started</span>
                         <span class="font-medium text-foreground" id="time-started">10/24/2023, 10:00 AM</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Completed</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_COMPLETED">Completed</span>
                         <span class="font-medium text-foreground" id="time-finished">10/24/2023, 10:14 AM</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Duration</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_DURATION">Duration</span>
                         <span class="font-medium text-foreground" id="time-duration">14m 30s</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Time Allowed</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_TIME_ALLOWED">Time Allowed</span>
                         <span class="font-medium text-foreground" id="time-allowed">30 minutes</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Questions Attempted</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_QUESTIONS_ATTEMPTED">Questions Attempted</span>
                         <span class="font-medium text-foreground" id="time-attempts">10 of 10</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-border">
-                        <span class="text-muted-foreground">Accuracy</span>
+                        <span class="text-muted-foreground" data-language-id="REVIEW_ACCURACY">Accuracy</span>
                         <span class="font-medium text-foreground" id="time-accuracy">80%</span>
                     </div>
                 </div>
             </div>
         </div>
 
+    </div>
+    <div id="practice-flare" class="flare-hidden">
+        <span id="flare-message"></span>
     </div>
 <!--    Sideebar non review -->
     <aside id="quiz-sidebar" class="h-[calc(100vh-68px)] fixed lg:static inset-y-0 right-0 z-40 w-72 bg-card text-card-foreground border-l border-border flex flex-col transition-transform duration-300 ease-in-out translate-x-full lg:translate-x-0">
@@ -510,15 +591,15 @@
             <div class="grid grid-cols-3 gap-3 text-center">
                 <div>
                     <p class="text-2xl font-bold text-primary" id="answered-total">2</p>
-                    <p class="text-xs text-muted-foreground">Answered</p>
+                    <p class="text-xs text-muted-foreground" data-language-id="QUIZ_ANSWERED_COUNT">Answered</p>
                 </div>
                 <div>
                     <p class="text-2xl font-bold text-warning" id="flagged-total">0</p>
-                    <p class="text-xs text-muted-foreground">Flagged</p>
+                    <p class="text-xs text-muted-foreground" data-language-id="QUIZ_FLAGGED_COUNT">Flagged</p>
                 </div>
                 <div>
                     <p class="text-2xl font-bold text-foreground" id="remaining-total">8</p>
-                    <p class="text-xs text-muted-foreground">Remaining</p>
+                    <p class="text-xs text-muted-foreground" data-language-id="QUIZ_REMAINING">Remaining</p>
                 </div>
             </div>
 
@@ -531,17 +612,17 @@
         <div class="p-4 border-b border-border bg-muted/30" id="back-to-summary">
             <button id="btn-back-to-summary" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-4 py-2">
                 <i data-lucide="bar-chart-3" class="h-4 w-4 mr-2"></i>
-                Back to Summary
+                <span data-language-id="QUIZ_BACK_TO_SUMMARY">Back to Summary</span>
             </button>
             <button id="btn-back-to-quiz" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-4 py-2">
                 <i data-lucide="bar-chart-3" class="h-4 w-4 mr-2"></i>
-                Back to Quiz
+                <span data-language-id="QUIZ_BACK_TO_QUIZ">Back to Quiz</span>
             </button>
         </div>
         <div class="p-4 border-b border-border bg-muted/30" id="submit-quiz">
             <button id="trigger-submit-btn" class="w-full inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 bg-success text-success-foreground transition-all duration-200 hover:brightness-110 hover:shadow-md active:scale-95 flex-1 sm:flex-initial gap-2">
                 <i data-lucide="send" class="h-4 w-4"></i>
-                Submit Quiz
+                <span data-language-id="QUIZ_SUBMIT">Submit Quiz</span>
             </button>
         </div>
 
@@ -575,70 +656,63 @@
         <div id="warningSidebar"></div>
 
         <div class="p-4 border-t border-border bg-muted/30" id="quiz-taking-legend">
-            <p class="text-xs font-medium text-muted-foreground mb-2">Legend</p>
+            <p class="text-xs font-medium text-muted-foreground mb-2" data-language-id="QUIZ_LEGEND">Legend</p>
             <div class="grid grid-cols-2 gap-2 text-xs">
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-secondary"></div>
-                    <span class="text-muted-foreground">Not answered</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_NOT_ANSWERED">Not answered</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-success"></div>
-                    <span class="text-muted-foreground">Answered</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_ANSWERED">Answered</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-card ring-2 ring-primary"></div>
-                    <span class="text-muted-foreground">Current</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_CURRENT">Current</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="relative w-4 h-4 rounded bg-secondary">
                         <i data-lucide="flag" class="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 text-warning fill-warning"></i>
                     </div>
-                    <span class="text-muted-foreground">Flagged</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_FLAGGED">Flagged</span>
                 </div>
             </div>
         </div>
         <div class="p-4 border-t border-border bg-muted/30" id="review-legend">
-            <p class="text-xs font-medium text-muted-foreground mb-2">Legend</p>
+            <p class="text-xs font-medium text-muted-foreground mb-2" data-language-id="QUIZ_LEGEND">Legend</p>
             <div class="grid grid-cols-2 gap-2 text-xs">
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-success"></div>
-                    <span class="text-muted-foreground">Answered</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_ANSWERED">Answered</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-warning"></div>
-                    <span class="text-muted-foreground">Partial</span>
+                    <span class="text-muted-foreground" data-language-id="REVIEW_PARTIAL">Partial</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-destructive"></div>
-                    <span class="text-muted-foreground">Incorrect</span>
+                    <span class="text-muted-foreground" data-language-id="REVIEW_INCORRECT">Incorrect</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-secondary"></div>
-                    <span class="text-muted-foreground">Not answered</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_NOT_ANSWERED">Not answered</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="w-4 h-4 rounded bg-card ring-2 ring-primary"></div>
-                    <span class="text-muted-foreground">Current</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_CURRENT">Current</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <div class="relative w-4 h-4 rounded bg-secondary">
                         <i data-lucide="flag" class="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 text-warning fill-warning"></i>
                     </div>
-                    <span class="text-muted-foreground">Flagged</span>
+                    <span class="text-muted-foreground" data-language-id="QUIZ_FLAGGED">Flagged</span>
                 </div>
             </div>
         </div>
 
     </aside>
 
-    <div id="image-lightbox" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4" role="dialog">
-        <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center">
-            <img id="image-lightbox-element" src="https://placehold.co/800x450/e2e8f0/1e293b?text=Binary+Tree+Diagram" alt="Enlarged view" class="w-full h-auto max-h-[85vh] object-contain rounded-lg" />
-            <p class="text-center text-sm text-white mt-4 bg-black/50 rounded-full px-4 py-1.5 inline-block cursor-pointer" id="close-lightbox-text">
-                Click anywhere to close
-            </p>
-        </div>
-    </div>
+
 </div>
 <script>
     // Initialize new Lucide icons
@@ -806,7 +880,7 @@
             dropdownMenu.classList.add('hidden');
         }
     });
-</script>
+</script>
 
 </body>
 </html>

@@ -16,9 +16,6 @@ import {QuestionType} from "../../../../src/types/QuestionType.ts";
 // screenshots appear to be cropped right after option "c" — there may be a
 // missing option "d" that wasn't captured. Double check against the source
 // before treating either as complete.
-//
-// All imageLink values are placeholders since you're adding the actual
-// images yourself — see the comment above each question for what to draw.
 
 const useCaseDiagrams = {
     questions: [
@@ -27,10 +24,15 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Actors in a use case diagram ...",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -49,10 +51,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following statements are true if use case A is a generalization of use case B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-2.png", // two ellipses A and B; hollow-triangle generalization arrow from B pointing into A (A <|-- B)
+                            alt: "use case generalization semantics (A <|-- B)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-2.png", // two ellipses A and B; hollow-triangle generalization arrow from B pointing into A (A <|-- B)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -73,10 +87,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-3.png", // actor X -> A, J, B; actors Y and Z both generalize into X; G generalizes into A (A <|-- G); B --<<include>>--> H; F --<<extend>>--> E (arrow points to base E); actor K -> G, F, D; actor J -> C, M; M generalizes into C (best-effort reading, low confidence on this last edge — double check against source)
+                            alt: "actors X/Y/Z/K/J, use cases A/G/B/H/F/D/E/C/M"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-3.png", // actor X -> A, J, B; actors Y and Z both generalize into X; G generalizes into A (A <|-- G); B --<<include>>--> H; F --<<extend>>--> E (arrow points to base E); actor K -> G, F, D; actor J -> C, M; M generalizes into C (best-effort reading, low confidence on this last edge — double check against source)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -94,10 +120,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-4.png", // actor A -> P, R, Y, and directly -> U; actors B and C both generalize into A; P --<<extend>>--> T; Y --<<include>>--> X; W -> Y; actor D -> T, R, S; actor E -> Z, S; V generalizes into U (U <|-- V)
+                            alt: "actors A/B/C/D/E, use cases P/T/R/W/X/Y/Z/U/V/S"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-4.png", // actor A -> P, R, Y, and directly -> U; actors B and C both generalize into A; P --<<extend>>--> T; Y --<<include>>--> X; W -> Y; actor D -> T, R, S; actor E -> Z, S; V generalizes into U (U <|-- V)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -115,10 +153,15 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "How do you model the following situation with a UML2 use case diagram: For an exam, a student and a teacher need to be present. If it is an oral exam, a professor has to act as second examiner.",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -136,10 +179,15 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "How do you model the following situation with a UML2 use case diagram: A person goes for lunch. In the course of that it might be necessary that the person withdraws cash from an ATM.",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -157,10 +205,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-7.png", // actor S generalizes into R (S <|-- ... i.e. R <|-- S); R -- B (direct); actor U generalizes into T (T <|-- U); T -- J (direct); U -- C (direct); C --<<include>>--> B; C --<<include>>--> J
+                            alt: "actor-communication counting, use case B (actors R/S, T/U)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-7.png", // actor S generalizes into R (S <|-- ... i.e. R <|-- S); R -- B (direct); actor U generalizes into T (T <|-- U); T -- J (direct); U -- C (direct); C --<<include>>--> B; C --<<include>>--> J
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -178,10 +238,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-8.png", // actor X -- A (direct) and X -- B (direct, diagonal line); actor Y generalizes into X (X <|-- Y) and Y -- B (direct)
+                            alt: "actor-communication counting, use case B (actors X/Y)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-8.png", // actor X -- A (direct) and X -- B (direct, diagonal line); actor Y generalizes into X (X <|-- Y) and Y -- B (direct)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -199,10 +271,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case H?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-9.png", // actor S generalizes into R (R <|-- S); R -- G (direct); actor U -- H (direct) and U -- K (direct); K generalizes into H (H <|-- K); H --<<extend>>--> G (extension = H, base = G); A generalizes into G (G <|-- A)
+                            alt: "actor-communication counting, use case H (actors S/R, U)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-9.png", // actor S generalizes into R (R <|-- S); R -- G (direct); actor U -- H (direct) and U -- K (direct); K generalizes into H (H <|-- K); H --<<extend>>--> G (extension = H, base = G); A generalizes into G (G <|-- A)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -220,10 +304,22 @@ const useCaseDiagrams = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-10.png", // actor X -- A (direct, multiplicity 1..2 on this association); actor Y generalizes into X (X <|-- Y) and Y -- A (direct)
+                            alt: "actor-communication counting, use case A (actors X/Y, multiplicity 1..2)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-10.png", // actor X -- A (direct, multiplicity 1..2 on this association); actor Y generalizes into X (X <|-- Y) and Y -- A (direct)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -239,6 +335,7 @@ const useCaseDiagrams = {
     hasTimer: true,
     timer: 1800,
     quizSettings: {
+        key: "ooaid-exam-2",
         shuffleQuestions: false,
         title: "Use Case Diagrams",
         courseId: "OOAiD",

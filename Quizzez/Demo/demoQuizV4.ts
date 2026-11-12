@@ -13,10 +13,14 @@ const demo = {
                 question: "Given the Boolean function\nF(x,y,z)=Σ(0,1,5,7)",
                 points: 40,
                 negativePoints: 20,
-                description: "fill in the Karnaugh map by placing 1s and 0s in the correct cells.",
-                hasImage: false,
-                imageLink: "",
-                required: false,
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text:"Fill in the Karnaugh map by placing 1s and 0s in the correct cells.",
+                        }
+                    }
+                ],
                 renderType: "tableN|yz[col=4];00,01,11,10|x[row=2];0,1",
                 answerOverride: true,
                 tableN: {
@@ -90,11 +94,7 @@ const demo = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "From the Karnaugh map in Question 1, identify the essential prime implicants.",
-                description: "",
                 points: 60,
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "text" as const,
                 id: 1,
                 dependsOn: 0,
@@ -132,8 +132,9 @@ const demo = {
     hasTimer: true,
      timer: 600,
     quizSettings: {
+        key: "demo-v4",
         shuffleQuestions: true,
-        title: "Question Dependencies",
+        title: "Question Dependencies [Deprecated]",
         courseId: "DM",
         duration: 600,
         date: new Date("2026-03-02"),

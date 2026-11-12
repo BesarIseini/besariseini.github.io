@@ -11,10 +11,6 @@ const demo = {
                 question: "A program consists of 10,500,000,000 instructions. It is executed in 10.0 seconds on a computer with a frequency of 2100 MHz. The program has",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -51,10 +47,6 @@ const demo = {
                 question: "In the process of representing the number -11.75 in IEEE754 single precision format, it is first represented in binary format, where the integer part equals",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -113,10 +105,6 @@ const demo = {
                 question: "Answer the following using the RC system for representing binary numbers, where n=8 (number of bits).",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -184,16 +172,15 @@ const demo = {
                 question: "When calling a procedure:",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+
+                content: [
                     {
-                        language: "MIPS",
-                        code: `1000 addi $a0, $zero, 4
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `1000 addi $a0, $zero, 4
 1004 addi $a1, $zero, 8
 1008 jal proc
 1012 add $s1, $v0, $zero
@@ -201,6 +188,7 @@ const demo = {
 proc:
 2000 add $v0, $a0, $a1
 2004 jr $ra`
+                        }
                     }
                 ],
                 options: [
@@ -270,10 +258,6 @@ proc:
                 question: "[Part 1] In a computer system, the main memory has a size of 256 words and a direct-mapped cache memory is used. The cache has 8 blocks. Each block has 4 words. Find the format of a memory address:",
                 points: 50,
                 negativePoints: 25,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -359,10 +343,6 @@ proc:
                 question: "[Part 2] After the program finishes (addresses 37-57, 6 passes), what is the final state of the cache memory? For each block, enter the tag that remains in memory (as a decimal number obtained from converting the binary tag bits). If the cache block is empty, enter -1.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -436,16 +416,14 @@ proc:
                 question: "An assembly program and the contents of a part of the registers are given. What will the contents of memory be after execution of the program? Enter the corresponding hexadecimal values in the empty fields.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `addi $s2, $zero, 8
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `addi $s2, $zero, 8
 sll $t3, $t0, 16
 andi $t1, $t1, 0x0000FFFF
 or $t4, $t3, $t1
@@ -453,9 +431,12 @@ sh $t4, 0($s2)
 sw $t1, 2($s2)
 addi $s2, $s2, 6
 sb $t2, 0($s2)`
-                    }
+                        }
+                    },
+                    {type: "table", data: {
+                            table: "[th]$s2,[th]$t0,[th]$t1,[th]$t2,[th]$t3,[th]$t4;b565007f,dccf4a89,1c7cb21e,fc4bfc05,e1e567eb,9bc44369",
+                        }}
                 ],
-                table: "[th]$s2,[th]$t0,[th]$t1,[th]$t2,[th]$t3,[th]$t4;b565007f,dccf4a89,1c7cb21e,fc4bfc05,e1e567eb,9bc44369",
                 options: [
                     {
                         type: "string",
@@ -517,10 +498,6 @@ sb $t2, 0($s2)`
                 question: "For each of the integer representation systems (SM, DC, RC), perform the following operations where the output of one is the input to the next. Use n=8, r=2.<br><br>r = number base, n = number of bits<br><br>a₀ = Represent the number 116₁₀ in each of the representations.<br>a₁ = Negative number. Change the sign of a₀.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -578,10 +555,12 @@ sb $t2, 0($s2)`
                 question: "A program with I instructions is executed on two processors A and B. A has CPI_A=2, and B has CPI_B=2.5. On the other hand, B has a working frequency that is 50% higher than that of A.",
                 points: 20,
                 negativePoints: 10,
-                description: "(Round all numbers to two decimal places)",
-                hasImage: false,
-                imageLink: "",
-                required: false,
+                content: [
+                    {
+                        type: "text",
+                        data: {text:"(Round all numbers to two decimal places)"}
+                    }
+                ],
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -619,25 +598,27 @@ sb $t2, 0($s2)`
                 question: "An assembly program and the contents of a part of memory are given. What will the contents of memory and the registers be after execution of the program? Enter the corresponding hexadecimal values in the empty fields (add leading zeros according to the size of the registers).",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `addi $s0, $zero, 65
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `addi $s0, $zero, 65
 addi $s0, $s0, -5
 srl $t0, $s0, 16
 lb $t1, 5($s0)
 lw $t2, 2($s0)
 or $t3, $s0, $t0
 lh $t4, 3($s0)`
-                    }
+                        }
+                    },
+                    {type: "table", data: {
+                            table: "[th]Addr (dec),[th]Addr (hex),[th]Content;60,3C,AA;61,3D,BB;62,3E,CC;63,3F,DD;64,40,11;65,41,22;66,42,33",
+
+                        }}
                 ],
-                table: "[th]Addr (dec),[th]Addr (hex),[th]Content;60,3C,AA;61,3D,BB;62,3E,CC;63,3F,DD;64,40,11;65,41,22;66,42,33",
                 options: [
                     {
                         type: "string",
@@ -700,10 +681,12 @@ lh $t4, 3($s0)`
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `.data
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `.data
     niza: .word 1, 3, 5, 7, 9
 
 .text
@@ -732,6 +715,7 @@ innerLoop:
     j loop
 
 endLoop:`
+                        }
                     }
                 ],
                 options: [
@@ -803,16 +787,14 @@ endLoop:`
                 question: "Complete the assembly program that reads from standard input until 0 is entered, then prints the minimum entered number to standard output.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `.data
+                        type: "code",
+                        data:{
+                            language: "MIPS",
+                            code: `.data
 najmalBroj: .asciiz "Najmaliot broj e: "
 
 .text
@@ -844,6 +826,7 @@ endLoop:
     add $a0, $zero, $s0
     li $v0, 1
     syscall`
+                        }
                     }
                 ],
                 options: [
@@ -912,6 +895,7 @@ endLoop:
     hasTimer: false,
     timer: 0,
     quizSettings: {
+        key: "aok-exam-3",
         shuffleQuestions: false,
         title: "AOK Exam 3",
         courseId: "AOK",

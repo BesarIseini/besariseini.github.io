@@ -16,9 +16,6 @@ import {QuestionType} from "../../../../src/types/QuestionType.ts";
 // uncertain, that's flagged in the comment above the relevant question — see
 // in particular Questions 7-11 (actor-counting convention), and Questions 6
 // and 14 (modeling exercises, screenshots cropped after option "c").
-//
-// All imageLink values are placeholders since you're adding the actual
-// images yourself — see the comment above each question for what to draw.
 
 const ooadExam = {
     questions: [
@@ -27,10 +24,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following <<extend>>-relationship means, that ...",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-1.png", // actor X associates directly with both A and B; A --<<extend>>--> B (B is the base use case, A is the optional extension)
+                            alt: "<<extend>> relationship semantics (A extends B)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-1.png", // actor X associates directly with both A and B; A --<<extend>>--> B (B is the base use case, A is the optional extension)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -51,10 +60,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following <<include>>-relationship means, that ...",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-2.png", // actor X associates directly with both A and B; A --<<include>>--> B (A is the includer, B is always included)
+                            alt: "<<include>> relationship semantics (A includes B)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-2.png", // actor X associates directly with both A and B; A --<<include>>--> B (A is the includer, B is always included)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -76,10 +97,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which statements are true if actor A generalizes actor B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-3.png", // two actor figures A and B; hollow-triangle generalization arrow from B pointing into A (A <|-- B)
+                            alt: "actor generalization semantics (actor A generalizes actor B)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-3.png", // two actor figures A and B; hollow-triangle generalization arrow from B pointing into A (A <|-- B)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -97,10 +130,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-4.png", // actor A -> K, L, J; K --<<extend>>--> F (extension=K, base=F); F -- C (actor); L generalizes into H (H <|-- L); H -- D (actor); J generalizes into M (M <|-- J); actor B -- M; G generalizes into M too (M <|-- G); N -- D; O generalizes into N (N <|-- O); O -- D; O --<<include>>--> P; actor E -- D, N, P
+                            alt: "F/K/H/L/N/J/M/G/O/P diagram, statement set A"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-4.png", // actor A -> K, L, J; K --<<extend>>--> F (extension=K, base=F); F -- C (actor); L generalizes into H (H <|-- L); H -- D (actor); J generalizes into M (M <|-- J); actor B -- M; G generalizes into M too (M <|-- G); N -- D; O generalizes into N (N <|-- O); O -- D; O --<<include>>--> P; actor E -- D, N, P
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -118,10 +163,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-4.png", // same diagram as the previous question — reuse that image
+                            alt: "same F/K/H/L/N/J/M/G/O/P diagram, statement set B"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-4.png", // same diagram as the previous question — reuse that image
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -139,10 +196,15 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "How do you model the following situation with a UML2 use case diagram: Mother and daughter cook dinner together. Sometimes it is necessary that one of them gets chives from the garden.",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -160,10 +222,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-7.png", // actor S generalizes into R (R <|-- S); R -- A (direct); R -- G (direct); actor U -- H (direct) and U -- K (direct); K generalizes into H (H <|-- K); G --<<extend>>--> A (extension = G, base = A)
+                            alt: "actor-communication counting, use case A (actors S/R, A/G/H/K, U)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-7.png", // actor S generalizes into R (R <|-- S); R -- A (direct); R -- G (direct); actor U -- H (direct) and U -- K (direct); K generalizes into H (H <|-- K); G --<<extend>>--> A (extension = G, base = A)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -181,10 +255,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-8.png", // actor X -- A (direct) and X -- B (direct, diagonal line); actor Y generalizes into X (X <|-- Y) and Y -- B (direct)
+                            alt: "actor-communication counting, use case B (actors X/Y, A/B)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-8.png", // actor X -- A (direct) and X -- B (direct, diagonal line); actor Y generalizes into X (X <|-- Y) and Y -- B (direct)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -202,10 +288,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case F?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-9.png", // actor S generalizes into R (R <|-- S); R -- E (direct); actor T -- F (direct; T has its own generalization-style arrow nearby whose exact target is ambiguous from the source screenshot); F --<<extend>>--> D (extension = F, base = D)
+                            alt: "actor-communication counting, use case F (actors S/R, T, D/F/E)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-9.png", // actor S generalizes into R (R <|-- S); R -- E (direct); actor T -- F (direct; T has its own generalization-style arrow nearby whose exact target is ambiguous from the source screenshot); F --<<extend>>--> D (extension = F, base = D)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -223,10 +321,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-10.png", // actor X -- A (direct, multiplicity 0..2 on this association); actor Y generalizes into X (X <|-- Y) and Y -- A (direct, diagonal line)
+                            alt: "actor-communication counting, use case A (actors X/Y, multiplicity 0..2)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-10.png", // actor X -- A (direct, multiplicity 0..2 on this association); actor Y generalizes into X (X <|-- Y) and Y -- A (direct, diagonal line)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -244,10 +354,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-11.png", // actor X -- A (direct); actor Y -- B (direct); A --<<include>>--> B
+                            alt: "actor-communication counting, use case B (actors X/Y, A/B, <<include>>)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-11.png", // actor X -- A (direct); actor Y -- B (direct); A --<<include>>--> B
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -265,10 +387,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd-4b.png", // reuse the diagram from useCaseDiagrams.ts Question 4 (actor A -> P, R, Y, U; actors B, C generalize into A; P --<<extend>>--> T; Y --<<include>>--> X; actor D -> T, R, S; actor E -> Z, S; V generalizes into U)
+                            alt: "P/T/R/W/X/Y/Z/U/V/S diagram (same diagram as useCaseDiagrams.ts Q4), new statement set"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd-4b.png", // reuse the diagram from useCaseDiagrams.ts Question 4 (actor A -> P, R, Y, U; actors B, C generalize into A; P --<<extend>>--> T; Y --<<include>>--> X; actor D -> T, R, S; actor E -> Z, S; V generalizes into U)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -286,10 +420,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ucd2-13.png", // actor A -> P, T, U, and a long diagonal line to Y; P --<<extend>>--> R (extension=P, base=R); R -- D (actor); T -- S (direct); D <-> E have a vertical generalization-style arrow between them; actor C -- U; W generalizes into U (U <|-- W), X generalizes into U too (U <|-- X); actor B -- W; Z --> Y (generalization or association, Z into Y); Y --<<include>>--> V; actor E -- Y
+                            alt: "a second P/R/T/S/U/V/X/W/Z/Y diagram, actors A/B/C/D/E"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ucd2-13.png", // actor A -> P, T, U, and a long diagonal line to Y; P --<<extend>>--> R (extension=P, base=R); R -- D (actor); T -- S (direct); D <-> E have a vertical generalization-style arrow between them; actor C -- U; W generalizes into U (U <|-- W), X generalizes into U too (U <|-- X); actor B -- W; Z --> Y (generalization or association, Z into Y); Y --<<include>>--> V; actor E -- Y
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -307,10 +453,15 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "How do you model the following situation with a UML2 use case diagram: The lab director does a lab test together with her/his assistant. The assistant always has to write a protocol during the lab test.",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -330,9 +481,15 @@ const ooadExam = {
                 question: "Which kind of navigability belongs to which kind of arrowhead, considering the navigability from A to B?",
                 points: 10,
                 negativePoints: 5,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/cdf-1.png", // three A--B association lines: (1) plain line with an open arrowhead at both ends, (2) plain line with a small "x" mark in the middle and no arrowheads, (3) plain line with a small "x" mark in the middle plus an arrowhead pointing back toward A
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/cdf-1.png", // three A--B association lines: (1) plain line with an open arrowhead at both ends, (2) plain line with a small "x" mark in the middle and no arrowheads, (3) plain line with a small "x" mark in the middle plus an arrowhead pointing back toward A
+                            alt: "navigability vs. arrowhead style"
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -350,10 +507,15 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following statements about compositions (composite aggregations) are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -371,10 +533,15 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Data types in UML2 ...",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -392,10 +559,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "You are given the following clipping of a UML2 class diagram. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/cdf-6.png", // Flat and Tenant classes, each with a "*" multiplicity association leg into a shared LeasingContract association class (n-ary/association-class style link between Flat and Tenant)
+                            alt: "Flat / Tenant / LeasingContract class diagram"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/cdf-6.png", // Flat and Tenant classes, each with a "*" multiplicity association leg into a shared LeasingContract association class (n-ary/association-class style link between Flat and Tenant)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -413,10 +592,22 @@ const ooadExam = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "You are given the following clipping of a UML2 class diagram. Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/cdf-7.png", // class A (attributes +e: String, -f: int, #g: boolean) has an aggregation (hollow diamond) association to abstract class {abstract} C (attributes +y: int, -z: String), multiplicity * on both ends; B and D both generalize from A (A <|-- B, A <|-- D; B additionally has +x: int); E generalizes from C (C <|-- E)
+                            alt: "A/B/C/D/E class diagram (aggregation + abstract class)"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/cdf-7.png", // class A (attributes +e: String, -f: int, #g: boolean) has an aggregation (hollow diamond) association to abstract class {abstract} C (attributes +y: int, -z: String), multiplicity * on both ends; B and D both generalize from A (A <|-- B, A <|-- D; B additionally has +x: int); E generalizes from C (C <|-- E)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -432,6 +623,7 @@ const ooadExam = {
     hasTimer: true,
     timer: 3000,
     quizSettings: {
+        key: "ooaid-exam-3",
         shuffleQuestions: false,
         title: "OOAD Exam — Use Case & Class Diagrams",
         courseId: "OOAiD",

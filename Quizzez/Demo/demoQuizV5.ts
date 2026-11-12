@@ -10,9 +10,6 @@ const demo = {
                 points: 40,
                 negativePoints: 20,
                 description: "fill in the Karnaugh map by placing 1s and 0s in the correct cells.",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "ordered",
                 answerOverride: false,
                 tableN: {
@@ -61,10 +58,6 @@ const demo = {
                 question: "FIll in the blanks. [TableV]",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "tableVend-One Header Also Possible[col=3]",
                 answerOverride: true,
                 mix: ["tableVstart", "tableVmiddle", "tableVend", "tableVoneStart", "tableVoneEnd"],
@@ -121,6 +114,7 @@ const demo = {
     hasTimer: true,
      timer: 600,
     quizSettings: {
+        key: "demo-v5",
         shuffleQuestions: false,
         title: "Version 1.1 - Select",
         courseId: "DM",

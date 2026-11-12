@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "title": "Shqip",
+    "id": "sq",
+    "flag": ""
+  },
+  "translation": {
+    "QUIZ_TITLE_1": "Kuiz Demo",
+    "QUIZ_DESCRIPTION_1": "Ky është një kuiz demo. Shpjegon shkurtimisht të gjitha llojet e pyetjeve që ofron SeisHub."
+  }
+}

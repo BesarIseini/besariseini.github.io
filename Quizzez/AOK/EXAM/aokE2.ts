@@ -9,10 +9,6 @@ const demo = {
                 question: "A program consists of 1,800,000,000 instructions. It is executed in 1.0 second on a computer with a frequency of 1800 MHz. The program has",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -49,10 +45,6 @@ const demo = {
                 question: "In the process of representing the number 37.5 in IEEE754 single precision format, it is first represented in binary format, where the integer part equals",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -110,10 +102,6 @@ const demo = {
                 question: "Answer the following using the RC system for representing binary numbers, where n=8 (number of bits).",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -180,16 +168,14 @@ const demo = {
                 question: "When calling a procedure:",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `1020 addi $a0, $zero, 10
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `1020 addi $a0, $zero, 10
 1024 addi $a1, $zero, 5
 1028 jal proc
 1032 add $s1, $v0, $zero
@@ -197,6 +183,7 @@ const demo = {
 proc:
 1052 add $v0, $a0, $a1
 1056 jr $ra`
+                        }
                     }
                 ],
                 options: [
@@ -264,10 +251,6 @@ proc:
                 question: "[Part 1] The size of the physical address is 10 bits, of which 4 are for the offset. The size of the virtual address is 13 bits.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -319,13 +302,10 @@ proc:
                 question: "[Part 2] The content of a part of the page table is as follows:",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                table: "[th]Index,[th]Frame,[th]Validity;0,7,1;1,15,1;2,3,1;3,4,1;4,9,1;5,1,1;6,0,0;7,13,0",
+                content: [{type: "table", data: {table: "[th]Index,[th]Frame,[th]Validity;0,7,1;1,15,1;2,3,1;3,4,1;4,9,1;5,1,1;6,0,0;7,13,0"}}],
+
                 options: [
                     {
                         type: "number",
@@ -353,10 +333,6 @@ proc:
                 question: "[Part 1] In a computer system, the main memory has a size of 256 words and a direct-mapped cache memory is used. The cache has 8 blocks. Each block has 4 words. Find the format of a memory address:",
                 points: 50,
                 negativePoints: 25,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -442,10 +418,6 @@ proc:
                 question: "[Part 2] After the program finishes, what is the final state of the cache memory? For each block, enter the tag that remains in memory (as a decimal number obtained from converting the binary tag bits). If the cache block is empty, enter -1.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -517,16 +489,14 @@ proc:
                 question: "For the given MIPS code, answer the following questions:",
                 points: 60,
                 negativePoints: 30,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `    la $s0, niza
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `    la $s0, niza
     addi $s2, $zero, 1
     addi $s1, $zero, 8    #loop limit
     addi $s3, $zero, 0    #loop counter
@@ -542,6 +512,7 @@ loop:
     addi $s3, $s3, 1
     j loop
 endLoop:`
+                        }
                     }
                 ],
                 options: [
@@ -613,16 +584,14 @@ endLoop:`
                 question: "An assembly program and the contents of a part of the registers are given. What will the contents of memory be after execution of the program? Enter the corresponding hexadecimal values in the empty fields.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "tableVend-Address,Address (Hex),Contains",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `addi $s5, $zero, 52
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `addi $s5, $zero, 52
 sll $t5, $t2, 16
 andi $t3, $t3, 0x0000FFFF
 or $t6, $t5, $t3
@@ -630,9 +599,12 @@ sh $t6, 0($s5)
 sw $t3, 2($s5)
 addi $s5, $s5, 6
 sb $t4, 0($s5)`
-                    }
+                        }
+                    },
+                    {type: "table", data: {
+                            table: "[th]$s5,[th]$t2,[th]$t3,[th]$t4,[th]$t5,[th]$t6;e5762033,4013ee61,6dc4df3d,34ac4794,61ca0f86,80edb644",
+                        }}
                 ],
-                table: "[th]$s5,[th]$t2,[th]$t3,[th]$t4,[th]$t5,[th]$t6;e5762033,4013ee61,6dc4df3d,34ac4794,61ca0f86,80edb644",
                 options: [
                     {
                         type: "string",
@@ -686,12 +658,17 @@ sb $t4, 0($s5)`
                 question: "Determine the Boolean expressions for the circuit at the specified points.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/aokE2-1.png",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/aokE2-1.png",
+                            alt: ""
+                        }
+                    }
+                ],
                 options: [
                     {
                         type: "select",
@@ -717,6 +694,7 @@ sb $t4, 0($s5)`
     hasTimer: false,
     timer: 0,
     quizSettings: {
+        key: "aok-exam-2",
         shuffleQuestions: false,
         title: "AOK Exam 2",
         courseId: "AOK",

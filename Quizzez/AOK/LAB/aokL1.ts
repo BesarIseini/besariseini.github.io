@@ -10,16 +10,14 @@ const demo = {
                 question: "Complete the assembly program that computes the following expression: a = b*c + d/v - 5.",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `# $s0 = a
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `# $s0 = a
 # $s1 = b
 # $s2 = c
 # $s3 = d
@@ -35,6 +33,7 @@ mflo ___              # $t1 = d/v
 add $s0, ___, $t1    # $s0 = b*c + d/v
 
 ___ $s0, $s0, -5     # $s0 = b*c + d/v - 5`
+                        }
                     }
                 ],
                 options: [
@@ -90,20 +89,19 @@ ___ $s0, $s0, -5     # $s0 = b*c + d/v - 5`
                 question: "Complete the assembly program that places the first (most significant) 8 bits of $s0 as the last (least significant) 8 bits of $s1.",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `srl $s0, ___, ___      # shift $s0 right by 24 to bring top 8 bits to bottom
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `srl $s0, ___, ___      # shift $s0 right by 24 to bring top 8 bits to bottom
 
 andi $s1, ___, 0xffffff00   # clear bottom 8 bits of $s1
 
 ___ $s1, $s1, ___           # place shifted bits into bottom 8 of $s1`
+                        }
                     }
                 ],
                 options: [
@@ -159,25 +157,26 @@ ___ $s1, $s1, ___           # place shifted bits into bottom 8 of $s1`
                 question: "Complete the assembly program that is equivalent to the following C++ code. Variable a is assigned register $s0, variable b is assigned register $s1.",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "C++",
-                        code: `a = 103;
+                        type: "code",
+                        data: {
+                            language: "C++",
+                            code: `a = 103;
 if (a > 100) {
     b = a - 100;
 } else {
     b = a;
 }`
+                        },
                     },
                     {
-                        language: "MIPS",
-                        code: `addi $s0, $zero, 103
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `addi $s0, $zero, 103
 addi $t0, $zero, 100
 
 ble $s0, $t0, ___    # if a <= 100, go to else
@@ -189,6 +188,7 @@ else:
     addi ___, $s0, 0  # b = a
 
 nextinst:`
+                        }
                     }
                 ],
                 options: [
@@ -228,16 +228,14 @@ nextinst:`
                 question: "Complete the assembly program that computes the sum of the first 10 numbers and stores it in $s3.",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `add $t0, $zero, 10   # loop limit
+                        type: "code",
+                        data:{
+                            language: "MIPS",
+                            code: `add $t0, $zero, 10   # loop limit
 add $t1, $zero, 1    # counter starts at 1
 
 ciklus:
@@ -250,6 +248,7 @@ ciklus:
     j ciklus
 
 krajCiklus:`
+                        }
                     }
                 ],
                 options: [
@@ -297,16 +296,14 @@ krajCiklus:`
                 question: "Complete the assembly program that reads from standard input until 0 is entered, then prints the minimum entered number to standard output.",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `.data
+                        type: "code",
+                        data:{
+                            language: "MIPS",
+                            code: `.data
 najmalBroj: .asciiz "Najmaliot broj e: "
 
 .text
@@ -338,6 +335,7 @@ endLoop:
     add $a0, $zero, $s0
     li $v0, 1
     syscall`
+                        }
                     }
                 ],
                 options: [
@@ -406,6 +404,7 @@ endLoop:
     hasTimer: false,
     timer: 0,
     quizSettings: {
+        key: "aok-lab-1",
         shuffleQuestions: false,
         title: "AOK MIPS Code",
         courseId: "AOK",
@@ -415,6 +414,7 @@ endLoop:
         id: 5,
         type: "Laboratory",
         quizVersion: 1,
+        tags: ["Verified", "MIPS"]
     }
 }
 

@@ -5,9 +5,6 @@ import {QuestionType} from "../../../../src/types/QuestionType.ts";
 //
 // Question 8 is intentionally missing — no source screenshot was provided for it,
 // so it isn't included below. Renumber/reinsert as needed once you have it.
-//
-// All imageLink values are placeholders (see the comment above each question for
-// what the image should contain) since you're adding the actual images yourself.
 
 const ooaidExamOne = {
     questions: [
@@ -16,10 +13,22 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Given is the following state diagram. Which of the following statements are correct?",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-1.png", // ATM state diagram: Idle/Cancellation/CardCheck/Order/Vending
+                            alt: "ATM state diagram (Idle / CardCheck / Cancellation / Order / Vending)"
+                        }
+                    }
+                ],
                 points: 20,
-                hasImage: true,
-                imageLink: "/images/ooaidE1-1.png", // ATM state diagram: Idle/Cancellation/CardCheck/Order/Vending
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -37,10 +46,15 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following is true about collaboration diagrams:",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -60,9 +74,15 @@ const ooaidExamOne = {
                 question: "A company has a central server on which a system for managing cinema ticket sales is installed. The database is installed on a separate server. Computers placed throughout all cinema halls communicate with the central server, with only one computer per hall. The computers have an application installed that communicates with the central server over the internet. Barcode readers are connected to the computers, used to scan entry tickets. Additionally, there are computers running a web application, which communicates with the central server, from which users purchase tickets.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/ooaidE1-3.png", // deployment diagram: Central Server(System) --LAN--> node(database, <<table>>); --internet--> PC(web application) 1..*; PC(Application) --serial--> Bar code scanner
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-3.png", // deployment diagram: Central Server(System) --LAN--> node(database, <<table>>); --internet--> PC(web application) 1..*; PC(Application) --serial--> Bar code scanner
+                            alt: "deployment diagram, cinema ticket-selling system (Central Server / PC / DB / barcode scanner)"
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -83,10 +103,22 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Circle the methods that class C contains according to the following sequence diagram (a1 and a2 are objects of class A, b1 and b2 are objects of class B, and c1 is an object of class C).",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-4.png", // sequence diagram: a1:A -> b1:B (x); b1:B -> a2:A (y(123)); a2:A -> b1:B (x); b1:B --> a2:A (x:"abc"); c1:C self-call (z); a2:A -> b2:B (y(456))
+                            alt: "sequence diagram, a1:A / b1:B / a2:A / b2:B / c1:C"
+                        }
+                    }
+                ],
                 points: 20,
-                hasImage: true,
-                imageLink: "/images/ooaidE1-4.png", // sequence diagram: a1:A -> b1:B (x); b1:B -> a2:A (y(123)); a2:A -> b1:B (x); b1:B --> a2:A (x:"abc"); c1:C self-call (z); a2:A -> b2:B (y(456))
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -104,10 +136,15 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following is true about transition labels (<trigger>[<guard>]/<effect>) in state diagrams",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -127,9 +164,15 @@ const ooaidExamOne = {
                 question: "Assume that the following sequence of events occurs in the system (in the order listed): E1, S, E3, S, E2.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/ooaidE1-6.png", // state machine: init(/X=1) -> A(entry/X=X*2, exit/X=X-1, self S/X=X+1); A-E1[X<4]/X++->B; A-E1[X>=4]->C; B(entry/X=X+2, exit/X=X-2, self S/X=X+2); B-E2/X=X+2->A; B<->C via E3 / E2/X--; C(entry/X=X*2, exit/X=X+1, self S/X=X+3)
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-6.png", // state machine: init(/X=1) -> A(entry/X=X*2, exit/X=X-1, self S/X=X+1); A-E1[X<4]/X++->B; A-E1[X>=4]->C; B(entry/X=X+2, exit/X=X-2, self S/X=X+2); B-E2/X=X+2->A; B<->C via E3 / E2/X--; C(entry/X=X*2, exit/X=X+1, self S/X=X+3)
+                            alt: "state machine trace (states A/B/C, events E1/E2/E3/S, X value)"
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -148,9 +191,15 @@ const ooaidExamOne = {
                 question: "The structure of a sequence diagram is shown for part of the responsibilities of professors within a faculty. Namely, the professor is responsible for grading tests for certain courses. The professor takes all the tests. For each test, they take all the tasks and then assign points and a grade for each task separately.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/ooaidE1-7.png", // sequence diagram: :Professor <-> :Test <-> :Task, numbered messages 1-7
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-7.png", // sequence diagram: :Professor <-> :Test <-> :Task, numbered messages 1-7
+                            alt: "collaboration diagram, Professor/Test/Task grading flow"
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -172,10 +221,22 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "For the given sequence diagram, circle what is correct:",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    },
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-9.png", // sequence diagram: :A -> :B (msg1); :B -> :C (msg2); :B -> :C (msg3)
+                            alt: "sequence diagram A/B/C, msg1/msg2/msg3"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: true,
-                imageLink: "/images/ooaidE1-9.png", // sequence diagram: :A -> :B (msg1); :B -> :C (msg2); :B -> :C (msg3)
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -195,9 +256,15 @@ const ooaidExamOne = {
                 question: "The structure of a collaboration diagram is shown for part of the responsibilities of testers within a software company. Namely, the tester is responsible for evaluating the tasks for the projects they are responsible for. The tester takes all the projects they are responsible for. For each project, they take all the tasks that were assigned to some programmer and then evaluate each task separately by assigning it a priority and whether it passed the test.",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/ooaidE1-10.png", // collaboration diagram: :Tester <-> :Task, :Tester <-> :Project <-> :Task, numbered messages 1-7
+                content: [
+                    {
+                        type: "image",
+                        data: {
+                            src: "/images/ooaidE1-10.png", // collaboration diagram: :Tester <-> :Task, :Tester <-> :Project <-> :Task, numbered messages 1-7
+                            alt: "collaboration diagram, Tester/Project/Task grading flow"
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -219,11 +286,16 @@ const ooaidExamOne = {
             type: QuestionType.SINGLE_CHOICE,
             obj: {
                 question: "The image shows an implementation diagram for an application used in a store. If the application needs to have one to two printers, at most one scanner, and at most 5 barcode readers, choose which of the images is correct.",
-                description: "Select one:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one:"
+                        }
+                    }
+                ],
                 negativePoints: 10,
                 points: 20,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -241,10 +313,15 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following sequence diagrams describes the following scenario: The user sends the token to the server, but does not expect to receive a response. The server processes the user's request.",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 20,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "image" as const,
                 options: [
@@ -262,10 +339,15 @@ const ooaidExamOne = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following is true about sequence diagrams:",
-                description: "Select one or more:",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:"
+                        }
+                    }
+                ],
                 points: 10,
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -281,6 +363,7 @@ const ooaidExamOne = {
     hasTimer: true,
     timer: 2700,
     quizSettings: {
+        key: "ooaid-exam-1",
         shuffleQuestions: false,
         title: "OOAID Exam 1",
         courseId: "OOAiD",

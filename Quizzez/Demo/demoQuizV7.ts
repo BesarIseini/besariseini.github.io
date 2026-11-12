@@ -10,10 +10,16 @@ const demo = {
                 id: 0, // Parent ID
                 dependsOn: -1,
                 question: "Read the following code snippet and answer the attached questions.",
-                description: "```javascript\nconst a = 10;\nconst b = '20';\nconsole.log(a + b);\n```",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "```javascript\nconst a = 10;\nconst b = '20';\nconsole.log(a + b);\n```",
+                        }
+                    }
+                ],
                 points: 20, // Optional: If omitted, the GroupQuestion constructor will auto-sum the children's points
                 negativePoints: 5,
-                hasImage: false,
                 imageLink: "",
                 required: true,
                 answerOverride: false,
@@ -71,12 +77,16 @@ const demo = {
                 question: "Complete the asynchronous fetch function.",
                 points: 10,
                 negativePoints: 0,
-                description: "Fill in the missing keywords to properly fetch and return the user data.",
-                hasImage: false,
-                imageLink: "",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Fill in the missing keywords to properly fetch and return the user data.",
+                        }
+                    }
+                ],
                 required: true,
                 answerOverride: false,
-                warningMessage: [],
                 // Specific to Code Completion:
                 language: "javascript",
                 codeTemplate: "async function fetchUserData(userId) {\n    const response = [[0]] fetch(`/api/users/${userId}`);\n    if (!response.[[1]]) {\n        throw new Error(\"Network response was not ok\");\n    }\n    [[2]] await response.json();\n}",
@@ -112,11 +122,16 @@ const demo = {
                 id: 1, // Parent ID
                 dependsOn: -1,
                 question: "Read the following code snippet and answer the attached questions.",
-                description: "```javascript\nconst a = 10;\nconst b = '20';\nconsole.log(a + b);\n```",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "```javascript\nconst a = 10;\nconst b = '20';\nconsole.log(a + b);\n```",
+                        }
+                    }
+                ],
                 points: 20, // Optional: If omitted, the GroupQuestion constructor will auto-sum the children's points
                 negativePoints: 5,
-                hasImage: false,
-                imageLink: "",
                 required: true,
                 answerOverride: false,
                 warningMessage: [],
@@ -174,6 +189,7 @@ const demo = {
     hasTimer: true,
      timer: 600,
     quizSettings: {
+        key: "demo-v7",
         shuffleQuestions: false,
         title: "Version 1.3 - Grouped and Code Completion Questions",
         courseId: "DM",

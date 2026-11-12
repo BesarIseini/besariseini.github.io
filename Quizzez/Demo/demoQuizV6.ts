@@ -8,17 +8,12 @@ const demo = {
         obj: {
             question: "Order the numbers in ascending order.",
             points: 20,
-            negativePoints: 20,
-            description: "",
-            hasImage: false,
-            imageLink: "",
-            required: false,
+            negativePoints: 10,
             renderType: "horizontal",
             options: [
                 "1", "2", "3", "4", "5", "a", "b", "c", "d", "e", "testingLmao"
             ],
             correct: ["1", "2", "3", "4", "5"],
-            warningMessage: []
         }
     },
         {
@@ -27,16 +22,11 @@ const demo = {
                 question: "Order the numbers in ascending order.",
                 points: 20,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "verticalNumbered",
                 options: [
                     "1", "2", "3", "4", "5", "a", "b", "c", "d", "e", "testingLmao"
                 ],
                 correct: ["1", "2", "3", "4", "5"],
-                warningMessage: []
             }
         },
         {
@@ -47,11 +37,7 @@ const demo = {
                 question: "Complete the following statements by dragging the correct terms into the slots.",
                 points: 20,
                 negativePoints: 5,
-                description: "",
-                hasImage: false,
-                imageLink: "",
                 required: true,
-                answerOverride: false,
                 renderType: "unordered", // or "unordered"
                 options: [
                     {
@@ -90,9 +76,6 @@ const demo = {
                 question: "Label the parts of the human cell by dragging the terms to their correct locations.",
                 points: 30,
                 negativePoints: 5,
-                description: "",
-                hasImage: false, // Prevents your global Question class from grabbing it
-                imageLink: "",
                 hotspotImage: "/ananas.jpeg", // Powers the interactive widget
                 required: true,
                 answerOverride: false,
@@ -120,6 +103,7 @@ const demo = {
     hasTimer: true,
      timer: 600,
     quizSettings: {
+        key: "demo-v6",
         shuffleQuestions: false,
         title: "Version 1.2 - D&D, Image Hotspots",
         courseId: "DM",

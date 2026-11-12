@@ -8,9 +8,6 @@ const demo = {
                 question: "Order the phases according to the execution sequence. Enter 0 if the phase does not exist.",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "unordered",
                 options: [
@@ -73,9 +70,6 @@ const demo = {
                 question: "",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -133,9 +127,6 @@ const demo = {
                 question: "The following code is given: ",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -235,10 +226,15 @@ const demo = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following pipeline registers exist in a MIPS processor?",
-                description: "Select one or more:",
                 points: 10,
-                hasImage: false,
-                imageLink: "/ananas.jpeg",
+                content: [
+                    {
+                        type: "text",
+                        data: {
+                            text: "Select one or more:",
+                        }
+                    }
+                ],
                 required: false,
                 renderType: "text" as const,
                 options: [
@@ -260,22 +256,27 @@ const demo = {
                 question: "The following code is given: ",
                 points: 40,
                 negativePoints: 20,
-                description: "",
-                hasImage: true,
-                imageLink: "/images/aokE1-1.png",
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                code: [
+                content: [
                     {
-                        language: "MIPS",
-                        code: `1: add $s0, $t0, $t1
+                        type: "image",
+                        data: {
+                            src: "/images/aokE1-1.png",
+                            alt: "Aok E1",
+                        }
+                    },
+                    {
+                        type: "code",
+                        data: {
+                            language: "MIPS",
+                            code: `1: add $s0, $t0, $t1
 2: and $s3, $s2, $s0
 3: or $s4, $s0, $t2`
+                        }
                     }
                 ],
-                id: 0,
-                dependsOn: -1,
                 options: [
                     {
                         type: "string",
@@ -315,15 +316,24 @@ const demo = {
             question: "Let the instruction add $t1, $t2, $t3, located in the instruction memory at address 1000, be executed in the datapath. Fill in the values (in decimal number system). If a value is not used/applicable, enter the /(forward slash) sign.",
             points: 40,
             negativePoints: 20,
-            description: "MIPS Datapath Execution Values",
-            hasImage: true,
-            imageLink: "/images/aokE1-2.png",
             required: false,
             renderType: "unordered",
             answerOverride: true,
-            code: [],
-            id: 0,
-            dependsOn: -1,
+            content: [
+                {
+                    type: "text",
+                    data: {
+                        text: "MIPS Datapath Execution Values",
+                    }
+                },
+                {
+                    type: "image",
+                    data: {
+                        src: "/images/aokE1-2.png",
+                        alt: "Aok E2",
+                    }
+                },
+            ],
             options: [
                 { type: "string", tolerance: 0, textBefore: "C1: ", textAfter: "&nbsp;&nbsp;", correct: "1" },
                 { type: "string", tolerance: 0, textBefore: "C2: ", textAfter: "&nbsp;&nbsp;", correct: "1" },
@@ -364,10 +374,6 @@ const demo = {
                 question: "Order the memories according to speed (smallest value for the fastest)",
                 points: 30,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 options: [
                     {
@@ -422,9 +428,6 @@ const demo = {
                 question: "Data from a directly mapped cache memory has an index (block) 11, total offset (block/word + byte offset) 011 and tag 0000.",
                 points: 80,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
                 required: false,
                 renderType: "unordered",
                 answerOverride: true,
@@ -496,10 +499,6 @@ const demo = {
                 question: "Data from a set-associative cache memory has a set (block) 11, total offset (block/word + byte offset) 001 and tag 0010. Each set consists of 8 blocks.",
                 points: 60,
                 negativePoints: 15,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -547,11 +546,8 @@ const demo = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following statements apply to associative cache mapping?",
-                description: "Select one or more:",
-                points: 30,
-                hasImage: false,
-                imageLink: "",
-                required: false,
+                points: 10,
+                content: [{type: "text", data: {text: "Select one or more:"}}],
                 renderType: "text" as const,
                 options: [
                     {
@@ -577,11 +573,8 @@ const demo = {
             type: QuestionType.MULTIPLE_CHOICE,
             obj: {
                 question: "Which of the following statements are true?",
-                description: "Select one or more:",
+                content: [{type: "text", data: {text: "Select one or more:"}}],
                 points: 30,
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "text" as const,
                 options: [
                     {
@@ -624,10 +617,6 @@ const demo = {
                 question: "A program consists of 1000 instructions. During the execution of the program, only 10 instructions were not in the cache memory. The access to the cache memory is 5 ns, and the access to the RAM memory is 500 ns.<br><br>",
                 points: 30,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -662,10 +651,6 @@ const demo = {
                 question: "Virtual memory uses ",
                 points: 20,
                 negativePoints: 10,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
                 options: [
@@ -694,13 +679,9 @@ const demo = {
                 question: "A computer system implements virtual memory with a page size of 8 bytes. The capacity of the virtual space is 1024 bytes. The capacity of the physical memory is 64 bytes. The contents of a part of the page table are as follows:",
                 points: 80,
                 negativePoints: 20,
-                description: "",
-                hasImage: false,
-                imageLink: "",
-                required: false,
                 renderType: "unordered",
                 answerOverride: true,
-                table: "[th]Index,[th]Frame,[th]Validity;0,2,1;1,3,1;2,4,0;3,1,1;4,5,1;5,1,0;6,7,1",
+                content: [{type: "table", data: {table: "[th]Index,[th]Frame,[th]Validity;0,2,1;1,3,1;2,4,0;3,1,1;4,5,1;5,1,0;6,7,1"}}],
                 options: [
                     {
                         type: "number",
@@ -768,6 +749,7 @@ const demo = {
     hasTimer: false,
      timer: 0,
     quizSettings: {
+        key: "aok-exam-1",
         shuffleQuestions: false,
         title: "AOK Exam 1",
         courseId: "AOK",
