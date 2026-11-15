@@ -1,0 +1,1 @@
+import{g as e}from"./sync-BMckH_MP.js";import{l as a}from"./htmlGuard-n9iZu5qZ.js";function r(t){return a(t.title,e(),t.defaultLanguage)}function o(t){return a(t.description,e(),t.defaultLanguage)}export{o as a,r as q};

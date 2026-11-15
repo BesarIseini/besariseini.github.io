@@ -6,12 +6,13 @@
     <title>Profile & Statistics - BETA SeisHub</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="/assets/statistics-CIUrfPGu.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-DkshvqmW.js">
-  <link rel="modulepreload" crossorigin href="/assets/localize-C7I82xw5.js">
-  <link rel="modulepreload" crossorigin href="/assets/quizText-YZizirSH.js">
-  <link rel="modulepreload" crossorigin href="/assets/accountUi-CLmLDZ-r.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-DMWQ-OVE.css">
+  <script type="module" crossorigin src="/assets/statistics-Btma2HPl.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-BMckH_MP.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-n9iZu5qZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/Courses-C5PNCumh.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-BGdDJcz2.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-DaSgJuKf.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-0PMnW93A.css">
 </head>
 <body class="bg-background text-foreground min-h-screen font-sans">
 <script>
@@ -38,7 +39,6 @@
         </div>
 
         <div class="flex items-center gap-3">
-            <div id="account-slot"></div>
             <!-- Back to Selection Button -->
             <a href="/selection.html" class="inline-flex h-10 px-4 items-center justify-center rounded-md border border-border bg-background text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                 <i data-lucide="arrow-left" class="h-4 w-4 mr-2"></i>
@@ -62,6 +62,7 @@
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                 </svg>
             </button>
+            <div id="account-slot"></div>
         </div>
     </div>
 </header>
@@ -70,22 +71,12 @@
 
     <!-- PROFILE HEADER -->
     <div class="flex flex-col sm:flex-row sm:items-center gap-6 mb-10 p-6 rounded-xl border border-border bg-card shadow-sm">
-        <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-2xl font-bold">
-            US <!-- User Initials -->
+        <div id="profile-avatar" class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-full bg-primary/10 text-primary text-2xl font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <div class="flex-1">
-            <h2 class="text-2xl font-bold text-foreground">User Student</h2>
-            <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-2 text-sm text-muted-foreground">
-                    <span class="flex items-center gap-1.5">
-                        <i data-lucide="mail" class="h-4 w-4"></i> student@finki.ukim.mk
-                    </span>
-                <span class="flex items-center gap-1.5">
-                        <i data-lucide="graduation-cap" class="h-4 w-4"></i> Software Engineering and Information Systems
-                    </span>
-                <span class="flex items-center gap-1.5">
-                        <i data-lucide="map-pin" class="h-4 w-4"></i> FINKI
-                    </span>
-            </div>
+        <div class="flex-1 min-w-0">
+            <h2 id="profile-name" class="text-2xl font-bold text-foreground truncate" data-language-id="STATISTICS_GUEST">Guest</h2>
+            <p id="profile-detail" class="mt-1 text-sm text-muted-foreground truncate" data-language-id="STATISTICS_GUEST_HINT">History is saved in this browser. Log in to keep it on every device.</p>
         </div>
     </div>
 
