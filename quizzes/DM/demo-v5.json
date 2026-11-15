@@ -1,0 +1,99 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "demo-v5",
+  "revision": 1,
+  "courseId": "DM",
+  "category": "Practical",
+  "title": "Version 1.1 - Select",
+  "description": "This is a demo showcasing selection type added in v1.1.0",
+  "date": "2026-06-10",
+  "duration": 600,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Given the Boolean function\nF(x,y,z)=Σ(0,1,5,7)",
+      "points": 40,
+      "negativePoints": 20,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "1",
+          "textAfter": "",
+          "answer": "1",
+          "choices": ["1", "2", "3", "4"],
+          "mistakes": 0
+        },
+        {"type": "string", "textBefore": "1", "textAfter": "", "answer": "1", "mistakes": 0},
+        {
+          "type": "select",
+          "textBefore": "0",
+          "textAfter": "",
+          "answer": "0",
+          "choices": ["0", "1", "2", "3", "4", "1", "2", "3", "4", "1", "2", "3", "4"],
+          "mistakes": 0
+        },
+        {"type": "string", "textBefore": "0", "textAfter": "", "answer": "0", "mistakes": 0}
+      ],
+      "layout": "ordered",
+      "tableN": {"rows": 2, "columns": 4}
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "FIll in the blanks. [TableV]",
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "The Capital of Germany is: ",
+          "textAfter": "(Answer is test-case insensitive, 1 mistake allowed).",
+          "answer": "Berlin",
+          "choices": ["Berlin", "Paris", "Moscow", "London"],
+          "mistakes": 1
+        },
+        {
+          "type": "select",
+          "textBefore": " The Capital of France is: ",
+          "textAfter": "(Answer is test-case insensitive, 1 mistake allowed). ",
+          "answer": "Paris",
+          "choices": ["Berlin", "Paris", "Moscow", "London"],
+          "mistakes": 1
+        },
+        {
+          "type": "number",
+          "textBefore": "The first 2 digits of PI is: ",
+          "textAfter": "(Strict, answer include '3.'). ",
+          "answer": 3.14,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The first 2 digits of Euler's Number (e) is: ",
+          "textAfter": "(Absolute tolerance of 0.01, answer include '2.').",
+          "answer": 2.71,
+          "tolerance": {"type": "absolute", "value": 0.02}
+        },
+        {
+          "type": "string",
+          "textBefore": "The Capital of Macedonia is: ",
+          "textAfter": "(Answer is test-case insensitive, 1 mistake allowed).",
+          "answer": "Skopje",
+          "mistakes": 1
+        },
+        {
+          "type": "string",
+          "textBefore": "The Capital of Albania is: ",
+          "textAfter": "(This is default rendering since mix doesn't exist for this option).",
+          "answer": "Tirana",
+          "mistakes": 1
+        }
+      ],
+      "layout": "tableVend-One Header Also Possible[col=3]",
+      "mix": ["tableVstart", "tableVmiddle", "tableVend", "tableVoneStart", "tableVoneEnd"]
+    }
+  ]
+}

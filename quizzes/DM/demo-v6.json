@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "demo-v6",
+  "revision": 1,
+  "courseId": "DM",
+  "category": "Practical",
+  "title": "Version 1.2 - D&D, Image Hotspots",
+  "description": "This is a demo containing new Ordering, Drag & Drop and Image Hotspots question types added in v1.2.0 ",
+  "date": "2026-07-05",
+  "duration": 600,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "ordering",
+      "question": "Order the numbers in ascending order.",
+      "points": 20,
+      "negativePoints": 10,
+      "items": ["1", "2", "3", "4", "5", "a", "b", "c", "d", "e", "testingLmao"],
+      "correctOrder": ["1", "2", "3", "4", "5"],
+      "layout": "horizontal"
+    },
+    {
+      "type": "ordering",
+      "question": "Order the numbers in ascending order.",
+      "points": 20,
+      "negativePoints": 20,
+      "items": ["1", "2", "3", "4", "5", "a", "b", "c", "d", "e", "testingLmao"],
+      "correctOrder": ["1", "2", "3", "4", "5"],
+      "layout": "verticalNumbered"
+    },
+    {
+      "type": "matching",
+      "question": "Complete the following statements by dragging the correct terms into the slots.",
+      "points": 20,
+      "negativePoints": 5,
+      "required": true,
+      "slots": [
+        {
+          "textBefore": "In object-oriented programming, a ",
+          "textAfter": " is a blueprint for creating objects.",
+          "answer": "class"
+        },
+        {
+          "textBefore": "The process of hiding internal implementation details is known as ",
+          "textAfter": ".",
+          "answer": "encapsulation"
+        },
+        {
+          "textBefore": "A function inside a class is typically called a ",
+          "textAfter": ".",
+          "answer": "method"
+        }
+      ],
+      "bank": ["class", "encapsulation", "method", "variable", "polymorphism", "inheritance"],
+      "layout": "unordered"
+    },
+    {
+      "type": "image_hotspot",
+      "question": "Label the parts of the human cell by dragging the terms to their correct locations.",
+      "points": 30,
+      "negativePoints": 5,
+      "required": true,
+      "image": "/ananas.jpeg",
+      "hotspots": [{"x": 50, "y": 50, "answer": "Nucleus"}, {"x": 20, "y": 80, "answer": "Mitochondria"}],
+      "bank": ["Nucleus", "Mitochondria", "Golgi Apparatus"]
+    }
+  ]
+}

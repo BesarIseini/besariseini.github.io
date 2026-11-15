@@ -1,0 +1,556 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "ooaid-exam-1",
+  "revision": 1,
+  "courseId": "OOAiD",
+  "category": "Exam",
+  "title": "OOAID Exam 1",
+  "description": "OOAD exam covering state machines, sequence diagrams, collaboration diagrams, and implementation/deployment diagrams.",
+  "date": "2026-09-14",
+  "duration": 2700,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "Given is the following state diagram. Which of the following statements are correct?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-1.png",
+          "alt": "ATM state diagram (Idle / CardCheck / Cancellation / Order / Vending)"
+        }
+      ],
+      "points": 20,
+      "options": [
+        {"text": "\"check card\" is an activity", "correct": true},
+        {"text": "\"check card\" is an event", "correct": false},
+        {
+          "text": "The Idle state becomes active if the user takes the change and coffee from the machine.",
+          "correct": false
+        },
+        {
+          "text": "If Order is active and outstanding ≤ 0, then the change and coffee are ejected. Then a transition to Idle occurs.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is true about collaboration diagrams:",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"text": "The destruction of an object in a collaboration diagram cannot be shown", "correct": false},
+        {
+          "text": "The destruction of an object in a collaboration diagram can be shown by writing a comment",
+          "correct": false
+        },
+        {
+          "text": "The destruction of an object in a collaboration diagram can be shown by writing a comment and noting the time of destruction",
+          "correct": false
+        },
+        {
+          "text": "The destruction of an object in a collaboration diagram can be shown by crossing out the object",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "A company has a central server on which a system for managing cinema ticket sales is installed. The database is installed on a separate server. Computers placed throughout all cinema halls communicate with the central server, with only one computer per hall. The computers have an application installed that communicates with the central server over the internet. Barcode readers are connected to the computers, used to scan entry tickets. Additionally, there are computers running a web application, which communicates with the central server, from which users purchase tickets.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-3.png",
+          "alt": "deployment diagram, cinema ticket-selling system (Central Server / PC / DB / barcode scanner)"
+        }
+      ],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "1 - ",
+          "textAfter": "<br>",
+          "answer": "<<table>> database",
+          "choices": ["<<table>> database", "<<file>> database", "<<executable>> database", "database server"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "2 - ",
+          "textAfter": "<br>",
+          "answer": "database",
+          "choices": ["database", "web application", "System", "Application"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "3 - ",
+          "textAfter": "<br>",
+          "answer": "<<internet>>",
+          "choices": ["<<internet>>", "<<LAN>>", "<<serial>>", "<<usb>>"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "4 - ",
+          "textAfter": "<br>",
+          "answer": "1",
+          "choices": ["1", "1..*", "0..1", "*"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "5 - ",
+          "textAfter": "<br>",
+          "answer": "web application",
+          "choices": ["web application", "database", "System", "Application"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "6 - ",
+          "textAfter": "",
+          "answer": "1..*",
+          "choices": ["1..*", "1", "0..1", "*"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Circle the methods that class C contains according to the following sequence diagram (a1 and a2 are objects of class A, b1 and b2 are objects of class B, and c1 is an object of class C).",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-4.png",
+          "alt": "sequence diagram, a1:A / b1:B / a2:A / b2:B / c1:C"
+        }
+      ],
+      "points": 20,
+      "options": [
+        {"text": "z():void", "correct": true},
+        {"text": "y(int):void", "correct": false},
+        {"text": "x():String", "correct": false},
+        {"text": "x():void", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is true about transition labels (<trigger>[<guard>]/<effect>) in state diagrams",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"text": "<trigger> refers to the name of the transition", "correct": false},
+        {
+          "text": "<guard> is a logical condition that must be false for the transition to occur",
+          "correct": false
+        },
+        {
+          "text": "<trigger> refers to an event that initiates the transition from one state to another",
+          "correct": true
+        },
+        {
+          "text": "<effect> is a logical condition that indicates what the next state will be after the transition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Assume that the following sequence of events occurs in the system (in the order listed): E1, S, E3, S, E2.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-6.png",
+          "alt": "state machine trace (states A/B/C, events E1/E2/E3/S, X value)"
+        }
+      ],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "After this sequence of events finishes, the active state will be ",
+          "textAfter": ". ",
+          "answer": "B",
+          "choices": ["A", "B", "C"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "After this sequence of events finishes, X will have the value ",
+          "textAfter": ".",
+          "answer": "26",
+          "choices": ["12", "24", "25", "26", "28"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "The structure of a sequence diagram is shown for part of the responsibilities of professors within a faculty. Namely, the professor is responsible for grading tests for certain courses. The professor takes all the tests. For each test, they take all the tasks and then assign points and a grade for each task separately.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-7.png",
+          "alt": "collaboration diagram, Professor/Test/Task grading flow"
+        }
+      ],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "1. ",
+          "textAfter": "<br>",
+          "answer": "getTests(subjects: *char)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "2. ",
+          "textAfter": "<br>",
+          "answer": "return tests",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "3. ",
+          "textAfter": "<br>",
+          "answer": "*[for each test] getTasks()",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "4. ",
+          "textAfter": "<br>",
+          "answer": "*[for each task] grade(score: float, grade: int)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "5. ",
+          "textAfter": "<br>",
+          "answer": "return tasks",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "6. ",
+          "textAfter": "<br>",
+          "answer": "return tasks",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "7. ",
+          "textAfter": "",
+          "answer": "*[for each task] test(priority: int, passed: bool)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "For the given sequence diagram, circle what is correct:",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {"type": "image", "src": "/images/ooaidE1-9.png", "alt": "sequence diagram A/B/C, msg1/msg2/msg3"}
+      ],
+      "points": 10,
+      "options": [
+        {"text": "Message msg2 is received before message msg1 is sent", "correct": false},
+        {"text": "Message msg3 is sent after message msg2 is received", "correct": true},
+        {
+          "text": "The following class diagram is consistent with the given sequence diagram: class A has no methods; class B has +msg2(), +msg3(); class C has no methods; +msg1() is shown separately (it isn't clear which class it belongs to).",
+          "correct": false
+        },
+        {
+          "text": "The following class diagram is consistent with the given sequence diagram: class A has no methods; class B has +msg1(); class C has +msg2(), +msg3().",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "The structure of a collaboration diagram is shown for part of the responsibilities of testers within a software company. Namely, the tester is responsible for evaluating the tasks for the projects they are responsible for. The tester takes all the projects they are responsible for. For each project, they take all the tasks that were assigned to some programmer and then evaluate each task separately by assigning it a priority and whether it passed the test.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/ooaidE1-10.png",
+          "alt": "collaboration diagram, Tester/Project/Task grading flow"
+        }
+      ],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "1. ",
+          "textAfter": "<br>",
+          "answer": "getProjects(clientName: *char)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "2. ",
+          "textAfter": "<br>",
+          "answer": "return projects",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "3. ",
+          "textAfter": "<br>",
+          "answer": "*[for each project] getTasks()",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "4. ",
+          "textAfter": "<br>",
+          "answer": "*[for each task] test(priority: int, passed: bool)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "5. ",
+          "textAfter": "<br>",
+          "answer": "return tasks",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "6. ",
+          "textAfter": "<br>",
+          "answer": "return tasks",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "7. ",
+          "textAfter": "",
+          "answer": "*[for each task] test(priority: int, passed: bool)",
+          "choices": [
+            "getTests(subjects: *char)",
+            "getProjects(clientName: *char)",
+            "return tests",
+            "return projects",
+            "*[for each test] getTasks()",
+            "*[for each project] getTasks()",
+            "*[for each task] grade(score: float, grade: int)",
+            "*[for each task] test(priority: int, passed: bool)",
+            "return tasks"
+          ],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "single_choice",
+      "question": "The image shows an implementation diagram for an application used in a store. If the application needs to have one to two printers, at most one scanner, and at most 5 barcode readers, choose which of the images is correct.",
+      "content": [{"type": "text", "text": "Select one:"}],
+      "points": 20,
+      "negativePoints": 10,
+      "options": [
+        {"image": "/images/ooaidE1-11a.png", "correct": false},
+        {"image": "/images/ooaidE1-11b.png", "correct": false},
+        {"image": "/images/ooaidE1-11c.png", "correct": false},
+        {"image": "/images/ooaidE1-11d.png", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following sequence diagrams describes the following scenario: The user sends the token to the server, but does not expect to receive a response. The server processes the user's request.",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 20,
+      "options": [
+        {"image": "/images/ooaidE1-12a.png", "correct": true},
+        {"image": "/images/ooaidE1-12b.png", "correct": false},
+        {"image": "/images/ooaidE1-12c.png", "correct": false},
+        {"image": "/images/ooaidE1-12d.png", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following is true about sequence diagrams:",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {
+          "text": "An object must not be created during the execution of the sequence diagram",
+          "correct": false
+        },
+        {
+          "text": "The order in which objects are placed must be preserved from left to right",
+          "correct": false
+        },
+        {
+          "text": "One of the objects can be destroyed during the execution of the sequence diagram",
+          "correct": true
+        },
+        {
+          "text": "Objects that participate in the interaction must already be created beforehand and exist in memory",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "flag": ""
   },
   "translation": {
-    "LOGO": "SeisHub",
+    "LOGO": "BETA SeisHub",
 
     "NAV_STATISTICS": "Statistikat",
 
@@ -309,6 +309,27 @@
     "QTYPE_ABBR_MATCHING": "Tërhiq",
     "QTYPE_ABBR_IMAGE_HOTSPOT": "Pika",
     "QTYPE_ABBR_GROUP": "Grup",
-    "QTYPE_ABBR_CODE_COMPLETION": "Kod"
+    "QTYPE_ABBR_CODE_COMPLETION": "Kod",
+
+    "ACCOUNT_TITLE": "Llogaria",
+    "ACCOUNT_CARD_TITLE": "Sinkronizimi i historisë",
+    "ACCOUNT_CARD_DESCRIPTION": "Opsionale. Kuizet funksionojnë edhe pa llogari.",
+    "ACCOUNT_LOGIN": "Hyrje",
+    "ACCOUNT_LOGIN_DISCORD": "Hyrje me Discord",
+    "ACCOUNT_LOGOUT": "Dalje",
+    "ACCOUNT_LOGGED_OUT_HINT": "Hyni me Discord për ta pasur historinë e kuizeve në çdo pajisje. Mund të hyjnë vetëm anëtarët e verifikuar të serverit FINKI në Discord.",
+    "ACCOUNT_LOGGED_IN_HINT": "Historia e kuizeve ruhet në llogarinë tuaj. Dalja e heq nga ky shfletues, por jo nga llogaria.",
+    "ACCOUNT_DELETE": "Fshi llogarinë",
+    "ACCOUNT_DELETE_CONFIRM": "Klikoni përsëri për të fshirë gjithçka nga serveri",
+    "ACCOUNT_DELETED": "Llogaria u fshi. Historia në këtë shfletues u ruajt.",
+    "ACCOUNT_LOGGED_OUT": "Keni dalë nga llogaria.",
+    "ACCOUNT_WELCOME": "Keni hyrë si {name}.",
+    "ACCOUNT_NOT_MEMBER": "Hyrja është vetëm për anëtarët e serverit FINKI në Discord.",
+    "ACCOUNT_NOT_VERIFIED": "Së pari verifikohuni në serverin FINKI në Discord, pastaj hyni përsëri.",
+    "ACCOUNT_LOGIN_CANCELLED": "Hyrja u anulua.",
+    "ACCOUNT_UNAVAILABLE": "Llogaritë nuk janë të disponueshme tani. Provoni më vonë.",
+    "ACCOUNT_LOGIN_FAILED": "Hyrja dështoi. Provoni përsëri.",
+    "ACCOUNT_SESSION_EXPIRED": "Jeni nxjerrë nga llogaria. Hyni përsëri për të vazhduar sinkronizimin.",
+    "ACCOUNT_MEMBERSHIP_LOST": "Nuk jeni më anëtar i verifikuar i serverit FINKI në Discord, prandaj jeni nxjerrë nga llogaria."
   }
 }

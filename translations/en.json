@@ -5,7 +5,7 @@
     "flag": ""
   },
   "translation": {
-    "LOGO": "SeisHub",
+    "LOGO": "BETA SeisHub",
 
     "NAV_STATISTICS": "Statistics",
     "SELECTION_TITLE": "My Quizzes",
@@ -302,6 +302,27 @@
     "QTYPE_ABBR_MATCHING": "D&D",
     "QTYPE_ABBR_IMAGE_HOTSPOT": "IH",
     "QTYPE_ABBR_GROUP": "GROUP",
-    "QTYPE_ABBR_CODE_COMPLETION": "CODE"
+    "QTYPE_ABBR_CODE_COMPLETION": "CODE",
+
+    "ACCOUNT_TITLE": "Account",
+    "ACCOUNT_CARD_TITLE": "Sync your history",
+    "ACCOUNT_CARD_DESCRIPTION": "Optional. Quizzes work without an account.",
+    "ACCOUNT_LOGIN": "Log in",
+    "ACCOUNT_LOGIN_DISCORD": "Log in with Discord",
+    "ACCOUNT_LOGOUT": "Log out",
+    "ACCOUNT_LOGGED_OUT_HINT": "Log in with Discord to keep your quiz history on every device. Only verified members of the FINKI Discord server can log in.",
+    "ACCOUNT_LOGGED_IN_HINT": "Your quiz history is saved to your account. Logging out removes it from this browser, not from your account.",
+    "ACCOUNT_DELETE": "Delete account",
+    "ACCOUNT_DELETE_CONFIRM": "Click again to delete everything on the server",
+    "ACCOUNT_DELETED": "Account deleted. History in this browser was kept.",
+    "ACCOUNT_LOGGED_OUT": "Logged out.",
+    "ACCOUNT_WELCOME": "Logged in as {name}.",
+    "ACCOUNT_NOT_MEMBER": "Login is only for members of the FINKI Discord server.",
+    "ACCOUNT_NOT_VERIFIED": "Verify yourself in the FINKI Discord server first, then log in again.",
+    "ACCOUNT_LOGIN_CANCELLED": "Login cancelled.",
+    "ACCOUNT_UNAVAILABLE": "Accounts are unavailable right now. Try again later.",
+    "ACCOUNT_LOGIN_FAILED": "Login failed. Try again.",
+    "ACCOUNT_SESSION_EXPIRED": "You were logged out. Log in again to keep syncing.",
+    "ACCOUNT_MEMBERSHIP_LOST": "You are no longer a verified member of the FINKI Discord server, so you were logged out."
   }
 }

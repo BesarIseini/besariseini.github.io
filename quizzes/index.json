@@ -1,0 +1,389 @@
+{
+  "formatVersion": 1,
+  "quizzes": [
+    {
+      "key": "aok-exam-1",
+      "path": "quizzes/AOK/aok-exam-1.json",
+      "revision": 1,
+      "courseId": "AOK",
+      "category": "Exam",
+      "title": "AOK Exam 1",
+      "description": "This is a theory heavy AOK quiz.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-28",
+      "duration": 600,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "AOK Exam 1"
+      ],
+      "questionCount": 14,
+      "estimatedMinutes": 7
+    },
+    {
+      "key": "aok-exam-2",
+      "path": "quizzes/AOK/aok-exam-2.json",
+      "revision": 1,
+      "courseId": "AOK",
+      "category": "Exam",
+      "title": "AOK Exam 2",
+      "description": "AOK June Exam questions covering performance/CPI, IEEE754, two's complement, MIPS procedure calls, virtual memory, cache memory, branch prediction, and MIPS assembly.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-28",
+      "duration": 7200,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "AOK Exam 2"
+      ],
+      "questionCount": 11,
+      "estimatedMinutes": 6
+    },
+    {
+      "key": "aok-exam-3",
+      "path": "quizzes/AOK/aok-exam-3.json",
+      "revision": 1,
+      "courseId": "AOK",
+      "category": "Exam",
+      "title": "AOK Exam 3",
+      "description": "AOK June Exam 2 — CPI, IEEE754, two's complement, JAL procedure, direct-mapped cache (37-57), MIPS assembly memory, SM/DC/RC, branch prediction (nested loop), and MIPS minimum finder.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-28",
+      "duration": 7200,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "AOK Exam 3"
+      ],
+      "questionCount": 12,
+      "estimatedMinutes": 6
+    },
+    {
+      "key": "aok-lab-1",
+      "path": "quizzes/AOK/aok-lab-1.json",
+      "revision": 1,
+      "courseId": "AOK",
+      "category": "Laboratory",
+      "title": "AOK MIPS Code",
+      "description": "MIPS code completion exercises: arithmetic expressions, bit manipulation, if-else, loops, and I/O.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-28",
+      "duration": 3600,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "Verified",
+        "MIPS"
+      ],
+      "legacyTitles": [
+        "AOK MIPS Code"
+      ],
+      "questionCount": 5,
+      "estimatedMinutes": 3
+    },
+    {
+      "key": "demo-exam-1",
+      "path": "quizzes/DM/demo-exam-1.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Exam",
+      "title": "Demo Quiz",
+      "description": "This is a demo exam Quiz.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-05",
+      "duration": 1200,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Demo Quiz"
+      ],
+      "questionCount": 19,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "demo-v1",
+      "path": "quizzes/DM/demo-v1.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": {
+        "en": "Demo Quiz",
+        "mk": "Демо Квиз",
+        "sq": "Kuiz Demo"
+      },
+      "description": {
+        "en": "This is a demo quiz. Briefly explains all the question types available in SeisHub.",
+        "mk": "Ова е демо квиз. Накратко ги објаснува сите типови на прашања достапни во SeisHub.",
+        "sq": "Ky është një kuiz demo. Shpjegon shkurtimisht të gjitha llojet e pyetjeve që ofron SeisHub."
+      },
+      "languages": [
+        "en",
+        "mk",
+        "sq"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-03-02",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "QUIZ_TITLE_1",
+        "Demo Quiz",
+        "Демо Квиз",
+        "Kuiz Demo"
+      ],
+      "questionCount": 9,
+      "estimatedMinutes": 5
+    },
+    {
+      "key": "demo-v2",
+      "path": "quizzes/DM/demo-v2.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Tables & Code Snippets",
+      "description": "This is a demo showcasing different tables and code snippets that were added in BETA 10. Refined BETA 11.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-03-02",
+      "duration": 30,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Tables & Code Snippets"
+      ],
+      "questionCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "key": "demo-v3",
+      "path": "quizzes/DM/demo-v3.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Fill In The Blanks Rework",
+      "description": "This is a demo containing FILL IN THE BLANKS Rework Content. Added in BETA 10.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-03-02",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Fill In The Blanks Rework"
+      ],
+      "questionCount": 13,
+      "estimatedMinutes": 7
+    },
+    {
+      "key": "demo-v4",
+      "path": "quizzes/DM/demo-v4.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Question Dependencies [Deprecated]",
+      "description": "This is a demo showcasing dependent and independent questions. Added in BETA 10.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-03-02",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "Question Dependencies [Deprecated]"
+      ],
+      "questionCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "key": "demo-v5",
+      "path": "quizzes/DM/demo-v5.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Version 1.1 - Select",
+      "description": "This is a demo showcasing selection type added in v1.1.0",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-06-10",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Version 1.1 - Select"
+      ],
+      "questionCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "key": "demo-v6",
+      "path": "quizzes/DM/demo-v6.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Version 1.2 - D&D, Image Hotspots",
+      "description": "This is a demo containing new Ordering, Drag & Drop and Image Hotspots question types added in v1.2.0 ",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-07-05",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Version 1.2 - D&D, Image Hotspots"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 2
+    },
+    {
+      "key": "demo-v7",
+      "path": "quizzes/DM/demo-v7.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Version 1.3 - Grouped and Code Completion Questions",
+      "description": "This is a demo showcasing Group and Code Completion question types added in v1.3.0 ",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-07-05",
+      "duration": 600,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Version 1.3 - Grouped and Code Completion Questions"
+      ],
+      "questionCount": 3,
+      "estimatedMinutes": 13
+    },
+    {
+      "key": "demo-v8",
+      "path": "quizzes/DM/demo-v8.json",
+      "revision": 1,
+      "courseId": "DM",
+      "category": "Practical",
+      "title": "Release 2.0",
+      "description": "This is a demo showcasing different tables and code snippets that were added in BETA 10. Refined BETA 11.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-03-02",
+      "duration": 3000,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Release 2.0"
+      ],
+      "questionCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "key": "ooaid-exam-1",
+      "path": "quizzes/OOAiD/ooaid-exam-1.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "category": "Exam",
+      "title": "OOAID Exam 1",
+      "description": "OOAD exam covering state machines, sequence diagrams, collaboration diagrams, and implementation/deployment diagrams.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-09-14",
+      "duration": 2700,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "OOAID Exam 1"
+      ],
+      "questionCount": 12,
+      "estimatedMinutes": 6
+    },
+    {
+      "key": "ooaid-exam-2",
+      "path": "quizzes/OOAiD/ooaid-exam-2.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "category": "Exam",
+      "title": "Use Case Diagrams",
+      "description": "Practice quiz on use case diagrams: actors, generalization, <<include>>, and <<extend>>.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-09-14",
+      "duration": 1800,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "Use Case Diagrams"
+      ],
+      "questionCount": 10,
+      "estimatedMinutes": 5
+    },
+    {
+      "key": "ooaid-exam-3",
+      "path": "quizzes/OOAiD/ooaid-exam-3.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "category": "Exam",
+      "title": "OOAD Exam — Use Case & Class Diagrams",
+      "description": "Combined exam covering use case diagrams (extend/include semantics, actor generalization, diagram analysis, actor-communication counting, modeling exercises) and class diagram fundamentals (navigability, composition/aggregation, data types, multiplicities).",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-09-14",
+      "duration": 3000,
+      "timed": true,
+      "shuffleQuestions": false,
+      "tags": [],
+      "legacyTitles": [
+        "OOAD Exam — Use Case & Class Diagrams"
+      ],
+      "questionCount": 19,
+      "estimatedMinutes": 10
+    }
+  ]
+}

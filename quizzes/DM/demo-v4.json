@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "demo-v4",
+  "revision": 1,
+  "courseId": "DM",
+  "category": "Practical",
+  "title": "Question Dependencies [Deprecated]",
+  "description": "This is a demo showcasing dependent and independent questions. Added in BETA 10.",
+  "date": "2026-03-02",
+  "duration": 600,
+  "timed": true,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "id": 0,
+      "question": "Given the Boolean function\nF(x,y,z)=Σ(0,1,5,7)",
+      "content": [{"type": "text", "text": "Fill in the Karnaugh map by placing 1s and 0s in the correct cells."}],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "1", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "1", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "0", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "0", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "0", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "1", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "1", "mistakes": 0},
+        {"type": "string", "textBefore": "", "textAfter": "", "answer": "0", "mistakes": 0}
+      ],
+      "layout": "tableN|yz[col=4];00,01,11,10|x[row=2];0,1",
+      "tableN": {"rows": 2, "columns": 4}
+    },
+    {
+      "type": "multiple_choice",
+      "dependsOn": 0,
+      "question": "From the Karnaugh map in Question 1, identify the essential prime implicants.",
+      "points": 60,
+      "warnings": [
+        {"message": "This is a Multiple Choice Type", "placement": "top", "format": ["normal"]},
+        {
+          "message": "This Question has Negative Points!",
+          "placement": "bottom",
+          "format": ["abstract", "custom"],
+          "style": {
+            "visual": {"background": "blue"},
+            "text": {"color": "white", "textAlign": "center", "bold": true, "fontSize": 15},
+            "border": {"borderRadius": 15, "borderColor": "black", "borderWidth": 2, "borderStyle": "dashed"}
+          }
+        }
+      ],
+      "options": [
+        {"text": "x′y′", "correct": true},
+        {"text": "xz", "correct": true},
+        {"text": "y′", "correct": false},
+        {"text": "xy", "correct": false},
+        {"text": "x′z", "correct": false},
+        {"text": "yz", "correct": false},
+        {"text": "x+z", "correct": false},
+        {"text": "x′y", "correct": false}
+      ]
+    }
+  ]
+}

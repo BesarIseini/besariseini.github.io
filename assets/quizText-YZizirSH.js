@@ -1,0 +1,1 @@
+import{e as t}from"./sync-DkshvqmW.js";import{l as a}from"./localize-C7I82xw5.js";function r(e){return a(e.title,t(),e.defaultLanguage)}function o(e){return a(e.description,t(),e.defaultLanguage)}export{o as a,r as q};

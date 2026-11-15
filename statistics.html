@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile & Statistics - SeisHub</title>
+    <title>Profile & Statistics - BETA SeisHub</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="/assets/statistics-Vkn7k5XY.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/language-B6ddr21c.js">
-  <link rel="modulepreload" crossorigin href="/assets/quizText-DqMymLy5.js">
-  <link rel="modulepreload" crossorigin href="/assets/Quizzes-p-ut6us-.js">
-  <link rel="stylesheet" crossorigin href="/assets/language-DujzZbQn.css">
+  <script type="module" crossorigin src="/assets/statistics-CIUrfPGu.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-DkshvqmW.js">
+  <link rel="modulepreload" crossorigin href="/assets/localize-C7I82xw5.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-YZizirSH.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-CLmLDZ-r.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-DMWQ-OVE.css">
 </head>
 <body class="bg-background text-foreground min-h-screen font-sans">
 <script>
@@ -37,6 +38,7 @@
         </div>
 
         <div class="flex items-center gap-3">
+            <div id="account-slot"></div>
             <!-- Back to Selection Button -->
             <a href="/selection.html" class="inline-flex h-10 px-4 items-center justify-center rounded-md border border-border bg-background text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                 <i data-lucide="arrow-left" class="h-4 w-4 mr-2"></i>

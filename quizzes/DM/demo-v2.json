@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "demo-v2",
+  "revision": 1,
+  "courseId": "DM",
+  "category": "Practical",
+  "title": "Tables & Code Snippets",
+  "description": "This is a demo showcasing different tables and code snippets that were added in BETA 10. Refined BETA 11.",
+  "date": "2026-03-02",
+  "duration": 30,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "What is 5 + 5?",
+      "content": [
+        {"type": "text", "text": "This is the question description."},
+        {
+          "type": "table",
+          "table": "[th][col=2] Header Col Size 2, Col 1; r2 c1, r2 c2, r2 c3;[col=3] r3 col size 3"
+        }
+      ],
+      "points": 10,
+      "negativePoints": 10,
+      "warnings": [{"message": "This is a Single Choice Type", "placement": "top", "format": ["normal"]}],
+      "options": [
+        {"text": "6", "correct": false},
+        {"text": "8", "correct": false},
+        {"text": "10", "correct": true},
+        {"text": "12", "correct": false}
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is this?",
+      "content": [
+        {"type": "text", "text": "Select the correct option that describes what this is."},
+        {"type": "image", "src": "/ananas.jpeg", "alt": "Ananas Fruit"},
+        {
+          "type": "code",
+          "code": "int main() {\n    std::cout << \"Dynamic C++ block!\" << std::endl;\n    return 0;\n}",
+          "language": "C++"
+        },
+        {
+          "type": "code",
+          "code": "<div class=\"container\">\n    <h1>Hello World</h1>\n</div>",
+          "language": "HTML"
+        }
+      ],
+      "points": 10,
+      "negativePoints": 10,
+      "warnings": [
+        {
+          "message": "This Question has Negative Points!",
+          "placement": "bottom",
+          "format": ["abstract", "custom"],
+          "style": {
+            "visual": {"background": "red"},
+            "text": {"color": "white", "textAlign": "center", "bold": true, "fontSize": 15},
+            "border": {"borderRadius": 15, "borderColor": "black", "borderWidth": 2, "borderStyle": "dashed"}
+          }
+        },
+        {"message": "This is a Single Choice Type", "placement": "top", "format": ["normal"]}
+      ],
+      "options": [
+        {"text": "Pineapple", "correct": true},
+        {"text": "Apple", "correct": false},
+        {"text": "Coconut", "correct": false},
+        {"text": "Pear", "correct": false}
+      ]
+    }
+  ]
+}

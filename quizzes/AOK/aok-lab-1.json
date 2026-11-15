@@ -1,0 +1,299 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aok-lab-1",
+  "revision": 1,
+  "courseId": "AOK",
+  "category": "Laboratory",
+  "title": "AOK MIPS Code",
+  "description": "MIPS code completion exercises: arithmetic expressions, bit manipulation, if-else, loops, and I/O.",
+  "date": "2026-06-28",
+  "duration": 3600,
+  "timed": false,
+  "shuffleQuestions": false,
+  "tags": ["Verified", "MIPS"],
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Complete the assembly program that computes the following expression: a = b*c + d/v - 5.",
+      "content": [
+        {
+          "type": "code",
+          "code": "# $s0 = a\n# $s1 = b\n# $s2 = c\n# $s3 = d\n# $s4 = v\n# $s5 = 5\n\nmult $s1, ___         # b*c\nmflo $t0              # $t0 = b*c\n\ndiv $s3, $s4\nmflo ___              # $t1 = d/v\n\nadd $s0, ___, $t1    # $s0 = b*c + d/v\n\n___ $s0, $s0, -5     # $s0 = b*c + d/v - 5",
+          "language": "MIPS"
+        }
+      ],
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "mult $s1, ",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# b*c<br>",
+          "answer": "$s2",
+          "choices": ["$s0", "$s1", "$s2", "$s3", "$s4", "$s5", "$t0", "$t1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "mflo ",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# $t0 = b*c<br>div $s3, $s4<br>",
+          "answer": "$t0",
+          "choices": ["$s0", "$t0", "$t1", "$t2"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "mflo ",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# $t1 = d/v<br>",
+          "answer": "$t1",
+          "choices": ["$s0", "$t0", "$t1", "$t2"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "add $s0, ",
+          "textAfter": ", $t1&nbsp;&nbsp;&nbsp;&nbsp;# $s0 = b*c + d/v<br>",
+          "answer": "$t0",
+          "choices": ["$s0", "$s1", "$t0", "$t1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": " $s0, $s0, -5&nbsp;&nbsp;&nbsp;&nbsp;# $s0 = b*c + d/v - 5",
+          "answer": "addi",
+          "choices": ["add", "addi", "sub", "subi", "addu"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Complete the assembly program that places the first (most significant) 8 bits of $s0 as the last (least significant) 8 bits of $s1.",
+      "content": [
+        {
+          "type": "code",
+          "code": "srl $s0, ___, ___      # shift $s0 right by 24 to bring top 8 bits to bottom\n\nandi $s1, ___, 0xffffff00   # clear bottom 8 bits of $s1\n\n___ $s1, $s1, ___           # place shifted bits into bottom 8 of $s1",
+          "language": "MIPS"
+        }
+      ],
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "srl $s0, ",
+          "textAfter": ", ",
+          "answer": "$s0",
+          "choices": ["$s0", "$s1", "$t0", "$t1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# shift right by 24<br>",
+          "answer": "24",
+          "choices": ["8", "16", "24", "32"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "andi $s1, ",
+          "textAfter": ", 0xffffff00&nbsp;&nbsp;&nbsp;&nbsp;# clear bottom 8 bits<br>",
+          "answer": "$s1",
+          "choices": ["$s0", "$s1", "$t0", "$t1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": " $s1, $s1, ",
+          "answer": "or",
+          "choices": ["and", "or", "xor", "add", "nor"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# combine",
+          "answer": "$s0",
+          "choices": ["$s0", "$s1", "$t0", "$t1"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Complete the assembly program that is equivalent to the following C++ code. Variable a is assigned register $s0, variable b is assigned register $s1.",
+      "content": [
+        {
+          "type": "code",
+          "code": "a = 103;\nif (a > 100) {\n    b = a - 100;\n} else {\n    b = a;\n}",
+          "language": "C++"
+        },
+        {
+          "type": "code",
+          "code": "addi $s0, $zero, 103\naddi $t0, $zero, 100\n\nble $s0, $t0, ___    # if a <= 100, go to else\n\naddi $s1, $s0, -100  # b = a - 100\nj ___                 # skip else\n\nelse:\n    addi ___, $s0, 0  # b = a\n\nnextinst:",
+          "language": "MIPS"
+        }
+      ],
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "ble $s0, $t0, ",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# if a <= 100, go to else<br>addi $s1, $s0, -100<br>",
+          "answer": "else",
+          "choices": ["else", "nextinst", "loop", "end", "krajCiklus"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "j ",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# skip else block<br><br>else:<br>",
+          "answer": "nextinst",
+          "choices": ["else", "nextinst", "loop", "end"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "addi ",
+          "textAfter": ", $s0, 0&nbsp;&nbsp;&nbsp;&nbsp;# b = a",
+          "answer": "$s1",
+          "choices": ["$s0", "$s1", "$t0", "$t1"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Complete the assembly program that computes the sum of the first 10 numbers and stores it in $s3.",
+      "content": [
+        {
+          "type": "code",
+          "code": "add $t0, $zero, 10   # loop limit\nadd $t1, $zero, 1    # counter starts at 1\n\nciklus:\n    bgt ___, $t0, ___  # if counter > 10, exit loop\n\n    add $s3, ___, $t1  # sum += counter\n\n    ___ $t1, $t1, 1   # counter++\n\n    j ciklus\n\nkrajCiklus:",
+          "language": "MIPS"
+        }
+      ],
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "bgt ",
+          "textAfter": ", $t0, ",
+          "answer": "$t1",
+          "choices": ["$t0", "$t1", "$s3", "$zero"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": "&nbsp;&nbsp;&nbsp;&nbsp;# exit<br>",
+          "answer": "krajCiklus",
+          "choices": ["ciklus", "krajCiklus", "end", "loop"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "add $s3, ",
+          "textAfter": ", $t1&nbsp;&nbsp;&nbsp;&nbsp;# sum += counter<br>",
+          "answer": "$s3",
+          "choices": ["$s3", "$t0", "$t1", "$zero"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": " $t1, $t1, 1&nbsp;&nbsp;&nbsp;&nbsp;# counter++",
+          "answer": "addi",
+          "choices": ["add", "addi", "sub", "subi"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Complete the assembly program that reads from standard input until 0 is entered, then prints the minimum entered number to standard output.",
+      "content": [
+        {
+          "type": "code",
+          "code": ".data\nnajmalBroj: .asciiz \"Najmaliot broj e: \"\n\n.text\n# $s0 = najmaliot broj\n# $t0 = momentalno vneseniot broj\naddi $t0, $zero, -1        # inicijalizacija na $t0\naddi $s0, $zero, 2147483647  # max INT_32 value\n\nloop:\n    li $v0, 5              # citanje broj od stdin\n    syscall\n\n    add $t0, $zero, $v0    # $t0 = vnesen_broj\n    beq $t0, $zero, endLoop  # ako e vneseno 0, kraj\n\n    blt $t0, $s0, pomal    # vneseniot broj e pomal od min\n    j loop\n\npomal:\n    add $s0, $zero, $t0    # azuriraj min broj\n    j loop\n\nendLoop:\n    # pechati labela\n    la $a0, najmalBroj\n    li $v0, 4\n    syscall\n    # pechati min broj (int)\n    add $a0, $zero, $s0\n    li $v0, 1\n    syscall",
+          "language": "MIPS"
+        }
+      ],
+      "points": 30,
+      "negativePoints": 15,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "The data directive used for the string is ",
+          "textAfter": ".<br>",
+          "answer": ".asciiz",
+          "choices": [".asciiz", ".word", ".byte", ".space", ".ascii"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "The instruction used to initialize $t0 is ",
+          "textAfter": " $t0, $zero, -1.<br>",
+          "answer": "addi",
+          "choices": ["addi", "add", "li", "lw", "move"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "To read an integer from stdin, load $v0 with syscall code ",
+          "textAfter": " before syscall.<br>",
+          "answer": "5",
+          "choices": ["1", "4", "5", "10", "11"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "The branch instruction to check if 0 was entered is ",
+          "textAfter": " $t0, $zero, endLoop.<br>",
+          "answer": "beq",
+          "choices": ["beq", "bne", "blt", "bgt", "j"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "In pomal, to update the minimum: add $s0, ",
+          "textAfter": ", $t0.<br>",
+          "answer": "$zero",
+          "choices": ["$zero", "$s0", "$t0", "$s1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "To load the address of the label string: la ",
+          "textAfter": ", najmalBroj.<br>",
+          "answer": "$a0",
+          "choices": ["$a0", "$v0", "$t0", "$s0", "$a1"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "To print an integer, load $v0 with syscall code ",
+          "textAfter": " before syscall.",
+          "answer": "1",
+          "choices": ["1", "4", "5", "10", "11"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aok-exam-2",
+  "revision": 1,
+  "courseId": "AOK",
+  "category": "Exam",
+  "title": "AOK Exam 2",
+  "description": "AOK June Exam questions covering performance/CPI, IEEE754, two's complement, MIPS procedure calls, virtual memory, cache memory, branch prediction, and MIPS assembly.",
+  "date": "2026-06-28",
+  "duration": 7200,
+  "timed": false,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "question": "A program consists of 1,800,000,000 instructions. It is executed in 1.0 second on a computer with a frequency of 1800 MHz. The program has",
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " clock cycles (enter the whole number without spaces).<br><br>",
+          "answer": 1800000000,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The CPI of the processor is ",
+          "textAfter": ".<br><br>",
+          "answer": 1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "If the clock speed is increased by 6 times and the CPI is increased by 3 times, the same program will execute in ",
+          "textAfter": " seconds.",
+          "answer": 0.5,
+          "tolerance": {"type": "absolute", "value": 0.01}
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "In the process of representing the number 37.5 in IEEE754 single precision format, it is first represented in binary format, where the integer part equals",
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", and the fractional part (without entering the decimal point) equals ",
+          "answer": "100101",
+          "mistakes": 0
+        },
+        {"type": "string", "textBefore": "", "textAfter": ".<br><br>", "answer": "1", "mistakes": 0},
+        {
+          "type": "string",
+          "textBefore": "According to the IEEE754 standard the sign field will have binary value ",
+          "textAfter": ", the mantissa field will have binary value ",
+          "answer": "0",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", and the exponent field will have binary value ",
+          "answer": "00101100000000000000000",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ". If these values are placed into a single binary string according to the required format, it will have the value ",
+          "answer": "10000100",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ".",
+          "answer": "01000010000101100000000000000000",
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Answer the following using the RC system for representing binary numbers, where n=8 (number of bits).",
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "The result of the operation 11010110 - 00101011 is ",
+          "textAfter": " (binary). There ",
+          "answer": "10101011",
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": " overflow.<br>",
+          "answer": "is no",
+          "choices": ["is", "is no"],
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "The result of the operation 11010110 + 00101011 is ",
+          "textAfter": " (binary). There ",
+          "answer": "00000001",
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": " overflow.<br>",
+          "answer": "is no",
+          "choices": ["is", "is no"],
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "The decimal value of the number 00101011 is ",
+          "textAfter": ".<br>",
+          "answer": 43,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "string",
+          "textBefore": "The result of shifting the number 11010110 by 3 positions to the left is ",
+          "textAfter": " (binary), and if the number 11010110 is shifted by 3 positions to the right the result is ",
+          "answer": "10110000",
+          "mistakes": 0
+        },
+        {"type": "string", "textBefore": "", "textAfter": " (binary).", "answer": "11111010", "mistakes": 0}
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "When calling a procedure:",
+      "content": [
+        {
+          "type": "code",
+          "code": "1020 addi $a0, $zero, 10\n1024 addi $a1, $zero, 5\n1028 jal proc\n1032 add $s1, $v0, $zero\n\nproc:\n1052 add $v0, $a0, $a1\n1056 jr $ra",
+          "language": "MIPS"
+        }
+      ],
+      "points": 30,
+      "negativePoints": 15,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "Register $ra is used as ",
+          "textAfter": ".<br>",
+          "answer": "return address register",
+          "choices": ["return address register", "argument register", "return value register", "saved register"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "Register $v1 is used as ",
+          "textAfter": ".<br>",
+          "answer": "return value register",
+          "choices": ["return address register", "argument register", "return value register", "saved register"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "Register $a1 is used as ",
+          "textAfter": ".<br><br>",
+          "answer": "argument register",
+          "choices": ["return address register", "argument register", "return value register", "saved register"],
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "At the moment when the instruction jal is executed, the value of $pc is ",
+          "textAfter": ". This instruction will cause the value of $pc to become ",
+          "answer": 1028,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " and the value of $ra to become ",
+          "answer": 1052,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": ". Upon completion of the procedure, it returns the value ",
+          "answer": 1032,
+          "tolerance": {"type": "strict"}
+        },
+        {"type": "number", "textBefore": "", "textAfter": ".", "answer": 15, "tolerance": {"type": "strict"}}
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "[Part 1] The size of the physical address is 10 bits, of which 4 are for the offset. The size of the virtual address is 13 bits.",
+      "points": 30,
+      "negativePoints": 15,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "The size of one frame is ",
+          "textAfter": " bytes.<br>",
+          "answer": 16,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The size of the physical memory is ",
+          "textAfter": " bytes.<br>",
+          "answer": 1024,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The size of the virtual memory is ",
+          "textAfter": " pages.<br>",
+          "answer": 512,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The page table has a total of ",
+          "textAfter": " entries and is stored in ",
+          "answer": 512,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": ".<br><br>",
+          "answer": "RAM",
+          "choices": ["RAM", "Cache", "Register", "ROM"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "[Part 2] The content of a part of the page table is as follows:",
+      "content": [
+        {
+          "type": "table",
+          "table": "[th]Index,[th]Frame,[th]Validity;0,7,1;1,15,1;2,3,1;3,4,1;4,9,1;5,1,1;6,0,0;7,13,0"
+        }
+      ],
+      "points": 20,
+      "negativePoints": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "<br>According to the table, fill in the frame in which each page is located. If the page is not in any frame, enter -1.<br><br>Page 3: ",
+          "textAfter": "<br>",
+          "answer": 4,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Page 4: ",
+          "textAfter": "",
+          "answer": 9,
+          "tolerance": {"type": "strict"}
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "[Part 1] In a computer system, the main memory has a size of 256 words and a direct-mapped cache memory is used. The cache has 8 blocks. Each block has 4 words. Find the format of a memory address:",
+      "points": 50,
+      "negativePoints": 25,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "To address all words in memory, ",
+          "textAfter": " bits are needed.<br>",
+          "answer": 8,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Of these, to address words within one block (word offset), ",
+          "textAfter": " bits are needed, to address the blocks (index) ",
+          "answer": 2,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " bits are needed, and the tag uses ",
+          "answer": 3,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " bits.<br><br>",
+          "answer": 3,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The computer executes a program that accesses memory addresses (decimal) 26 to 36 sequentially, 7 times in a row. In the first pass: ",
+          "textAfter": " hits and ",
+          "answer": 7,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " misses.<br>",
+          "answer": 4,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "In each subsequent pass: ",
+          "textAfter": " hits and ",
+          "answer": 11,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " misses.<br>",
+          "answer": 0,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "The overall hit rate during execution of this program is ",
+          "textAfter": "%.<br>",
+          "answer": 94.81,
+          "tolerance": {"type": "absolute", "value": 0.01}
+        },
+        {
+          "type": "number",
+          "textBefore": "If the cost of accessing data in cache memory is 8 CPU cycles, and the cost of accessing data in main memory is 43 CPU cycles, then for the processor to read all data, a total of ",
+          "textAfter": " clock cycles will be needed.",
+          "answer": 756,
+          "tolerance": {"type": "strict"}
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "[Part 2] After the program finishes, what is the final state of the cache memory? For each block, enter the tag that remains in memory (as a decimal number obtained from converting the binary tag bits). If the cache block is empty, enter -1.",
+      "points": 30,
+      "negativePoints": 15,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "Block 000 (0): ",
+          "textAfter": "<br>",
+          "answer": 1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 001 (1): ",
+          "textAfter": "<br>",
+          "answer": 1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 010 (2): ",
+          "textAfter": "<br>",
+          "answer": -1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 011 (3): ",
+          "textAfter": "<br>",
+          "answer": -1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 100 (4): ",
+          "textAfter": "<br>",
+          "answer": -1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 101 (5): ",
+          "textAfter": "<br>",
+          "answer": -1,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 110 (6): ",
+          "textAfter": "<br>",
+          "answer": 0,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Block 111 (7): ",
+          "textAfter": "",
+          "answer": 0,
+          "tolerance": {"type": "strict"}
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "For the given MIPS code, answer the following questions:",
+      "content": [
+        {
+          "type": "code",
+          "code": "    la $s0, niza\n    addi $s2, $zero, 1\n    addi $s1, $zero, 8    #loop limit\n    addi $s3, $zero, 0    #loop counter\n\nloop:\n    beq $s3, $s1, endLoop\n    sll $t0, $s3, 2\n    add $t0, $t0, $s0\n    lw $t1, 0($t0)\n    mult $t1, $s2\n    mflo $s2\n    sw $s2, 0($t0)\n    addi $s3, $s3, 1\n    j loop\nendLoop:",
+          "language": "MIPS"
+        }
+      ],
+      "points": 60,
+      "negativePoints": 30,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "How many total instructions will be executed in the code? ",
+          "textAfter": ".<br>",
+          "answer": 77,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "How many of those instructions are branch instructions? ",
+          "textAfter": ".<br><br>",
+          "answer": 9,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "If the CPI for every instruction is 1 and the processor has no branch prediction implemented, how many clock cycles will be needed to execute the program? ",
+          "textAfter": ".<br>",
+          "answer": 86,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "If branch prediction is used, how many fetched instructions (instructions that enter the instruction fetch stage of the pipeline) will there be with the Always Take strategy? ",
+          "textAfter": ".<br>",
+          "answer": 85,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "Never Take: ",
+          "textAfter": ".<br>",
+          "answer": 78,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "BTFN (Backward Taken, Forward Not Taken): ",
+          "textAfter": ".<br>",
+          "answer": 78,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "1-bit predictor (initial state: Not Taken): ",
+          "textAfter": ".<br>",
+          "answer": 78,
+          "tolerance": {"type": "strict"}
+        },
+        {
+          "type": "number",
+          "textBefore": "2-bit predictor starting from state 01 (Weakly Taken): ",
+          "textAfter": ".",
+          "answer": 78,
+          "tolerance": {"type": "strict"}
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "An assembly program and the contents of a part of the registers are given. What will the contents of memory be after execution of the program? Enter the corresponding hexadecimal values in the empty fields.",
+      "content": [
+        {
+          "type": "code",
+          "code": "addi $s5, $zero, 52\nsll $t5, $t2, 16\nandi $t3, $t3, 0x0000FFFF\nor $t6, $t5, $t3\nsh $t6, 0($s5)\nsw $t3, 2($s5)\naddi $s5, $s5, 6\nsb $t4, 0($s5)",
+          "language": "MIPS"
+        },
+        {
+          "type": "table",
+          "table": "[th]$s5,[th]$t2,[th]$t3,[th]$t4,[th]$t5,[th]$t6;e5762033,4013ee61,6dc4df3d,34ac4794,61ca0f86,80edb644"
+        }
+      ],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {"type": "string", "textBefore": "Address 52", "textAfter": "(0x34)", "answer": "df", "mistakes": 0},
+        {
+          "type": "string",
+          "textBefore": "Address 53 ",
+          "textAfter": "(0x35): ",
+          "answer": "3d",
+          "mistakes": 0
+        },
+        {"type": "string", "textBefore": "Address 54  ", "textAfter": "(0x36)", "answer": "00", "mistakes": 0},
+        {"type": "string", "textBefore": "Address 55  ", "textAfter": "(0x37)", "answer": "00", "mistakes": 0},
+        {"type": "string", "textBefore": "Address 56  ", "textAfter": "(0x38)", "answer": "df", "mistakes": 0},
+        {"type": "string", "textBefore": "Address 57  ", "textAfter": "(0x39)", "answer": "3d", "mistakes": 0}
+      ],
+      "layout": "tableVend-Address,Address (Hex),Contains"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Determine the Boolean expressions for the circuit at the specified points.",
+      "content": [{"type": "image", "src": "/images/aokE2-1.png", "alt": ""}],
+      "points": 40,
+      "negativePoints": 20,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "Point B ",
+          "textAfter": " <br> ",
+          "answer": "x'y'",
+          "choices": ["x'y", "xy", "x'y'", "xy'", "x+y", "x'+y", "xy+x'y", "0", "1", "x⊕y"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "Point I ",
+          "textAfter": "",
+          "answer": "0",
+          "choices": ["x'y", "xy", "x'y'", "xy'", "x+y", "x'+y", "xy+x'y", "0", "1", "x⊕y"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    }
+  ]
+}

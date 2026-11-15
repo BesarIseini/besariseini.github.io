@@ -6,9 +6,10 @@
     <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-  <script type="module" crossorigin src="/assets/settings-A3l7weqG.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/language-B6ddr21c.js">
-  <link rel="stylesheet" crossorigin href="/assets/language-DujzZbQn.css">
+  <script type="module" crossorigin src="/assets/settings-9NYs-Zmc.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-DkshvqmW.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-CLmLDZ-r.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-DMWQ-OVE.css">
 </head>
 <body class="min-h-screen bg-background text-foreground">
 
@@ -29,6 +30,20 @@
         <h1 class="text-3xl font-bold mb-2" data-i18n="settings.title" data-language-id="SETTINGS_TITLE">Settings</h1>
         <p class="text-muted-foreground" data-i18n="settings.subtitle" data-language-id="SETTINGS_SUBTITLES">Manage your app preferences.</p>
     </div>
+
+    <section class="mb-10" id="account">
+        <div class="flex items-center gap-2 mb-4">
+            <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <h2 class="text-xl font-semibold" data-language-id="ACCOUNT_TITLE">Account</h2>
+        </div>
+        <div class="rounded-xl border bg-card text-card-foreground shadow">
+            <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="font-semibold leading-none tracking-tight" data-language-id="ACCOUNT_CARD_TITLE">Sync your history</h3>
+                <p class="text-sm text-muted-foreground" data-language-id="ACCOUNT_CARD_DESCRIPTION">Optional. Quizzes work without an account.</p>
+            </div>
+            <div class="p-6 pt-0" id="account-settings"></div>
+        </div>
+    </section>
 
     <section class="mb-10">
         <div class="flex items-center gap-2 mb-4">

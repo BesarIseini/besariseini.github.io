@@ -1,0 +1,188 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "ooaid-exam-2",
+  "revision": 1,
+  "courseId": "OOAiD",
+  "category": "Exam",
+  "title": "Use Case Diagrams",
+  "description": "Practice quiz on use case diagrams: actors, generalization, <<include>>, and <<extend>>.",
+  "date": "2026-09-14",
+  "duration": 1800,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "Actors in a use case diagram ...",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {
+          "text": "... can be linked to abstract and non-abstract use cases via associations.",
+          "correct": true
+        },
+        {"text": "... interact with the described system.", "correct": true},
+        {"text": "... represent roles of the users of the described system.", "correct": true},
+        {"text": "... can be linked to each other by inheritance.", "correct": true},
+        {"text": "... interact with the system in the form of <<include>>-relationships.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following statements are true if use case A is a generalization of use case B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {"type": "image", "src": "/images/ucd-2.png", "alt": "use case generalization semantics (A <|-- B)"}
+      ],
+      "points": 10,
+      "options": [
+        {"text": "B inherits the behavior of A and can override and expand it.", "correct": true},
+        {"text": "B inherits all relationships from A.", "correct": true},
+        {"text": "A must not be abstract.", "correct": false},
+        {"text": "B is called \"base use case\".", "correct": false},
+        {"text": "A inherits all relationships from B.", "correct": false},
+        {"text": "B should not be abstract.", "correct": true},
+        {"text": "B is called \"sub use case\".", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {"type": "image", "src": "/images/ucd-3.png", "alt": "actors X/Y/Z/K/J, use cases A/G/B/H/F/D/E/C/M"}
+      ],
+      "points": 10,
+      "options": [
+        {"text": "F cannot be executed without E also being executed.", "correct": false},
+        {
+          "text": "The behavior of H can be integrated into the behavior of B but does not have to.",
+          "correct": false
+        },
+        {"text": "Y inherits the behavior of X which Y can either extend or overwrite.", "correct": true},
+        {"text": "B is also referred to as the included use case.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-4.png",
+          "alt": "actors A/B/C/D/E, use cases P/T/R/W/X/Y/Z/U/V/S"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "Actor D can execute P.", "correct": false},
+        {"text": "Actor A can execute U without any other actors.", "correct": true},
+        {"text": "X can act as the base use case for Z.", "correct": false},
+        {
+          "text": "V inherits all associations from U and therefore also inherits all associations from A.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How do you model the following situation with a UML2 use case diagram: For an exam, a student and a teacher need to be present. If it is an oral exam, a professor has to act as second examiner.",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"image": "/images/ucd-5a.png", "correct": true},
+        {"image": "/images/ucd-5b.png", "correct": false},
+        {"image": "/images/ucd-5c.png", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How do you model the following situation with a UML2 use case diagram: A person goes for lunch. In the course of that it might be necessary that the person withdraws cash from an ATM.",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"image": "/images/ucd-6a.png", "correct": true},
+        {"image": "/images/ucd-6b.png", "correct": false},
+        {"image": "/images/ucd-6c.png", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-7.png",
+          "alt": "actor-communication counting, use case B (actors R/S, T/U)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "R", "correct": true},
+        {"text": "S", "correct": true},
+        {"text": "R ∧ S", "correct": false},
+        {"text": "R ∧ U", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-8.png",
+          "alt": "actor-communication counting, use case B (actors X/Y)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "X", "correct": false},
+        {"text": "Y ∧ Y", "correct": true},
+        {"text": "X ∧ X", "correct": false},
+        {"text": "X ∧ X ∧ Y", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case H?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-9.png",
+          "alt": "actor-communication counting, use case H (actors S/R, U)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "U", "correct": true},
+        {"text": "U ∧ U", "correct": false},
+        {"text": "U ∧ R", "correct": false},
+        {"text": "U ∧ S", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-10.png",
+          "alt": "actor-communication counting, use case A (actors X/Y, multiplicity 1..2)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "X ∧ Y", "correct": true},
+        {"text": "Y ∧ Y", "correct": true},
+        {"text": "X ∧ X", "correct": false},
+        {"text": "X ∧ X ∧ X", "correct": false}
+      ]
+    }
+  ]
+}

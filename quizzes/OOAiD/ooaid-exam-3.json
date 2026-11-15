@@ -1,0 +1,377 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "ooaid-exam-3",
+  "revision": 1,
+  "courseId": "OOAiD",
+  "category": "Exam",
+  "title": "OOAD Exam — Use Case & Class Diagrams",
+  "description": "Combined exam covering use case diagrams (extend/include semantics, actor generalization, diagram analysis, actor-communication counting, modeling exercises) and class diagram fundamentals (navigability, composition/aggregation, data types, multiplicities).",
+  "date": "2026-09-14",
+  "duration": 3000,
+  "timed": true,
+  "shuffleQuestions": false,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": "The following <<extend>>-relationship means, that ...",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-1.png",
+          "alt": "<<extend>> relationship semantics (A extends B)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "... B can be executed instead of A.", "correct": false},
+        {"text": "... A cannot be executed without B.", "correct": false},
+        {"text": "... B might or might not invoke A.", "correct": true},
+        {"text": "... B can extend A.", "correct": false},
+        {"text": "... A can extend B.", "correct": true},
+        {"text": "... A might or might not invoke B.", "correct": false},
+        {"text": "... B always has to invoke A.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following <<include>>-relationship means, that ...",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-2.png",
+          "alt": "<<include>> relationship semantics (A includes B)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "... A cannot be executed without B.", "correct": true},
+        {"text": "... A might or might not invoke use case B.", "correct": false},
+        {"text": "... B cannot be executed without A.", "correct": false},
+        {"text": "... B can be executed instead of A.", "correct": false},
+        {
+          "text": "... the behavior of B might or might not be inserted into the behavior of A.",
+          "correct": false
+        },
+        {
+          "text": "... the behavior of A might or might not be inserted into the behavior of B.",
+          "correct": false
+        },
+        {"text": "... the behavior of B always has to be inserted into the behavior of A.", "correct": true},
+        {"text": "... the behavior of A always has to be inserted into the behavior of B.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which statements are true if actor A generalizes actor B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-3.png",
+          "alt": "actor generalization semantics (actor A generalizes actor B)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "A can execute the same use cases as B.", "correct": false},
+        {"text": "A inherits all of B's associations.", "correct": false},
+        {"text": "B inherits all of A's associations.", "correct": true},
+        {"text": "B can execute the same use cases as A.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {"type": "image", "src": "/images/ucd2-4.png", "alt": "F/K/H/L/N/J/M/G/O/P diagram, statement set A"}
+      ],
+      "points": 10,
+      "options": [
+        {"text": "F can use the behavior of K but does not have to.", "correct": true},
+        {"text": "P cannot be executed without O also being executed.", "correct": false},
+        {"text": "D inherits the behavior of C which D can either extend or overwrite.", "correct": false},
+        {"text": "P is also referred to as the included use case.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-4.png",
+          "alt": "same F/K/H/L/N/J/M/G/O/P diagram, statement set B"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "Actor A can execute F.", "correct": false},
+        {"text": "Actor A can execute L without any other actors.", "correct": false},
+        {"text": "F can act as the base use case for K.", "correct": true},
+        {"text": "P cannot only be executed when O is also being executed.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How do you model the following situation with a UML2 use case diagram: Mother and daughter cook dinner together. Sometimes it is necessary that one of them gets chives from the garden.",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"image": "/images/ucd2-6a.png", "correct": true},
+        {"image": "/images/ucd2-6b.png", "correct": false},
+        {"image": "/images/ucd2-6c.png", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-7.png",
+          "alt": "actor-communication counting, use case A (actors S/R, A/G/H/K, U)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "R", "correct": true},
+        {"text": "S", "correct": true},
+        {"text": "R ∧ S", "correct": false},
+        {"text": "S ∧ S", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-8.png",
+          "alt": "actor-communication counting, use case B (actors X/Y, A/B)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "X", "correct": false},
+        {"text": "Y", "correct": false},
+        {"text": "Y ∧ Y", "correct": true},
+        {"text": "X ∧ X", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case F?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-9.png",
+          "alt": "actor-communication counting, use case F (actors S/R, T, D/F/E)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "R", "correct": false},
+        {"text": "S", "correct": false},
+        {"text": "T", "correct": true},
+        {"text": "R ∧ T", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case A?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-10.png",
+          "alt": "actor-communication counting, use case A (actors X/Y, multiplicity 0..2)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "X", "correct": false},
+        {"text": "X ∧ Y", "correct": true},
+        {"text": "Y ∧ Y", "correct": false},
+        {"text": "X ∧ X", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled according to UML2 standard. Which combinations of actors communicate with Use Case B?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-11.png",
+          "alt": "actor-communication counting, use case B (actors X/Y, A/B, <<include>>)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "X", "correct": false},
+        {"text": "Y", "correct": true},
+        {"text": "X ∧ Y", "correct": false},
+        {"text": "Y ∧ Y", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd-4b.png",
+          "alt": "P/T/R/W/X/Y/Z/U/V/S diagram (same diagram as useCaseDiagrams.ts Q4), new statement set"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "P can use the behavior of T but does not have to.", "correct": false},
+        {"text": "The behavior of X can be executed instead of the behavior of Z.", "correct": false},
+        {"text": "B has the same relationships as A.", "correct": true},
+        {"text": "P is also referred to as the extending use case.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The following Use Case Diagram was modeled strictly according to UML2 standard. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/ucd2-13.png",
+          "alt": "a second P/R/T/S/U/V/X/W/Z/Y diagram, actors A/B/C/D/E"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "Actor E can execute V.", "correct": false},
+        {"text": "Actor C can execute X without any other actors.", "correct": true},
+        {"text": "Y can act as the base use case for V.", "correct": true},
+        {"text": "V cannot only be executed when Y is also being executed.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How do you model the following situation with a UML2 use case diagram: The lab director does a lab test together with her/his assistant. The assistant always has to write a protocol during the lab test.",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"image": "/images/ucd2-14a.png", "correct": true},
+        {"image": "/images/ucd2-14b.png", "correct": false},
+        {"image": "/images/ucd2-14c.png", "correct": false}
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "Which kind of navigability belongs to which kind of arrowhead, considering the navigability from A to B?",
+      "content": [{"type": "image", "src": "/images/cdf-1.png", "alt": "navigability vs. arrowhead style"}],
+      "points": 10,
+      "negativePoints": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": "A <----> B (open arrowheads on both ends) → ",
+          "textAfter": "<br>",
+          "answer": "navigable",
+          "choices": ["navigable", "undefined", "not navigable"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "A --x-- B (no arrowheads) → ",
+          "textAfter": "<br>",
+          "answer": "undefined",
+          "choices": ["navigable", "undefined", "not navigable"],
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "A <--x-- B (arrowhead back toward A) → ",
+          "textAfter": "",
+          "answer": "not navigable",
+          "choices": ["navigable", "undefined", "not navigable"],
+          "mistakes": 0
+        }
+      ],
+      "layout": "unordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which of the following statements about compositions (composite aggregations) are true?",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"text": "In a composition, a part may belong to only one composite at a time.", "correct": true},
+        {"text": "The multiplicity of a composite aggregation may be ≥1.", "correct": false},
+        {"text": "The composite aggregation is a transitive relationship.", "correct": true},
+        {"text": "When the composite element is deleted, the parts also die.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Data types in UML2 ...",
+      "content": [{"type": "text", "text": "Select one or more:"}],
+      "points": 10,
+      "options": [
+        {"text": "... can have attributes but no operations.", "correct": false},
+        {"text": "... have instances without identity (in contrast to classes).", "correct": true},
+        {
+          "text": "... are noted like classes with the keyword <<datatype>> (or another pre-defined type, e.g. <<enumeration>>).",
+          "correct": true
+        },
+        {"text": "... can be primitive types and enumerations.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "You are given the following clipping of a UML2 class diagram. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {"type": "image", "src": "/images/cdf-6.png", "alt": "Flat / Tenant / LeasingContract class diagram"}
+      ],
+      "points": 10,
+      "options": [
+        {
+          "text": "One flat can be rented by multiple tenants with different leasing contracts.",
+          "correct": true
+        },
+        {"text": "One tenant rents exactly one flat.", "correct": false},
+        {
+          "text": "One tenant can rent the same flat several times with different leasing contracts.",
+          "correct": false
+        },
+        {"text": "One tenant can rent multiple flats with different leasing contracts.", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": "You are given the following clipping of a UML2 class diagram. Which of the following statements are true?",
+      "content": [
+        {"type": "text", "text": "Select one or more:"},
+        {
+          "type": "image",
+          "src": "/images/cdf-7.png",
+          "alt": "A/B/C/D/E class diagram (aggregation + abstract class)"
+        }
+      ],
+      "points": 10,
+      "options": [
+        {"text": "An instance of A can see y.", "correct": true},
+        {"text": "Objects of B and D can see g.", "correct": true},
+        {"text": "An object of A may or may not contain objects of C.", "correct": true},
+        {"text": "One object of A may be associated with multiple direct objects of C.", "correct": false}
+      ]
+    }
+  ]
+}

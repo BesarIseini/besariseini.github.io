@@ -5,7 +5,7 @@
     "flag": ""
   },
   "translation": {
-    "LOGO": "SeisHub",
+    "LOGO": "BETA SeisHub",
 
     "NAV_STATISTICS": "Статистика",
 
@@ -309,6 +309,27 @@
     "QTYPE_ABBR_MATCHING": "Повлечи",
     "QTYPE_ABBR_IMAGE_HOTSPOT": "Точки",
     "QTYPE_ABBR_GROUP": "Група",
-    "QTYPE_ABBR_CODE_COMPLETION": "Код"
+    "QTYPE_ABBR_CODE_COMPLETION": "Код",
+
+    "ACCOUNT_TITLE": "Сметка",
+    "ACCOUNT_CARD_TITLE": "Синхронизација на историјата",
+    "ACCOUNT_CARD_DESCRIPTION": "Изборно. Квизовите работат и без сметка.",
+    "ACCOUNT_LOGIN": "Најава",
+    "ACCOUNT_LOGIN_DISCORD": "Најава со Discord",
+    "ACCOUNT_LOGOUT": "Одјава",
+    "ACCOUNT_LOGGED_OUT_HINT": "Најавете се со Discord за да ја имате историјата од квизовите на секој уред. Можат да се најават само верификувани членови на FINKI Discord серверот.",
+    "ACCOUNT_LOGGED_IN_HINT": "Историјата од квизовите се чува во Вашата сметка. Со одјава се отстранува од овој прелистувач, но не и од сметката.",
+    "ACCOUNT_DELETE": "Избриши ја сметката",
+    "ACCOUNT_DELETE_CONFIRM": "Кликнете повторно за да се избрише сè од серверот",
+    "ACCOUNT_DELETED": "Сметката е избришана. Историјата во овој прелистувач е зачувана.",
+    "ACCOUNT_LOGGED_OUT": "Одјавени сте.",
+    "ACCOUNT_WELCOME": "Најавени сте како {name}.",
+    "ACCOUNT_NOT_MEMBER": "Најавата е само за членови на FINKI Discord серверот.",
+    "ACCOUNT_NOT_VERIFIED": "Прво верификувајте се на FINKI Discord серверот, па најавете се повторно.",
+    "ACCOUNT_LOGIN_CANCELLED": "Најавата е откажана.",
+    "ACCOUNT_UNAVAILABLE": "Сметките моментално не се достапни. Обидете се подоцна.",
+    "ACCOUNT_LOGIN_FAILED": "Најавата не успеа. Обидете се повторно.",
+    "ACCOUNT_SESSION_EXPIRED": "Одјавени сте. Најавете се повторно за да продолжи синхронизацијата.",
+    "ACCOUNT_MEMBERSHIP_LOST": "Повеќе не сте верификуван член на FINKI Discord серверот, па сте одјавени."
   }
 }
