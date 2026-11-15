@@ -1,0 +1,1 @@
+import{g as e}from"./sync-DcVeIEt-.js";import{l as a}from"./localize-CgL-Itxn.js";function r(t){return a(t.title,e(),t.defaultLanguage)}function o(t){return a(t.description,e(),t.defaultLanguage)}export{o as a,r as q};
