@@ -1,0 +1,664 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aps-lecture-07",
+  "revision": 1,
+  "courseId": "APS",
+  "category": "Lecture",
+  "title": "APS 07 – Sorting",
+  "description": "Midterm 1 theory: comparison and linear sorts, best/worst cases, stability, memory, binary search.",
+  "date": "2026-11-16",
+  "duration": 1680,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Midterm 1",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "Which algorithms are used for sorting by comparison?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Insertion Sort, Merge Sort, Quick Sort",
+          "correct": true
+        },
+        {
+          "text": "Counting Sort, Radix Sort, Bucket Sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion Sort, Counting Sort, Radix Sort",
+          "correct": false
+        },
+        {
+          "text": "Merge Sort, Bucket Sort, Quick Sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the idea of INSERTION SORT?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Split the array in half, sort each half and merge them",
+          "correct": false
+        },
+        {
+          "text": "Repeatedly swap adjacent elements that are out of order",
+          "correct": false
+        },
+        {
+          "text": "Insert each element into its place in the previously sorted subarray",
+          "correct": true
+        },
+        {
+          "text": "Find the maximum and move it to the end",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In which sorting algorithm are adjacent elements swapped in each pass if they are not in order (smaller before bigger)?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Quick sort",
+          "correct": false
+        },
+        {
+          "text": "Bubble sort",
+          "correct": true
+        },
+        {
+          "text": "Selection sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which sorting algorithm uses a pivot element to split the elements?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Merge sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort",
+          "correct": false
+        },
+        {
+          "text": "Quick sort",
+          "correct": true
+        },
+        {
+          "text": "Bubble sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In the QuickSort algorithm we did in class, which principle is used to choose the pivot?",
+      "points": 1,
+      "options": [
+        {
+          "text": "A random element is taken as the pivot",
+          "correct": false
+        },
+        {
+          "text": "The last element is taken as the pivot",
+          "correct": false
+        },
+        {
+          "text": "The median of three elements is taken as the pivot",
+          "correct": false
+        },
+        {
+          "text": "The first element is taken as the pivot",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "The first 4 iterations of a sorting algorithm were performed and the array now looks like 1 2 4 5 3 8 7. Which algorithm is sorting it?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Selection (maximum entry) sort",
+          "correct": false
+        },
+        {
+          "text": "Merge sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort",
+          "correct": true
+        },
+        {
+          "text": "Bubble sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which sorting algorithm performs best when the input array is almost sorted (at most 1 or 2 elements out of place)?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Bubble sort",
+          "correct": false
+        },
+        {
+          "text": "Merge sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort",
+          "correct": true
+        },
+        {
+          "text": "Quick sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In which case is it recommended to use Insertion sort for sorting an array of numbers?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When the numbers are evenly distributed in some range",
+          "correct": false
+        },
+        {
+          "text": "When the array is almost sorted",
+          "correct": true
+        },
+        {
+          "text": "When there are many different elements",
+          "correct": false
+        },
+        {
+          "text": "When there are few different elements",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which sorting algorithm takes the least time when all elements of the input array are identical? Assume typical implementations.",
+      "points": 1,
+      "options": [
+        {
+          "text": "Selection sort",
+          "correct": false
+        },
+        {
+          "text": "Heap sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort",
+          "correct": true
+        },
+        {
+          "text": "Merge sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When does Quick sort have its worst performance?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When the numbers are evenly distributed in some range",
+          "correct": false
+        },
+        {
+          "text": "When there are few different elements",
+          "correct": false
+        },
+        {
+          "text": "When there are many different elements",
+          "correct": false
+        },
+        {
+          "text": "When the array is almost sorted",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When is Merge sort used?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When we need guaranteed performance",
+          "correct": true
+        },
+        {
+          "text": "When the array is almost sorted",
+          "correct": false
+        },
+        {
+          "text": "When memory is very limited",
+          "correct": false
+        },
+        {
+          "text": "When the array has very few elements",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When is Bubble sort used?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When the values are in a small range",
+          "correct": false
+        },
+        {
+          "text": "For quick and simple sorting of small data sets (or an almost sorted array)",
+          "correct": true
+        },
+        {
+          "text": "For very large data sets",
+          "correct": false
+        },
+        {
+          "text": "When we need guaranteed O(n log n) performance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "For an array of n numbers in the range from 1 to n^6, which algorithm can be used to sort the array in linear time?",
+      "points": 1,
+      "options": [
+        {
+          "text": "It's not possible to sort in linear time",
+          "correct": false
+        },
+        {
+          "text": "Radix Sort",
+          "correct": true
+        },
+        {
+          "text": "Insert Sort",
+          "correct": false
+        },
+        {
+          "text": "Quick Sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following algorithms is the most efficient if the range of the numbers in the array isn't much bigger than the length of the array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Radix Sort",
+          "correct": false
+        },
+        {
+          "text": "Selection sort",
+          "correct": false
+        },
+        {
+          "text": "Quick Sort",
+          "correct": false
+        },
+        {
+          "text": "Counting sort",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following algorithms has the same best, worst and average time complexity?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Heap sort",
+          "correct": true
+        },
+        {
+          "text": "Insertion sort",
+          "correct": false
+        },
+        {
+          "text": "Bubble sort",
+          "correct": false
+        },
+        {
+          "text": "Quick sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which sorting algorithms have the same best-case and worst-case complexity?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Insertion sort and bubble sort",
+          "correct": false
+        },
+        {
+          "text": "Merge sort and Maximum entry (selection) sort",
+          "correct": true
+        },
+        {
+          "text": "Bubble sort and quick sort",
+          "correct": false
+        },
+        {
+          "text": "Quick sort and insertion sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the correct ordering of the algorithms by their best-case complexity?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Merge sort > Quick sort > Selection sort > Insertion sort",
+          "correct": false
+        },
+        {
+          "text": "Merge sort > Quick sort > Insertion sort > Selection sort",
+          "correct": false
+        },
+        {
+          "text": "Insertion sort < Quick sort < Merge sort < Selection sort",
+          "correct": true
+        },
+        {
+          "text": "Merge sort > Selection sort > Quick sort > Insertion sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Bubble sort sorts 200 names from a file in 200 ns. About how long does it take for 800 names?",
+      "points": 1,
+      "options": [
+        {
+          "text": "400 ns",
+          "correct": false
+        },
+        {
+          "text": "800 ns",
+          "correct": false
+        },
+        {
+          "text": "1600 ns",
+          "correct": false
+        },
+        {
+          "text": "3200 ns",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Quick sort sorts 1000 elements in 100 ns. About how long does it take for 100 elements?",
+      "points": 1,
+      "options": [
+        {
+          "text": "about 10 ns",
+          "correct": false
+        },
+        {
+          "text": "about 1 ns",
+          "correct": false
+        },
+        {
+          "text": "about 0.1 ns",
+          "correct": false
+        },
+        {
+          "text": "about 6.7 ns",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Given the array 20, 47, 15, 8, 9, 4, 40, 30, 12, 17. If the merge sort algorithm is applied, what does the array look like after the second pass?",
+      "points": 1,
+      "options": [
+        {
+          "text": "20, 47, 8, 15, 4, 9, 30, 40, 12, 17",
+          "correct": false
+        },
+        {
+          "text": "8, 15, 20, 47, 4, 9, 30, 40, 12, 17",
+          "correct": true
+        },
+        {
+          "text": "4, 8, 9, 15, 20, 47, 12, 17, 30, 40",
+          "correct": false
+        },
+        {
+          "text": "15, 20, 47, 4, 8, 9, 12, 30, 40, 17",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which parameters are important for sorting algorithms?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Only the number of elements",
+          "correct": false
+        },
+        {
+          "text": "The processor speed",
+          "correct": false
+        },
+        {
+          "text": "The programming language",
+          "correct": false
+        },
+        {
+          "text": "Speed and memory",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In sorting, what does the complexity of the algorithm depend on?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The programming language",
+          "correct": false
+        },
+        {
+          "text": "The number of executed simple operations",
+          "correct": true
+        },
+        {
+          "text": "The processor speed",
+          "correct": false
+        },
+        {
+          "text": "The amount of RAM",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of binary search in a sorted array (best / average and worst case)?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1) / O(log n)",
+          "correct": true
+        },
+        {
+          "text": "O(log n) / O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(1) / O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n) / O(n log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What does it mean that a sorting algorithm is stable?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Its complexity is the same for every input",
+          "correct": false
+        },
+        {
+          "text": "It doesn't use extra memory",
+          "correct": false
+        },
+        {
+          "text": "Elements with equal keys keep their relative order",
+          "correct": true
+        },
+        {
+          "text": "It never falls into the O(n²) worst case",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following sorting algorithms are NOT stable?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Insertion and bubble sort",
+          "correct": false
+        },
+        {
+          "text": "Merge and insertion sort",
+          "correct": false
+        },
+        {
+          "text": "Selection and quick sort",
+          "correct": true
+        },
+        {
+          "text": "Bubble and merge sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which sorting algorithm is NOT in place, i.e. needs O(n) extra memory?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Insertion sort",
+          "correct": false
+        },
+        {
+          "text": "Merge sort",
+          "correct": true
+        },
+        {
+          "text": "Selection sort",
+          "correct": false
+        },
+        {
+          "text": "Bubble sort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Two unsorted arrays of n elements should be checked for having the same elements. What is the better approach and its complexity?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Check each element of the first in the second, O(n²)",
+          "correct": false
+        },
+        {
+          "text": "Sort both, then compare element by element, O(n log n)",
+          "correct": true
+        },
+        {
+          "text": "Compare element by element directly, O(n)",
+          "correct": false
+        },
+        {
+          "text": "It can't be done faster than O(n³)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of counting sort, if n is the number of elements and k is the range of the values?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n + k)",
+          "correct": true
+        },
+        {
+          "text": "O(n · k)",
+          "correct": false
+        },
+        {
+          "text": "O(k²)",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

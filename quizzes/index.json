@@ -97,6 +97,136 @@
       "estimatedMinutes": 3
     },
     {
+      "key": "aps-lecture-01",
+      "path": "quizzes/APS/aps-lecture-01.json",
+      "revision": 1,
+      "courseId": "APS",
+      "category": "Lecture",
+      "title": "APS 01 – Algorithm complexity",
+      "description": "Midterm 1 theory: counting operations, Big O / Ω / Θ, comparing algorithms, the RAM model.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-16",
+      "duration": 1380,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Midterm 1",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "APS 01 – Algorithm complexity"
+      ],
+      "questionCount": 23,
+      "estimatedMinutes": 12
+    },
+    {
+      "key": "aps-lecture-02-03",
+      "path": "quizzes/APS/aps-lecture-02-03.json",
+      "revision": 1,
+      "courseId": "APS",
+      "category": "Lecture",
+      "title": "APS 02–03 – Arrays and lists",
+      "description": "Midterm 1 theory: arrays, sparse matrices, singly, doubly and circular linked lists and their complexities.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-16",
+      "duration": 2040,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Midterm 1",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "APS 02–03 – Arrays and lists"
+      ],
+      "questionCount": 34,
+      "estimatedMinutes": 17
+    },
+    {
+      "key": "aps-lecture-04-05",
+      "path": "quizzes/APS/aps-lecture-04-05.json",
+      "revision": 1,
+      "courseId": "APS",
+      "category": "Lecture",
+      "title": "APS 04–05 – Algorithm techniques",
+      "description": "Midterm 1 theory: brute force, greedy, divide and conquer, dynamic programming, backtracking, knapsack, bin packing, scheduling, Huffman codes.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-16",
+      "duration": 2100,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Midterm 1",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "APS 04–05 – Algorithm techniques"
+      ],
+      "questionCount": 35,
+      "estimatedMinutes": 18
+    },
+    {
+      "key": "aps-lecture-06",
+      "path": "quizzes/APS/aps-lecture-06.json",
+      "revision": 1,
+      "courseId": "APS",
+      "category": "Lecture",
+      "title": "APS 06 – One-dimensional data structures",
+      "description": "Midterm 1 theory: stacks, queues, cyclic arrays, priority queues, postfix notation.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-16",
+      "duration": 1860,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Midterm 1",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "APS 06 – One-dimensional data structures"
+      ],
+      "questionCount": 31,
+      "estimatedMinutes": 16
+    },
+    {
+      "key": "aps-lecture-07",
+      "path": "quizzes/APS/aps-lecture-07.json",
+      "revision": 1,
+      "courseId": "APS",
+      "category": "Lecture",
+      "title": "APS 07 – Sorting",
+      "description": "Midterm 1 theory: comparison and linear sorts, best/worst cases, stability, memory, binary search.",
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-16",
+      "duration": 1680,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Midterm 1",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "APS 07 – Sorting"
+      ],
+      "questionCount": 28,
+      "estimatedMinutes": 14
+    },
+    {
       "key": "demo-exam-1",
       "path": "quizzes/DM/demo-exam-1.json",
       "revision": 1,

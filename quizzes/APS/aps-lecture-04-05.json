@@ -1,0 +1,801 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aps-lecture-04-05",
+  "revision": 1,
+  "courseId": "APS",
+  "category": "Lecture",
+  "title": "APS 04–05 – Algorithm techniques",
+  "description": "Midterm 1 theory: brute force, greedy, divide and conquer, dynamic programming, backtracking, knapsack, bin packing, scheduling, Huffman codes.",
+  "date": "2026-11-16",
+  "duration": 2100,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Midterm 1",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "The greedy algorithm pattern:",
+      "points": 1,
+      "options": [
+        {
+          "text": "finds the correct solution for some type of problems",
+          "correct": false
+        },
+        {
+          "text": "finds the fastest solution for some type of problems",
+          "correct": true
+        },
+        {
+          "text": "always finds the correct solution for any type of problem",
+          "correct": false
+        },
+        {
+          "text": "finds the fastest solution for any type of problem",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is NOT true about the brute force technique?",
+      "points": 1,
+      "options": [
+        {
+          "text": "It checks every possible case",
+          "correct": false
+        },
+        {
+          "text": "It can take a lot of time and memory",
+          "correct": false
+        },
+        {
+          "text": "It's the most complex technique for solving problems",
+          "correct": true
+        },
+        {
+          "text": "It always finds a result if one exists",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Are backtracking algorithms more efficient than brute force algorithms?",
+      "points": 1,
+      "options": [
+        {
+          "text": "No, backtracking checks more cases",
+          "correct": false
+        },
+        {
+          "text": "They are always equally efficient",
+          "correct": false
+        },
+        {
+          "text": "Yes",
+          "correct": true
+        },
+        {
+          "text": "No",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "How many bins are needed to pack the packages 0.2 0.5 0.4 0.7 0.1 0.3 0.8 with the next fit solution?",
+      "points": 1,
+      "options": [
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the first fit solution?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2) in the best case, O(n^3) in the general case",
+          "correct": false
+        },
+        {
+          "text": "O(n) in every case",
+          "correct": false
+        },
+        {
+          "text": "O(n log n) in the best case, O(n^2) in the general case",
+          "correct": true
+        },
+        {
+          "text": "O(log n) in the best case, O(n) in the general case",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "How many coins does the greedy change algorithm return for 40 denars with coins of 25, 20, 10, 5 and 1 denars?",
+      "points": 1,
+      "options": [
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of matrix multiplication?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^3)",
+          "correct": true
+        },
+        {
+          "text": "O(2^n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the FIBONACCI code (recursive calculation of Fibonacci numbers)?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(2^n)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the INTERFIBO code (iterative calculation of Fibonacci numbers)?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(2^n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Dynamic programming as an archetype is based on:",
+      "points": 1,
+      "options": [
+        {
+          "text": "a combination of greedy algorithms and brute force",
+          "correct": false
+        },
+        {
+          "text": "halving the input data set",
+          "correct": false
+        },
+        {
+          "text": "remembering computed results and generating a space of results",
+          "correct": true
+        },
+        {
+          "text": "recursion and fast mathematical calculations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What happens when a top-down dynamic programming approach is applied to any problem?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Memory complexity increases, but time complexity decreases",
+          "correct": true
+        },
+        {
+          "text": "Time complexity increases, but memory complexity decreases",
+          "correct": false
+        },
+        {
+          "text": "Both memory and time complexity decrease",
+          "correct": false
+        },
+        {
+          "text": "Both memory and time complexity increase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which programming technique can efficiently find the longest increasing subsequence of a given array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Greedy algorithms",
+          "correct": false
+        },
+        {
+          "text": "Dynamic programming",
+          "correct": true
+        },
+        {
+          "text": "Backtracking techniques",
+          "correct": false
+        },
+        {
+          "text": "Brute force",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When do we use dynamic programming?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When a locally best choice always leads to the optimal solution",
+          "correct": false
+        },
+        {
+          "text": "When the input is already sorted",
+          "correct": false
+        },
+        {
+          "text": "When the subproblems are independent and never repeat",
+          "correct": false
+        },
+        {
+          "text": "When the subproblems overlap (repeat), so their results are remembered",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When does divide and conquer become inefficient?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When the problem is solved with binary search",
+          "correct": false
+        },
+        {
+          "text": "When the input can be split in half",
+          "correct": false
+        },
+        {
+          "text": "When the subproblems are independent",
+          "correct": false
+        },
+        {
+          "text": "When the subproblems overlap (aren't independent), e.g. recursive Fibonacci numbers, where the same calculations are repeated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When is it best to apply divide and conquer?",
+      "points": 1,
+      "options": [
+        {
+          "text": "When only one locally best choice has to be made at each step",
+          "correct": false
+        },
+        {
+          "text": "When the subproblems overlap and repeat many times",
+          "correct": false
+        },
+        {
+          "text": "When the problem can be split into independent (disjoint) subproblems that aren't computed more than once (e.g. binary search)",
+          "correct": true
+        },
+        {
+          "text": "When every possible case has to be checked",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following techniques does Merge sort use to implement sorting?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Backtracking",
+          "correct": false
+        },
+        {
+          "text": "Dynamic programming",
+          "correct": false
+        },
+        {
+          "text": "Divide and conquer",
+          "correct": true
+        },
+        {
+          "text": "Greedy algorithm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the divide-and-conquer solution to finding the maximum element in an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(log2 n)",
+          "correct": true
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the time complexity of the brute force algorithm used to solve the knapsack problem?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^3)",
+          "correct": false
+        },
+        {
+          "text": "O(2^n)",
+          "correct": true
+        },
+        {
+          "text": "O(n!)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If, while exploring the solution space of a problem, you notice that certain parts of it don't need to be explored, you are using the technique of:",
+      "points": 1,
+      "options": [
+        {
+          "text": "Splitting",
+          "correct": false
+        },
+        {
+          "text": "Mixing",
+          "correct": false
+        },
+        {
+          "text": "Converting",
+          "correct": false
+        },
+        {
+          "text": "Pruning (prune the tree)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Suppose you have coins of 1, 3 and 4 denars. Using a greedy algorithm that picks the largest coin not greater than the remaining sum, for which of the following sums will the algorithm NOT give the optimal answer?",
+      "points": 1,
+      "options": [
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "20",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the best fit solution of the knapsack (bin packing) algorithm?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(2^n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": true
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Items are given as ordered pairs (weight, value): {(10,60), (7,28), (4,20), (2,24)}. The knapsack capacity is 7. Find the maximum value assuming there's only one of each item and the items are divisible (fractional knapsack).",
+      "points": 1,
+      "options": [
+        {
+          "text": "48",
+          "correct": false
+        },
+        {
+          "text": "44",
+          "correct": false
+        },
+        {
+          "text": "28",
+          "correct": false
+        },
+        {
+          "text": "54",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Items are given as ordered pairs (weight, value): {(10,50), (7,28), (4,20), (2,24)}. The knapsack capacity is 13. Find the maximum value assuming there's only one of each item and the items are not divisible (0/1 knapsack).",
+      "points": 1,
+      "options": [
+        {
+          "text": "48",
+          "correct": false
+        },
+        {
+          "text": "74",
+          "correct": true
+        },
+        {
+          "text": "52",
+          "correct": false
+        },
+        {
+          "text": "72",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A packing robot has to place items in packages so that the total value of the items in a package is maximized. Items can't be split. The maximum volume of a package is 50 liters. The items have volumes {15, 20, 30, 35} and values {90, 100, 120, 125}. What is the maximum total value?",
+      "points": 1,
+      "options": [
+        {
+          "text": "220",
+          "correct": true
+        },
+        {
+          "text": "200",
+          "correct": false
+        },
+        {
+          "text": "215",
+          "correct": false
+        },
+        {
+          "text": "190",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A CD holds N songs, each with size Si, and the CD is overfull. Will a greedy algorithm that deletes songs to free memory give an optimal result?",
+      "points": 1,
+      "options": [
+        {
+          "text": "No",
+          "correct": true
+        },
+        {
+          "text": "Yes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If we have n songs with total size D and a CD of size M, with D > M, can a greedy algorithm determine how to put the largest NUMBER of songs on the CD?",
+      "points": 1,
+      "options": [
+        {
+          "text": "No",
+          "correct": false
+        },
+        {
+          "text": "Yes",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If you need to diagnose a disease (or measure the temperature of a rocket), should you use a greedy algorithm?",
+      "points": 1,
+      "options": [
+        {
+          "text": "No",
+          "correct": true
+        },
+        {
+          "text": "Yes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Processes J1, J2, J3, J4 with execution times 16, 9, 5, 11 must run on one processor and can't be interrupted. Which order gives the best average completion time?",
+      "points": 1,
+      "options": [
+        {
+          "text": "J1, J2, J3, J4",
+          "correct": false
+        },
+        {
+          "text": "J3, J2, J4, J1",
+          "correct": true
+        },
+        {
+          "text": "J1, J4, J2, J3",
+          "correct": false
+        },
+        {
+          "text": "J4, J3, J2, J1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "For the same processes (16, 9, 5, 11) in the order J1, J2, J3, J4, what is the average completion time?",
+      "points": 1,
+      "options": [
+        {
+          "text": "21.25",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": false
+        },
+        {
+          "text": "28",
+          "correct": true
+        },
+        {
+          "text": "41",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Why does running the shortest process first minimize the average completion time?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The first process's time is added to every process's completion time (n times), the second's n−1 times, and so on, so the smallest times should get the biggest multipliers",
+          "correct": true
+        },
+        {
+          "text": "The longest process should go first so it isn't starved",
+          "correct": false
+        },
+        {
+          "text": "Short processes finish faster, so the processor is free sooner for the long ones",
+          "correct": false
+        },
+        {
+          "text": "The order doesn't matter, the average is always the same",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which technique do Huffman codes use?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Brute force",
+          "correct": false
+        },
+        {
+          "text": "Greedy",
+          "correct": true
+        },
+        {
+          "text": "Dynamic programming",
+          "correct": false
+        },
+        {
+          "text": "Backtracking",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the main idea of Huffman coding?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Every symbol gets a code of the same length",
+          "correct": false
+        },
+        {
+          "text": "Frequent symbols get shorter codes, rare symbols longer codes",
+          "correct": true
+        },
+        {
+          "text": "Rare symbols get shorter codes",
+          "correct": false
+        },
+        {
+          "text": "Symbols are sorted alphabetically before encoding",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Why can a Huffman-encoded file be decoded without separators between the codes?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Every code has the same length",
+          "correct": false
+        },
+        {
+          "text": "The decoder knows the number of symbols in advance",
+          "correct": false
+        },
+        {
+          "text": "No code is the start (prefix) of another code, because every symbol sits in a leaf of the coding tree",
+          "correct": true
+        },
+        {
+          "text": "The codes are separated by a special symbol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "With coins of 1, 5, 8 and 10 denars, how many coins does the greedy algorithm return for 23 denars, and how many is optimal?",
+      "points": 1,
+      "options": [
+        {
+          "text": "3 and 3",
+          "correct": false
+        },
+        {
+          "text": "4 and 3",
+          "correct": false
+        },
+        {
+          "text": "5 and 3",
+          "correct": true
+        },
+        {
+          "text": "5 and 4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In the dynamic programming solution of the change problem (coins 1, 5, 8, 10), what does sum[i] store?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The largest coin not greater than i",
+          "correct": false
+        },
+        {
+          "text": "The number of coins of value i",
+          "correct": false
+        },
+        {
+          "text": "The number of ways to pay the amount i",
+          "correct": false
+        },
+        {
+          "text": "The minimum number of coins needed to pay the amount i",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

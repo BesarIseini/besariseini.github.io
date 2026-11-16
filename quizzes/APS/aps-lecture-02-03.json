@@ -1,0 +1,802 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aps-lecture-02-03",
+  "revision": 1,
+  "courseId": "APS",
+  "category": "Lecture",
+  "title": "APS 02–03 – Arrays and lists",
+  "description": "Midterm 1 theory: arrays, sparse matrices, singly, doubly and circular linked lists and their complexities.",
+  "date": "2026-11-16",
+  "duration": 2040,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Midterm 1",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "For a given array a[left…right], in which algorithm does the following instruction appear (in pseudocode): copy a[x+1…right] into a[x…right−1]",
+      "points": 1,
+      "options": [
+        {
+          "text": "Deleting element a[x]",
+          "correct": true
+        },
+        {
+          "text": "None of the offered answers",
+          "correct": false
+        },
+        {
+          "text": "Adding element a[x]",
+          "correct": false
+        },
+        {
+          "text": "Copying one array into another",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Complete the sentence so it's true: Inserting an element is harder …",
+      "points": 1,
+      "options": [
+        {
+          "text": "none of the offered",
+          "correct": false
+        },
+        {
+          "text": "…at the start of a singly linked list than at the start of an array (A[0])",
+          "correct": false
+        },
+        {
+          "text": "…at the end of an array (A[n], n is known) than at the end of a singly linked list",
+          "correct": false
+        },
+        {
+          "text": "…at the start of an array (A[0]) than at the start of a singly linked list",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following characteristics is NOT a disadvantage of using arrays?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Memory may go unused if there are fewer elements than the allocated size",
+          "correct": false
+        },
+        {
+          "text": "Adding an element at a given position",
+          "correct": false
+        },
+        {
+          "text": "Access to elements at a specified position",
+          "correct": true
+        },
+        {
+          "text": "Fixed size",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is a disadvantage of the Array data structure?",
+      "points": 1,
+      "options": [
+        {
+          "text": "it has constant access time to an element via its index",
+          "correct": false
+        },
+        {
+          "text": "its size can't be changed",
+          "correct": true
+        },
+        {
+          "text": "it doesn't store extra helper data in memory (e.g. pointers)",
+          "correct": false
+        },
+        {
+          "text": "traversing the whole array is fast",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A dynamically linked list is a set of…",
+      "points": 1,
+      "options": [
+        {
+          "text": "elements (nodes) containing a value and a pointer to the next node",
+          "correct": false
+        },
+        {
+          "text": "ordered elements (nodes) containing a value and a pointer to the next node",
+          "correct": true
+        },
+        {
+          "text": "ordered elements (nodes) containing a value and pointers to an arbitrary number of nodes",
+          "correct": false
+        },
+        {
+          "text": "ordered elements (nodes) containing a value and a pointer to the next value",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following statements is NOT true about a singly linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Adding and deleting elements is simpler than with an array",
+          "correct": false
+        },
+        {
+          "text": "a singly linked list doesn't allow efficient access to an arbitrary element",
+          "correct": false
+        },
+        {
+          "text": "a singly linked list can't fill up (unless memory fills up)",
+          "correct": false
+        },
+        {
+          "text": "a singly linked list needs no extra memory to store a pointer",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A sparse matrix is:",
+      "points": 1,
+      "options": [
+        {
+          "text": "a matrix with many zeros that should be compressed",
+          "correct": false
+        },
+        {
+          "text": "a matrix with zeros that should be compressed in terms of the indexes it uses",
+          "correct": false
+        },
+        {
+          "text": "a matrix with many zero values that should be compressed in terms of the indexes it uses",
+          "correct": false
+        },
+        {
+          "text": "a matrix with many zero values that should be compressed memory-wise",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following operations is not O(1) for a sorted array? You may assume the elements in the array are distinct.",
+      "points": 1,
+      "options": [
+        {
+          "text": "Delete an element",
+          "correct": true
+        },
+        {
+          "text": "Find the i-th largest element",
+          "correct": false
+        },
+        {
+          "text": "Find the i-th smallest element",
+          "correct": false
+        },
+        {
+          "text": "All of the above",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "A set of nodes, each with a value and a pointer to the next node",
+          "correct": false
+        },
+        {
+          "text": "A set of elements that can only be accessed from the top",
+          "correct": false
+        },
+        {
+          "text": "A set of (key, value) pairs stored in arbitrary memory locations",
+          "correct": false
+        },
+        {
+          "text": "A consecutive set of memory locations, i.e. a set of ordered pairs (index, value), where every index has a corresponding value",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "The advantage of a singly linked list over a one-dimensional array is:",
+      "points": 1,
+      "options": [
+        {
+          "text": "It uses less memory per element",
+          "correct": false
+        },
+        {
+          "text": "Access by index is O(1)",
+          "correct": false
+        },
+        {
+          "text": "The number of elements doesn't have to be known in advance",
+          "correct": true
+        },
+        {
+          "text": "Its elements are stored in one continuous block of memory",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is NOT true about the differences between an array and a linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "In linked lists, inserting a new element is only allowed at the start or the end of the list",
+          "correct": true
+        },
+        {
+          "text": "An array's size is fixed when it is created",
+          "correct": false
+        },
+        {
+          "text": "Linked lists need extra memory for pointers",
+          "correct": false
+        },
+        {
+          "text": "Arrays allow access by index in O(1), linked lists don't",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Complexity of accessing an element by index in an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of accessing an element by its content (value) in an unsorted array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity if you want to delete an element from the end of the array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Complexity of adding an element to an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of inserting into an array: in the best case / in the general case / if you always insert at the start?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1) / O(n) / O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(n) / O(n) / O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(1) / O(n) / O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(1) / O(log n) / O(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of deleting an element from an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(n log n)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of adding (inserting) a node into a singly linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of adding an element to a singly linked list, at the end of the list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Complexity of deleting the first element of a list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of deleting one (arbitrary) element from a list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Finding the last element in a (singly linked) list has complexity:",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the space (memory) complexity of deleting from a linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "Either O(1) or O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "How would brute force check whether a given element is in a sorted array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "It would sort the array again and then search",
+          "correct": false
+        },
+        {
+          "text": "It would use binary search, halving the range",
+          "correct": false
+        },
+        {
+          "text": "It would check only the first and the last element",
+          "correct": false
+        },
+        {
+          "text": "It would go through all the elements of the array",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of checking whether two sorted collections are the same?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of checking whether two unsorted collections are the same?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": true
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which algorithm can be used to efficiently calculate a loan installment amount?",
+      "points": 1,
+      "options": [
+        {
+          "text": "DFS",
+          "correct": false
+        },
+        {
+          "text": "Binary search",
+          "correct": true
+        },
+        {
+          "text": "Merge sort",
+          "correct": false
+        },
+        {
+          "text": "BFS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following operations is performed more efficiently in doubly linked lists than in singly linked lists?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Inserting a node after a node at a given location",
+          "correct": false
+        },
+        {
+          "text": "Traversing the list to process every node",
+          "correct": false
+        },
+        {
+          "text": "Searching for a given node in an unsorted list",
+          "correct": false
+        },
+        {
+          "text": "Deleting a node at a given location",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In a doubly linked list, adding a new element after an element you already have a pointer to has complexity:",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n*log(n))",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n*n)",
+          "correct": false
+        },
+        {
+          "text": "none of the offered",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of deleting an element from a doubly linked list if you already have a pointer to it?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which statement is NOT true about a doubly linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Every node has a pointer to its predecessor and to its successor",
+          "correct": false
+        },
+        {
+          "text": "It needs more memory per node than a singly linked list",
+          "correct": false
+        },
+        {
+          "text": "There is a direct link between the first and the last element",
+          "correct": true
+        },
+        {
+          "text": "It can be traversed in both directions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Traversing a circular singly linked list is done like this:",
+      "points": 1,
+      "options": [
+        {
+          "text": "It must start from the first node and stop at null",
+          "correct": false
+        },
+        {
+          "text": "It can start from any node",
+          "correct": true
+        },
+        {
+          "text": "It isn't possible, because the list never ends",
+          "correct": false
+        },
+        {
+          "text": "It can only go backwards",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of deleting elements in a DLL?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following statements is false about a doubly linked list?",
+      "points": 1,
+      "options": [
+        {
+          "text": "It requires more memory than a singly linked list",
+          "correct": false
+        },
+        {
+          "text": "Implementing a doubly linked list is easier than a singly linked list",
+          "correct": false
+        },
+        {
+          "text": "The insertion and deletion of a node take a bit longer",
+          "correct": true
+        },
+        {
+          "text": "We can navigate in both directions",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,739 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aps-lecture-06",
+  "revision": 1,
+  "courseId": "APS",
+  "category": "Lecture",
+  "title": "APS 06 – One-dimensional data structures",
+  "description": "Midterm 1 theory: stacks, queues, cyclic arrays, priority queues, postfix notation.",
+  "date": "2026-11-16",
+  "duration": 1860,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Midterm 1",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "Which of the following is true about a stack?",
+      "points": 1,
+      "options": [
+        {
+          "text": "It's implicitly implemented with recursion",
+          "correct": true
+        },
+        {
+          "text": "It's implicitly implemented with iteration",
+          "correct": false
+        },
+        {
+          "text": "It can only be implemented with a doubly linked list",
+          "correct": false
+        },
+        {
+          "text": "It uses priority",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A stack is a one-dimensional linear sequence of elements that works by the principle:",
+      "points": 1,
+      "options": [
+        {
+          "text": "last-in-last-out",
+          "correct": false
+        },
+        {
+          "text": "last-in-first-out",
+          "correct": true
+        },
+        {
+          "text": "first-in-last-out",
+          "correct": false
+        },
+        {
+          "text": "first-in-first-out",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Adding new elements to and removing them from the stack:",
+      "points": 1,
+      "options": [
+        {
+          "text": "is done from the bottom",
+          "correct": false
+        },
+        {
+          "text": "depends on the stack's implementation",
+          "correct": false
+        },
+        {
+          "text": "is done from the top",
+          "correct": true
+        },
+        {
+          "text": "depends on how full the stack is",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When implementing a stack with a linked list, adding and removing an element is done:",
+      "points": 1,
+      "options": [
+        {
+          "text": "At the start of the list",
+          "correct": true
+        },
+        {
+          "text": "At the end of the list",
+          "correct": false
+        },
+        {
+          "text": "At an arbitrary location in the list",
+          "correct": false
+        },
+        {
+          "text": "In the middle of the list",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of adding (push) / removing (pop) an element in a stack implemented with an array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n) / O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(1) / O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(1) / O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n) / O(1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Implementing a stack with a list:",
+      "points": 1,
+      "options": [
+        {
+          "text": "The middle element of the list is the top of the stack",
+          "correct": false
+        },
+        {
+          "text": "The first element of the list is the top of the stack, but the stack has a fixed maximum size",
+          "correct": false
+        },
+        {
+          "text": "The first element of the list is the top of the stack, and the stack is unbounded",
+          "correct": true
+        },
+        {
+          "text": "The last element of the list is the top of the stack, and the stack is bounded",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "A stack implemented with an array:",
+      "points": 1,
+      "options": [
+        {
+          "text": "Is unbounded, it grows as needed",
+          "correct": false
+        },
+        {
+          "text": "Adds and removes elements at index 0, shifting the rest",
+          "correct": false
+        },
+        {
+          "text": "Has O(n) push and pop",
+          "correct": false
+        },
+        {
+          "text": "Has a limited length that depends on the length of the array (maxdepth)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Given the functions push() (add an element), pop() (delete the element at the top) and top() (return the element at the top). What will the output be after the following sequence of operations?",
+      "content": [
+        {
+          "type": "code",
+          "code": "push(20);\npush(4);\ntop();\npop();\npop();\npush(5);\ntop();",
+          "language": "pseudocode"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "20",
+          "correct": false
+        },
+        {
+          "text": "stack underflow",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the output after the given list of operations (pop prints the removed element)?",
+      "content": [
+        {
+          "type": "code",
+          "code": "push(5)\npush(8)\npop\npush(2)\npush(5)\npop\npop\npop\npush(1)\npop",
+          "language": "pseudocode"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "8 5 5 2 1",
+          "correct": false
+        },
+        {
+          "text": "8 5 2 5 1",
+          "correct": true
+        },
+        {
+          "text": "8 2 5 5 1",
+          "correct": false
+        },
+        {
+          "text": "8 1 2 5 5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "To most efficiently solve the problem of checking for well-placed brackets in arithmetic expressions, you use:",
+      "points": 1,
+      "options": [
+        {
+          "text": "a stack",
+          "correct": true
+        },
+        {
+          "text": "a priority list",
+          "correct": false
+        },
+        {
+          "text": "a queue",
+          "correct": false
+        },
+        {
+          "text": "none of the offered abstract data structures",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following is the best solution for reversing the order of elements?",
+      "points": 1,
+      "options": [
+        {
+          "text": "A circular list",
+          "correct": false
+        },
+        {
+          "text": "A queue",
+          "correct": false
+        },
+        {
+          "text": "A stack",
+          "correct": true
+        },
+        {
+          "text": "A priority queue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If the elements \"A\", \"B\", \"C\" and \"D\" are inserted into an empty queue, in what order will they be removed?",
+      "points": 1,
+      "options": [
+        {
+          "text": "ABCD",
+          "correct": true
+        },
+        {
+          "text": "DCBA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is a queue?",
+      "points": 1,
+      "options": [
+        {
+          "text": "A one-dimensional linear sequence of elements that works by the last-in-first-out (LIFO) principle",
+          "correct": false
+        },
+        {
+          "text": "A sequence where elements are always removed by priority",
+          "correct": false
+        },
+        {
+          "text": "A one-dimensional linear sequence of elements that works by the first-in-first-out (FIFO) principle: added at the tail, removed from the head",
+          "correct": true
+        },
+        {
+          "text": "A sequence where elements are added and removed only at the head",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When an element is inserted into a queue, it's inserted at the ____ of the queue, with the operation ____.",
+      "points": 1,
+      "options": [
+        {
+          "text": "start (head), dequeue",
+          "correct": false
+        },
+        {
+          "text": "start (head), enqueue",
+          "correct": false
+        },
+        {
+          "text": "end (tail), dequeue",
+          "correct": false
+        },
+        {
+          "text": "end (tail), enqueue",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which operation is used to remove the element at the head (start) of a queue?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Dequeue",
+          "correct": true
+        },
+        {
+          "text": "Push",
+          "correct": false
+        },
+        {
+          "text": "Pop",
+          "correct": false
+        },
+        {
+          "text": "Enqueue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If a queue is implemented with an SLL, removing an element from the queue is done with which SLL method?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Deleting the element at the start of the SLL",
+          "correct": true
+        },
+        {
+          "text": "Deleting the element at the end of the SLL",
+          "correct": false
+        },
+        {
+          "text": "Inserting an element at the start of the SLL",
+          "correct": false
+        },
+        {
+          "text": "Deleting an element in the middle of the SLL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "How many stacks are needed to implement a queue?",
+      "points": 1,
+      "options": [
+        {
+          "text": "2",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When implementing a queue with an array, the elements are located (e = array, f = head, r = tail) between:",
+      "points": 1,
+      "options": [
+        {
+          "text": "e[f…r−1]",
+          "correct": true
+        },
+        {
+          "text": "e[f…maxlen−1] and e[0…r−1]",
+          "correct": false
+        },
+        {
+          "text": "e[0…maxlen−1]",
+          "correct": false
+        },
+        {
+          "text": "e[f…r−1] or e[f…maxlen−1] and e[0…r−1]",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is a cyclic array used for?",
+      "points": 1,
+      "options": [
+        {
+          "text": "In sorting, to merge two halves",
+          "correct": false
+        },
+        {
+          "text": "In a stack, so it never overflows",
+          "correct": false
+        },
+        {
+          "text": "In a sparse matrix, to store only the non-zero values",
+          "correct": false
+        },
+        {
+          "text": "In a queue, so the elements don't have to be shifted: a[0] comes after a[n−1]",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In a queue implemented with a singly linked list, if only the front pointer is kept, which of the following operations has the worst running time?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Both adding an element and deleting the whole queue",
+          "correct": false
+        },
+        {
+          "text": "Adding an element",
+          "correct": true
+        },
+        {
+          "text": "Deleting the whole queue",
+          "correct": false
+        },
+        {
+          "text": "Removing an element",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In a priority queue, the largest (highest priority) element:",
+      "points": 1,
+      "options": [
+        {
+          "text": "enters first",
+          "correct": false
+        },
+        {
+          "text": "leaves first",
+          "correct": true
+        },
+        {
+          "text": "doesn't leave",
+          "correct": false
+        },
+        {
+          "text": "enters first and leaves last",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the worst-case complexity of inserting an element into a priority queue?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(n*log n)",
+          "correct": false
+        },
+        {
+          "text": "O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "In a priority queue implemented with a sorted SLL, what are the complexities of inserting and removing an element?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1) and O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(log n) and O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(1) and O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n) and O(1)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of adding, and of removing, an element from a priority queue implemented with a sorted array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1) - O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(N) - O(1)",
+          "correct": true
+        },
+        {
+          "text": "O(N) - O(N)",
+          "correct": false
+        },
+        {
+          "text": "O(1) - O(N)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is true for a priority queue represented with an unsorted array?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Adding an element O(1), removing an element O(n)",
+          "correct": true
+        },
+        {
+          "text": "Adding an element O(n), removing an element O(1)",
+          "correct": false
+        },
+        {
+          "text": "Adding and removing are both O(1)",
+          "correct": false
+        },
+        {
+          "text": "Adding and removing are both O(log n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "If we want to use an abstract data type (ADT) in our application, we need to:",
+      "points": 1,
+      "options": [
+        {
+          "text": "Implement it with an array first",
+          "correct": false
+        },
+        {
+          "text": "Specify the set of values and the operations on those values (without saying how they're implemented)",
+          "correct": true
+        },
+        {
+          "text": "Choose the programming language and the memory layout of the data",
+          "correct": false
+        },
+        {
+          "text": "Specify only its implementation, not its operations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the result of evaluating the postfix expression 5 9 + 2 * 6 5 * + ?",
+      "points": 1,
+      "options": [
+        {
+          "text": "43",
+          "correct": false
+        },
+        {
+          "text": "58",
+          "correct": true
+        },
+        {
+          "text": "76",
+          "correct": false
+        },
+        {
+          "text": "100",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the postfix form of the infix expression (5+9)*2+6*5?",
+      "points": 1,
+      "options": [
+        {
+          "text": "+ * + 5 9 2 * 6 5",
+          "correct": false
+        },
+        {
+          "text": "5 9 + 2 * 6 5 * +",
+          "correct": true
+        },
+        {
+          "text": "5 + 9 * 2 + 6 * 5",
+          "correct": false
+        },
+        {
+          "text": "5 9 2 + * 6 5 * +",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the result of evaluating the postfix expression 3 4 2 * + 5 - ?",
+      "points": 1,
+      "options": [
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "9",
+          "correct": false
+        },
+        {
+          "text": "30",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "When evaluating a postfix expression with a stack, what happens when an operator is read?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The operator is pushed onto the stack",
+          "correct": false
+        },
+        {
+          "text": "Two elements are popped, the operation is applied to them and the result is pushed",
+          "correct": true
+        },
+        {
+          "text": "One element is popped and printed",
+          "correct": false
+        },
+        {
+          "text": "The stack is emptied",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Why do prefix and postfix notation not need brackets?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Because they only allow + and *",
+          "correct": false
+        },
+        {
+          "text": "Because the position of each operator already determines the order of operations",
+          "correct": true
+        },
+        {
+          "text": "Because they are evaluated right to left",
+          "correct": false
+        },
+        {
+          "text": "They do need brackets",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

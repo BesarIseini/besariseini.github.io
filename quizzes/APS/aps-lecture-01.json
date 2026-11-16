@@ -1,0 +1,598 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "aps-lecture-01",
+  "revision": 1,
+  "courseId": "APS",
+  "category": "Lecture",
+  "title": "APS 01 – Algorithm complexity",
+  "description": "Midterm 1 theory: counting operations, Big O / Ω / Θ, comparing algorithms, the RAM model.",
+  "date": "2026-11-16",
+  "duration": 1380,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Midterm 1",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "Write the function for the number of executed operations for the given pseudocode and compute the asymptotic upper bound \"Big O\" for the same code:",
+      "content": [
+        {
+          "type": "code",
+          "code": "simple_computer(x, n)\n{\n  int sum=0;\n  for (int i=0; i<n; i++)\n      sum+=2*i*x[i];\n  return sum;\n}",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "f(n)=2n*n+4, O(n*n)",
+          "correct": false
+        },
+        {
+          "text": "f(n)=5n+8, O(n)",
+          "correct": true
+        },
+        {
+          "text": "f(n)=3n+6, O(3n)",
+          "correct": false
+        },
+        {
+          "text": "f(n)=2n+8, O(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the algorithm:",
+      "content": [
+        {
+          "type": "code",
+          "code": "compute(M, N, x, y){\n  int a = 0, b = 0;\n  for (i = 0; i < N; i++) { a = a + y[i]; }\n  for (j = 0; j < M; j++) { b = b + x[j]; }\n}",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "O(N * M)",
+          "correct": false
+        },
+        {
+          "text": "O((N + M)/2)",
+          "correct": false
+        },
+        {
+          "text": "O((N * M)/(N + M))",
+          "correct": false
+        },
+        {
+          "text": "O(N + M)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of the algorithm that merges two sorted lists of sizes m and n into one sorted list of size m + n?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log m + log n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(m)",
+          "correct": false
+        },
+        {
+          "text": "O(m+n)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the O() of the given code?",
+      "content": [
+        {
+          "type": "code",
+          "code": "int maximum(int a[], int n) {\n  int i, max = a[0];\n  for (i = 1; i < n; i++)\n    if (a[i] > max) max = a[i];\n  return max;\n}",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "O(1)",
+          "correct": false
+        },
+        {
+          "text": "O(a*n)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the O() of the given code?",
+      "content": [
+        {
+          "type": "code",
+          "code": "for (i=0; i<n; i++)\n  a[i] = i;\nfor (i=0; i<n; i++)\n  for (j=0; j<n; j++)\n    a[i] += a[j]+j*2;",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "O(n^3)",
+          "correct": false
+        },
+        {
+          "text": "O(i)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the complexity of:",
+      "content": [
+        {
+          "type": "code",
+          "code": "int power(int x, int n){\n  if(n == 0) return 1;\n  if(n == 1) return x;\n  return x * power(x, n-1);\n}",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "O(log n)",
+          "correct": false
+        },
+        {
+          "text": "O(2^n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What does it mean when we say that algorithm X is asymptotically more efficient than Y?",
+      "points": 1,
+      "options": [
+        {
+          "text": "X will always be a better choice for large inputs",
+          "correct": true
+        },
+        {
+          "text": "Y will always be a better choice for small inputs",
+          "correct": false
+        },
+        {
+          "text": "X will always be a better choice for all inputs",
+          "correct": false
+        },
+        {
+          "text": "X will always be a better choice for small inputs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which algorithm is faster, A or B, for the execution times shown in the chart?",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/aps-01-chart.png",
+          "alt": "Bar chart of execution time t (ms) for n = 10, 20, 30, 40: A is slightly faster at n = 10, B is faster from n = 20 on and grows more slowly"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "Algorithm A",
+          "correct": false
+        },
+        {
+          "text": "Algorithm B",
+          "correct": true
+        },
+        {
+          "text": "They are equally fast",
+          "correct": false
+        },
+        {
+          "text": "They can't be compared",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which function is NOT an asymptotic upper bound of f(n)=8n+1?",
+      "points": 1,
+      "options": [
+        {
+          "text": "g(n)=n*n",
+          "correct": false
+        },
+        {
+          "text": "g(n)=n*n*n",
+          "correct": false
+        },
+        {
+          "text": "g(n)=8n+2",
+          "correct": false
+        },
+        {
+          "text": "None of the offered",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "The asymptotic upper bound of the function f(n)=8n+1 is:",
+      "points": 1,
+      "options": [
+        {
+          "text": "g(n)=n",
+          "correct": true
+        },
+        {
+          "text": "g(n)=√n",
+          "correct": false
+        },
+        {
+          "text": "g(n)=log n",
+          "correct": false
+        },
+        {
+          "text": "g(n)=1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the number of operations and the complexity of the algorithm?",
+      "content": [
+        {
+          "type": "code",
+          "code": "int suma = 0;\nfor (int i = 1; i <= n; ++i)\n    suma = suma*i + i;\nreturn suma;",
+          "language": "c"
+        }
+      ],
+      "points": 1,
+      "options": [
+        {
+          "text": "f(n)=n^2+4, O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "f(n)=3n+2, O(n)",
+          "correct": false
+        },
+        {
+          "text": "f(n)=5n+4, O(n)",
+          "correct": true
+        },
+        {
+          "text": "f(n)=5n+4, O(5n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following is an upper bound of f(n)=8n+1?",
+      "points": 1,
+      "options": [
+        {
+          "text": "n*n*n",
+          "correct": true
+        },
+        {
+          "text": "log n",
+          "correct": false
+        },
+        {
+          "text": "(a function with lower complexity than O(n))",
+          "correct": false
+        },
+        {
+          "text": "none of the offered",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of these is an asymptotic bound of the function f(x) = x^2 + 3x + 4?",
+      "points": 1,
+      "options": [
+        {
+          "text": "x",
+          "correct": false
+        },
+        {
+          "text": "x*log(x)",
+          "correct": false
+        },
+        {
+          "text": "2x^3",
+          "correct": true
+        },
+        {
+          "text": "none of the offered",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Big Omega (Ω) is:",
+      "points": 1,
+      "options": [
+        {
+          "text": "Asymptotic upper bound: execution time in the worst case",
+          "correct": false
+        },
+        {
+          "text": "The average execution time",
+          "correct": false
+        },
+        {
+          "text": "Asymptotic lower bound: execution time in the best case",
+          "correct": true
+        },
+        {
+          "text": "Both a lower and an upper bound on the execution time",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What does Θ (theta) notation describe?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Only an upper bound (worst case)",
+          "correct": false
+        },
+        {
+          "text": "The memory used by the algorithm",
+          "correct": false
+        },
+        {
+          "text": "Both a lower and an upper bound on the execution time",
+          "correct": true
+        },
+        {
+          "text": "Only a lower bound (best case)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the offered has the highest complexity / will run the slowest?",
+      "points": 1,
+      "options": [
+        {
+          "text": "O(2^n)",
+          "correct": true
+        },
+        {
+          "text": "O(n*n*n)",
+          "correct": false
+        },
+        {
+          "text": "O(n^2)",
+          "correct": false
+        },
+        {
+          "text": "O(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "The complexity of algorithms is measured with:",
+      "points": 1,
+      "options": [
+        {
+          "text": "Execution time in seconds",
+          "correct": false
+        },
+        {
+          "text": "None of the offered answers",
+          "correct": true
+        },
+        {
+          "text": "Memory capacity",
+          "correct": false
+        },
+        {
+          "text": "Processor speed",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "What does the complexity of an algorithm NOT depend on?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The input size n",
+          "correct": false
+        },
+        {
+          "text": "The hardware: processor speed, amount of memory",
+          "correct": true
+        },
+        {
+          "text": "The loops and recursive calls in the algorithm",
+          "correct": false
+        },
+        {
+          "text": "The number of executed operations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Imagine there are two solutions to a problem. The first solution has two consecutive recursive calls that use almost the original number of elements. The second solution traverses half the elements in a loop and then the other half in a reverse loop. Which solution is more efficient and why?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The first, because recursion is always more efficient than a loop",
+          "correct": false
+        },
+        {
+          "text": "The second, because it solves the problem in linear time instead of exponential",
+          "correct": true
+        },
+        {
+          "text": "The first, because it has exponential complexity unlike the second which has double linear complexity",
+          "correct": false
+        },
+        {
+          "text": "The first, because it has logarithmic complexity unlike the second which has linear complexity",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Imagine there are two solutions to a problem. The first solution has a recursive call with the number of input elements reduced by one. The second solution has two nested loops over all elements. Which solution is more efficient and why?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The second, because it has quadratic complexity unlike the first which has exponential",
+          "correct": false
+        },
+        {
+          "text": "The first, because it has logarithmic complexity unlike the second which has quadratic",
+          "correct": false
+        },
+        {
+          "text": "The first, because it has linear complexity unlike the second which has quadratic",
+          "correct": true
+        },
+        {
+          "text": "The second, because loops are always more efficient than recursion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Imagine there are two solutions to a problem. The first solution has two consecutive recursive calls that halve the number of input elements. The second solution traverses half of the elements in a loop. Which solution is more efficient and why?",
+      "points": 1,
+      "options": [
+        {
+          "text": "The second, because it solves the problem with only half the elements, while the first needlessly handles the elements twice",
+          "correct": false
+        },
+        {
+          "text": "The first, because it has logarithmic complexity unlike the second which has linear",
+          "correct": true
+        },
+        {
+          "text": "The first, because it has logarithmic complexity unlike the second which has half-linear",
+          "correct": false
+        },
+        {
+          "text": "The first, because recursion is always more efficient than a loop",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "T(n) is O(g(n)) if:",
+      "points": 1,
+      "options": [
+        {
+          "text": "T(n) < c·g(n) for every n ≥ 0, for every constant c",
+          "correct": false
+        },
+        {
+          "text": "there are positive constants c and n0 such that T(n) < c·g(n) for every n > n0",
+          "correct": true
+        },
+        {
+          "text": "there are positive constants c and n0 such that T(n) > c·g(n) for every n > n0",
+          "correct": false
+        },
+        {
+          "text": "T(n) = g(n) for large n",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": "Which of the following is NOT an assumption of the Random Access Machine (RAM) model?",
+      "points": 1,
+      "options": [
+        {
+          "text": "Every simple operation (+, *, -, =, if, call) takes one time unit",
+          "correct": false
+        },
+        {
+          "text": "Loops take as many time units as they have iterations",
+          "correct": false
+        },
+        {
+          "text": "There is unlimited memory",
+          "correct": false
+        },
+        {
+          "text": "The execution time depends on the processor speed",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
