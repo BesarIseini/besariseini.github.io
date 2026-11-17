@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code - BETA SeisHub</title>
+    <style>
+        /* Test results, Moodle style: green = right, red = wrong answer, yellow = the program failed. */
+        .cr-pass { --cr: var(--success); }
+        .cr-fail { --cr: var(--destructive); }
+        .cr-error { --cr: oklch(0.72 0.16 75); }
+        .cr-none { --cr: var(--muted-foreground); }
+        .cr-row.cr-pass, .cr-row.cr-fail, .cr-row.cr-error { background: color-mix(in oklab, var(--cr) 11%, var(--card)); }
+        .cr-row > th { border-left: 4px solid var(--cr); }
+        .dark .cr-row.cr-pass, .dark .cr-row.cr-fail, .dark .cr-row.cr-error { background: color-mix(in oklab, var(--cr) 20%, var(--card)); }
+        .cr-banner { background: color-mix(in oklab, var(--cr) 12%, var(--card)); border-color: color-mix(in oklab, var(--cr) 45%, var(--card)); }
+        .cr-text-pass { color: var(--success); }
+        .cr-text-fail { color: var(--destructive); }
+        .cr-text-error { color: oklch(0.52 0.13 70); }
+        .dark .cr-text-error { color: oklch(0.8 0.15 80); }
+        .cr-text-none { color: var(--foreground); }
+        .cr-badge-pass { color: var(--success); border-color: color-mix(in oklab, var(--success) 45%, transparent); }
+    </style>
     <script src="https://unpkg.com/lucide@latest"></script>
-  <script type="module" crossorigin src="/assets/code-DeU5PZfh.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-CrAmT56O.js">
-  <link rel="modulepreload" crossorigin href="/assets/accountUi-ClCgv_CB.js">
-  <link rel="modulepreload" crossorigin href="/assets/Courses-DwF-q8LP.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-DNBk9gl1.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-BMtwi1fY.js">
-  <link rel="modulepreload" crossorigin href="/assets/problemFormat-BO-xdLTB.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-CYTicMW2.css">
+  <script type="module" crossorigin src="/assets/code-viYICjiX.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-CayxNfCS.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-gDKjXw9a.js">
+  <link rel="modulepreload" crossorigin href="/assets/Courses-CSVolg4b.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-Bcy95vUY.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-5ngFhzhD.js">
+  <link rel="modulepreload" crossorigin href="/assets/problemFormat-DtDzocQJ.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-USfdO-eM.css">
 </head>
 <body class="bg-background text-foreground min-h-screen font-sans">
 <script>

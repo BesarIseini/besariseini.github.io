@@ -1,0 +1,1 @@
+import{g as e}from"./sync-CayxNfCS.js";import{l as a}from"./localize-4Qsb3HkI.js";function r(t){return a(t.title,e(),t.defaultLanguage)}function o(t){return a(t.description,e(),t.defaultLanguage)}export{o as a,r as q};
