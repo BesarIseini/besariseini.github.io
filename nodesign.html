@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website4training</title><link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+<!--    <div id="quiz">-->
+<!--      <h2 id="question-text"></h2>-->
+<!--      <div id="options"></div>-->
+<!--      <button id="submit">Submit</button>-->
+<!--    </div>-->
+    <div class="quiz-container">
+        <div class="question-numbering">
+            <center>
+                <h3 id="questions-left">
+                    18/20
+                </h3>
+            </center>
+            <div class="buttons" id="button-navigator-list">
+                <button class="question-navigator current">1</button>
+                <button class="question-navigator">2</button>
+                <button class="question-navigator">3</button>
+                <button class="question-navigator">4</button>
+            </div>
+            <div>
+                <center>
+                    <button id="flagQuestion">Flag Question</button>
+                </center>
+            </div>
+            <div id="warningSidebar">
+
+            </div>
+            <div>
+                <center>
+                    <p>Total Points</p>
+                    <b><span id="graded-points"></span>/<span id="total-points">0.00</span></b>
+                </center>
+            </div>
+        </div>
+        <div class="question">
+            <div class="timer" id="timer">00:00:00</div>
+            <div id="quiz">
+                <div id="warningTop"></div>
+                <h2 id="question-text"></h2>
+<!--                <img src="public/coconut.jpeg" height="225" width="225" class="question-img" id="question-img"/>-->
+                <div id="options"></div>
+                <div id="warningBottom"></div>
+                <div class="hidden" id="review-correct">
+                    <p>
+                        Correct: <span id="correct"></span>
+                    </p>
+                </div>
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+                <button id="openModal">Open modal</button>
+            </div>
+        </div>
+        <div class="review-table" id="review-table">
+            <table>
+                <tr>
+                    <th>Status</th>
+                    <td>Finished</td>
+                </tr>
+                <tr>
+                    <th>Started</th>
+                    <td id="timeStarted">Today</td>
+                </tr>
+                <tr>
+                    <th>Completed</th>
+                    <td id="timeCompleted">Today +30</td>
+                </tr>
+                <tr>
+                    <th>Duration</th>
+                    <td id="quiz-duration">30min</td>
+                </tr>
+                <tr>
+                    <th>Points</th>
+                    <td id="table-points">100/100</td>
+                </tr>
+                <tr>
+                    <th>Positive Points</th>
+                    <td id="table-positive-points">100/100</td>
+                </tr>
+                <tr>
+                    <th>Negative Points</th>
+                    <td id="table-negative-points">100/100</td>
+                </tr>
+                <tr>
+                    <th colspan="2" id="review-button">Review</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Exit</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal">
+            <h2>Submit Quiz?</h2>
+            <p id="preSubmitMessage">This is a simple modal window.</p>
+
+            <div class="modal-actions">
+                <button id="submit">Finish Quiz</button>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+  <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
