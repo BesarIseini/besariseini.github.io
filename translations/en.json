@@ -656,6 +656,17 @@
     "PROBLEM_ISSUE_SOLUTION_OUTPUT_LIMIT": "Your solution prints too much.",
     "PROBLEM_ISSUE_SOLUTION_INTERNAL": "Your solution couldn't be run on this test.",
     "PROBLEM_ISSUE_SOLUTION_NOT_RUN": "The tests take too long in total; this one wasn't run.",
-    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Code can't be run right now, so the solution couldn't be checked. Try again later."
+    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Code can't be run right now, so the solution couldn't be checked. Try again later.",
+    "CREATOR_IMPORT_PROBLEMS": "Import code problems",
+    "CREATOR_IMPORT_HINT": "JSON files with one problem, a list of problems, or {\"problems\": [...]}. Each problem is checked, its solution is run on every test, and then it is published at once. A problem whose key already exists is updated.",
+    "CREATOR_IMPORT_EXAMPLE": "Example file",
+    "CREATOR_IMPORT_RUNNING": "Importing {done} of {total}…",
+    "CREATOR_IMPORT_DONE": "Import finished: {ok} of {total} published.",
+    "CREATOR_IMPORT_NOTHING": "No problems were found in the selected files.",
+    "CREATOR_IMPORT_BAD_FILE": "This isn't a valid JSON file.",
+    "CREATOR_IMPORT_CREATED": "Added",
+    "CREATOR_IMPORT_UPDATED": "Updated",
+    "CREATOR_IMPORT_NOT_ADMIN": "Only admins can import problems.",
+    "PROBLEM_ISSUE_IMPORT_KEY": "The key must start with \"p-\" and contain only a-z, 0-9 and \"-\", e.g. p-aps-lab1-sum."
   }
 }

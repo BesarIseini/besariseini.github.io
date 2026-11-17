@@ -663,6 +663,17 @@
     "PROBLEM_ISSUE_SOLUTION_OUTPUT_LIMIT": "Вашето решение печати премногу.",
     "PROBLEM_ISSUE_SOLUTION_INTERNAL": "Вашето решение не можеше да се изврши на овој тест.",
     "PROBLEM_ISSUE_SOLUTION_NOT_RUN": "Тестовите вкупно траат предолго; овој не беше извршен.",
-    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Кодот моментално не може да се изврши, па решението не можеше да се провери. Обидете се подоцна."
+    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Кодот моментално не може да се изврши, па решението не можеше да се провери. Обидете се подоцна.",
+    "CREATOR_IMPORT_PROBLEMS": "Увези задачи со код",
+    "CREATOR_IMPORT_HINT": "JSON-датотеки со една задача, листа задачи или {\"problems\": [...]}. Секоја задача се проверува, решението се извршува на сите тестови и потоа задачата веднаш се објавува. Задача чиј клуч веќе постои се ажурира.",
+    "CREATOR_IMPORT_EXAMPLE": "Пример-датотека",
+    "CREATOR_IMPORT_RUNNING": "Се увезува {done} од {total}…",
+    "CREATOR_IMPORT_DONE": "Увезувањето заврши: објавени се {ok} од {total}.",
+    "CREATOR_IMPORT_NOTHING": "Во избраните датотеки нема задачи.",
+    "CREATOR_IMPORT_BAD_FILE": "Ова не е валидна JSON-датотека.",
+    "CREATOR_IMPORT_CREATED": "Додадена",
+    "CREATOR_IMPORT_UPDATED": "Ажурирана",
+    "CREATOR_IMPORT_NOT_ADMIN": "Само администраторите можат да увезуваат задачи.",
+    "PROBLEM_ISSUE_IMPORT_KEY": "Клучот мора да започнува со „p-“ и да содржи само a-z, 0-9 и „-“, на пр. p-aps-lab1-sum."
   }
 }

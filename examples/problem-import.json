@@ -1,0 +1,102 @@
+{
+  "problems": [
+    {
+      "key": "p-example-reverse-array",
+      "courseId": "APS",
+      "topic": "Arrays",
+      "difficulty": "easy",
+      "title": {
+        "en": "Reverse an array"
+      },
+      "statement": {
+        "en": "The first line has <b>n</b> (1 ≤ n ≤ 1000), the second line n integers. Print them in reverse order, separated by spaces."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "allowed": [
+        "c",
+        "cpp",
+        "java",
+        "python"
+      ],
+      "starter": {
+        "c": "#include <stdio.h>\n\nint main(void) {\n    \n    return 0;\n}\n"
+      },
+      "timeLimitMs": 1000,
+      "memoryLimitMb": 128,
+      "tests": [
+        {
+          "input": "5\n1 2 3 4 5\n",
+          "output": "5 4 3 2 1\n",
+          "hidden": false
+        },
+        {
+          "input": "1\n7\n",
+          "output": "7\n",
+          "hidden": false
+        },
+        {
+          "input": "3\n-1 0 1\n",
+          "output": "1 0 -1\n",
+          "hidden": true
+        }
+      ],
+      "solution": {
+        "language": "c",
+        "code": "#include <stdio.h>\n\nint main(void) {\n    int n, a[1000];\n    if (scanf(\"%d\", &n) != 1) return 1;\n    for (int i = 0; i < n; i++) scanf(\"%d\", &a[i]);\n    for (int i = n - 1; i >= 0; i--) printf(\"%d%c\", a[i], i ? ' ' : '\\n');\n    return 0;\n}\n"
+      }
+    },
+    {
+      "key": "p-example-balanced-brackets",
+      "courseId": "APS",
+      "topic": "Stacks",
+      "difficulty": "medium",
+      "title": {
+        "en": "Balanced brackets"
+      },
+      "statement": {
+        "en": "Read one line. Print <b>YES</b> if its brackets (), [] and {} are balanced and properly nested, otherwise <b>NO</b>. Other characters are ignored."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "allowed": [
+        "c",
+        "cpp",
+        "java",
+        "python"
+      ],
+      "timeLimitMs": 1000,
+      "memoryLimitMb": 128,
+      "tests": [
+        {
+          "input": "([]{})\n",
+          "output": "YES\n",
+          "hidden": false
+        },
+        {
+          "input": "(]\n",
+          "output": "NO\n",
+          "hidden": false
+        },
+        {
+          "input": "(((\n",
+          "output": "NO\n",
+          "hidden": true
+        },
+        {
+          "input": "a(b)c\n",
+          "output": "YES\n",
+          "hidden": true
+        }
+      ],
+      "solution": {
+        "language": "python",
+        "code": "s = input().strip()\npairs = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\nstack = []\nok = True\nfor c in s:\n    if c in \"([{\":\n        stack.append(c)\n    elif c in pairs:\n        if not stack or stack.pop() != pairs[c]:\n            ok = False\n            break\nprint(\"YES\" if ok and not stack else \"NO\")\n"
+      }
+    }
+  ]
+}

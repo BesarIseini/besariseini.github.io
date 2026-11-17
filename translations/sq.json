@@ -663,6 +663,17 @@
     "PROBLEM_ISSUE_SOLUTION_OUTPUT_LIMIT": "Zgjidhja juaj shtyp shumë.",
     "PROBLEM_ISSUE_SOLUTION_INTERNAL": "Zgjidhja juaj nuk mund të ekzekutohej në këtë test.",
     "PROBLEM_ISSUE_SOLUTION_NOT_RUN": "Testet zgjasin shumë në total; ky nuk u ekzekutua.",
-    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Kodi nuk mund të ekzekutohet tani, prandaj zgjidhja nuk mund të kontrollohej. Provoni më vonë."
+    "PROBLEM_ISSUE_RUNNER_UNAVAILABLE": "Kodi nuk mund të ekzekutohet tani, prandaj zgjidhja nuk mund të kontrollohej. Provoni më vonë.",
+    "CREATOR_IMPORT_PROBLEMS": "Importo detyra me kod",
+    "CREATOR_IMPORT_HINT": "Skedarë JSON me një detyrë, një listë detyrash ose {\"problems\": [...]}. Çdo detyrë kontrollohet, zgjidhja ekzekutohet në të gjitha testet dhe pastaj detyra publikohet menjëherë. Një detyrë, çelësi i së cilës ekziston tashmë, përditësohet.",
+    "CREATOR_IMPORT_EXAMPLE": "Skedar shembull",
+    "CREATOR_IMPORT_RUNNING": "Po importohet {done} nga {total}…",
+    "CREATOR_IMPORT_DONE": "Importimi përfundoi: u publikuan {ok} nga {total}.",
+    "CREATOR_IMPORT_NOTHING": "Në skedarët e zgjedhur nuk u gjet asnjë detyrë.",
+    "CREATOR_IMPORT_BAD_FILE": "Ky nuk është skedar JSON i vlefshëm.",
+    "CREATOR_IMPORT_CREATED": "U shtua",
+    "CREATOR_IMPORT_UPDATED": "U përditësua",
+    "CREATOR_IMPORT_NOT_ADMIN": "Vetëm administratorët mund të importojnë detyra.",
+    "PROBLEM_ISSUE_IMPORT_KEY": "Çelësi duhet të fillojë me „p-“ dhe të përmbajë vetëm a-z, 0-9 dhe „-“, p.sh. p-aps-lab1-sum."
   }
 }
