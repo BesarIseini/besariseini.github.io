@@ -1,0 +1,2040 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-bank-intro",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Lecture",
+  "title": {
+    "mk": "КМиБ – Банка: вовед и слоеви",
+    "en": "KMiB – Bank: introduction and layers"
+  },
+  "description": {
+    "mk": "Слоеви, преклопување, доцнења, пропусна моќ, медиуми и пристапни мрежи – од банката на прашања.",
+    "en": "Layers, switching, delays, throughput, media and access networks – from the question bank."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 5880,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Bank",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Сервер со Rs = 10 Mbps и клиенти со Rc = 1 Mbps комуницираат преку заеднички линк R = 100 Mbps. Колку најмногу конекции може да минуваат низ R, а R да не биде тесно грло?",
+        "en": "A server with Rs = 10 Mbps and clients with Rc = 1 Mbps communicate over a shared link R = 100 Mbps. At most how many connections can cross R without R becoming the bottleneck?"
+      },
+      "points": 1,
+      "answer": 100,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "20 клиенти, секој со конекција до различен сервер. Rc = 50 Mbps, Rs = 400 Mbps, R = 2000 Mbps.",
+        "en": "20 clients, each connected to a different server. Rc = 50 Mbps, Rs = 400 Mbps, R = 2000 Mbps."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Тесно грло е ",
+            "en": "The bottleneck is "
+          },
+          "textAfter": {
+            "mk": "<br>Крај-до-крај пропусната моќ: ",
+            "en": "<br>End-to-end throughput: "
+          },
+          "answer": "Rc",
+          "choices": [
+            "Rc",
+            "Rs",
+            "R"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " Mbps",
+          "answer": 50,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Rs = Rc = 100 Mbps, а 10 конекции го делат заедничкиот линк R. Колкава е минималната пропусна моќ на R (во Mbps) за тој да не биде тесно грло?",
+        "en": "Rs = Rc = 100 Mbps, and 10 connections share the common link R. What is the minimum capacity of R (in Mbps) so that it is not the bottleneck?"
+      },
+      "points": 1,
+      "answer": 1000,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "HOST – R1 – R2 – SERVER, линкови L1 = 1000 Mbps, L2 = 2000 Mbps, L3 = 1000 Mbps, пакет од 2000 b. Колкаво е крај-до-крај трансмисиското доцнење во ms? (децимална точка)",
+        "en": "HOST – R1 – R2 – SERVER, links L1 = 1000 Mbps, L2 = 2000 Mbps, L3 = 1000 Mbps, a 2000 b packet. What is the end-to-end transmission delay in ms? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 0.005,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.0001
+      }
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "На кое ниво од Интернет стекот припаѓа секој протокол?",
+        "en": "Which Internet-stack layer does each protocol belong to?"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": "Ethernet",
+          "textAfter": "",
+          "answer": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          }
+        },
+        {
+          "textBefore": "HTTP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": "IP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Мрежен",
+            "en": "Network"
+          }
+        },
+        {
+          "textBefore": "TCP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        },
+        {
+          "textBefore": "UDP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Линк (податочен)",
+          "en": "Link (data link)"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        },
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        },
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Пакет од 100 бита се праќа од A до рутер R по линк од 1 kbps; линкот е 1000 m, брзина на пропагација 500 m/s; обработката во R трае 0.2 s; други пакети нема. Линкот R–B е ист како A–R.",
+        "en": "A 100-bit packet goes from A to router R over a 1 kbps link; the link is 1000 m long, propagation speed 500 m/s; processing in R takes 0.2 s; there are no other packets. Link R–B is the same as A–R."
+      },
+      "points": 4,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Трансмисиско доцнење (s): ",
+            "en": "Transmission delay (s): "
+          },
+          "textAfter": "<br>",
+          "answer": 0.1,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.001
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Пропагациско доцнење (s): ",
+            "en": "Propagation delay (s): "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.001
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекање во редица (s): ",
+            "en": "Queuing delay (s): "
+          },
+          "textAfter": "<br>",
+          "answer": 0,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупно од A до B (s): ",
+            "en": "Total from A to B (s): "
+          },
+          "textAfter": "",
+          "answer": 4.4,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.001
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Голем број хостови истовремено праќаат сообраќај кон еден хост за да го задушат. Како се вика нападот?",
+        "en": "Many hosts send traffic to one host at the same time to overwhelm it. What is this attack called?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "DDoS",
+          "correct": true
+        },
+        {
+          "text": "Sniffing",
+          "correct": false
+        },
+        {
+          "text": "Spoofing",
+          "correct": false
+        },
+        {
+          "text": "Phishing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Дополнете за DSL.",
+        "en": "Complete the sentences about DSL."
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Користи ",
+            "en": "It uses "
+          },
+          "textAfter": {
+            "mk": " како медиум, кој е ",
+            "en": " as its medium, which is "
+          },
+          "answer": {
+            "mk": "телефонска линија",
+            "en": "the telephone line"
+          },
+          "choices": [
+            {
+              "mk": "телефонска линија",
+              "en": "the telephone line"
+            },
+            {
+              "mk": "оптика",
+              "en": "fiber"
+            },
+            {
+              "mk": "коаксијален кабел",
+              "en": "coaxial cable"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": {
+            "mk": ". Корисниците ",
+            "en": ". Users "
+          },
+          "answer": {
+            "mk": "насочен",
+            "en": "guided"
+          },
+          "choices": [
+            {
+              "mk": "насочен",
+              "en": "guided"
+            },
+            {
+              "mk": "ненасочен",
+              "en": "unguided"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": {
+            "mk": " ист медиум.",
+            "en": " the same medium."
+          },
+          "answer": {
+            "mk": "не споделуваат",
+            "en": "don't share"
+          },
+          "choices": [
+            {
+              "mk": "споделуваат",
+              "en": "share"
+            },
+            {
+              "mk": "не споделуваат",
+              "en": "don't share"
+            }
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои тврдења се точни?",
+        "en": "Which statements are true?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Интернет стандардите ги дефинираат производителите на мрежна опрема.",
+            "en": "Internet standards are defined by network equipment vendors."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Уплетените парици се од бакар и често се користат во Етернет мрежи.",
+            "en": "Twisted pairs are copper and are often used in Ethernet networks."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Circuit switching е подобро кога сообраќајот е константен.",
+            "en": "Circuit switching is better when traffic is constant."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пропагациското доцнење е пропорционално со должината на пакетот.",
+            "en": "Propagation delay is proportional to the packet length."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мрежното јадро се состои од меѓусебно поврзани рутери.",
+            "en": "The network core consists of interconnected routers."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Rc = 100 Mbps, R = 1000 Mbps, Rs = 200 Mbps. Колкава е пропусната моќ по конекција (Mbps)?",
+        "en": "Rc = 100 Mbps, R = 1000 Mbps, Rs = 200 Mbps. What is the throughput per connection (Mbps)?"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "100 клиенти кон различни сервери: ",
+            "en": "100 clients to different servers: "
+          },
+          "textAfter": "<br>",
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "5 клиенти кон различни сервери: ",
+            "en": "5 clients to different servers: "
+          },
+          "textAfter": "<br>",
+          "answer": 100,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "5 клиенти кон ист сервер: ",
+            "en": "5 clients to the same server: "
+          },
+          "textAfter": "",
+          "answer": 40,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој слој се наоѓа над транспортниот слој во TCP/IP моделот?",
+        "en": "Which layer is above the transport layer in the TCP/IP model?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Апликациски",
+            "en": "Application"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мрежен",
+            "en": "Network"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сесиски",
+            "en": "Session"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "На кој слој се врши пренос на датотеки (file transfer)?",
+        "en": "At which layer does file transfer happen?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Апликациски",
+            "en": "Application"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мрежен",
+            "en": "Network"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Граф со линкови: 1–2 (10 Mbps), 1–3 (5 Mbps), 1–4 (1 Gbps), 1–5 (100 Mbps). Колкава е пропусната моќ (Mbps) меѓу:",
+        "en": "Graph with links: 1–2 (10 Mbps), 1–3 (5 Mbps), 1–4 (1 Gbps), 1–5 (100 Mbps). What is the throughput (Mbps) between:"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "јазлите 3 и 5: ",
+            "en": "nodes 3 and 5: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "јазлите 2 и 3: ",
+            "en": "nodes 2 and 3: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "јазлите 2 и 4: ",
+            "en": "nodes 2 and 4: "
+          },
+          "textAfter": "",
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Оптичкиот кабел, во споредба со другите жичани медиуми, се карактеризира со:",
+        "en": "Compared with other wired media, optical fiber has:"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Помало ослабување",
+            "en": "Lower attenuation"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Помала големина и тежина",
+            "en": "Smaller size and weight"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Едноставна имплементација",
+            "en": "Simple installation"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Помала цена",
+            "en": "Lower cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Капацитет до неколку Mbps",
+            "en": "Capacity of up to a few Mbps"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои од следните НЕ комуницираат директно меѓу себе?",
+        "en": "Which of these do NOT communicate directly with each other?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Сервери",
+            "en": "Servers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Рутери",
+            "en": "Routers"
+          },
+          "correct": false
+        },
+        {
+          "text": "Peers",
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Клиенти",
+            "en": "Clients"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е улогата на вториот слој одоздола во TCP/IP моделот со 4 слоја?",
+        "en": "What is the role of the second layer from the bottom in the 4-layer TCP/IP model?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "IP адресирање и рутирање на датаграми од извор до одредиште (Интернет слој)",
+            "en": "IP addressing and routing of datagrams from source to destination (Internet layer)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пренос на рамки меѓу соседни јазли",
+            "en": "Moving frames between neighbouring nodes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Комуникација меѓу процеси",
+            "en": "Communication between processes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Услуги за корисникот",
+            "en": "Services for the user"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кога доцнењето во редицата на чекање е големо?",
+        "en": "When is the queuing delay large?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Кога интензитетот La/R е блиску до 1",
+            "en": "When the traffic intensity La/R is close to 1"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Кога La/R е блиску до 0",
+            "en": "When La/R is close to 0"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кога линкот е долг",
+            "en": "When the link is long"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кога пакетите се мали",
+            "en": "When packets are small"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како се вика PDU на слој 2 (податочен слој)?",
+        "en": "What is the PDU of layer 2 (data link) called?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Рамка (frame)",
+            "en": "Frame"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пакет",
+            "en": "Packet"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сегмент",
+            "en": "Segment"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Порака",
+            "en": "Message"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "На кој слој припаѓа е-поштата?",
+        "en": "Which layer does e-mail belong to?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Апликациски",
+            "en": "Application"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мрежен",
+            "en": "Network"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто се развиени TCP/IP протоколите?",
+        "en": "Why were the TCP/IP protocols developed?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За компјутерите што комуницираат да ги делат ресурсите на мрежата",
+            "en": "So communicating computers can share the network's resources"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се забрза процесорот",
+            "en": "To speed up the processor"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се замени Етернет",
+            "en": "To replace Ethernet"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само за е-пошта",
+            "en": "Only for e-mail"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Од што е изградено мрежното јадро?",
+        "en": "What is the network core made of?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Рутери и прекинувачи (switches)",
+            "en": "Routers and switches"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Крајни хостови",
+            "en": "End hosts"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сервери и клиенти",
+            "en": "Servers and clients"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само оптички кабли",
+            "en": "Only optical cables"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Кој слој…",
+        "en": "Which layer…"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "…ја дели пораката на сегменти?",
+            "en": "…splits the message into segments?"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "…ги составува сегментите назад во оригиналната порака?",
+            "en": "…reassembles segments into the original message?"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "…ги енкапсулира TCP сегментите во пакети?",
+            "en": "…encapsulates TCP segments in packets?"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Мрежен",
+            "en": "Network"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "…ги пакува битовите во рамки?",
+            "en": "…packs bits into frames?"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "…ги крие карактеристиките на податочниот слој од повисоките слоеви?",
+            "en": "…hides the data link layer's details from the higher layers?"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Мрежен",
+            "en": "Network"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        },
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Линк (податочен)",
+          "en": "Link (data link)"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        },
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Со што се карактеризира преносот на податоци без воспоставување логичка врска?",
+        "en": "What characterizes connectionless data transfer?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Секој пакет низ мрежата се разгледува независно од останатите",
+            "en": "Every packet is handled independently of the others"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Датаграмите секогаш пристигнуваат по редоследот на праќање",
+            "en": "Datagrams always arrive in the order they were sent"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Постои точно одреден максимален број јазли што датаграмот може да ги помине",
+            "en": "There is a fixed maximum number of nodes a datagram may cross"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Одлуката за насочување е преддефинирана за секој датаграм",
+            "en": "The routing decision is predefined for each datagram"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Преносот на пакети е дизајниран како архитектура каде:",
+        "en": "Packet transfer is designed as an architecture where:"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Податоците се пренесуваат во мали блокови наречени пакети",
+            "en": "Data is transferred in small blocks called packets"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пакетите се состојат од кориснички податоци плус контролни информации",
+            "en": "Packets consist of user data plus control information"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Линиите се искористуваат поефикасно отколку кај кола",
+            "en": "Lines are used more efficiently than with circuits"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пакетите се состојат само од кориснички податоци",
+            "en": "Packets contain only user data"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Ако редицата во рутерот е полна, а пристигнуваат нови пакети, што се случува?",
+        "en": "If the router's queue is full and new packets arrive, what happens?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Пакетите се губат (се отфрлаат)",
+            "en": "The packets are lost (dropped)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Рутерот ја зголемува редицата",
+            "en": "The router enlarges the queue"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пакетите се враќаат на испраќачот",
+            "en": "The packets are returned to the sender"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Рутерот го забавува линкот",
+            "en": "The router slows the link"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои се примери на ненасочени (unguided) медиуми?",
+        "en": "Which are examples of unguided media?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Воздух",
+            "en": "Air"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Морска вода",
+            "en": "Sea water"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Вакуум",
+            "en": "Vacuum"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Оптичко влакно",
+            "en": "Optical fiber"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Уплетена парица",
+            "en": "Twisted pair"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Физичкиот слој:",
+        "en": "The physical layer:"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Обезбедува адресирање на домаќините",
+            "en": "Provides host addressing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пренесува неструктуриран поток битови преку медиумот",
+            "en": "Transfers an unstructured bit stream over the medium"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Се грижи за механичките, електричните, функционалните и процедуралните карактеристики",
+            "en": "Handles the mechanical, electrical, functional and procedural characteristics"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Врши рутирање",
+            "en": "Does routing"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кое тврдење за загушувањето е точно?",
+        "en": "Which statement about congestion is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Кога има загушување, пакетите се праќаат кон јазолот побрзо отколку што тој може да ги прими",
+            "en": "Under congestion, packets are sent to a node faster than it can accept them"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Загушувањето се решава со отфрлање на пакетите за кои нема место",
+            "en": "Congestion is solved by dropping packets that don't fit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Загушувањето е локален настан во еден јазол",
+            "en": "Congestion is a local event in a single node"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Загушувањето се решава со контрола на проток",
+            "en": "Congestion is solved with flow control"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "N-тиот слој врши услуга за:",
+        "en": "Layer N provides service to:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Слојот N+1",
+            "en": "Layer N+1"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Слојот N−1",
+            "en": "Layer N−1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сите слоеви",
+            "en": "All layers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само физичкиот слој",
+            "en": "Only the physical layer"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Крај-до-крај доцнење (трансмисија + пропагација) за пакет L = 8000 b, s = 3·10⁸ m/s. Link1: 1000 Mbps, 2 km; Link2: 100 Mbps, 5000 km; Link3: 10 Mbps, 2 km. Одговор во ms, заокружен на цел број.",
+        "en": "End-to-end delay (transmission + propagation) for a packet L = 8000 b, s = 3·10⁸ m/s. Link1: 1000 Mbps, 2 km; Link2: 100 Mbps, 5000 km; Link3: 10 Mbps, 2 km. Answer in ms, rounded to a whole number."
+      },
+      "points": 1,
+      "answer": 18,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази важат за коаксијалниот кабел?",
+        "en": "Which statements apply to coaxial cable?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Користи FDM за многу канали истовремено",
+            "en": "Uses FDM for many channels at once"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Основа е на кабловската телевизија",
+            "en": "It is the basis of cable TV"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Е ненасочен медиум",
+            "en": "It is an unguided medium"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Има најмало ослабување од сите медиуми",
+            "en": "It has the lowest attenuation of all media"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "mk": "Промената на имплементацијата на еден слој е транспарентна за другите слоеви.",
+        "en": "Changing the implementation of one layer is transparent to the other layers."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "До секоја од услугите одберете на кое ниво се овозможува.",
+        "en": "For each service, choose the layer that provides it."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Рутирање и препраќање на пакети",
+            "en": "Routing and forwarding packets"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Мрежен",
+            "en": "Network"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Пренос на рамки само меѓу директно поврзани уреди",
+            "en": "Moving frames only between directly connected devices"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Размена на датотеки",
+            "en": "File exchange"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Стандардизација на карактеристиките на медиумите",
+            "en": "Standardizing media characteristics"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Физички",
+            "en": "Physical"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Контрола на проток и застој",
+            "en": "Flow and congestion control"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Линк (податочен)",
+          "en": "Link (data link)"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        },
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "IP адреса има …",
+        "en": "An IP address belongs to …"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Секој интерфејс",
+            "en": "Every interface"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Секој компјутер (една по уред)",
+            "en": "Every computer (one per device)"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Секој процес",
+            "en": "Every process"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Секоја апликација",
+            "en": "Every application"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Под рутирање се подразбира:",
+        "en": "Routing means:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Одредување по која патека (излезен интерфејс) да оди пакетот",
+            "en": "Deciding which path (output interface) the packet takes"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Преместување на пакетот од влезен на излезен порт",
+            "en": "Moving the packet from an input to an output port"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Проверка на грешки",
+            "en": "Checking errors"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Шифрирање на пакетот",
+            "en": "Encrypting the packet"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "5 клиенти се поврзани со 5 различни сервери. Rc = 500 Mbps, Rs = 400 Mbps, R = 1000 Mbps.",
+        "en": "5 clients connect to 5 different servers. Rc = 500 Mbps, Rs = 400 Mbps, R = 1000 Mbps."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Тесно грло е ",
+            "en": "The bottleneck is "
+          },
+          "textAfter": {
+            "mk": "<br>Пропусна моќ по конекција: ",
+            "en": "<br>Throughput per connection: "
+          },
+          "answer": "R",
+          "choices": [
+            "Rc",
+            "Rs",
+            "R"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": " Mbps",
+          "answer": 200,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Од што зависи доцнењето во редица на чекање?",
+        "en": "What does queuing delay depend on?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Физичкиот медиум",
+            "en": "The physical medium"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ратата на пренос",
+            "en": "The transmission rate"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ратата на пристигнување",
+            "en": "The arrival rate"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Протоколот на транспортно ниво",
+            "en": "The transport protocol"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "На кој тип на преклопување се однесува секоја карактеристика?",
+        "en": "Which kind of switching does each characteristic describe?"
+      },
+      "points": 6,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Може да се отфрлат пакети при преоптоварување",
+            "en": "Packets may be dropped under overload"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Оптимално кога корисниците се постојано активни",
+            "en": "Optimal when users are constantly active"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Го користат рутерите",
+            "en": "Used by routers"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Гарантира пропусен опсег",
+            "en": "Guarantees bandwidth"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Резервира ресурси",
+            "en": "Reserves resources"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Опслужува повеќе корисници со сообраќај во рафали",
+            "en": "Serves more users with bursty traffic"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        }
+      ],
+      "bank": [
+        "Packet switching",
+        "Circuit switching"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Во рутерот:",
+        "en": "In a router:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Најпрвин се врши рутирање, па препраќање",
+            "en": "Routing comes first, then forwarding"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Најпрвин препраќање, па рутирање",
+            "en": "Forwarding comes first, then routing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Истовремено се вршат и двете",
+            "en": "Both happen at the same time"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Карактеристики на пристапните мрежи: кој медиум користи секоја?",
+        "en": "Access networks: which medium does each use?"
+      },
+      "points": 4,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Кабловска",
+            "en": "Cable"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Коаксијален кабел",
+            "en": "Coaxial cable"
+          }
+        },
+        {
+          "textBefore": "ADSL",
+          "textAfter": "",
+          "answer": {
+            "mk": "Телефонска линија",
+            "en": "Telephone line"
+          }
+        },
+        {
+          "textBefore": "Ethernet",
+          "textAfter": "",
+          "answer": {
+            "mk": "Уплетена парица",
+            "en": "Twisted pair"
+          }
+        },
+        {
+          "textBefore": "WiFi",
+          "textAfter": "",
+          "answer": {
+            "mk": "Радио",
+            "en": "Radio"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Коаксијален кабел",
+          "en": "Coaxial cable"
+        },
+        {
+          "mk": "Телефонска линија",
+          "en": "Telephone line"
+        },
+        {
+          "mk": "Уплетена парица",
+          "en": "Twisted pair"
+        },
+        {
+          "mk": "Радио",
+          "en": "Radio"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои пристапни мрежи се споделени (корисниците го делат медиумот)?",
+        "en": "Which access networks are shared (users share the medium)?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Кабловска",
+            "en": "Cable"
+          },
+          "correct": true
+        },
+        {
+          "text": "WiFi",
+          "correct": true
+        },
+        {
+          "text": "ADSL",
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ethernet со свич",
+            "en": "Switched Ethernet"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "OSI моделот е развиен од:",
+        "en": "The OSI model was developed by:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "ISO",
+          "correct": true
+        },
+        {
+          "text": "IANA",
+          "correct": false
+        },
+        {
+          "text": "Microsoft",
+          "correct": false
+        },
+        {
+          "text": "PC World",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која архитектура на протоколи има најмногу имплементации?",
+        "en": "Which protocol architecture has the most implementations?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "TCP/IP",
+          "correct": true
+        },
+        {
+          "text": "OSI",
+          "correct": false
+        },
+        {
+          "text": "DARPA",
+          "correct": false
+        },
+        {
+          "text": "ARPANET",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кај пакетниот пренос:",
+        "en": "With packet switching:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Искористувањето на линиите е поголемо отколку кај кола",
+            "en": "Line utilization is higher than with circuits"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Искористувањето е помало отколку кај кола",
+            "en": "Line utilization is lower than with circuits"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Се користи TDM",
+            "en": "TDM is used"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Линијата можат да ја користат само два јазли истовремено",
+            "en": "Only two nodes can use the line at once"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "4 сервери се поврзани со 4 клиенти преку 4 патеки со по три скока; сите го делат средниот линк R = 200 Mbps. Линковите од серверите се Rs = 70 Mbps, а кон клиентите Rc = 60 Mbps. Испраќачите праќаат со максимална можна брзина. Колкава е искористеноста (%, 2 децимали)?",
+        "en": "4 servers connect to 4 clients over 4 paths of three hops each; all share the middle link R = 200 Mbps. Server links are Rs = 70 Mbps and client links Rc = 60 Mbps. Senders send as fast as possible. What is the utilization (%, 2 decimals)?"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "на R: ",
+            "en": "of R: "
+          },
+          "textAfter": "<br>",
+          "answer": 100,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "на Rs: ",
+            "en": "of Rs: "
+          },
+          "textAfter": "<br>",
+          "answer": 71.43,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "на Rc: ",
+            "en": "of Rc: "
+          },
+          "textAfter": "",
+          "answer": 83.33,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Транспортниот слој е кој по ред слој од Интернет стекот (одоздола)?",
+        "en": "Counting from the bottom, which layer of the Internet stack is the transport layer?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Физичкиот слој обезбедува сервиси за:",
+        "en": "The physical layer provides services to:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Податочниот (линк) слој",
+            "en": "The data link layer"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мрежниот слој",
+            "en": "The network layer"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Транспортниот слој",
+            "en": "The transport layer"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ниту еден слој",
+            "en": "No layer"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Физичкиот слој се грижи за:",
+        "en": "The physical layer is responsible for:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Интерфејсот меѓу два уреди и битовите што се праќаат",
+            "en": "The interface between two devices and the bits sent between them"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Размена на податоци меѓу крајните системи",
+            "en": "Data exchange between end systems"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дијалогот меѓу апликациите",
+            "en": "The dialogue between applications"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Активирање и деактивирање на линкот",
+            "en": "Activating and deactivating the link"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "ordering",
+      "question": {
+        "mk": "Подредете ги слоевите на OSI моделот од 1 (најдолу) до 7.",
+        "en": "Put the OSI layers in order from 1 (bottom) to 7."
+      },
+      "points": 1,
+      "items": [
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        },
+        {
+          "mk": "Податочен",
+          "en": "Data link"
+        },
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        },
+        {
+          "mk": "Сесиски",
+          "en": "Session"
+        },
+        {
+          "mk": "Презентациски",
+          "en": "Presentation"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        }
+      ],
+      "correctOrder": [
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        },
+        {
+          "mk": "Податочен",
+          "en": "Data link"
+        },
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        },
+        {
+          "mk": "Сесиски",
+          "en": "Session"
+        },
+        {
+          "mk": "Презентациски",
+          "en": "Presentation"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        }
+      ],
+      "layout": "verticalNumbered"
+    }
+  ]
+}

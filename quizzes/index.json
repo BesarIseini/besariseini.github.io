@@ -734,6 +734,275 @@
       "estimatedMinutes": 10
     },
     {
+      "key": "kmib-bank-application",
+      "path": "quizzes/KMiB/kmib-bank-application.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Lecture",
+      "title": {
+        "mk": "КМиБ – Банка: апликациски слој",
+        "en": "KMiB – Bank: application layer"
+      },
+      "description": {
+        "mk": "HTTP, колачиња, DNS записи и сервери, е-пошта (SMTP, POP3, IMAP), P2P – од банката на прашања.",
+        "en": "HTTP, cookies, DNS records and servers, e-mail (SMTP, POP3, IMAP), P2P – from the question bank."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Bank",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "КМиБ – Банка: апликациски слој",
+        "KMiB – Bank: application layer"
+      ],
+      "questionCount": 40,
+      "estimatedMinutes": 20
+    },
+    {
+      "key": "kmib-bank-intro",
+      "path": "quizzes/KMiB/kmib-bank-intro.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Lecture",
+      "title": {
+        "mk": "КМиБ – Банка: вовед и слоеви",
+        "en": "KMiB – Bank: introduction and layers"
+      },
+      "description": {
+        "mk": "Слоеви, преклопување, доцнења, пропусна моќ, медиуми и пристапни мрежи – од банката на прашања.",
+        "en": "Layers, switching, delays, throughput, media and access networks – from the question bank."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 5880,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Bank",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "КМиБ – Банка: вовед и слоеви",
+        "KMiB – Bank: introduction and layers"
+      ],
+      "questionCount": 49,
+      "estimatedMinutes": 25
+    },
+    {
+      "key": "kmib-bank-transport",
+      "path": "quizzes/KMiB/kmib-bank-transport.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Lecture",
+      "title": {
+        "mk": "КМиБ – Банка: транспортен слој",
+        "en": "KMiB – Bank: transport layer"
+      },
+      "description": {
+        "mk": "UDP и TCP, сокети, Seq/ACK, GBN и SR, контрола на проток и застој, cwnd графови – од банката на прашања.",
+        "en": "UDP and TCP, sockets, Seq/ACK, GBN and SR, flow and congestion control, cwnd graphs – from the question bank."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 3240,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Bank",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "КМиБ – Банка: транспортен слој",
+        "KMiB – Bank: transport layer"
+      ],
+      "questionCount": 27,
+      "estimatedMinutes": 14
+    },
+    {
+      "key": "kmib-lectures-review",
+      "path": "quizzes/KMiB/kmib-lectures-review.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Lecture",
+      "title": {
+        "mk": "КМиБ – Предавања 1–3: дополнителни прашања",
+        "en": "KMiB – Lectures 1–3: extra questions"
+      },
+      "description": {
+        "mk": "Теми од предавањата што ги нема во старите колоквиуми: HTTP/2/3, CDN, безбедност, rdt, Seq/ACK, порти.",
+        "en": "Lecture topics missing from the old midterms: HTTP/2/3, CDN, security, rdt, Seq/ACK, ports."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 2400,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Lectures"
+      ],
+      "legacyTitles": [
+        "КМиБ – Предавања 1–3: дополнителни прашања",
+        "KMiB – Lectures 1–3: extra questions"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "kmib-midterm-2021-11-20",
+      "path": "quizzes/KMiB/kmib-midterm-2021-11-20.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Midterm",
+      "title": {
+        "mk": "КМиБ – Колоквиум 20.11.2021",
+        "en": "KMiB – Midterm 20.11.2021"
+      },
+      "description": {
+        "mk": "Прашања од колоквиумот на 20.11.2021, според скриптата од студентите.",
+        "en": "Questions from the 20 Nov 2021 midterm, based on the students' script."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1080,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "2021",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "КМиБ – Колоквиум 20.11.2021",
+        "KMiB – Midterm 20.11.2021"
+      ],
+      "questionCount": 9,
+      "estimatedMinutes": 5
+    },
+    {
+      "key": "kmib-midterm-2021-22",
+      "path": "quizzes/KMiB/kmib-midterm-2021-22.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Midterm",
+      "title": {
+        "mk": "КМиБ – Колоквиум 2021/22 (теорија)",
+        "en": "KMiB – Midterm 2021/22 (theory)"
+      },
+      "description": {
+        "mk": "Прашања од првиот колоквиум 2021/22, според скриптата од студентите.",
+        "en": "Questions from the 2021/22 first midterm, based on the students' script."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 3120,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "2021/22",
+        "Theory"
+      ],
+      "legacyTitles": [
+        "КМиБ – Колоквиум 2021/22 (теорија)",
+        "KMiB – Midterm 2021/22 (theory)"
+      ],
+      "questionCount": 26,
+      "estimatedMinutes": 13
+    },
+    {
+      "key": "kmib-problems-network",
+      "path": "quizzes/KMiB/kmib-problems-network.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Practical",
+      "title": {
+        "mk": "КМиБ – Задачи: доцнења, пропусна моќ, кеш",
+        "en": "KMiB – Problems: delay, throughput, caching"
+      },
+      "description": {
+        "mk": "Кола и пакети, store-and-forward, N-слојна хиерархија, пиксели, физички пренос, LAN и веб кеш, дистрибуција на датотеки.",
+        "en": "Circuits and packets, store-and-forward, N-layer overhead, pixels, physical transfer, LAN and web cache, file distribution."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 6840,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Problems"
+      ],
+      "legacyTitles": [
+        "КМиБ – Задачи: доцнења, пропусна моќ, кеш",
+        "KMiB – Problems: delay, throughput, caching"
+      ],
+      "questionCount": 38,
+      "estimatedMinutes": 19
+    },
+    {
+      "key": "kmib-problems-transport",
+      "path": "quizzes/KMiB/kmib-problems-transport.json",
+      "revision": 1,
+      "courseId": "KMiB",
+      "category": "Practical",
+      "title": {
+        "mk": "КМиБ – Задачи: HTTP, checksum, TCP",
+        "en": "KMiB – Problems: HTTP, checksum, TCP"
+      },
+      "description": {
+        "mk": "Internet checksum, време за HTTP, EstimatedRTT и timeout, искористеност и прозорец, Go-Back-N, TCP Reno.",
+        "en": "Internet checksum, HTTP timing, EstimatedRTT and timeout, utilization and window, Go-Back-N, TCP Reno."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 5760,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Problems"
+      ],
+      "legacyTitles": [
+        "КМиБ – Задачи: HTTP, checksum, TCP",
+        "KMiB – Problems: HTTP, checksum, TCP"
+      ],
+      "questionCount": 32,
+      "estimatedMinutes": 16
+    },
+    {
       "key": "ooaid-exam-1",
       "path": "quizzes/OOAiD/ooaid-exam-1.json",
       "revision": 1,

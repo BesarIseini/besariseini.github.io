@@ -1,0 +1,693 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-problems-network",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Practical",
+  "title": {
+    "mk": "КМиБ – Задачи: доцнења, пропусна моќ, кеш",
+    "en": "KMiB – Problems: delay, throughput, caching"
+  },
+  "description": {
+    "mk": "Кола и пакети, store-and-forward, N-слојна хиерархија, пиксели, физички пренос, LAN и веб кеш, дистрибуција на датотеки.",
+    "en": "Circuits and packets, store-and-forward, N-layer overhead, pixels, physical transfer, LAN and web cache, file distribution."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 6840,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Problems"
+  ],
+  "questions": [
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 4000 B се испраќа преку патека со 10 скока; големината на пакетот е 20 b, податочната рата 20 b/s, а воспоставувањето на повикот трае 5 s. Секој скок е 100 km, брзината на пропагација 2.5·10⁴ m/s. Колку секунди трае испраќањето со премостување на линии (circuit switching)?",
+        "en": "A 4000 B message is sent over a 10-hop path; the packet size is 20 b, the data rate 20 b/s, and call setup takes 5 s. Each hop is 100 km, propagation speed 2.5·10⁴ m/s. How many seconds does sending take with circuit switching?"
+      },
+      "points": 1,
+      "answer": 1645.0,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 420 B се испраќа преку патека со 10 скока; големината на пакетот е 20 b, податочната рата 20 b/s, а воспоставувањето на повикот трае 10 s. Секој скок е 100 km, брзината на пропагација 2.5·10⁴ m/s. Колку секунди трае испраќањето со премостување на линии (circuit switching)?",
+        "en": "A 420 B message is sent over a 10-hop path; the packet size is 20 b, the data rate 20 b/s, and call setup takes 10 s. Each hop is 100 km, propagation speed 2.5·10⁴ m/s. How many seconds does sending take with circuit switching?"
+      },
+      "points": 1,
+      "answer": 218.0,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 500 B се испраќа преку патека со 10 скока; големината на пакетот е 20 b, податочната рата 5 b/s, а воспоставувањето на повикот трае 10 s. Секој скок е 100 km, брзината на пропагација 2.5·10⁴ m/s. Колку секунди трае испраќањето со премостување на линии (circuit switching)?",
+        "en": "A 500 B message is sent over a 10-hop path; the packet size is 20 b, the data rate 5 b/s, and call setup takes 10 s. Each hop is 100 km, propagation speed 2.5·10⁴ m/s. How many seconds does sending take with circuit switching?"
+      },
+      "points": 1,
+      "answer": 850.0,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 2000 B се испраќа преку патека со 10 скока; големината на пакетот е 20 b, податочната рата 10 b/s, а воспоставувањето на повикот трае 4 s. Секој скок е 100 km, брзината на пропагација 2.5·10⁴ m/s. Колку секунди трае испраќањето со премостување на линии (circuit switching)?",
+        "en": "A 2000 B message is sent over a 10-hop path; the packet size is 20 b, the data rate 10 b/s, and call setup takes 4 s. Each hop is 100 km, propagation speed 2.5·10⁴ m/s. How many seconds does sending take with circuit switching?"
+      },
+      "points": 1,
+      "answer": 1644.0,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 4500 B, 10 скока, пакет 400 b, рата 100 b/s, воспоставување 10 s, секој скок 200 km, пропагација 2·10⁴ m/s. Време со circuit switching (s)?",
+        "en": "A 4500 B message, 10 hops, 400 b packets, rate 100 b/s, setup 10 s, each hop 200 km, propagation 2·10⁴ m/s. Time with circuit switching (s)?"
+      },
+      "points": 1,
+      "answer": 470.0,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 931 b преку 7 скока, рата 199 b/s, воспоставување 18 s по скок, пропагација 0.08 s/m по скок, секој скок 61 m. Време со circuit switching (s, 2 децимали)? (децимална точка)",
+        "en": "A 931 b message over 7 hops, rate 199 b/s, setup 18 s per hop, propagation 0.08 s/m per hop, each hop 61 m. Time with circuit switching (s, 2 decimals)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 164.84,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Порака од 1000 b преку 4 скока, рата 100 b/s, воспоставување 15 s по скок. Време со circuit switching (s, цел број):",
+        "en": "A 1000 b message over 4 hops, rate 100 b/s, setup 15 s per hop. Time with circuit switching (s, whole number):"
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) без пропагација: ",
+            "en": "a) without propagation: "
+          },
+          "textAfter": "<br>",
+          "answer": 70,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) со пропагација 0.02 s/m по скок, скок од 50 m: ",
+            "en": "b) with propagation 0.02 s/m per hop, 50 m hops: "
+          },
+          "textAfter": "",
+          "answer": 74.0,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Порака од 800 b преку 4 скока, пакети од 200 b, рата 100 b/s, пропагацијата е занемарлива. Време со packet switching (s, 1 децимала): (децимална точка)",
+        "en": "An 800 b message over 4 hops, 200 b packets, rate 100 b/s, negligible propagation. Time with packet switching (s, 1 decimal): (use a decimal point)"
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) ",
+            "en": "a) "
+          },
+          "textAfter": "<br>",
+          "answer": 14.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.051
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) ако секој пакет има и заглавје од 20 b: ",
+            "en": "b) if every packet also has a 20 b header: "
+          },
+          "textAfter": "",
+          "answer": 15.4,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.051
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Порака од 1563 b преку 1 скок, пакети од 191 b, рата 332 b/s, пропагација 3 s. Време со packet switching (s, 1 децимала)? (децимална точка)",
+        "en": "A 1563 b message over 1 hop, 191 b packets, rate 332 b/s, propagation 3 s. Time with packet switching (s, 1 decimal)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 7.7,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.051
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "A и B се одделени со 6 линкови од по 182 Mbps. Колкаво е доцнењето (store-and-forward) за пренос на еден пакет од 849 KB? (1 KB = 1000 B; ms, 2 децимали) (децимална точка)",
+        "en": "A and B are separated by 6 links of 182 Mbps each. What is the store-and-forward delay for one 849 KB packet? (1 KB = 1000 B; ms, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 223.91,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "A и B се одделени со 5 линкови од по 163 Mbps. Колкаво е доцнењето (store-and-forward) за пренос на еден пакет од 1474 KB? (1 KB = 1000 B; ms, 2 децимали) (децимална точка)",
+        "en": "A and B are separated by 5 links of 163 Mbps each. What is the store-and-forward delay for one 1474 KB packet? (1 KB = 1000 B; ms, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 361.72,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "A и B се одделени со 5 линкови од по 138 Mbps. Колкаво е доцнењето (store-and-forward) за пренос на еден пакет од 1062 KB? (1 KB = 1000 B; ms, 2 децимали) (децимална точка)",
+        "en": "A and B are separated by 5 links of 138 Mbps each. What is the store-and-forward delay for one 1062 KB packet? (1 KB = 1000 B; ms, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 307.83,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "A и B се одделени со 9 линкови од по 54 Mbps. Колкаво е доцнењето (store-and-forward) за пренос на еден пакет од 532 KB? (1 KB = 1000 B; ms, 2 децимали) (децимална точка)",
+        "en": "A and B are separated by 9 links of 54 Mbps each. What is the store-and-forward delay for one 532 KB packet? (1 KB = 1000 B; ms, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 709.33,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "A и B се одделени со 5 линкови од по 58 Mbps. Колкаво е доцнењето (store-and-forward) за пренос на еден пакет од 1192 KB? (1 KB = 1000 B; ms, 2 децимали) (децимална точка)",
+        "en": "A and B are separated by 5 links of 58 Mbps each. What is the store-and-forward delay for one 1192 KB packet? (1 KB = 1000 B; ms, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 822.07,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Систем со 3-слојна хиерархија. 3-тиот слој генерира пораки од 25 B. 2-риот слој додава 8 B заглавје и 10-битна опашка, а 1-виот 3 B заглавје и 18-битна опашка. Колкав процент од пропусниот опсег се полни со дополнителни битови? (1 децимала) (децимална точка)",
+        "en": "A system with a 3-layer protocol hierarchy. Layer 3 makes 25 B messages. Layer 2 adds a 8 B header and a 10-bit trailer, layer 1 a 3 B header and a 18-bit trailer. What percentage of the bandwidth is filled with the extra bits? (1 decimal) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 36.7,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.051
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Систем со 3-слојна хиерархија. 3-тиот слој генерира пораки од 41 B. 2-риот слој додава 4 B заглавје и 16-битна опашка, а 1-виот 6 B заглавје и 13-битна опашка. Колкав процент од пропусниот опсег се полни со дополнителни битови? (1 децимала) (децимална точка)",
+        "en": "A system with a 3-layer protocol hierarchy. Layer 3 makes 41 B messages. Layer 2 adds a 4 B header and a 16-bit trailer, layer 1 a 6 B header and a 13-bit trailer. What percentage of the bandwidth is filled with the extra bits? (1 decimal) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 24.9,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.051
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Систем со 3-слојна хиерархија. 3-тиот слој генерира пораки од 38 B. 2-риот слој додава 9 B заглавје и 25-битна опашка, а 1-виот 4 B заглавје и 18-битна опашка. Колкав процент од пропусниот опсег се полни со дополнителни битови? (1 децимала) (децимална точка)",
+        "en": "A system with a 3-layer protocol hierarchy. Layer 3 makes 38 B messages. Layer 2 adds a 9 B header and a 25-bit trailer, layer 1 a 4 B header and a 18-bit trailer. What percentage of the bandwidth is filled with the extra bits? (1 decimal) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 32.6,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.051
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Систем со 3-слојна хиерархија. 3-тиот слој генерира пораки од 35 B. 2-риот слој додава 10 B заглавје и 9-битна опашка, а 1-виот 8 B заглавје и 15-битна опашка. Колкав процент од пропусниот опсег се полни со дополнителни битови? (1 децимала) (децимална точка)",
+        "en": "A system with a 3-layer protocol hierarchy. Layer 3 makes 35 B messages. Layer 2 adds a 10 B header and a 9-bit trailer, layer 1 a 8 B header and a 15-bit trailer. What percentage of the bandwidth is filled with the extra bits? (1 decimal) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 37.5,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.051
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "ТВ слика од 1920 × 1080 пиксели, секој пиксел има една од 4 вредности на интензитет, 5 слики во секунда. Колкава е ратата на изворот во Mbps (1 Mbps = 10⁶ b/s)? (децимална точка)",
+        "en": "A TV image of 1920 × 1080 pixels, each pixel one of 4 intensity values, 5 images per second. What is the source rate in Mbps (1 Mbps = 10⁶ b/s)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 20.736,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.001
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Мобилен со резолуција 1536 × 864, секој пиксел една од 4 вредности, 25 слики во секунда. Колкава е ратата во Mbps (1 Mbps = 10⁶ b/s, 2 децимали)? (децимална точка)",
+        "en": "A phone with a 1536 × 864 resolution, each pixel one of 4 values, 25 images per second. What is the rate in Mbps (1 Mbps = 10⁶ b/s, 2 decimals)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 66.36,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "300 × 200 пиксели, 8 нивоа по пиксел, 30 слики во секунда, без компресија. Колкава е ратата во Mbps? (децимална точка)",
+        "en": "300 × 200 pixels, 8 levels per pixel, 30 images per second, no compression. What is the rate in Mbps? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 5.4,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.001
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Видео игра од 10 GB ја праќате на другар оддалечен 5 km: или физички (одите со 21 km/h) или преку линк од 9 Mbps. Колку секунди трае побрзиот начин? (1 GB = 10⁹ B, цел број)",
+        "en": "You send a 10 GB video game to a friend 5 km away: either physically (you travel at 21 km/h) or over a 9 Mbps link. How many seconds does the faster way take? (1 GB = 10⁹ B, whole number)"
+      },
+      "points": 1,
+      "answer": 857,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Видео игра од 4 GB ја праќате на другар оддалечен 8 km: или физички (одите со 23 km/h) или преку линк од 10 Mbps. Колку секунди трае побрзиот начин? (1 GB = 10⁹ B, цел број)",
+        "en": "You send a 4 GB video game to a friend 8 km away: either physically (you travel at 23 km/h) or over a 10 Mbps link. How many seconds does the faster way take? (1 GB = 10⁹ B, whole number)"
+      },
+      "points": 1,
+      "answer": 1252,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Видео игра од 12 GB ја праќате на другар оддалечен 9 km: или физички (одите со 20 km/h) или преку линк од 21 Mbps. Колку секунди трае побрзиот начин? (1 GB = 10⁹ B, цел број)",
+        "en": "You send a 12 GB video game to a friend 9 km away: either physically (you travel at 20 km/h) or over a 21 Mbps link. How many seconds does the faster way take? (1 GB = 10⁹ B, whole number)"
+      },
+      "points": 1,
+      "answer": 1620,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Секоја вечер треба да се префрлат 750 GB во резервен податочен центар: преку мрежа од 300 Mbps или физички со возило што вози 44 km/h. До која оддалеченост (km) е физичкиот транспорт побрз? (1 GB = 10⁹ B, 2 децимали) (децимална точка)",
+        "en": "Every night 750 GB must be moved to a backup data center: over a 300 Mbps network or physically by a vehicle driving 44 km/h. Up to what distance (km) is the physical transport faster? (1 GB = 10⁹ B, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 244.44,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкава е искористеноста на LAN мрежа со рата на барања 43/s, просечна големина на објект 6.1 Mbit и рата 677 Mbps? (%, 2 децимали) (децимална точка)",
+        "en": "What is the utilization of a LAN with a request rate of 43/s, an average object size of 6.1 Mbit and a rate of 677 Mbps? (%, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 38.74,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкава е искористеноста на LAN мрежа со рата на барања 39/s, просечна големина на објект 6.3 Mbit и рата 619 Mbps? (%, 2 децимали) (децимална точка)",
+        "en": "What is the utilization of a LAN with a request rate of 39/s, an average object size of 6.3 Mbit and a rate of 619 Mbps? (%, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 39.69,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкава е искористеноста на LAN мрежа со рата на барања 27/s, просечна големина на објект 7.4 Mbit и рата 545 Mbps? (%, 2 децимали) (децимална точка)",
+        "en": "What is the utilization of a LAN with a request rate of 27/s, an average object size of 7.4 Mbit and a rate of 545 Mbps? (%, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 36.66,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Просечна порака од изворните сервери е 92 KB, пристапниот линк е 11 Mbps, просечната рата на барања 6/s. Колкава ќе биде искористеноста на пристапниот линк ако се додаде веб кеш со рата на успех 38%? (1 KB = 1000 B; %, 2 децимали) (децимална точка)",
+        "en": "The average object from the origin servers is 92 KB, the access link is 11 Mbps, the request rate 6/s. What will the access-link utilization be after adding a web cache with a 38% hit rate? (1 KB = 1000 B; %, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 24.89,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Просечна порака од изворните сервери е 91 KB, пристапниот линк е 8 Mbps, просечната рата на барања 5/s. Колкава ќе биде искористеноста на пристапниот линк ако се додаде веб кеш со рата на успех 42%? (1 KB = 1000 B; %, 2 децимали) (децимална точка)",
+        "en": "The average object from the origin servers is 91 KB, the access link is 8 Mbps, the request rate 5/s. What will the access-link utilization be after adding a web cache with a 42% hit rate? (1 KB = 1000 B; %, 2 decimals) (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 26.39,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Локален веб кеш со рата на успех 62%. Доцнењето од изворните сервери е 2.5 s, а од кешот 39 ms. Колкаво е просечното доцнење (s, 2 децимали)? (децимална точка)",
+        "en": "A local web cache with a 62% hit rate. The delay from the origin servers is 2.5 s and from the cache 39 ms. What is the average delay (s, 2 decimals)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 0.97,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Локален веб кеш со рата на успех 55%. Доцнењето од изворните сервери е 2.9 s, а од кешот 52 ms. Колкаво е просечното доцнење (s, 2 децимали)? (децимална точка)",
+        "en": "A local web cache with a 55% hit rate. The delay from the origin servers is 2.9 s and from the cache 52 ms. What is the average delay (s, 2 decimals)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 1.33,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Локален веб кеш со рата на успех 58%. Доцнењето од изворните сервери е 3.8 s, а од кешот 44 ms. Колкаво е просечното доцнење (s, 2 децимали)? (децимална точка)",
+        "en": "A local web cache with a 58% hit rate. The delay from the origin servers is 3.8 s and from the cache 44 ms. What is the average delay (s, 2 decimals)? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 1.62,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.011
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Датотека F = 5 Gb треба да се дистрибуира до 7 peers. Серверот има upload 150 Mbps; upload на peers: 36, 14, 49, 24, 43, 33, 26 Mbps; download: 19, 16, 45, 48, 10, 30, 26 Mbps. Клиент-сервер модел:",
+        "en": "A file F = 5 Gb must be distributed to 7 peers. The server uploads at 150 Mbps; peer uploads: 36, 14, 49, 24, 43, 33, 26 Mbps; downloads: 19, 16, 45, 48, 10, 30, 26 Mbps. Client-server model:"
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Минимално време (s): ",
+            "en": "Minimum time (s): "
+          },
+          "textAfter": "<br>",
+          "answer": 500.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.5
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Главен фактор: ",
+            "en": "Main factor: "
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "download на најбавниот peer",
+            "en": "the slowest peer's download"
+          },
+          "choices": [
+            {
+              "mk": "download на најбавниот peer",
+              "en": "the slowest peer's download"
+            },
+            {
+              "mk": "upload на серверот",
+              "en": "the server's upload"
+            },
+            {
+              "mk": "вкупниот upload",
+              "en": "the total upload"
+            }
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Датотека F = 10 Gb до 10 peers. Upload на серверот 5500 Mbps; upload на peers: 85, 25, 94, 17, 18, 68, 64, 20, 50, 33 Mbps; download: 93, 29, 94, 72, 10, 64, 21, 73, 83, 19 Mbps. P2P модел:",
+        "en": "A file F = 10 Gb to 10 peers. Server upload 5500 Mbps; peer uploads: 85, 25, 94, 17, 18, 68, 64, 20, 50, 33 Mbps; downloads: 93, 29, 94, 72, 10, 64, 21, 73, 83, 19 Mbps. P2P model:"
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Минимално време (s, цел број): ",
+            "en": "Minimum time (s, whole number): "
+          },
+          "textAfter": "<br>",
+          "answer": 1000,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.5
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Главен фактор: ",
+            "en": "Main factor: "
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "download на најбавниот peer",
+            "en": "the slowest peer's download"
+          },
+          "choices": [
+            {
+              "mk": "download на најбавниот peer",
+              "en": "the slowest peer's download"
+            },
+            {
+              "mk": "upload на серверот",
+              "en": "the server's upload"
+            },
+            {
+              "mk": "вкупниот upload",
+              "en": "the total upload"
+            }
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "F = 600 Mbit, N = 4 клиенти, upload на серверот 40 Mbps, најбавен download 20 Mbps, секој peer има upload 10 Mbps. Минимално време (s):",
+        "en": "F = 600 Mbit, N = 4 clients, server upload 40 Mbps, slowest download 20 Mbps, each peer uploads 10 Mbps. Minimum time (s):"
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "клиент-сервер: ",
+            "en": "client-server: "
+          },
+          "textAfter": "<br>",
+          "answer": 60.0,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "P2P: ",
+          "textAfter": "",
+          "answer": 30.0,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "120 корисници ја делат линијата од 3 Mbps; секој е активен 10% од времето и тогаш бара 150 kbps.",
+        "en": "120 users share a 3 Mbps line; each is active 10% of the time and then needs 150 kbps."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Со circuit switching може да се поддржат најмногу ",
+            "en": "Circuit switching can support at most "
+          },
+          "textAfter": {
+            "mk": " корисници.<br>",
+            "en": " users.<br>"
+          },
+          "answer": 20,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Просечен број активни корисници: ",
+            "en": "Average number of active users: "
+          },
+          "textAfter": "",
+          "answer": 12,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "4 еднакви пакети минуваат низ 3 еднакви линка; трансмисијата на еден пакет по линк трае 4 ms. Колку ms трае целиот пренос (без чекање, обработка и пропагација)?",
+        "en": "4 equal packets cross 3 equal links; transmitting one packet on a link takes 4 ms. How many ms does the whole transfer take (no queuing, processing or propagation)?"
+      },
+      "points": 1,
+      "answer": 24,
+      "tolerance": {
+        "type": "strict"
+      }
+    }
+  ]
+}

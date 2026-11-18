@@ -1,0 +1,1532 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-midterm-2021-22",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Midterm",
+  "title": {
+    "mk": "КМиБ – Колоквиум 2021/22 (теорија)",
+    "en": "KMiB – Midterm 2021/22 (theory)"
+  },
+  "description": {
+    "mk": "Прашања од првиот колоквиум 2021/22, според скриптата од студентите.",
+    "en": "Questions from the 2021/22 first midterm, based on the students' script."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 3120,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "2021/22",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Сегментот Seq=92 (8 бајти) стигнува, сегментот Seq=100 (20 бајти) се губи, а потоа следуваат 4 × ACK=100. Дали испраќачот може да добие три дупликат ACK за сегмент кој всушност не е изгубен? Кои тврдења се точни? (Каналот може да изгуби, но не и да оштети пораки.)",
+        "en": "Segment Seq=92 (8 bytes) arrives, segment Seq=100 (20 bytes) is lost, and then 4 × ACK=100 follow. Can the sender get three duplicate ACKs for a segment that was not actually lost? Which statements are true? (The channel can lose but not corrupt messages.)"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Ако каналот може да ги преуреди пораките, троен дупликат ACK може да се случи иако пораката не е изгубена – можеби само доцни.",
+            "en": "If the channel can reorder messages, a triple duplicate ACK can happen even though the message was not lost – it may just be late."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ако каналот не може да ги преуреди пораките, дури и еден дупликат ACK значи дека сигурно имало загуба.",
+            "en": "If the channel cannot reorder messages, even a single duplicate ACK means a segment was certainly lost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Троен дупликат ACK секогаш е доказ за загуба, без разлика на каналот.",
+            "en": "A triple duplicate ACK always proves a loss, whatever the channel does."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дупликат ACK значи дека примачот го примил сегментот 100 два пати.",
+            "en": "A duplicate ACK means the receiver got segment 100 twice."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "За секоја услуга одберете кој протокол ја нуди.",
+        "en": "For each service, choose which protocol provides it."
+      },
+      "points": 6,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Конекциски, надежен пренос по редослед",
+            "en": "Connection-oriented, reliable in-order delivery"
+          },
+          "textAfter": "",
+          "answer": "TCP"
+        },
+        {
+          "textBefore": {
+            "mk": "Контрола на проток и застој",
+            "en": "Flow and congestion control"
+          },
+          "textAfter": "",
+          "answer": "TCP"
+        },
+        {
+          "textBefore": {
+            "mk": "Без воспоставување врска, без гаранција за достава",
+            "en": "No connection setup, no delivery guarantee"
+          },
+          "textAfter": "",
+          "answer": "UDP"
+        },
+        {
+          "textBefore": {
+            "mk": "Заглавје од 8 бајти, само мултиплексирање и checksum",
+            "en": "8-byte header, only multiplexing and a checksum"
+          },
+          "textAfter": "",
+          "answer": "UDP"
+        },
+        {
+          "textBefore": {
+            "mk": "Checksum за проверка на грешки",
+            "en": "A checksum for error checking"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Двата",
+            "en": "Both"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Гаранција за доцнење и пропусен опсег",
+            "en": "Guaranteed delay and bandwidth"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Ниту еден",
+            "en": "Neither"
+          }
+        }
+      ],
+      "bank": [
+        "TCP",
+        "UDP",
+        {
+          "mk": "Двата",
+          "en": "Both"
+        },
+        {
+          "mk": "Ниту еден",
+          "en": "Neither"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои апликации типично користат TCP?",
+        "en": "Which applications typically use TCP?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": "Web (HTTP)",
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Е-пошта (SMTP/IMAP)",
+            "en": "E-mail (SMTP/IMAP)"
+          },
+          "correct": true
+        },
+        {
+          "text": "SSH",
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Интернет телефонија (VoIP)",
+            "en": "Internet telephony (VoIP)"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Онлајн игри во реално време",
+            "en": "Real-time online games"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd на TCP конекција (праќања 0–14). Пополнете:",
+        "en": "The graph shows the cwnd of a TCP connection (transmissions 0–14). Fill in:"
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Иницијалниот threshold е ",
+            "en": "The initial threshold is "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Threshold во 10. праќање е ",
+            "en": "The threshold in transmission 10 is "
+          },
+          "textAfter": "<br>",
+          "answer": 6,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "18. сегмент е испратен во праќање ",
+            "en": "Segment 18 is sent in transmission "
+          },
+          "textAfter": "<br>",
+          "answer": 4,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Во првите 13 праќања (0–12) успешно се испратени ",
+            "en": "In the first 13 transmissions (0–12), "
+          },
+          "textAfter": {
+            "mk": " сегменти.<br>",
+            "en": " segments were sent.<br>"
+          },
+          "answer": 77,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во 7. праќање се случило ",
+            "en": "In transmission 7 there was a "
+          },
+          "textAfter": "",
+          "answer": "timeout",
+          "choices": [
+            "timeout",
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            {
+              "mk": "ништо",
+              "en": "nothing"
+            }
+          ]
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-a.png",
+          "alt": {
+            "mk": "cwnd граф: 1,2,4,8,9,10,11,12, па 1,2,4,6,7,8,9",
+            "en": "cwnd graph: 1,2,4,8,9,10,11,12, then 1,2,4,6,7,8,9"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои карактеристики се поврзани со P2P пристапот (наспроти клиент-сервер)?",
+        "en": "Which characteristics belong to the P2P approach (as opposed to client-server)?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "HTTP ја користи оваа структура.",
+            "en": "HTTP uses this structure."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Има сервер кој е секогаш вклучен.",
+            "en": "There is an always-on server."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Постои сервер со добро позната IP адреса.",
+            "en": "There is a server with a well-known IP address."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Процесот бара услуга од оние со кои контактира и дава услуга на процесите што го контактираат.",
+            "en": "A process requests service from those it contacts and provides service to processes that contact it."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Нема сервер кој е секогаш вклучен.",
+            "en": "There is no always-on server."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Поврзете го слојот со единицата податоци (PDU) што се разменува на тој слој.",
+        "en": "Match each layer with the data unit (PDU) exchanged at that layer."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Мрежен",
+            "en": "Network"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Датаграм",
+            "en": "Datagram"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Рамка",
+            "en": "Frame"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Сегмент",
+            "en": "Segment"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Апликациски",
+            "en": "Application"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Порака",
+            "en": "Message"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Физички",
+            "en": "Physical"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Бит",
+            "en": "Bit"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Датаграм",
+          "en": "Datagram"
+        },
+        {
+          "mk": "Рамка",
+          "en": "Frame"
+        },
+        {
+          "mk": "Сегмент",
+          "en": "Segment"
+        },
+        {
+          "mk": "Порака",
+          "en": "Message"
+        },
+        {
+          "mk": "Бит",
+          "en": "Bit"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "DNS: локалниот сервер кешира сè 20 временски единици; кешот е празен, барањата се итеративни, секое еднонасочно барање/одговор трае 1 единица. Барања: t=0 gaia.cs.umass.edu; t=1 icann.org; t=5 cs.umd.edu; t=10 повторно gaia.cs.umass.edu; t=12 cs.mit.edu; t=30 повторно gaia.cs.umass.edu. Колку временски единици трае секое барање?",
+        "en": "DNS: the local server caches everything for 20 time units; the cache starts empty, queries are iterative, and every one-way request/response takes 1 unit. Requests: t=0 gaia.cs.umass.edu; t=1 icann.org; t=5 cs.umd.edu; t=10 gaia.cs.umass.edu again; t=12 cs.mit.edu; t=30 gaia.cs.umass.edu again. How many time units does each request take?"
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "t=0: ",
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "t=1: ",
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "t=5: ",
+          "textAfter": "<br>",
+          "answer": 6,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "t=10: ",
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "t=12: ",
+          "textAfter": "<br>",
+          "answer": 6,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "t=30: ",
+          "textAfter": "",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Simple telnet сценарио: Seq=42, ACK=79, data='C'; Seq=79, ACK=43, data='C'; Seq=43, ACK=80. Зошто примачот праќа ACK за еден поголем од секвентниот број на примениот сегмент?",
+        "en": "Simple telnet scenario: Seq=42, ACK=79, data='C'; Seq=79, ACK=43, data='C'; Seq=43, ACK=80. Why does the receiver send an ACK one larger than the sequence number of the segment it received?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Сегментот носи само еден бајт, а ACK го означува следниот очекуван бајт.",
+            "en": "The segment carries just one byte, and the ACK names the next expected byte."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "TCP секвентните броеви секогаш растат за 1 по сегмент, а ACK е бројот на следниот сегмент.",
+            "en": "TCP sequence numbers always grow by 1 per segment, and the ACK is the number of the next segment."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "За секоја карактеристика одберете: circuit switching, packet switching или ниту една.",
+        "en": "For each characteristic choose: circuit switching, packet switching, or neither."
+      },
+      "points": 7,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Ја користи Интернетот",
+            "en": "Used by the Internet"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Резервира ресурси за повикот од извор до дестинација",
+            "en": "Reserves resources for a call from source to destination"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Можни загуби поради загушување и променливо доцнење",
+            "en": "Losses due to congestion and variable delay are possible"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "FDM и TDM се начини за имплементација",
+            "en": "FDM and TDM are ways to implement it"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Гарантира дека ќе се воспостави врска во секој момент",
+            "en": "Guarantees a connection can be set up at any moment"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Ниту една",
+            "en": "Neither"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Податоците може да чекаат во редица",
+            "en": "Data may wait in a queue"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Ресурсите се користат по барање",
+            "en": "Resources are used on demand"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        }
+      ],
+      "bank": [
+        "Packet switching",
+        "Circuit switching",
+        {
+          "mk": "Ниту една",
+          "en": "Neither"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Поврзете ги изворите на доцнење со нивниот опис.",
+        "en": "Match the sources of delay with their description."
+      },
+      "points": 4,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Проверка на бит грешки и избор на излезен линк",
+            "en": "Checking bit errors and choosing the output link"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Обработка",
+            "en": "Processing"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Зависи од моменталната гужва (La/R)",
+            "en": "Depends on the current congestion (La/R)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Чекање во редица",
+            "en": "Queuing"
+          }
+        },
+        {
+          "textBefore": "L/R",
+          "textAfter": "",
+          "answer": {
+            "mk": "Трансмисија",
+            "en": "Transmission"
+          }
+        },
+        {
+          "textBefore": "d/s",
+          "textAfter": "",
+          "answer": {
+            "mk": "Пропагација",
+            "en": "Propagation"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Обработка",
+          "en": "Processing"
+        },
+        {
+          "mk": "Чекање во редица",
+          "en": "Queuing"
+        },
+        {
+          "mk": "Трансмисија",
+          "en": "Transmission"
+        },
+        {
+          "mk": "Пропагација",
+          "en": "Propagation"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кое доцнење е најнепредвидливо?",
+        "en": "Which delay is the most unpredictable?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Чекање во редица",
+            "en": "Queuing"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Обработка",
+            "en": "Processing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Трансмисија",
+            "en": "Transmission"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пропагација",
+            "en": "Propagation"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи енкапсулација?",
+        "en": "What does encapsulation mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Стартување тајмер за сегментот и повторно праќање ако нема ACK",
+            "en": "Starting a timer for a segment and resending it if no ACK comes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Преземање податоци од слојот погоре, додавање заглавје за тој слој и ставање на податоците во „payload“ полето",
+            "en": "Taking data from the layer above, adding that layer's header fields and placing the data in the “payload” field"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Примање пакет од слојот подолу, вадење на payload и предавање нагоре",
+            "en": "Receiving a packet from the layer below, extracting the payload and passing it up"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пресметување збир на бајтите и ставање во заглавјето",
+            "en": "Summing the packet's bytes and putting the result in the header"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Превод на име во IP адреса и ставање во заглавјето",
+            "en": "Translating a name into an IP address and putting it in the header"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Зошто и како TCP прави контрола на проток? Изберете ги точните тврдења.",
+        "en": "Why and how does TCP do flow control? Choose the true statements."
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Апликацијата кај примачот може да чита побавно отколку што пристигнуваат податоците, па баферот може да се преполни.",
+            "en": "The receiving application may read more slowly than data arrives, so its buffer could overflow."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Примачот го огласува rwnd = RcvBuffer − (LastByteRcvd − LastByteRead) во секој сегмент.",
+            "en": "The receiver advertises rwnd = RcvBuffer − (LastByteRcvd − LastByteRead) in every segment."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Испраќачот држи LastByteSent − LastByteAcked ≤ rwnd.",
+            "en": "The sender keeps LastByteSent − LastByteAcked ≤ rwnd."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Контролата на проток ги штити рутерите во мрежата.",
+            "en": "Flow control protects the routers in the network."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кога rwnd = 0, испраќачот целосно престанува и не праќа ништо додека не истече тајмер.",
+            "en": "When rwnd = 0 the sender stops completely and sends nothing until a timer expires."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои тврдења за HTTP се точни?",
+        "en": "Which statements about HTTP are true?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Клиентот бара објекти од веб серверот (pull).",
+            "en": "The client requests objects from the web server (pull)."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HTTP е stateless.",
+            "en": "HTTP is stateless."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пораките се request и response.",
+            "en": "Its messages are requests and responses."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HTTP 1.1 користи TCP, порта 80.",
+            "en": "HTTP 1.1 uses TCP, port 80."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HTTP 1.1 користи UDP, порта 53.",
+            "en": "HTTP 1.1 uses UDP, port 53."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Кога е подобро packet switching, а кога circuit switching?",
+        "en": "When is packet switching better, and when circuit switching?"
+      },
+      "points": 4,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Веб и е-пошта – сообраќај во рафали",
+            "en": "Web and e-mail – bursty traffic"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Телефонски повик – постојан сообраќај во реално време",
+            "en": "A phone call – steady real-time traffic"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Многу корисници што поголемиот дел од времето молчат",
+            "en": "Many users who are silent most of the time"
+          },
+          "textAfter": "",
+          "answer": "Packet switching"
+        },
+        {
+          "textBefore": {
+            "mk": "Потребни се константно доцнење и гарантиран опсег",
+            "en": "Constant delay and guaranteed bandwidth are needed"
+          },
+          "textAfter": "",
+          "answer": "Circuit switching"
+        }
+      ],
+      "bank": [
+        "Packet switching",
+        "Circuit switching"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Поврзете ги операциите со протоколот за е-пошта.",
+        "en": "Match the operations with the e-mail protocol."
+      },
+      "points": 3,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Повлекува пошта од еден мејл сервер на друг",
+            "en": "Pulls mail from one mail server to another"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Ни SMTP ни IMAP",
+            "en": "Neither SMTP nor IMAP"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Повлекува пошта од сервер до клиент",
+            "en": "Pulls mail from the server to the client"
+          },
+          "textAfter": "",
+          "answer": "IMAP"
+        },
+        {
+          "textBefore": {
+            "mk": "Ја турка поштата од клиентот до серверот",
+            "en": "Pushes mail from the client to the server"
+          },
+          "textAfter": "",
+          "answer": "SMTP"
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Ни SMTP ни IMAP",
+          "en": "Neither SMTP nor IMAP"
+        },
+        "IMAP",
+        "SMTP"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "За секоја услуга одберете кој транспортен протокол ја нуди (TCP, UDP, двата, ниту еден).",
+        "en": "For each service choose which transport protocol provides it (TCP, UDP, both, neither)."
+      },
+      "points": 6,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Ненадежен пренос меѓу процеси",
+            "en": "Unreliable process-to-process transfer"
+          },
+          "textAfter": "",
+          "answer": "UDP"
+        },
+        {
+          "textBefore": {
+            "mk": "Контрола на застој",
+            "en": "Congestion control"
+          },
+          "textAfter": "",
+          "answer": "TCP"
+        },
+        {
+          "textBefore": {
+            "mk": "Одредување на патеката",
+            "en": "Choosing the path"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Ниту еден",
+            "en": "Neither"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Гаранција за пропусна моќ",
+            "en": "Guaranteed throughput"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Ниту еден",
+            "en": "Neither"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Проверка на бит грешки",
+            "en": "Bit-error checking"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Двата",
+            "en": "Both"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Воспоставување конекција",
+            "en": "Connection setup"
+          },
+          "textAfter": "",
+          "answer": "TCP"
+        }
+      ],
+      "bank": [
+        "UDP",
+        "TCP",
+        {
+          "mk": "Ниту еден",
+          "en": "Neither"
+        },
+        {
+          "mk": "Двата",
+          "en": "Both"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "HTTP и колачиња: кои тврдења се точни?",
+        "en": "HTTP and cookies: which statements are true?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "HTTP е stateless.",
+            "en": "HTTP is stateless."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Серверот праќа Set-cookie заглавје во одговорот.",
+            "en": "The server sends a Set-cookie header in the response."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Прелистувачот го враќа Cookie заглавје во секое следно барање.",
+            "en": "The browser sends a Cookie header in every later request."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Колачето се чува кај корисникот, а веб сајтот има своја база.",
+            "en": "The cookie is stored at the user, and the website keeps its own database."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HTTP е stateful, затоа колачиња не се потребни.",
+            "en": "HTTP is stateful, so cookies are not needed."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "До секоја услуга одберете на кој слој од Интернет стекот се овозможува.",
+        "en": "For each service, choose the Internet-stack layer that provides it."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Пренос на пакети од извор до одредиште (рутирање)",
+            "en": "Moving packets from source to destination (routing)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Мрежен",
+            "en": "Network"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Пренос на податоци низ еден линк, меѓу соседи",
+            "en": "Moving data over a single link, between neighbours"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Линк (податочен)",
+            "en": "Link (data link)"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Услуги за крајни корисници (датотеки, е-пошта)",
+            "en": "Services for end users (files, e-mail)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Работа со сигнали низ медиумот",
+            "en": "Handling signals over the medium"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Физички",
+            "en": "Physical"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Крај-до-крај комуникација меѓу процеси",
+            "en": "End-to-end communication between processes"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        },
+        {
+          "mk": "Линк (податочен)",
+          "en": "Link (data link)"
+        },
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        },
+        {
+          "mk": "Физички",
+          "en": "Physical"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "За секоја карактеристика одберете тип на доцнење.",
+        "en": "For each characteristic choose the type of delay."
+      },
+      "points": 6,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Одредување на излезниот линк",
+            "en": "Choosing the output link"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Обработка",
+            "en": "Processing"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Зависи од големината на пакетот",
+            "en": "Depends on the packet size"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Трансмисија",
+            "en": "Transmission"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Зависи од нивото на застој",
+            "en": "Depends on the level of congestion"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Чекање во редица",
+            "en": "Queuing"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Зависи од пропусниот опсег на линкот",
+            "en": "Depends on the link bandwidth"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Трансмисија",
+            "en": "Transmission"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Зависи од должината на линкот",
+            "en": "Depends on the length of the link"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Пропагација",
+            "en": "Propagation"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Проверка за бит грешки",
+            "en": "Checking for bit errors"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Обработка",
+            "en": "Processing"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Обработка",
+          "en": "Processing"
+        },
+        {
+          "mk": "Трансмисија",
+          "en": "Transmission"
+        },
+        {
+          "mk": "Чекање во редица",
+          "en": "Queuing"
+        },
+        {
+          "mk": "Пропагација",
+          "en": "Propagation"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Контрола на проток наспроти контрола на застој.",
+        "en": "Flow control versus congestion control."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Да не се преплави примачот",
+            "en": "Don't overwhelm the receiver"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Контрола на проток",
+            "en": "Flow control"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Да не се преплави мрежата",
+            "en": "Don't overwhelm the network"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Контрола на застој",
+            "en": "Congestion control"
+          }
+        },
+        {
+          "textBefore": "rwnd",
+          "textAfter": "",
+          "answer": {
+            "mk": "Контрола на проток",
+            "en": "Flow control"
+          }
+        },
+        {
+          "textBefore": "cwnd",
+          "textAfter": "",
+          "answer": {
+            "mk": "Контрола на застој",
+            "en": "Congestion control"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Slow start и AIMD",
+            "en": "Slow start and AIMD"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Контрола на застој",
+            "en": "Congestion control"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Контрола на проток",
+          "en": "Flow control"
+        },
+        {
+          "mk": "Контрола на застој",
+          "en": "Congestion control"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку најмногу непотврдени бајти смее да има TCP испраќачот?",
+        "en": "How many unacknowledged bytes may a TCP sender have at most?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "min(rwnd, cwnd)",
+          "correct": true
+        },
+        {
+          "text": "max(rwnd, cwnd)",
+          "correct": false
+        },
+        {
+          "text": "rwnd + cwnd",
+          "correct": false
+        },
+        {
+          "text": "cwnd",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која технологија за пренос има најголема брзина и најмала стапка на грешки?",
+        "en": "Which transmission medium has the highest speed and the lowest error rate?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Оптички кабел",
+            "en": "Optical fiber"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Коаксијален кабел",
+            "en": "Coaxial cable"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Уплетена парица",
+            "en": "Twisted pair"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Радио (Wi-Fi)",
+            "en": "Radio (Wi-Fi)"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "„Ако нема загуба, TCP slow start ја зголемува ратата на испраќање …“",
+        "en": "“If there is no loss, TCP slow start increases the sending rate …”"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "…побрзо од AIMD – експоненцијално, двојно на секој RTT.",
+            "en": "…faster than AIMD – exponentially, doubling every RTT."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "…побавно од AIMD.",
+            "en": "…more slowly than AIMD."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "…исто како AIMD, за 1 MSS по RTT.",
+            "en": "…like AIMD, by 1 MSS per RTT."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "…само ако rwnd е 0.",
+            "en": "…only when rwnd is 0."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Клиент-сервер архитектура: на кого се однесува секоја карактеристика?",
+        "en": "Client-server architecture: who does each characteristic describe?"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Секогаш вклучен, постојана IP адреса",
+            "en": "Always on, permanent IP address"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Сервер",
+            "en": "Server"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Повремено поврзан, динамичка IP адреса",
+            "en": "Intermittently connected, dynamic IP address"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Клиент",
+            "en": "Client"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Ја започнува комуникацијата",
+            "en": "Starts the communication"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Клиент",
+            "en": "Client"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Чека да биде контактиран",
+            "en": "Waits to be contacted"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Сервер",
+            "en": "Server"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Не комуницира директно со други од ист тип",
+            "en": "Doesn't talk directly to others of its kind"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Клиент",
+            "en": "Client"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Сервер",
+          "en": "Server"
+        },
+        {
+          "mk": "Клиент",
+          "en": "Client"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Споредете ги пристапните мрежи: која карактеристика на која мрежа припаѓа?",
+        "en": "Compare access networks: which characteristic belongs to which network?"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Телефонска линија до DSLAM, посветена, брзината опаѓа со растојанието",
+            "en": "Phone line to a DSLAM, dedicated, speed drops with distance"
+          },
+          "textAfter": "",
+          "answer": "DSL"
+        },
+        {
+          "textBefore": {
+            "mk": "Оптика + коаксијален до CMTS, споделен медиум",
+            "en": "Fiber + coax to a CMTS, shared medium"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Кабловска (HFC)",
+            "en": "Cable (HFC)"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Уплетена парица до свич, 10 Mbps – 10 Gbps, во компании",
+            "en": "Twisted pair to a switch, 10 Mbps – 10 Gbps, in companies"
+          },
+          "textAfter": "",
+          "answer": "Ethernet"
+        },
+        {
+          "textBefore": {
+            "mk": "Радио до пристапна точка, околу 30 m",
+            "en": "Radio to an access point, about 30 m"
+          },
+          "textAfter": "",
+          "answer": "Wi-Fi"
+        },
+        {
+          "textBefore": {
+            "mk": "Базна станица, десетици километри",
+            "en": "Base station, tens of kilometres"
+          },
+          "textAfter": "",
+          "answer": "4G/5G"
+        }
+      ],
+      "bank": [
+        "DSL",
+        {
+          "mk": "Кабловска (HFC)",
+          "en": "Cable (HFC)"
+        },
+        "Ethernet",
+        "Wi-Fi",
+        "4G/5G"
+      ],
+      "layout": "ordered"
+    }
+  ]
+}

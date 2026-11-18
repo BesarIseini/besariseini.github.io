@@ -1,0 +1,1652 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-bank-transport",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Lecture",
+  "title": {
+    "mk": "КМиБ – Банка: транспортен слој",
+    "en": "KMiB – Bank: transport layer"
+  },
+  "description": {
+    "mk": "UDP и TCP, сокети, Seq/ACK, GBN и SR, контрола на проток и застој, cwnd графови – од банката на прашања.",
+    "en": "UDP and TCP, sockets, Seq/ACK, GBN and SR, flow and congestion control, cwnd graphs – from the question bank."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 3240,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Bank",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP конекција S → R, сегменти од 1200 бајти. Во чекор 2 сегментот се губи. Пополнете (чекор 1: SEQ = 1200).",
+        "en": "TCP connection S → R, segments of 1200 bytes. The segment in step 2 is lost. Fill in (step 1: SEQ = 1200)."
+      },
+      "points": 10,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "2. S: SEQ = ",
+          "textAfter": {
+            "mk": "  (се губи)<br>",
+            "en": "  (lost)<br>"
+          },
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "3. R: ACK = ",
+          "textAfter": "<br>",
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "4. S: SEQ = ",
+          "textAfter": "<br>",
+          "answer": 3600,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "5. S: SEQ = ",
+          "textAfter": "<br>",
+          "answer": 4800,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "6. R: ACK = ",
+          "textAfter": "<br>",
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "7. S: SEQ = ",
+          "textAfter": "<br>",
+          "answer": 6000,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "8. R: ACK = ",
+          "textAfter": "<br>",
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "9. R: ACK = ",
+          "textAfter": {
+            "mk": "  (трет дупликат)<br>",
+            "en": "  (third duplicate)<br>"
+          },
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "10. S: SEQ = ",
+          "textAfter": "  (fast retransmit)<br>",
+          "answer": 2400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "11. R: ACK = ",
+          "textAfter": "",
+          "answer": 7200,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како компјутерот одредува на кој сокет (процес) да ги достави примените сегменти?",
+        "en": "How does your computer decide which socket (process) gets a received segment?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Врз основа на портата на примачот",
+            "en": "Based on the receiver's port"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Врз основа на портата на испраќачот",
+            "en": "Based on the sender's port"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Врз основа на IP адресата на примачот",
+            "en": "Based on the receiver's IP address"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Врз основа на IP адресата на испраќачот",
+            "en": "Based on the sender's IP address"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "ordering",
+      "question": {
+        "mk": "Подредете ги чекорите на воспоставување TCP конекција (three-way handshake).",
+        "en": "Put the steps of TCP connection setup (three-way handshake) in order."
+      },
+      "points": 1,
+      "items": [
+        {
+          "mk": "Клиентот праќа SYN (SYN=1, seq=x)",
+          "en": "Client sends SYN (SYN=1, seq=x)"
+        },
+        {
+          "mk": "Серверот алоцира бафери и враќа SYNACK (SYN=1, seq=y, ack=x+1)",
+          "en": "Server allocates buffers and returns SYNACK (SYN=1, seq=y, ack=x+1)"
+        },
+        {
+          "mk": "Клиентот праќа ACK (SYN=0, seq=x+1, ack=y+1), може да носи податоци",
+          "en": "Client sends ACK (SYN=0, seq=x+1, ack=y+1), which may carry data"
+        },
+        {
+          "mk": "Серверот праќа FIN",
+          "en": "Server sends FIN"
+        }
+      ],
+      "correctOrder": [
+        {
+          "mk": "Клиентот праќа SYN (SYN=1, seq=x)",
+          "en": "Client sends SYN (SYN=1, seq=x)"
+        },
+        {
+          "mk": "Серверот алоцира бафери и враќа SYNACK (SYN=1, seq=y, ack=x+1)",
+          "en": "Server allocates buffers and returns SYNACK (SYN=1, seq=y, ack=x+1)"
+        },
+        {
+          "mk": "Клиентот праќа ACK (SYN=0, seq=x+1, ack=y+1), може да носи податоци",
+          "en": "Client sends ACK (SYN=0, seq=x+1, ack=y+1), which may carry data"
+        }
+      ],
+      "layout": "verticalNumbered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои се елементите што го одредуваат TCP сокетот?",
+        "en": "Which elements identify a TCP socket?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Изворна порта",
+            "en": "Source port"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Дестинациска IP",
+            "en": "Destination IP"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Изворна IP",
+            "en": "Source IP"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Дестинациска порта",
+            "en": "Destination port"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Должина",
+            "en": "Length"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протокол",
+            "en": "Protocol"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "ID на процес",
+            "en": "Process ID"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Што користи примачот при демултиплексирање?",
+        "en": "What does the receiver use when demultiplexing?"
+      },
+      "points": 2,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Безконекциско (UDP)",
+            "en": "Connectionless (UDP)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Дест. IP + дест. порта",
+            "en": "Dest. IP + dest. port"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Конекциско (TCP)",
+            "en": "Connection-oriented (TCP)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Изворна IP и порта + дест. IP и порта",
+            "en": "Source IP and port + dest. IP and port"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Дест. IP + дест. порта",
+          "en": "Dest. IP + dest. port"
+        },
+        {
+          "mk": "Изворна IP и порта + дест. IP и порта",
+          "en": "Source IP and port + dest. IP and port"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Пополнете за TCP.",
+        "en": "Fill in for TCP."
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "TCP работи со проток од ",
+            "en": "TCP works with a stream of "
+          },
+          "textAfter": ".<br>",
+          "answer": {
+            "mk": "бајти",
+            "en": "bytes"
+          },
+          "choices": [
+            {
+              "mk": "бајти",
+              "en": "bytes"
+            },
+            {
+              "mk": "сегменти",
+              "en": "segments"
+            },
+            {
+              "mk": "пакети",
+              "en": "packets"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Бројот на непотврдени податоци ограничен од примачот се контролира преку ",
+            "en": "The amount of unacknowledged data limited by the receiver is controlled by "
+          },
+          "textAfter": ".<br>",
+          "answer": "rwnd",
+          "choices": [
+            "rwnd",
+            "cwnd",
+            "ssthresh"
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Ограничувањето од мрежата се контролира преку ",
+            "en": "The limit set by the network is controlled by "
+          },
+          "textAfter": ".<br>",
+          "answer": "cwnd",
+          "choices": [
+            "rwnd",
+            "cwnd",
+            "ssthresh"
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Колку ќе прати испраќачот се одредува како ",
+            "en": "How much the sender sends is "
+          },
+          "textAfter": ".<br>",
+          "answer": "min(rwnd, cwnd)",
+          "choices": [
+            "min(rwnd, cwnd)",
+            "max(rwnd, cwnd)",
+            "rwnd + cwnd"
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Slow start ја менува ",
+            "en": "Slow start changes "
+          },
+          "textAfter": ".",
+          "answer": "cwnd",
+          "choices": [
+            "rwnd",
+            "cwnd"
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Go-Back-N наспроти Selective Repeat (прозорец W, секвентен простор M).",
+        "en": "Go-Back-N versus Selective Repeat (window W, sequence space M)."
+      },
+      "points": 6,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Тајмери кај испраќачот – GBN",
+            "en": "Timers at the sender – GBN"
+          },
+          "textAfter": "",
+          "answer": "1"
+        },
+        {
+          "textBefore": {
+            "mk": "Тајмери кај испраќачот – SR",
+            "en": "Timers at the sender – SR"
+          },
+          "textAfter": "",
+          "answer": "W"
+        },
+        {
+          "textBefore": {
+            "mk": "Бафер кај примачот – GBN",
+            "en": "Receiver buffer – GBN"
+          },
+          "textAfter": "",
+          "answer": "1"
+        },
+        {
+          "textBefore": {
+            "mk": "Бафер кај примачот – SR",
+            "en": "Receiver buffer – SR"
+          },
+          "textAfter": "",
+          "answer": "W"
+        },
+        {
+          "textBefore": {
+            "mk": "Услов за секвентните броеви – GBN",
+            "en": "Sequence-number condition – GBN"
+          },
+          "textAfter": "",
+          "answer": "M > W"
+        },
+        {
+          "textBefore": {
+            "mk": "Услов за секвентните броеви – SR",
+            "en": "Sequence-number condition – SR"
+          },
+          "textAfter": "",
+          "answer": "M ≥ 2W"
+        }
+      ],
+      "bank": [
+        "1",
+        "W",
+        "M > W",
+        "M ≥ 2W"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој протокол поефикасно го користи пропусниот опсег при загуби?",
+        "en": "Which protocol uses bandwidth more efficiently when there are losses?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "Selective Repeat",
+          "correct": true
+        },
+        {
+          "text": "Go-Back-N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd (рунди 1–20), TCP Reno.",
+        "en": "The graph shows cwnd (rounds 1–20), TCP Reno."
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "50-тиот сегмент е пратен во рунда ",
+            "en": "Segment 50 is sent in round "
+          },
+          "textAfter": "<br>",
+          "answer": 6,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Настанот во рундите 6 и 11 е ",
+            "en": "The event in rounds 6 and 11 is "
+          },
+          "textAfter": "<br>",
+          "answer": "timeout",
+          "choices": [
+            "timeout",
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            "ACK",
+            "NACK"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ssthresh во рунда 12 е ",
+            "en": "ssthresh in round 12 is "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во рунда 16 се вклучува ",
+            "en": "In round 16 the sender is in "
+          },
+          "textAfter": "<br>",
+          "answer": "AIMD",
+          "choices": [
+            "AIMD",
+            "slow start"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во рунда 21 (без загуби): ",
+            "en": "Segments in round 21 (no losses): "
+          },
+          "textAfter": "",
+          "answer": 14,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-b.png",
+          "alt": {
+            "mk": "cwnd граф: 1–32, пад на 1, 1–16, пад на 1, па 1,2,4,8,9…13",
+            "en": "cwnd graph: 1–32, drop to 1, 1–16, drop to 1, then 1,2,4,8,9…13"
+          }
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno, почетен ssthresh = 9; во рунда 6 се добиваат три дупликат ACK, во рунда 10 timeout (rwnd = ∞). Во рунда 1 се праќа 1 сегмент.",
+        "en": "TCP Reno, initial ssthresh = 9; a triple duplicate ACK arrives in round 6, a timeout happens in round 10 (rwnd = ∞). Round 1 sends 1 segment."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=6: ",
+            "en": "Segments in t=6: "
+          },
+          "textAfter": "<br>",
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ssthresh во t=7: ",
+            "en": "ssthresh in t=7: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=8: ",
+            "en": "Segments in t=8: "
+          },
+          "textAfter": "<br>",
+          "answer": 6,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=12: ",
+            "en": "Segments in t=12: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Ако rwnd во t=12 стане 10, се праќаат: ",
+            "en": "If rwnd becomes 10 in t=12, the sender sends: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупно оригинални сегменти пратени до t=7 (вклучително): ",
+            "en": "Original segments sent up to and including t=7: "
+          },
+          "textAfter": "",
+          "answer": 38,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Пополнете ги тврдењата за TCP.",
+        "en": "Complete the statements about TCP."
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "TCP е протокол на ",
+            "en": "TCP is a protocol of the "
+          },
+          "textAfter": {
+            "mk": " слој.<br>",
+            "en": " layer.<br>"
+          },
+          "answer": {
+            "mk": "транспортен",
+            "en": "transport"
+          },
+          "choices": [
+            {
+              "mk": "транспортен",
+              "en": "transport"
+            },
+            {
+              "mk": "мрежен",
+              "en": "network"
+            },
+            {
+              "mk": "апликациски",
+              "en": "application"
+            }
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Воспоставувањето на врска оди во ",
+            "en": "Connection setup takes "
+          },
+          "textAfter": {
+            "mk": " чекори.<br>",
+            "en": " steps.<br>"
+          },
+          "answer": 3,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Минималното заглавје е ",
+            "en": "The minimum header is "
+          },
+          "textAfter": {
+            "mk": " бајти.<br>",
+            "en": " bytes.<br>"
+          },
+          "answer": 20,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Fast retransmit се прави по ",
+            "en": "Fast retransmit happens after "
+          },
+          "textAfter": {
+            "mk": " дупликат ACK.<br>",
+            "en": " duplicate ACKs.<br>"
+          },
+          "answer": 3,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "При 3 дупликат ACK, ",
+            "en": "On a triple duplicate ACK, "
+          },
+          "textAfter": {
+            "mk": " го намалува cwnd на половина, а не на 1.",
+            "en": " halves cwnd instead of dropping it to 1."
+          },
+          "answer": "Reno",
+          "choices": [
+            "Reno",
+            "Tahoe"
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno, почетен ssthresh = 18; timeout во рунда 8, три дупликат ACK во рунда 15. Рунда 1 праќа 1 сегмент.",
+        "en": "TCP Reno, initial ssthresh = 18; timeout in round 8, triple duplicate ACK in round 15. Round 1 sends 1 segment."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=8: ",
+            "en": "Segments in t=8: "
+          },
+          "textAfter": "<br>",
+          "answer": 20,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ssthresh во t=9: ",
+            "en": "ssthresh in t=9: "
+          },
+          "textAfter": "<br>",
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=14: ",
+            "en": "Segments in t=14: "
+          },
+          "textAfter": "<br>",
+          "answer": 11,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегменти во t=17: ",
+            "en": "Segments in t=17: "
+          },
+          "textAfter": "<br>",
+          "answer": 7,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Ако rwnd = 5 во t=18, се праќаат: ",
+            "en": "If rwnd = 5 in t=18, the sender sends: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупно оригинални сегменти до t=10 (вклучително): ",
+            "en": "Original segments up to and including t=10: "
+          },
+          "textAfter": "",
+          "answer": 90,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Пополнете ги тврдењата за TCP – изберете ги точните.",
+        "en": "Statements about TCP – choose the true ones."
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Прави контрола на проток и застој",
+            "en": "It does flow and congestion control"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Обезбедува во-редослед проток на бајти",
+            "en": "It provides an in-order byte stream"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Серверот на SYN одговара со SYNACK",
+            "en": "The server answers a SYN with a SYNACK"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мултиплексира кај испраќачот и демултиплексира кај примачот",
+            "en": "It multiplexes at the sender and demultiplexes at the receiver"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Гарантира минимален пропусен опсег",
+            "en": "It guarantees a minimum bandwidth"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Гарантира максимално доцнење",
+            "en": "It guarantees a maximum delay"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Конекцијата помеѓу клиентот 100.100.100.100 и веб серверот 200.200.200.200 (порта на клиентот 1400) во облик (изворна IP, изворна порта, дестинациска IP, дестинациска порта):",
+        "en": "The connection between client 100.100.100.100 and web server 200.200.200.200 (client port 1400) as (source IP, source port, destination IP, destination port):"
+      },
+      "points": 4,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "(",
+          "textAfter": ", ",
+          "answer": "100.100.100.100",
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": 1400,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "200.200.200.200",
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": ")",
+          "answer": 80,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Go-Back-N и Selective Repeat со прозорец W = 12. Пратени се пакетите 1–12, а пакетот 8 се губи.",
+        "en": "Go-Back-N and Selective Repeat with window W = 12. Packets 1–12 are sent and packet 8 is lost."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Тајмери кај испраќачот – GBN: ",
+            "en": "Timers at the sender – GBN: "
+          },
+          "textAfter": ", SR: ",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 12,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Бафер кај примачот – GBN: ",
+            "en": "Receiver buffer – GBN: "
+          },
+          "textAfter": ", SR: ",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 12,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Препратени пакети – GBN: ",
+            "en": "Packets retransmitted – GBN: "
+          },
+          "textAfter": ", SR: ",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP сегменти од 1000 бајти; сегментот со Seq = 2000 се губи. Испраќачот праќа Seq 1000, 2000, 3000, 4000 и добива три пати ACK = 2000.",
+        "en": "TCP segments of 1000 bytes; the segment with Seq = 2000 is lost. The sender sends Seq 1000, 2000, 3000, 4000 and receives ACK = 2000 three times."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Seq на следниот испратен сегмент X = ",
+            "en": "Seq of the next segment sent X = "
+          },
+          "textAfter": "<br>",
+          "answer": 2000,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ACK по неговото пристигнување Y = ",
+            "en": "ACK after it arrives Y = "
+          },
+          "textAfter": "",
+          "answer": 5000,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd на TCP конекција.",
+        "en": "The graph shows the cwnd of a TCP connection."
+      },
+      "points": 1,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ssthresh изнесува ",
+            "en": "ssthresh is "
+          },
+          "textAfter": "",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-c.png",
+          "alt": {
+            "mk": "cwnd граф: 1,2,4,8,9,10,11, пад во рунда 8",
+            "en": "cwnd graph: 1,2,4,8,9,10,11, drop in round 8"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кога cwnd расте за 1 сегмент по рунда (над прагот), TCP е во состојба:",
+        "en": "When cwnd grows by 1 segment per round (above the threshold), TCP is in:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "congestion avoidance",
+          "correct": true
+        },
+        {
+          "text": "slow start",
+          "correct": false
+        },
+        {
+          "text": "fast recovery",
+          "correct": false
+        },
+        {
+          "text": "slow start threshold",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "A и B разменуваат TCP сегменти од 250 бајти.",
+        "en": "A and B exchange TCP segments of 250 bytes."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Прв сегмент Seq = 0, втор сегмент Seq = X = ",
+            "en": "First segment Seq = 0, second segment Seq = X = "
+          },
+          "textAfter": ", Ack = Y = ",
+          "answer": 250,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 500,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Сегментот Seq = 500 е препратен по timeout: Y = ",
+            "en": "The segment Seq = 500 is resent after a timeout: Y = "
+          },
+          "textAfter": "<br>",
+          "answer": 500,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вториот сегмент (Seq 250) се губи; дупликат потврдите се Y = Z = ",
+            "en": "The second segment (Seq 250) is lost; the duplicate ACKs are Y = Z = "
+          },
+          "textAfter": "<br>",
+          "answer": 250,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "X = 500, првиот ACK се губи, вториот (кумулативен) стигнува пред timeout: Y = ",
+            "en": "X = 500, the first ACK is lost, the second (cumulative) arrives before the timeout: Y = "
+          },
+          "textAfter": "<br>",
+          "answer": 1000,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "X = 500, ACK стигнува пред да истече тајмерот: Y = ",
+            "en": "X = 500, the ACK arrives before the timer expires: Y = "
+          },
+          "textAfter": "",
+          "answer": 750,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "A и B разменуваат TCP сегменти од 450 бајти.",
+        "en": "A and B exchange TCP segments of 450 bytes."
+      },
+      "points": 4,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "Seq = 0, Seq = X = ",
+          "textAfter": ", Ack = Y = ",
+          "answer": 450,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 900,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "X = 450, првиот ACK се губи, вториот стигнува пред timeout: Y = ",
+            "en": "X = 450, the first ACK is lost, the second arrives before the timeout: Y = "
+          },
+          "textAfter": "<br>",
+          "answer": 1350,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "X = 900, ACK стигнува пред timeout: Y = ",
+            "en": "X = 900, the ACK arrives before the timeout: Y = "
+          },
+          "textAfter": "",
+          "answer": 1350,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Сегменти од 350 B, X = 700; ACK-от стигнува дури по истекот на тајмерот (прерано препраќање). Колку е Seq (Y) на препратениот сегмент?",
+        "en": "Segments of 350 B, X = 700; the ACK arrives only after the timer expired (premature retransmission). What is the Seq (Y) of the retransmitted segment?"
+      },
+      "points": 1,
+      "answer": 700,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "TCP обезбедува логичка комуникација помеѓу:",
+        "en": "TCP provides logical communication between:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Два процеси",
+            "en": "Two processes"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Два хоста",
+            "en": "Two hosts"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Два рутери",
+            "en": "Two routers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Две мрежи",
+            "en": "Two networks"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Примачот праќа сегмент со rwnd > 0. Која е пораката до испраќачот?",
+        "en": "The receiver sends a segment with rwnd > 0. What does it tell the sender?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Продолжи со праќање",
+            "en": "Keep sending"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Престани со праќање",
+            "en": "Stop sending"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Препрати сè",
+            "en": "Resend everything"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затвори ја врската",
+            "en": "Close the connection"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd на TCP конекција.",
+        "en": "The graph shows the cwnd of a TCP connection."
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Интервали на congestion avoidance: ",
+            "en": "Congestion-avoidance intervals: "
+          },
+          "textAfter": "<br>",
+          "answer": 3,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Интервали на slow start: ",
+            "en": "Slow-start intervals: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во 10-то праќање загубата е откриена преку ",
+            "en": "In transmission 10 the loss is detected by "
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "3 дупликат ACK",
+            "en": "triple duplicate ACK"
+          },
+          "choices": [
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            "timeout"
+          ]
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-d.png",
+          "alt": {
+            "mk": "cwnd граф: 1–32, 33–36, 18–20, 10–14, 1,2,4",
+            "en": "cwnd graph: 1–32, 33–36, 18–20, 10–14, 1,2,4"
+          }
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Две TCP сесии, почетен ssthresh = 12 за двете; во t=1 се праќа 1 сегмент, t=2 – 2, t=3 – 4. TCP1 користи Tahoe и во рунда 9 добива три дупликат ACK. TCP2 користи Reno и во рунда 11 добива три дупликат ACK. Баферот на примачот е бесконечен.",
+        "en": "Two TCP sessions, both with initial ssthresh = 12; t=1 sends 1 segment, t=2 – 2, t=3 – 4. TCP1 uses Tahoe and gets a triple duplicate ACK in round 9. TCP2 uses Reno and gets a triple duplicate ACK in round 11. The receive buffer is infinite."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP1, сегменти во t=6: ",
+            "en": "TCP1, segments in t=6: "
+          },
+          "textAfter": "<br>",
+          "answer": 13,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP1, сегменти во t=11: ",
+            "en": "TCP1, segments in t=11: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP1, праг во t=11: ",
+            "en": "TCP1, threshold in t=11: "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP2, сегменти во t=8: ",
+            "en": "TCP2, segments in t=8: "
+          },
+          "textAfter": "<br>",
+          "answer": 15,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP2, сегменти во t=12: ",
+            "en": "TCP2, segments in t=12: "
+          },
+          "textAfter": "<br>",
+          "answer": 9,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "TCP2, сегменти во t=14: ",
+            "en": "TCP2, segments in t=14: "
+          },
+          "textAfter": "",
+          "answer": 11,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd на TCP конекција (праќања 0–13).",
+        "en": "The graph shows the cwnd of a TCP connection (transmissions 0–13)."
+      },
+      "points": 4,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "SSThreshold во првото праќање: ",
+            "en": "SSThreshold at the first transmission: "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во 7-то праќање загубата е откриена преку ",
+            "en": "In transmission 7 the loss is detected by "
+          },
+          "textAfter": "<br>",
+          "answer": {
+            "mk": "3 дупликат ACK",
+            "en": "triple duplicate ACK"
+          },
+          "choices": [
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            "timeout"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Ако во 13-тото праќање настане timeout: cwnd = ",
+            "en": "If a timeout happened in transmission 13: cwnd = "
+          },
+          "textAfter": ", ssthresh = ",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": {
+            "mk": " (заокружено надолу)",
+            "en": " (rounded down)"
+          },
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-e.png",
+          "alt": {
+            "mk": "cwnd граф: 1,2,4,8,9,10,11,12, па 6…11",
+            "en": "cwnd graph: 1,2,4,8,9,10,11,12, then 6…11"
+          }
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Графот го прикажува cwnd на TCP конекција (праќања 0–23).",
+        "en": "The graph shows the cwnd of a TCP connection (transmissions 0–23)."
+      },
+      "points": 4,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Интервали на slow start: ",
+            "en": "Slow-start intervals: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во 7-то праќање загубата е откриена преку ",
+            "en": "In transmission 7 the loss is detected by "
+          },
+          "textAfter": "<br>",
+          "answer": {
+            "mk": "3 дупликат ACK",
+            "en": "triple duplicate ACK"
+          },
+          "choices": [
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            "timeout"
+          ]
+        },
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Во 19-то праќање загубата е откриена преку ",
+            "en": "In transmission 19 the loss is detected by "
+          },
+          "textAfter": "<br>",
+          "answer": "timeout",
+          "choices": [
+            {
+              "mk": "3 дупликат ACK",
+              "en": "triple duplicate ACK"
+            },
+            "timeout"
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "ssthresh во праќање 23: ",
+            "en": "ssthresh in transmission 23: "
+          },
+          "textAfter": "",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/kmib/cwnd-f.png",
+          "alt": {
+            "mk": "cwnd граф: 1,2,4,8,9…12, 6…17, па 1,2,4,8",
+            "en": "cwnd graph: 1,2,4,8,9…12, 6…17, then 1,2,4,8"
+          }
+        }
+      ]
+    }
+  ]
+}

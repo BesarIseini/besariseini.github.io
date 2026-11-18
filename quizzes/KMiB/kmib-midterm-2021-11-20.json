@@ -1,0 +1,631 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-midterm-2021-11-20",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Midterm",
+  "title": {
+    "mk": "КМиБ – Колоквиум 20.11.2021",
+    "en": "KMiB – Midterm 20.11.2021"
+  },
+  "description": {
+    "mk": "Прашања од колоквиумот на 20.11.2021, според скриптата од студентите.",
+    "en": "Questions from the 20 Nov 2021 midterm, based on the students' script."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1080,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "2021",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "На кој слој се врши директен пренос на податоци помеѓу два соседни уреди?",
+        "en": "At which layer is data transferred directly between two neighbouring devices?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Мрежен",
+            "en": "Network"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Транспортен",
+            "en": "Transport"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Апликациски",
+            "en": "Application"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Линк",
+            "en": "Link"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Редица со пропусен опсег R, просечна должина на пакет L и средна брзина на пристигнување A. Кој однос треба да важи за средното доцнење да биде мало?",
+        "en": "A queue with bandwidth R, average packet length L and average arrival rate A. Which relation must hold for the average delay to be small?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "RAL ≈ 0",
+          "correct": false
+        },
+        {
+          "text": "LA/R ≈ 0",
+          "correct": true
+        },
+        {
+          "text": "RA/L ≈ 0",
+          "correct": false
+        },
+        {
+          "text": "RL/A ≈ 0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "6 клиенти, секој со конекција до различен сервер. Rc = 12 Mbps, Rs = 40 Mbps, заедничкиот линк R = 120 Mbps.",
+        "en": "6 clients, each connected to a different server. Rc = 12 Mbps, Rs = 40 Mbps, shared link R = 120 Mbps."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "select",
+          "textBefore": {
+            "mk": "Тесно грло е ",
+            "en": "The bottleneck is "
+          },
+          "textAfter": "<br>",
+          "answer": {
+            "mk": "Rc линкот",
+            "en": "the Rc link"
+          },
+          "choices": [
+            {
+              "mk": "Rc линкот",
+              "en": "the Rc link"
+            },
+            {
+              "mk": "Rs линкот",
+              "en": "the Rs link"
+            },
+            {
+              "mk": "R линкот",
+              "en": "the R link"
+            }
+          ]
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "За да се стигне до следното тесно грло, Rc треба да се зголеми за ",
+            "en": "To reach the next bottleneck, Rc must grow by "
+          },
+          "textAfter": " Mbps.",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Клиент 10.10.10.10 праќа UDP датаграми до сервер 20.20.20.20 (порта на клиентот 10000, UDP порта на серверот 200). Потоа истиот клиент отвора HTTP конекција со истиот сервер (порта на клиентот 20000). Пополнете ги идентификаторите.",
+        "en": "Client 10.10.10.10 sends UDP datagrams to server 20.20.20.20 (client port 10000, server UDP port 200). Then the same client opens an HTTP connection to the same server (client port 20000). Fill in the identifiers."
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "UDP сокетот кај серверот се идентификува со дестинациска IP ",
+            "en": "On the server, the UDP socket is identified by destination IP "
+          },
+          "textAfter": {
+            "mk": " и порта ",
+            "en": " and port "
+          },
+          "answer": "20.20.20.20",
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": {
+            "mk": "<br>HTTP конекцијата: изворна IP ",
+            "en": "<br>The HTTP connection: source IP "
+          },
+          "answer": 200,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": {
+            "mk": ", изворна порта ",
+            "en": ", source port "
+          },
+          "answer": "10.10.10.10",
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": {
+            "mk": ", дестинациска IP ",
+            "en": ", destination IP "
+          },
+          "answer": 20000,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": {
+            "mk": ", дестинациска порта ",
+            "en": ", destination port "
+          },
+          "answer": "20.20.20.20",
+          "mistakes": 0
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": ".",
+          "answer": 80,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "index.html содржи 3 слики и 1 видео. Симнувањето на слика или html трае 10 ms, на видеото 50 ms. RTT = 1 ms. Се користи непостојан HTTP врз TCP.",
+        "en": "index.html holds 3 images and 1 video. Downloading an image or the html takes 10 ms, the video 50 ms. RTT = 1 ms. Non-persistent HTTP over TCP is used."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "За воспоставување врски и барања изминуваат ",
+            "en": "Connection setup and requests take "
+          },
+          "textAfter": {
+            "mk": " RTT.<br>",
+            "en": " RTTs.<br>"
+          },
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупното време до прикажување на страницата е ",
+            "en": "The total time until the page is shown is "
+          },
+          "textAfter": " ms.",
+          "answer": 100,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Веб серверот на kmib.com.mk е fobos.kmib.com.mk со IP 11.30.122.1. За да може секој да пристапи преку www.kmib.com.mk, кои два RR записи (name, value, type) треба да се внесат?",
+        "en": "The web server of kmib.com.mk is fobos.kmib.com.mk with IP 11.30.122.1. Which two RR records (name, value, type) must be added so anyone can reach it at www.kmib.com.mk?"
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "(",
+          "textAfter": ", ",
+          "answer": "kmib.com.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", CNAME)<br>(",
+          "answer": "fobos.kmib.com.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "fobos.kmib.com.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "11.30.122.1",
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": ")",
+          "answer": "A",
+          "choices": [
+            "A",
+            "NS",
+            "MX",
+            "CNAME"
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази за POP3 се точни?",
+        "en": "Which statements about POP3 are true?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Може да се прочита само целата порака одеднаш, не само делови (пр. наслов)",
+            "en": "Only the whole message can be read at once, not parts (e.g. the subject)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "По авторизација, корисникот добива листа на пораки и пристапува до секоја поединечно",
+            "en": "After authorization the user gets a list of messages and accesses each one individually"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Единствениот начин на работа е „симни и зачувај“",
+            "en": "The only mode is “download and keep”"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Комплексен е за имплементација",
+            "en": "It is complex to implement"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Овозможува папки на серверот, видливи од различни уреди",
+            "en": "It allows folders on the server, visible from different devices"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Се користи и за примање и за испраќање пораки",
+            "en": "It is used both to receive and to send messages"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протоколот е push-based",
+            "en": "The protocol is push-based"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP: A и B воспоставуваат врска и разменуваат податоци; товарот е секогаш 100 B. X = 500 (почетен seq на A), Y = 200 (почетен seq на B). Пополнете ги полињата.",
+        "en": "TCP: A and B set up a connection and exchange data; every payload is 100 B. X = 500 (A's initial seq), Y = 200 (B's initial seq). Fill in the fields."
+      },
+      "points": 13,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "1. A→B SYN: seq = ",
+          "textAfter": "<br>",
+          "answer": 500,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "2. B→A SYNACK: seq = ",
+          "textAfter": ", ack = ",
+          "answer": 200,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 501,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "3. A→B ACK + 100 B податоци: seq = ",
+            "en": "3. A→B ACK + 100 B of data: seq = "
+          },
+          "textAfter": ", ack = ",
+          "answer": 501,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 201,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "4. B→A Data: seq = ",
+          "textAfter": ", ack = ",
+          "answer": 201,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 601,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "5. A→B Data: seq = ",
+          "textAfter": ", ack = ",
+          "answer": 601,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 301,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "6. B→A Data (се губи): seq = ",
+            "en": "6. B→A Data (lost): seq = "
+          },
+          "textAfter": "<br>",
+          "answer": 301,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "7. B→A Data: seq = ",
+          "textAfter": "<br>",
+          "answer": 401,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "8. A→B: ack = ",
+          "textAfter": {
+            "mk": "<br>11. B→A по timeout: seq = ",
+            "en": "<br>11. B→A after the timeout: seq = "
+          },
+          "answer": 301,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "",
+          "answer": 301,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno. Почеток: испратени 4 сегменти, ssthresh = 10, rwnd голем. Настани (на крајот од чекорот): timeout во чекор 2; rwnd = 9 во чекор 8; 3 дупликат ACK во чекор 10; 3 дупликат ACK во чекор 12; rwnd = 2 во чекор 13. Половините се заокружуваат надолу. Колку сегменти се праќаат во секој чекор?",
+        "en": "TCP Reno. Start: 4 segments sent, ssthresh = 10, rwnd large. Events (at the end of the step): timeout in step 2; rwnd = 9 in step 8; triple duplicate ACK in step 10; triple duplicate ACK in step 12; rwnd = 2 in step 13. Halves are rounded down. How many segments are sent in each step?"
+      },
+      "points": 9,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 1: ",
+            "en": "Step 1: "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 2: ",
+            "en": "Step 2: "
+          },
+          "textAfter": {
+            "mk": "<br>ssthresh по timeout: ",
+            "en": "<br>ssthresh after the timeout: "
+          },
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "",
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 3: ",
+            "en": "Step 3: "
+          },
+          "textAfter": "<br>",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 6: ",
+            "en": "Step 6: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 9: ",
+            "en": "Step 9: "
+          },
+          "textAfter": "<br>",
+          "answer": 8,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 11: ",
+            "en": "Step 11: "
+          },
+          "textAfter": "<br>",
+          "answer": 4,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Чекор 13: ",
+            "en": "Step 13: "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупно препратени сегменти: ",
+            "en": "Segments retransmitted in total: "
+          },
+          "textAfter": "",
+          "answer": 3,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    }
+  ]
+}

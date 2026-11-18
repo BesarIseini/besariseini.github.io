@@ -1,0 +1,1675 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-bank-application",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Lecture",
+  "title": {
+    "mk": "КМиБ – Банка: апликациски слој",
+    "en": "KMiB – Bank: application layer"
+  },
+  "description": {
+    "mk": "HTTP, колачиња, DNS записи и сервери, е-пошта (SMTP, POP3, IMAP), P2P – од банката на прашања.",
+    "en": "HTTP, cookies, DNS records and servers, e-mail (SMTP, POP3, IMAP), P2P – from the question bank."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 4800,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Bank",
+    "Theory"
+  ],
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Колачињата може да се користат за:",
+        "en": "Cookies can be used for:"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Авторизација",
+            "en": "Authorization"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Чување состојба на корисничка сесија",
+            "en": "Keeping user session state"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Препораки врз основа на претходни пребарувања",
+            "en": "Recommendations based on earlier searches"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Јавно објавување информации за корисниците",
+            "en": "Publishing information about users"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Автоматско воспоставување TCP конекција",
+            "en": "Automatically setting up a TCP connection"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип на DNS запис се користи кога name е алијас, а value е каноничното име?",
+        "en": "Which DNS record type is used when name is an alias and value is the canonical name?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "CNAME",
+          "correct": true
+        },
+        {
+          "text": "A",
+          "correct": false
+        },
+        {
+          "text": "NS",
+          "correct": false
+        },
+        {
+          "text": "MX",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои се карактеристики на POP3?",
+        "en": "Which are characteristics of POP3?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Чува состојба помеѓу сесии",
+            "en": "Keeps state between sessions"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Има режим каде пораката не може повторно да се прочита ако се смени клиентот",
+            "en": "Has a mode where a message can't be read again from another client"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Нуди авторизација",
+            "en": "Offers authorization"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Овозможува вчитување пораки од мејл сервер",
+            "en": "Lets you download messages from a mail server"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мапира ID на порака во име на папка",
+            "en": "Maps a message ID to a folder name"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Каква порака е „HTTP/1.1 200 OK“?",
+        "en": "What kind of message is “HTTP/1.1 200 OK”?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Одговор (response)",
+            "en": "Response"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Барање (request)",
+            "en": "Request"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Каква порака е „GET /index.html HTTP/1.1“?",
+        "en": "What kind of message is “GET /index.html HTTP/1.1”?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Барање (request)",
+            "en": "Request"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Одговор (response)",
+            "en": "Response"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази за SMTP се точни?",
+        "en": "Which statements about SMTP are true?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Користи предефинирана порта 25",
+            "en": "It uses the predefined port 25"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мејл серверот извршува и SMTP клиент и SMTP сервер",
+            "en": "A mail server runs both an SMTP client and an SMTP server"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Има ограничување за енкодирање на пораките (7-битен ASCII)",
+            "en": "It restricts message encoding (7-bit ASCII)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Сите објекти од пораката меѓу два сервери одат преку една TCP конекција",
+            "en": "All objects of a message between two servers go over one TCP connection"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Корисничкиот агент ја праќа пораката директно до серверот на примачот",
+            "en": "The user agent sends the message directly to the recipient's server"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пораката се отфрла при првиот неуспешен обид",
+            "en": "The message is discarded after the first failed attempt"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протоколот е pull-based",
+            "en": "The protocol is pull-based"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Клиентите го користат за читање пошта",
+            "en": "Clients use it to read mail"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "За секој RR запис одредете на кој DNS сервер се чува (mamet.mk е TLD, dns.kmib.mk е авторитативен за kmib.mk, dns.provajder.mk е локален).",
+        "en": "For each RR record, choose the DNS server that stores it (mamet.mk is the TLD, dns.kmib.mk is authoritative for kmib.mk, dns.provajder.mk is local)."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": "(mail.kmib.mk, 194.195.141.3, A)",
+          "textAfter": "",
+          "answer": "dns.kmib.mk"
+        },
+        {
+          "textBefore": "(kmib.mk, mail.kmib.mk, MX)",
+          "textAfter": "",
+          "answer": "dns.kmib.mk"
+        },
+        {
+          "textBefore": "(dns.kmib.mk, 90.73.24.45, A)",
+          "textAfter": "",
+          "answer": "mamet.mk"
+        },
+        {
+          "textBefore": "(kmib.mk, dns.kmib.mk, NS)",
+          "textAfter": "",
+          "answer": "mamet.mk"
+        },
+        {
+          "textBefore": "(ispiti.mk, 134.15.76.5, A)",
+          "textAfter": "",
+          "answer": "dns.provajder.mk"
+        }
+      ],
+      "bank": [
+        "dns.kmib.mk",
+        "mamet.mk",
+        "dns.provajder.mk"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "korisnikA@domen1.com праќа порака до korisnikB@domen2.com. Кои тврдења се точни?",
+        "en": "korisnikA@domen1.com sends a message to korisnikB@domen2.com. Which statements are true?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "SMTP серверот на domen2 ја става пораката во сандачето на korisnikB",
+            "en": "The SMTP server of domen2 puts the message in korisnikB's mailbox"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "SMTP клиентот на domen1 ја праќа пораката до SMTP серверот на domen2",
+            "en": "The SMTP client of domen1 sends the message to the SMTP server of domen2"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Корисничкиот агент на A ја праќа пораката директно до серверот на domen2",
+            "en": "A's user agent sends the message directly to domen2's server"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "korisnikB ја чита пораката преку SMTP",
+            "en": "korisnikB reads the message over SMTP"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "RR записи за kmib.edu.mk: (kmib.edu.mk, k.kmib.edu.mk, MX), (kmib.edu.mk, l.kmib.edu.mk, NS), (k.kmib.edu.mk, 88.89.91.93, A), (kmib.edu.mk, 88.89.91.94, A). Ако нешто не може да се одреди, внесете „/“.",
+        "en": "RR records for kmib.edu.mk: (kmib.edu.mk, k.kmib.edu.mk, MX), (kmib.edu.mk, l.kmib.edu.mk, NS), (k.kmib.edu.mk, 88.89.91.93, A), (kmib.edu.mk, 88.89.91.94, A). If something can't be determined, enter “/”."
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Канонично име на мејл серверот: ",
+            "en": "Canonical name of the mail server: "
+          },
+          "textAfter": "<br>",
+          "answer": "k.kmib.edu.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "IP на мејл серверот: ",
+            "en": "IP of the mail server: "
+          },
+          "textAfter": "<br>",
+          "answer": "88.89.91.93",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Канонично име на авторитативниот DNS: ",
+            "en": "Canonical name of the authoritative DNS: "
+          },
+          "textAfter": "<br>",
+          "answer": "l.kmib.edu.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "IP на авторитативниот DNS: ",
+            "en": "IP of the authoritative DNS: "
+          },
+          "textAfter": "<br>",
+          "answer": "/",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "IP на основниот домен: ",
+            "en": "IP of the domain itself: "
+          },
+          "textAfter": "",
+          "answer": "88.89.91.94",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Авторитативниот DNS сервер за finki.ukim.mk е adns.finki.ukim.mk со IP 1.1.2.2. Кои два RR записи (name, value, type) треба да се внесат?",
+        "en": "The authoritative DNS server for finki.ukim.mk is adns.finki.ukim.mk with IP 1.1.2.2. Which two RR records (name, value, type) must be added?"
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "(",
+          "textAfter": ", ",
+          "answer": "finki.ukim.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "adns.finki.ukim.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": ")<br>(",
+          "answer": "NS",
+          "choices": [
+            "NS",
+            "A",
+            "MX",
+            "CNAME"
+          ]
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "adns.finki.ukim.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": "",
+          "textAfter": ", ",
+          "answer": "1.1.2.2",
+          "mistakes": 0
+        },
+        {
+          "type": "select",
+          "textBefore": "",
+          "textAfter": ")",
+          "answer": "A",
+          "choices": [
+            "A",
+            "NS",
+            "MX",
+            "CNAME"
+          ]
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои услуги ги нуди DNS?",
+        "en": "Which services does DNS offer?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Превод од име во IP адреса",
+            "en": "Translating names to IP addresses"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Алијаси за домаќини (канонично име)",
+            "en": "Host aliasing (canonical names)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Алијаси за мејл сервери",
+            "en": "Mail server aliasing"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Распределба на оптоварувањето",
+            "en": "Load distribution"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Надежен транспорт",
+            "en": "Reliable transport"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Превод од IP адреса во порта",
+            "en": "Translating IP addresses to ports"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Споредете клиент-сервер и P2P: кај кого е повисоко секое својство?",
+        "en": "Compare client-server and P2P: which has more of each property?"
+      },
+      "points": 4,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Еднаквост на учесниците",
+            "en": "Equality of participants"
+          },
+          "textAfter": "",
+          "answer": "P2P"
+        },
+        {
+          "textBefore": {
+            "mk": "Цена на инвестицијата",
+            "en": "Investment cost"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Клиент-сервер",
+            "en": "Client-server"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Безбедност (полесно се контролира)",
+            "en": "Security (easier to control)"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "Клиент-сервер",
+            "en": "Client-server"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Отпорност на пад на еден учесник",
+            "en": "Resilience to one participant failing"
+          },
+          "textAfter": "",
+          "answer": "P2P"
+        }
+      ],
+      "bank": [
+        "P2P",
+        {
+          "mk": "Клиент-сервер",
+          "en": "Client-server"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Пополнете ја реченицата со соодветниот поим.",
+        "en": "Complete each phrase with the right term."
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": {
+            "mk": "Сандачињата (mailboxes) содржат …",
+            "en": "Mailboxes hold …"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "дојдовни пораки",
+            "en": "incoming messages"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Редиците (queues) содржат …",
+            "en": "Queues hold …"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "појдовни пораки",
+            "en": "outgoing messages"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "SMTP комуникацијата се користи помеѓу …",
+            "en": "SMTP communication is used between …"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "сервери",
+            "en": "servers"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Клиентот во SMTP е задолжен за …",
+            "en": "The SMTP client is responsible for …"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "испраќање",
+            "en": "sending"
+          }
+        },
+        {
+          "textBefore": {
+            "mk": "Серверот во SMTP е задолжен за …",
+            "en": "The SMTP server is responsible for …"
+          },
+          "textAfter": "",
+          "answer": {
+            "mk": "примање",
+            "en": "receiving"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "дојдовни пораки",
+          "en": "incoming messages"
+        },
+        {
+          "mk": "појдовни пораки",
+          "en": "outgoing messages"
+        },
+        {
+          "mk": "сервери",
+          "en": "servers"
+        },
+        {
+          "mk": "испраќање",
+          "en": "sending"
+        },
+        {
+          "mk": "примање",
+          "en": "receiving"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои RR записи треба да се внесат во DNS при регистрација на нов домен?",
+        "en": "Which RR records must be added to DNS when a new domain is registered?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": "NS",
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "A (за авторитативниот name сервер)",
+            "en": "A (for the authoritative name server)"
+          },
+          "correct": true
+        },
+        {
+          "text": "MX",
+          "correct": false
+        },
+        {
+          "text": "CNAME",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Организација на DNS: кои тврдења се точни?",
+        "en": "DNS organization: which statements are true?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "DNS е хиерархиска дистрибуирана база на податоци",
+            "en": "DNS is a hierarchical, distributed database"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Root серверите упатуваат кон TLD серверите (.com, .org, .mk…)",
+            "en": "Root servers point to TLD servers (.com, .org, .mk…)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "TLD серверите упатуваат кон авторитативните сервери",
+            "en": "TLD servers point to authoritative servers"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Локалниот DNS сервер е на врвот на хиерархијата",
+            "en": "The local DNS server is at the top of the hierarchy"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Локалниот DNS ги кешира одговорите (TTL)",
+            "en": "The local DNS caches answers (TTL)"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Во комуникациска сесија меѓу пар процеси, кој процес е сервер?",
+        "en": "In a communication session between two processes, which one is the server?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Процесот што чека да биде контактиран",
+            "en": "The process that waits to be contacted"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Процесот што ја започнува комуникацијата",
+            "en": "The process that starts the communication"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Процесот со поголема IP адреса",
+            "en": "The process with the higher IP address"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Која е разликата помеѓу BitTorrent и HTTP?",
+        "en": "What is the difference between BitTorrent and HTTP?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "BitTorrent е соработка на peers, а HTTP е клиент-сервер",
+            "en": "BitTorrent is cooperation between peers, HTTP is client-server"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "BitTorrent користи повеќе паралелни врски, а прелистувачот еден TCP сокет по објект",
+            "en": "BitTorrent uses many parallel connections, a browser one TCP socket per object"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "BitTorrent користи UDP за датотеките, а HTTP TCP",
+            "en": "BitTorrent uses UDP for files and HTTP uses TCP"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "HTTP е P2P протокол",
+            "en": "HTTP is a P2P protocol"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Domain Name System се одржува од:",
+        "en": "The Domain Name System is maintained by:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Систем од дистрибуирани бази на податоци",
+            "en": "A system of distributed databases"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Еден централен сервер",
+            "en": "A single central server"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Секој прелистувач",
+            "en": "Each browser"
+          },
+          "correct": false
+        },
+        {
+          "text": "ISO",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој протокол на транспортно ниво го користи FTP?",
+        "en": "Which transport protocol does FTP use?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Двата",
+            "en": "Both"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Апликациите со P2P архитектура имаат:",
+        "en": "Applications with a P2P architecture have:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "И клиентски и серверски процеси",
+            "en": "Both client and server processes"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само клиентски процеси",
+            "en": "Only client processes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само серверски процеси",
+            "en": "Only server processes"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "На кој слој припаѓа?",
+        "en": "Which layer does it belong to?"
+      },
+      "points": 4,
+      "slots": [
+        {
+          "textBefore": "telnet",
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": "SSL",
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": "HTTP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        },
+        {
+          "textBefore": "FTP",
+          "textAfter": "",
+          "answer": {
+            "mk": "Апликациски",
+            "en": "Application"
+          }
+        }
+      ],
+      "bank": [
+        {
+          "mk": "Апликациски",
+          "en": "Application"
+        },
+        {
+          "mk": "Транспортен",
+          "en": "Transport"
+        },
+        {
+          "mk": "Мрежен",
+          "en": "Network"
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази за HTTP се точни?",
+        "en": "Which statements about HTTP are true?"
+      },
+      "points": 5,
+      "options": [
+        {
+          "text": {
+            "mk": "Користи доверлив пренос преку TCP",
+            "en": "It uses reliable transfer over TCP"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Со POST клиентот праќа податоци во телото на барањето",
+            "en": "With POST the client sends data in the request body"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Одговорот може да содржи само заглавје, без тело",
+            "en": "A response may contain only headers, without a body"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Барањето и одговорот имаат различен формат",
+            "en": "Requests and responses have different formats"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Секој објект од страницата има посебна URL адреса",
+            "en": "Every object of the page has its own URL"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Протоколот е push-based",
+            "en": "The protocol is push-based"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кодот 200 означува грешка",
+            "en": "Code 200 means an error"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Серверот чува состојба за клиентите",
+            "en": "The server keeps state about clients"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази за IMAP се точни?",
+        "en": "Which statements about IMAP are true?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Овозможува папки на серверот, видливи од различни уреди",
+            "en": "It allows folders on the server, visible from different devices"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Може да се прочита само дел од пораката (пр. наслов)",
+            "en": "Just part of a message can be read (e.g. the subject)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Чува состојба помеѓу сесии",
+            "en": "It keeps state between sessions"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Се користи за испраќање пораки",
+            "en": "It is used to send messages"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протоколот е push-based",
+            "en": "The protocol is push-based"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Едноставен е",
+            "en": "It is simple"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "RR записи: (kmib.edu.mk, a.kmib.edu.mk, NS), (kmib.edu.mk, b.kmib.edu.mk, CNAME), (a.kmib.edu.mk, 88.89.91.95, A), (b.kmib.edu.mk, 88.89.91.96, A), (kmib.edu.mk, 88.89.91.97, A). Ако нешто не може да се одреди, внесете „/“.",
+        "en": "RR records: (kmib.edu.mk, a.kmib.edu.mk, NS), (kmib.edu.mk, b.kmib.edu.mk, CNAME), (a.kmib.edu.mk, 88.89.91.95, A), (b.kmib.edu.mk, 88.89.91.96, A), (kmib.edu.mk, 88.89.91.97, A). If something can't be determined, enter “/”."
+      },
+      "points": 5,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Канонично име на веб серверот: ",
+            "en": "Canonical name of the web server: "
+          },
+          "textAfter": "<br>",
+          "answer": "b.kmib.edu.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Канонично име на мејл серверот: ",
+            "en": "Canonical name of the mail server: "
+          },
+          "textAfter": "<br>",
+          "answer": "/",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Канонично име на авторитативниот DNS: ",
+            "en": "Canonical name of the authoritative DNS: "
+          },
+          "textAfter": "<br>",
+          "answer": "a.kmib.edu.mk",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "IP на авторитативниот DNS: ",
+            "en": "IP of the authoritative DNS: "
+          },
+          "textAfter": "<br>",
+          "answer": "88.89.91.95",
+          "mistakes": 0
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "IP на основниот домен: ",
+            "en": "IP of the domain itself: "
+          },
+          "textAfter": "",
+          "answer": "88.89.91.97",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои тврдења важат за непостојан (non-persistent) HTTP?",
+        "en": "Which statements hold for non-persistent HTTP?"
+      },
+      "points": 3,
+      "options": [
+        {
+          "text": {
+            "mk": "Повеќе објекти бараат повеќе TCP врски",
+            "en": "Several objects need several TCP connections"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Низ една конекција оди најмногу еден објект",
+            "en": "At most one object goes over a connection"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Конекцијата се затвора по одговорот",
+            "en": "The connection is closed after the response"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Сите објекти одат низ една врска",
+            "en": "All objects go over one connection"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колку RTT се потребни за html страница + 3 слики со постојан HTTP без pipelining (трансмисиското време = 0)?",
+        "en": "How many RTTs does an html page + 3 images take with persistent HTTP without pipelining (transmission time = 0)?"
+      },
+      "points": 1,
+      "answer": 5,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои задачи ги врши локалниот DNS сервер?",
+        "en": "What does the local DNS server do?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Мапирање име/IP за домаќините во својата мрежа",
+            "en": "Name/IP mapping for hosts in its own network"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ги препраќа барањата до други DNS сервери",
+            "en": "Forwards queries to other DNS servers"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Е авторитативен за сите домени",
+            "en": "It is authoritative for every domain"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги чува root записите за цел свет",
+            "en": "Stores the root records for the whole world"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип DNS запис: name е домен, value е името на авторитативниот name сервер?",
+        "en": "Which DNS record type: name is a domain, value is the name of its authoritative name server?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "NS",
+          "correct": true
+        },
+        {
+          "text": "A",
+          "correct": false
+        },
+        {
+          "text": "MX",
+          "correct": false
+        },
+        {
+          "text": "CNAME",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "На кој DNS сервер се чува записот (dns.finki.ukim.edu.mk, 194.149.137.141, A)?",
+        "en": "Which DNS server stores the record (dns.finki.ukim.edu.mk, 194.149.137.141, A)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Авторитативен сервер",
+            "en": "Authoritative server"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Root сервер",
+            "en": "Root server"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Локален DNS сервер",
+            "en": "Local DNS server"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како веб серверот прави разлика помеѓу различните клиенти (сесии)?",
+        "en": "How does a web server tell different clients (sessions) apart?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Според IP адресата и портата на испраќачот (клиентот)",
+            "en": "By the sender's (client's) IP address and port"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само според портата 80",
+            "en": "Only by port 80"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Според MAC адресата",
+            "en": "By the MAC address"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Според URL-то",
+            "en": "By the URL"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој HTTP метод го користат веб формуларите за праќање податоци?",
+        "en": "Which HTTP method do web forms use to send data?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "POST",
+          "correct": true
+        },
+        {
+          "text": "GET",
+          "correct": false
+        },
+        {
+          "text": "HEAD",
+          "correct": false
+        },
+        {
+          "text": "DELETE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Блокот „HTTP/1.1 200 OK, Date, Server, Content-Length …“ е:",
+        "en": "The block “HTTP/1.1 200 OK, Date, Server, Content-Length …” is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "HTTP порака од серверот до клиентот",
+            "en": "An HTTP message from the server to the client"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HTTP порака од клиентот до серверот",
+            "en": "An HTTP message from the client to the server"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "DNS одговор",
+            "en": "A DNS response"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои се примери за top-level домени?",
+        "en": "Which are examples of top-level domains?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": ".net",
+          "correct": true
+        },
+        {
+          "text": ".edu",
+          "correct": true
+        },
+        {
+          "text": ".com",
+          "correct": true
+        },
+        {
+          "text": ".org",
+          "correct": true
+        },
+        {
+          "text": "finki.ukim.mk",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој протокол е постар?",
+        "en": "Which protocol is older?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": "SMTP",
+          "correct": true
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои искази за HTTP се точни?",
+        "en": "Which statements about HTTP are true?"
+      },
+      "points": 4,
+      "options": [
+        {
+          "text": {
+            "mk": "Серверот не чува податоци за претходната комуникација",
+            "en": "The server keeps nothing about earlier communication"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ако бараната URL не постои, се враќа 404",
+            "en": "If the requested URL doesn't exist, 404 is returned"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Протоколот е pull-based",
+            "en": "The protocol is pull-based"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Барањето и одговорот имаат различен формат",
+            "en": "Requests and responses have different formats"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Одговорот секогаш содржи тело",
+            "en": "The response always has a body"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "GET праќа податоци во телото на барањето",
+            "en": "GET sends data in the request body"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Користи UDP",
+            "en": "It uses UDP"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи кодот „200 OK“?",
+        "en": "What does code “200 OK” mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Барањето е успешно, објектот е во пораката",
+            "en": "The request succeeded and the object is in the message"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Објектот не е пронајден",
+            "en": "The object was not found"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кешираната копија е валидна",
+            "en": "The cached copy is still valid"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Барањето не е разбрано",
+            "en": "The request was not understood"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "root.company.com е root, dns.tlde.edu е TLD, dns.uni.edu е авторитативен за uni.edu. Каде се чува секој запис?",
+        "en": "root.company.com is a root, dns.tlde.edu a TLD, dns.uni.edu authoritative for uni.edu. Where is each record stored?"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": "(uni.edu, mail.uni.edu, MX)",
+          "textAfter": "",
+          "answer": "dns.uni.edu"
+        },
+        {
+          "textBefore": "(uni.edu, c1.c2.c3.uni.edu, CNAME)",
+          "textAfter": "",
+          "answer": "dns.uni.edu"
+        },
+        {
+          "textBefore": "(mail.uni.edu, IP, A)",
+          "textAfter": "",
+          "answer": "dns.uni.edu"
+        },
+        {
+          "textBefore": "(dns.uni.edu, IP, A)",
+          "textAfter": "",
+          "answer": "dns.tlde.edu"
+        },
+        {
+          "textBefore": "(dns.tlde.edu, IP, A)",
+          "textAfter": "",
+          "answer": "root.company.com"
+        }
+      ],
+      "bank": [
+        "dns.uni.edu",
+        "dns.tlde.edu",
+        "root.company.com"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "matching",
+      "question": {
+        "mk": "Начин на работа: push или pull?",
+        "en": "How does each work: push or pull?"
+      },
+      "points": 5,
+      "slots": [
+        {
+          "textBefore": "HTTP",
+          "textAfter": "",
+          "answer": "pull"
+        },
+        {
+          "textBefore": "IMAP",
+          "textAfter": "",
+          "answer": "pull"
+        },
+        {
+          "textBefore": "POP3",
+          "textAfter": "",
+          "answer": "pull"
+        },
+        {
+          "textBefore": "SMTP",
+          "textAfter": "",
+          "answer": "push"
+        },
+        {
+          "textBefore": "DNS",
+          "textAfter": "",
+          "answer": "pull"
+        }
+      ],
+      "bank": [
+        "pull",
+        "push"
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е BitTorrent?",
+        "en": "What is BitTorrent?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Протокол за P2P споделување датотеки",
+            "en": "A protocol for P2P file sharing"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Апликација за споделување големи датотеки",
+            "en": "An application for sharing big files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протокол за споделување со клиент-сервер архитектура",
+            "en": "A client-server file-sharing protocol"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мрежа на домаќини",
+            "en": "A network of hosts"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "mk": "Кои се карактеристики на еден голем „мега-сервер“ за содржина на стотици илјади истовремени корисници?",
+        "en": "What characterizes using one big “mega-server” to serve content to hundreds of thousands of simultaneous users?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "mk": "Повеќе копии од истата датотека се праќаат преку излезниот линк",
+            "en": "Many copies of the same file go over the outgoing link"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Единствена точка на пад",
+            "en": "A single point of failure"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Многу едноставно и скалабилно решение",
+            "en": "A very simple and scalable solution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мала веројатност за загушување",
+            "en": "A low chance of congestion"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

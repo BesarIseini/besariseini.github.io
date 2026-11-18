@@ -1,0 +1,902 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "kmib-problems-transport",
+  "revision": 1,
+  "courseId": "KMiB",
+  "category": "Practical",
+  "title": {
+    "mk": "КМиБ – Задачи: HTTP, checksum, TCP",
+    "en": "KMiB – Problems: HTTP, checksum, TCP"
+  },
+  "description": {
+    "mk": "Internet checksum, време за HTTP, EstimatedRTT и timeout, искористеност и прозорец, Go-Back-N, TCP Reno.",
+    "en": "Internet checksum, HTTP timing, EstimatedRTT and timeout, utilization and window, Go-Back-N, TCP Reno."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 5760,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Problems"
+  ],
+  "questions": [
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "UDP: ја праќате секвенцата 64f3a2fc (hex).",
+        "en": "UDP: you send the sequence 64f3a2fc (hex)."
+      },
+      "points": 2,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Checksum полето во UDP заглавјето има ",
+            "en": "The checksum field of the UDP header has "
+          },
+          "textAfter": {
+            "mk": " бита.<br>",
+            "en": " bits.<br>"
+          },
+          "answer": 16,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Checksum (hex, мали букви): ",
+            "en": "Checksum (hex, lowercase): "
+          },
+          "textAfter": "",
+          "answer": "f80f",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Податочното ниво ја добива низата ab239312 (hex) од мрежното ниво. Која низа ќе се проследи до физичкото ниво ако се користи Internet checksum (додаден на крајот)?",
+        "en": "The data link layer gets the sequence ab239312 (hex) from the network layer. Which sequence goes to the physical layer if the Internet checksum is used (appended at the end)?"
+      },
+      "points": 1,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Низа (hex, мали букви): ",
+            "en": "Sequence (hex, lowercase): "
+          },
+          "textAfter": "",
+          "answer": "ab239312c1c9",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Која вредност ќе ја постави испраќачот во UDP checksum полето за секвенцата 31210ab9 (hex)?",
+        "en": "What will the sender put in the UDP checksum field for the sequence 31210ab9 (hex)?"
+      },
+      "points": 1,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": {
+            "mk": "Checksum (hex, мали букви): ",
+            "en": "Checksum (hex, lowercase): "
+          },
+          "textAfter": "",
+          "answer": "c425",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Податоците се 11000011, 10101000, 01101011, 00000000, 01111111. Пресметајте Internet checksum со 8-битни зборови (резултат од 8 бита).",
+        "en": "The data is 11000011, 10101000, 01101011, 00000000, 01111111. Compute the Internet checksum with 8-bit words (an 8-bit result)."
+      },
+      "points": 1,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "string",
+          "textBefore": "Checksum: ",
+          "textAfter": "",
+          "answer": "10101000",
+          "mistakes": 0
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 6 ms до локалниот DNS кеш. HTML страницата референцира 4 објекти, RTT до веб серверот е 131 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP со најмногу 7 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 6 ms to the local DNS cache. The HTML page references 4 objects, and the RTT to the web server is 131 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP with at most 7 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 399,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 5 ms до локалниот DNS кеш. HTML страницата референцира 9 објекти, RTT до веб серверот е 50 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи непостојан HTTP без паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 5 ms to the local DNS cache. The HTML page references 9 objects, and the RTT to the web server is 50 ms. Ignoring transmission time, how many ms pass until all objects are received with non-persistent HTTP without parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 1005,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 11 ms до локалниот DNS кеш. HTML страницата референцира 9 објекти, RTT до веб серверот е 43 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP со најмногу 9 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 11 ms to the local DNS cache. The HTML page references 9 objects, and the RTT to the web server is 43 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP with at most 9 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 140,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 7 ms до локалниот DNS кеш. HTML страницата референцира 13 објекти, RTT до веб серверот е 95 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP со најмногу 8 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 7 ms to the local DNS cache. The HTML page references 13 objects, and the RTT to the web server is 95 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP with at most 8 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 387,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 5 ms до локалниот DNS кеш. HTML страницата референцира 11 објекти, RTT до веб серверот е 118 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP со најмногу 6 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 5 ms to the local DNS cache. The HTML page references 11 objects, and the RTT to the web server is 118 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP with at most 6 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 477,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 12 ms до локалниот DNS кеш. HTML страницата референцира 21 објекти, RTT до веб серверот е 94 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP со најмногу 4 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 12 ms to the local DNS cache. The HTML page references 21 objects, and the RTT to the web server is 94 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP with at most 4 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 764,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 5 ms до локалниот DNS кеш. HTML страницата референцира 4 објекти, RTT до веб серверот е 59 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи постојан HTTP без паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 5 ms to the local DNS cache. The HTML page references 4 objects, and the RTT to the web server is 59 ms. Ignoring transmission time, how many ms pass until all objects are received with persistent HTTP without parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 359,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 16 ms до локалниот DNS кеш. HTML страницата референцира 9 објекти, RTT до веб серверот е 58 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи непостојан HTTP со најмногу 3 паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 16 ms to the local DNS cache. The HTML page references 9 objects, and the RTT to the web server is 58 ms. Ignoring transmission time, how many ms pass until all objects are received with non-persistent HTTP with at most 3 parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 480,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Кликате на линк; IP адресата треба да се добие преку DNS, со RTT 8 ms до локалниот DNS кеш. HTML страницата референцира 13 објекти, RTT до веб серверот е 108 ms. Занемарувајќи ја трансмисијата, колку ms минуваат додека не се примат сите објекти ако се користи непостојан HTTP без паралелни TCP врски?",
+        "en": "You click a link; the IP address must be found with DNS, with an RTT of 8 ms to the local DNS cache. The HTML page references 13 objects, and the RTT to the web server is 108 ms. Ignoring transmission time, how many ms pass until all objects are received with non-persistent HTTP without parallel TCP connections?"
+      },
+      "points": 1,
+      "answer": 3032,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "DNS RTT = 7.9 ms; HTML страницата референцира 5 објекти; пропагациското доцнење до веб серверот е 71.2 ms. Колку ms трае вчитувањето со постојан HTTP и 5 паралелни TCP врски? (децимална точка)",
+        "en": "DNS RTT = 7.9 ms; the HTML page references 5 objects; the propagation delay to the web server is 71.2 ms. How many ms does loading take with persistent HTTP and 5 parallel TCP connections? (use a decimal point)"
+      },
+      "points": 1,
+      "answer": 435.1,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.05
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "index.html содржи 3 слики. RTT, како и времето за симнување на еден објект, се 20 ms. Се користи постојан HTTP.",
+        "en": "index.html holds 3 images. The RTT and the time to download one object are both 20 ms. Persistent HTTP is used."
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Број на TCP врски: ",
+            "en": "Number of TCP connections: "
+          },
+          "textAfter": "<br>",
+          "answer": 1,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Број на RTT: ",
+            "en": "Number of RTTs: "
+          },
+          "textAfter": "<br>",
+          "answer": 5,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Вкупно време (ms): ",
+            "en": "Total time (ms): "
+          },
+          "textAfter": "",
+          "answer": 180,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "DNS = 8 ms, RTT до веб серверот = 100 ms, HTML + 3 слики, занемарлив пренос. Колку ms трае вчитувањето?",
+        "en": "DNS = 8 ms, RTT to the web server = 100 ms, HTML + 3 images, negligible transmission. How many ms does loading take?"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Непостојан, сериски: ",
+            "en": "Non-persistent, serial: "
+          },
+          "textAfter": "<br>",
+          "answer": 808,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Непостојан, 3 слики паралелно по HTML: ",
+            "en": "Non-persistent, 3 images in parallel after the HTML: "
+          },
+          "textAfter": "<br>",
+          "answer": 408,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Постојан, сериски: ",
+            "en": "Persistent, serial: "
+          },
+          "textAfter": "",
+          "answer": 508,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "EstimatedRTT = 220 ms, DevRTT = 30 ms. Следните две измерени RTT вредности се 110 ms и 150 ms; α = 0.125, β = 0.25. DevRTT се пресметува со новиот EstimatedRTT (како кај Kurose). Заокружете на 2 децимали. (децимална точка)",
+        "en": "EstimatedRTT = 220 ms, DevRTT = 30 ms. The next two measured RTTs are 110 ms and 150 ms; α = 0.125, β = 0.25. DevRTT uses the new EstimatedRTT (as in Kurose). Round to 2 decimals. (use a decimal point)"
+      },
+      "points": 6,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "EstimatedRTT₁ = ",
+          "textAfter": " ms, ",
+          "answer": 206.25,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "DevRTT₁ = ",
+          "textAfter": " ms, ",
+          "answer": 46.56,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "Timeout₁ = ",
+          "textAfter": " ms<br>",
+          "answer": 392.5,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "EstimatedRTT₂ = ",
+          "textAfter": " ms, ",
+          "answer": 199.22,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "DevRTT₂ = ",
+          "textAfter": " ms, ",
+          "answer": 47.23,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "Timeout₂ = ",
+          "textAfter": " ms",
+          "answer": 388.13,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "EstimatedRTT = 100 ms, DevRTT = 20 ms, SampleRTT = 140 ms (α = 0.125, β = 0.25).",
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": "EstimatedRTT = ",
+          "textAfter": " ms<br>",
+          "answer": 105.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "DevRTT = ",
+          "textAfter": " ms<br>",
+          "answer": 23.75,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": "TimeoutInterval = ",
+          "textAfter": " ms",
+          "answer": 200.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.011
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкав треба да биде прозорецот за искористеност од 75% на канал од 1 Gbps? Пакетот е 1000 B (со заглавјата), пропагациското доцнење е 20 ms. 1 Gbps = 1024³ b/s; заокружете нагоре на цел број.",
+        "en": "How large must the window be for 75% utilization of a 1 Gbps channel? Packets are 1000 B (headers included), the propagation delay is 20 ms. 1 Gbps = 1024³ b/s; round up to a whole number."
+      },
+      "points": 1,
+      "answer": 4028,
+      "tolerance": {
+        "type": "range",
+        "min": 4027,
+        "max": 4028
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкав треба да биде прозорецот за искористеност од 90% на канал од 1 Gbps? Пакетот е 3000 B (со заглавјата), пропагациското доцнење е 15 ms. 1 Gbps = 1024³ b/s; заокружете нагоре на цел број.",
+        "en": "How large must the window be for 90% utilization of a 1 Gbps channel? Packets are 3000 B (headers included), the propagation delay is 15 ms. 1 Gbps = 1024³ b/s; round up to a whole number."
+      },
+      "points": 1,
+      "answer": 1209,
+      "tolerance": {
+        "type": "range",
+        "min": 1208,
+        "max": 1209
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкав треба да биде прозорецот за искористеност од 90% на канал од 1.5 Gbps? Пакетот е 6000 B (со заглавјата), пропагациското доцнење е 50 ms. 1 Gbps = 1024³ b/s; заокружете нагоре на цел број.",
+        "en": "How large must the window be for 90% utilization of a 1.5 Gbps channel? Packets are 6000 B (headers included), the propagation delay is 50 ms. 1 Gbps = 1024³ b/s; round up to a whole number."
+      },
+      "points": 1,
+      "answer": 3021,
+      "tolerance": {
+        "type": "range",
+        "min": 3020,
+        "max": 3021
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкав треба да биде прозорецот за искористеност од 80% на канал од 0.5 Gbps? Пакетот е 2000 B (со заглавјата), пропагациското доцнење е 15 ms. 1 Gbps = 1024³ b/s; заокружете нагоре на цел број.",
+        "en": "How large must the window be for 80% utilization of a 0.5 Gbps channel? Packets are 2000 B (headers included), the propagation delay is 15 ms. 1 Gbps = 1024³ b/s; round up to a whole number."
+      },
+      "points": 1,
+      "answer": 807,
+      "tolerance": {
+        "type": "range",
+        "min": 806,
+        "max": 807
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Канал од 100 Mbps, пакет од 10000 бита, пропагациско доцнење 70 ms. (децимална точка)",
+        "en": "A 100 Mbps channel, 10000-bit packets, a propagation delay of 70 ms. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со stop-and-wait (%, 3 децимали): ",
+            "en": "Utilization with stop-and-wait (%, 3 decimals): "
+          },
+          "textAfter": "<br>",
+          "answer": 0.071,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.0011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со прозорец N = 125 (%, цел број): ",
+            "en": "Utilization with a window N = 125 (%, whole number): "
+          },
+          "textAfter": "<br>",
+          "answer": 9,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.5
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "N за искористеност од 60% (цел број, нагоре): ",
+            "en": "N for 60% utilization (whole number, rounded up): "
+          },
+          "textAfter": "",
+          "answer": 841,
+          "tolerance": {
+            "type": "absolute",
+            "value": 1
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "Канал од 195 Mbps, пакет од 3500 бита, пропагациско доцнење 80 ms. (децимална точка)",
+        "en": "A 195 Mbps channel, 3500-bit packets, a propagation delay of 80 ms. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со stop-and-wait (%, 3 децимали): ",
+            "en": "Utilization with stop-and-wait (%, 3 decimals): "
+          },
+          "textAfter": "<br>",
+          "answer": 0.011,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.0011
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со прозорец N = 142 (%, цел број): ",
+            "en": "Utilization with a window N = 142 (%, whole number): "
+          },
+          "textAfter": "<br>",
+          "answer": 2,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.5
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "N за искористеност од 70% (цел број, нагоре): ",
+            "en": "N for 70% utilization (whole number, rounded up): "
+          },
+          "textAfter": "",
+          "answer": 6241,
+          "tolerance": {
+            "type": "absolute",
+            "value": 1
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Колкав треба да биде пакетот L (во битови) за искористеност од 99% на канал од 1 Gbps (10⁹ b/s), со прозорец 2724 и пропагациско доцнење 15 ms? (цел број)",
+        "en": "How large must the packet L (in bits) be for 99% utilization of a 1 Gbps (10⁹ b/s) channel with a window of 2724 and a propagation delay of 15 ms? (whole number)"
+      },
+      "points": 1,
+      "answer": 10907,
+      "tolerance": {
+        "type": "absolute",
+        "value": 0.5
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": "t = L/R = 1 ms, RTT = 9 ms.",
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со W = 1 (%): ",
+            "en": "Utilization with W = 1 (%): "
+          },
+          "textAfter": "<br>",
+          "answer": 10,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Искористеност со W = 4 (%): ",
+            "en": "Utilization with W = 4 (%): "
+          },
+          "textAfter": "<br>",
+          "answer": 40,
+          "tolerance": {
+            "type": "strict"
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "Најмал W за барем 85%: ",
+            "en": "Smallest W for at least 85%: "
+          },
+          "textAfter": "",
+          "answer": 9,
+          "tolerance": {
+            "type": "strict"
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Go-Back-4: се губи секоја 8-ма трансмисија, а треба да се пратат 11 пакети. Колку трансмисии се потребни?",
+        "en": "Go-Back-4: every 8th transmission is lost, and 11 packets must be sent. How many transmissions are needed?"
+      },
+      "points": 1,
+      "answer": 15,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "numeric",
+      "question": {
+        "mk": "Go-Back-5: се губи секоја 6-ма трансмисија, а треба да се пратат 8 пакети. Колку трансмисии се потребни?",
+        "en": "Go-Back-5: every 6th transmission is lost, and 8 packets must be sent. How many transmissions are needed?"
+      },
+      "points": 1,
+      "answer": 11,
+      "tolerance": {
+        "type": "strict"
+      }
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno преку единствен линк од 50 Mbps без баферирање; огромна датотека, rwnd многу поголем од cwnd. Сегмент од 5000 B, RTT = 200 ms, врската е секогаш во congestion avoidance. (децимална точка)",
+        "en": "TCP Reno over a single unbuffered 50 Mbps link; a huge file, rwnd much larger than cwnd. 5000 B segments, RTT = 200 ms, the connection is always in congestion avoidance. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) Максимален прозорец (сегменти): ",
+            "en": "a) Maximum window (segments): "
+          },
+          "textAfter": "<br>",
+          "answer": 250.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) Просечен проток (bps): ",
+            "en": "b) Average throughput (bps): "
+          },
+          "textAfter": "<br>",
+          "answer": 37500000.0,
+          "tolerance": {
+            "type": "percentage",
+            "value": 2
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "в) Време од загуба до максимален прозорец (s, 2 децимали): ",
+            "en": "c) Time from a loss back to the maximum window (s, 2 decimals): "
+          },
+          "textAfter": "",
+          "answer": 25.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.08
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno преку единствен линк од 10 Mbps без баферирање; огромна датотека, rwnd многу поголем од cwnd. Сегмент од 1000 B, RTT = 100 ms, врската е секогаш во congestion avoidance. (децимална точка)",
+        "en": "TCP Reno over a single unbuffered 10 Mbps link; a huge file, rwnd much larger than cwnd. 1000 B segments, RTT = 100 ms, the connection is always in congestion avoidance. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) Максимален прозорец (сегменти): ",
+            "en": "a) Maximum window (segments): "
+          },
+          "textAfter": "<br>",
+          "answer": 125.0,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) Просечен проток (bps): ",
+            "en": "b) Average throughput (bps): "
+          },
+          "textAfter": "<br>",
+          "answer": 7500000.0,
+          "tolerance": {
+            "type": "percentage",
+            "value": 2
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "в) Време од загуба до максимален прозорец (s, 2 децимали): ",
+            "en": "c) Time from a loss back to the maximum window (s, 2 decimals): "
+          },
+          "textAfter": "",
+          "answer": 6.25,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.08
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno преку единствен линк од 4 Mbps без баферирање; огромна датотека, rwnd многу поголем од cwnd. Сегмент од 1228 B, RTT = 106 ms, врската е секогаш во congestion avoidance. (децимална точка)",
+        "en": "TCP Reno over a single unbuffered 4 Mbps link; a huge file, rwnd much larger than cwnd. 1228 B segments, RTT = 106 ms, the connection is always in congestion avoidance. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) Максимален прозорец (сегменти, заокружи нагоре): ",
+            "en": "a) Maximum window (segments, round up): "
+          },
+          "textAfter": "<br>",
+          "answer": 44,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) Просечен проток (bps): ",
+            "en": "b) Average throughput (bps): "
+          },
+          "textAfter": "<br>",
+          "answer": 3000000.0,
+          "tolerance": {
+            "type": "percentage",
+            "value": 2
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "в) Време од загуба до максимален прозорец (s, 2 децимали): ",
+            "en": "c) Time from a loss back to the maximum window (s, 2 decimals): "
+          },
+          "textAfter": "",
+          "answer": 2.33,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.08
+          }
+        }
+      ],
+      "layout": "ordered"
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "question": {
+        "mk": "TCP Reno преку единствен линк од 7 Mbps без баферирање; огромна датотека, rwnd многу поголем од cwnd. Сегмент од 1950 B, RTT = 136 ms, врската е секогаш во congestion avoidance. (децимална точка)",
+        "en": "TCP Reno over a single unbuffered 7 Mbps link; a huge file, rwnd much larger than cwnd. 1950 B segments, RTT = 136 ms, the connection is always in congestion avoidance. (use a decimal point)"
+      },
+      "points": 3,
+      "fixedOrder": true,
+      "blanks": [
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "а) Максимален прозорец (сегменти, заокружи нагоре): ",
+            "en": "a) Maximum window (segments, round up): "
+          },
+          "textAfter": "<br>",
+          "answer": 62,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.01
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "б) Просечен проток (bps): ",
+            "en": "b) Average throughput (bps): "
+          },
+          "textAfter": "<br>",
+          "answer": 5250000.0,
+          "tolerance": {
+            "type": "percentage",
+            "value": 2
+          }
+        },
+        {
+          "type": "number",
+          "textBefore": {
+            "mk": "в) Време од загуба до максимален прозорец (s, 2 децимали): ",
+            "en": "c) Time from a loss back to the maximum window (s, 2 decimals): "
+          },
+          "textAfter": "",
+          "answer": 4.22,
+          "tolerance": {
+            "type": "absolute",
+            "value": 0.08
+          }
+        }
+      ],
+      "layout": "ordered"
+    }
+  ]
+}
