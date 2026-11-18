@@ -1,0 +1,787 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-exam-basics",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Exam",
+  "title": {
+    "en": "DIG – Digitization basics",
+    "mk": "ДИГ – Основи на дигитализација"
+  },
+  "description": {
+    "en": "What digitization is, preservation and access formats, metadata, scanning, resolution, checksums and storage.",
+    "mk": "Што е дигитализација, формати за зачувување и пристап, метаподатоци, скенирање, резолуција, checksums и чување."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е дигитализација?",
+        "en": "What is digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Претворање на дигитални фајлови во хартија",
+            "en": "Turning digital files into paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Претворање на физички информации во дигитални фајлови",
+            "en": "Turning physical information into digital files"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Креирање на нови документи",
+            "en": "Creating new documents"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Превод на текстови",
+            "en": "Translating texts"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој пример претставува дигитализација?",
+        "en": "Which example is digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Испраќање е-пошта",
+            "en": "Sending an e-mail"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Скенирање хартија во PDF",
+            "en": "Scanning paper into a PDF"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Превземање апликација",
+            "en": "Downloading an app"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Принтање документ",
+            "en": "Printing a document"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што НЕ значи дигитализација?",
+        "en": "What does digitization NOT mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Фајлот да биде достапен",
+            "en": "That the file is accessible"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Фајлот да биде зачуван",
+            "en": "That the file is preserved"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Фајлот да биде безбеден",
+            "en": "That the file is secure"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сите горенаведени",
+            "en": "All of the above"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто дигитализираме?",
+        "en": "Why do we digitize?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За да ги уништиме оригиналите",
+            "en": "To destroy the originals"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да ги направиме фајловите потешки",
+            "en": "To make files harder to use"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За пристап, зачувување и заработка",
+            "en": "For access, preservation and revenue"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да ги направиме фајловите нечитливи",
+            "en": "To make files unreadable"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е пример за preservation format?",
+        "en": "Which format is an example of a preservation format?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "JPG",
+            "en": "JPG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MP3",
+            "en": "MP3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "MP4",
+            "en": "MP4"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е погоден за пристап (access)?",
+        "en": "Which format is suitable for access?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "WAV",
+            "en": "WAV"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "JPG",
+            "en": "JPG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RAW",
+            "en": "RAW"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е metadata?",
+        "en": "What is metadata?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Слика со висока резолуција",
+            "en": "A high-resolution image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Податоци што го опишуваат дигиталниот фајл",
+            "en": "Data that describes the digital file"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресиран фајл",
+            "en": "A compressed file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Тип на скенер",
+            "en": "A type of scanner"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Пример за дескриптивен метаподаток е:",
+        "en": "An example of descriptive metadata is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Големина на фајл",
+            "en": "File size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Резолуција",
+            "en": "Resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Наслов: „Куќа 1920“",
+            "en": "Title: “House 1920”"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Број на пиксели",
+            "en": "Number of pixels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е born-digital материјал?",
+        "en": "What is born-digital material?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Хартија што е скенирана",
+            "en": "Paper that has been scanned"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Фотографија направена со мобилен",
+            "en": "A photo taken with a phone"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Книга од библиотека",
+            "en": "A book from a library"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Стара VHS касета",
+            "en": "An old VHS tape"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој уред најчесто се користи за скенирање документи?",
+        "en": "Which device is most often used to scan documents?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "DSLR камера",
+            "en": "DSLR camera"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Planetary scanner",
+            "en": "Planetary scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Flatbed scanner",
+            "en": "Flatbed scanner"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Film scanner",
+            "en": "Film scanner"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е bit depth?",
+        "en": "What is bit depth?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Големина на фајл",
+            "en": "File size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Колку информации има во еден пиксел",
+            "en": "How much information there is in one pixel"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Број на пиксели по инча",
+            "en": "Number of pixels per inch"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Тип на компресија",
+            "en": "Type of compression"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е стандардна резолуција за дигитализација?",
+        "en": "What is the standard resolution for digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "72 ppi",
+            "en": "72 ppi"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "150 ppi",
+            "en": "150 ppi"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "300–400 ppi",
+            "en": "300–400 ppi"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "1000 ppi",
+            "en": "1000 ppi"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "RGB моделот се користи за:",
+        "en": "The RGB model is used for:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Печатење",
+            "en": "Printing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дигитални екрани",
+            "en": "Digital screens"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Скенирање негативи",
+            "en": "Scanning negatives"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Компресија",
+            "en": "Compression"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "CMYK моделот се користи за:",
+        "en": "The CMYK model is used for:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Веб дизајн",
+            "en": "Web design"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Видео обработка",
+            "en": "Video editing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Печатење",
+            "en": "Printing"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Аудио фајлови",
+            "en": "Audio files"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е checksum?",
+        "en": "What is a checksum?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Тип на скенер",
+            "en": "A type of scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Компресија на фајл",
+            "en": "File compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дигитален отпечаток за проверка на интегритет",
+            "en": "A digital fingerprint for checking integrity"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Метаподаток",
+            "en": "Metadata"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е fixity check?",
+        "en": "What is a fixity check?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Проверка на боја",
+            "en": "A color check"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Проверка дали фајлот останал ист со време",
+            "en": "A check that the file has stayed the same over time"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Проверка на резолуција",
+            "en": "A resolution check"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Проверка на формат",
+            "en": "A format check"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип на фајл е најквалитетен и не се менува?",
+        "en": "Which type of file has the highest quality and is never changed?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Access copy",
+            "en": "Access copy"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Derivative",
+            "en": "Derivative"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Preservation master",
+            "en": "Preservation master"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Preview",
+            "en": "Preview"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип на компресија губи дел од информацијата?",
+        "en": "Which type of compression loses part of the information?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Uncompressed",
+            "en": "Uncompressed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Lossless",
+            "en": "Lossless"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Lossy",
+            "en": "Lossy"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RAW",
+            "en": "RAW"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Каде може да се чуваат дигитални фајлови?",
+        "en": "Where can digital files be stored?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само на хартија",
+            "en": "Only on paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само на CD",
+            "en": "Only on CD"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Хард диск, USB, cloud, сервер",
+            "en": "Hard disk, USB, cloud, server"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само во е-пошта",
+            "en": "Only in e-mail"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што треба да се размисли пред дигитализација?",
+        "en": "What should be considered before digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само бојата на скенерот",
+            "en": "Only the color of the scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само цената на интернет",
+            "en": "Only the price of the internet"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Трошоци, технологија, експертиза",
+            "en": "Costs, technology, expertise"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само резолуција",
+            "en": "Only the resolution"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

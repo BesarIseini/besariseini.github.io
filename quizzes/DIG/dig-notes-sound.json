@@ -1,0 +1,790 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-notes-sound",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Lecture",
+  "title": {
+    "mk": "ДИГ – Дигитализација на звук",
+    "en": "DIG – Sound digitization"
+  },
+  "description": {
+    "mk": "Семплирање, квантизација, Nyquist, SNR, аудио формати, ADPCM, MIDI, Audacity.",
+    "en": "Sampling, quantization, Nyquist, SNR, audio formats, ADPCM, MIDI, Audacity."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Notes"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е фреквенција на звукот?",
+        "en": "What is the frequency of sound?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Број на периоди во секунда, мерено во херци (Hz)",
+            "en": "The number of periods per second, measured in hertz (Hz)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Отстапувањето на притисокот од средната вредност",
+            "en": "The displacement of the air pressure from its mean"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Јачината на звукот во децибели",
+            "en": "The loudness in decibels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на битови по семпл",
+            "en": "The number of bits per sample"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е амплитуда на звучниот бран?",
+        "en": "What is the amplitude of a sound wave?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Отстапувањето на воздушниот притисок од неговата средна вредност",
+            "en": "The displacement of the air pressure wave from its mean"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Број на семпли во секунда",
+            "en": "The number of samples per second"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на периоди во секунда",
+            "en": "The number of periods per second"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Должината на снимката",
+            "en": "The length of the recording"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е семплирање (sampling)?",
+        "en": "What is sampling?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Делење на хоризонталната оска (време) на дискретни делови – мерење во интервали",
+            "en": "Dividing the horizontal axis (time) into discrete pieces – measuring at intervals"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Делење на вертикалната оска (јачина на сигналот) на нивоа",
+            "en": "Dividing the vertical axis (signal strength) into levels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Компресија на аудио фајл",
+            "en": "Compressing an audio file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Додавање метаподатоци",
+            "en": "Adding metadata"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е квантизација кај аудио?",
+        "en": "What is quantization in audio?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Зачувување на фајлот",
+            "en": "Saving the file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Снимање на звукот со микрофон",
+            "en": "Recording the sound with a microphone"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Делење на вертикалната оска (напон) на нивоа – претворање на вредностите во броеви",
+            "en": "Dividing the vertical axis (voltage) into levels – turning the values into numbers"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Делење на времето на интервали",
+            "en": "Dividing time into intervals"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку нивоа има квантизација со 8 бита?",
+        "en": "How many levels does 8-bit quantization have?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "8",
+            "en": "8"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "256",
+            "en": "256"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "128",
+            "en": "128"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "65 536",
+            "en": "65,536"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е редоследот на чекорите при дигитализација на звук?",
+        "en": "What is the order of steps when digitizing sound?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Снимање → семплирање → квантизација → метаподатоци → кодирање",
+            "en": "Capture → sampling → quantization → metadata → encoding"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Кодирање → снимање → квантизација → семплирање",
+            "en": "Encoding → capture → quantization → sampling"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Метаподатоци → кодирање → семплирање → снимање",
+            "en": "Metadata → encoding → sampling → capture"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Квантизација → семплирање → снимање → кодирање",
+            "en": "Quantization → sampling → capture → encoding"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е стапката на семплирање кај CD?",
+        "en": "What sampling rate does a CD use?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "96 000 Hz",
+            "en": "96,000 Hz"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "8 000 Hz",
+            "en": "8,000 Hz"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "22 050 Hz",
+            "en": "22,050 Hz"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "44 100 Hz",
+            "en": "44,100 Hz"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колкава е бит длабочината кај CD?",
+        "en": "What is the bit depth of a CD?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "16 бита",
+            "en": "16 bits"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "24 бита",
+            "en": "24 bits"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "8 бита",
+            "en": "8 bits"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "32 бита",
+            "en": "32 bits"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што вели Nyquist теоремата?",
+        "en": "What does the Nyquist theorem say?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Бит длабочината треба да биде барем 16",
+            "en": "The bit depth should be at least 16"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Секој дополнителен бит ја преполовува грешката",
+            "en": "Every extra bit halves the error"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Стапката на семплирање треба да биде барем двојно поголема од највисоката фреквенција",
+            "en": "The sampling rate should be at least twice the highest frequency"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Стапката на семплирање треба да е еднаква на највисоката фреквенција",
+            "en": "The sampling rate should equal the highest frequency"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што мери SNR?",
+        "en": "What does SNR measure?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Стапката на семплирање",
+            "en": "The sampling rate"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Големината на фајлот",
+            "en": "The file size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Бројот на канали",
+            "en": "The number of channels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Квалитетот на сигналот – односот сигнал/шум, во dB",
+            "en": "The quality of a signal – the signal-to-noise ratio, in dB"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е шум на квантизација?",
+        "en": "What is quantization noise?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Шум од микрофонот",
+            "en": "Noise from the microphone"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Разликата меѓу вистинската вредност на сигналот и најблиското ниво на квантизација",
+            "en": "The difference between the actual signal value and the nearest quantization level"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Позадинскиот шум во просторијата",
+            "en": "Background noise in the room"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Губење при MP3 компресија",
+            "en": "Loss from MP3 compression"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој аудио формат е некомпресиран?",
+        "en": "Which audio format is uncompressed?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "MP3",
+            "en": "MP3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "AAC",
+            "en": "AAC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "OGG",
+            "en": "OGG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "WAV / AIFF",
+            "en": "WAV / AIFF"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој аудио формат е компресиран без губење (lossless)?",
+        "en": "Which audio format is compressed without loss (lossless)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "AAC",
+            "en": "AAC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "FLAC / ALAC",
+            "en": "FLAC / ALAC"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "OGG",
+            "en": "OGG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MP3",
+            "en": "MP3"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави ADPCM?",
+        "en": "What does ADPCM do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ги претвора нотите во MIDI",
+            "en": "Turns notes into MIDI"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги брише тивките делови",
+            "en": "Removes the silent parts"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Го предвидува следниот семпл и ја кодира разликата меѓу вистинската и предвидената вредност",
+            "en": "Predicts the next sample and encodes the difference between the actual and the predicted value"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Го зголемува бројот на канали",
+            "en": "Increases the number of channels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е MIDI?",
+        "en": "What is MIDI?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Протокол со кој компјутери и музички уреди комуницираат преку пораки за настани (нота, јачина…)",
+            "en": "A protocol that lets computers and musical devices communicate through event messages (note, volume…)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ефект во Audacity",
+            "en": "An effect in Audacity"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Некомпресиран аудио формат",
+            "en": "An uncompressed audio format"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Микрофон за снимање",
+            "en": "A recording microphone"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Normalize во Audacity?",
+        "en": "What does Normalize do in Audacity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Го поставува звукот на конзистентен максимум (peak) без да ја менува динамиката",
+            "en": "Sets the audio to a consistent peak level without changing the dynamics"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја менува брзината без да ја менува висината",
+            "en": "Changes the speed without changing the pitch"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Го брише позадинскиот шум",
+            "en": "Removes background noise"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Го исклучува звукот во селекцијата",
+            "en": "Mutes the selection"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави ефектот Tempo во Audacity?",
+        "en": "What does the Tempo effect do in Audacity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ги менува и брзината и висината заедно",
+            "en": "Changes both speed and pitch together"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја менува висината без да ја менува брзината",
+            "en": "Changes the pitch without changing the speed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја зголемува јачината",
+            "en": "Increases the volume"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја менува брзината без да ја менува висината на тонот",
+            "en": "Changes the speed without changing the pitch"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како се користи Noise Reduction во Audacity?",
+        "en": "How is Noise Reduction used in Audacity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Прво се избира Noise Profile (дел со само шум), па ефектот се применува на остатокот",
+            "en": "First you select a Noise Profile (a part with only noise), then apply the effect to the rest"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Се користи алатката Draw",
+            "en": "You use the Draw tool"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Се кликнува на секој шум поединечно",
+            "en": "You click on each noise individually"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Се намалува брзината на снимката",
+            "en": "You slow the recording down"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која алатка во Audacity ги уредува поединечните семпли?",
+        "en": "Which Audacity tool edits individual samples?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Envelope",
+            "en": "Envelope"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Zoom",
+            "en": "Zoom"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Draw",
+            "en": "Draw"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Selection",
+            "en": "Selection"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави „Silence audio selection“ во Audacity?",
+        "en": "What does “Silence audio selection” do in Audacity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Го брише избраниот дел",
+            "en": "Deletes the selected part"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Го задржува само избраниот дел",
+            "en": "Keeps only the selected part"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Го исклучува звукот во селекцијата без да ја брише",
+            "en": "Mutes the selection without deleting it"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја зголемува јачината на селекцијата",
+            "en": "Makes the selection louder"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

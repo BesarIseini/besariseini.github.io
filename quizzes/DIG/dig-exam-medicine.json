@@ -1,0 +1,787 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-exam-medicine",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Exam",
+  "title": {
+    "en": "DIG – Digitization in medicine",
+    "mk": "ДИГ – Дигитализација во медицина"
+  },
+  "description": {
+    "en": "EHR and PHR, OCR, imaging modalities, DICOM, PACS, barcodes.",
+    "mk": "EHR и PHR, OCR, модалитети за снимање, DICOM, PACS, баркодови."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи дигитализација во медицина?",
+        "en": "What does digitization mean in medicine?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Претворање на дигитални фајлови во хартија",
+            "en": "Turning digital files into paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Претворање на медицински информации во дигитален формат",
+            "en": "Turning medical information into a digital format"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Превод на медицински термини",
+            "en": "Translating medical terms"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Снимање на аудио белешки",
+            "en": "Recording audio notes"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е првиот чекор во дигитализација?",
+        "en": "What is the first step in digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "EHR",
+            "en": "EHR"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Cloud",
+            "en": "Cloud"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Рачни записи",
+            "en": "Handwritten records"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "OCR",
+            "en": "OCR"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е проблем кај скенирани документи?",
+        "en": "What is a problem with scanned documents?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Се читаат лесно",
+            "en": "They are easy to read"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Се автоматизираат",
+            "en": "They are automated"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Има ракопис и грешки",
+            "en": "They contain handwriting and errors"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Се чуваат во cloud",
+            "en": "They are stored in the cloud"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е EHR?",
+        "en": "What is an EHR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Хартиен картон",
+            "en": "A paper chart"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Слика од пациент",
+            "en": "A picture of a patient"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Електронски здравствен запис",
+            "en": "An electronic health record"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Рецепт",
+            "en": "A prescription"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што овозможува EHR?",
+        "en": "What does an EHR make possible?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Побрзо печатење",
+            "en": "Faster printing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Побрзо донесување одлуки",
+            "en": "Faster decision-making"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Побрзо скенирање",
+            "en": "Faster scanning"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Побрзо снимање",
+            "en": "Faster recording"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е OCR?",
+        "en": "What is OCR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Протокол за интернет",
+            "en": "An internet protocol"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Систем за снимање",
+            "en": "A recording system"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Технологија за препознавање текст",
+            "en": "A technology for recognizing text"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Тип на слика",
+            "en": "A type of image"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој модалитет користи магнетни полиња?",
+        "en": "Which modality uses magnetic fields?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "CT",
+            "en": "CT"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "X-ray",
+            "en": "X-ray"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MRI",
+            "en": "MRI"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "PET",
+            "en": "PET"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој модалитет е најдобар за меко ткиво?",
+        "en": "Which modality is best for soft tissue?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "X-ray",
+            "en": "X-ray"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MRI",
+            "en": "MRI"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "CT",
+            "en": "CT"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ultrasound",
+            "en": "Ultrasound"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој модалитет гледа метаболичка активност?",
+        "en": "Which modality shows metabolic activity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "X-ray",
+            "en": "X-ray"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "CT",
+            "en": "CT"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "PET/SPECT",
+            "en": "PET/SPECT"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "MRI",
+            "en": "MRI"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е DICOM?",
+        "en": "What is DICOM?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Формат за текст",
+            "en": "A text format"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Стандард за медицински слики",
+            "en": "A standard for medical images"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Тип на лек",
+            "en": "A type of medicine"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протокол за интернет",
+            "en": "An internet protocol"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што содржи DICOM фајл?",
+        "en": "What does a DICOM file contain?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само слика",
+            "en": "Only an image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само текст",
+            "en": "Only text"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Header и Pixel Data",
+            "en": "A header and pixel data"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само ID",
+            "en": "Only an ID"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој DICOM tag означува модалитет?",
+        "en": "Which DICOM tag denotes the modality?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "PatientID",
+            "en": "PatientID"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Modality",
+            "en": "Modality"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "StudyInstanceUID",
+            "en": "StudyInstanceUID"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "SOPInstanceUID",
+            "en": "SOPInstanceUID"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е PACS?",
+        "en": "What is PACS?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Скенер",
+            "en": "A scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Систем за архивирање и комуникација",
+            "en": "A picture archiving and communication system"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Тип на лек",
+            "en": "A type of medicine"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протокол за рецепти",
+            "en": "A protocol for prescriptions"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави PACS?",
+        "en": "What does PACS do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Печати рецепти",
+            "en": "Prints prescriptions"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Чува и пренесува DICOM слики",
+            "en": "Stores and transfers DICOM images"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мери притисок",
+            "en": "Measures blood pressure"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Снима аудио",
+            "en": "Records audio"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто се користи баркод во здравство?",
+        "en": "Why are barcodes used in healthcare?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За декорација",
+            "en": "For decoration"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се избегнат грешки со лекови и пациенти",
+            "en": "To avoid mistakes with medicines and patients"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се читаат книги",
+            "en": "To read books"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се снима аудио",
+            "en": "To record audio"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е PHR?",
+        "en": "What is a PHR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Запис што го чува болницата",
+            "en": "A record kept by the hospital"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Запис што го чува пациентот",
+            "en": "A record kept by the patient"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Тип на слика",
+            "en": "A type of image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Протокол за интернет",
+            "en": "An internet protocol"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој го одржува EHR?",
+        "en": "Who maintains the EHR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Пациентот",
+            "en": "The patient"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Аптека",
+            "en": "The pharmacy"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Болницата",
+            "en": "The hospital"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Лабораторија",
+            "en": "The laboratory"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој го одржува PHR?",
+        "en": "Who maintains the PHR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Болницата",
+            "en": "The hospital"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пациентот",
+            "en": "The patient"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Сестрата",
+            "en": "The nurse"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Докторот",
+            "en": "The doctor"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е пример за дигитализација на ECG?",
+        "en": "Which is an example of digitizing an ECG?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Хартија",
+            "en": "Paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Smartwatch ECG",
+            "en": "Smartwatch ECG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Факс",
+            "en": "Fax"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ракопис",
+            "en": "Handwriting"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е главната придобивка од дигитализација во медицина?",
+        "en": "What is the main benefit of digitization in medicine?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Повеќе хартија",
+            "en": "More paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Побрзо печатење",
+            "en": "Faster printing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Подобра грижа и помалку грешки",
+            "en": "Better care and fewer errors"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Поголеми фајлови",
+            "en": "Bigger files"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

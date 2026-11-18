@@ -1,0 +1,1167 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-exam-planning",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Exam",
+  "title": {
+    "en": "DIG – Planning a digitization project",
+    "mk": "ДИГ – Планирање на дигитализациски проект"
+  },
+  "description": {
+    "en": "Planning, stakeholders, resources, file naming, folder structure, metadata, storage, pilot projects.",
+    "mk": "Планирање, вклучени страни, ресурси, именување фајлови, структура на фолдери, метаподатоци, чување, пилот проекти."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1800,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто е важно планирањето при дигитализација?",
+        "en": "Why is planning important in digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За да се користи помалку опрема",
+            "en": "To use less equipment"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да биде процесот организиран, одржлив и разбирлив",
+            "en": "So the process is organized, sustainable and understandable"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се избегне потребата од backup",
+            "en": "To avoid the need for backups"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се скенира побрзо",
+            "en": "To scan faster"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои се вклучени страни (stakeholders) во дигитализациски проект?",
+        "en": "Who are the stakeholders in a digitization project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само финансиерите",
+            "en": "Only the funders"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сите со интерес или улога: ИТ, администрација, истражувачи, музеи...",
+            "en": "Everyone with an interest or a role: IT, administration, researchers, museums..."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само администрацијата",
+            "en": "Only the administration"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само ИТ секторот",
+            "en": "Only the IT department"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат најчесто се користи за preservation master на слики?",
+        "en": "Which format is most often used for the preservation master of images?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MP4",
+            "en": "MP4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "PDF",
+            "en": "PDF"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи 3-2-1 правило за долгорочно чување?",
+        "en": "What does the 3-2-1 rule for long-term storage mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "3 корисници, 2 лозинки, 1 администратор",
+            "en": "3 users, 2 passwords, 1 administrator"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "3 копии, 2 различни типови складирање, 1 надвор од локација",
+            "en": "3 copies, 2 different types of storage, 1 off-site"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "3 копии, 2 различни формати, 1 на интернет",
+            "en": "3 copies, 2 different formats, 1 on the internet"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "3 сервери, 2 backup-а, 1 cloud",
+            "en": "3 servers, 2 backups, 1 cloud"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е добар пример за именување на фајлови?",
+        "en": "Which is a good example of file naming?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "scan001(1).jpg",
+            "en": "scan001(1).jpg"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Користење само бројки",
+            "en": "Using only numbers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "woman with blue hat.jpeg",
+            "en": "woman with blue hat.jpeg"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "LM_Project_20220315_001.tif",
+            "en": "LM_Project_20220315_001.tif"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто не се дигитализира сѐ?",
+        "en": "Why isn't everything digitized?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Поради ограничувања со простор, време, авторски права и приоритети",
+            "en": "Because of limits in space, time, copyright and priorities"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Затоа што некои материјали се премногу мали",
+            "en": "Because some materials are too small"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што нема доволно скенери",
+            "en": "Because there aren't enough scanners"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што е забрането",
+            "en": "Because it is forbidden"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е главен недостаток на outsourcing?",
+        "en": "What is the main disadvantage of outsourcing?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Поголема контрола",
+            "en": "More control"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Потреба од тренинг",
+            "en": "The need for training"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Помала контрола",
+            "en": "Less control"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Бесплатна услуга",
+            "en": "A free service"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е типичен ресурс во проект?",
+        "en": "What is a typical resource in a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Вишок на опрема",
+            "en": "Surplus equipment"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Волонтери, софтвер, луѓе",
+            "en": "Volunteers, software, people"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само буџет",
+            "en": "Only the budget"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само скенери",
+            "en": "Only scanners"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е типичен проблем во дигитализациски проект?",
+        "en": "What is a typical problem in a digitization project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Недостаток на интерес",
+            "en": "Lack of interest"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Преголема достапност на материјали",
+            "en": "Too many materials available"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Недостаток на буџет, време, кадар или опрема",
+            "en": "Lack of budget, time, staff or equipment"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Премногу волонтери",
+            "en": "Too many volunteers"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е главен чекор во подготовка на материјали?",
+        "en": "What is a main step in preparing materials?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Додавање нови страници",
+            "en": "Adding new pages"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Чистење прашина и исправување страници",
+            "en": "Cleaning dust and straightening pages"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Печатење копии",
+            "en": "Printing copies"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Превод",
+            "en": "Translation"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е OCR?",
+        "en": "What is OCR?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Препознавање текст од скенирани слики",
+            "en": "Recognizing text in scanned images"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресија на фајлови",
+            "en": "File compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Форматирање на метаподатоци",
+            "en": "Formatting metadata"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Проверка на резолуција",
+            "en": "Checking the resolution"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е компресиран и погоден за пристап?",
+        "en": "Which format is compressed and suitable for access?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "WAV",
+            "en": "WAV"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RAW",
+            "en": "RAW"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е добар начин за структура на фолдери?",
+        "en": "What is a good way to structure folders?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Сите фајлови во еден фолдер",
+            "en": "All files in one folder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "По тип: Preservation, Access",
+            "en": "By type: Preservation, Access"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "По боја",
+            "en": "By color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "По датум",
+            "en": "By date"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е бит длабочина?",
+        "en": "What is bit depth?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Број на пиксели по инча",
+            "en": "Number of pixels per inch"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на битови за боја или сиви тонови",
+            "en": "Number of bits for color or gray tones"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Број на фајлови во фолдер",
+            "en": "Number of files in a folder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на копии",
+            "en": "Number of copies"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е добар начин за проверка на квалитет?",
+        "en": "What is a good way to check quality?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Проверка на формат, резолуција, име",
+            "en": "Checking format, resolution and name"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само визуелна проверка",
+            "en": "Only a visual check"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само проверка на боја",
+            "en": "Only checking the color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само проверка на име",
+            "en": "Only checking the name"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е пример за метаподаток?",
+        "en": "Which is an example of metadata?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Резолуција",
+            "en": "Resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Датум, автор, опис",
+            "en": "Date, author, description"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Големина на фајл",
+            "en": "File size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на пиксели",
+            "en": "Number of pixels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој стандард се користи за метаподатоци?",
+        "en": "Which standard is used for metadata?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "PDF",
+            "en": "PDF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MARC",
+            "en": "MARC"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "WAV",
+            "en": "WAV"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е добар начин за долгорочно чување?",
+        "en": "What is a good way to store files long-term?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само на USB",
+            "en": "Only on USB"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само на cloud",
+            "en": "Only in the cloud"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "3-2-1 правило",
+            "en": "The 3-2-1 rule"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само на еден сервер",
+            "en": "Only on one server"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е добар начин за избор на материјали?",
+        "en": "What is a good way to select materials?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Сѐ што е достапно",
+            "en": "Everything that is available"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Приоритети по колекции, формати, реткост",
+            "en": "Priorities by collections, formats, rarity"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само нови материјали",
+            "en": "Only new materials"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само PDF фајлови",
+            "en": "Only PDF files"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е главен бенефит од Pilot Project?",
+        "en": "What is the main benefit of a pilot project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Финансирање",
+            "en": "Funding"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Маркетинг",
+            "en": "Marketing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Тестирање и намалување ризик",
+            "en": "Testing and reducing risk"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Архивирање",
+            "en": "Archiving"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е главната цел на метаподатоците во дигитализација?",
+        "en": "What is the main purpose of metadata in digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Да го намалат квалитетот на сликите",
+            "en": "To lower the quality of the images"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да го зголемат бројот на фајлови",
+            "en": "To increase the number of files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да овозможат пребарување и разбирање на содржината",
+            "en": "To make the content searchable and understandable"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Да ги избришат старите податоци",
+            "en": "To delete old data"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е најпогоден за аудио preservation master?",
+        "en": "Which format is best for an audio preservation master?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "MP3",
+            "en": "MP3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "WAV",
+            "en": "WAV"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "AAC",
+            "en": "AAC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "FLAC",
+            "en": "FLAC"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е добра практика при именување на фајлови?",
+        "en": "Which is a good practice when naming files?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Користење празни места и специјални знаци",
+            "en": "Using spaces and special characters"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Користење ISO формат за датум (YYYYMMDD)",
+            "en": "Using the ISO date format (YYYYMMDD)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Користење долги реченици",
+            "en": "Using long sentences"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Користење само мали букви",
+            "en": "Using only lowercase letters"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е целта на пост-обработка по скенирање?",
+        "en": "What is the purpose of post-processing after scanning?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Да се избришат фајловите",
+            "en": "To delete the files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се направи OCR, корекции и derivative верзии",
+            "en": "To do OCR, corrections and derivative versions"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Да се зголеми резолуцијата на скенерот",
+            "en": "To increase the scanner's resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се промени авторското право",
+            "en": "To change the copyright"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е разликата помеѓу master и access копија?",
+        "en": "What is the difference between a master and an access copy?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Master е со понизок квалитет",
+            "en": "The master is of lower quality"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Access е за долгорочно чување",
+            "en": "The access copy is for long-term storage"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Master е со висок квалитет, access е компресиран за користење",
+            "en": "The master is high quality, the access copy is compressed for use"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Нема разлика",
+            "en": "There is no difference"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е добра причина за избор на in-house дигитализација?",
+        "en": "What is a good reason to choose in-house digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Поголема контрола и пониски трошоци ако имаш опрема",
+            "en": "More control and lower costs if you have the equipment"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Потреба од помалку кадар",
+            "en": "Needing fewer staff"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Побрзо завршување",
+            "en": "Finishing faster"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Поголема анонимност",
+            "en": "More anonymity"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е улогата на checksums во дигитализација?",
+        "en": "What is the role of checksums in digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Да се подобри резолуцијата",
+            "en": "To improve the resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се провери интегритетот на фајловите",
+            "en": "To verify the integrity of the files"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Да се избришат дупликати",
+            "en": "To delete duplicates"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се конвертираат формати",
+            "en": "To convert formats"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е добра практика за структура на директориуми?",
+        "en": "What is a good practice for the directory structure?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Да се чуваат сите фајлови во еден фолдер",
+            "en": "Keep all files in one folder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се организираат по објект или по тип (Preservation/Access)",
+            "en": "Organize by object or by type (Preservation/Access)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Да се именуваат по боја",
+            "en": "Name folders by color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се користи случаен редослед",
+            "en": "Use a random order"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е типична техничка бариера во дигитализација?",
+        "en": "What is a typical technical barrier in digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Премногу простор",
+            "en": "Too much space"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Недостаток на скенери или софтвер",
+            "en": "Lack of scanners or software"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Преголем буџет",
+            "en": "Too large a budget"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Премногу кадар",
+            "en": "Too many staff"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е улогата на timeline во проектот?",
+        "en": "What is the role of the timeline in a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Да се следи буџетот",
+            "en": "To track the budget"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се одреди кога ќе се избришат фајловите",
+            "en": "To decide when files will be deleted"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Да се планираат почеток, крај и рокови",
+            "en": "To plan the start, the end and the deadlines"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Да се одреди резолуцијата",
+            "en": "To set the resolution"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

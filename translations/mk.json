@@ -33,6 +33,7 @@
     "COURSE_APS": "Алгоритми и податочни структури",
     "COURSE_KMIB": "Компјутерски мрежи и безбедност",
     "COURSE_IPKS": "Интернет програмирање на клиентска страна",
+    "COURSE_DIG": "Дигитализација",
 
     "COURSE_DEMO_DESCRIPTION": "Демо опис",
     "COURSE_M2_DESCRIPTION": "",
@@ -44,6 +45,7 @@
     "COURSE_APS_DESCRIPTION": "",
     "COURSE_KMIB_DESCRIPTION": "",
     "COURSE_IPKS_DESCRIPTION": "",
+    "COURSE_DIG_DESCRIPTION": "",
 
     "SETTINGS_TITLE": "Поставки",
     "SETTINGS_BACK": "Назад",
@@ -681,6 +683,27 @@
     "CREATOR_IMPORT_CREATED": "Додадена",
     "CREATOR_IMPORT_UPDATED": "Ажурирана",
     "CREATOR_IMPORT_NOT_ADMIN": "Само администраторите можат да увезуваат задачи.",
-    "PROBLEM_ISSUE_IMPORT_KEY": "Клучот мора да започнува со „p-“ и да содржи само a-z, 0-9 и „-“, на пр. p-aps-lab1-sum."
+    "PROBLEM_ISSUE_IMPORT_KEY": "Клучот мора да започнува со „p-“ и да содржи само a-z, 0-9 и „-“, на пр. p-aps-lab1-sum.",
+    "PROBLEM_GENERATORS": "Генератори на тестови",
+    "PROBLEM_GENERATORS_HINT": "Генератор е мала програма што го печати влезот на тестот, па тестовите можат да бидат многу поголеми отколку што може да се внесат рачно: до 16 милиони знаци, околу милион броеви. Аргументите на тестот ги добива на стандардниот влез. Очекуваниот излез го дава вашето решение. Генерираните тестови се секогаш скриени.",
+    "PROBLEM_GENERATOR": "Генератор",
+    "PROBLEM_GENERATOR_N": "Генератор {n}",
+    "PROBLEM_GENERATOR_ARGS": "Аргументи (стандарден влез на генераторот)",
+    "PROBLEM_GENERATOR_ARGS_HINT": "На пример: 1000000 7",
+    "PROBLEM_GENERATED_TEST": "генериран",
+    "PROBLEM_ADD_GENERATED_TEST": "Додај генериран тест",
+    "PROBLEM_ADD_GENERATOR": "Додај генератор",
+    "PROBLEM_ADD_GENERATOR_FIRST": "Прво додајте генератор.",
+    "PROBLEM_GENERATED_SUMMARY": "Генерирани се {input} знаци влез; вашето решение отпечати {output} знаци.",
+    "CODE_STATUS_GENERATOR_ERROR": "Генераторот не успеа",
+    "PROBLEM_ISSUE_GENERATED_VISIBLE": "Генерираните тестови се секогаш скриени.",
+    "PROBLEM_ISSUE_NO_GENERATOR": "Овој тест користи генератор што не постои.",
+    "PROBLEM_ISSUE_TOO_MANY_GENERATED": "Може да се генерираат најмногу 10 тестови.",
+    "PROBLEM_ISSUE_GENERATOR_COMPILE": "Генераторот не се компајлира:",
+    "PROBLEM_ISSUE_GENERATOR_RUNTIME_ERROR": "Генераторот падна на овој тест:",
+    "PROBLEM_ISSUE_GENERATOR_TIME_LIMIT": "Генераторот работеше предолго.",
+    "PROBLEM_ISSUE_GENERATOR_MEMORY_LIMIT": "Генераторот користеше премногу меморија.",
+    "PROBLEM_ISSUE_GENERATED_TOO_LONG": "Генерираниот влез или очекуваниот излез е подолг од 16 милиони знаци.",
+    "PROBLEM_ISSUE_GENERATED_EMPTY": "Генераторот не отпечати ништо."
   }
 }

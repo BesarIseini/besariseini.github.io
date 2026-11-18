@@ -1,0 +1,790 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-notes-planning-terms",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Lecture",
+  "title": {
+    "mk": "ДИГ – Планирање и терминологија",
+    "en": "DIG – Planning and terminology"
+  },
+  "description": {
+    "mk": "Фази и ограничувања на проект, авторски права, именување, метаподатоци, типови фајлови, скенери, бои, зачувување.",
+    "en": "Project phases and constraints, copyright, file naming, metadata, file types, scanners, color, preservation."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Notes"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои се клучните фази на проект?",
+        "en": "What are the key phases of a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Иницијација, планирање, извршување, следење/контрола, затворање",
+            "en": "Initiation, planning, execution, monitoring/controlling, closure"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Буџет, маркетинг, продажба",
+            "en": "Budget, marketing, sales"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Анализа, дизајн, тестирање",
+            "en": "Analysis, design, testing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Скенирање, компресија, зачувување",
+            "en": "Scanning, compression, storage"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои се ограничувањата (constraints) на проект?",
+        "en": "What are the constraints of a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Време, трошоци, опсег (scope)",
+            "en": "Time, cost, scope"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Луѓе, софтвер, хардвер",
+            "en": "People, software, hardware"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пристап, зачувување, приход",
+            "en": "Access, preservation, revenue"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Резолуција, формат, боја",
+            "en": "Resolution, format, color"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Објавено дело пред 1927 година е:",
+        "en": "A work published before 1927 is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Заштитено 120 години",
+            "en": "Protected for 120 years"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Заштитено уште 70 години",
+            "en": "Protected for 70 more years"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Јавен домен",
+            "en": "In the public domain"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Заштитено со авторско право",
+            "en": "Protected by copyright"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку трае авторското право за необјавено дело со познат автор?",
+        "en": "How long does copyright last for an unpublished work by a known author?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Засекогаш",
+            "en": "Forever"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Животот на авторот + 70 години",
+            "en": "The author's life + 70 years"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "50 години",
+            "en": "50 years"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "120 години",
+            "en": "120 years"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку трае авторското право за необјавено дело со непознат автор?",
+        "en": "How long does copyright last for an unpublished work by an unknown author?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Животот на авторот + 70 години",
+            "en": "The author's life + 70 years"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "120 години",
+            "en": "120 years"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Нема заштита",
+            "en": "No protection"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "70 години",
+            "en": "70 years"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која бит длабочина се препорачува за grayscale master фајлови?",
+        "en": "Which bit depth is recommended for grayscale master files?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "48 бита",
+            "en": "48 bits"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "1 бит",
+            "en": "1 bit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "16 бита",
+            "en": "16 bits"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "4 бита",
+            "en": "4 bits"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи суфиксот _p во името на фајлот?",
+        "en": "What does the suffix _p mean in a file name?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Public",
+            "en": "Public"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Preview",
+            "en": "Preview"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Preservation",
+            "en": "Preservation"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Print",
+            "en": "Print"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку најмногу знаци се препорачуваат за име на фајл?",
+        "en": "What is the recommended maximum length of a file name?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "128 знаци",
+            "en": "128 characters"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "32 знаци",
+            "en": "32 characters"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Нема ограничување",
+            "en": "No limit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "8 знаци",
+            "en": "8 characters"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што го прави името на фајлот подредливо (sortable)?",
+        "en": "What makes file names sortable?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Водечки нули и ISO формат на датум",
+            "en": "Leading zeros and the ISO date format"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Големи букви",
+            "en": "Capital letters"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Празни места",
+            "en": "Spaces"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Специјални знаци",
+            "en": "Special characters"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој од овие е шема за метаподатоци?",
+        "en": "Which of these is a metadata schema?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Dublin Core",
+            "en": "Dublin Core"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "CSV",
+            "en": "CSV"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "SHA-256",
+            "en": "SHA-256"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип на метаподатоци опишува како фајловите се поврзани меѓу себе (на пр. страници во книга)?",
+        "en": "Which type of metadata describes how files relate to each other (e.g. pages in a book)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Дескриптивни",
+            "en": "Descriptive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Вградени",
+            "en": "Embedded"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Административни",
+            "en": "Administrative"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Структурни",
+            "en": "Structural"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип на метаподатоци служи за управување со фајловите преку права и услови за користење?",
+        "en": "Which type of metadata helps manage files through rights and use elements?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Дескриптивни",
+            "en": "Descriptive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Надворешни",
+            "en": "External"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Структурни",
+            "en": "Structural"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Административни",
+            "en": "Administrative"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е пример за вградени (embedded) метаподатоци?",
+        "en": "Which is an example of embedded metadata?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Каталог во библиотека",
+            "en": "A library catalog"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "EXIF кај дигитални камери",
+            "en": "EXIF in digital cameras"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Посебен XML фајл",
+            "en": "A separate XML file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Табела во Excel",
+            "en": "An Excel table"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е миграција?",
+        "en": "What is migration?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Бришење стари фајлови",
+            "en": "Deleting old files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Печатење дигитални фајлови",
+            "en": "Printing digital files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Скенирање на хартија",
+            "en": "Scanning paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пренос на нешто дигитално во друг дигитален формат или носител",
+            "en": "Moving something digital to another digital format or carrier"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е production master (mezzanine) фајл?",
+        "en": "What is a production master (mezzanine) file?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Висококвалитетен посреден фајл за комбинирање или прилагодувања",
+            "en": "A high-quality intermediate file for compiling or adjustments"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Мала сликичка (thumbnail)",
+            "en": "A small thumbnail"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Најквалитетниот фајл за долгорочно чување",
+            "en": "The highest-quality file for long-term keeping"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Оригиналниот физички документ",
+            "en": "The original physical document"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е оптичка резолуција?",
+        "en": "What is optical resolution?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Вистинската резолуција што скенерот може да ја сними",
+            "en": "The actual resolution the scanner can capture"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Резолуцијата на печатачот",
+            "en": "The printer's resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Резолуција добиена со математичко дополнување на пиксели",
+            "en": "Resolution created by mathematically filling in pixels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Резолуцијата на екранот",
+            "en": "The screen's resolution"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој скенер е најдобар за кревки материјали и 3D објекти?",
+        "en": "Which device is best for fragile materials and 3D objects?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Факс машина",
+            "en": "A fax machine"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "DSLR камера",
+            "en": "A DSLR camera"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Flatbed скенер",
+            "en": "A flatbed scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Film скенер",
+            "en": "A film scanner"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е LAB моделот?",
+        "en": "What is the LAB model?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Адитивен модел за екрани",
+            "en": "An additive model for screens"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Модел само за видео",
+            "en": "A video-only model"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Модел каде осветленоста (L) е одвоена од бојата (A: црвено-зелено, B: сино-жолто)",
+            "en": "A model where lightness (L) is separate from color (A: red-green, B: blue-yellow)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Модел за печатење",
+            "en": "A printing model"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е динамички опсег (dynamic range)?",
+        "en": "What is dynamic range?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Опсегот меѓу најсветлото светло и најтемното темно во сликата",
+            "en": "The range between the lightest light and the darkest dark in an image"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Брзината на скенирање",
+            "en": "The scanning speed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Големината на фајлот",
+            "en": "The file size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Бројот на бои во сликата",
+            "en": "The number of colors in an image"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е дигитално зачувување (digital preservation)?",
+        "en": "What is digital preservation?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Компресија на фајлови",
+            "en": "Compressing files"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Политики, стратегии и активности за зачувување на точноста, автентичноста и пристапноста на дигиталните записи со тек на време",
+            "en": "Policies, strategies and actions that keep digital records accurate, authentic and accessible over time"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Само скенирање",
+            "en": "Only scanning"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само правење backup",
+            "en": "Only making backups"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

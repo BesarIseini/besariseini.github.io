@@ -33,6 +33,7 @@
     "COURSE_APS": "Algoritme dhe Struktura të të Dhënave",
     "COURSE_KMIB": "Rrjete Kompjuterike dhe Siguri",
     "COURSE_IPKS": "Programim Interneti në Anën e Klientit",
+    "COURSE_DIG": "Digjitalizimi",
 
     "COURSE_DEMO_DESCRIPTION": "Përshkrim demo",
     "COURSE_M2_DESCRIPTION": "",
@@ -44,6 +45,7 @@
     "COURSE_APS_DESCRIPTION": "",
     "COURSE_KMIB_DESCRIPTION": "",
     "COURSE_IPKS_DESCRIPTION": "",
+    "COURSE_DIG_DESCRIPTION": "",
 
     "SETTINGS_TITLE": "Cilësimet",
     "SETTINGS_BACK": "Kthehu",
@@ -681,6 +683,27 @@
     "CREATOR_IMPORT_CREATED": "U shtua",
     "CREATOR_IMPORT_UPDATED": "U përditësua",
     "CREATOR_IMPORT_NOT_ADMIN": "Vetëm administratorët mund të importojnë detyra.",
-    "PROBLEM_ISSUE_IMPORT_KEY": "Çelësi duhet të fillojë me „p-“ dhe të përmbajë vetëm a-z, 0-9 dhe „-“, p.sh. p-aps-lab1-sum."
+    "PROBLEM_ISSUE_IMPORT_KEY": "Çelësi duhet të fillojë me „p-“ dhe të përmbajë vetëm a-z, 0-9 dhe „-“, p.sh. p-aps-lab1-sum.",
+    "PROBLEM_GENERATORS": "Gjeneruesit e testeve",
+    "PROBLEM_GENERATORS_HINT": "Gjeneruesi është një program i vogël që shtyp hyrjen e testit, kështu që testet mund të jenë shumë më të mëdha se sa mund të shkruhen me dorë: deri në 16 milionë karaktere, rreth një milion numra. Argumentet e testit i merr në hyrjen standarde. Daljen e pritur e jep zgjidhja juaj. Testet e gjeneruara janë gjithmonë të fshehura.",
+    "PROBLEM_GENERATOR": "Gjeneruesi",
+    "PROBLEM_GENERATOR_N": "Gjeneruesi {n}",
+    "PROBLEM_GENERATOR_ARGS": "Argumentet (hyrja standarde e gjeneruesit)",
+    "PROBLEM_GENERATOR_ARGS_HINT": "Për shembull: 1000000 7",
+    "PROBLEM_GENERATED_TEST": "i gjeneruar",
+    "PROBLEM_ADD_GENERATED_TEST": "Shto test të gjeneruar",
+    "PROBLEM_ADD_GENERATOR": "Shto gjenerues",
+    "PROBLEM_ADD_GENERATOR_FIRST": "Së pari shtoni një gjenerues.",
+    "PROBLEM_GENERATED_SUMMARY": "U gjeneruan {input} karaktere hyrje; zgjidhja juaj shtypi {output} karaktere.",
+    "CODE_STATUS_GENERATOR_ERROR": "Gjeneruesi dështoi",
+    "PROBLEM_ISSUE_GENERATED_VISIBLE": "Testet e gjeneruara janë gjithmonë të fshehura.",
+    "PROBLEM_ISSUE_NO_GENERATOR": "Ky test përdor një gjenerues që nuk ekziston.",
+    "PROBLEM_ISSUE_TOO_MANY_GENERATED": "Mund të gjenerohen më së shumti 10 teste.",
+    "PROBLEM_ISSUE_GENERATOR_COMPILE": "Gjeneruesi nuk kompilohet:",
+    "PROBLEM_ISSUE_GENERATOR_RUNTIME_ERROR": "Gjeneruesi u rrëzua në këtë test:",
+    "PROBLEM_ISSUE_GENERATOR_TIME_LIMIT": "Gjeneruesi zgjati shumë.",
+    "PROBLEM_ISSUE_GENERATOR_MEMORY_LIMIT": "Gjeneruesi përdori shumë memorie.",
+    "PROBLEM_ISSUE_GENERATED_TOO_LONG": "Hyrja e gjeneruar ose dalja e pritur është më e gjatë se 16 milionë karaktere.",
+    "PROBLEM_ISSUE_GENERATED_EMPTY": "Gjeneruesi nuk shtypi asgjë."
   }
 }

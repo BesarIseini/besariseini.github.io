@@ -1,0 +1,790 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-notes-gimp-raw",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Lecture",
+  "title": {
+    "mk": "ДИГ – GIMP и RAW/JPEG",
+    "en": "DIG – GIMP and RAW/JPEG"
+  },
+  "description": {
+    "mk": "Формати, режими, канали, селекции, алатки во GIMP; RAW наспроти JPEG.",
+    "en": "GIMP formats, modes, channels, selections and tools; RAW vs JPEG."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "Notes"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е native форматот на GIMP?",
+        "en": "What is GIMP's native format?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "PSD",
+            "en": "PSD"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "PNG",
+            "en": "PNG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "XCF",
+            "en": "XCF"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е floating selection во GIMP?",
+        "en": "What is a floating selection in GIMP?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Привремен слој што се закотвува (anchor) или се претвора во нов слој",
+            "en": "A temporary layer that is anchored or turned into a new layer"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Слој без транспарентност",
+            "en": "A layer without transparency"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Алатка за ротација",
+            "en": "A rotation tool"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Селекција што се брише по зачувување",
+            "en": "A selection that is deleted on save"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е path (патека) во GIMP?",
+        "en": "What is a path in GIMP?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Еднодимензионална крива дефинирана со anchors и handles, која може да се претвори во селекција",
+            "en": "A one-dimensional curve defined by anchors and handles that can be turned into a selection"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Местото каде е зачуван фајлот",
+            "en": "Where the file is saved"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Историја на промени",
+            "en": "The undo history"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Алфа канал",
+            "en": "An alpha channel"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои канали има сликата во Grayscale режим во GIMP?",
+        "en": "Which channels does an image in Grayscale mode have in GIMP?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Нема канали",
+            "en": "No channels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Четири канали: C, M, Y, K",
+            "en": "Four channels: C, M, Y, K"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Три канали: R, G, B",
+            "en": "Three channels: R, G, B"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Еден канал за боја и еден алфа канал",
+            "en": "One color channel and one alpha channel"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што дава „без боја“ во RGB, а што во CMYK?",
+        "en": "What does “no color” give in RGB, and in CMYK?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Црна во двата",
+            "en": "Black in both"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Бела во RGB, црна во CMYK",
+            "en": "White in RGB, black in CMYK"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сива во двата",
+            "en": "Gray in both"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Црна во RGB, бела во CMYK",
+            "en": "Black in RGB, white in CMYK"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што чува алфа каналот?",
+        "en": "What does the alpha channel store?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Црвената боја",
+            "en": "The red color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Транспарентноста",
+            "en": "Transparency"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Осветленоста",
+            "en": "Brightness"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Метаподатоците",
+            "en": "Metadata"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како се прикажува селекцијата во GIMP?",
+        "en": "How is a selection shown in GIMP?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Со зелена рамка",
+            "en": "With a green frame"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сликата станува црно-бела",
+            "en": "The image turns black and white"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Не се прикажува",
+            "en": "It isn't shown"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Со „marching ants“ (подвижна испрекината линија); маската е црвена по дифолт",
+            "en": "With “marching ants” (a moving dashed line); the mask is red by default"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Quick Mask?",
+        "en": "What does Quick Mask do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ја брише селекцијата",
+            "en": "Removes the selection"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Додава нов слој",
+            "en": "Adds a new layer"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја покажува целосната структура на селекцијата",
+            "en": "Shows the full structure of the selection"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја зачувува сликата",
+            "en": "Saves the image"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која алатка избира соседни (contiguous) области со слична боја?",
+        "en": "Which tool selects contiguous areas of similar color?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Select by Color",
+            "en": "Select by Color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Fuzzy Select (Magic Wand)",
+            "en": "Fuzzy Select (Magic Wand)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Free Select (Lasso)",
+            "en": "Free Select (Lasso)"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Intelligent Scissors",
+            "en": "Intelligent Scissors"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која алатка избира облици од сликата следејќи ги рабовите?",
+        "en": "Which tool selects shapes from the image by following their edges?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Rectangle Select",
+            "en": "Rectangle Select"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Fuzzy Select",
+            "en": "Fuzzy Select"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ellipse Select",
+            "en": "Ellipse Select"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Intelligent Scissors",
+            "en": "Intelligent Scissors"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави режимот на селекција Intersection?",
+        "en": "What does the Intersection selection mode do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ја додава новата на старата",
+            "en": "Adds the new one to the old one"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја заменува старата селекција",
+            "en": "Replaces the old selection"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја одзема новата од старата",
+            "en": "Subtracts the new one from the old one"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја задржува само областа каде старата и новата селекција се преклопуваат",
+            "en": "Keeps only the area where the old and the new selection overlap"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави режимот Replace?",
+        "en": "What does the Replace selection mode do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ја превртува селекцијата",
+            "en": "Inverts the selection"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја уништува претходната селекција и ја заменува со новата",
+            "en": "Destroys the previous selection and replaces it with the new one"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја задржува само заедничката област",
+            "en": "Keeps only the shared area"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги спојува двете селекции",
+            "en": "Merges both selections"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прават Dodge/Burn?",
+        "en": "What do Dodge/Burn do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ги осветлуваат или затемнуваат боите",
+            "en": "Lighten or darken the colors"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Копираат пиксели од извор",
+            "en": "Copy pixels from a source"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги размачкуваат боите",
+            "en": "Smudge the colors"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Заматуваат или изострануваат",
+            "en": "Blur or sharpen"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави алатката Convolve?",
+        "en": "What does the Convolve tool do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Локално ја заматува или изострува сликата",
+            "en": "Locally blurs or sharpens the image"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Пополнува со боја",
+            "en": "Fills with color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги осветлува боите",
+            "en": "Lightens the colors"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја ротира сликата",
+            "en": "Rotates the image"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која од овие е алатка за трансформација?",
+        "en": "Which of these is a transform tool?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Shear",
+            "en": "Shear"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Color Picker",
+            "en": "Color Picker"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Smudge",
+            "en": "Smudge"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Bucket Fill",
+            "en": "Bucket Fill"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Colorize?",
+        "en": "What does Colorize do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Ја прикажува селекцијата како сива слика гледана низ обоено стакло",
+            "en": "Renders the selection as a grayscale image seen through colored glass"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја претвора сликата во CMYK",
+            "en": "Converts the image to CMYK"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Додава случајни бои",
+            "en": "Adds random colors"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја брише бојата",
+            "en": "Removes the color"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Hue-Saturation?",
+        "en": "What does Hue-Saturation do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Додава шум",
+            "en": "Adds noise"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја менува само осветленоста",
+            "en": "Changes only the brightness"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја сече сликата",
+            "en": "Crops the image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги прилагодува нијансата, заситеноста и осветленоста за опсег на бои",
+            "en": "Adjusts hue, saturation and lightness for a range of colors"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е RAW фајл?",
+        "en": "What is a RAW file?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Фајл со необработени податоци директно од сензорот на камерата",
+            "en": "A file with unprocessed data straight from the camera's sensor"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресирана, готова слика",
+            "en": "A compressed, finished image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Векторска слика",
+            "en": "A vector image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "GIMP проект",
+            "en": "A GIMP project"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што може да се менува кај RAW без деградација на сликата?",
+        "en": "What can be changed in RAW without degrading the image?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Само големината",
+            "en": "Only the size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Температура на боја, контраст, експозиција, сенки, светла, заситеност",
+            "en": "Color temperature, contrast, exposure, shadows, highlights, saturation"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ништо",
+            "en": "Nothing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само името на фајлот",
+            "en": "Only the file name"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е JPEG во однос на RAW?",
+        "en": "What is JPEG compared to RAW?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Необработени податоци од сензорот",
+            "en": "Unprocessed sensor data"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Формат само за печатење",
+            "en": "A print-only format"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Финализирана, обработена и компресирана слика, подготвена за употреба",
+            "en": "A finalized, processed and compressed image, ready for use"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Формат без компресија",
+            "en": "An uncompressed format"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

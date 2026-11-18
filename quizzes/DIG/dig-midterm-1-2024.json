@@ -1,0 +1,1170 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-midterm-1-2024",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Midterm",
+  "title": {
+    "mk": "ДИГ – Прв колоквиум 2024",
+    "en": "DIG – First midterm 2024"
+  },
+  "description": {
+    "mk": "Прашања од првиот колоквиум 2024 (реконструирани по сеќавање).",
+    "en": "Questions from the 2024 first midterm (rebuilt from memory)."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1800,
+  "timed": false,
+  "shuffleQuestions": true,
+  "tags": [
+    "2024"
+  ],
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "CMY моделот е:",
+        "en": "The CMY model is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Адитивен",
+            "en": "Additive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Монохроматски",
+            "en": "Monochromatic"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Субтрактивен",
+            "en": "Subtractive"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Неутрален",
+            "en": "Neutral"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е дигитализација?",
+        "en": "What is digitization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Печатење на дигитални фајлови на хартија",
+            "en": "Printing digital files on paper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Креирање на нови документи на компјутер",
+            "en": "Creating new documents on a computer"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Претворање на физички (аналогни) материјали и информации во дигитален формат",
+            "en": "Converting physical (analog) materials and information into a digital format"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресија на постоечки дигитални фајлови",
+            "en": "Compressing existing digital files"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е проект?",
+        "en": "What is a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Буџет на една организација",
+            "en": "An organization's budget"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Постојана, секојдневна работа во организација",
+            "en": "Ongoing, everyday work in an organization"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Листа на задачи без рокови",
+            "en": "A list of tasks without deadlines"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Планиран сет на поврзани задачи за постигнување одредена цел во дефиниран временски рок, со доделени ресурси",
+            "en": "A planned set of interrelated tasks designed to achieve a specific objective within a defined time frame, using allocated resources"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "GIMP е:",
+        "en": "GIMP is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Формат за компресија на слики",
+            "en": "An image compression format"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Комерцијална програма за управување со проекти",
+            "en": "Commercial project-management software"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Стандард за метаподатоци",
+            "en": "A metadata standard"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Бесплатна програма со отворен код за обработка на растерски слики",
+            "en": "A free, open-source program for editing raster images"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е екстензијата на сликите зачувани во native форматот на GIMP?",
+        "en": "What is the extension of images saved in GIMP's native format?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": ".xcf",
+            "en": ".xcf"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": ".psd",
+            "en": ".psd"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".tiff",
+            "en": ".tiff"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".gmp",
+            "en": ".gmp"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "ProjectLibre е:",
+        "en": "ProjectLibre is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Програма за обработка на RAW слики",
+            "en": "A program for editing RAW images"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Софтвер со отворен код за управување со проекти",
+            "en": "Open-source project-management software"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Онлајн складиште за фајлови",
+            "en": "An online file storage service"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Комерцијален софтвер само за Windows",
+            "en": "Commercial software for Windows only"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е checksum?",
+        "en": "What is a checksum?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Резолуција на скенерот",
+            "en": "The scanner's resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Тип на компресија",
+            "en": "A type of compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Име на фајлот",
+            "en": "The file's name"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дигитален отпечаток на фајлот, уникатен за него (MD5, SHA-1, SHA-256)",
+            "en": "A digital fingerprint of a file that is unique to it (MD5, SHA-1, SHA-256)"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е валидација (на дигитален фајл)?",
+        "en": "What is validation (of a digital file)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Бришење на дупликати",
+            "en": "Deleting duplicates"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Додавање на воден жиг",
+            "en": "Adding a watermark"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Зголемување на резолуцијата",
+            "en": "Increasing the resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Потврда дека фајлот е во согласност со спецификацијата на својот формат",
+            "en": "Confirming that a file conforms to its file format specification"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Во кои формати може да ги извезува сликите Processing Queue?",
+        "en": "Which formats can the processing queue export images to?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "JPEG, TIFF и PNG",
+            "en": "JPEG, TIFF and PNG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "GIF и BMP",
+            "en": "GIF and BMP"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само XCF",
+            "en": "Only XCF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Само RAW",
+            "en": "Only RAW"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е главен (одговорен) за еден проект?",
+        "en": "Who is in charge of a project?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "ИТ секторот",
+            "en": "The IT department"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Финансиерот",
+            "en": "The funder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Корисниците",
+            "en": "The users"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Проектниот менаџер",
+            "en": "The project manager"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е хистограм на слика?",
+        "en": "What is an image histogram?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Листа на метаподатоци",
+            "en": "A list of metadata"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Алатка за сечење на слика",
+            "en": "A tool for cropping an image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мапа на сите видливи бои",
+            "en": "A map of all visible colors"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "График што покажува колку пиксели има за секоја вредност на осветленост (тон)",
+            "en": "A graph showing how many pixels there are at each brightness (tonal) value"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е color gamut?",
+        "en": "What is a color gamut?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Множеството бои што уред може точно да ги репродуцира (печатач, екран) или измери (камера, око)",
+            "en": "The set of colors a device can accurately reproduce (printer, display) or measure (camera, eye)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Број на пиксели во слика",
+            "en": "The number of pixels in an image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Метод за компресија на бои",
+            "en": "A color compression method"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Тип на скенер",
+            "en": "A type of scanner"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е хроматски дијаграм (chromaticity diagram)?",
+        "en": "What is a chromaticity diagram?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "График на брзината на скенирање",
+            "en": "A chart of scanning speed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Хистограм на осветленост",
+            "en": "A brightness histogram"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дијаграм (CIE 1931) што ги прикажува сите бои видливи за човекот според нијанса и заситеност",
+            "en": "A diagram (CIE 1931) showing all colors visible to humans by hue and saturation"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Распоред на задачи во проект",
+            "en": "A schedule of project tasks"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која екстензија се користи за слики со транспарентност?",
+        "en": "Which extension is used for images with transparency?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": ".png",
+            "en": ".png"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": ".raw",
+            "en": ".raw"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".jpg",
+            "en": ".jpg"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".bmp",
+            "en": ".bmp"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е пример за дескриптивни метаподатоци?",
+        "en": "Which is an example of descriptive metadata?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Големина на фајлот",
+            "en": "File size"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Резолуција и бит длабочина",
+            "en": "Resolution and bit depth"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Наслов, автор, опис, клучни зборови",
+            "en": "Title, author, description, keywords"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Checksum на фајлот",
+            "en": "The file's checksum"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Како се пресметува compression ratio?",
+        "en": "How is the compression ratio calculated?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "N1 − N2",
+            "en": "N1 − N2"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "N1/N2 (оригинална големина / компресирана големина)",
+            "en": "N1/N2 (original size / compressed size)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "(N1 − N2)/N1",
+            "en": "(N1 − N2)/N1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "N2/N1",
+            "en": "N2/N1"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е најдобар за обработка на фотографии?",
+        "en": "Which format is best for editing photographs?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "RAW",
+            "en": "RAW"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "PNG",
+            "en": "PNG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "GIF",
+            "en": "GIF"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е шум (noise) кај дигитална слика?",
+        "en": "What is noise in a digital image?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Транспарентен дел од сликата",
+            "en": "A transparent part of the image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Метаподатоци во фајлот",
+            "en": "Metadata in the file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Звук што го прави скенерот",
+            "en": "The sound the scanner makes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Случајни варијации во осветленоста или бојата на пикселите",
+            "en": "Random variations in the brightness or color of pixels"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Clone tool во GIMP?",
+        "en": "What does the Clone tool do in GIMP?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Прави копија од целиот фајл",
+            "en": "Makes a copy of the whole file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Копира пиксели од избран извор и со нив „слика“ на друго место (на пр. за отстранување дамки)",
+            "en": "Copies pixels from a chosen source and paints them elsewhere (e.g. to remove spots)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Избира области со слична боја",
+            "en": "Selects areas of similar color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ја дуплира тековната алатка",
+            "en": "Duplicates the current tool"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто RAW е подобро од JPEG за обработка?",
+        "en": "Why is RAW better than JPEG for editing?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Секоја програма и прелистувач го отвораат",
+            "en": "Every program and browser opens it"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Има поддршка за транспарентност",
+            "en": "It supports transparency"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги чува сите податоци од сензорот, без компресија со губење, па има повеќе простор за корекции",
+            "en": "It keeps all the sensor data without lossy compression, so there is more room for corrections"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Фајловите се помали",
+            "en": "The files are smaller"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која алатка во GIMP ќе ја искористите за да изберете соседни области со слични бои?",
+        "en": "Which GIMP tool would you use to select adjacent areas of similar color?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Fuzzy Select (Magic Wand)",
+            "en": "Fuzzy Select (Magic Wand)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Rectangle Select",
+            "en": "Rectangle Select"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Crop tool",
+            "en": "Crop tool"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Clone tool",
+            "en": "Clone tool"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Која е разликата меѓу CMY и CMYK?",
+        "en": "What is the difference between CMY and CMYK?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Нема разлика",
+            "en": "There is no difference"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "CMYK се користи за екрани, а CMY за печатење",
+            "en": "CMYK is used for screens and CMY for printing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "CMYK додава црна (K), бидејќи CMY не дава доволно темна црна",
+            "en": "CMYK adds black (K), because CMY doesn't produce a dark enough black"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "CMYK е адитивен, а CMY субтрактивен",
+            "en": "CMYK is additive and CMY is subtractive"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е дигитален сурогат?",
+        "en": "What is a digital surrogate?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Компресиран JPEG фајл",
+            "en": "A compressed JPEG file"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Born-digital документ",
+            "en": "A born-digital document"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Дигитална копија што го претставува оригиналниот физички објект",
+            "en": "A digital copy that represents the original physical object"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Резервна копија на хард диск",
+            "en": "A backup copy on a hard disk"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е Gantt chart?",
+        "en": "What is a Gantt chart?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Табела со метаподатоци",
+            "en": "A metadata table"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Столбест дијаграм што ги прикажува задачите од проектот и нивното траење во времето",
+            "en": "A bar chart showing a project's tasks and how long they take over time"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Дијаграм на бои",
+            "en": "A color diagram"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Хистограм на сликата",
+            "en": "An image histogram"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што се прави со Processing Queue?",
+        "en": "What is the processing queue used for?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Бришење слики",
+            "en": "Deleting images"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пресметување checksums",
+            "en": "Calculating checksums"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Скенирање документи",
+            "en": "Scanning documents"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сериска (batch) обработка и извоз на повеќе слики одеднаш",
+            "en": "Batch processing and exporting of many images at once"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој е native форматот на GIMP?",
+        "en": "What is GIMP's native format?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": ".gimp",
+            "en": ".gimp"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".xcf",
+            "en": ".xcf"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": ".png",
+            "en": ".png"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": ".psd",
+            "en": ".psd"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави Fuzzy Select (Magic Wand)?",
+        "en": "What does Fuzzy Select (Magic Wand) do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Избира правоаголна област",
+            "en": "Selects a rectangular area"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Избира поврзана област со слична боја околу кликнатата точка",
+            "en": "Selects a connected area of similar color around the clicked point"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Ја заматува сликата",
+            "en": "Blurs the image"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Ги брише сите пиксели со иста боја",
+            "en": "Deletes all pixels of the same color"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат се користи за preservation (долгорочно зачувување) на слики?",
+        "en": "Which format is used for preservation of images?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "GIF",
+            "en": "GIF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "WebP",
+            "en": "WebP"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "TIFF",
+            "en": "TIFF"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто се прави компресија?",
+        "en": "Why is compression done?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За да се намали големината на фајлот (помалку простор, побрз пренос)",
+            "en": "To reduce the file size (less storage, faster transfer)"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се зголеми резолуцијата",
+            "en": "To increase the resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се додадат метаподатоци",
+            "en": "To add metadata"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се подобрат боите",
+            "en": "To improve the colors"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е fixity?",
+        "en": "What is fixity?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Формат за долгорочно чување",
+            "en": "A format for long-term storage"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Сигурност дека фајлот е непроменет – checksum се прави при креирање и повторно секогаш кога фајлот се преместува",
+            "en": "The assurance that a file is unchanged – a checksum is made when it is created and again whenever it is moved"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Поправка на оштетени слики",
+            "en": "Repairing damaged images"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Фиксна резолуција на скенерот",
+            "en": "A fixed scanner resolution"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

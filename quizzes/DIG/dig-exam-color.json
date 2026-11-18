@@ -1,0 +1,787 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-exam-color",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Exam",
+  "title": {
+    "en": "DIG – Light and color",
+    "mk": "ДИГ – Светлина и бои"
+  },
+  "description": {
+    "en": "Light, the eye, color models (RGB, CMYK), color spaces, CIE 1931, Bayer filter.",
+    "mk": "Светлина, окото, модели на бои (RGB, CMYK), color spaces, CIE 1931, Bayer филтер."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е светлина?",
+        "en": "What is light?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Звук што се движи низ воздух",
+            "en": "Sound traveling through air"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Електричен сигнал",
+            "en": "An electrical signal"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Електромагнетен бран што го гледа окото",
+            "en": "An electromagnetic wave that the eye sees"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Бран што се слуша",
+            "en": "A wave that can be heard"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои клетки во окото се одговорни за гледање боја?",
+        "en": "Which cells in the eye are responsible for seeing color?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Родови",
+            "en": "Rods"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Конуси",
+            "en": "Cones"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Неврони",
+            "en": "Neurons"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Леќи",
+            "en": "Lenses"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кои конуси се чувствителни на сина боја?",
+        "en": "Which cones are sensitive to blue?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "L-конуси",
+            "en": "L-cones"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "M-конуси",
+            "en": "M-cones"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "S-конуси",
+            "en": "S-cones"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "R-конуси",
+            "en": "R-cones"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто во темница боите изгледаат сиво?",
+        "en": "Why do colors look gray in the dark?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Затоа што леќата се затвора",
+            "en": "Because the lens closes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што родовите работат, а не конусите",
+            "en": "Because the rods work, not the cones"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Затоа што нема воздух",
+            "en": "Because there is no air"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што мозокот не гледа",
+            "en": "Because the brain doesn't see"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е color gamut?",
+        "en": "What is a color gamut?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Тип на скенер",
+            "en": "A type of scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Опсег на бои што може да се перцепираат",
+            "en": "The range of colors that can be perceived"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресија на боја",
+            "en": "Color compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Број на пиксели",
+            "en": "Number of pixels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Колку типа конуси има човечкото око?",
+        "en": "How many types of cones does the human eye have?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "1",
+            "en": "1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "2",
+            "en": "2"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "3",
+            "en": "3"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "4",
+            "en": "4"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто на виножито нема магента?",
+        "en": "Why is there no magenta in the rainbow?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Затоа што е премногу светла",
+            "en": "Because it is too bright"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што нема една бранова должина – се создава во мозокот",
+            "en": "Because it has no single wavelength – it is created in the brain"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Затоа што е премногу темна",
+            "en": "Because it is too dark"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што е инфрацрвена",
+            "en": "Because it is infrared"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е метамеризам?",
+        "en": "What is metamerism?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Кога боја избледува со време",
+            "en": "When a color fades over time"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кога различни спектри изгледаат исто за окото",
+            "en": "When different spectra look the same to the eye"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Кога боја се менува со температура",
+            "en": "When a color changes with temperature"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Кога се мешаат сите бои",
+            "en": "When all colors are mixed"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој модел користи адитивно мешање на светлина?",
+        "en": "Which model uses additive mixing of light?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "CMYK",
+            "en": "CMYK"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RGB",
+            "en": "RGB"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Grayscale",
+            "en": "Grayscale"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Pantone",
+            "en": "Pantone"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој модел се користи за печатење?",
+        "en": "Which model is used for printing?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "RGB",
+            "en": "RGB"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "CMYK",
+            "en": "CMYK"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "HSV",
+            "en": "HSV"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "LAB",
+            "en": "LAB"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто CMYK има „K“ (црна) боја?",
+        "en": "Why does CMYK have “K” (black)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За да се добие бела боја",
+            "en": "To get white"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што CMY не дава доволно темна црна",
+            "en": "Because CMY doesn't give a dark enough black"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се добие сина боја",
+            "en": "To get blue"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се добие транспарентност",
+            "en": "To get transparency"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е CIE 1931 дијаграм?",
+        "en": "What is the CIE 1931 diagram?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Табела со резолуции",
+            "en": "A table of resolutions"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Мапа на сите бои што ги гледа човекот",
+            "en": "A map of all colors a human can see"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "График за компресија",
+            "en": "A compression chart"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Модел за звук",
+            "en": "A model for sound"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е color space?",
+        "en": "What is a color space?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Простор за складирање на слики",
+            "en": "Space for storing images"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Простор каде броеви претставуваат бои",
+            "en": "A space where numbers represent colors"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Простор за печатење",
+            "en": "Space for printing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Простор за пиксели",
+            "en": "Space for pixels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој color space е најчесто користен на екрани?",
+        "en": "Which color space is most commonly used on screens?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "AdobeRGB",
+            "en": "AdobeRGB"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "sRGB",
+            "en": "sRGB"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "CMYK",
+            "en": "CMYK"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "ProPhoto",
+            "en": "ProPhoto"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Зошто дигиталните камери имаат 2 зелени пиксели во Bayer филтерот?",
+        "en": "Why do digital cameras have 2 green pixels in the Bayer filter?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "За да се добие црна боја",
+            "en": "To get black"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Затоа што окото е најчувствително на зелено",
+            "en": "Because the eye is most sensitive to green"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "За да се добие транспарентност",
+            "en": "To get transparency"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "За да се намали резолуцијата",
+            "en": "To reduce the resolution"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е CFA (Color Filter Array)?",
+        "en": "What is a CFA (Color Filter Array)?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Тип на скенер",
+            "en": "A type of scanner"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Филтер што пропушта само една боја по пиксел",
+            "en": "A filter that lets only one color through per pixel"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Компресија на боја",
+            "en": "Color compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Модел за печатење",
+            "en": "A printing model"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој CFA модел е најчест кај дигитални фотоапарати?",
+        "en": "Which CFA pattern is most common in digital cameras?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "X-Trans",
+            "en": "X-Trans"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Bayer",
+            "en": "Bayer"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RGBW",
+            "en": "RGBW"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RCCC",
+            "en": "RCCC"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "RGB моделот е:",
+        "en": "The RGB model is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Субтрактивен",
+            "en": "Subtractive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Адитивен",
+            "en": "Additive"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Неутрален",
+            "en": "Neutral"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Пигментен",
+            "en": "Pigment-based"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "CMYK моделот е:",
+        "en": "The CMYK model is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Адитивен",
+            "en": "Additive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Субтрактивен",
+            "en": "Subtractive"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RGB модел",
+            "en": "An RGB model"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Монохроматски",
+            "en": "Monochromatic"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи „device dependent“ кај RGB?",
+        "en": "What does “device dependent” mean for RGB?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "RGB работи само на печатачи",
+            "en": "RGB works only on printers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RGB изгледа различно на различни уреди без профили",
+            "en": "RGB looks different on different devices without profiles"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RGB е само за мобилни",
+            "en": "RGB is only for phones"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RGB не користи боја",
+            "en": "RGB doesn't use color"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

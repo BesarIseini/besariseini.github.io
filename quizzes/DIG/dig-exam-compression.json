@@ -1,0 +1,787 @@
+{
+  "$schema": "../../../schema/quiz.schema.json",
+  "formatVersion": 1,
+  "key": "dig-exam-compression",
+  "revision": 1,
+  "courseId": "DIG",
+  "category": "Exam",
+  "title": {
+    "en": "DIG – Image compression",
+    "mk": "ДИГ – Компресија на слики"
+  },
+  "description": {
+    "en": "Redundancy, compressor parts, ratios, RLE, Huffman, bit planes, CAC, predictive coding, JPEG.",
+    "mk": "Редундантност, делови на компресорот, односи, RLE, Huffman, bit planes, CAC, предиктивно кодирање, JPEG."
+  },
+  "languages": [
+    "mk",
+    "en"
+  ],
+  "defaultLanguage": "mk",
+  "date": "2026-11-18",
+  "duration": 1200,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што е целта на компресија?",
+        "en": "What is the goal of compression?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Зголемување на резолуција",
+            "en": "Increasing the resolution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Намалување на боја",
+            "en": "Reducing color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Намалување на големина на фајл",
+            "en": "Reducing the file size"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Зголемување на пиксели",
+            "en": "Increasing the pixels"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип редундантност се базира на сличност на соседни пиксели?",
+        "en": "Which type of redundancy is based on the similarity of neighboring pixels?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Coding",
+            "en": "Coding"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Psychovisual",
+            "en": "Psychovisual"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Interpixel",
+            "en": "Interpixel"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Spatial",
+            "en": "Spatial"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој тип редундантност се базира на тоа што окото не гледа сè?",
+        "en": "Which type of redundancy is based on the eye not seeing everything?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Interpixel",
+            "en": "Interpixel"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Coding",
+            "en": "Coding"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Psychovisual",
+            "en": "Psychovisual"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Visual",
+            "en": "Visual"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој дел од компресорот врши трансформација на сликата?",
+        "en": "Which part of the compressor transforms the image?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Quantizer",
+            "en": "Quantizer"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Symbol Encoder",
+            "en": "Symbol Encoder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Mapper",
+            "en": "Mapper"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Decoder",
+            "en": "Decoder"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој дел од компресорот работи само кај lossy компресија?",
+        "en": "Which part of the compressor works only in lossy compression?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Mapper",
+            "en": "Mapper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Quantizer",
+            "en": "Quantizer"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Symbol Encoder",
+            "en": "Symbol Encoder"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Decoder",
+            "en": "Decoder"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој алгоритам е пример за coding redundancy?",
+        "en": "Which algorithm is an example of coding redundancy?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "DCT",
+            "en": "DCT"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Huffman",
+            "en": "Huffman"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Quantization",
+            "en": "Quantization"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Формула за Compression Ratio е:",
+        "en": "The formula for the Compression Ratio is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "(N1 − N2)/N1",
+            "en": "(N1 − N2)/N1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "N2/N1",
+            "en": "N2/N1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "N1/N2",
+            "en": "N1/N2"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "N2 − N1",
+            "en": "N2 − N1"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Формула за Savings Ratio е:",
+        "en": "The formula for the Savings Ratio is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "N1/N2",
+            "en": "N1/N2"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "N2 − N1",
+            "en": "N2 − N1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "(N1 − N2)/N1",
+            "en": "(N1 − N2)/N1"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "N2/N1",
+            "en": "N2/N1"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што значи RMS = 0?",
+        "en": "What does RMS = 0 mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Lossy компресија",
+            "en": "Lossy compression"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Лош квалитет",
+            "en": "Poor quality"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Lossless компресија",
+            "en": "Lossless compression"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Голема грешка",
+            "en": "A large error"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е lossless?",
+        "en": "Which format is lossless?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "MP4",
+            "en": "MP4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "PNG",
+            "en": "PNG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "MP3",
+            "en": "MP3"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој формат е lossy?",
+        "en": "Which format is lossy?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "PNG",
+            "en": "PNG"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RLE",
+            "en": "RLE"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "JPEG",
+            "en": "JPEG"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Huffman",
+            "en": "Huffman"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави RLE?",
+        "en": "What does RLE do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Компресира со DCT",
+            "en": "Compresses with DCT"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Брои повторувања",
+            "en": "Counts repetitions"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Делува на боја",
+            "en": "Works on color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Претвора во grayscale",
+            "en": "Converts to grayscale"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "RLE работи добро на:",
+        "en": "RLE works well on:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Фотографии",
+            "en": "Photographs"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Видео",
+            "en": "Video"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Цртежи и текст",
+            "en": "Drawings and text"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Аудио",
+            "en": "Audio"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Bit-plane slicing дели слика на:",
+        "en": "Bit-plane slicing splits an image into:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "4 слоеви",
+            "en": "4 layers"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "8 бинарни слики",
+            "en": "8 binary images"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "16 пиксели",
+            "en": "16 pixels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "1 grayscale",
+            "en": "1 grayscale image"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Кој бит носи најмногу структура?",
+        "en": "Which bit carries the most structure?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Bit 0",
+            "en": "Bit 0"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Bit 3",
+            "en": "Bit 3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Bit 7",
+            "en": "Bit 7"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Bit 5",
+            "en": "Bit 5"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Што прави CAC компресија?",
+        "en": "What does CAC compression do?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Делува на звук",
+            "en": "Works on sound"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Делува на пиксели поединечно",
+            "en": "Works on individual pixels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Делува на региони со 0, 1 или просек",
+            "en": "Works on regions with 0, 1 or the average"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Делува на боја",
+            "en": "Works on color"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Lossy CAC користи:",
+        "en": "Lossy CAC uses:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Huffman",
+            "en": "Huffman"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Стандардна девијација",
+            "en": "Standard deviation"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RLE",
+            "en": "RLE"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RGB",
+            "en": "RGB"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Predictive coding чува:",
+        "en": "Predictive coding stores:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Број на пиксели",
+            "en": "The number of pixels"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Разлика меѓу пиксели",
+            "en": "The difference between pixels"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Боја",
+            "en": "Color"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Компресија",
+            "en": "Compression"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Delta modulation е:",
+        "en": "Delta modulation is:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Lossless",
+            "en": "Lossless"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Predictive",
+            "en": "Predictive"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Lossy",
+            "en": "Lossy"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "Huffman",
+            "en": "Huffman"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "mk": "Каде се случува губење кај JPEG?",
+        "en": "Where does the loss happen in JPEG?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "mk": "Huffman",
+            "en": "Huffman"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "RLE",
+            "en": "RLE"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "mk": "Quantization",
+            "en": "Quantization"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "mk": "RGB конверзија",
+            "en": "RGB conversion"
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

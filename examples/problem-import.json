@@ -9,7 +9,7 @@
         "en": "Reverse an array"
       },
       "statement": {
-        "en": "The first line has <b>n</b> (1 ≤ n ≤ 1000), the second line n integers. Print them in reverse order, separated by spaces."
+        "en": "The first line has <b>n</b> (1 ≤ n ≤ 1 000 000), the second line n integers. Print them in reverse order, separated by spaces."
       },
       "languages": [
         "en"
@@ -41,12 +41,23 @@
           "input": "3\n-1 0 1\n",
           "output": "1 0 -1\n",
           "hidden": true
+        },
+        {
+          "generator": 0,
+          "args": "1000000 5",
+          "hidden": true
         }
       ],
       "solution": {
         "language": "c",
-        "code": "#include <stdio.h>\n\nint main(void) {\n    int n, a[1000];\n    if (scanf(\"%d\", &n) != 1) return 1;\n    for (int i = 0; i < n; i++) scanf(\"%d\", &a[i]);\n    for (int i = n - 1; i >= 0; i--) printf(\"%d%c\", a[i], i ? ' ' : '\\n');\n    return 0;\n}\n"
-      }
+        "code": "#include <stdio.h>\n\nint main(void) {\n    static int a[1000000];\n    int n;\n    if (scanf(\"%d\", &n) != 1) return 1;\n    for (int i = 0; i < n; i++) scanf(\"%d\", &a[i]);\n    for (int i = n - 1; i >= 0; i--) printf(\"%d%c\", a[i], i ? ' ' : '\\n');\n    return 0;\n}\n"
+      },
+      "generators": [
+        {
+          "language": "python",
+          "code": "import random\n\n# Arguments on stdin: n and a seed.\nn, seed = map(int, input().split())\nrandom.seed(seed)\nprint(n)\nprint(\" \".join(str(random.randint(-10**9, 10**9)) for _ in range(n)))\n"
+        }
+      ]
     },
     {
       "key": "p-example-balanced-brackets",

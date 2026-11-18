@@ -31,6 +31,7 @@
     "COURSE_APS": "Algorithms and Data Structures",
     "COURSE_KMIB": "Computer Networks and Security",
     "COURSE_IPKS": "Client-Side Internet Programming",
+    "COURSE_DIG": "Digitization",
 
     "COURSE_DEMO_DESCRIPTION": "Demo description",
     "COURSE_M2_DESCRIPTION": "",
@@ -42,6 +43,7 @@
     "COURSE_APS_DESCRIPTION": "",
     "COURSE_KMIB_DESCRIPTION": "",
     "COURSE_IPKS_DESCRIPTION": "",
+    "COURSE_DIG_DESCRIPTION": "",
 
     "SETTINGS_TITLE": "Settings",
     "SETTINGS_BACK": "Back",
@@ -674,6 +676,27 @@
     "CREATOR_IMPORT_CREATED": "Added",
     "CREATOR_IMPORT_UPDATED": "Updated",
     "CREATOR_IMPORT_NOT_ADMIN": "Only admins can import problems.",
-    "PROBLEM_ISSUE_IMPORT_KEY": "The key must start with \"p-\" and contain only a-z, 0-9 and \"-\", e.g. p-aps-lab1-sum."
+    "PROBLEM_ISSUE_IMPORT_KEY": "The key must start with \"p-\" and contain only a-z, 0-9 and \"-\", e.g. p-aps-lab1-sum.",
+    "PROBLEM_GENERATORS": "Test generators",
+    "PROBLEM_GENERATORS_HINT": "A generator is a small program that prints the input of a test, so tests can be far bigger than you could type: up to 16 million characters, about a million numbers. It gets the test's arguments on stdin. Your solution produces the expected output. Generated tests are always hidden.",
+    "PROBLEM_GENERATOR": "Generator",
+    "PROBLEM_GENERATOR_N": "Generator {n}",
+    "PROBLEM_GENERATOR_ARGS": "Arguments (the generator's stdin)",
+    "PROBLEM_GENERATOR_ARGS_HINT": "For example: 1000000 7",
+    "PROBLEM_GENERATED_TEST": "generated",
+    "PROBLEM_ADD_GENERATED_TEST": "Add generated test",
+    "PROBLEM_ADD_GENERATOR": "Add generator",
+    "PROBLEM_ADD_GENERATOR_FIRST": "Add a generator first.",
+    "PROBLEM_GENERATED_SUMMARY": "{input} characters of input generated; your solution printed {output} characters.",
+    "CODE_STATUS_GENERATOR_ERROR": "Generator failed",
+    "PROBLEM_ISSUE_GENERATED_VISIBLE": "Generated tests are always hidden.",
+    "PROBLEM_ISSUE_NO_GENERATOR": "This test uses a generator that doesn't exist.",
+    "PROBLEM_ISSUE_TOO_MANY_GENERATED": "At most 10 tests can be generated.",
+    "PROBLEM_ISSUE_GENERATOR_COMPILE": "The generator doesn't compile:",
+    "PROBLEM_ISSUE_GENERATOR_RUNTIME_ERROR": "The generator crashed on this test:",
+    "PROBLEM_ISSUE_GENERATOR_TIME_LIMIT": "The generator took too long.",
+    "PROBLEM_ISSUE_GENERATOR_MEMORY_LIMIT": "The generator used too much memory.",
+    "PROBLEM_ISSUE_GENERATED_TOO_LONG": "The generated input or the expected output is longer than 16 million characters.",
+    "PROBLEM_ISSUE_GENERATED_EMPTY": "The generator printed nothing."
   }
 }

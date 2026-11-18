@@ -447,6 +447,293 @@
       "estimatedMinutes": 1
     },
     {
+      "key": "dig-exam-basics",
+      "path": "quizzes/DIG/dig-exam-basics.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Exam",
+      "title": {
+        "en": "DIG – Digitization basics",
+        "mk": "ДИГ – Основи на дигитализација"
+      },
+      "description": {
+        "en": "What digitization is, preservation and access formats, metadata, scanning, resolution, checksums and storage.",
+        "mk": "Што е дигитализација, формати за зачувување и пристап, метаподатоци, скенирање, резолуција, checksums и чување."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "DIG – Digitization basics",
+        "ДИГ – Основи на дигитализација"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-exam-color",
+      "path": "quizzes/DIG/dig-exam-color.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Exam",
+      "title": {
+        "en": "DIG – Light and color",
+        "mk": "ДИГ – Светлина и бои"
+      },
+      "description": {
+        "en": "Light, the eye, color models (RGB, CMYK), color spaces, CIE 1931, Bayer filter.",
+        "mk": "Светлина, окото, модели на бои (RGB, CMYK), color spaces, CIE 1931, Bayer филтер."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "DIG – Light and color",
+        "ДИГ – Светлина и бои"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-exam-compression",
+      "path": "quizzes/DIG/dig-exam-compression.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Exam",
+      "title": {
+        "en": "DIG – Image compression",
+        "mk": "ДИГ – Компресија на слики"
+      },
+      "description": {
+        "en": "Redundancy, compressor parts, ratios, RLE, Huffman, bit planes, CAC, predictive coding, JPEG.",
+        "mk": "Редундантност, делови на компресорот, односи, RLE, Huffman, bit planes, CAC, предиктивно кодирање, JPEG."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "DIG – Image compression",
+        "ДИГ – Компресија на слики"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-exam-medicine",
+      "path": "quizzes/DIG/dig-exam-medicine.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Exam",
+      "title": {
+        "en": "DIG – Digitization in medicine",
+        "mk": "ДИГ – Дигитализација во медицина"
+      },
+      "description": {
+        "en": "EHR and PHR, OCR, imaging modalities, DICOM, PACS, barcodes.",
+        "mk": "EHR и PHR, OCR, модалитети за снимање, DICOM, PACS, баркодови."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "DIG – Digitization in medicine",
+        "ДИГ – Дигитализација во медицина"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-exam-planning",
+      "path": "quizzes/DIG/dig-exam-planning.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Exam",
+      "title": {
+        "en": "DIG – Planning a digitization project",
+        "mk": "ДИГ – Планирање на дигитализациски проект"
+      },
+      "description": {
+        "en": "Planning, stakeholders, resources, file naming, folder structure, metadata, storage, pilot projects.",
+        "mk": "Планирање, вклучени страни, ресурси, именување фајлови, структура на фолдери, метаподатоци, чување, пилот проекти."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1800,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [],
+      "legacyTitles": [
+        "DIG – Planning a digitization project",
+        "ДИГ – Планирање на дигитализациски проект"
+      ],
+      "questionCount": 30,
+      "estimatedMinutes": 15
+    },
+    {
+      "key": "dig-midterm-1-2024",
+      "path": "quizzes/DIG/dig-midterm-1-2024.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Midterm",
+      "title": {
+        "mk": "ДИГ – Прв колоквиум 2024",
+        "en": "DIG – First midterm 2024"
+      },
+      "description": {
+        "mk": "Прашања од првиот колоквиум 2024 (реконструирани по сеќавање).",
+        "en": "Questions from the 2024 first midterm (rebuilt from memory)."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1800,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "2024"
+      ],
+      "legacyTitles": [
+        "ДИГ – Прв колоквиум 2024",
+        "DIG – First midterm 2024"
+      ],
+      "questionCount": 30,
+      "estimatedMinutes": 15
+    },
+    {
+      "key": "dig-notes-gimp-raw",
+      "path": "quizzes/DIG/dig-notes-gimp-raw.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Lecture",
+      "title": {
+        "mk": "ДИГ – GIMP и RAW/JPEG",
+        "en": "DIG – GIMP and RAW/JPEG"
+      },
+      "description": {
+        "mk": "Формати, режими, канали, селекции, алатки во GIMP; RAW наспроти JPEG.",
+        "en": "GIMP formats, modes, channels, selections and tools; RAW vs JPEG."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Notes"
+      ],
+      "legacyTitles": [
+        "ДИГ – GIMP и RAW/JPEG",
+        "DIG – GIMP and RAW/JPEG"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-notes-planning-terms",
+      "path": "quizzes/DIG/dig-notes-planning-terms.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Lecture",
+      "title": {
+        "mk": "ДИГ – Планирање и терминологија",
+        "en": "DIG – Planning and terminology"
+      },
+      "description": {
+        "mk": "Фази и ограничувања на проект, авторски права, именување, метаподатоци, типови фајлови, скенери, бои, зачувување.",
+        "en": "Project phases and constraints, copyright, file naming, metadata, file types, scanners, color, preservation."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Notes"
+      ],
+      "legacyTitles": [
+        "ДИГ – Планирање и терминологија",
+        "DIG – Planning and terminology"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
+      "key": "dig-notes-sound",
+      "path": "quizzes/DIG/dig-notes-sound.json",
+      "revision": 1,
+      "courseId": "DIG",
+      "category": "Lecture",
+      "title": {
+        "mk": "ДИГ – Дигитализација на звук",
+        "en": "DIG – Sound digitization"
+      },
+      "description": {
+        "mk": "Семплирање, квантизација, Nyquist, SNR, аудио формати, ADPCM, MIDI, Audacity.",
+        "en": "Sampling, quantization, Nyquist, SNR, audio formats, ADPCM, MIDI, Audacity."
+      },
+      "languages": [
+        "mk",
+        "en"
+      ],
+      "defaultLanguage": "mk",
+      "date": "2026-11-18",
+      "duration": 1200,
+      "timed": false,
+      "shuffleQuestions": true,
+      "tags": [
+        "Notes"
+      ],
+      "legacyTitles": [
+        "ДИГ – Дигитализација на звук",
+        "DIG – Sound digitization"
+      ],
+      "questionCount": 20,
+      "estimatedMinutes": 10
+    },
+    {
       "key": "ooaid-exam-1",
       "path": "quizzes/OOAiD/ooaid-exam-1.json",
       "revision": 1,
