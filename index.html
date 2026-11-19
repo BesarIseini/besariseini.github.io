@@ -2,7 +2,7 @@
 <html lang="en" class="">
 <head>
     <meta charset="UTF-8">
-    <title>BETA Seishub 2.0</title>
+    <title>SeisHub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,14 +39,17 @@
         .flare-partial { background-color: orange; } /* Green */
         .flare-incorrect { background-color: #ef4444; } /* Red */
     </style>
-  <script type="module" crossorigin src="/assets/index-BIpZj9GF.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-BcUeqMXf.js">
-  <link rel="modulepreload" crossorigin href="/assets/Courses-Bi4Kcnf7.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-DS8H3c0o.js">
-  <link rel="modulepreload" crossorigin href="/assets/fingerprint-CSbFIluI.js">
-  <link rel="modulepreload" crossorigin href="/assets/Quizzes-D8y7HfYh.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-jNPWyjMR.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-x6ukPGk2.css">
+  <script type="module" crossorigin src="/assets/index-D5ORGlku.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-BC9vFxcj.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-BzZ3pX3o.js">
+  <link rel="modulepreload" crossorigin href="/assets/problemFormat-C6axcr-E.js">
+  <link rel="modulepreload" crossorigin href="/assets/problemView-BGClmRr8.js">
+  <link rel="modulepreload" crossorigin href="/assets/fingerprint-CYmwzM8S.js">
+  <link rel="modulepreload" crossorigin href="/assets/Courses-BP8T6vkX.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-nzOa5cna.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-Cot2Z9qQ.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-Bja65e-d.css">
+  <link rel="stylesheet" crossorigin href="/assets/problemView-BrH2B2La.css">
 </head>
     <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
@@ -74,7 +77,7 @@
                         <i data-feather="book-open" class="h-5 w-5 text-white"></i>
                     </div>
                     <div class="hidden sm:block">
-                        <h1 class="font-semibold text-lg leading-tight" data-language-id="LOGO">BETA SeisHub</h1>
+                        <h1 class="font-semibold text-lg leading-tight" data-language-id="LOGO">SeisHub</h1>
                         <!--                    <p class="text-sm text-gray-500">Learning Management System</p>-->
                     </div>
                 </div>
@@ -314,6 +317,7 @@
                 <p class="text-sm text-muted-foreground mt-2" data-language-id="QUIZ_SUBMIT_CONFIRM">
                     Are you sure you want to submit your quiz? You will not be able to change your answers after submission.
                 </p>
+                <p id="code-check-status" style="display: none" class="text-sm font-medium text-foreground mt-2" aria-live="polite"></p>
             </div>
 
             <div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2 mt-4">
