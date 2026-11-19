@@ -3,6 +3,50 @@
   "courses": [
     {
       "formatVersion": 1,
+      "id": "BIM",
+      "name": {
+        "en": "Business and Management",
+        "mk": "Бизнис и менаџмент",
+        "sq": "Biznes dhe menaxhim"
+      },
+      "semester": 1,
+      "color": "#d97706"
+    },
+    {
+      "formatVersion": 1,
+      "id": "M1",
+      "name": {
+        "en": "Mathematics 1",
+        "mk": "Математика 1",
+        "sq": "Matematikë 1"
+      },
+      "semester": 1,
+      "color": "#6366f1"
+    },
+    {
+      "formatVersion": 1,
+      "id": "SP",
+      "name": {
+        "en": "Structured Programming",
+        "mk": "Структурно програмирање",
+        "sq": "Programim i strukturuar"
+      },
+      "semester": 1,
+      "color": "#0ea5e9"
+    },
+    {
+      "formatVersion": 1,
+      "id": "VVKN",
+      "name": {
+        "en": "Introduction to Computer Science",
+        "mk": "Вовед во компјутерските науки",
+        "sq": "Hyrje në shkencat kompjuterike"
+      },
+      "semester": 1,
+      "color": "#65a30d"
+    },
+    {
+      "formatVersion": 1,
       "id": "AOK",
       "name": {
         "en": "Computer Architecture and Organization",

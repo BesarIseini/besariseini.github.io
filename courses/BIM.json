@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "BIM",
+  "name": {
+    "en": "Business and Management",
+    "mk": "Бизнис и менаџмент",
+    "sq": "Biznes dhe menaxhim"
+  },
+  "semester": 1,
+  "color": "#d97706"
+}

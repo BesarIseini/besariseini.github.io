@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "VVKN",
+  "name": {
+    "en": "Introduction to Computer Science",
+    "mk": "Вовед во компјутерските науки",
+    "sq": "Hyrje në shkencat kompjuterike"
+  },
+  "semester": 1,
+  "color": "#65a30d"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "M1",
+  "name": {
+    "en": "Mathematics 1",
+    "mk": "Математика 1",
+    "sq": "Matematikë 1"
+  },
+  "semester": 1,
+  "color": "#6366f1"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "SP",
+  "name": {
+    "en": "Structured Programming",
+    "mk": "Структурно програмирање",
+    "sq": "Programim i strukturuar"
+  },
+  "semester": 1,
+  "color": "#0ea5e9"
+}
