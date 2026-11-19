@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "AOK",
+  "name": {
+    "en": "Computer Architecture and Organization",
+    "mk": "Архитектура и организација на компјутери",
+    "sq": "Arkitektura dhe Organizimi i Kompjuterëve"
+  },
+  "semester": 2,
+  "color": "#0891b2",
+  "tags": [
+    "FINKI",
+    "EXAM"
+  ]
+}

@@ -3,7 +3,7 @@
     {
       "key": "p-example-reverse-array",
       "courseId": "APS",
-      "topic": "Arrays",
+      "topicId": "arrays-lists",
       "difficulty": "easy",
       "title": {
         "en": "Reverse an array"
@@ -62,7 +62,7 @@
     {
       "key": "p-example-balanced-brackets",
       "courseId": "APS",
-      "topic": "Stacks",
+      "topicId": "stacks-queues",
       "difficulty": "medium",
       "title": {
         "en": "Balanced brackets"

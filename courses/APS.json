@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "APS",
+  "name": {
+    "en": "Algorithms and Data Structures",
+    "mk": "Алгоритми и податочни структури",
+    "sq": "Algoritme dhe Struktura të të Dhënave"
+  },
+  "semester": 3,
+  "color": "#2563eb",
+  "topics": [
+    {
+      "id": "complexity",
+      "title": {
+        "en": "Algorithm complexity",
+        "mk": "Сложеност на алгоритми",
+        "sq": "Kompleksiteti i algoritmeve"
+      }
+    },
+    {
+      "id": "arrays-lists",
+      "title": {
+        "en": "Arrays and linked lists",
+        "mk": "Низи и поврзани листи",
+        "sq": "Vargjet dhe listat e lidhura"
+      }
+    },
+    {
+      "id": "techniques",
+      "title": {
+        "en": "Algorithm design techniques",
+        "mk": "Техники за дизајн на алгоритми",
+        "sq": "Teknikat e dizajnit të algoritmeve"
+      }
+    },
+    {
+      "id": "stacks-queues",
+      "title": {
+        "en": "Stacks and queues",
+        "mk": "Магацини и редици",
+        "sq": "Stivat dhe radhët"
+      }
+    },
+    {
+      "id": "sorting",
+      "title": {
+        "en": "Sorting and searching",
+        "mk": "Сортирање и пребарување",
+        "sq": "Renditja dhe kërkimi"
+      }
+    }
+  ]
+}

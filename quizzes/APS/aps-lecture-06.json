@@ -4,6 +4,7 @@
   "key": "aps-lecture-06",
   "revision": 1,
   "courseId": "APS",
+  "topicId": "stacks-queues",
   "category": "Lecture",
   "title": "APS 06 – One-dimensional data structures",
   "description": "Midterm 1 theory: stacks, queues, cyclic arrays, priority queues, postfix notation.",

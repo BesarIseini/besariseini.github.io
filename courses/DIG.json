@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "DIG",
+  "name": {
+    "en": "Digitization",
+    "mk": "Дигитализација",
+    "sq": "Digjitalizimi"
+  },
+  "semester": 3,
+  "color": "#e11d48",
+  "topics": [
+    {
+      "id": "planning",
+      "title": {
+        "en": "Planning a digitization project",
+        "mk": "Планирање на дигитализациски проект",
+        "sq": "Planifikimi i një projekti digjitalizimi"
+      }
+    },
+    {
+      "id": "basics",
+      "title": {
+        "en": "Digitization basics",
+        "mk": "Основи на дигитализација",
+        "sq": "Bazat e digjitalizimit"
+      }
+    },
+    {
+      "id": "color",
+      "title": {
+        "en": "Light and color",
+        "mk": "Светлина и бои",
+        "sq": "Drita dhe ngjyra"
+      }
+    },
+    {
+      "id": "compression",
+      "title": {
+        "en": "Image compression",
+        "mk": "Компресија на слики",
+        "sq": "Kompresimi i imazheve"
+      }
+    },
+    {
+      "id": "gimp",
+      "title": {
+        "en": "GIMP and RAW/JPEG",
+        "mk": "GIMP и RAW/JPEG",
+        "sq": "GIMP dhe RAW/JPEG"
+      }
+    },
+    {
+      "id": "sound",
+      "title": {
+        "en": "Sound digitization",
+        "mk": "Дигитализација на звук",
+        "sq": "Digjitalizimi i zërit"
+      }
+    },
+    {
+      "id": "medicine",
+      "title": {
+        "en": "Digitization in medicine",
+        "mk": "Дигитализација во медицина",
+        "sq": "Digjitalizimi në mjekësi"
+      }
+    },
+    {
+      "id": "midterms",
+      "title": {
+        "en": "Old midterms",
+        "mk": "Стари колоквиуми",
+        "sq": "Kolokviumet e vjetra"
+      }
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "key": "kmib-bank-transport",
   "revision": 1,
   "courseId": "KMiB",
+  "topicId": "transport-layer",
   "category": "Lecture",
   "title": {
     "mk": "КМиБ – Банка: транспортен слој",

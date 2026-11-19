@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "DM",
+  "name": {
+    "en": "DEMO",
+    "mk": "ДЕМО",
+    "sq": "DEMO"
+  },
+  "description": {
+    "en": "Demo description",
+    "mk": "Демо опис",
+    "sq": "Përshkrim demo"
+  },
+  "semester": -1,
+  "color": "#64748b",
+  "tags": [
+    "Verified",
+    "DEMO"
+  ]
+}

@@ -11,6 +11,14 @@
             animation: accordion-slide-down 0.3s ease-out forwards;
         }
 
+        /* Course colors (public/courses/<ID>.json): a stripe on the left, the id and the icon. */
+        div.course { --course: var(--primary); --course-text: var(--course); border-left: 4px solid var(--course); }
+        .dark .course { --course-text: color-mix(in oklab, var(--course) 65%, white); }
+        .course .course-id { color: var(--course-text); }
+        .course .course-icon { color: var(--course-text); background: color-mix(in oklab, var(--course) 14%, transparent); }
+        .course .topic[open] > summary { background: color-mix(in oklab, var(--course) 6%, transparent); }
+        .course .topic > summary::-webkit-details-marker { display: none; }
+
         @keyframes accordion-slide-down {
             0% {
                 opacity: 0;
@@ -22,15 +30,16 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/about-BboXhU8L.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-BBL82Kgx.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-8hC-iUEn.js">
-  <link rel="modulepreload" crossorigin href="/assets/Courses-B6ykemj3.js">
-  <link rel="modulepreload" crossorigin href="/assets/localize-BbVVyQdD.js">
-  <link rel="modulepreload" crossorigin href="/assets/quizText-DbxajWU6.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-zfUuQ6Vm.js">
-  <link rel="modulepreload" crossorigin href="/assets/accountUi-CKz-eSyS.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-Dxe8bt7L.css">
+  <script type="module" crossorigin src="/assets/about-Bk7DS_GF.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-BcUeqMXf.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-jNPWyjMR.js">
+  <link rel="modulepreload" crossorigin href="/assets/fingerprint-CSbFIluI.js">
+  <link rel="modulepreload" crossorigin href="/assets/Courses-Bi4Kcnf7.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-D8y7HfYh.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-DIXEF3Qc.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-DS8H3c0o.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-BwGV9OzG.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-x6ukPGk2.css">
 </head>
 <body>
 <script>
@@ -617,6 +626,11 @@
                                     <label class="cursor-pointer px-6 py-3 rounded-lg border-2 font-medium transition-all select-none border-border bg-card hover:border-primary/50 text-foreground has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary">
                                         <input type="radio" id="custom-count-radio" name="question-count" value="5" class="sr-only" quiz="selection-input">
                                         Custom
+                                    </label>
+
+                                    <label id="selection-retake-container" style="display: none" class="cursor-pointer px-6 py-3 rounded-lg border-2 font-medium transition-all select-none border-border bg-card hover:border-primary/50 text-foreground has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary">
+                                        <input type="radio" id="retake-count-radio" name="question-count" value="6" class="sr-only" quiz="selection-input">
+                                        <span data-language-id="SELECTION_RETAKE_FAILED">Questions I got wrong</span> (<span id="selection-retake-count">0</span>)
                                     </label>
 
                                 </div>

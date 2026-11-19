@@ -4,6 +4,7 @@
   "key": "dig-exam-planning",
   "revision": 1,
   "courseId": "DIG",
+  "topicId": "planning",
   "category": "Exam",
   "title": {
     "en": "DIG – Planning a digitization project",

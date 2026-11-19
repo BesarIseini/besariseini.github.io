@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "OnVD",
+  "name": {
+    "en": "Fundamentals of Web Design",
+    "mk": "Основи на веб дизајн",
+    "sq": "Bazat e Dizajnit në Web"
+  },
+  "semester": 2,
+  "color": "#db2777"
+}

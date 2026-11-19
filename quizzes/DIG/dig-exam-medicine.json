@@ -4,6 +4,7 @@
   "key": "dig-exam-medicine",
   "revision": 1,
   "courseId": "DIG",
+  "topicId": "medicine",
   "category": "Exam",
   "title": {
     "en": "DIG – Digitization in medicine",

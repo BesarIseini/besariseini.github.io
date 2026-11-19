@@ -22,7 +22,23 @@
         "AOK Exam 1"
       ],
       "questionCount": 14,
-      "estimatedMinutes": 7
+      "estimatedMinutes": 7,
+      "fingerprints": [
+        "1v9qrbzu2uo",
+        "1izka2qugsf",
+        "1t662611mh7",
+        "16h9m763j9h",
+        "pwmes8n9vl",
+        "oy4qdvrmi0",
+        "9dsyw3xuhr",
+        "18fgpqzzixb",
+        "1ix8nvctsje",
+        "1e00uus7jst",
+        "1ae3lp2ug58",
+        "22w65r35j72",
+        "1pijok2zxjk",
+        "o143qfzb37"
+      ]
     },
     {
       "key": "aok-exam-2",
@@ -45,7 +61,20 @@
         "AOK Exam 2"
       ],
       "questionCount": 11,
-      "estimatedMinutes": 6
+      "estimatedMinutes": 6,
+      "fingerprints": [
+        "lbiduau2r1",
+        "9xsn02hrfj",
+        "1aivmew52zg",
+        "13s42a08dg1",
+        "apc17nwnuv",
+        "1nw4p8y0vv0",
+        "1xpil81chx4",
+        "fy0d1wyc79",
+        "r7tkigj831",
+        "am4y9ywknd",
+        "1qgrsd47jm8"
+      ]
     },
     {
       "key": "aok-exam-3",
@@ -68,7 +97,21 @@
         "AOK Exam 3"
       ],
       "questionCount": 12,
-      "estimatedMinutes": 6
+      "estimatedMinutes": 6,
+      "fingerprints": [
+        "14giypm0pck",
+        "1chgl0pge3v",
+        "1mjabi4k5dv",
+        "1pxnwoyf079",
+        "fj3bnq38aa",
+        "11wpb12f48c",
+        "16up9h7hhwh",
+        "1ik4i0tgey0",
+        "20xqsp4mr59",
+        "v6zgbrujbj",
+        "rouf4c7ls1",
+        "61igkz5v70"
+      ]
     },
     {
       "key": "aok-lab-1",
@@ -94,13 +137,21 @@
         "AOK MIPS Code"
       ],
       "questionCount": 5,
-      "estimatedMinutes": 3
+      "estimatedMinutes": 3,
+      "fingerprints": [
+        "8hg4hzbbcj",
+        "1xx3xp0h3gx",
+        "h5lt3rpvo3",
+        "1lhwynfzhj1",
+        "14nt5cfvuxo"
+      ]
     },
     {
       "key": "aps-lecture-01",
       "path": "quizzes/APS/aps-lecture-01.json",
       "revision": 1,
       "courseId": "APS",
+      "topicId": "complexity",
       "category": "Lecture",
       "title": "APS 01 – Algorithm complexity",
       "description": "Midterm 1 theory: counting operations, Big O / Ω / Θ, comparing algorithms, the RAM model.",
@@ -120,13 +171,39 @@
         "APS 01 – Algorithm complexity"
       ],
       "questionCount": 23,
-      "estimatedMinutes": 12
+      "estimatedMinutes": 12,
+      "fingerprints": [
+        "16f7uom4iqc",
+        "sraw0815zd",
+        "1owrxne9ilc",
+        "bd92acbdai",
+        "96d0eydb63",
+        "1ugicnditt1",
+        "d9bsbx17ih",
+        "2f88rov1vc5",
+        "9njbnw1wme",
+        "2cdhtlx4r9i",
+        "nm39f8y3bi",
+        "1nro8u79eqy",
+        "o1fq253d83",
+        "ghuj2olyck",
+        "1s9y35127e0",
+        "83dd0l3ekm",
+        "1cwg7vmibc9",
+        "12hxzlq13th",
+        "gjamtt48g7",
+        "rre7czw0je",
+        "2es2j5idsz3",
+        "2cjyn7yvyyt",
+        "104ej0tgxmi"
+      ]
     },
     {
       "key": "aps-lecture-02-03",
       "path": "quizzes/APS/aps-lecture-02-03.json",
       "revision": 1,
       "courseId": "APS",
+      "topicId": "arrays-lists",
       "category": "Lecture",
       "title": "APS 02–03 – Arrays and lists",
       "description": "Midterm 1 theory: arrays, sparse matrices, singly, doubly and circular linked lists and their complexities.",
@@ -146,13 +223,50 @@
         "APS 02–03 – Arrays and lists"
       ],
       "questionCount": 34,
-      "estimatedMinutes": 17
+      "estimatedMinutes": 17,
+      "fingerprints": [
+        "i9sjybl1i6",
+        "27r59qx10tj",
+        "8ia8okx29g",
+        "pad4qor5v1",
+        "1juxlsn3t0f",
+        "u7hyix5h12",
+        "2chme9ahp22",
+        "ubgac12fm4",
+        "257codojn0a",
+        "hvdihip38v",
+        "szhihjca12",
+        "1g2l6ahdhrq",
+        "1kuc9gzsikq",
+        "24m9ditiwf",
+        "1ubo9n13pwj",
+        "jdh03tdfth",
+        "1ic5uniuypb",
+        "i4iutxjvq6",
+        "1eqlwpzxrcb",
+        "1n8je7gsvh9",
+        "26qvbw5m48a",
+        "1tkaw28hs2m",
+        "1ndx6ysc1fd",
+        "xd0a9oot0w",
+        "u71xhltctp",
+        "1uoge1qapg7",
+        "1j8nr95sbi8",
+        "kajaeo8rmz",
+        "oatkv5zse0",
+        "1vpot5deyv2",
+        "1lny8ntdf40",
+        "1vrjkdg6wqr",
+        "8a9xhb6l0k",
+        "191knwg0xmo"
+      ]
     },
     {
       "key": "aps-lecture-04-05",
       "path": "quizzes/APS/aps-lecture-04-05.json",
       "revision": 1,
       "courseId": "APS",
+      "topicId": "techniques",
       "category": "Lecture",
       "title": "APS 04–05 – Algorithm techniques",
       "description": "Midterm 1 theory: brute force, greedy, divide and conquer, dynamic programming, backtracking, knapsack, bin packing, scheduling, Huffman codes.",
@@ -172,13 +286,51 @@
         "APS 04–05 – Algorithm techniques"
       ],
       "questionCount": 35,
-      "estimatedMinutes": 18
+      "estimatedMinutes": 18,
+      "fingerprints": [
+        "15f5h5l0o8p",
+        "e6d9ugdb02",
+        "1y7q0g9yeyu",
+        "838rt17oc2",
+        "tbcm6rn67d",
+        "odiap0ktcw",
+        "23iznvyrxea",
+        "w8nzqmpclc",
+        "xfo9k0emw6",
+        "1x1x71ra1j4",
+        "1l5ka1xvc8o",
+        "soaijsgq27",
+        "121jt7xectm",
+        "ccog2lg7x6",
+        "15as8kn9ltn",
+        "26yj5lyokvl",
+        "1v05se4m6pu",
+        "7p7qsvtyiy",
+        "o5ojqy7b60",
+        "m5ud1yk5uz",
+        "1fmsbj577t",
+        "kcxakbu5fx",
+        "270mrqcgsmm",
+        "1v437gfgrp7",
+        "hfx2hkk6x8",
+        "zqegq9tf4d",
+        "1c9xrx7easv",
+        "2ar22s1f41d",
+        "1gw9739shcz",
+        "29qsjguyi44",
+        "11qbgqt9ul6",
+        "1h7kful9gen",
+        "1xu31xs9laa",
+        "1vwy6ld7qbm",
+        "1l5pntwynmt"
+      ]
     },
     {
       "key": "aps-lecture-06",
       "path": "quizzes/APS/aps-lecture-06.json",
       "revision": 1,
       "courseId": "APS",
+      "topicId": "stacks-queues",
       "category": "Lecture",
       "title": "APS 06 – One-dimensional data structures",
       "description": "Midterm 1 theory: stacks, queues, cyclic arrays, priority queues, postfix notation.",
@@ -198,13 +350,47 @@
         "APS 06 – One-dimensional data structures"
       ],
       "questionCount": 31,
-      "estimatedMinutes": 16
+      "estimatedMinutes": 16,
+      "fingerprints": [
+        "2c36v5fh5mz",
+        "ppt1zu0zfj",
+        "14rwet41s78",
+        "yya98i0kp3",
+        "2g1hkgxf32d",
+        "yg53ouihd",
+        "1kce7z5km69",
+        "20x238v6brb",
+        "1cdbhjbrx7f",
+        "13mjyd75cdd",
+        "1rii855xvoj",
+        "1x6631yynuq",
+        "7khnwaofj4",
+        "1rjze60ico1",
+        "1cnwm43ei6o",
+        "16oluhhj0p1",
+        "4g3hv2fgaf",
+        "1c8ec09vue2",
+        "2fkeqr4445w",
+        "1r5t83y35k6",
+        "1x758dq4nvq",
+        "kmg1bj84m0",
+        "u52dqjmg87",
+        "ocdtsbbnqz",
+        "3uye7hkaax",
+        "x41k40m2r3",
+        "c8s8ebkdb4",
+        "1scao5lpfhw",
+        "27f58xwzgas",
+        "mpf6thmcuk",
+        "1k0gbvmp7kw"
+      ]
     },
     {
       "key": "aps-lecture-07",
       "path": "quizzes/APS/aps-lecture-07.json",
       "revision": 1,
       "courseId": "APS",
+      "topicId": "sorting",
       "category": "Lecture",
       "title": "APS 07 – Sorting",
       "description": "Midterm 1 theory: comparison and linear sorts, best/worst cases, stability, memory, binary search.",
@@ -224,7 +410,37 @@
         "APS 07 – Sorting"
       ],
       "questionCount": 28,
-      "estimatedMinutes": 14
+      "estimatedMinutes": 14,
+      "fingerprints": [
+        "1b70r9rngrh",
+        "isy9ho2i12",
+        "1ovwyyu2yqj",
+        "1vkqurmy1rm",
+        "1mnle2npaw6",
+        "1j4dgblrq4r",
+        "kbi152zyvr",
+        "236bxejrpxz",
+        "t4myahtak5",
+        "1sveiyhkomr",
+        "2bntz6djjct",
+        "i0g1oplu0m",
+        "150ngeuguco",
+        "jo5kbfxy7w",
+        "fmq8kyalro",
+        "w17p9hrdsr",
+        "28rh18oup2c",
+        "24nxswpzcr0",
+        "13etfdsbzoa",
+        "2ez9dn97l17",
+        "21j5bh1rpqx",
+        "1sdz6gvisa6",
+        "22d307pdffz",
+        "2d9nop1rpug",
+        "148d8l90t4a",
+        "28y3vnnzufz",
+        "21p2gvjpd3s",
+        "m8lce6kd1d"
+      ]
     },
     {
       "key": "demo-exam-1",
@@ -247,7 +463,28 @@
         "Demo Quiz"
       ],
       "questionCount": 19,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "1q88tm3s0kx",
+        "1tcxj7ffxxy",
+        "1ua8bnjivqj",
+        "138fvwtebwl",
+        "1dfrltp54cp",
+        "yqq6spfojr",
+        "27y7m28ipc4",
+        "zqp83pdhga",
+        "1p36bfz8qwl",
+        "waqeb63a2m",
+        "1ecxpl1ljp5",
+        "2axvw4moebo",
+        "836doohz5n",
+        "jkedefy08t",
+        "rclsvnkq09",
+        "1yb72ouq7dl",
+        "31ieu24u6m",
+        "23kkc6onvzb",
+        "43xweo1wd3"
+      ]
     },
     {
       "key": "demo-v1",
@@ -283,7 +520,18 @@
         "Kuiz Demo"
       ],
       "questionCount": 9,
-      "estimatedMinutes": 5
+      "estimatedMinutes": 5,
+      "fingerprints": [
+        "1q88tm3s0kx",
+        "1tcxj7ffxxy",
+        "1ua8bnjivqj",
+        "138fvwtebwl",
+        "1dfrltp54cp",
+        "yqq6spfojr",
+        "27y7m28ipc4",
+        "zqp83pdhga",
+        "1p36bfz8qwl"
+      ]
     },
     {
       "key": "demo-v2",
@@ -306,7 +554,11 @@
         "Tables & Code Snippets"
       ],
       "questionCount": 2,
-      "estimatedMinutes": 1
+      "estimatedMinutes": 1,
+      "fingerprints": [
+        "waqeb63a2m",
+        "1ecxpl1ljp5"
+      ]
     },
     {
       "key": "demo-v3",
@@ -329,7 +581,22 @@
         "Fill In The Blanks Rework"
       ],
       "questionCount": 13,
-      "estimatedMinutes": 7
+      "estimatedMinutes": 7,
+      "fingerprints": [
+        "1ebki0fbus2",
+        "9cihavmfka",
+        "70ik3zydof",
+        "oe8xa3c56q",
+        "iyaxfm0jxy",
+        "gt9kwnwfnz",
+        "1m455n5lqel",
+        "172e9y5126a",
+        "1kdc2znzjhs",
+        "25dv1g469ez",
+        "1otype6upet",
+        "29q8aommmil",
+        "147ka8v9p12"
+      ]
     },
     {
       "key": "demo-v4",
@@ -352,7 +619,11 @@
         "Question Dependencies [Deprecated]"
       ],
       "questionCount": 2,
-      "estimatedMinutes": 1
+      "estimatedMinutes": 1,
+      "fingerprints": [
+        "2axvw4moebo",
+        "836doohz5n"
+      ]
     },
     {
       "key": "demo-v5",
@@ -375,7 +646,11 @@
         "Version 1.1 - Select"
       ],
       "questionCount": 2,
-      "estimatedMinutes": 1
+      "estimatedMinutes": 1,
+      "fingerprints": [
+        "jkedefy08t",
+        "rclsvnkq09"
+      ]
     },
     {
       "key": "demo-v6",
@@ -398,7 +673,13 @@
         "Version 1.2 - D&D, Image Hotspots"
       ],
       "questionCount": 4,
-      "estimatedMinutes": 2
+      "estimatedMinutes": 2,
+      "fingerprints": [
+        "1yb72ouq7dl",
+        "31ieu24u6m",
+        "23kkc6onvzb",
+        "43xweo1wd3"
+      ]
     },
     {
       "key": "demo-v7",
@@ -421,7 +702,12 @@
         "Version 1.3 - Grouped and Code Completion Questions"
       ],
       "questionCount": 3,
-      "estimatedMinutes": 13
+      "estimatedMinutes": 13,
+      "fingerprints": [
+        "2egkhsogh9w",
+        "2auucro0678",
+        "2dhyp8altfy"
+      ]
     },
     {
       "key": "demo-v8",
@@ -444,13 +730,18 @@
         "Release 2.0"
       ],
       "questionCount": 2,
-      "estimatedMinutes": 1
+      "estimatedMinutes": 1,
+      "fingerprints": [
+        "1vs7rycn5wg",
+        "253sflow1yu"
+      ]
     },
     {
       "key": "dig-exam-basics",
       "path": "quizzes/DIG/dig-exam-basics.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "basics",
       "category": "Exam",
       "title": {
         "en": "DIG – Digitization basics",
@@ -475,13 +766,36 @@
         "ДИГ – Основи на дигитализација"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "1sxo4jw5hfz",
+        "284cqxj3iot",
+        "e1dsicnott",
+        "2ci2u122rl3",
+        "1se9dxnq7gh",
+        "gz0icuw3xi",
+        "1ptpiccx3zc",
+        "1uqa7s2l7u3",
+        "1hvkdnpofh9",
+        "8qc67epw8d",
+        "bil71umocr",
+        "x5gqeabks3",
+        "gn3lskc8ra",
+        "3ak92kzuf4",
+        "23h2ugtvylg",
+        "srtf7hbg58",
+        "8tvglv8qzm",
+        "17eue4zwat0",
+        "24subp6gp3s",
+        "1wjrisdnyrg"
+      ]
     },
     {
       "key": "dig-exam-color",
       "path": "quizzes/DIG/dig-exam-color.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "color",
       "category": "Exam",
       "title": {
         "en": "DIG – Light and color",
@@ -506,13 +820,36 @@
         "ДИГ – Светлина и бои"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "8toh0ywu7m",
+        "crwg4i2gvw",
+        "bt1wt2hxs3",
+        "1s1zb5swads",
+        "227gzdeijuy",
+        "11j279gbjlt",
+        "mn7yepzgxp",
+        "1ixv3fb3r4o",
+        "2ybooq1jwo",
+        "j2zutea15z",
+        "20ygo1sarzj",
+        "ylo6nfhriu",
+        "104oxotxpf1",
+        "ar1mz5onz7",
+        "xdjb5wya83",
+        "wbcly7zbft",
+        "1xlhb3zvw9a",
+        "4dadzxjm0v",
+        "vv3f2xan36",
+        "1g3udughcxl"
+      ]
     },
     {
       "key": "dig-exam-compression",
       "path": "quizzes/DIG/dig-exam-compression.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "compression",
       "category": "Exam",
       "title": {
         "en": "DIG – Image compression",
@@ -537,13 +874,36 @@
         "ДИГ – Компресија на слики"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "10184ejx6e6",
+        "2ctg5pnchah",
+        "2070w6zcs73",
+        "2a9fmwcxm1s",
+        "pyg62kbaey",
+        "2ehr2ydwiww",
+        "2zmjwjx9ho",
+        "13s9gmo63fp",
+        "dt554hruhm",
+        "2il3pws4ro",
+        "216aa1p03xz",
+        "dmtj2yzvpk",
+        "ed9wblfg8u",
+        "1c5gbfqsl80",
+        "yv72ke3cbm",
+        "css5rtwwju",
+        "bimbtujkb7",
+        "1bnfsm6zv0v",
+        "1i242y8iihy",
+        "202t951nsvu"
+      ]
     },
     {
       "key": "dig-exam-medicine",
       "path": "quizzes/DIG/dig-exam-medicine.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "medicine",
       "category": "Exam",
       "title": {
         "en": "DIG – Digitization in medicine",
@@ -568,13 +928,36 @@
         "ДИГ – Дигитализација во медицина"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "14yd4ssa1b9",
+        "2chq8swq7fc",
+        "p6t22t55gk",
+        "1jej1kudu2q",
+        "mgeho64wmt",
+        "1ey4qz9crg4",
+        "ynveeh99nc",
+        "27r9lexnro8",
+        "253kppobktg",
+        "83bmsbd7cx",
+        "sj9ft6h25b",
+        "24nrubgnulb",
+        "bdglniem0o",
+        "1egln7abgi2",
+        "1visufgtjfr",
+        "125yigvh13",
+        "riua3rafpw",
+        "1waqqb4xv6h",
+        "16w741j09v",
+        "1219a4ml161"
+      ]
     },
     {
       "key": "dig-exam-planning",
       "path": "quizzes/DIG/dig-exam-planning.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "planning",
       "category": "Exam",
       "title": {
         "en": "DIG – Planning a digitization project",
@@ -599,13 +982,46 @@
         "ДИГ – Планирање на дигитализациски проект"
       ],
       "questionCount": 30,
-      "estimatedMinutes": 15
+      "estimatedMinutes": 15,
+      "fingerprints": [
+        "2fbznlprdz9",
+        "rg41tyet1w",
+        "13ydk8ioeq6",
+        "cgt3y32r86",
+        "100htkzomth",
+        "12hzuu4uzuj",
+        "1iackg13afo",
+        "goizyhubd7",
+        "1is8fsp0xpq",
+        "1kqb0pm62gg",
+        "1gbu9ti5vs2",
+        "14hsoeqtiny",
+        "j6syyiuuzn",
+        "cdsfd9yo91",
+        "un7fh9rv6x",
+        "gdkmog7bsj",
+        "263pqvsx083",
+        "gylsmec4q9",
+        "tj4ohxvp92",
+        "nuiv1o13lg",
+        "n18bjny502",
+        "s4smm5bdyr",
+        "27p2dbh970f",
+        "1mpz67iz8x7",
+        "16c5oty1p6x",
+        "176akqcx96v",
+        "wrw56jlqd0",
+        "25yp3mbvsfq",
+        "gg4l4wdga8",
+        "k4bs88r2wd"
+      ]
     },
     {
       "key": "dig-midterm-1-2024",
       "path": "quizzes/DIG/dig-midterm-1-2024.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "midterms",
       "category": "Midterm",
       "title": {
         "mk": "ДИГ – Прв колоквиум 2024",
@@ -632,13 +1048,46 @@
         "DIG – First midterm 2024"
       ],
       "questionCount": 30,
-      "estimatedMinutes": 15
+      "estimatedMinutes": 15,
+      "fingerprints": [
+        "1ogzc43erca",
+        "23czxwb62gr",
+        "1l5mbojfcdy",
+        "2gau04o6ep2",
+        "1zdua4erjel",
+        "pw8lk9ndrt",
+        "1994w5hoz2v",
+        "ae7h4ulzaj",
+        "9l0xs5bfvi",
+        "iio9z5jwjx",
+        "1egtknvx79a",
+        "ljemk0jmvu",
+        "1k3atfh3f6p",
+        "22kncyq20bz",
+        "143bvckfsrz",
+        "oj3c0cu8ow",
+        "1jyc5xg4kee",
+        "2g8hdzux1l6",
+        "22lmjdtd83x",
+        "rffwq361ay",
+        "1xg6dt7icer",
+        "vox7gsj3jx",
+        "nfn6saol9x",
+        "n2ueegquwe",
+        "1xtz1pwu8uf",
+        "1ygeg6h6ph4",
+        "ktlfyhqpdt",
+        "1yp0zfb3nm",
+        "z9pa9yzoqe",
+        "1e4csa62mg0"
+      ]
     },
     {
       "key": "dig-notes-gimp-raw",
       "path": "quizzes/DIG/dig-notes-gimp-raw.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "gimp",
       "category": "Lecture",
       "title": {
         "mk": "ДИГ – GIMP и RAW/JPEG",
@@ -665,13 +1114,36 @@
         "DIG – GIMP and RAW/JPEG"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "14pp8ixfyou",
+        "16yowknqc7j",
+        "tzablx4h9s",
+        "1hq9utv0458",
+        "xh1pct5e2u",
+        "1hujnmbr2e6",
+        "1ebyxzpnnv6",
+        "6qg1h0mt70",
+        "psq1u7e0qi",
+        "221mwd2pguj",
+        "a7vghi46pl",
+        "2181bejxzzo",
+        "c94buvweim",
+        "gj59ibj9se",
+        "xmb9n7ne52",
+        "ubfsg1m2mw",
+        "p33j365d8c",
+        "2fjo1hw9w9y",
+        "21xbmh5jc6c",
+        "xllbr2b23d"
+      ]
     },
     {
       "key": "dig-notes-planning-terms",
       "path": "quizzes/DIG/dig-notes-planning-terms.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "planning",
       "category": "Lecture",
       "title": {
         "mk": "ДИГ – Планирање и терминологија",
@@ -698,13 +1170,36 @@
         "DIG – Planning and terminology"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "1gnlcwzxwpd",
+        "1z8yw3r84ky",
+        "pa0ac4hi5x",
+        "24ghkmf4qoq",
+        "1xzcsbcwi42",
+        "1jjsievam0y",
+        "lo67p5ijtw",
+        "2974vy3w3lr",
+        "224dsvxr6vg",
+        "amv0f2akzl",
+        "1pe6vpp13bk",
+        "17lctumbf8v",
+        "i5yn8root",
+        "1e5m0do599a",
+        "xwkkx477r5",
+        "18daeiw0cvr",
+        "1ncole21wlb",
+        "1iwxn0821j7",
+        "26zsdduav7b",
+        "1wr4kvbhiln"
+      ]
     },
     {
       "key": "dig-notes-sound",
       "path": "quizzes/DIG/dig-notes-sound.json",
       "revision": 1,
       "courseId": "DIG",
+      "topicId": "sound",
       "category": "Lecture",
       "title": {
         "mk": "ДИГ – Дигитализација на звук",
@@ -731,13 +1226,36 @@
         "DIG – Sound digitization"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "1jjovwgnuz3",
+        "1i51pnuvh5l",
+        "elagi7xzzn",
+        "lv6366qlni",
+        "2f1xrfx9l1e",
+        "22itzr08vnr",
+        "24pe7dz3pqy",
+        "23ywsop1ymi",
+        "72yoiihdtp",
+        "28hde8i0qpc",
+        "x5ne5j4p7",
+        "1av6jcwhhu5",
+        "cky5mnxhlo",
+        "54eg7ujdcn",
+        "3bhu491nyk",
+        "1ki743i0xj1",
+        "7bnljeud3s",
+        "s4z46s5aq4",
+        "1jde7grbilf",
+        "2fisbfayhjt"
+      ]
     },
     {
       "key": "kmib-bank-application",
       "path": "quizzes/KMiB/kmib-bank-application.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "application-layer",
       "category": "Lecture",
       "title": {
         "mk": "КМиБ – Банка: апликациски слој",
@@ -765,13 +1283,56 @@
         "KMiB – Bank: application layer"
       ],
       "questionCount": 40,
-      "estimatedMinutes": 20
+      "estimatedMinutes": 20,
+      "fingerprints": [
+        "1850qsisav1",
+        "1kferksex8t",
+        "18gmsc3ihup",
+        "e56ixll2or",
+        "cza0yqream",
+        "mtzcal3ydq",
+        "2b5kshlmvqc",
+        "6a2xveizlw",
+        "b5rgfr2qqp",
+        "1y4gsuhzmix",
+        "20qyfykjsgx",
+        "1b7tlhm8xha",
+        "24um9ee2kjo",
+        "1331k41q22r",
+        "2qb8ustytb",
+        "20fdpca55s9",
+        "2ac7bs0uram",
+        "2edi6a75mop",
+        "139z8s634ft",
+        "2ab5bc8aht8",
+        "rhg864l3ia",
+        "ybeua1cani",
+        "1j4xunvrpzr",
+        "1hik6t4l0d3",
+        "1hkjv7of0yb",
+        "23bpdxrdays",
+        "12arvyxe3nl",
+        "1oum9p6vjnn",
+        "1znqq3axqay",
+        "99xecyl5lw",
+        "8q8bv6tvwn",
+        "1k06yn31zcu",
+        "ic1l5atyh0",
+        "19iwwyhgmsf",
+        "t5uqu5cw68",
+        "2fg2e23ijos",
+        "29hp9eii5cw",
+        "ask39lj1bk",
+        "1jy9mt4w6nq",
+        "2az6hs0yyv3"
+      ]
     },
     {
       "key": "kmib-bank-intro",
       "path": "quizzes/KMiB/kmib-bank-intro.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "introduction",
       "category": "Lecture",
       "title": {
         "mk": "КМиБ – Банка: вовед и слоеви",
@@ -799,13 +1360,65 @@
         "KMiB – Bank: introduction and layers"
       ],
       "questionCount": 49,
-      "estimatedMinutes": 25
+      "estimatedMinutes": 25,
+      "fingerprints": [
+        "cci9nska6r",
+        "24079kxeuqe",
+        "1tx2rmqbk4z",
+        "2erqumppl1f",
+        "1f7sxldjz2a",
+        "x7igdmd8g0",
+        "n55nqj1jeo",
+        "82v9wls93y",
+        "zjcr1q09vo",
+        "uku6546bw9",
+        "3e8vsa756",
+        "1mp1706et58",
+        "8asfh4a9rn",
+        "26cstsedz13",
+        "ddr7c4zw1a",
+        "3ajju1gnmi",
+        "1t9snql6ym",
+        "7qah7kojha",
+        "276uzfklcdx",
+        "1ldiyy28jgw",
+        "21i8fgtop48",
+        "lgzhps61gh",
+        "1772da2fpxp",
+        "1yk80xrh0is",
+        "2c74u6pq8uc",
+        "2ako4ju9zwt",
+        "5tyharve3g",
+        "1wox40phvvb",
+        "x6mz83d3qh",
+        "9sab8c407e",
+        "1ejy39hlu35",
+        "1xh9s8pl285",
+        "2f3eaaz7uv4",
+        "250wckd5kmc",
+        "2dzqwjz7h5m",
+        "2e72isn0axn",
+        "1yq32jm0pnv",
+        "8j3w5n62w6",
+        "1gl0tv1s1zg",
+        "63o6k4gzx3",
+        "9u5629ecux",
+        "24b5cnyowh1",
+        "1haivrukgnj",
+        "25khqp2rk9n",
+        "qvophtoh1b",
+        "1h9d45rt87c",
+        "1a960eavp8p",
+        "26rmz8gbp70",
+        "1rl3nghuq5b"
+      ]
     },
     {
       "key": "kmib-bank-transport",
       "path": "quizzes/KMiB/kmib-bank-transport.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "transport-layer",
       "category": "Lecture",
       "title": {
         "mk": "КМиБ – Банка: транспортен слој",
@@ -833,7 +1446,36 @@
         "KMiB – Bank: transport layer"
       ],
       "questionCount": 27,
-      "estimatedMinutes": 14
+      "estimatedMinutes": 14,
+      "fingerprints": [
+        "2g0l7ahcm9w",
+        "1v6buuht7mq",
+        "2fla0bx75jt",
+        "1by8o6ghsl4",
+        "eq7ddmzei8",
+        "1ho10wobj9",
+        "1tovx8292jq",
+        "128lt720wee",
+        "ay9v30at7n",
+        "dpijtzb4lt",
+        "l2geaygohy",
+        "158lmzcqpl8",
+        "16ple8t4umb",
+        "1vjwoxhtwi2",
+        "1ma9esln7zy",
+        "slhj05ecl7",
+        "10n1vva39yb",
+        "140507ee5sm",
+        "1whqrw8w3cf",
+        "1gwqsj0uct",
+        "2bdl3mvw9ac",
+        "2g7t85qqyc",
+        "cvrc3xvb9q",
+        "11tf1kjxjrk",
+        "2bqo3agkzd1",
+        "1223uc0ohcr",
+        "1htnqbcmm55"
+      ]
     },
     {
       "key": "kmib-lectures-review",
@@ -866,13 +1508,36 @@
         "KMiB – Lectures 1–3: extra questions"
       ],
       "questionCount": 20,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "4dcq1ey9kx",
+        "1fai9i9i9yv",
+        "1u8uyrfpttz",
+        "fl8um5rx2x",
+        "cv31kufcpd",
+        "x7s48b5u3y",
+        "b21ob1ap1h",
+        "2cn6qj8sjga",
+        "1rfmz0c966w",
+        "1apojfi1b87",
+        "2cirassnjbd",
+        "27jpf8tulqz",
+        "8sc0asczt8",
+        "1shlvibrtcr",
+        "sr0sbpkkou",
+        "15knrl5phkp",
+        "1ed0x4v48wc",
+        "11r7qtni6nq",
+        "268vhr0bl1s",
+        "26fwq11fqh9"
+      ]
     },
     {
       "key": "kmib-midterm-2021-11-20",
       "path": "quizzes/KMiB/kmib-midterm-2021-11-20.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "midterms",
       "category": "Midterm",
       "title": {
         "mk": "КМиБ – Колоквиум 20.11.2021",
@@ -900,13 +1565,25 @@
         "KMiB – Midterm 20.11.2021"
       ],
       "questionCount": 9,
-      "estimatedMinutes": 5
+      "estimatedMinutes": 5,
+      "fingerprints": [
+        "yc2sgvjoqp",
+        "2f1hopr59rr",
+        "obaa1qdgnt",
+        "1l6lfbyi8e8",
+        "1bizlb2ent9",
+        "1dz1psbvhqm",
+        "7ssub1p10w",
+        "165bkyv2yqa",
+        "1uxrtdo1p6w"
+      ]
     },
     {
       "key": "kmib-midterm-2021-22",
       "path": "quizzes/KMiB/kmib-midterm-2021-22.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "midterms",
       "category": "Midterm",
       "title": {
         "mk": "КМиБ – Колоквиум 2021/22 (теорија)",
@@ -934,13 +1611,42 @@
         "KMiB – Midterm 2021/22 (theory)"
       ],
       "questionCount": 26,
-      "estimatedMinutes": 13
+      "estimatedMinutes": 13,
+      "fingerprints": [
+        "20ezp60y3he",
+        "1rd39ny0alc",
+        "2ezx6t87ggj",
+        "1f4na2eidto",
+        "227vjn59bst",
+        "49t4uuj700",
+        "131o1cthq4n",
+        "20lwb8kx9mj",
+        "nezm8cb0dp",
+        "o567atvofu",
+        "2bxulyp110z",
+        "1l26518ovua",
+        "1libdfht3o4",
+        "2314fiig8yv",
+        "205rfo9xt9k",
+        "14sutqo2y67",
+        "1v9nt382sin",
+        "yisj5lzyyb",
+        "16cd75083m8",
+        "xjve0tejx1",
+        "6c3a129lvp",
+        "m3nnyg7z4u",
+        "2f6t2ee1lxp",
+        "14i0rllnnub",
+        "1z7mpgtim87",
+        "1xmxhyouezy"
+      ]
     },
     {
       "key": "kmib-problems-network",
       "path": "quizzes/KMiB/kmib-problems-network.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "problems",
       "category": "Practical",
       "title": {
         "mk": "КМиБ – Задачи: доцнења, пропусна моќ, кеш",
@@ -967,13 +1673,54 @@
         "KMiB – Problems: delay, throughput, caching"
       ],
       "questionCount": 38,
-      "estimatedMinutes": 19
+      "estimatedMinutes": 19,
+      "fingerprints": [
+        "2fnk2w82j89",
+        "1hg7hvtn686",
+        "11ri5c3feud",
+        "rp3jo8l0i8",
+        "1nevndogpj9",
+        "1nb1a1j0ks2",
+        "iy9rvju3bx",
+        "e4h4414gqg",
+        "247pe7nlwf5",
+        "wh762qz6bx",
+        "sz8p87qfph",
+        "a2e9uhpbd1",
+        "1h3386sl5v3",
+        "1upmgimbed7",
+        "15tkt4du8yb",
+        "17hqa3lw3s0",
+        "1dbph7vewnu",
+        "e3d7keugdv",
+        "83nffc99b8",
+        "1gq423ytbzo",
+        "muqmxbvqdf",
+        "wavuv5w1n8",
+        "pp4z33lp0r",
+        "9982b9tcpp",
+        "19vi416xyri",
+        "25ozwtkeaia",
+        "lgpqsil6at",
+        "1532kj8vxkr",
+        "1rp2ytbupqz",
+        "212us30boa0",
+        "275v0vd8f1a",
+        "2ath3oddogr",
+        "1oj731fksq3",
+        "7wdh26pv6w",
+        "1eeyougscf2",
+        "1bc8a2ti1c8",
+        "1xt9p3pweik",
+        "120jndgl51w"
+      ]
     },
     {
       "key": "kmib-problems-transport",
       "path": "quizzes/KMiB/kmib-problems-transport.json",
       "revision": 1,
       "courseId": "KMiB",
+      "topicId": "problems",
       "category": "Practical",
       "title": {
         "mk": "КМиБ – Задачи: HTTP, checksum, TCP",
@@ -1000,7 +1747,41 @@
         "KMiB – Problems: HTTP, checksum, TCP"
       ],
       "questionCount": 32,
-      "estimatedMinutes": 16
+      "estimatedMinutes": 16,
+      "fingerprints": [
+        "pa79z8drb4",
+        "efgbjhqjsd",
+        "1wwdgu9odjj",
+        "cegw6k85vw",
+        "16gofmavti6",
+        "20aobr7ak4k",
+        "1ntyem5smqs",
+        "1kz09hfxcuw",
+        "5mrr0mrfg4",
+        "pg77myneyv",
+        "11c77jahepr",
+        "2c231zsgsm",
+        "p71cey4tz8",
+        "lchr3251g",
+        "1igmuik1tsh",
+        "w1z0ol4y78",
+        "o8t6whn362",
+        "2bqt3pk14mx",
+        "1t1owsdfpa7",
+        "lnvp1riwbl",
+        "7z0ggjrh5b",
+        "1zersz2z829",
+        "1en5rb5toem",
+        "1zqpaiaehxn",
+        "1zudvgy55q6",
+        "19b1qlth3ev",
+        "y81pfgfyxd",
+        "xs41bd8fq0",
+        "2khxwqzdie",
+        "2cak4hkswp6",
+        "126g6cacxk8",
+        "16pf8qpv9zb"
+      ]
     },
     {
       "key": "ooaid-exam-1",
@@ -1023,7 +1804,21 @@
         "OOAID Exam 1"
       ],
       "questionCount": 12,
-      "estimatedMinutes": 6
+      "estimatedMinutes": 6,
+      "fingerprints": [
+        "29pmdygjxuh",
+        "ezed3kjanx",
+        "1hu5pdvzfgr",
+        "1xo2u807cbb",
+        "55udhzkue7",
+        "144d82j6usu",
+        "k3vmxgep0l",
+        "1hogkyl27ih",
+        "ux9qpcb6eu",
+        "1ri7ohc1odw",
+        "eev7v87y90",
+        "v6a845r42s"
+      ]
     },
     {
       "key": "ooaid-exam-2",
@@ -1046,7 +1841,19 @@
         "Use Case Diagrams"
       ],
       "questionCount": 10,
-      "estimatedMinutes": 5
+      "estimatedMinutes": 5,
+      "fingerprints": [
+        "2fbyy4nymhp",
+        "446nckzvu2",
+        "vtq8682f1i",
+        "5ychrmbkxg",
+        "1f7oikams0c",
+        "r8txo72999",
+        "jhg9jm52fw",
+        "238s65bw5md",
+        "f6hjia0kwv",
+        "1bdp7y8so6r"
+      ]
     },
     {
       "key": "ooaid-exam-3",
@@ -1069,7 +1876,28 @@
         "OOAD Exam — Use Case & Class Diagrams"
       ],
       "questionCount": 19,
-      "estimatedMinutes": 10
+      "estimatedMinutes": 10,
+      "fingerprints": [
+        "yspym9lnxs",
+        "1cm7at5pqy9",
+        "1506ksvx7w8",
+        "1namplrt69z",
+        "2px25jlzj4",
+        "x7g1zbiw56",
+        "29d3odaovb9",
+        "3u9n9xwejh",
+        "24ikl9fh5pt",
+        "1ybgmflk5u1",
+        "1x4j4nb6vid",
+        "2ehqo057im7",
+        "1cdhn27mrqe",
+        "19beht1l9xx",
+        "ylpng34qhf",
+        "2apuo752rz4",
+        "xgkqk5wjeg",
+        "1df0rmy06uw",
+        "6x9gi9nq5m"
+      ]
     }
   ]
 }

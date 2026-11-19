@@ -4,6 +4,7 @@
   "key": "aps-lecture-07",
   "revision": 1,
   "courseId": "APS",
+  "topicId": "sorting",
   "category": "Lecture",
   "title": "APS 07 – Sorting",
   "description": "Midterm 1 theory: comparison and linear sorts, best/worst cases, stability, memory, binary search.",

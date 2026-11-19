@@ -4,6 +4,7 @@
   "key": "dig-exam-color",
   "revision": 1,
   "courseId": "DIG",
+  "topicId": "color",
   "category": "Exam",
   "title": {
     "en": "DIG – Light and color",

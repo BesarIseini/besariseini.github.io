@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "OOP",
+  "name": {
+    "en": "Object-Oriented Programming",
+    "mk": "Објектно-ориентирано програмирање",
+    "sq": "Programim i Orientuar në Objekte"
+  },
+  "semester": 2,
+  "color": "#16a34a"
+}

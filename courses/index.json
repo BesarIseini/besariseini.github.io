@@ -1,0 +1,289 @@
+{
+  "formatVersion": 1,
+  "courses": [
+    {
+      "formatVersion": 1,
+      "id": "AOK",
+      "name": {
+        "en": "Computer Architecture and Organization",
+        "mk": "Архитектура и организација на компјутери",
+        "sq": "Arkitektura dhe Organizimi i Kompjuterëve"
+      },
+      "semester": 2,
+      "color": "#0891b2",
+      "tags": [
+        "FINKI",
+        "EXAM"
+      ]
+    },
+    {
+      "formatVersion": 1,
+      "id": "M2",
+      "name": {
+        "en": "Mathematics 2",
+        "mk": "Математика 2",
+        "sq": "Matematikë 2"
+      },
+      "semester": 2,
+      "color": "#7c3aed"
+    },
+    {
+      "formatVersion": 1,
+      "id": "OnVD",
+      "name": {
+        "en": "Fundamentals of Web Design",
+        "mk": "Основи на веб дизајн",
+        "sq": "Bazat e Dizajnit në Web"
+      },
+      "semester": 2,
+      "color": "#db2777"
+    },
+    {
+      "formatVersion": 1,
+      "id": "OOAiD",
+      "name": {
+        "en": "Object-Oriented Analysis and Design",
+        "mk": "Објектно-ориентирана анализа и дизајн",
+        "sq": "Analiza dhe Dizajn i Orientuar në Objekte"
+      },
+      "semester": 2,
+      "color": "#ea580c"
+    },
+    {
+      "formatVersion": 1,
+      "id": "OOP",
+      "name": {
+        "en": "Object-Oriented Programming",
+        "mk": "Објектно-ориентирано програмирање",
+        "sq": "Programim i Orientuar në Objekte"
+      },
+      "semester": 2,
+      "color": "#16a34a"
+    },
+    {
+      "formatVersion": 1,
+      "id": "APS",
+      "name": {
+        "en": "Algorithms and Data Structures",
+        "mk": "Алгоритми и податочни структури",
+        "sq": "Algoritme dhe Struktura të të Dhënave"
+      },
+      "semester": 3,
+      "color": "#2563eb",
+      "topics": [
+        {
+          "id": "complexity",
+          "title": {
+            "en": "Algorithm complexity",
+            "mk": "Сложеност на алгоритми",
+            "sq": "Kompleksiteti i algoritmeve"
+          }
+        },
+        {
+          "id": "arrays-lists",
+          "title": {
+            "en": "Arrays and linked lists",
+            "mk": "Низи и поврзани листи",
+            "sq": "Vargjet dhe listat e lidhura"
+          }
+        },
+        {
+          "id": "techniques",
+          "title": {
+            "en": "Algorithm design techniques",
+            "mk": "Техники за дизајн на алгоритми",
+            "sq": "Teknikat e dizajnit të algoritmeve"
+          }
+        },
+        {
+          "id": "stacks-queues",
+          "title": {
+            "en": "Stacks and queues",
+            "mk": "Магацини и редици",
+            "sq": "Stivat dhe radhët"
+          }
+        },
+        {
+          "id": "sorting",
+          "title": {
+            "en": "Sorting and searching",
+            "mk": "Сортирање и пребарување",
+            "sq": "Renditja dhe kërkimi"
+          }
+        }
+      ]
+    },
+    {
+      "formatVersion": 1,
+      "id": "DIG",
+      "name": {
+        "en": "Digitization",
+        "mk": "Дигитализација",
+        "sq": "Digjitalizimi"
+      },
+      "semester": 3,
+      "color": "#e11d48",
+      "topics": [
+        {
+          "id": "planning",
+          "title": {
+            "en": "Planning a digitization project",
+            "mk": "Планирање на дигитализациски проект",
+            "sq": "Planifikimi i një projekti digjitalizimi"
+          }
+        },
+        {
+          "id": "basics",
+          "title": {
+            "en": "Digitization basics",
+            "mk": "Основи на дигитализација",
+            "sq": "Bazat e digjitalizimit"
+          }
+        },
+        {
+          "id": "color",
+          "title": {
+            "en": "Light and color",
+            "mk": "Светлина и бои",
+            "sq": "Drita dhe ngjyra"
+          }
+        },
+        {
+          "id": "compression",
+          "title": {
+            "en": "Image compression",
+            "mk": "Компресија на слики",
+            "sq": "Kompresimi i imazheve"
+          }
+        },
+        {
+          "id": "gimp",
+          "title": {
+            "en": "GIMP and RAW/JPEG",
+            "mk": "GIMP и RAW/JPEG",
+            "sq": "GIMP dhe RAW/JPEG"
+          }
+        },
+        {
+          "id": "sound",
+          "title": {
+            "en": "Sound digitization",
+            "mk": "Дигитализација на звук",
+            "sq": "Digjitalizimi i zërit"
+          }
+        },
+        {
+          "id": "medicine",
+          "title": {
+            "en": "Digitization in medicine",
+            "mk": "Дигитализација во медицина",
+            "sq": "Digjitalizimi në mjekësi"
+          }
+        },
+        {
+          "id": "midterms",
+          "title": {
+            "en": "Old midterms",
+            "mk": "Стари колоквиуми",
+            "sq": "Kolokviumet e vjetra"
+          }
+        }
+      ]
+    },
+    {
+      "formatVersion": 1,
+      "id": "IPKS",
+      "name": {
+        "en": "Client-Side Internet Programming",
+        "mk": "Интернет програмирање на клиентска страна",
+        "sq": "Programim Interneti në Anën e Klientit"
+      },
+      "semester": 3,
+      "color": "#ca8a04"
+    },
+    {
+      "formatVersion": 1,
+      "id": "KMiB",
+      "name": {
+        "en": "Computer Networks and Security",
+        "mk": "Компјутерски мрежи и безбедност",
+        "sq": "Rrjete Kompjuterike dhe Siguri"
+      },
+      "semester": 3,
+      "color": "#0d9488",
+      "topics": [
+        {
+          "id": "introduction",
+          "title": {
+            "en": "Introduction: networks, layers, delay",
+            "mk": "Вовед: мрежи, слоеви, доцнење",
+            "sq": "Hyrje: rrjetet, shtresat, vonesa"
+          }
+        },
+        {
+          "id": "application-layer",
+          "title": {
+            "en": "Application layer",
+            "mk": "Апликациски слој",
+            "sq": "Shtresa e aplikacionit"
+          }
+        },
+        {
+          "id": "transport-layer",
+          "title": {
+            "en": "Transport layer",
+            "mk": "Транспортен слој",
+            "sq": "Shtresa e transportit"
+          }
+        },
+        {
+          "id": "problems",
+          "title": {
+            "en": "Problems",
+            "mk": "Задачи",
+            "sq": "Detyra"
+          }
+        },
+        {
+          "id": "midterms",
+          "title": {
+            "en": "Old midterms",
+            "mk": "Стари колоквиуми",
+            "sq": "Kolokviumet e vjetra"
+          }
+        }
+      ]
+    },
+    {
+      "formatVersion": 1,
+      "id": "M3",
+      "name": {
+        "en": "Mathematics 3",
+        "mk": "Математика 3",
+        "sq": "Matematikë 3"
+      },
+      "semester": 3,
+      "color": "#9333ea"
+    },
+    {
+      "formatVersion": 1,
+      "id": "DM",
+      "name": {
+        "en": "DEMO",
+        "mk": "ДЕМО",
+        "sq": "DEMO"
+      },
+      "description": {
+        "en": "Demo description",
+        "mk": "Демо опис",
+        "sq": "Përshkrim demo"
+      },
+      "semester": -1,
+      "color": "#64748b",
+      "tags": [
+        "Verified",
+        "DEMO"
+      ]
+    }
+  ]
+}

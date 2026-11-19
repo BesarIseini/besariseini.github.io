@@ -91,6 +91,11 @@
 
     "SELECTION_ICON_QUESTIONS": "прашања",
     "SELECTION_QUIZZES_AVAILABLE": "достапни квизови",
+    "SELECTION_RETAKE_FAILED": "Прашања што ги згрешив",
+    "SELECTION_RETAKE_HINT": "Прашања што не добија максимум поени последниот пат кога одговоривте на нив.",
+    "SELECTION_PROBLEMS_AVAILABLE": "задачи со код",
+    "SELECTION_CODE_PROBLEMS": "Задачи со код",
+    "SELECTION_TOPIC_OTHER": "Останато",
 
     "SELECTION_BACK_TO_QUIZ": "Назад кон квизовите",
 
@@ -222,6 +227,7 @@
     "QUIZ_SINGLE_WORD_ALERT": "Одговорот мора да биде еден збор!",
 
     "REVIEW_TITLE": "Резултати од квизот",
+    "REVIEW_RETAKE_FAILED": "Повтори ги згрешените прашања",
     "REVIEW_GRADE": "Оцена",
     "REVIEW_SCORE": "Резултат",
     "REVIEW_MARKS_EARNED": "Освоени поени",
@@ -406,6 +412,8 @@
     "CREATOR_TITLE": "Наслов",
     "CREATOR_DESCRIPTION": "Опис",
     "CREATOR_COURSE": "Предмет",
+    "CREATOR_TOPIC": "Тема",
+    "CREATOR_TOPIC_NONE": "Без тема",
     "CREATOR_CATEGORY": "Тип",
     "CREATOR_LANGUAGES": "Јазици",
     "CREATOR_LANGUAGES_HINT": "Означете го секој јазик на кој ќе го напишете квизот.",
@@ -568,6 +576,7 @@
     "CREATOR_ISSUE_LANGUAGE": "Овој јазик не може да се користи.",
     "CREATOR_ISSUE_DEFAULT_LANGUAGE": "Стандардниот јазик мора да биде еден од јазиците на квизот.",
     "CREATOR_ISSUE_UNKNOWN_COURSE": "Изберете предмет.",
+    "CREATOR_ISSUE_UNKNOWN_TOPIC": "Изберете тема од овој предмет.",
     "CREATOR_ISSUE_DURATION": "Квиз со време бара помеѓу 1 и 360 минути.",
     "CREATOR_ISSUE_UNSUPPORTED": "Ова користи нешто што креаторот сè уште не го поддржува.",
     "NAV_CODE": "Код",

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "OOAiD",
+  "name": {
+    "en": "Object-Oriented Analysis and Design",
+    "mk": "Објектно-ориентирана анализа и дизајн",
+    "sq": "Analiza dhe Dizajn i Orientuar në Objekte"
+  },
+  "semester": 2,
+  "color": "#ea580c"
+}

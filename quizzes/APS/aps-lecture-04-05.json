@@ -4,6 +4,7 @@
   "key": "aps-lecture-04-05",
   "revision": 1,
   "courseId": "APS",
+  "topicId": "techniques",
   "category": "Lecture",
   "title": "APS 04–05 – Algorithm techniques",
   "description": "Midterm 1 theory: brute force, greedy, divide and conquer, dynamic programming, backtracking, knapsack, bin packing, scheduling, Huffman codes.",

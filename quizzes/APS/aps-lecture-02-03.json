@@ -4,6 +4,7 @@
   "key": "aps-lecture-02-03",
   "revision": 1,
   "courseId": "APS",
+  "topicId": "arrays-lists",
   "category": "Lecture",
   "title": "APS 02–03 – Arrays and lists",
   "description": "Midterm 1 theory: arrays, sparse matrices, singly, doubly and circular linked lists and their complexities.",

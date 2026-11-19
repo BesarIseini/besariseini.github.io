@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "IPKS",
+  "name": {
+    "en": "Client-Side Internet Programming",
+    "mk": "Интернет програмирање на клиентска страна",
+    "sq": "Programim Interneti në Anën e Klientit"
+  },
+  "semester": 3,
+  "color": "#ca8a04"
+}

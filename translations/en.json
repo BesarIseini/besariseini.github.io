@@ -85,6 +85,11 @@
     "SELECTION_EXAMS": "Exams",
     "SELECTION_ICON_QUESTIONS": "questions",
     "SELECTION_QUIZZES_AVAILABLE": "quizzes available",
+    "SELECTION_RETAKE_FAILED": "Questions I got wrong",
+    "SELECTION_RETAKE_HINT": "Questions that didn't get full points the last time you answered them.",
+    "SELECTION_PROBLEMS_AVAILABLE": "code problems",
+    "SELECTION_CODE_PROBLEMS": "Code problems",
+    "SELECTION_TOPIC_OTHER": "Other",
 
     "SELECTION_BACK_TO_QUIZ": "Back to Quizzes",
 
@@ -215,6 +220,7 @@
     "QUIZ_SINGLE_WORD_ALERT": "Your answer must be a single word!",
 
     "REVIEW_TITLE": "Quiz Results",
+    "REVIEW_RETAKE_FAILED": "Retake questions I got wrong",
     "REVIEW_GRADE": "Grade",
     "REVIEW_SCORE": "Score",
     "REVIEW_MARKS_EARNED": "Marks Earned",
@@ -399,6 +405,8 @@
     "CREATOR_TITLE": "Title",
     "CREATOR_DESCRIPTION": "Description",
     "CREATOR_COURSE": "Course",
+    "CREATOR_TOPIC": "Topic",
+    "CREATOR_TOPIC_NONE": "No topic",
     "CREATOR_CATEGORY": "Type",
     "CREATOR_LANGUAGES": "Languages",
     "CREATOR_LANGUAGES_HINT": "Tick every language you will write the quiz in.",
@@ -561,6 +569,7 @@
     "CREATOR_ISSUE_LANGUAGE": "This language can't be used.",
     "CREATOR_ISSUE_DEFAULT_LANGUAGE": "The default language must be one of the quiz's languages.",
     "CREATOR_ISSUE_UNKNOWN_COURSE": "Choose a course.",
+    "CREATOR_ISSUE_UNKNOWN_TOPIC": "Choose a topic of this course.",
     "CREATOR_ISSUE_DURATION": "A timed quiz needs between 1 and 360 minutes.",
     "CREATOR_ISSUE_UNSUPPORTED": "This uses something the creator doesn't support yet.",
     "NAV_CODE": "Code",

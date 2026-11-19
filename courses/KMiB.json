@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "KMiB",
+  "name": {
+    "en": "Computer Networks and Security",
+    "mk": "Компјутерски мрежи и безбедност",
+    "sq": "Rrjete Kompjuterike dhe Siguri"
+  },
+  "semester": 3,
+  "color": "#0d9488",
+  "topics": [
+    {
+      "id": "introduction",
+      "title": {
+        "en": "Introduction: networks, layers, delay",
+        "mk": "Вовед: мрежи, слоеви, доцнење",
+        "sq": "Hyrje: rrjetet, shtresat, vonesa"
+      }
+    },
+    {
+      "id": "application-layer",
+      "title": {
+        "en": "Application layer",
+        "mk": "Апликациски слој",
+        "sq": "Shtresa e aplikacionit"
+      }
+    },
+    {
+      "id": "transport-layer",
+      "title": {
+        "en": "Transport layer",
+        "mk": "Транспортен слој",
+        "sq": "Shtresa e transportit"
+      }
+    },
+    {
+      "id": "problems",
+      "title": {
+        "en": "Problems",
+        "mk": "Задачи",
+        "sq": "Detyra"
+      }
+    },
+    {
+      "id": "midterms",
+      "title": {
+        "en": "Old midterms",
+        "mk": "Стари колоквиуми",
+        "sq": "Kolokviumet e vjetra"
+      }
+    }
+  ]
+}

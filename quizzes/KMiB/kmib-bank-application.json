@@ -4,6 +4,7 @@
   "key": "kmib-bank-application",
   "revision": 1,
   "courseId": "KMiB",
+  "topicId": "application-layer",
   "category": "Lecture",
   "title": {
     "mk": "КМиБ – Банка: апликациски слој",

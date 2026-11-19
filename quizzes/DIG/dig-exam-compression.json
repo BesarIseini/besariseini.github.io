@@ -4,6 +4,7 @@
   "key": "dig-exam-compression",
   "revision": 1,
   "courseId": "DIG",
+  "topicId": "compression",
   "category": "Exam",
   "title": {
     "en": "DIG – Image compression",

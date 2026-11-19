@@ -4,6 +4,7 @@
   "key": "dig-notes-gimp-raw",
   "revision": 1,
   "courseId": "DIG",
+  "topicId": "gimp",
   "category": "Lecture",
   "title": {
     "mk": "ДИГ – GIMP и RAW/JPEG",

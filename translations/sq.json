@@ -91,6 +91,11 @@
 
     "SELECTION_ICON_QUESTIONS": "pyetje",
     "SELECTION_QUIZZES_AVAILABLE": "kuize në dispozicion",
+    "SELECTION_RETAKE_FAILED": "Pyetjet që i gabova",
+    "SELECTION_RETAKE_HINT": "Pyetjet që nuk morën pikët maksimale herën e fundit që iu përgjigjët.",
+    "SELECTION_PROBLEMS_AVAILABLE": "detyra me kod",
+    "SELECTION_CODE_PROBLEMS": "Detyra me kod",
+    "SELECTION_TOPIC_OTHER": "Të tjera",
 
     "SELECTION_BACK_TO_QUIZ": "Kthehu te Kuizet",
 
@@ -222,6 +227,7 @@
     "QUIZ_SINGLE_WORD_ALERT": "Përgjigjja duhet të jetë një fjalë e vetme!",
 
     "REVIEW_TITLE": "Rezultatet e Kuizit",
+    "REVIEW_RETAKE_FAILED": "Përsërit pyetjet e gabuara",
     "REVIEW_GRADE": "Nota",
     "REVIEW_SCORE": "Rezultati",
     "REVIEW_MARKS_EARNED": "Pikë të Fituara",
@@ -406,6 +412,8 @@
     "CREATOR_TITLE": "Titulli",
     "CREATOR_DESCRIPTION": "Përshkrimi",
     "CREATOR_COURSE": "Lënda",
+    "CREATOR_TOPIC": "Tema",
+    "CREATOR_TOPIC_NONE": "Pa temë",
     "CREATOR_CATEGORY": "Lloji",
     "CREATOR_LANGUAGES": "Gjuhët",
     "CREATOR_LANGUAGES_HINT": "Zgjidhni çdo gjuhë në të cilën do ta shkruani kuizin.",
@@ -568,6 +576,7 @@
     "CREATOR_ISSUE_LANGUAGE": "Kjo gjuhë nuk mund të përdoret.",
     "CREATOR_ISSUE_DEFAULT_LANGUAGE": "Gjuha e parazgjedhur duhet të jetë një nga gjuhët e kuizit.",
     "CREATOR_ISSUE_UNKNOWN_COURSE": "Zgjidhni një lëndë.",
+    "CREATOR_ISSUE_UNKNOWN_TOPIC": "Zgjidhni një temë të kësaj lënde.",
     "CREATOR_ISSUE_DURATION": "Kuizi me kohë kërkon nga 1 deri në 360 minuta.",
     "CREATOR_ISSUE_UNSUPPORTED": "Kjo përdor diçka që krijuesi ende nuk e mbështet.",
     "NAV_CODE": "Kod",

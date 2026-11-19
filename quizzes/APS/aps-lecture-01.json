@@ -4,6 +4,7 @@
   "key": "aps-lecture-01",
   "revision": 1,
   "courseId": "APS",
+  "topicId": "complexity",
   "category": "Lecture",
   "title": "APS 01 – Algorithm complexity",
   "description": "Midterm 1 theory: counting operations, Big O / Ω / Θ, comparing algorithms, the RAM model.",
