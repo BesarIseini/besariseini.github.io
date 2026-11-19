@@ -54,6 +54,31 @@
         <h1>Versions</h1>
         <div>
             <section class="changelog">
+                <h3>Release v4.2.0 - 19/11/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li><strong>Math</strong>: quizzes can turn on formulas in any text (<code>$x^2$</code>, <code>$$…$$</code> on its own line), in questions, options, drag-and-drop items, ordering and fill-in blanks. Dropdown options show them as plain text (x², √x).</li>
+                    <li>An <strong>Equation</strong> block for a large formula under the question.</li>
+                    <li><strong>Charts</strong>: bar, line, pie, scatter and function plots (e.g. <code>sin(x)</code>, <code>x^2 - 2x + 1</code>), drawn from data in the quiz, in light and dark mode.</li>
+                </ul>
+
+                <h4>🎨 Improved</h4>
+                <ul>
+                    <li>Quiz Creator: picking a code problem now has a search box with course and difficulty filters, and marks the problems the quiz already uses.</li>
+                    <li>Quiz Creator: a live preview of formulas and charts while you type, and checks that catch mistakes in them.</li>
+                </ul>
+
+                <h4>🛠 Technical</h4>
+                <ul>
+                    <li>Formulas are drawn with KaTeX, loaded only on pages that have math.</li>
+                    <li>Function plots use a small formula parser of our own that never runs code.</li>
+                    <li>The Discord bot skips questions with math or charts.</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
                 <h3>Release v4.1.1 - 19/11/2026</h3>
 
                 <h4>✨ Added</h4>
