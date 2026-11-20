@@ -1,0 +1,6397 @@
+{
+  "formatVersion": 1,
+  "key": "eikt-chapter-03",
+  "revision": 1,
+  "courseId": "EIKT",
+  "topicId": "demand-supply-and-market-equilibrium",
+  "category": "Lecture",
+  "title": {
+    "en": "Chapter 3: Demand, Supply, and Market Equilibrium"
+  },
+  "description": {
+    "en": "Firms and households, input and output markets, demand, supply and market equilibrium."
+  },
+  "languages": [
+    "en"
+  ],
+  "defaultLanguage": "en",
+  "date": "2026-11-20",
+  "duration": 4230,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Mary Kay Ash was one of the first individuals who sold cosmetics directly to customers via independent sales representatives. The company founded by Mary Kay is now one of the largest and most successful cosmetics companies in the world. Mary Kay Ash would be classified as a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "entrepreneur."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "opportunist."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "monopolist."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "socialist."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Organizations that transform resources into products are known as"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "firms."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "entrepreneurs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "households."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "factors."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "An entrepreneur is a person who"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "assumes the risk of a firm."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "organizes and manages a firm."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "turns a new idea or product into a business."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Firms engage in production to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "develop a supply schedule."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "participate in the circular flow."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "acquire profits."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "assume risk."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Economists would classify the New York Mets as a firm."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Firms are the consuming units of the economy."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Entrepreneurs are necessary in a market economy and their profit is earned."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In factor or input markets"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "consumers purchase products."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "firms supply goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "firms demand resources"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "households demand goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Resources are exchanged in ________ markets."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "product"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "factor"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "exchange rate"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "stock"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consumers purchase products in ________ markets."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "output"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "factor"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "resource"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "input"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Inputs are traded in the factor market."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Households are paid income for the resources they supply in an output market."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Labor is demanded by firms in an input market."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Income ________ along the demand curve."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is held constant"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "either increases or decreases"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following will NOT cause a shift in the demand curve for DVDs?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a change in income"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a change in wealth"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a change in the price of prerecorded VHS tapes"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a change in the price of DVDs"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The law of ________ implies that as prices fall, ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand; demand increases"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; demand falls"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; quantity demanded increases"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "supply; supply increases"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "According to the law of demand, quantity demanded increases as ________, ceteris paribus."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "prices rise"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "prices fall"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand increases"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand decreases"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "According to the law of demand there is negative relationship between ________ and ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price; demand"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity; income"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price; income"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price; quantity demanded"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As an individual consumes ________ of a product within a given period of time, it is likely that each additional unit consumed will yield ________ satisfaction."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "more; successively more"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "more; successively less"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "more; no additional"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "less; negative"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.1. Which of the following would be most likely to cause the demand for Dr. Pepper to shift from D0 to D1?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in income, assuming that Dr. Pepper is a normal good"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the price of 7-UP, assuming 7-UP is a substitute for Dr. Pepper"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an increase in the price of Dr. Pepper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the price of sugar used to make Dr. Pepper"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.1</b> The demand curve for Dr. Pepper shifts from D0 to D1. Horizontal axis: bottles of Dr. Pepper per week. Vertical axis: price per bottle."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D0"
+                }
+              },
+              {
+                "expr": "7 - x",
+                "name": {
+                  "en": "D1"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.2. Which of the following would be most likely to cause the demand for macaroni and cheese to shift from D0 to D1?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the price of macaroni and cheese"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the price of flour used to make macaroni and cheese"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in income, assuming macaroni and cheese is a normal good"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an increase in the quantity demanded for macaroni and cheese"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.2</b> Demand for macaroni and cheese: D0 and D1. Horizontal axis: cartons of macaroni and cheese. Vertical axis: price."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D0"
+                }
+              },
+              {
+                "expr": "7 - x",
+                "name": {
+                  "en": "D1"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If the demand for mac and cheese decreases as income increases, mac and cheese is a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "complementary good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "substitute good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If the demand for green tea increases as income increases, green tea is a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "complementary good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "substitute good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.3. As your income decreased, the demand for X shifted from D1 to D2. Good X is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an inferior good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a luxury good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an income-neutral good."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.3</b> The demand curve for good X shifts from D1 to D2. Horizontal axis: units of good X. Vertical axis: price per unit."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "7 - x",
+                "name": {
+                  "en": "D2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.4. If consumer income increases, the demand for tuna fish sandwiches shifts from D0 to D1. This implies that tuna fish sandwiches are a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "substitute good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "complementary good."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.4</b> The demand curve for tuna fish sandwiches shifts from D0 to D1. Horizontal axis: tuna fish sandwiches per week. Vertical axis: price per sandwich."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "7 - x",
+                "name": {
+                  "en": "D0"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D1"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.5. If consumer income decreases, the demand for chili peppers shifts from D0 to D1. This implies that chili peppers are a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "substitute good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "complementary good."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.5</b> Demand for chili peppers: D0 and D1. Horizontal axis: number of chili peppers. Vertical axis: price."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D0"
+                }
+              },
+              {
+                "expr": "7 - x",
+                "name": {
+                  "en": "D1"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose the demand for lawnmowers goes down when the price of gasoline goes up. We can say that these two goods are"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "complements."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "substitutes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unrelated goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "perfect substitutes."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "During an economic upturn when consumer income rises, the demand for caviar increases and the demand for hummus decreases. This implies that caviar"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "and hummus are complements."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is a normal good and hummus is an inferior good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is an inferior good and hummus is a normal good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is an economic bad and hummus is an economic good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A good whose demand is directly related to income is a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "regular good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "new good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In college you could barely afford to dine in restaurants. Now you earn $80,000 a year. and dine out at least three times per week. We can safely conclude that you consider restaurant meals to be a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "normal good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inferior good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "substitute good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "complementary good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "For inferior goods, demand will fall when"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "income increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "income decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price decreases."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When the increase in the price of one good causes the demand for another good to decrease, the goods are"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "normal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "inferior."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "substitutes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "complements."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "An increase in demand for laptop computers would likely be caused by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the price of a substitute good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an increase in the price of laptop computers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the price of a complementary good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the price of laptop computers."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Demand for one item goes down when the price of another item goes down. These items must be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "substitutes."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "complements."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "normal goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "inferior goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In response to news reports that drinking a glass of red wine each day can reduce an individual's risk of heart disease, there will most likely be a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increase in the demand for red wine."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decrease in the supply of red wine."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in the supply of red wine."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in the quantity demanded of red wine."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "________ curves are derived while holding constant income, tastes, and the prices of other goods."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Distribution"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Production"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Demand"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Supply"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The quantity demanded of Coca Cola has increased. The best explanation for this is that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the price of Pepsi has decreased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Coca Cola has instituted a new, successful advertising campaign."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of Coca Cola has decreased."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Coca Cola consumers had an increase in income."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.6. The number of DVDs Isabel rents per week decreases from 7 to 4. This is caused by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a decrease in income if DVDs are a normal good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the price of popcorn which is a complement to DVDs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the rental price of DVDs."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in the cable price of pay-per-view movies."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.6</b> Isabel's demand for rented DVDs. Horizontal axis: DVDs rented per week. Vertical axis: rental price of DVDs ($). The price axis has no numbers; the prices below only show that A is higher than B."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>DVDs per week</th><th>Rental price</th></tr><tr><td>A</td><td>4</td><td>6</td></tr><tr><td>B</td><td>7</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A change in the ________ of a good or service leads to a change in ________ that leads to a ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "supply; demand; change in price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; quantity demanded; change in supply"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price; quantity demanded; movement along the demand curve"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "quantity; supply; change in demand"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A change in ________ leads to a change in demand that causes a ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "income or price of other goods; shift in the demand curve"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "income or price of other goods; movement along the demand curve"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of the original product; shift of the demand curve"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "income or price of the original product; movement along the demand curve"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. Assume the market is initially at Point B and that pizza is a normal good. An increase in income would cause the market to move from Point B on demand curve D2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A on demand curve D2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point C on demand curve D2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve D1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve D3."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. If pizza and beer are complementary goods, an increase in the price of beer will cause a movement from Point B on demand curve D2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve D1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand curve D3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point A on demand curve D2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point C on demand curve D2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. If pizza and burritos are substitutes, a decrease in the price of burritos will cause a movement from Point B on demand curve D2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve D1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand curve D3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point A on demand curve D2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point C on demand curve D2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. A movement from Point A to Point B on demand curve D2 would be caused by a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decrease in income, assuming pizza is a normal good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease in the price of burritos, assuming that pizza and burritos are substitutes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease in the price of pizza."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase in the price of pizza."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. An increase in demand is represented by the movement"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "from D2 to D1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "from D2 to D3."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "along D2 from Point B to Point A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "along D2 from Point B to Point C."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.7. A decrease in quantity demanded is represented by movement"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "from D2 to D1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "from D2 to D3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "along D2 from Point B to Point A."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "along D2 from Point B to Point C."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.7</b> Horizontal axis: number of pizzas per month. Vertical axis: price of pizza. Points A, B and C are on D2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Pizzas</th><th>Price</th></tr><tr><td>A</td><td>2.5</td><td>5.5</td></tr><tr><td>B</td><td>3.5</td><td>4.5</td></tr><tr><td>C</td><td>5</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.8. Assume that there are only two people in the market for baseball caps: Alex and Ryan. Along the ________ for baseball caps, at a price of $10, quantity demanded would be 11."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve for Alex"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve for Ryan"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market demand curve"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.8</b> Demand for baseball caps by Alex and Ryan. Horizontal axis: baseball caps. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "15 - x",
+                "name": {
+                  "en": "Alex's demand"
+                }
+              },
+              {
+                "expr": "22 - 2*x",
+                "name": {
+                  "en": "Ryan's demand"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 16
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Alex's quantity demanded</th><th>Ryan's quantity demanded</th></tr><tr><td>10</td><td>5</td><td>6</td></tr><tr><td>8</td><td>7</td><td>7</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.8. Assume there are only two people in the market for baseball caps: Alex and Ryan. Along the ________, at a price of $8, quantity demanded would be 14."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve for Alex"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve for Ryan"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market demand curve"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.8</b> Demand for baseball caps by Alex and Ryan. Horizontal axis: baseball caps. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "15 - x",
+                "name": {
+                  "en": "Alex's demand"
+                }
+              },
+              {
+                "expr": "22 - 2*x",
+                "name": {
+                  "en": "Ryan's demand"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 16
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Alex's quantity demanded</th><th>Ryan's quantity demanded</th></tr><tr><td>10</td><td>5</td><td>6</td></tr><tr><td>8</td><td>7</td><td>7</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.9. Assume that there are only two people in the market for coconuts: Sasha and Kyle. Along the ________ for coconuts, at a price of $14, quantity demanded would be 7."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve for Sasha"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve for Kyle"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market demand curve"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.9</b> Demand for coconuts by Sasha and Kyle. Horizontal axis: coconuts. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20 - 2*x",
+                "name": {
+                  "en": "Sasha's demand"
+                }
+              },
+              {
+                "expr": "30 - 4*x",
+                "name": {
+                  "en": "Kyle's demand"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Sasha's quantity demanded</th><th>Kyle's quantity demanded</th></tr><tr><td>14</td><td>3</td><td>4</td></tr><tr><td>10</td><td>5</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.9. Assume there are only two people in the market for coconuts: Sasha and Kyle. Along the ________, at a price of $10, quantity demanded would be 10."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand curve for Sasha"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand curve for Kyle"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market demand curve"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.9</b> Demand for coconuts by Sasha and Kyle. Horizontal axis: coconuts. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20 - 2*x",
+                "name": {
+                  "en": "Sasha's demand"
+                }
+              },
+              {
+                "expr": "30 - 4*x",
+                "name": {
+                  "en": "Kyle's demand"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Sasha's quantity demanded</th><th>Kyle's quantity demanded</th></tr><tr><td>14</td><td>3</td><td>4</td></tr><tr><td>10</td><td>5</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.1. Most plasma TVs sold in the United States are imported from Japan. If the United States government reduces the number of plasma TVs that can be imported into the United States, ceteris paribus, what would happen?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "The price of plasma TVs and the rental price of DVDs would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The price of plasma TVs and the rental price of DVDs would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The price of plasma TVs would decrease and the rental price of DVDs would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The price of plasma TVs would increase and the rental price of DVDs would decrease."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.1</b> Rented DVDs and movies shown in theaters are substitutes. Rented DVDs and plasma TVs are complements. Plasma TVs and movies shown in theaters are normal goods."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.1. In response to complaints from movie theater owners, the government removes an entertainment tax on movie tickets, but there are no additional taxes levied on rented DVDs. This would lead to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a decrease in the price of movie tickets, but no change in the rental price of DVDs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the price of a movie ticket and an increase in the rental price of DVDs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the price of movie tickets and the rental price of DVDs."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "no change in the price of a movie ticket and a decrease in the rental price of DVDs."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.1</b> Rented DVDs and movies shown in theaters are substitutes. Rented DVDs and plasma TVs are complements. Plasma TVs and movies shown in theaters are normal goods."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.1. You observe that the rental price for DVDs is higher in the summer than in the winter. This would be explained by the fact that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the quantity demanded of rented DVDs is higher in the summer than in the winter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there are more DVDs released into the rental market in the summer than in the winter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand for rented DVDs is higher in the summer than in the winter."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the supply of rented DVDs is higher in the summer than in the winter."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.1</b> Rented DVDs and movies shown in theaters are substitutes. Rented DVDs and plasma TVs are complements. Plasma TVs and movies shown in theaters are normal goods."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.1. If the number of stores renting DVDs increases by 10%, which of the following would occur?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "The rental price of DVDs would increase and the price of plasma TVs and movie tickets would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The rental price of DVDs and the price of movie tickets would decrease, but the price of plasma TVs would increase."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "The rental price of DVDs and the price of movie tickets would increase, but the price of plasma TVs would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The rental price of DVDs would increase, but the price of plasma TVs and movie tickets would be unaffected."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.1</b> Rented DVDs and movies shown in theaters are substitutes. Rented DVDs and plasma TVs are complements. Plasma TVs and movies shown in theaters are normal goods."
+          }
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Wealth is a stock measure."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "A change in the price of a good or service leads to a change in the demand of the good."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Quantity demanded is determined by how much consumers are willing to pay for the good or service."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Supply is determined by how much suppliers are willing and able to produce."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "Inferior goods are also known as substitute goods."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "If french fries and ketchup are complements, then an increase in the price of french fries will result in an increase in the demand for ketchup."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "According to the law of ________, there is a positive relationship between price and ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "supply; the change in supply"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply; the quantity supplied"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand; quantity demanded"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; change in demand"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The price of circuit boards used in the manufacturing of LCD televisions has fallen. This will lead to ________ LCD televisions."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the supply of"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in the supply of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the quantity supplied of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the quantity supplied of"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If the price of spinach decreases, there will be ________ of spinach enchiladas."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the supply"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in the supply"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the quantity supplied"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the quantity supplied"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "An electronics manufacturer can produce either MP3 players or cell phones. As the result of a decrease in the price of cell phones, the firm produces more MP3 players and fewer cell phones. An economist would explain this by saying"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the supply of cell phones increased and the supply of MP3 players decreased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there has been an increase in the quantity supplied of cell phones and a decrease in the quantity supplied of MP3 players."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there has been a decrease in the quantity supplied of cell phones and an increase in the supply of MP3 players."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the supply of cell phones increased and the quantity supplied of MP3 players decreased."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.14. An increase in the wage rate of pizza makers will cause a movement from Point B on supply curve S2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply curve S3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply curve S1."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.14</b> Horizontal axis: number of pizzas per week. Vertical axis: price of pizza. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.14. A decrease in supply is represented by the movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "S2 to S3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "S2 to S1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Point B to Point A along supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point C along supply curve S2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.14</b> Horizontal axis: number of pizzas per week. Vertical axis: price of pizza. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.14. An increase in quantity supplied is represented by a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "S2 to S3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "S2 to S1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point A along supply curve S2."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Point B to Point C along supply curve S2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.14</b> Horizontal axis: number of pizzas per week. Vertical axis: price of pizza. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.14. A decrease in the price of pizza sauce will cause a movement from Point B on supply curve S2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "supply curve S3."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "supply curve S1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point A on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point C on supply curve S2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.14</b> Horizontal axis: number of pizzas per week. Vertical axis: price of pizza. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.14. A movement from Point C to Point B on supply curve S2 would be caused by a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decrease in the price of pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease in the price of pizza dough."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in the demand for pizza."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase in the price of hamburgers, assuming hamburgers are a substitute for pizza."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.14</b> Horizontal axis: number of pizzas per week. Vertical axis: price of pizza. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.15. A decrease in the wage rate of cheeseburger makers will cause a movement from Point B on supply curve S2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply curve S3."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "supply curve S1."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.15</b> Horizontal axis: number of cheeseburgers. Vertical axis: price of cheeseburgers. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.15. An increase in supply is represented by the movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "S2 to S3."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "S2 to S1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point A along supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point C along supply curve S2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.15</b> Horizontal axis: number of cheeseburgers. Vertical axis: price of cheeseburgers. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.15. A decrease in quantity supplied is represented by a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "S2 to S1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "S2 to S3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point A along supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point C along supply curve S2."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.15</b> Horizontal axis: number of cheeseburgers. Vertical axis: price of cheeseburgers. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.15. An increase in the price of tomatoes (an input for cheeseburgers) will cause a movement from Point B on supply curve S2 to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "supply curve S3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply curve S1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Point A on supply curve S2."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point C on supply curve S2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.15</b> Horizontal axis: number of cheeseburgers. Vertical axis: price of cheeseburgers. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.15. A movement from Point A to Point B on supply curve S2 would be caused by a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increase in the price of cheeseburgers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease in the demand for cheeseburgers."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase in the price of tomatoes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in the price of hamburgers, assuming hamburgers are a substitute for pizza."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.15</b> Horizontal axis: number of cheeseburgers. Vertical axis: price of cheeseburgers. Points A, B and C are on S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x + 2.5",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              },
+              {
+                "expr": "x - 0.5",
+                "name": {
+                  "en": "S3"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>4</td><td>5</td></tr><tr><td>B</td><td>3</td><td>4</td></tr><tr><td>C</td><td>2</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The change in the ________ of a good leads to a change in ________, which leads to a ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price; quantity supplied; movement along a supply curve"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "quantity; supply; change in demand"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply; demand; change in price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; quantity demanded; supply"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.16. The supply of curve for hula hoops shifts from S1 to S0. This could be caused by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a decrease in the price of hula hoops."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the number of firms selling hula hoops."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the demand for hula hoops."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the cost of producing hula hoops."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.16</b> Supply of hula hoops: S1 and S0. Horizontal axis: number of hula hoops per week. Vertical axis: price per hula hoop."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "0.5*x + 3",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.7*x + 0.5",
+                "name": {
+                  "en": "S0"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.11. Assume hamburgers are a normal good. A decrease in income will cause a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A to Point B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point G to Point F."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D2 to D1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "S2 to S1."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.11</b> Two graphs of the hamburger market. Horizontal axis: hamburgers per month. Vertical axis: price per hamburger. Left graph: demand curves D1 and D2, with points A and B on D1. Right graph: supply curves S1 and S2, with points F and G on S1."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "7 - 1.5*x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "9 - 1.5*x",
+                "name": {
+                  "en": "D2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>A</td><td>1.5</td><td>4.75</td></tr><tr><td>B</td><td>2.2</td><td>3.7</td></tr></table>"
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "0.6*x + 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6*x + 2.5",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>F</td><td>3</td><td>2.8</td></tr><tr><td>G</td><td>5.5</td><td>4.3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.11. Assume hamburgers and hot dogs are substitutes. An increase in the price of hot dogs will cause a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point B to Point A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point F to Point G."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D2 to D1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D1 to D2."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.11</b> Two graphs of the hamburger market. Horizontal axis: hamburgers per month. Vertical axis: price per hamburger. Left graph: demand curves D1 and D2, with points A and B on D1. Right graph: supply curves S1 and S2, with points F and G on S1."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "7 - 1.5*x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "9 - 1.5*x",
+                "name": {
+                  "en": "D2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>A</td><td>1.5</td><td>4.75</td></tr><tr><td>B</td><td>2.2</td><td>3.7</td></tr></table>"
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "0.6*x + 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6*x + 2.5",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>F</td><td>3</td><td>2.8</td></tr><tr><td>G</td><td>5.5</td><td>4.3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.11. Assume hamburgers and french fries are complements. An increase in the price of french fries will cause a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A to Point B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point B to Point A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D2 to D1."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "D1 to D2."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.11</b> Two graphs of the hamburger market. Horizontal axis: hamburgers per month. Vertical axis: price per hamburger. Left graph: demand curves D1 and D2, with points A and B on D1. Right graph: supply curves S1 and S2, with points F and G on S1."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "7 - 1.5*x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "9 - 1.5*x",
+                "name": {
+                  "en": "D2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>A</td><td>1.5</td><td>4.75</td></tr><tr><td>B</td><td>2.2</td><td>3.7</td></tr></table>"
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "0.6*x + 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6*x + 2.5",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>F</td><td>3</td><td>2.8</td></tr><tr><td>G</td><td>5.5</td><td>4.3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.11. A decrease in the number of cattle ranchers will cause a movement from"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Point A to Point B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Point G to Point F."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D2 to D1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "S1 to S2."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.11</b> Two graphs of the hamburger market. Horizontal axis: hamburgers per month. Vertical axis: price per hamburger. Left graph: demand curves D1 and D2, with points A and B on D1. Right graph: supply curves S1 and S2, with points F and G on S1."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "7 - 1.5*x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "9 - 1.5*x",
+                "name": {
+                  "en": "D2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>A</td><td>1.5</td><td>4.75</td></tr><tr><td>B</td><td>2.2</td><td>3.7</td></tr></table>"
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "0.6*x + 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6*x + 2.5",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Hamburgers</th><th>Price</th></tr><tr><td>F</td><td>3</td><td>2.8</td></tr><tr><td>G</td><td>5.5</td><td>4.3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "A movement along the supply curve is caused by a change in a good's own price."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "A technological advance in the production of digital video recorders will cause them to become less expensive."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "An increase in the wage rate of diamond cutters will increase the supply of cut diamonds."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When quantity demanded equals quantity supplied"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "there must be no government intervention in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the demand curve must be the same as the supply curve."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the market is in equilibrium."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. This market will be in equilibrium if the quantity of pizzas supplied per month is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "700."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "750."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "800."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "900."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. If the price per pizza is $3, the price will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "remain constant because the market is in equilibrium."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess supply in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess demand in the market."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess supply in the market."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. If the price per pizza is $6, there is a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "excess supply of 1,000 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "excess demand of 200 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "excess demand of 300 units."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "excess supply of 700 units."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. If the price per pizza is $12, there is an excess"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand of 400 pizzas."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand of 600 pizzas."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of 300 pizzas."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "supply of 900 pizzas."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. In this market there will be an excess demand of 600 pizzas at a price of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$3."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$6."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$12."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$15."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. In this market there will be an excess supply of 600 pizzas at a price of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$12."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$15."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.1. If the price per pizza is $9, the price will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "remain constant because the market is in equilibrium."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess demand in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess supply in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess supply in the market."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per pizza</th><th>Quantity demanded (pizzas per month)</th><th>Quantity supplied (pizzas per month)</th></tr><tr><td>$3</td><td>1,200</td><td>600</td></tr><tr><td>$6</td><td>1,000</td><td>700</td></tr><tr><td>$9</td><td>800</td><td>800</td></tr><tr><td>$12</td><td>600</td><td>900</td></tr><tr><td>$15</td><td>400</td><td>1,000</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. This market will be in equilibrium if the quantity of cheeseburgers demanded is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "300."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "600."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "900."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1,200."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. If the price per cheeseburger is $5, the price will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "remain constant because the market is in equilibrium."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess demand in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess demand in the market."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess supply in the market."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. If the price per cheeseburger is $6, there is a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "market equilibrium."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "excess demand of 1,000 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "excess demand of 500 units."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "excess supply of 700 units."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. If the price per cheeseburger is $8, there is an excess"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand of 600 cheeseburgers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of 500 cheeseburgers."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand of 300 cheeseburgers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of 1,100 cheeseburgers."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. In this market there will be an excess demand of 500 cheeseburgers at a price of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$5."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$7."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$8."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. In this market there will be an excess supply of 1,000 cheeseburgers at a price of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$5."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$9."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 3.2. If the price per cheeseburger is $8, the price will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "remain constant because the market is in equilibrium."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess demand in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase because there is an excess supply in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease because there is an excess supply in the market."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 3.2</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price per cheeseburger</th><th>Quantity demanded (cheeseburgers per month)</th><th>Quantity supplied (cheeseburgers per month)</th></tr><tr><td>$5</td><td>1,500</td><td>500</td></tr><tr><td>$6</td><td>1,200</td><td>700</td></tr><tr><td>$7</td><td>900</td><td>900</td></tr><tr><td>$8</td><td>600</td><td>1,100</td></tr><tr><td>$9</td><td>300</td><td>1,300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When there is an excess demand of a product in an unregulated market, the tendency is for"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price to rise."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "price to decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity supplied to decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity demanded to increase."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.17. The market for sunglasses ________ at a price of $60 and a quantity of 450 sunglasses."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "has a surplus"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has a shortage"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is in equilibrium"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "cannot remain in business"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.17</b> Market for sunglasses. Horizontal axis: sunglasses. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "105 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.2*x - 30",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 900,
+            "yMin": 0,
+            "yMax": 120
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity demanded</th><th>Quantity supplied</th></tr><tr><td>90</td><td>150</td><td>600</td></tr><tr><td>60</td><td>450</td><td>450</td></tr><tr><td>30</td><td>750</td><td>300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.17. At a quantity demanded of 750, there is an excess"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand of 450 sunglasses if the price is $60."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand of 450 sunglasses if the price is $30."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand of 300 sunglasses if the price is $60."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of 300 sunglasses if the price is $30."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.17</b> Market for sunglasses. Horizontal axis: sunglasses. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "105 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.2*x - 30",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 900,
+            "yMin": 0,
+            "yMax": 120
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity demanded</th><th>Quantity supplied</th></tr><tr><td>90</td><td>150</td><td>600</td></tr><tr><td>60</td><td>450</td><td>450</td></tr><tr><td>30</td><td>750</td><td>300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.17. If this market is unregulated and the price is currently $30, you would expect that the price"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "of sunglasses would remain at $30, because firms would not want to increase the price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "of sunglasses would rise to $90, so the firm could meet its excess demand."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "of sunglasses would rise to $60, where quantity demanded equals quantity supplied."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "of sunglasses would rise, but the new price is indeterminate from the information provided."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.17</b> Market for sunglasses. Horizontal axis: sunglasses. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "105 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.2*x - 30",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 900,
+            "yMin": 0,
+            "yMax": 120
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity demanded</th><th>Quantity supplied</th></tr><tr><td>90</td><td>150</td><td>600</td></tr><tr><td>60</td><td>450</td><td>450</td></tr><tr><td>30</td><td>750</td><td>300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.17. At a price of $60, there is an excess"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand of 150 sunglasses."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of 300 sunglasses."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand of 300 sunglasses."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of zero sunglasses."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.17</b> Market for sunglasses. Horizontal axis: sunglasses. Vertical axis: price ($)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "105 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.2*x - 30",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 900,
+            "yMin": 0,
+            "yMax": 120
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity demanded</th><th>Quantity supplied</th></tr><tr><td>90</td><td>150</td><td>600</td></tr><tr><td>60</td><td>450</td><td>450</td></tr><tr><td>30</td><td>750</td><td>300</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When there is a surplus of a product in an unregulated market, there is a tendency for"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price to rise."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price to fall."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "quantity demanded to increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity supplied to decrease."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If the market for blue tooth headsets is unregulated and is presently characterized by excess demand, you can accurately predict that price will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increase, the quantity demanded will fall, and the quantity supplied will rise."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase, the quantity demanded will rise, and the quantity supplied will fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease, the quantity demanded will rise, and the quantity supplied will fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease, the quantity demanded will fall, and the quantity supplied will rise."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Cell phones and blue tooth headsets are complements. An increase in the price of blue tooth headsets would cause which of the following in the market for cell phones?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "The equilibrium price and quantity of cell phones would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The equilibrium price and quantity of cell phones would decrease."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "The equilibrium price of cell phones would increase and the equilibrium quantity would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The equilibrium price of cell phones would decrease and the equilibrium quantity would increase."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose that Palm Pilots are a normal good. If the income of Palm Pilot users decreases, you predict that in the market for Palm Pilots"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "both equilibrium price and quantity will fall."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "both equilibrium price and quantity will increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equilibrium price will increase and quantity will decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equilibrium price will fall but quantity will increase."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.18. The current quantity of bags of pretzels supplied is 100. You accurately predict that in this market"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price tends to remain constant and quantity supplied increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price, quantity demanded, and quantity supplied decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price and quantity supplied decrease and quantity demanded increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "price and quantity demanded increase and quantity supplied decreases."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.18</b> Market for pretzels. Horizontal axis: bags of pretzels per week. Vertical axis: price per bag ($). At a price of $1.10, quantity demanded is 75 and quantity supplied is 100."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "2.6 - 0.02*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.04*x - 2.9",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 130,
+            "yMin": 0,
+            "yMax": 2
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When Hurricane Katrina hit Louisiana in 2005, approximately half of the sugar cane crop was destroyed. Ceteris paribus"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the demand for sugar decreased and the price of sugar decreased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the supply of sugar decreased and the price of sugar increased."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the supply of sugar decreased and the price of sugar decreased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the demand for sugar increased and the price of sugar increased."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Bacon is used to produce bacon cheeseburgers, and the price of bacon decreases. In the market for bacon cheeseburgers you would expect that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the demand for bacon cheeseburgers would increase and the price of bacon cheeseburgers would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the demand for bacon cheeseburgers would decrease and the price of bacon cheeseburgers would fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the supply of bacon cheeseburgers would decrease and the price of bacon cheeseburgers would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the supply of bacon cheeseburgers would increase and the price of bacon cheeseburgers would decrease."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If increases in government regulations have increased the cost of producing gasoline- powered lawnmowers, you accurately predict that in the market for gasoline-powered lawnmowers, there will be a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decrease in the quantity supplied of gasoline-powered lawnmowers, a reduction in the price, and an increase in the quantity demanded."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease in the supply of gasoline-powered lawnmowers, an increase in the price, and a decrease in the quantity demanded."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decrease in the supply of gasoline-powered lawnmowers, an increase in the price, and a decrease in the demand."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in the supply of gasoline-powered lawnmowers, an increase in the price, and a decrease in the demand."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following will definitely occur when there is a simultaneous increase in demand and an increase in supply?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in equilibrium price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in equilibrium quantity"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium quantity"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A movement along the demand curve to the right may be caused by a(n)"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decrease in income."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase in supply."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "fall in the number of substitute goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "rise in the price of inputs."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following will definitely occur when there is a decrease in the supply of and an increase in demand for wireless speakers?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in equilibrium price"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in equilibrium quantity"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium quantity"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following will definitely occur when there is a decrease in demand for and an increase in supply of potato chips?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in equilibrium price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium price"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an increase in equilibrium quantity"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in equilibrium quantity"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A new fertilizer which greatly improves the corn crop yield is being widely used by corn farmers. You accurately predict that this"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "will shift the supply curve of corn to the right, the equilibrium price of corn will increase, and the demand for corn will fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will shift the supply curve of corn to the right, the equilibrium price of corn will decrease, and the quantity demanded of corn will increase."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "will shift the supply curve of corn to the left, the equilibrium price of corn will increase, and the quantity demanded of corn will decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will shift the supply curve of corn to the left, the equilibrium price of corn will increase, and the demand for corn will fall."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Pineapples and kumquats are substitute goods. A hurricane in Guatemala destroyed a good portion of the pineapple crop. Ceteris paribus"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the price of both pineapples and kumquats will increase."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the price of both pineapples and kumquats will fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of kumquats will increase and the price of pineapples will fall."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of kumquats will fall and the price of pineapples will increase."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.19. When the economy moves from Point C to Point A, there has been"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in demand and an increase in supply."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in demand and an increase in quantity supplied."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in quantity demanded and a decrease in supply."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in quantity demanded and an increase in supply."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.19</b> Horizontal axis: quantity. Vertical axis: price. Points: A is where D1 crosses S1, B where D2 crosses S1, C where D1 crosses S2, E where D2 crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "x - 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>3.5</td><td>2.5</td></tr><tr><td>B</td><td>4.5</td><td>3.5</td></tr><tr><td>C</td><td>2.5</td><td>3.5</td></tr><tr><td>E</td><td>3.5</td><td>4.5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.19. When the economy moves from Point C to Point E, there has been"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a decrease in supply and a decrease in quantity demanded."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in quantity supplied and a decrease in demand."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in supply and an increase in quantity demanded."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in demand and an increase in quantity supplied."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.19</b> Horizontal axis: quantity. Vertical axis: price. Points: A is where D1 crosses S1, B where D2 crosses S1, C where D1 crosses S2, E where D2 crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "x - 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>3.5</td><td>2.5</td></tr><tr><td>B</td><td>4.5</td><td>3.5</td></tr><tr><td>C</td><td>2.5</td><td>3.5</td></tr><tr><td>E</td><td>3.5</td><td>4.5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.19. When the economy moves from Point C to Point B, there has been"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in demand and an increase in supply."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in demand and a decrease in supply."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in demand and a decrease in supply."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in quantity demanded and an increase in quantity supplied."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.19</b> Horizontal axis: quantity. Vertical axis: price. Points: A is where D1 crosses S1, B where D2 crosses S1, C where D1 crosses S2, E where D2 crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "x - 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>3.5</td><td>2.5</td></tr><tr><td>B</td><td>4.5</td><td>3.5</td></tr><tr><td>C</td><td>2.5</td><td>3.5</td></tr><tr><td>E</td><td>3.5</td><td>4.5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.19. When the economy moves from Point B to Point A, there has been"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in supply and a decrease in quantity demanded."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in both supply and demand."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in demand and a decrease in quantity supplied."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in supply and an decrease in quantity demanded."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.19</b> Horizontal axis: quantity. Vertical axis: price. Points: A is where D1 crosses S1, B where D2 crosses S1, C where D1 crosses S2, E where D2 crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "D1"
+                }
+              },
+              {
+                "expr": "8 - x",
+                "name": {
+                  "en": "D2"
+                }
+              },
+              {
+                "expr": "x - 1",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "x + 1",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 7,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>3.5</td><td>2.5</td></tr><tr><td>B</td><td>4.5</td><td>3.5</td></tr><tr><td>C</td><td>2.5</td><td>3.5</td></tr><tr><td>E</td><td>3.5</td><td>4.5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.2. As a result of the recall, you would expect that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the supply of mustard would decrease, the price of mustard would increase, and the demand for mustard would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of mustard would increase, the supply of mustard would increase, and the quantity demanded of mustard would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the supply of mustard would decrease, the price of mustard would increase, and the quantity demanded of mustard would decrease."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the price of mustard would increase and both the quantity of mustard supplied and the quantity of mustard demanded would increase."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.2</b> Mustard and mayonnaise are substitutes. Mustard and relish are complements. Mustard is a normal good. During the summer, about 50% of all mustard was recalled by manufacturers and removed from store shelves."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.2. The mustard recall would have caused the equilibrium price of mayonnaise to ________ and the equilibrium quantity of mayonnaise to ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increase; increase"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increase; decrease"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease; increase"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease; decrease"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.2</b> Mustard and mayonnaise are substitutes. Mustard and relish are complements. Mustard is a normal good. During the summer, about 50% of all mustard was recalled by manufacturers and removed from store shelves."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.2. The mustard recall would have caused"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the demand for relish."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the quantity demanded of relish."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the demand for relish."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in the quantity demanded of relish."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.2</b> Mustard and mayonnaise are substitutes. Mustard and relish are complements. Mustard is a normal good. During the summer, about 50% of all mustard was recalled by manufacturers and removed from store shelves."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.2. If at the same time of the mustard recall, consumer income also decreased. Then, ceteris paribus, in the market for mustard this would have caused"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "both the equilibrium price and quantity to decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the equilibrium price to increase and the equilibrium quantity to decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the equilibrium price to either increase, decrease, or remain the same and the equilibrium quantity to decrease."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the equilibrium quantity could have increased, decreased, or remained the same and the equilibrium price to decrease."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.2</b> Mustard and mayonnaise are substitutes. Mustard and relish are complements. Mustard is a normal good. During the summer, about 50% of all mustard was recalled by manufacturers and removed from store shelves."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Scenario 3.2. The government wants to protect consumers from rising food prices. Therefore, price restrictions are imposed on mustard producers, prohibiting them from raising the price of mustard. This will cause"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an excess demand for mustard."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an excess supply of mustard."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the demand for mustard."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the supply of mustard."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Scenario 3.2</b> Mustard and mayonnaise are substitutes. Mustard and relish are complements. Mustard is a normal good. During the summer, about 50% of all mustard was recalled by manufacturers and removed from store shelves."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.10. If the current quantity demanded of rollerblades is 150 per week, you accurately predict that in this market"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price and quantity supplied will increase and quantity demanded will decrease."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "price and quantity supplied will decrease and quantity demanded will increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price, quantity supplied and quantity demanded will increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "price, quantity supplied and quantity demanded will decrease."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.10</b> Market for rollerblades. Horizontal axis: pairs of rollerblades per week. Vertical axis: price per pair ($). At a price of $1,140, quantity supplied is 50 and quantity demanded is 150."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "1440 - 2*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "4*x + 940",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 200,
+            "yMin": 0,
+            "yMax": 1600
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.12. The market is initially in equilibrium at Point A. If demand shifts from D1 to D2 and there is an excess demand of 150 million pounds of burritos, the price of burritos would be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1.50."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3.00."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$4.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6.00."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.12</b> Market for burritos. Horizontal axis: millions of pounds of burritos. Vertical axis: price ($). A is the equilibrium of D1 and S; B is the equilibrium of D2 and S. The table lists the quantities marked on the graph."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity on D1</th><th>Quantity on D2</th><th>Quantity on S</th></tr><tr><td>6.00</td><td></td><td>250</td><td></td></tr><tr><td>4.00</td><td>150</td><td>350 (B)</td><td>350 (B)</td></tr><tr><td>3.00</td><td>250 (A)</td><td>400</td><td>250 (A)</td></tr><tr><td>1.50</td><td>350</td><td></td><td>100</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.12. The market is initially in equilibrium at Point B. If demand shifts from D2 to D1 and there is an excess supply of 200 million pounds of burritos, the price of burritos would be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1.50."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$6.00."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.12</b> Market for burritos. Horizontal axis: millions of pounds of burritos. Vertical axis: price ($). A is the equilibrium of D1 and S; B is the equilibrium of D2 and S. The table lists the quantities marked on the graph."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity on D1</th><th>Quantity on D2</th><th>Quantity on S</th></tr><tr><td>6.00</td><td></td><td>250</td><td></td></tr><tr><td>4.00</td><td>150</td><td>350 (B)</td><td>350 (B)</td></tr><tr><td>3.00</td><td>250 (A)</td><td>400</td><td>250 (A)</td></tr><tr><td>1.50</td><td>350</td><td></td><td>100</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.12 The market is initially in equilibrium at Point A. If demand shifts from D1 to D2, the equilibrium price will change from ________ and the equilibrium quantity will change from ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$4.00 to $3.00; 250 to 350"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00 to $3.00; 350 to 250"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3.00 to $4.00; 250 to 350"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$3.00 to $4.00; 350 to 250"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.12</b> Market for burritos. Horizontal axis: millions of pounds of burritos. Vertical axis: price ($). A is the equilibrium of D1 and S; B is the equilibrium of D2 and S. The table lists the quantities marked on the graph."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity on D1</th><th>Quantity on D2</th><th>Quantity on S</th></tr><tr><td>6.00</td><td></td><td>250</td><td></td></tr><tr><td>4.00</td><td>150</td><td>350 (B)</td><td>350 (B)</td></tr><tr><td>3.00</td><td>250 (A)</td><td>400</td><td>250 (A)</td></tr><tr><td>1.50</td><td>350</td><td></td><td>100</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.12 The market is initially in equilibrium at Point B. If demand shifts from D2 to D1, the equilibrium price will change from ________ and the equilibrium quantity will change from ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$4.00 to $3.00; 250 to 350"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00 to $3.00; 350 to 250"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$3.00 to $4.00; 250 to 350"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3.00 to $4.00; 350 to 250"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.12</b> Market for burritos. Horizontal axis: millions of pounds of burritos. Vertical axis: price ($). A is the equilibrium of D1 and S; B is the equilibrium of D2 and S. The table lists the quantities marked on the graph."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($)</th><th>Quantity on D1</th><th>Quantity on D2</th><th>Quantity on S</th></tr><tr><td>6.00</td><td></td><td>250</td><td></td></tr><tr><td>4.00</td><td>150</td><td>350 (B)</td><td>350 (B)</td></tr><tr><td>3.00</td><td>250 (A)</td><td>400</td><td>250 (A)</td></tr><tr><td>1.50</td><td>350</td><td></td><td>100</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.13. The market is initially in equilibrium at Point A. If supply shifts from S1 to S2 and there is an excess demand of 6 cheeseburgers, the price of cheeseburgers will have"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "moved from $5.00 to $7.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "moved from $7.00 to $5.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "remained constant at $5.00."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "remained constant at $7.00."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.13</b> Market for cheeseburgers. Horizontal axis: cheeseburgers. Vertical axis: price ($). A = (10, $5) is where D crosses S1; B = (7, $7) is where D crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "-0.6667*x + 11.6667",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.6667*x - 1.6667",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6667*x + 2.3333",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 2,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 8
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.13. The market is initially in equilibrium at Point A. If supply shifts from S1 to S2, the equilibrium price will change from ________ and the equilibrium quantity will change from ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$5.00 to $7.00; 10 to 7."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$5.00 to $7.00; 4 to 7."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7.00 to $5.00; 7 to 4."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7.00 to $5.00; 7 to 10."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.13</b> Market for cheeseburgers. Horizontal axis: cheeseburgers. Vertical axis: price ($). A = (10, $5) is where D crosses S1; B = (7, $7) is where D crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "-0.6667*x + 11.6667",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.6667*x - 1.6667",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6667*x + 2.3333",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 2,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 8
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 3.13. The market is initially in equilibrium at Point B. If supply shifts from S2 to S1, the equilibrium price will change from ________ and the equilibrium quantity will change from ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$5.00 to $7.00; 10 to 7."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5.00 to $7.00; 4 to 7."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7.00 to $5.00; 7 to 4."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7.00 to $5.00; 7 to 10."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 3.13</b> Market for cheeseburgers. Horizontal axis: cheeseburgers. Vertical axis: price ($). A = (10, $5) is where D crosses S1; B = (7, $7) is where D crosses S2."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "-0.6667*x + 11.6667",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.6667*x - 1.6667",
+                "name": {
+                  "en": "S1"
+                }
+              },
+              {
+                "expr": "0.6667*x + 2.3333",
+                "name": {
+                  "en": "S2"
+                }
+              }
+            ],
+            "xMin": 2,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 8
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The freezing weather in California caused the curve for oranges to shift to the ________, increasing the equilibrium price and decreasing the equilibrium quantity of oranges."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "supply; right"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand; right"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply; left"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "demand; left"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The freezing weather in California decreased the supply of oranges. This would ________ apple juice, a substitute for orange juice."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increase the supply of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increase the demand for"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decrease the supply of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decrease the demand for"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "One explanation for the increase in the price of the Baltimore newspaper is the new, increased regard the citizens of Baltimore have for newspapers. This would cause the ________ Baltimore newspapers to ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "demand for; increase"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "quantity demanded of; increase"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "demand for; decrease"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity demanded of; decrease"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Assuming the demand for Baltimore newspapers increases while the supply of Baltimore newspapers decreases, the equilibrium will definitely ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price; increase"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "price; decrease"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity; increase"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "quantity; decrease"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "A decrease in demand for a product will cause the price of the product to rise and supply of the product to increase."
+      },
+      "points": 1,
+      "answer": false
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "A simultaneous increase in both the supply of and the demand for vitamin water would cause an increase in the equilibrium quantity of vitamin water."
+      },
+      "points": 1,
+      "answer": true
+    },
+    {
+      "type": "true_false",
+      "question": {
+        "en": "If price is below the equilibrium, then quantity supplied will be less than quantity demanded putting upward pressure on price."
+      },
+      "points": 1,
+      "answer": true
+    }
+  ]
+}

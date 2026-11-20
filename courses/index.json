@@ -270,7 +270,49 @@
         "sq": "Ekonomia për inxhinierët e TIK"
       },
       "semester": 3,
-      "color": "#059669"
+      "color": "#059669",
+      "topics": [
+        {
+          "id": "what-is-economics",
+          "title": {
+            "en": "Chapter 1: What Is Economics?",
+            "mk": "Поглавје 1: Што е економија?",
+            "sq": "Kapitulli 1: Çfarë është ekonomia?"
+          }
+        },
+        {
+          "id": "the-economic-problem",
+          "title": {
+            "en": "Chapter 2: The Economic Problem",
+            "mk": "Поглавје 2: Економскиот проблем",
+            "sq": "Kapitulli 2: Problemi ekonomik"
+          }
+        },
+        {
+          "id": "demand-supply-and-market-equilibrium",
+          "title": {
+            "en": "Chapter 3: Demand, Supply, and Market Equilibrium",
+            "mk": "Поглавје 3: Побарувачка, понуда и пазарна рамнотежа",
+            "sq": "Kapitulli 3: Kërkesa, oferta dhe ekuilibri i tregut"
+          }
+        },
+        {
+          "id": "elasticity",
+          "title": {
+            "en": "Chapter 4: Elasticity",
+            "mk": "Поглавје 4: Еластичност",
+            "sq": "Kapitulli 4: Elasticiteti"
+          }
+        },
+        {
+          "id": "efficiency-and-equity",
+          "title": {
+            "en": "Chapter 5: Efficiency and Equity",
+            "mk": "Поглавје 5: Ефикасност и праведност",
+            "sq": "Kapitulli 5: Efikasiteti dhe barazia"
+          }
+        }
+      ]
     },
     {
       "formatVersion": 1,

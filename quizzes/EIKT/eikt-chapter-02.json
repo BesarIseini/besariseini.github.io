@@ -1,0 +1,6526 @@
+{
+  "formatVersion": 1,
+  "key": "eikt-chapter-02",
+  "revision": 1,
+  "courseId": "EIKT",
+  "topicId": "the-economic-problem",
+  "category": "Lecture",
+  "title": {
+    "en": "Chapter 2: The Economic Problem"
+  },
+  "description": {
+    "en": "Production possibilities, opportunity cost, efficient use of resources, economic growth, gains from trade and economic coordination."
+  },
+  "languages": [
+    "en"
+  ],
+  "defaultLanguage": "en",
+  "date": "2026-11-20",
+  "duration": 4260,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The production possibilities frontier"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is the boundary between attainable and unattainable levels of production."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is the boundary between what we want to consume and what we want to produce."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shows how production increases as prices rise."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shows prices at which production is possible and impossible."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "illustrates why there need not be any scarcity in the world."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which one of the following concepts is not illustrated by a production possibilities frontier?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "scarcity"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "monetary exchange"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "opportunity cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "attainable and unattainable points"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the tradeoff between producing one good versus another"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A point inside a production possibilities frontier"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "indicates some unused or misallocated resources."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is unattainable."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is preferred to a point on the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "indicates a point of production efficiency."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "illustrates the idea of opportunity cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which one of the following concepts is illustrated by a production possibilities frontier?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "profit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumption"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "investment"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "monetary exchange"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the tradeoff between producing one good versus another"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If Sam is producing at a point inside his production possibilities frontier, then he"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "can increase production of both goods with zero opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is fully using all his resources and allocating his resources to their best use."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "must be doing the best he can with limited resources."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is unaffected by costs and technology."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has a high opportunity cost of moving from this point."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If Sam is producing at a point on his production possibilities frontier, then he"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "cannot produce any more of either good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is unaffected by costs and technology."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can produce more of both goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is not subject to scarcity."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can increase the production of one good only by decreasing the production of the other."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.1. Which one of the following is true about point A?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "It is unattainable."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "While no more of good Y can be produced, more of good X can be produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It is preferred to point B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Resources are either unused or misallocated or both."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "It is attainable only if the amount of capital goods is increased."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.1</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9*(max(0, 1-(x/9)^1.75))^(1/1.75)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>5</td><td>5</td></tr><tr><td>B</td><td>7</td><td>5</td></tr><tr><td>C</td><td>9</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Complete the following sentence. In Figure 2.1.1,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "movement from A to B would require a technological advance."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "point B is a point of production efficiency."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "some resources must be unused at point C."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the concept of decreasing opportunity cost is illustrated."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "movement from C to B would require a technological improvement."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.1</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9*(max(0, 1-(x/9)^1.75))^(1/1.75)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>5</td><td>5</td></tr><tr><td>B</td><td>7</td><td>5</td></tr><tr><td>C</td><td>9</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.1, which one of the following is true about point C?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "It is attainable only if we consume more of good X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It is unattainable."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "It is attainable only if we consume less of good Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It is attainable only if we consume less of good X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It is attainable only if we consume more of good Y."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.1</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9*(max(0, 1-(x/9)^1.75))^(1/1.75)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>5</td><td>5</td></tr><tr><td>B</td><td>7</td><td>5</td></tr><tr><td>C</td><td>9</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If Harold can increase production of good X without decreasing production of any other good, then Harold"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is producing on his production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is producing outside his production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is producing inside his production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "must have a linear production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "must prefer good X to any other good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If Harold must decrease production of some other good to increase production of good X, then Harold"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is producing on his production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is producing outside his production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is producing inside his production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "must prefer good X to any other good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has too few capital goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A situation in which resources are either unused or misallocated or both is represented in a production possibilities frontier diagram by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "any point on either the horizontal or the vertical axis."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point above or to the right of the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point outside the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point inside the production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a point on or inside the production possibilities frontier."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A production possibilities frontier is negatively sloped because"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "more goods are purchased as price falls."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "of opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "some resources are unused."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there is not enough capital in the economy."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "of increasing consumption."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Ted chooses to study for his economics exam instead of going to the concert. The concert he will miss is Ted's ________ of studying for the exam."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "monetary cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "absolute cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "opportunity cost"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "discretionary cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "comparative cost"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Opportunity cost of an action is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the best choice that can be made."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the highest-valued alternative forgone."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the money cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the comparative cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the absolute cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The concept of opportunity cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "cannot be explained by using a production possibilites frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "explains that goods are swapped for other goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "implies that when a person is more efficient in the production of one good, he should produce that good and exchange it for some good that he is relatively less efficient at producing."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "implies that a double coincidence of wants must be present for exchange to take place."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "implies that because productive resources are scarce, we must give up some of one good to acquire more of another."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "On a graph of a production possibilities frontier, opportunity cost is represented by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a point on the horizontal axis."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point on the vertical axis."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a ray through the origin."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the slope of the production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the x-axis intercept."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Production efficiency is achieved when"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the production possibilities frontier shifts outward at an even pace."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there are no more tradeoffs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "all resources are equally productive in all activities."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "resources are not equally productive in all activities."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we produce goods and services at the lowest possible cost."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A tradeoff exists when"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "we move from a point within the production possibilities frontier (PPF) to a point on the PPF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we move from a point on the PPF to a point within the PPF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the PPF shifts outward."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we move along the PPF."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the PPF shifts towards the origin."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following quotations best illustrates a tradeoff?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "\"If the firm reorganized its production process, it could produce more widgets and more gadgets.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"The firm should sell more gadgets, even if it means less widget sales.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"The more and more gadgets the firm produces, the bigger the fall in widget production.\""
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "\"If the firm invests more in capital equipment, it can expand sales next year.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"The firm has been able to lower costs due to its extensive experience in building widgets.\""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A medical clinic has 10 workers. Each worker can produce a maximum of either 2 units of medical services or 5 units of secretarial services a day. The production possibilities frontier of this firm would show"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increasing opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreasing opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "constant opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "zero opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "infinite opportunity cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A medical clinic has 10 workers. Each worker can produce a maximum of either 2 units of medical services or 5 units of secretarial services a day. The opportunity cost of one more unit of medical services is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "2 units of secretarial services."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "5 units of secretarial services."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0.4 units of secretarial services."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2.5 units of secretarial services"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "dependent on the level of services."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A medical clinic has 10 workers. Each worker can produce a maximum of either 2 units of medical services or 5 units of secretarial services a day. One day, the firm decides it would like to produce 10 units of medical services and 30 units of secretarial services. This output level is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "efficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unattainable."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "inefficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "costless."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is attainable if the firm reduces the number of its workers."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A medical clinic has 10 workers. Each worker can produce a maximum of either 2 units of medical services or 5 units of secretarial services a day. One day, the firm decides it would like to produce 16 units of medical services and 5 units of secretarial services. This output level is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "efficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unattainable."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "inefficient."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "costless."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "attainable and efficient."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The bowed-out (concave) shape of a production possibilities frontier"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is due to the equal usefulness of resources in all activities."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is due to capital accumulation."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is due to technological change."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "reflects the existence of increasing opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "reflects the existence of decreasing opportunity cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If opportunity costs are increasing, then the production possibilities frontier"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "will be bowed out and have a positive slope."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will be positively sloped."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will be linear and have a negative slope."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will be bowed out and have a negative slope."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "reflects the fact that available resources are equally useful in all production activities."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The fact that resources are not equally productive in all activities"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "implies that a production possibilities frontier will be bowed outward."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "implies that gains from specialization and trade are unlikely."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "follows from the law of demand."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "implies a linear production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "implies that an economy should not produce certain goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If additional units of any good could be produced at a constant opportunity cost, the production possibilities frontier would be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "bowed inward."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "bowed outward."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "positively sloped."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "negatively sloped."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "linear."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The existence of increasing opportunity cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "explains why specialization is frequently useful."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "explains why resources are scarce."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "explains the bowed-out shape of the production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "follows from the existence of property rights."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "explains why some societies produce inside their production possibilities frontier."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. If 6 units of X are currently being produced, then"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "40 units of Y cannot be produced unless production of X is decreased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "40 units of Y cannot be produced unless production of X is increased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "60 units of Y can be produced with some resources not fully used."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "50 units of Y must be produced, regardless of resource utilization."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "50 units of Y can be produced if all resources are used and assigned to the task for which they are the best match."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. Suppose that 50 units of Y are currently being produced. Then"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "7 units of X are being produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "6 units of X can be produced if all resources are used and assigned to the task for which they are the best match."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "9 units of X can be produced if all resources are used and assigned to the task for which they are the best match."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "resources are not being fully utilized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "6 units of X are being produced."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. At point A, the opportunity cost of producing 3 more units of X"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is 30 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is 3 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is 20 units of Y."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is 10 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "cannot be determined from the diagram."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. At point A, the opportunity cost of increasing production of Y to 80 units is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "10 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "80 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 units of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1 unit of X."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. At point C, the opportunity cost of producing one more unit of X is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "1 unit of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 unit of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20 units of Y."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.2. At point C, what is the opportunity cost of increasing the production of Y from 20 to 50 units?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "6 units of X"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 units of X"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "8 units of X"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20 units of Y"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "30 units of Y"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the production possibilities frontier in Figure 2.1.2, and assume that everything that is produced is also consumed. Which of the following statements is false?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Resources are not equally useful in all activities."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Points inside the frontier indicate unused or misallocated resources."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Starting at point A, an increase in the production of Y will shift the frontier outward."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "The opportunity cost of producing Y increases as production of Y increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The opportunity cost of producing X increases as production of X increases."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.2</b> Horizontal axis: good X. Vertical axis: good Y."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "80*(max(0, 1-(x/9)^1.59))^(1/1.59)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 90
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X</th><th>Good Y</th></tr><tr><td>A</td><td>3</td><td>70</td></tr><tr><td>B</td><td>6</td><td>50</td></tr><tr><td>C</td><td>8</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As we increase the production of X, we find we must give up larger and larger amounts of Y per unit of X. Select the best statement."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "This illustrates increasing opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "As a result, we should not specialize in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The production possibilities frontier for X and Y is a straight line."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Good Y will be more highly regarded by consumers than good X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "We must be inside the production possibilities frontier."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 2.1.3 illustrates Mary's production possibilities frontier. If Mary wants to move from point B to point C,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "it will be necessary to improve technology."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it will be necessary to increase the accumulation of capital."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it will be necessary to give up some of good X to obtain more of good Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it will be necessary to give up some of good Y to obtain more of good X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "she can accomplish this without any opportunity cost."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.3</b> Mary's production possibilities frontier. Horizontal axis: good X. Vertical axis: good Y. Points A to E lie on the frontier; moving from A to E, Y falls by 5 units at each step while the extra X gained at each step gets smaller."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20*(max(0, 1-(x/10)^2))^(1/2)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X (approx.)</th><th>Good Y</th></tr><tr><td>A</td><td>0</td><td>20</td></tr><tr><td>B</td><td>6.6</td><td>15</td></tr><tr><td>C</td><td>8.7</td><td>10</td></tr><tr><td>D</td><td>9.7</td><td>5</td></tr><tr><td>E</td><td>10</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 2.1.3 illustrates Mary's production possibilities frontier. If Mary wants to move from point D to point C,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "it will be necessary to improve technology."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it will be necessary to increase the accumulation of capital."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it will be necessary to give up some of good X to obtain more of good Y."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "it will be necessary to give up some of good Y to obtain more of good X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "she can accomplish this without any opportunity cost."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.3</b> Mary's production possibilities frontier. Horizontal axis: good X. Vertical axis: good Y. Points A to E lie on the frontier; moving from A to E, Y falls by 5 units at each step while the extra X gained at each step gets smaller."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20*(max(0, 1-(x/10)^2))^(1/2)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X (approx.)</th><th>Good Y</th></tr><tr><td>A</td><td>0</td><td>20</td></tr><tr><td>B</td><td>6.6</td><td>15</td></tr><tr><td>C</td><td>8.7</td><td>10</td></tr><tr><td>D</td><td>9.7</td><td>5</td></tr><tr><td>E</td><td>10</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.3. The opportunity cost of moving from C to B will be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "greater than moving from D to C but less than moving from B to A."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "less than moving from D to C but greater than moving from B to A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the same as moving from D to C or moving from B to A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "greater than moving either from D to C or from B to A."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "neither greater than moving from D to C nor moving from B to A."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.3</b> Mary's production possibilities frontier. Horizontal axis: good X. Vertical axis: good Y. Points A to E lie on the frontier; moving from A to E, Y falls by 5 units at each step while the extra X gained at each step gets smaller."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20*(max(0, 1-(x/10)^2))^(1/2)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X (approx.)</th><th>Good Y</th></tr><tr><td>A</td><td>0</td><td>20</td></tr><tr><td>B</td><td>6.6</td><td>15</td></tr><tr><td>C</td><td>8.7</td><td>10</td></tr><tr><td>D</td><td>9.7</td><td>5</td></tr><tr><td>E</td><td>10</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.3. The fact that less of X must be given up when moving from D to C than when moving from B to A indicates"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decreasing opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increasing opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "comparative advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the consequences of technological improvement."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unemployed resources at D."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.3</b> Mary's production possibilities frontier. Horizontal axis: good X. Vertical axis: good Y. Points A to E lie on the frontier; moving from A to E, Y falls by 5 units at each step while the extra X gained at each step gets smaller."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "20*(max(0, 1-(x/10)^2))^(1/2)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 22
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Good X (approx.)</th><th>Good Y</th></tr><tr><td>A</td><td>0</td><td>20</td></tr><tr><td>B</td><td>6.6</td><td>15</td></tr><tr><td>C</td><td>8.7</td><td>10</td></tr><tr><td>D</td><td>9.7</td><td>5</td></tr><tr><td>E</td><td>10</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.1. What does point C mean?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "If 8 units of X are produced, then at least 28 units of Y can be produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "If 8 units of X are produced, then at most 28 units of Y can be produced."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "If 28 units of Y are produced, then more than 8 units of X can be produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "If 8 units of X are produced, then only 36 units of Y can be produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "There is unemployment at this point."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.1. The opportunity cost of increasing the production of X from 8 to 12 units is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "4 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "4 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "12 units of Y."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "16 units of Y."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.1. The opportunity cost of increasing the production of Y from 16 to 36 units is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "4 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 units of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "12 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "16 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20 units of Y."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The economy illustrated by the data in Table 2.1.1 exhibits"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decreasing opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "constant opportunity cost in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "constant opportunity cost in the production of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increasing opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "initially increasing, then decreasing opportunity cost."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "From the data in Table 2.1.1, the production of 7 units of X and 28 units of Y is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "unattainable."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "attainable but leaves some resources unused or misallocated or both."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "on the PPF between points C and D."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "on the PPF between points B and C."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "outside the PPF."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.1. As we increase the production of X,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the amount of Y that is given up for each additional unit of X decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the output of Y increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of each additional unit of X increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "unemployment increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the amount of X increases at an increasing rate."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "From the data in Table 2.1.1 we can infer that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the economy illustrated has a comparative advantage in the production of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the economy illustrated has a comparative advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing an additional unit of Y increases as the production of Y increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing an additional unit of Y decreases as the production of Y increases."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The diagram of the production possibilities frontier corresponding to the data in Table 2.1.1 would be"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "negatively sloped and linear."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "negatively sloped and bowed inward."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "negatively sloped and bowed outward."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "positively sloped for X and negatively sloped for Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a horizontal line."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "From the data in Table 2.1.1, the production of 10 units of X and 28 units of Y is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "unattainable."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "attainable but leaves some resources misallocated."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "on the production possibilities frontier between points C and D."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "inside the PPF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "possible if we reduce the amount of capital goods."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.1</b> Points on the production possibilities frontier for goods X and Y."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Production of X</th><th>Production of Y</th></tr><tr><td>A</td><td>0</td><td>40</td></tr><tr><td>B</td><td>4</td><td>36</td></tr><tr><td>C</td><td>8</td><td>28</td></tr><tr><td>D</td><td>12</td><td>16</td></tr><tr><td>E</td><td>16</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.2. In moving from combination B to combination C, the opportunity cost of producing one additional unit of guns is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "2 kilograms of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/2 kilogram of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "6 kilograms of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/6 kilogram of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 kilograms of butter."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.2</b> Production possibilities"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Possibility</th><th>Kilograms of butter</th><th>Guns</th></tr><tr><td>A</td><td>8</td><td>0</td></tr><tr><td>B</td><td>6</td><td>1</td></tr><tr><td>C</td><td>0</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.2. According to this production possibilities frontier,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a combination of 6 kilograms of butter and 1 gun leaves some resources unused."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a combination of 0 butter and 4 guns is attainable."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "resources are equally useful in all activities."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing guns increases as more guns are produced."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing guns decreases as more guns are produced."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.2</b> Production possibilities"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Possibility</th><th>Kilograms of butter</th><th>Guns</th></tr><tr><td>A</td><td>8</td><td>0</td></tr><tr><td>B</td><td>6</td><td>1</td></tr><tr><td>C</td><td>0</td><td>3</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.3. In moving from combination C to combination B, the opportunity cost of producing one additional hockey stick is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "2 maple leaves."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/2 maple leaves."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "6 maple leaves."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/6 maple leaves."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 maple leaves."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.3</b> Production possibilities for a society that produces only two goods: hockey sticks and maple leaves."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Possibility</th><th>Units of hockey sticks</th><th>Units of maple leaves</th></tr><tr><td>A</td><td>3</td><td>0</td></tr><tr><td>B</td><td>2</td><td>3</td></tr><tr><td>C</td><td>0</td><td>9</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.1.4. Complete the following sentence. The production possibilities frontier in the table shows"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increasing opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "learning-by-doing."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "constant opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "under-utilization of resources."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreasing opportunity cost."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.1.4</b> Production possibilities for A. Student for a typical week."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Possibility</th><th>Beer</th><th>Pizza</th></tr><tr><td>a</td><td>14 cases</td><td>0</td></tr><tr><td>b</td><td>12 cases</td><td>6</td></tr><tr><td>c</td><td>9 cases</td><td>11</td></tr><tr><td>d</td><td>5 cases</td><td>14</td></tr><tr><td>e</td><td>0 cases</td><td>15</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The slope of the production possibilities frontier curve indicates"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "opportunity cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "comparative advantage."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "absolute advantage."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "preferences."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As we move down the bowed-out production possibilities frontier, opportunity cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "remains constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "initially decreases, then increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases but at an increasing rate."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.1.4. Which point is unattainable?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "B"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "E"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.4</b> Horizontal axis: consumption goods per person. Vertical axis: capital goods per person. The axes have no numbers; A, B and C are on the frontier, D is inside it and E is outside it."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "8*(max(0, 1-(x/10)^1.79))^(1/1.79)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Consumption goods</th><th>Capital goods</th></tr><tr><td>A</td><td>4</td><td>7</td></tr><tr><td>B</td><td>7</td><td>5.4</td></tr><tr><td>C</td><td>9</td><td>3.1</td></tr><tr><td>D</td><td>4</td><td>4</td></tr><tr><td>E</td><td>9</td><td>6.8</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The graph in Figure 2.1.5 shows Sunland's PPF for food and sunscreen. Sunland faces ________ opportunity cost of food and ________ opportunity of sunscreen, which can be seen by the shape of the PPF."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increasing; a decreasing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a constant; a constant"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decreasing; an increasing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increasing; an increasing"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decreasing; a decreasing"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.5</b> Sunland's PPF. Horizontal axis: sunscreen (litres per month). Vertical axis: food (kilograms per month)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "300 - 2*x",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 175,
+            "yMin": 0,
+            "yMax": 320
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 2.1.6 shows the production possibilities frontier for a firm that produces pet food. Point A is ________ and point B is ________. This PPF ________ illustrate scarcity because ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "unattainable; attainable; does; because the firm cannot attain the points outside the frontier"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "attainable; unattainable; does not; the firm can produce any quantity it wants if it is willing to pay a high enough price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unattainable; attainable; does not; the firm can produce any quantity it wants if it is willing to pay a high enough price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "attainable; unattainable; does; the firm cannot produce points outside the frontier and as the firm moves along the PPF, it cannot produce more dog biscuits without producing less cat food"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "attainable; unattainable; does not; it is downward sloping"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.1.6</b> PPF of a pet food firm. Horizontal axis: dog biscuits (boxes per hour). Vertical axis: cat food (cans per hour)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "5.5*(max(0, 1-(x/10.5)^1.62))^(1/1.62)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 12,
+            "yMin": 0,
+            "yMax": 6.5
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Dog biscuits</th><th>Cat food</th></tr><tr><td>A</td><td>6</td><td>4</td></tr><tr><td>B</td><td>9</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When producing at a point of production efficiency, ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "our choice of goods to produce can be either on or inside the production possibilities frontier"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we can satisfy all our wants"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing goods other than those measured on the axes of the production possibilities frontier is zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we face a tradeoff and incur an opportunity cost"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "resources are either unused or misallocated"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Jane produces only corn and cloth. If her preferences for corn and cloth change, then ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "her PPF becomes steeper"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "her PPF becomes flatter"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "her PPF becomes straighter"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the world PPF shifts outward"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "her PPF does not change"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Complete the following sentence. Marginal cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is the opportunity cost of producing one more unit of a good or service."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is unrelated to the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "always equals marginal benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "remains constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is always greater then marginal benefit."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The quantity of shoes produced is measured along the x-axis of a bowed-outward production possibilities frontier and the quantity of shirts produced is measured along the y-axis. As you move down towards the right along the production possibilities frontier, the marginal cost of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a pair of shoes decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a pair of shoes increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a shirt remains constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a shirt increases or decreases but we don't know for sure."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a pair of shoes and a shirt is equal at the midpoint between the x-axis and the y-axis."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following is true regarding marginal benefit?<br>I. The marginal benefit curve shows the benefit firms receive by producing another unit of a good.<br>II. Marginal benefit increases as more and more of a good is consumed.<br>III. Marginal benefit is the maximum amount a person is willing to pay to obtain one more unit of a good."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and II"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and III"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "III only"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "I, II, and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "To describe preferences, economists use the concept of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "scarcity."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Complete the following sentence. As you consume more and more of a good,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal benefit increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit decreases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal benefit always equals marginal cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit increases or decreases depending on where you are on the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of the good falls."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The marginal benefit curve for a good"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "shows the benefit a firm receives from producing one more unit of that good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shows the most a consumer is willing to pay for one more unit of that good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is upward-sloping."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is bowed outward."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In Figure 2.2.1, the curve labeled B shows"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the bottles of pop that people are willing to forgo to get another bicycle."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the bicycles that people are willing to forgo to get another bottle of pop."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the bottles of pop that people must forgo to get another bicycle."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "that the benefits of producing more bicycles is greater than the benefits of producing more pop."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "that the benefits of producing more pop is greater than the benefits of producing more bicycles."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.2.1</b> Horizontal axis: bicycles (thousands per month). Vertical axis: marginal cost and marginal benefit (bottles of pop per bicycle)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x",
+                "name": {
+                  "en": "A"
+                }
+              },
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "B"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "In Figure 2.2.1, when 2,000 bicycles are produced each month"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "the marginal benefit from another bicycle is greater than the marginal cost of another bicycle."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "more bicycles must be produced to reach the efficient level of output."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "fewer bicycles must be produced to reach the efficient level of output."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the economy is efficient at this level of production of bicycles."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.2.1</b> Horizontal axis: bicycles (thousands per month). Vertical axis: marginal cost and marginal benefit (bottles of pop per bicycle)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x",
+                "name": {
+                  "en": "A"
+                }
+              },
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "B"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In Figure 2.2.1, the curve labelled A is the ________ curve and the curve labelled B is the ________ curve."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal cost; marginal benefit"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal cost; trade"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit; trade"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "production possibilities; trade"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit; marginal cost"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.2.1</b> Horizontal axis: bicycles (thousands per month). Vertical axis: marginal cost and marginal benefit (bottles of pop per bicycle)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x",
+                "name": {
+                  "en": "A"
+                }
+              },
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "B"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In Figure 2.2.1, when 4,000 bicycles are produced each month"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the marginal benefit from another bicycle is greater than the marginal cost of another bicycle."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "more bicycles must be produced to reach the efficient level of output."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "fewer bicycles must be produced to reach the efficient level of output."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the economy is very efficient at this level of production of bicycles."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.2.1</b> Horizontal axis: bicycles (thousands per month). Vertical axis: marginal cost and marginal benefit (bottles of pop per bicycle)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "x",
+                "name": {
+                  "en": "A"
+                }
+              },
+              {
+                "expr": "6 - x",
+                "name": {
+                  "en": "B"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A marginal benefit curve measures"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "comparative advantage."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "willingness to pay."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "absolute advantage."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "expenditure."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Allocative efficiency refers to a situation where"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "opportunity costs are equal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we cannot produce more of any one good without giving up some other good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "goods and services are produced at the lowest possible cost and in the quantities that provide the greatest possible benefit."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "opportunity cost is zero."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As production of food increases, marginal benefit from food"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases and marginal cost increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increases and marginal cost decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost increases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost is zero."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose the production possibilities frontier for skirts and pants is a straight line. As the production of skirts increases, the marginal benefit from skirts"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases and marginal cost is constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is constant and marginal cost decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases and marginal cost is constant."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "With allocative efficiency, for each good produced,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal benefit equals marginal cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal benefit is at its maximum."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit exceeds marginal cost by as much as possible."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal cost exceeds marginal benefit by as much as possible."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal cost is at its minimum."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Marginal benefit from a good or service is the benefit received from consuming ________. It is measured by the most that people are willing to pay for ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "goods that you prefer; an additional unit of it"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "goods that you prefer; more of it"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "one more unit of it; an additional unit of it"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "one more unit of it; more of it"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "as much as is available; the total amount consumed"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.2.1. Marginal benefit from food crops"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "equals the marginal cost of food crops."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "remains constant as the quantity of food crops increases from 1 tonne a day to 2 tonnes a day."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "cannot be calculated from the table."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increases as the quantity of food crops increases from 1 tonne a day to 2 tonnes a day."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equals 70 barrels of ethanol."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.2.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Ethanol (barrels per day)</th><th>Food crops (tonnes per day)</th></tr><tr><td>70</td><td>0</td></tr><tr><td>64</td><td>1</td></tr><tr><td>54</td><td>2</td></tr><tr><td>40</td><td>3</td></tr><tr><td>22</td><td>4</td></tr><tr><td>0</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The principle of decreasing marginal benefit implies that the ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "additional benefit from obtaining one more unit of a good or service decreases as more of that good or service is consumed"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "additional benefit from obtaining one more unit of a good or service increases as more of that good or service is consumed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "total benefit from obtaining more of a good or service decreases as more is consumed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "total benefit from obtaining more of a good or service remains the same as more is consumed"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "additional benefit from producing one more unit of a good or service decreases as more of that good or service is produced"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The most anyone is willing to pay for another purse is $30. Currently the price of a purse is $40, and the cost of producing another purse is $50. The marginal benefit from a purse is ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$40"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$50"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$10"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$20"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$30"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A technological improvement is represented by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an outward shift of the production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a movement along the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point inside the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a point outside the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a movement from a point inside the production possibilities frontier to a point on the production possibilities frontier."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In general, if country A is accumulating capital at a faster rate than country B, then country A"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "will soon have a comparative advantage in the production of most goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is using a larger proportion of resources to produce consumption goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will have a production possibilities frontier that is shifting out faster than country B's."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "will have a higher rate of inflation than country B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will have more unemployment than country B."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The principal reason that production possibilities have grown more rapidly in Hong Kong than in Canada over the last 50 years is because"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "of cheap Hong Kong labour."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "of foreign aid to Hong Kong."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Hong Kong has fewer workers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Hong Kong has more natural resources."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Hong Kong has devoted a larger proportion of its resources to capital accumulation."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which one of the following would cause a production possibilities frontier to shift outward?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an increase in the stock of capital"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an increase in the production of consumption goods"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "bad weather"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decision to fully utilize unemployed resources"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a decrease in the population"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The development of new goods and better ways of producing goods and services is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "capital accumulation."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "technological change."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the big tradeoff."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "allocative efficiency."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The growth of capital resources, including human capital is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "technological change."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "capital accumulation."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "depreciation."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "opportunity cost."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which one of the following would likely shift a production possibilities frontier inward?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "technological change."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a drought."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a decrease in the price of natural resources."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to the production possibilities frontier in Figure 2.3.1. The production possibilities frontier will shift rightward most rapidly if current production is at"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "C."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "E."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 2.3.1</b> Horizontal axis: consumption goods per person. Vertical axis: capital goods per person. The axes have no numbers; A, B and C are on the frontier, D is inside it and E is outside it."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "8*(max(0, 1-(x/10)^1.79))^(1/1.79)",
+                "name": {
+                  "en": "PPF"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 11,
+            "yMin": 0,
+            "yMax": 9
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Consumption goods</th><th>Capital goods</th></tr><tr><td>A</td><td>4</td><td>7</td></tr><tr><td>B</td><td>7</td><td>5.4</td></tr><tr><td>C</td><td>9</td><td>3.1</td></tr><tr><td>D</td><td>4</td><td>4</td></tr><tr><td>E</td><td>9</td><td>6.8</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A production possibilities frontier will shift outward FOR ALL OF THE FOLLOWING REASONS EXCEPT"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a technological improvement."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the stock of capital."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an increase in the labour force."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "opportunity cost is increasing."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The opportunity cost of pushing the production possibilities frontier outward is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "capital accumulation."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "technological change."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "reduced current consumption."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the gain in future consumption."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In general, the higher the proportion of resources devoted to technological research in an economy, the"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "greater will be current consumption."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "faster the production possibilities frontier will shift outward."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "faster the production possibilities frontier will shift inward."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "closer it will come to having a comparative advantage in the production of all goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "more bowed out will be the shape of the production possibilities frontier."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider a country that has two industries. In the north, they grow wild rice, which requires a lot of rainfall. In the south, they grow wheat, which requires just a moderate amount of rainfall (too much rainfall is bad for wheat production). One year, there is a record rainfall. This will result in"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a parallel shift inward of the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a parallel shift outward of the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the production possibilities frontier swiveling, with the wild rice intercept increasing, and the wheat intercept decreasing."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the production possibilities frontier swiveling, with the wild rice intercept decreasing, and the wheat intercept increasing."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose a hurricane causes extensive devastation, destroying houses, roads, schools and factories. What would be the effect of this hurricane on a production possibilities frontier consisting of consumption goods and capital goods?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "It would shift outward at all points."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It would shift inward at all points."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "There would be a movement along the existing production possibilities frontier towards a less capital-intensive point."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "There would be a movement along the existing production possibilities frontier towards a more capital-intensive point."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "There would be a movement from the existing production possibilities frontier inwards towards a point with unused or misallocated resources."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The depletion of fish stocks in Eastern Canada, with its accompanying unemployment, will lead to a"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "movement from the existing production possibilities frontier to a point inside the production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shift inward of the existing production possibilities frontier and production at a point on the new PPF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shift outward of the existing production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "movement along the existing production possibilities frontier to a point of less fish production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "shift inward of the existing production possibilities frontier plus a movement to a point inside the new production possibilities frontier."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following quotations illustrates economic growth?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "\"The firm should lower the price it charges for widgets and gadgets.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"The firm should sell more gadgets, even if it means less widget sales.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"The more and more gadgets the firm produces, the bigger the fall in widget production.\""
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "\"If the firm invests more in capital equipment, it can expand production next year.\""
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "\"The firm has been able to lower costs due to its extensive experience in building widgets.\""
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Economic growth ________ overcome scarcity because ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "does; with economic growth the PPF rotates outward and eventually becomes a horizontal line"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "does; we will eventually reach the point where we have too much"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "does not; we can produce more goods and services but it is still impossible to satisfy all our wants"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "does not; economic growth requires capital accumulation and technological change"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "does; with economic growth the PPF rotates outward and eventually becomes a vertical line"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In 1960, the production possibilities per person in Canada were ________ than those in Hong Kong. Canada devoted ________ of its resources to accumulating capital and the remainder to consumption. Hong Kong devoted ________ of its resources to accumulating capital and the remainder to consumption. Because Hong Kong devoted a ________ fraction of its resources to accumulating capital, its production possibilities have ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "smaller; one-fifth; one-third; greater; expanded more quickly"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "smaller; one-third; one-fifth; smaller; not expanded as quickly"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "greater; one-third; one-fifth; smaller; not expanded as quickly"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "greater; one-fifth; one-third; greater; expanded more quickly"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "greater; one-half; one-quarter; smaller; not expanded as quickly"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The production possibilities frontier shifts outward when ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "tastes and preferences change"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the quantity of money in the economy grows"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "prices rise"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "human capital accumulates"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the political party in power changes"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider a production possibilities frontier with corn production measured on the vertical axis and car production measured on the horizontal axis. Unusually good weather for growing corn shifts ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the horizontal intercept of the PPF rightward and the vertical intercept of the PPF upward"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the horizontal intercept of the PPF rightward but does not shift the vertical intercept of the PPF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the vertical intercept of the PPF upward but does not shift the horizontal intercept of the PPF"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "neither the horizontal intercept nor the vertical intercept of the PPF"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the vertical intercept of the PPF downward and the horizontal intercept of the PPF leftward"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Individuals A and B can both produce good X. We say that A has a comparative advantage in the production of good X if"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A has a lower opportunity cost of producing X than B."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A has a higher opportunity cost of producing X than B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A can produce more units of X in a given time period than B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A can produce X using newer technology than B."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A can produce less units of X in a given time period than B."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Individuals A and B can both produce goods X and Y. Individual A has a comparative advantage in the production of X if"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A is faster than B at producing X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the amount by which A must reduce production of Y is less than the amount by which B must reduce production of Y to produce an additional unit of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "B has superior knowledge about how to produce X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A has a preference to consume X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the amount by which A must reduce production of Y is more than the amount by which B must reduce production of Y to produce an additional unit of X."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Debra has an absolute advantage in producing a good when she"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "has a comparative advantage in producing that good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can produce the good at lower opportunity cost than anyone else."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can produce more of that good than anyone else, using the same quantity of inputs."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "has exclusive rights to sell that good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has better technology than anyone else."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A person who has an absolute advantage in the production of all goods will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "also have a comparative advantage in the production of all goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "not be able to gain from specialization and trade."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "produce all goods at the lowest opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "not have a comparative advantage in the production of any goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "have a comparative advantage in the production of only some goods and not others."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given Fact 2.4.1, the opportunity cost of producing 1 loaf of bread is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "20 minutes (1/3 hour) for Andy and 1 hour for Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/3 kilogram of butter for Andy and 1 kilogram of butter for Rolfe."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "3 kilograms of butter for Andy and 1 kilogram of butter for Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 kilograms of butter for both Andy and Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "not calculable from the given information."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "From Fact 2.4.1, we know that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Andy has the lower opportunity cost of producing bread, while Andy and Rolfe have equal opportunity costs of producing butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Andy has the lower opportunity cost of producing both bread and butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Andy has the lower opportunity cost of producing bread, while Rolfe has the lower opportunity cost of producing butter."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Andy has the lower opportunity cost of producing butter, while Rolfe has the lower opportunity cost of producing bread."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Andy has the higher opportunity cost of producing both bread and butter."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Fact 2.4.1. Which one of the following statements is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Andy has an absolute advantage in butter production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Rolfe has an absolute advantage in butter production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Andy has a comparative advantage in bread production."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Andy has a comparative advantage in butter production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Rolfe has a comparative advantage in bread production."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Fact 2.4.1. The opportunity cost of producing 1 kilogram of butter is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "20 minutes (1/3 hour) for Andy and 1 hour for Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Andy and 1 hour for Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 loaves of bread for Andy and 1/3 loaf of bread for Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 loaves of bread for Andy and 1 loaf of bread for Rolfe."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "8 loaves of bread for Rolfe and 24 loaves of bread for Andy."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given Fact 2.4.1, Andy and Rolfe"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "can gain from trade if Andy specializes in butter production and Rolfe specializes in bread production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can gain from trade if Andy specializes in bread production and Rolfe specializes in butter production."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "cannot gain from trade."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can trade, but only Rolfe will gain."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can trade, but only Andy will gain."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider Fact 2.4.1. After specialization, total consumption will"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "depend on the preferences of Andy and Rolfe."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be 8 loaves of bread and 24 kilograms of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be 32 loaves of bread and 16 kilograms of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be 8 loaves of bread and 8 kilograms of butter."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be 24 loaves of bread and 8 kilograms of butter."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.1</b> In an eight-hour day, Andy can produce either 24 loaves of bread or 8 kilograms of butter. In an eight-hour day, Rolfe can produce either 8 loaves of bread or 8 kilograms of butter."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Fact 2.4.2. Which one of the following statements is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Brenda has an absolute advantage over Agnes in the production of both goods."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Agnes has a comparative advantage in the production of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Brenda has a comparative advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Brenda will not gain from trade."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Agnes will not gain from trade."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.2</b> Agnes can produce either 1 unit of X or 1 unit of Y in an hour, while Brenda can produce either 2 units of X or 4 units of Y in an hour."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given Fact 2.4.2, the opportunity cost of producing a unit of X is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "1 unit of Y for Agnes and 2 units of Y for Brenda."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1 unit of Y for Agnes and 1/2 unit of Y for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Agnes and 1/2 hour for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Agnes and 2 hours for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Agnes and 1/4 hour for Brenda."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.2</b> Agnes can produce either 1 unit of X or 1 unit of Y in an hour, while Brenda can produce either 2 units of X or 4 units of Y in an hour."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given Fact 2.4.2, the opportunity cost of producing a unit of Y is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "1 unit of Y for Agnes and 2 units of Y for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 unit of Y for Agnes and 1/2 unit of Y for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Agnes and 1/2 hour for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 hour for Agnes and 2 hours for Brenda."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 unit of X for Agnes and 1/2 unit of X for Brenda."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.2</b> Agnes can produce either 1 unit of X or 1 unit of Y in an hour, while Brenda can produce either 2 units of X or 4 units of Y in an hour."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Complete the following sentence. Given Fact 2.4.2,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "there will be gains from trade, no matter what Brenda and Agnes specialize in, as long as they specialize."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there will be gains from trade only if Agnes specializes in the production of Y and Brenda in X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there will be gains from trade only if Agnes becomes faster at producing X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there will be no gains from trade because Agnes has an absolute advantage."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there will be gains from trade if Agnes specializes in the production of X and Brenda in Y."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.2</b> Agnes can produce either 1 unit of X or 1 unit of Y in an hour, while Brenda can produce either 2 units of X or 4 units of Y in an hour."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given Fact 2.4.2, what would be the total output of X and Y in an eight-hour day if Agnes and Brenda each specialized in producing the good in which they have a comparative advantage?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "3 units of X and 5 units of Y"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 units of X and 16 units of Y"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "8 units of X and 32 units of Y"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "24 units of X and 40 units of Y"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "16 units of X and 8 units of Y"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 2.4.2</b> Agnes can produce either 1 unit of X or 1 unit of Y in an hour, while Brenda can produce either 2 units of X or 4 units of Y in an hour."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Any two individuals will gain from exchange"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "unless one has an absolute advantage in producing all goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "if each specializes in the production of the good for which he has the higher opportunity cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unless they have the same opportunity costs for producing all goods."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "unless they have different opportunity costs for producing all goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "unless they have the same absolute advantage in producing all goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. Which one of the following is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Romulus has both an absolute advantage and a comparative advantage in the production of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Romulus has both an absolute advantage and a comparative advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Vulcan has a comparative advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Romulus has a comparative advantage in the production of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Vulcan should specialize in the production of X."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. Which one of the following is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "The opportunity cost of producing more of good X is the same for both planets."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The opportunity cost of producing more of good Y is the same for both planets."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The opportunity cost of producing more of good X is lower in Vulcan."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The opportunity cost of producing more of good Y is lower in Vulcan."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. For Vulcan, the opportunity cost of producing an additional unit of X is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "4 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 units of Y."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "2/3 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 unit of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "dependent upon how many units of X are already produced."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. For Romulus, the opportunity cost of producing an additional unit of X is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "4 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2/3 units of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 unit of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3/2 units of Y."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. For Romulus, the opportunity cost of producing an additional unit of Y is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "2/3 units of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1/2 unit of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3/2 units of Y."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. For Vulcan, the opportunity cost of producing an additional unit of Y is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "2/3 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1/2 units of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "2 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "3 units of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "4 units of X."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 2.4.1. Each country will gain from trade if"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Romulus specializes in both goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Vulcan specializes in both goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "they both continue to produce both goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Vulcan specializes in good X and Romulus specializes in good Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Romulus specializes in good X and Vulcan specializes in good Y."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.1</b> The planets of Vulcan and Romulus each produce goods X and Y. The table gives points on their production possibilities frontiers."
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Vulcan: good X</th><th>Vulcan: good Y</th><th>Romulus: good X</th><th>Romulus: good Y</th></tr><tr><td>0</td><td>16</td><td>0</td><td>12</td></tr><tr><td>2</td><td>12</td><td>2</td><td>9</td></tr><tr><td>4</td><td>8</td><td>4</td><td>6</td></tr><tr><td>6</td><td>4</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If individuals A and B can both produce only goods X and Y and A does not have a comparative advantage in the production of either X or Y, then we know"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "B has an absolute advantage in the production of X and Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A and B have the same opportunity costs for X and for Y."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "B has a comparative advantage in the production of both X and Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the gains from trade will be large but only in one direction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A must have lower opportunity costs of production for both goods."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the following household. In 5 hours, Bob can cook 5 meals or clean 6 rooms. In 5 hours, Mary can cook 30 meals or clean 10 rooms. Select the best statement."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Bob has an absolute advantage in the production of both goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Since Mary is better at producing both goods, she should produce both."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Bob has a comparative advantage in cooking."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Mary should specialize in cooking."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Given the information in Table 2.4.2, can Sheila and Bruce gain by specialization?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Yes, but only if Bruce gets paid more than Sheila."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "No, not under the given circumstances."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It depends on the wages each earns."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Yes, if each specializes in the good in which he has a comparative advantage."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.2</b> Production for one week by Sheila and Bruce"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Sheila: good X</th><th>Sheila: good Y</th><th>Bruce: good X</th><th>Bruce: good Y</th></tr><tr><td>8</td><td>0</td><td>20</td><td>0</td></tr><tr><td>6</td><td>1</td><td>15</td><td>2</td></tr><tr><td>4</td><td>2</td><td>10</td><td>4</td></tr><tr><td>2</td><td>3</td><td>5</td><td>6</td></tr><tr><td>0</td><td>4</td><td>0</td><td>8</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "Given the information in Table 2.4.2, which one of the following is true?"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Sheila should specialize in good X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Bruce should specialize in good X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "The opportunity cost to Bruce of an additional unit of X is 0.4 units of Y."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 2.4.2</b> Production for one week by Sheila and Bruce"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Sheila: good X</th><th>Sheila: good Y</th><th>Bruce: good X</th><th>Bruce: good Y</th></tr><tr><td>8</td><td>0</td><td>20</td><td>0</td></tr><tr><td>6</td><td>1</td><td>15</td><td>2</td></tr><tr><td>4</td><td>2</td><td>10</td><td>4</td></tr><tr><td>2</td><td>3</td><td>5</td><td>6</td></tr><tr><td>0</td><td>4</td><td>0</td><td>8</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose John and Joe each have different production possibility frontiers; John specializes in cloth and Joe specializes in corn. John's island unexpectedly has exceptionally good weather, and suddenly he is twice as productive in the production of both corn and cloth. Select the best statement."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "This is an example of unemployed resources becoming employed."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "As a result, John will have an absolute advantage in both corn and cloth."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "As a result, it is possible that John and Joe will switch what they specialize in."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "There will be no change in what John and Joe specialize in, because John's comparative advantage has not changed."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "There will be a change in what John and Joe specialize in, because John's opportunity cost of production will have risen."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "It pays for people to specialize and trade with each other because"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "otherwise they would not survive."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "they can take advantage of the fact they have an absolute advantage in the production of something."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "this way they can consume outside their production possibilities frontier."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "this way the strong can exploit the weak."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "There are two goods, X and Y. If the opportunity cost of producing good X is lower for Pam than for Gino, then"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "Pam has an absolute advantage in the production of X."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Gino has an absolute advantage in the production of Y."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Pam has a comparative advantage in the production of X."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Gino has a comparative advantage in the production of Y."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Mexico and Canada produce both oil and apples using labour only. A barrel of oil is produced with 4 hours of labour in Mexico and 8 hours of labour in Canada. A bushel of apples is produced with 8 hours of labour in Mexico and 12 hours of labour in Canada. Canada has"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "an absolute advantage in oil production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an absolute advantage in apple production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a comparative advantage in oil production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a comparative advantage in apple production."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In Portugal, the opportunity cost of a bale of wool is 3 bottles of wine. In England, the opportunity cost of 1 bottle of wine is 3 bales of wool. Given this information,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "England has an absolute advantage in wine production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Portugal has an absolute advantage in wool production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Portugal has a comparative advantage in wine production."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Portugal has a comparative advantage in wool production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "no trade will occur."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "To gain from comparative advantage, countries must not only trade, they must also"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "save."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "invest."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "engage in research and development."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "engage in capital accumulation."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "specialize."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In one hour, Sue can produce 50 caps or 10 jackets and Tessa can produce 70 caps or 7 jackets. Sue's opportunity cost of producing a cap is ________ jackets and Tessa's opportunity cost of producing a cap is ________ jackets. ________ has a comparative advantage in producing caps. If Sue and Tessa each specialize in producing the good in which they have a comparative advantage and trade 1 jacket for 7 caps, ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "0.2; 0.10; Sue; Tessa gains but Sue loses"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "5.0; 10.0; Tessa; Sue loses but Tessa gains"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "5.0; 10.0; Sue; both Sue and Tessa gain"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0.2; 0.10; Tessa; both Sue and Tessa gain"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "0.2; 0.10; Sue; both Sue and Tessa gain"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Tom takes 20 minutes to cook an egg and 5 minutes to make a sandwich. Jerry takes 15 minutes to cook an egg and 3 minutes to make a sandwich. If Tom and Jerry specialize and trade eggs and sandwiches with each other ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Tom benefits but Jerry does not"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Jerry benefits but Tom does not"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "neither Tom nor Jerry benefit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "either Tom or Jerry benefit but we don't have enough information to know which one benefits"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "both of them benefit"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Tom takes 20 minutes to cook an egg and 5 minutes to make a sandwich. Jerry takes 15 minutes to cook an egg and 3 minutes to make a sandwich. Both individuals gain if ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Jerry produces eggs and trades them to Tom for sandwiches"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Jerry produces sandwiches and trades them to Tom for eggs"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "they trade with each other regardless of who produces sandwiches and who produces eggs"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing an egg is greater than the opportunity cost of producing a sandwich"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing a sandwich is greater than the opportunity cost of producing an egg"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "Trade is organized using the social institutions of"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "firms."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "property rights."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "money."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "markets."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Markets<br>I. enable buyers and sellers to get information<br>II. are defined by economists as geographical locations where trade occurs.<br>III. have evolved because they facilitate trade. Which of the above statements are correct?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "III only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and III only"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "II and III only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I, II and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A property right is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "any commodity or token that is generally acceptable as a means of payment."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an economic unit that hires factors of production and organizes those factors to produce and sell goods and services."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "any arrangement that enables buyers and sellers to get information and to do business with each other."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a social arrangement that governs the ownership, use, and disposable of anything that people value."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a medium of exchange."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The flows in the market economy that go from firms to households are ________. The flows in the market economy that go from households to firms are ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "all flowing through goods markets; all flowing through factor markets"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the real flows of goods and services and the income flows of wages, rent, interest and profits; the real flows of labour, land, capital and entrepreneurship and the flow of expenditure on goods and services"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the income flows of wages, rent, interest, and profits and the flow of expenditure on goods and services; the real flows of goods and services and the real flows of labour, land, capital and entrepreneurship"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the real flows of goods and services and the real flows of labour, land, capital and entrepreneurship; the income flows of wages, rent, interest, and profits and the flow of expenditure on goods and services"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "all flowing through factor markets; all flowing through goods markets"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The main functions of markets include"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "promoting the social interest, but not the self-interest."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "selling goods but not factors of production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "enabling buyers and sellers to get information about each other."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "establishing a physical location for business transactions."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "promoting the self-interest but not the social interest."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In an economy lacking property rights, it would be ________ to realize the gains from trade and there would be ________ specialization compared to an economy with property rights."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "more difficult; less"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "more difficult; more"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "easier; less"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "easier; more"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "Intellectual property ________."
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "includes land and buildings"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "includes stocks and bonds and money in the bank"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is the intangible product of creative effort"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is protected by copyrights and patents"
+          },
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

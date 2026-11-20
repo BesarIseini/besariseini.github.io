@@ -1,0 +1,5861 @@
+{
+  "formatVersion": 1,
+  "key": "eikt-chapter-05",
+  "revision": 1,
+  "courseId": "EIKT",
+  "topicId": "efficiency-and-equity",
+  "category": "Lecture",
+  "title": {
+    "en": "Chapter 5: Efficiency and Equity"
+  },
+  "description": {
+    "en": "Resource allocation methods, benefit, cost and surplus, and whether competitive markets are efficient and fair."
+  },
+  "languages": [
+    "en"
+  ],
+  "defaultLanguage": "en",
+  "date": "2026-11-20",
+  "duration": 3690,
+  "timed": false,
+  "shuffleQuestions": true,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When a market price allocates a scarce resource,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "everyone in the economy can use the resource."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the richest people get the resource."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "willingness-to-pay is not an issue."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ability to pay for the resource is less important than willingness-to-pay."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "only those who are willing and able to pay get the resource."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In a command system, resources are allocated by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "force."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "people who are able to pay for the resources."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the order of someone in authority."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "those people who come first in line."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In the Canadian economy, the command system is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "not used at all."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "used occasionally inside firms and government departments."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "used only by private companies."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "used extensively in place of markets."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "used extensively inside firms and government departments."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Majority rule allocates resources in the way that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "politicians choose."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a majority of voters choose."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "democracies choose."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "all voters choose."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the military chooses."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A contest allocates resources to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a winner or a group of winners."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "an athlete."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a gambler."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the government."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "private firms."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Contests do a good job in resource allocation"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "under any circumstances."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "when the efforts of the players are easy to monitor and reward directly."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "when the efforts of the players are hard to monitor and reward directly."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "when the first-come, first-served allocation method has failed."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "only under a command system."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The first-come, first-served method of resource allocation allocates resources to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the wealthiest."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "people who are willing to take risks."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "people who are not willing to take risks."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the first in line."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "honest, hard-working people."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Lotteries allocate resources to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "those who work for the government."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "those who come up lucky in a gaming system."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "those who work for private firms."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "people who are employed by gaming corporations."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "those who are in command."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Lotteries work best"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "under any circumstances."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "under the first-come, first served allocation method."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "when there is no effective way to distinguish among potential users of a scarce resource."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "when potential users of scarce resources are unknown."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "under a command system."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When a scarce resource is allocated to someone who is the winner, the method of resource allocation is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "majority rule."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a contest."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "first-come, first-served."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "personal characteristics."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "What method of resource allocation depends on willingness-to-pay and ability-to-pay?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "command"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "lottery"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "market price"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "first-come, first-served"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "At West, a restaurant in Vancouver, reservations are essential. At Cibo, a restaurant in downtown Vancouver, reservations are recommended. At Vij's, a restaurant near the University of British Columbia, reservations are not accepted. West allocates scarce table resources by ________, Cibo allocates scarce table resources by ________, and Vij's allocates scarce table resources by ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "market price; market price and force; force"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "personal characteristics; personal characteristics and first-come, first-served; first-come, first-served"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a command system; a combination of a command system and first-come, first-served; first-come, first-served"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "first-come, first-served; first-come, first-served; first-come, first-served"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "personal characteristics; personal characteristics; first-come, first-served"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Restaurants don't use market price to allocate their tables because"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "they would have to watch the price of a table at other restaurants to keep competitive."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "restaurants would have to advertise the price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of a table would fluctuate hourly, customer uncertainty would deter patrons, and lower demand would bring lower profit."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "they would have to continually change the supply of tables to keep the price constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of a table would eventually fall to zero and restaurants would incur a loss."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "When resources are allocated on the basis of personal characteristics, all people who are willing and able to pay the price get the resource."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "When the range of activities to be monitored is large and complex, a command system allocates resources better than a market price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "When a market price allocates resources, some people who are willing and able to pay that price don't get the resource."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Force provides the state with an effective method of transferring wealth from the rich to the poor."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "When resources are allocated by force, people with the \"right\" characteristics get the resources."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As a method of resource allocation, force"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "plays a crucial negative role but not a positive role."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "plays a crucial positive role but not a negative role."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "plays a crucial role for both good and ill."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is always better than majority rule."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is always better than first-come, first-served."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If the owner of an apartment building rents only to married couples over the age of 30, the method of resource allocation is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "majority rule."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "contest."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "personal characteristics."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "market price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Alvin Roth of Harvard University designed a system that matches donated kidneys to recipients waiting for such donations. This system takes into account the needs of each perspective recipient, their blood type, and the urgency of their case. Based on this information, this allocation method for kidneys is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "first-come, first-served."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "personal characteristics."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a contest."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a lottery."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "At the Stratford Festival Theatre no reservations are accepted on the day of the performance; at matinees, reservations are accepted; at opening night performances reservations are essential. On the day of the performance, Stratford Festival Theatre allocates seats by ________; at matinees, it allocates seats by ________; at opening night performances, it allocates seats by ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "first-come, first served; a command system; a combination of first-come, first-served and a command system"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force; first-come, first-served; a command system"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "personal characteristics; personal characteristics; personal characteristics"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a lottery; first-come, first-served; personal characteristics"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "first-come, first served; first-come, first-served; first-come, first-served"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Choose the statement or statements that are correct.<br>I. The value of one more unit of a good or service is its marginal benefit.<br>II. Marginal benefit equals the total amount we spend on a good or service.<br>III. Marginal benefit is the maximum amount willingly paid for another unit of a good or service."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and III"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "III only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I, II, and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The demand curve for a good is the same as the"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal cost curve of that good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit curve for that good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "y-axis when the price of the good is constant."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "production possibilities frontier (PPF)."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit curve for that good when marginal cost is constant."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "What is the consumer surplus for the market from the consumption of the 100th unit of a good?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the marginal social cost of the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal social benefit from the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal social benefit from the 100th unit minus the marginal social cost of the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal social benefit from the 100th unit minus the price paid for the 100th unit"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A new car has a sticker price of $24,000. Fred decides that he will pay no more than $23,000 for this car. He bought the car for $21,000. Fred obtains a consumer surplus of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$23,000."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$21,000."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3,000."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,000."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2,000."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A used truck has a sticker price of $21,000. Arthur decides that he will pay no more than $19,750 for this truck. He buys the truck for $19,250. Arthur obtains a consumer surplus of"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$19,750."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$19,250."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,750."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,250."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$500."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Charlene is willing to pay $5.00 for a sandwich. If the price of a sandwich is ________, Charlene ________."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$4.00; does not receive any consumer surplus"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00; receives a consumer surplus of $1"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$6.00; receives a consumer surplus of $1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00; receives a consumer surplus of $4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00; receives a producer surplus of $1"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consumer surplus is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the difference between the maximum price consumers are willing to pay and the minimum price producers are willing to accept."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the excess of the benefit received from a good over the amount paid for it."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the total value to consumers of a good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equal to the area under the demand curve."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the total amount paid for a good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "An oil painting has an opportunity cost of $1,000. The painting is purchased for $1,500. How much consumer surplus does the buyer obtain?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1,500"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,000"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$500"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "cannot be determined from the information given"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The maximum price a consumer is willing to pay for a good is the"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "value of the good."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "opportunity cost of producing the good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "minimum supply-price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal cost of the good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The market for strawberries is perfectly competitive. Joe and Haley each purchase 3 boxes of strawberries. Joe's demand is much more elastic than Haley's. Which statement is true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Joe's consumer surplus exceeds Haley's."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Haley's consumer surplus equals Joe's."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Haley's consumer surplus exceeds Joe's."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Joe receives no consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Neither Joe nor Haley receive any consumer surplus."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand curve in Figure 5.2.1. What is the value of the first unit of the good?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$10"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$9"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$8"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (5 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand curve in Figure 5.2.1. If the price of the good is $4 a unit, what is the consumer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$18.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$25.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$20.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$12.50"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$4.00"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (5 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider Figure 5.2.1. If the price is $4, what is the consumer surplus from the third unit of the good?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$0"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (5 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider Figure 5.2.1. When the price is $4 a unit, what is the consumer surplus from the second unit of the good?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$7"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$10"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (5 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "9 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand curve in Figure 5.2.2. What is the consumer surplus when the price is $4 a unit?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$98"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$196"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$126"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$56"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (7 units, $11) and (14 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "18 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 20
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand curve in Figure 5.2.2. What is the consumer surplus when the price is $11 a unit?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$49.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$28.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$77.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$63.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$24.50"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (7 units, $11) and (14 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "18 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 20
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand curve in Figure 5.2.2. If the price rises from $4 to $11 a unit, consumer surplus"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "decreases by $73.50."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "increases by $73.50."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases by $21.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increases by $21.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases by $24.50."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). The demand curve passes through (7 units, $11) and (14 units, $4)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "18 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 20
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Bill and Ted each consume 15 chocolate bars at the current price. If Bill's demand for chocolate bars is more elastic than Ted's demand, then"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Bill's willingness to pay for the last chocolate bar is greater than Ted's."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Ted's willingness to pay for the last chocolate bar is greater than Bill's."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Bill's consumer surplus is greater than Ted's."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Ted's consumer surplus is greater than Bill's."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Bill's consumer surplus equals Ted's."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When demand is perfectly elastic, consumer surplus is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "infinite."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "-1.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "between zero and 1.00."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider a downward-sloping demand curve. Consumer surplus is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the difference between the market price of the good and the cost of the good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "greater on the last unit sold than on the first unit sold."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "greater on the first unit sold than on the last unit sold."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "equal to price multiplied by quantity sold."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equal to the area below the demand curve."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.3. If the price is P0, what area on the graph indicates consumer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "B plus C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D plus E"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A plus B plus C plus D plus E"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.3</b> A straight-line demand curve D; P1 is above P0 and Q1 is the quantity demanded at P1, Q0 the quantity demanded at P0. The areas are labelled as follows. <b>A</b>: the triangle above P1 and below D. <b>B</b>: the rectangle between P0 and P1, from 0 to Q1. <b>C</b>: the triangle between P0 and P1, from Q1 to Q0, below D. <b>D</b>: the rectangle below P0, from 0 to Q1. <b>E</b>: the rectangle below P0, from Q1 to Q0. <b>F</b>: the triangle below D to the right of Q0."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th></th><th>Quantity</th><th>Price</th></tr><tr><td>At P1</td><td>Q1 = 4</td><td>P1 = 6</td></tr><tr><td>At P0</td><td>Q0 = 7</td><td>P0 = 3</td></tr></table>"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "en": "The numbers for P0, P1, Q0 and Q1 are only illustrative; the original graph has none."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.3 If the price is P1, what area on the graph indicates consumer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "B plus C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "D plus E"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C plus D plus E"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.3</b> A straight-line demand curve D; P1 is above P0 and Q1 is the quantity demanded at P1, Q0 the quantity demanded at P0. The areas are labelled as follows. <b>A</b>: the triangle above P1 and below D. <b>B</b>: the rectangle between P0 and P1, from 0 to Q1. <b>C</b>: the triangle between P0 and P1, from Q1 to Q0, below D. <b>D</b>: the rectangle below P0, from 0 to Q1. <b>E</b>: the rectangle below P0, from Q1 to Q0. <b>F</b>: the triangle below D to the right of Q0."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th></th><th>Quantity</th><th>Price</th></tr><tr><td>At P1</td><td>Q1 = 4</td><td>P1 = 6</td></tr><tr><td>At P0</td><td>Q0 = 7</td><td>P0 = 3</td></tr></table>"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "en": "The numbers for P0, P1, Q0 and Q1 are only illustrative; the original graph has none."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.3. If the price rises from P0 to P1, what area on the graph indicates the change in consumer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "B plus C"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "D plus E"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C plus D plus E"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.3</b> A straight-line demand curve D; P1 is above P0 and Q1 is the quantity demanded at P1, Q0 the quantity demanded at P0. The areas are labelled as follows. <b>A</b>: the triangle above P1 and below D. <b>B</b>: the rectangle between P0 and P1, from 0 to Q1. <b>C</b>: the triangle between P0 and P1, from Q1 to Q0, below D. <b>D</b>: the rectangle below P0, from 0 to Q1. <b>E</b>: the rectangle below P0, from Q1 to Q0. <b>F</b>: the triangle below D to the right of Q0."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th></th><th>Quantity</th><th>Price</th></tr><tr><td>At P1</td><td>Q1 = 4</td><td>P1 = 6</td></tr><tr><td>At P0</td><td>Q0 = 7</td><td>P0 = 3</td></tr></table>"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "en": "The numbers for P0, P1, Q0 and Q1 are only illustrative; the original graph has none."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.3. If the price falls from P1 to P0, what area on the graph indicates the change in consumer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "A"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A plus B plus C"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "B plus C"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A plus B plus D"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.3</b> A straight-line demand curve D; P1 is above P0 and Q1 is the quantity demanded at P1, Q0 the quantity demanded at P0. The areas are labelled as follows. <b>A</b>: the triangle above P1 and below D. <b>B</b>: the rectangle between P0 and P1, from 0 to Q1. <b>C</b>: the triangle between P0 and P1, from Q1 to Q0, below D. <b>D</b>: the rectangle below P0, from 0 to Q1. <b>E</b>: the rectangle below P0, from Q1 to Q0. <b>F</b>: the triangle below D to the right of Q0."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th></th><th>Quantity</th><th>Price</th></tr><tr><td>At P1</td><td>Q1 = 4</td><td>P1 = 6</td></tr><tr><td>At P0</td><td>Q0 = 7</td><td>P0 = 3</td></tr></table>"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "en": "The numbers for P0, P1, Q0 and Q1 are only illustrative; the original graph has none."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.3. If the price is P0, then the value of the last unit consumed is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "P0."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "P1."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equal to the consumer surplus on the last unit consumed."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "P1- P0."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.3</b> A straight-line demand curve D; P1 is above P0 and Q1 is the quantity demanded at P1, Q0 the quantity demanded at P0. The areas are labelled as follows. <b>A</b>: the triangle above P1 and below D. <b>B</b>: the rectangle between P0 and P1, from 0 to Q1. <b>C</b>: the triangle between P0 and P1, from Q1 to Q0, below D. <b>D</b>: the rectangle below P0, from 0 to Q1. <b>E</b>: the rectangle below P0, from Q1 to Q0. <b>F</b>: the triangle below D to the right of Q0."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - x",
+                "name": {
+                  "en": "D"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 10
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th></th><th>Quantity</th><th>Price</th></tr><tr><td>At P1</td><td>Q1 = 4</td><td>P1 = 6</td></tr><tr><td>At P0</td><td>Q0 = 7</td><td>P0 = 3</td></tr></table>"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "en": "The numbers for P0, P1, Q0 and Q1 are only illustrative; the original graph has none."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consumer surplus"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is low for inexpensive goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is high for inexpensive goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is low for expensive goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is high for expensive goods."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "may be low or high for any type of good, expensive or inexpensive, depending on the characteristics of demand."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Market demand is the"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "sum of the prices that each individual is willing to pay for each quantity demanded."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "sum of the quantity demanded by each individual at each price."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "sum of the consumer surplus of each individual."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "difference between the maximum amount each individual is willing to pay for a good and the market price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "difference between the market price and the maximum amount each individual is willing to pay for a good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Sally and Eric are the only people in an economy. Sally buys 3 bottles of water when the price is $2 a bottle and 4 bottles of water when the price is $1 a bottle. Eric buys 10 bottles of water when the price is $0.50 a bottle and 5 bottles of water when the price is $1 a bottle. In the market for water, the quantity demanded"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases as the price rises."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is 4 bottles at a price of $1 a bottle."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "increases as the price falls."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is 8 bottles at a price of $2 a bottle."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is 15 bottles at a price of $0.50 a bottle."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 5.2.4 shows Leo's demand curve for pizza and Kate's demand curve for pizza. Leo and Kate are the only two consumers in the market. If the market price is $3 a slice, what is the quantity demanded in the market?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "15 slices"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "5 slices"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20 slices"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "10 slices"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "25 slices"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.4</b> Leo's and Kate's demand (= marginal benefit) curves for pizza. Horizontal axis: slices per month. Vertical axis: price (dollars per slice)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "4.5 - 0.1*x",
+                "name": {
+                  "en": "Leo's D = MB"
+                }
+              },
+              {
+                "expr": "3.5 - 0.1*x",
+                "name": {
+                  "en": "Kate's D = MB"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 5
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($ per slice)</th><th>Leo's quantity</th><th>Kate's quantity</th></tr><tr><td>4.50</td><td>0</td><td></td></tr><tr><td>4.00</td><td>5</td><td></td></tr><tr><td>3.50</td><td>10</td><td>0</td></tr><tr><td>3.00</td><td>15</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.4. If the market price is $3 a slice, what is the consumer surplus in the market?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$11.25"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1.25"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$12.50"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$60.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.4</b> Leo's and Kate's demand (= marginal benefit) curves for pizza. Horizontal axis: slices per month. Vertical axis: price (dollars per slice)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "4.5 - 0.1*x",
+                "name": {
+                  "en": "Leo's D = MB"
+                }
+              },
+              {
+                "expr": "3.5 - 0.1*x",
+                "name": {
+                  "en": "Kate's D = MB"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 20,
+            "yMin": 0,
+            "yMax": 5
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($ per slice)</th><th>Leo's quantity</th><th>Kate's quantity</th></tr><tr><td>4.50</td><td>0</td><td></td></tr><tr><td>4.00</td><td>5</td><td></td></tr><tr><td>3.50</td><td>10</td><td>0</td></tr><tr><td>3.00</td><td>15</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If a firm produces one more bottle of water,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the outcome is inefficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the firm incurs a marginal cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the market for bottled water is no longer in equilibrium."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of a bottle of water must rise."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal social benefit from bottled water increases."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Marginal cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is less than price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "can be negative."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is the minimum price that producers must receive to induce them to offer one more unit of a good or service for sale."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is greater than price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases as more of a good or service is produced."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A supply curve is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the same as a production possibilities frontier."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a marginal social benefit curve."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a marginal benefit curve."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a marginal cost curve."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "a downward-sloping curve."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A market supply curve is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the horizontal sum of the individual supply curves."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "downward sloping."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the vertical sum of the individual supply curves."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "downward sloping initially, and then upward sloping."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "represented by a line with a constant slope."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 5.2.5 shows the supply curve for Pizza House's pizzas and the supply curve for Pizza Club's pizzas. If the price of a pizza is $20, what is the quantity supplied by the market if Pizza House and Pizza Club are the only firms?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "50"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "25"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "75"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "20"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.5</b> Supply (= marginal cost) curves of Pizza House and Pizza Club. Horizontal axis: pizzas per day. Vertical axis: price (dollars per pizza)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 + 0.4*x",
+                "name": {
+                  "en": "Pizza House's S = MC"
+                }
+              },
+              {
+                "expr": "20 + 0.4*x",
+                "name": {
+                  "en": "Pizza Club's S = MC"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 125,
+            "yMin": 0,
+            "yMax": 60
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($ per pizza)</th><th>Pizza House quantity</th><th>Pizza Club quantity</th></tr><tr><td>10</td><td>0</td><td></td></tr><tr><td>20</td><td>25</td><td>0</td></tr><tr><td>30</td><td>50</td><td>25</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.2.5. If the price of a pizza is $30, what is the producer surplus in the market if Pizza House and Pizza Club are the only firms?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$625"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$500"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$25"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2,250"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,125"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.5</b> Supply (= marginal cost) curves of Pizza House and Pizza Club. Horizontal axis: pizzas per day. Vertical axis: price (dollars per pizza)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 + 0.4*x",
+                "name": {
+                  "en": "Pizza House's S = MC"
+                }
+              },
+              {
+                "expr": "20 + 0.4*x",
+                "name": {
+                  "en": "Pizza Club's S = MC"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 125,
+            "yMin": 0,
+            "yMax": 60
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price ($ per pizza)</th><th>Pizza House quantity</th><th>Pizza Club quantity</th></tr><tr><td>10</td><td>0</td><td></td></tr><tr><td>20</td><td>25</td><td>0</td></tr><tr><td>30</td><td>50</td><td>25</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "What is the producer surplus for the market from the production of the 100th unit of a good?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the marginal cost of producing the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal benefit from the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the opportunity cost of producing the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the marginal social benefit from the 100th unit minus the marginal cost of producing the 100th unit"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price paid for the 100th unit minus the marginal social cost of producing the 100th unit"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose that the Hot Dog House can produce hotdogs at a constant cost of $0.25 each. If the Hot Dog House sells hotdogs for $0.50 each, then the Hot Dog House"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "receives a producer surplus."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "will raise the price of hot dogs."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "will allow consumers to receive a consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has no producer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "has an opportunity cost of $0.50 for each hot dog it produces."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The marginal cost of producing an oil painting is $1,000. The painting sold for $1,500. How much producer surplus did the painter receive?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1,500"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1,000"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$500"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2,500"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Producer surplus is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the difference between the maximum price consumers are willing to pay and the minimum price producers are willing to accept."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the excess of the amount received from the sale of a good or service over the cost of producing it."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "equal to the marginal cost of production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equal to the area under the supply curve."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the total amount paid for the good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The marginal cost of producing an additional basket of tomatoes is $5.00. The consumer is willing to pay a maximum of $9.00 for an additional basket. A farmer sells a basket of tomatoes for $6.00 each. The farmer receives a producer surplus from selling an additional basket of tomatoes equal to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1.00."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$3.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$9.00."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The marginal cost of producing one more hot dog is $1.00. The price of a hot dog is $1.50. The producer surplus from selling one more hotdog is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$1.00."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1.50."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$0.50."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2.50."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Producer surplus is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the value producers place on a good minus the price of the good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of the good minus the value producers place on it."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero if price equals marginal cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "equal to marginal benefit minus marginal cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "equal to consumer surplus."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Table 5.2.1 gives information on marginal cost for the XYZ firm. If XYZ sells the first unit at a price of $6, what is the producer surplus on that unit?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$4"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$6"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$9"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$12"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 5.2.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity (units)</th><th>Marginal cost (dollars)</th></tr><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>3</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Table 5.2.1. If the price is $6 a unit, the producer surplus on the third unit is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$3."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 5.2.1</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity (units)</th><th>Marginal cost (dollars)</th></tr><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>3</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>5</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 5.2.6 shows the supply curve of DVD rentals for Morgan's Marvellous Movies. If Morgan's rents the fifth DVD at a price of $7, what is the producer surplus on that rental?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$28"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$7"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$6"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$1"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.6</b> Supply (= marginal cost) of DVD rentals at Morgan's Marvellous Movies. Horizontal axis: rentals per hour. Vertical axis: price (dollars per DVD rental)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "3.5 + 0.5*x",
+                "name": {
+                  "en": "S = MC"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 9,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Rentals per hour</th><th>Price ($)</th></tr><tr><td>0</td><td>3.50</td></tr><tr><td>3</td><td>5.00</td></tr><tr><td>5</td><td>6.00</td></tr><tr><td>7</td><td>7.00</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Figure 5.2.6 shows the supply curve of DVD rentals for Morgan's Marvellous Movies. If the price of a rental is $5, what is Morgan's producer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$4.50"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2.25"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$15.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$24.50"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.6</b> Supply (= marginal cost) of DVD rentals at Morgan's Marvellous Movies. Horizontal axis: rentals per hour. Vertical axis: price (dollars per DVD rental)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "3.5 + 0.5*x",
+                "name": {
+                  "en": "S = MC"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 9,
+            "yMin": 0,
+            "yMax": 8
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Rentals per hour</th><th>Price ($)</th></tr><tr><td>0</td><td>3.50</td></tr><tr><td>3</td><td>5.00</td></tr><tr><td>5</td><td>6.00</td></tr><tr><td>7</td><td>7.00</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand and supply curves in Figure 5.2.7. If the market is at the competitive equilibrium, which area in the diagram indicates the cost of producing the quantity sold?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "ABC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "AEC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "EBC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0BCD"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0ECD"
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.2.7</b> Demand D and supply S. Horizontal axis: quantity. Vertical axis: price. B is where D meets the price axis, E is where S meets the price axis, C is the equilibrium, A is the equilibrium price on the price axis, and D (on the quantity axis) is the equilibrium quantity. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - 0.8*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "2 + 0.8*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 11
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>0</td><td>10</td></tr><tr><td>A</td><td>0</td><td>6</td></tr><tr><td>E</td><td>0</td><td>2</td></tr><tr><td>C</td><td>5</td><td>6</td></tr><tr><td>D</td><td>5</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Sal likes to eat pizza. The ________ is the maximum amount that Sal is willing to pay for one more slice of pizza."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "market price"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal cost"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumer surplus"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "producer surplus"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Table 5.2.4 shows the demand schedules for pizza for Abby and Barry who are the only buyers in the market. What is the marginal social benefit from the 45th slice of pizza?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$3.50"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$4.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$2.50"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5.00"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$4.50"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Table 5.2.4</b>"
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Price (dollars per slice)</th><th>Abby's quantity demanded (slices per month)</th><th>Barry's quantity demanded (slices per month)</th></tr><tr><td>2.50</td><td>25</td><td>50</td></tr><tr><td>3.00</td><td>20</td><td>40</td></tr><tr><td>3.50</td><td>15</td><td>30</td></tr><tr><td>4.00</td><td>10</td><td>20</td></tr><tr><td>4.50</td><td>5</td><td>10</td></tr><tr><td>5.00</td><td>0</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If you increase your consumption of pop by one additional can a week, your marginal benefit from this last can is $1.00. For you, the ________ this last can of pop is $1.00"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "price of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal cost of"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "value from"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "consumer surplus from"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "producer surplus"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A market demand curve is constructed by"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "adding the prices all consumers are willing to pay for any given quantity."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "determining the quantity supplied by all producers at all possible prices."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "subtracting the quantity supplied by all producers from the quantity demanded by all individuals at each price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "adding the quantities demanded by all individuals at each price."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "subtracting the quantity demanded by all individuals from the quantity supplied by all producers at each price."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A consumer will buy a good when"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "consumer surplus is greater than or equal to the price."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit is positive."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal benefit is greater than or equal to the price."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "consumer surplus is positive."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumer surplus is greater than producer surplus."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In 2017, a severe drought led to an increase in the price of corn. Farmer Lyle was not affected by the drought. In 2016 there was no drought. In 2017, Farmer Lyle's"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "consumer surplus increased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "producer surplus increased."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "producer surplus increased and his consumer surplus increased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumer surplus decreased and his producer surplus increased."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply of corn became perfectly elastic."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Sam's demand curve for pizza"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "lies below his marginal benefit curve from pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "lies above his marginal benefit curve from pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is the same as his marginal benefit curve from pizza."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is the same as his marginal cost curve of pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "lies below his marginal cost curve of pizza."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The price of pizza increases. Everything else remaining the same, the consumer surplus from pizza"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is greater than the producer surplus from pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is less than the producer surplus from pizza."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "does not change."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "decreases."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "As the quantity of hot dogs demanded increases,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the marginal social benefit from a hot dog decreases."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the marginal social cost of a hot dog decreases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the quantity of hot dogs supplied increases."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the hot dog market becomes more efficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the hot dog market becomes less efficient."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When the efficient quantity is produced"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "total consumer surplus is zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "total producer surplus is zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumer surplus exceeds producer surplus by the greatest possible amount."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "producer surplus exceeds consumer surplus by the greatest possible amount."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "When the efficient quantity is produced"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "marginal social benefit equals marginal social cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the quantity demanded equals the quantity supplied."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "resources are used in the activities in which they are most highly valued."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.1. The efficient quantity is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "250 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "200 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "150 units."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "100 units."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "50 units."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "30 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.1*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 30
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity</th><th>Price on D ($)</th><th>Price on S ($)</th></tr><tr><td>50</td><td></td><td>5</td></tr><tr><td>100</td><td>20</td><td>10</td></tr><tr><td>150</td><td>15</td><td>15</td></tr><tr><td>200</td><td>10</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.1. At the efficient quantity, the price is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "$20 a unit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$15 a unit."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "$10 a unit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "$5 a unit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "30 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.1*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 30
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity</th><th>Price on D ($)</th><th>Price on S ($)</th></tr><tr><td>50</td><td></td><td>5</td></tr><tr><td>100</td><td>20</td><td>10</td></tr><tr><td>150</td><td>15</td><td>15</td></tr><tr><td>200</td><td>10</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.1. If the quantity produced is 200,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "a deadweight loss exists."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "production is efficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "deadweight loss is minimized."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "30 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.1*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 30
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity</th><th>Price on D ($)</th><th>Price on S ($)</th></tr><tr><td>50</td><td></td><td>5</td></tr><tr><td>100</td><td>20</td><td>10</td></tr><tr><td>150</td><td>15</td><td>15</td></tr><tr><td>200</td><td>10</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.1. If the quantity produced is 100,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal social benefit exceeds marginal social cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal social cost exceeds marginal social benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "production is efficient."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social benefit is minimized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "deadweight loss is zero."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "30 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.1*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 30
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity</th><th>Price on D ($)</th><th>Price on S ($)</th></tr><tr><td>50</td><td></td><td>5</td></tr><tr><td>100</td><td>20</td><td>10</td></tr><tr><td>150</td><td>15</td><td>15</td></tr><tr><td>200</td><td>10</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.1. If the price is $15 a unit,"
+      },
+      "points": 2,
+      "options": [
+        {
+          "text": {
+            "en": "production is efficient."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal social benefit equals marginal social cost."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "deadweight loss is zero."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.1</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit)."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "30 - 0.1*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "0.1*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 30
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Quantity</th><th>Price on D ($)</th><th>Price on S ($)</th></tr><tr><td>50</td><td></td><td>5</td></tr><tr><td>100</td><td>20</td><td>10</td></tr><tr><td>150</td><td>15</td><td>15</td></tr><tr><td>200</td><td>10</td><td>20</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A negative externality results in"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "underproduction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "overproduction."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "efficient production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero deadweight loss."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following can lead to an inefficient outcome?<br>I. Price regulations<br>II. Increasing marginal cost<br>III. Monopoly"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and III"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "III only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I, II, and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A monopoly leads to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "overproduction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "underproduction."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "efficient production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "maximization of consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero deadweight loss."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following lead to an inefficient outcome?<br>I. Decreasing marginal social benefit<br>II. Taxes<br>III. High transactions cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I and III"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II and III"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "I, II and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Choose the correct statement."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Producer surplus is an external cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Consumer surplus is an external benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A government subsidy paid to a producer is an external benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Consumer surplus is an external cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Subsidies lead to overproduction."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose the market for diamonds is a monopoly. We can expect"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "underproduction of diamonds."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "overproduction of diamonds."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social benefit to equal marginal social cost in the diamond market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "an efficient quantity of diamonds."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the allocation of diamonds to be first-come, first-served."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When a deadweight loss occurs in a market, we can be certain that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "taxes have been imposed in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the market is a monopoly."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "there is underproduction in the market."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the entire economy experiences a loss."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "there is overproduction in the market."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.2. If the level of output is 150 units, the consumer surplus is area"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "BCF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACG."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "DCE."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACH."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "HCG."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). A is where D meets the price axis, G is where S meets it, and H is the equilibrium price. At 100 units, B is on D and F is on S; C is the equilibrium at 150 units; at 200 units, D is on S and E is on D. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "12 - 0.04*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "3 + 0.02*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 13
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>0</td><td>12</td></tr><tr><td>G</td><td>0</td><td>3</td></tr><tr><td>H</td><td>0</td><td>6</td></tr><tr><td>B</td><td>100</td><td>8</td></tr><tr><td>F</td><td>100</td><td>5</td></tr><tr><td>C</td><td>150</td><td>6</td></tr><tr><td>D</td><td>200</td><td>7</td></tr><tr><td>E</td><td>200</td><td>4</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.2. If the level of output is 150 units, the producer surplus is area"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "BCF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACG."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "DCE."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACH."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "HCG."
+          },
+          "correct": true
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). A is where D meets the price axis, G is where S meets it, and H is the equilibrium price. At 100 units, B is on D and F is on S; C is the equilibrium at 150 units; at 200 units, D is on S and E is on D. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "12 - 0.04*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "3 + 0.02*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 13
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>0</td><td>12</td></tr><tr><td>G</td><td>0</td><td>3</td></tr><tr><td>H</td><td>0</td><td>6</td></tr><tr><td>B</td><td>100</td><td>8</td></tr><tr><td>F</td><td>100</td><td>5</td></tr><tr><td>C</td><td>150</td><td>6</td></tr><tr><td>D</td><td>200</td><td>7</td></tr><tr><td>E</td><td>200</td><td>4</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.2. If the level of output is 100 units, the deadweight loss is area"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "BCF."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "ACG."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "DCE."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACH."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "HCG."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). A is where D meets the price axis, G is where S meets it, and H is the equilibrium price. At 100 units, B is on D and F is on S; C is the equilibrium at 150 units; at 200 units, D is on S and E is on D. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "12 - 0.04*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "3 + 0.02*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 13
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>0</td><td>12</td></tr><tr><td>G</td><td>0</td><td>3</td></tr><tr><td>H</td><td>0</td><td>6</td></tr><tr><td>B</td><td>100</td><td>8</td></tr><tr><td>F</td><td>100</td><td>5</td></tr><tr><td>C</td><td>150</td><td>6</td></tr><tr><td>D</td><td>200</td><td>7</td></tr><tr><td>E</td><td>200</td><td>4</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Figure 5.3.2. If the level of output is 200 units, the deadweight loss is area"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "BCF."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ACG."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "DCE."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "ACH."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "HCG."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.2</b> Horizontal axis: quantity (units). Vertical axis: price (dollars per unit). A is where D meets the price axis, G is where S meets it, and H is the equilibrium price. At 100 units, B is on D and F is on S; C is the equilibrium at 150 units; at 200 units, D is on S and E is on D. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "12 - 0.04*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "3 + 0.02*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 260,
+            "yMin": 0,
+            "yMax": 13
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>A</td><td>0</td><td>12</td></tr><tr><td>G</td><td>0</td><td>3</td></tr><tr><td>H</td><td>0</td><td>6</td></tr><tr><td>B</td><td>100</td><td>8</td></tr><tr><td>F</td><td>100</td><td>5</td></tr><tr><td>C</td><td>150</td><td>6</td></tr><tr><td>D</td><td>200</td><td>7</td></tr><tr><td>E</td><td>200</td><td>4</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "An external cost"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "is a marginal benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "results in underproduction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is a payment from the government to a producer."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "is a cost that affects someone other than the seller."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is a payment from a producer to the government."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If production is not at an efficient level, which of the following must be true?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Marginal social benefit exceeds marginal social cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Marginal social cost exceeds marginal social benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Production will increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Production will decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Total surplus is not maximized."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "In competitive equilibrium, which of the following statements is false?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Marginal social benefit equals marginal social cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Willingness to pay equals marginal cost of production."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Deadweight loss is maximized."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Resources are used efficiently to produce goods and services that people value most highly."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "If resources are allocated efficiently,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "consumer surplus exceeds producer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "producer surplus exceeds consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal social benefit is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social cost is minimized."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Markets achieve an efficient allocation of resources when"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "public goods are produced."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "external benefits are present."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the market is a monopoly."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "subsidies are paid to producers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social benefit equals marginal social cost."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When overproduction of a good occurs"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "deadweight loss is eliminated."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the sum of consumer surplus and producer surplus is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social cost exceeds marginal social benefit."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal social benefit exceeds marginal social cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the good is a public good."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Deadweight loss is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "borne entirely by consumers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "gained by producers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the social loss from inefficiency."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "not a problem with overproduction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "eliminated by a monopoly."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "At current output, the marginal social benefit from Furbys is greater than marginal social cost. To achieve an efficient allocation, which of the following must occur? (1) Furby output must increase. (2) Furby output must decrease. (3) the marginal social benefit of Furbys will rise. (4) the marginal social cost of Furbys will fall."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "1 and 3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 and 4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 and 3"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2 and 4"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "1 only"
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Consider the demand and supply curves in Figure 5.3.3. If the market is at the competitive equilibrium, which area in the diagram indicates producer surplus?"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "ABC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "AEC"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "EBC"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0BCD"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "0ECD"
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Figure 5.3.3</b> Demand D and supply S. Horizontal axis: quantity. Vertical axis: price. B is where D meets the price axis, E is where S meets the price axis, C is the equilibrium, A is the equilibrium price on the price axis, and D (on the quantity axis) is the equilibrium quantity. The price axis in the original has no numbers, so the prices in the table are only illustrative."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "function",
+            "functions": [
+              {
+                "expr": "10 - 0.8*x",
+                "name": {
+                  "en": "D"
+                }
+              },
+              {
+                "expr": "2 + 0.8*x",
+                "name": {
+                  "en": "S"
+                }
+              }
+            ],
+            "xMin": 0,
+            "xMax": 10,
+            "yMin": 0,
+            "yMax": 11
+          }
+        },
+        {
+          "type": "table",
+          "table": {
+            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>B</td><td>0</td><td>10</td></tr><tr><td>A</td><td>0</td><td>6</td></tr><tr><td>E</td><td>0</td><td>2</td></tr><tr><td>C</td><td>5</td><td>6</td></tr><tr><td>D</td><td>5</td><td>0</td></tr></table>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Choose the correct statement."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "The competitive market pushes the quantity produced to its efficient level."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "When the efficient quantity is produced in a competitive market, consumer surplus is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Competitive equilibrium occurs when demand equals supply."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "When the efficient quantity is produced in a competitive market, producer surplus is maximized."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "When the efficient quantity is produced in a competitive market, producer surplus is minimized."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "All of the following statements are true except:"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "An externality is a cost or a benefit that affects someone other than the seller or the buyer of a good."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "When an electric utility does not consider the cost of pollution when it decides how much power to produce, the result is overproduction."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "An electric utility creates an external cost by burning coal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "All externalities create overproduction."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "An external cost creates overproduction."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "It is efficient to produce an additional shirt if the"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "marginal social benefit from producing the shirt exceeds zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social benefit of producing the shirt equals zero."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "consumer surplus from the additional shirt exceeds its producer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "marginal social benefit from producing the shirt is greater than the marginal social cost of producing it."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "producer surplus from the additional shirt exceeds its consumer surplus."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When 2,000 hamburgers a day are produced, the marginal social benefit from the 2000th hamburger is $1.50 and its marginal social cost is $1.00. And when 7,500 hamburgers a day are produced, the marginal social benefit from the 7,500th hamburger is $1.00 and its marginal social cost is $1.50. The efficient quantity of hamburgers is ________ a day"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "less than 2,000"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "between 2,000 and 7,500"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "more than 7,500"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "zero"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2,000"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Fact 5.3.1. The major problem in achieving an efficient use of the world's water is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the lack of rain in some areas of the world."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "water is vital for life."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "to get it from the places where it is most abundant to the places in which it has the most valuable uses."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "markets in water are controlled by governments or private producers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the price of water is too low."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 5.3.1</b> Only 1 percent of the world supply of water is fit for human consumption. Some places have more water than they can use; some could use much more than they have. The 1 percent available would be sufficient if only it were in the right place."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Refer to Fact 5.3.1. If there were a global market in water like there is in oil,"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the supply of water would decrease."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "less water would be made available to countries that experience drought."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "supply and demand would determine the price of water and those who are willing to pay the equilibrium price would get the water."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the demand for water would increase."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "countries with a shortage of water would pay an exorbitant price for water."
+          },
+          "correct": false
+        }
+      ],
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "en": "<b>Fact 5.3.1</b> Only 1 percent of the world supply of water is fit for human consumption. Some places have more water than they can use; some could use much more than they have. The 1 percent available would be sufficient if only it were in the right place."
+          }
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Which of the following ideas describes the concept of \"utilitarianism\"?<br>I. Utilitarianism was introduced in the 1930s.<br>II. Utilitarians believed that a society should strive to make as many people as happy as possible.<br>III. Utilitarians claimed that taking money from rich people and giving it to poorer people would not make an economy better off."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "I only"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II only"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "I and III"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "II and III"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "I, II, and III"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The symmetry principle is based on"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "the idea that income should be redistributed from the rich to the poor."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the idea that people in similar situations should be treated similarly."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the fact that taxes create a deadweight loss."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the idea that markets operate fairly."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the idea that there is symmetry between buyers and sellers in a market."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "When the cost of making income transfers is recognized, we recognize the big tradeoff between"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "efficiency and fairness."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "marginal benefit and marginal cost."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "value and marginal benefit."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "producer surplus and consumer surplus."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "deadweight loss and utilitarianism."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "A modified version of utilitarianism proposed by John Rawls could be summarized as"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "transfer everything to the poor."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "transfer everything to the rich."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "expand the size of government."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "minimize the size of government."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "make the poorest as well off as possible."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The essence of philosopher Robert Nozick's proposal is that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "fairness works on the basis of fair outcomes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "fairness must be based on fairness of rules."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "involuntary exchange is fair."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "utilitarianism is the only fair allocation method."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the big tradeoff does not exist."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "One big problem with the utilitarian ideal is that it"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "ignores fairness."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ignores equality."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ignores the costs of making income transfers."
+          },
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "An idea of fairness that emphasizes equality of opportunity is"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "fair results."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "fair rules."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "fair incomes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "utilitarianism."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "modified utilitarianism."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "According to the \"big tradeoff,\""
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "income transfers reduce efficiency."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "efficiency requires income transfers."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "a more equally shared pie results in a larger pie."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "property rights and voluntary exchange insure equality of opportunity."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "income transfers should make the poorest person as well off as possible."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "According to John Rawls' modified utilitarianism, income should be redistributed until"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "incomes are equal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "opportunities are equal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the poorest person is as well off as possible."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the poorest person is as well off as possible, after incorporating the costs of income transfers."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the big tradeoff is eliminated."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Economists tend to"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "agree about efficiency and about fairness."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "agree about efficiency but disagree about fairness."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "disagree about efficiency but agree about fairness."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be more agreeable than philosophers about fairness."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "be more disagreeable than philosophers about fairness."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The two big approaches to thinking about fairness are"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "it's not fair if my income is less than yours and it's not fair if my opportunities in life are less than yours."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it's not fair if the result isn't fair and it's not fair if the rules aren't fair."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "the fairness of democracy and the fairness of central planning."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "the fairness of income equality and the fairness of educational equality."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "it's not fair if you are treated unkindly and it's not fair if you treat someone unkindly."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The idea of fairness that has been developed to deal with the big tradeoff is the idea that"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "fair distribution of the economic pie is the one that costs the richest person the least amount of money."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "fair distribution of the economic pie is the one that makes everyone equal."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "we should treat other people as we would like to be treated."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "fair distribution of the economic pie is the one that makes the poorest person as well off as possible."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "we need to bake a bigger economic pie."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "The main idea of fairness is based on which of the following rules? a. The state must enforce laws that establish and protect private property. b. Goods and services that produce externalities must be owned by the state, monopolies must be eliminated, and common resources must follow the rules of the competitive market. c. The state must enforce tax laws so that after taxes are paid and benefits are received, the gap between rich and poor is as small as possible. d. Private property may be transferred from one person to another only by voluntary exchange."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "Rules a and d"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Rules b and d"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Rules b and c"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Rules a and c"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The main idea of fairness is not based on any of these rules."
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Sunscreen factories are required to limit production to 100 bottles a day, which is less than the efficient quantity. The 100 bottles could be allocated to beachgoers by ________, which is ________ by the fair rules idea of fairness and ________ by the fair results idea of fairness."
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "first-come first-served; fair; unfair"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "personal characteristics; fair; fair"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "force; unfair; fair"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "majority rule; fair; fair"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "first-come first-served; fair; fair"
+          },
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "single_choice",
+      "question": {
+        "en": "Suppose the government places a tax on business profits so that businesses decrease production and generate a deadweight loss. Revenues from the tax are used to boost the incomes of the poor. The decision to levy the tax implies that in this case the government"
+      },
+      "points": 1,
+      "options": [
+        {
+          "text": {
+            "en": "values people but not businesses."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "values efficiency more than its view of fairness."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "profits from collecting taxes."
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "values its view of fairness more than efficiency."
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "is unaware of the deadweight loss it is creating."
+          },
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
