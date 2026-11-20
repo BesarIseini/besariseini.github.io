@@ -30,15 +30,14 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/about-Dd_PMt6z.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-CWsH8Uzq.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-DZSnnlgZ.js">
-  <link rel="modulepreload" crossorigin href="/assets/fingerprint-CYmwzM8S.js">
-  <link rel="modulepreload" crossorigin href="/assets/Quizzes-pmOu4Ky3.js">
-  <link rel="modulepreload" crossorigin href="/assets/quizText-CDynsahd.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-BrNy551f.js">
-  <link rel="modulepreload" crossorigin href="/assets/accountUi-BXXhfZIW.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-C9FJ9TJP.css">
+  <script type="module" crossorigin src="/assets/about-7QoP8m5A.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-DHdRe5wr.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizFormat-BSvJ34uk.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-Niaah1rk.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-D_yN0mq6.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-DKnKvQ4S.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-BnlOR0Sy.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-D_edw7CG.css">
 </head>
 <body>
 <script>
@@ -287,6 +286,15 @@
                 </select>
             </div>
 
+
+<!--            4.3: questions due for review (spaced repetition) -->
+            <div id="review-today" style="display: none" class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-card p-4">
+                <div>
+                    <p class="font-semibold text-foreground"><span data-language-id="REVIEW_TODAY_TITLE">Review today</span> (<span id="review-today-count">0</span>)</p>
+                    <p class="text-sm text-muted-foreground" data-language-id="REVIEW_TODAY_TEXT">Questions you got wrong come back after 1, 3 and 7 days, until you get them right 3 times in a row.</p>
+                </div>
+                <button type="button" id="review-today-start" class="inline-flex items-center justify-center rounded-md bg-primary px-4 h-10 text-sm font-medium text-primary-foreground hover:bg-primary/90" data-language-id="REVIEW_TODAY_START">Start review</button>
+            </div>
 
 <!--            course sections -->
             <div class="space-y-10" id="course-sections">

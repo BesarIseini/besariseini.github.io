@@ -50,5 +50,32 @@
         "sq": "Renditja dhe kërkimi"
       }
     }
+  ],
+  "exams": [
+    {
+      "id": "theory-midterm-1",
+      "title": {
+        "en": "Theory midterm 1",
+        "mk": "Теориски колоквиум 1",
+        "sq": "Kolokviumi teorik 1"
+      },
+      "description": {
+        "en": "Lecture questions from the first five lectures.",
+        "mk": "Прашања од првите пет предавања.",
+        "sq": "Pyetje nga pesë ligjëratat e para."
+      },
+      "topics": [
+        "complexity",
+        "arrays-lists",
+        "techniques",
+        "stacks-queues",
+        "sorting"
+      ],
+      "categories": [
+        "Lecture"
+      ],
+      "questions": 40,
+      "minutes": 60
+    }
   ]
 }
