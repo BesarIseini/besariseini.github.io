@@ -263,6 +263,17 @@
     },
     {
       "formatVersion": 1,
+      "id": "EIKT",
+      "name": {
+        "en": "Economy for ICT Engineers",
+        "mk": "Економија за ИКТ инженери",
+        "sq": "Ekonomia për inxhinierët e TIK"
+      },
+      "semester": 3,
+      "color": "#059669"
+    },
+    {
+      "formatVersion": 1,
       "id": "IPKS",
       "name": {
         "en": "Client-Side Internet Programming",

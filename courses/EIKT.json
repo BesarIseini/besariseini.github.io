@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "EIKT",
+  "name": {
+    "en": "Economy for ICT Engineers",
+    "mk": "Економија за ИКТ инженери",
+    "sq": "Ekonomia për inxhinierët e TIK"
+  },
+  "semester": 3,
+  "color": "#059669"
+}
