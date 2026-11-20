@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "key": "eikt-chapter-01",
-  "revision": 1,
+  "revision": 2,
   "courseId": "EIKT",
   "topicId": "what-is-economics",
   "category": "Lecture",
@@ -6985,7 +6985,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -10788,7 +10788,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -10853,7 +10853,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -12767,7 +12767,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>2</td><td>10</td></tr><tr><td></td><td>4</td><td>4</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>2</td><td>10</td></tr><tr><td>4</td><td>4</td></tr></table>"
           }
         }
       ]
@@ -12832,7 +12832,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>3</td><td>2</td></tr><tr><td></td><td>8</td><td>4</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>3</td><td>2</td></tr><tr><td>8</td><td>4</td></tr></table>"
           }
         }
       ]
@@ -12897,7 +12897,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>20</td><td>100</td></tr><tr><td></td><td>40</td><td>75</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>20</td><td>100</td></tr><tr><td>40</td><td>75</td></tr></table>"
           }
         }
       ]
@@ -12962,7 +12962,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>600</td><td>150</td></tr><tr><td></td><td>800</td><td>300</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>600</td><td>150</td></tr><tr><td>800</td><td>300</td></tr></table>"
           }
         }
       ]
@@ -13027,7 +13027,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>10</td><td>18</td></tr><tr><td></td><td>20</td><td>27</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>10</td><td>18</td></tr><tr><td>20</td><td>27</td></tr></table>"
           }
         }
       ]
@@ -13092,7 +13092,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>15</td><td>60</td></tr><tr><td></td><td>25</td><td>30</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>15</td><td>60</td></tr><tr><td>25</td><td>30</td></tr></table>"
           }
         }
       ]
@@ -13157,7 +13157,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>60</td><td>5</td></tr><tr><td></td><td>100</td><td>10</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>60</td><td>5</td></tr><tr><td>100</td><td>10</td></tr></table>"
           }
         }
       ]
@@ -13222,7 +13222,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>10</td><td>4</td></tr><tr><td></td><td>20</td><td>8</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>10</td><td>4</td></tr><tr><td>20</td><td>8</td></tr></table>"
           }
         }
       ]
@@ -13287,7 +13287,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>4</td><td>4</td></tr><tr><td></td><td>8</td><td>2</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>4</td><td>4</td></tr><tr><td>8</td><td>2</td></tr></table>"
           }
         }
       ]
@@ -13352,7 +13352,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>2</td><td>20</td></tr><tr><td></td><td>4</td><td>10</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>2</td><td>20</td></tr><tr><td>4</td><td>10</td></tr></table>"
           }
         }
       ]
@@ -13417,7 +13417,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>50</td><td>125</td></tr><tr><td></td><td>90</td><td>100</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>50</td><td>125</td></tr><tr><td>90</td><td>100</td></tr></table>"
           }
         }
       ]
@@ -13482,7 +13482,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>60</td><td>40</td></tr><tr><td></td><td>90</td><td>80</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>60</td><td>40</td></tr><tr><td>90</td><td>80</td></tr></table>"
           }
         }
       ]
@@ -13541,7 +13541,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Labor income</th><th>Consumption expenditure</th></tr><tr><td></td><td>100</td><td>100</td></tr><tr><td></td><td>600</td><td>550</td></tr></table>"
+            "en": "<table><tr><th>Labor income</th><th>Consumption expenditure</th></tr><tr><td>100</td><td>100</td></tr><tr><td>600</td><td>550</td></tr></table>"
           }
         }
       ]
@@ -13606,7 +13606,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -15021,7 +15021,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>2</td><td>1</td></tr><tr><td></td><td>3</td><td>2</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>2</td></tr></table>"
           }
         }
       ]
@@ -15086,7 +15086,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>x</th><th>y</th></tr><tr><td></td><td>2</td><td>1</td></tr><tr><td></td><td>3</td><td>2</td></tr></table>"
+            "en": "<table><tr><th>x</th><th>y</th></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>2</td></tr></table>"
           }
         }
       ]
@@ -15440,7 +15440,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -15505,7 +15505,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Income</th><th>Expenditures</th></tr><tr><td></td><td>0</td><td>8</td></tr><tr><td></td><td>24</td><td>32</td></tr></table>"
+            "en": "<table><tr><th>Income</th><th>Expenditures</th></tr><tr><td>0</td><td>8</td></tr><tr><td>24</td><td>32</td></tr></table>"
           }
         }
       ]
@@ -15570,7 +15570,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Consumption</th><th>Interest rate</th></tr><tr><td></td><td>20</td><td>8</td></tr></table>"
+            "en": "<table><tr><th>Consumption</th><th>Interest rate</th></tr><tr><td>20</td><td>8</td></tr></table>"
           }
         }
       ]
@@ -15635,7 +15635,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Consumption</th><th>Interest rate</th></tr><tr><td></td><td>20</td><td>8</td></tr></table>"
+            "en": "<table><tr><th>Consumption</th><th>Interest rate</th></tr><tr><td>20</td><td>8</td></tr></table>"
           }
         }
       ]
@@ -15700,7 +15700,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Consumption</th><th>Interest rate</th></tr><tr><td></td><td>20</td><td>8</td></tr></table>"
+            "en": "<table><tr><th>Consumption</th><th>Interest rate</th></tr><tr><td>20</td><td>8</td></tr></table>"
           }
         }
       ]
@@ -15765,7 +15765,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Consumption</th><th>Interest rate</th></tr><tr><td></td><td>20</td><td>8</td></tr></table>"
+            "en": "<table><tr><th>Consumption</th><th>Interest rate</th></tr><tr><td>20</td><td>8</td></tr></table>"
           }
         }
       ]
@@ -15830,7 +15830,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td></td><td>0</td><td>1</td></tr><tr><td></td><td>4</td><td>3</td></tr></table>"
+            "en": "<table><tr><th>Quantity</th><th>Price</th></tr><tr><td>0</td><td>1</td></tr><tr><td>4</td><td>3</td></tr></table>"
           }
         }
       ]
@@ -15889,7 +15889,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td></td><td>0</td><td>1</td></tr><tr><td></td><td>4</td><td>3</td></tr></table>"
+            "en": "<table><tr><th>Quantity</th><th>Price</th></tr><tr><td>0</td><td>1</td></tr><tr><td>4</td><td>3</td></tr></table>"
           }
         }
       ]
@@ -15954,7 +15954,7 @@
         {
           "type": "table",
           "table": {
-            "en": "<table><tr><th>Point</th><th>Quantity</th><th>Price</th></tr><tr><td></td><td>0</td><td>1</td></tr><tr><td></td><td>4</td><td>3</td></tr></table>"
+            "en": "<table><tr><th>Quantity</th><th>Price</th></tr><tr><td>0</td><td>1</td></tr><tr><td>4</td><td>3</td></tr></table>"
           }
         }
       ]
