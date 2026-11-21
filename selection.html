@@ -30,15 +30,18 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/assets/about-D2YOaI1D.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-CjPXDmgw.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-ScHSKKpg.js">
-  <link rel="modulepreload" crossorigin href="/assets/Quizzes-dPzMUUdb.js">
-  <link rel="modulepreload" crossorigin href="/assets/mockFormat-CA6lC_Qn.js">
-  <link rel="modulepreload" crossorigin href="/assets/quizText-QhR-woiO.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-CLK9s1Nz.js">
-  <link rel="modulepreload" crossorigin href="/assets/accountUi-quYHZLNB.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-BoFayyza.css">
+  <script type="module" crossorigin src="/assets/about-CDaXLhxm.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-AWN7Wn7Z.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-M1kCkEbA.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-DQ46meQ_.js">
+  <link rel="modulepreload" crossorigin href="/assets/quizText-FSNF5UGG.js">
+  <link rel="modulepreload" crossorigin href="/assets/fingerprint-CYmwzM8S.js">
+  <link rel="modulepreload" crossorigin href="/assets/study-BsyDbAtx.js">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-Cbaal-9l.js">
+  <link rel="modulepreload" crossorigin href="/assets/status-DQBguTY5.js">
+  <link rel="modulepreload" crossorigin href="/assets/featured-CGBvLUNO.js">
+  <link rel="modulepreload" crossorigin href="/assets/accountUi-imqPQWYo.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-ALiPxo0u.css">
 </head>
 <body>
 <script>
@@ -156,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-1.5 sm:gap-3 min-w-0">
 <!--                    <div class="hidden md:block text-right mr-4">-->
 <!--                        <p class="text-sm text-gray-500" id="nav-quiz-course-type">Demo Quiz</p>-->
 <!--                        <p class="font-medium text-sm" id="nav-quiz-title">Midterm Examination</p>-->
@@ -253,27 +256,55 @@
         <main class="container mx-auto px-4 py-8 max-w-6xl" >
 <!--            filter-->
             <div class="mb-8">
-                <h1 class="text-3xl font-bold text-foreground mb-2" data-language-id="SELECTION_TITLE">My Quizzes</h1>
+                <h1 class="text-3xl font-bold text-foreground mb-2" data-language-id="SELECTION_TITLE">Quizzes</h1>
                 <p class="text-muted-foreground" data-language-id="SELECTION_TEXT">
                     Select a quiz to begin. Choose your preferred mode and settings before starting.
                 </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                <div class="relative flex-1">
+<!--            4.3: questions due for review (spaced repetition) -->
+            <div id="review-today" style="display: none" class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-card p-4">
+                <div>
+                    <p class="font-semibold text-foreground"><span data-language-id="REVIEW_TODAY_TITLE">Review today</span> (<span id="review-today-count">0</span>)</p>
+                    <p class="text-sm text-muted-foreground" data-language-id="REVIEW_TODAY_TEXT">Questions you got wrong come back after 1, 3 and 7 days, until you get them right 3 times in a row.</p>
+                </div>
+                <button type="button" id="review-today-start" class="inline-flex items-center justify-center rounded-md bg-primary px-4 h-10 text-sm font-medium text-primary-foreground hover:bg-primary/90" data-language-id="REVIEW_TODAY_START">Start review</button>
+            </div>
+
+<!--            5.0 step 5: featured quizzes (the admin's picks, then the most taken lately) -->
+            <section id="featured-section" class="mb-10" style="display: none" aria-labelledby="featured-title">
+                <div class="flex items-baseline justify-between gap-3 mb-4">
+                    <h2 id="featured-title" class="text-xl font-semibold text-foreground" data-language-id="HOME_FEATURED">Featured</h2>
+                    <p class="text-sm text-muted-foreground" data-language-id="HOME_FEATURED_TEXT">Picked for you and popular right now.</p>
+                </div>
+                <div id="featured-list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 [&>*]:min-w-0"></div>
+            </section>
+
+<!--            tabs -->
+            <div role="tablist" aria-label="Quizzes" data-language-id="HOME_TABS" data-translation-type="aria-label" class="flex gap-1 overflow-x-auto border-b border-border mb-6">
+                <button type="button" role="tab" id="home-tab-all" data-home-tab="all" aria-selected="true" class="shrink-0 whitespace-nowrap h-10 px-4 -mb-px border-b-2 border-transparent text-sm font-medium text-muted-foreground hover:text-foreground aria-selected:border-primary aria-selected:text-foreground aria-selected:font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-t-md"><span data-language-id="HOME_TAB_ALL">All courses</span></button>
+                <button type="button" role="tab" id="home-tab-courses" data-home-tab="courses" aria-selected="false" tabindex="-1" class="shrink-0 whitespace-nowrap h-10 px-4 -mb-px border-b-2 border-transparent text-sm font-medium text-muted-foreground hover:text-foreground aria-selected:border-primary aria-selected:text-foreground aria-selected:font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-t-md"><span data-language-id="HOME_TAB_MY_COURSES">My courses</span> <span id="my-courses-count" class="ml-1 text-xs text-muted-foreground"></span></button>
+                <button type="button" role="tab" id="home-tab-quizzes" data-home-tab="quizzes" aria-selected="false" tabindex="-1" class="shrink-0 whitespace-nowrap h-10 px-4 -mb-px border-b-2 border-transparent text-sm font-medium text-muted-foreground hover:text-foreground aria-selected:border-primary aria-selected:text-foreground aria-selected:font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-t-md"><span data-language-id="HOME_TAB_MY_QUIZZES">My quizzes</span></button>
+            </div>
+
+<!--            filters -->
+            <div id="home-filters" class="mb-8 space-y-3">
+                <div class="relative">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground">
                         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
                     </svg>
                     <input
                             autocomplete="off"
                             id="filter-text"
-                            type="text"
-                            placeholder="Search courses..."
-                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 pl-9 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            type="search"
+                            placeholder="Search courses and quizzes..."
+                            data-language-id="HOME_SEARCH" data-translation-type="placeholder"
+                            aria-label="Search courses and quizzes"
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 pl-9 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     />
                 </div>
-
-                <select id="filter-select" class="flex h-10 w-full sm:w-48 items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                <div class="grid grid-cols-2 lg:grid-cols-[repeat(4,minmax(0,1fr))_auto] gap-3 items-center">
+                <select id="filter-select" aria-label="Semester" data-language-id="HOME_FILTER_SEMESTER" data-translation-type="aria-label" class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
                     <option value="0" data-language-id="FILTER_ALL">All Semesters</option>
                     <option value="1" data-language-id="FILTER_1">1st Semester</option>
                     <option value="2" data-language-id="FILTER_2">2nd Semester</option>
@@ -285,17 +316,39 @@
                     <option value="8" data-language-id="FILTER_8">8th Semester</option>
                     <option value="-1" data-language-id="FILTER_DEMO">Demo Quizzes</option>
                 </select>
-            </div>
-
-
-<!--            4.3: questions due for review (spaced repetition) -->
-            <div id="review-today" style="display: none" class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-card p-4">
-                <div>
-                    <p class="font-semibold text-foreground"><span data-language-id="REVIEW_TODAY_TITLE">Review today</span> (<span id="review-today-count">0</span>)</p>
-                    <p class="text-sm text-muted-foreground" data-language-id="REVIEW_TODAY_TEXT">Questions you got wrong come back after 1, 3 and 7 days, until you get them right 3 times in a row.</p>
+                <select id="filter-type" aria-label="Type" data-language-id="HOME_FILTER_TYPE" data-translation-type="aria-label" class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                    <option value="" data-language-id="HOME_TYPE_ALL">All types</option>
+                    <option value="Lecture" data-language-id="SELECTION_LECTURES">Lectures</option>
+                    <option value="Laboratory" data-language-id="SELECTION_LABORATORIES">Laboratories</option>
+                    <option value="Midterm" data-language-id="SELECTION_MIDTERMS">Midterms</option>
+                    <option value="Practical" data-language-id="SELECTION_PRACTICALS">Practicals</option>
+                    <option value="Exam" data-language-id="SELECTION_EXAMS">Exams</option>
+                    <option value="code" data-language-id="SELECTION_CODE_PROBLEMS">Code problems</option>
+                </select>
+                <select id="filter-source" aria-label="Source" data-language-id="HOME_FILTER_SOURCE" data-translation-type="aria-label" class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                    <option value="" data-language-id="HOME_SOURCE_ALL">Official and community</option>
+                    <option value="official" data-language-id="HOME_SOURCE_OFFICIAL">Official</option>
+                    <option value="community" data-language-id="SELECTION_COMMUNITY">Community</option>
+                </select>
+                <select id="filter-lang" aria-label="Language" data-language-id="HOME_FILTER_LANGUAGE" data-translation-type="aria-label" class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                    <option value="" data-language-id="HOME_LANGUAGE_ALL">Any language</option>
+                </select>
+                <button type="button" id="filters-clear" data-filters-clear style="visibility: hidden" class="col-span-2 lg:col-span-1 justify-self-start inline-flex items-center h-10 px-3 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted" data-language-id="HOME_FILTERS_CLEAR">Clear filters</button>
                 </div>
-                <button type="button" id="review-today-start" class="inline-flex items-center justify-center rounded-md bg-primary px-4 h-10 text-sm font-medium text-primary-foreground hover:bg-primary/90" data-language-id="REVIEW_TODAY_START">Start review</button>
             </div>
+
+            <div id="my-courses-empty" style="display: none" class="rounded-xl border border-dashed border-border p-8 text-center">
+                <p class="font-semibold text-foreground" data-language-id="HOME_MY_COURSES_EMPTY_TITLE">No saved courses yet</p>
+                <p class="text-sm text-muted-foreground mt-1" data-language-id="HOME_MY_COURSES_EMPTY_TEXT">Press the star next to a course in All courses to keep it here. Saved courses follow your account when you're logged in.</p>
+            </div>
+            <div id="filter-empty" style="display: none" class="rounded-xl border border-dashed border-border p-8 text-center">
+                <p class="font-semibold text-foreground" data-language-id="HOME_FILTER_EMPTY">Nothing matches these filters.</p>
+                <button type="button" data-filters-clear class="mt-3 inline-flex items-center h-9 px-3 rounded-md border border-border bg-background text-sm font-medium hover:bg-muted" data-language-id="HOME_FILTERS_CLEAR">Clear filters</button>
+            </div>
+
+            <section id="my-quizzes" style="display: none" aria-labelledby="home-tab-quizzes">
+                <div id="my-quizzes-list"></div>
+            </section>
 
 <!--            course sections -->
             <div class="space-y-10" id="course-sections">
