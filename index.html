@@ -2,6 +2,41 @@
 <html lang="en" class="">
 <head>
     <meta charset="UTF-8">
+    <script>(function (config) {
+var store = window.__seishubEarly = {};
+function start(url, init) {
+try {
+var request = fetch(url, init);
+request.catch(function () {}); // the loader reports failures
+store[url] = request;
+} catch (error) { /* old browser: the loaders fetch */ }
+}
+function timeout(ms) {
+return typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(ms) : undefined;
+}
+var local = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+var api = (config.api || (local ? "http://localhost:8787" : "https://api.seishub.dev")).replace(/\/+$/, "");
+var omit = function (ms) { return {credentials: "omit", signal: timeout(ms)}; };
+
+var lang = "en";
+try {
+lang = String(localStorage.getItem("app-language") || "").trim().toLowerCase();
+if (lang === "al") lang = "sq";
+if (["en", "mk", "sq"].indexOf(lang) < 0) lang = "en";
+} catch (error) { /* storage blocked */ }
+start(config.base + "translations/en.json?v=" + config.build);
+if (lang !== "en") start(config.base + "translations/" + lang + ".json?v=" + config.build);
+
+var data = config.data;
+if (data.indexOf("quizzes") >= 0) {
+start(config.base + "quizzes/index.json", {cache: "no-cache"});
+start(api + "/community/index", omit(4000));
+start(api + "/catalog/overrides", omit(4000));
+start(api + "/code/problems", omit(4000));
+}
+if (data.indexOf("courses") >= 0) start(api + "/catalog/courses", omit(3000));
+if (data.indexOf("featured") >= 0) start(api + "/catalog/featured", omit(4000));
+})({"api":"","base":"/","build":"mwrzqcrq","data":["quizzes","courses"]});</script>
     <title>SeisHub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,21 +74,19 @@
         .flare-partial { background-color: orange; } /* Green */
         .flare-incorrect { background-color: #ef4444; } /* Red */
     </style>
-  <script type="module" crossorigin src="/assets/index-L3r4fvuF.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/sync-AWN7Wn7Z.js">
-  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-M1kCkEbA.js">
-  <link rel="modulepreload" crossorigin href="/assets/problemFormat-BO6QYEqp.js">
-  <link rel="modulepreload" crossorigin href="/assets/chart-DjZYZZbr.js">
-  <link rel="modulepreload" crossorigin href="/assets/problemView-ngFIqKOZ.js">
+  <script type="module" crossorigin src="/assets/index-DLfHiLfy.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/sync-DRvZsw-W.js">
+  <link rel="modulepreload" crossorigin href="/assets/htmlGuard-BBJpwY2Z.js">
+  <link rel="modulepreload" crossorigin href="/assets/chart-DYqxkZtq.js">
+  <link rel="modulepreload" crossorigin href="/assets/codeLanguages-DijsR4MF.js">
+  <link rel="modulepreload" crossorigin href="/assets/problemView-DOPCV6-B.js">
   <link rel="modulepreload" crossorigin href="/assets/fingerprint-CYmwzM8S.js">
-  <link rel="modulepreload" crossorigin href="/assets/courseNameById-Cbaal-9l.js">
-  <link rel="modulepreload" crossorigin href="/assets/Quizzes-DQ46meQ_.js">
-  <link rel="stylesheet" crossorigin href="/assets/sync-ALiPxo0u.css">
+  <link rel="modulepreload" crossorigin href="/assets/courseNameById-CQeswG4U.js">
+  <link rel="modulepreload" crossorigin href="/assets/Quizzes-DnvgYogi.js">
+  <link rel="stylesheet" crossorigin href="/assets/sync-BPbWBfgY.css">
   <link rel="stylesheet" crossorigin href="/assets/chart-DEaY60kE.css">
   <link rel="stylesheet" crossorigin href="/assets/problemView-BrH2B2La.css">
 </head>
-    <script src="https://unpkg.com/feather-icons"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
 <script>
     const getDarkMode = localStorage.getItem('darkMode');
     if(getDarkMode && getDarkMode === "dark") {
@@ -67,7 +100,7 @@
 
         <div class="flex items-center gap-4">
             <button id="open-sidebar-btn" class="lg:hidden text-gray-700 hover:bg-gray-100 p-2 rounded-md transition-colors">
-                <i data-feather="menu" class="h-5 w-5"></i>
+                <i data-lucide="menu" class="h-5 w-5"></i>
                 <span class="sr-only" data-language-id="QUIZ_TOGGLE_NAVIGATION">Toggle navigation</span>
             </button>
 
@@ -75,7 +108,7 @@
             <a href="selection.html">
                 <div class="flex items-center gap-3">
                     <div class="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
-                        <i data-feather="book-open" class="h-5 w-5 text-white"></i>
+                        <i data-lucide="book-open" class="h-5 w-5 text-white"></i>
                     </div>
                     <div class="hidden sm:block">
                         <h1 class="font-semibold text-lg leading-tight" data-language-id="LOGO">SeisHub</h1>
@@ -92,7 +125,7 @@
             </div>
 
             <div class="flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-lg bg-sidebar-accent">
-                <i data-feather="clock" class="h-5 w-5"></i>
+                <i data-lucide="clock" class="h-5 w-5"></i>
                 <span class="font-semibold" id="timer">45:00</span>
             </div>
             <button
@@ -130,16 +163,16 @@
 
 <!--                    <div class="py-1">-->
 <!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">-->
-<!--                            <i data-feather="user" class="mr-2 h-4 w-4"></i> Profile-->
+<!--                            <i data-lucide="user" class="mr-2 h-4 w-4"></i> Profile-->
 <!--                        </a>-->
 <!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">-->
-<!--                            <i data-feather="book-open" class="mr-2 h-4 w-4"></i> My Courses-->
+<!--                            <i data-lucide="book-open" class="mr-2 h-4 w-4"></i> My Courses-->
 <!--                        </a>-->
 <!--                    </div>-->
 
 <!--                    <div class="border-t border-gray-100 py-1">-->
 <!--                        <a href="#" class="flex items-center px-3 py-2 text-sm text-red-600 hover:bg-red-50">-->
-<!--                            <i data-feather="log-out" class="mr-2 h-4 w-4"></i> Log out-->
+<!--                            <i data-lucide="log-out" class="mr-2 h-4 w-4"></i> Log out-->
 <!--                        </a>-->
 <!--                    </div>-->
 <!--                </div>-->
@@ -827,21 +860,24 @@
     const lightbox = document.getElementById('image-lightbox');
     const openBtnLight = document.getElementById('open-lightbox-btn');
 
-    openBtnLight.addEventListener('click', () => {
-        lightbox.classList.remove('hidden');
-    });
+    // The lightbox isn't on this page any more; kept for when it comes back.
+    if (lightbox && openBtnLight) {
+        openBtnLight.addEventListener('click', () => {
+            lightbox.classList.remove('hidden');
+        });
 
-    // Close when clicking anywhere on the lightbox overlay
-    lightbox.addEventListener('click', () => {
-        lightbox.classList.add('hidden');
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        // Close when clicking anywhere on the lightbox overlay
+        lightbox.addEventListener('click', () => {
             lightbox.classList.add('hidden');
-        }
-    });
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                lightbox.classList.add('hidden');
+            }
+        });
+    }
 </script>
 
 
@@ -876,21 +912,17 @@
 </script>
 
 <script>
-    // 1. Initialize Feather Icons
-    lucide.createIcons();
-    feather.replace();
-
-    // 2. Simple Dropdown Toggle Logic
+    // Dropdown toggle (icons are made by src/core/icons.ts)
     const avatarBtn = document.getElementById('avatar-btn');
     const dropdownMenu = document.getElementById('dropdown-menu');
 
-    avatarBtn.addEventListener('click', (e) => {
+    if (avatarBtn && dropdownMenu) avatarBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         dropdownMenu.classList.toggle('hidden');
     });
 
     // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
+    if (dropdownMenu) document.addEventListener('click', (e) => {
         if (!dropdownMenu.classList.contains('hidden') && !dropdownMenu.contains(e.target)) {
             dropdownMenu.classList.add('hidden');
         }

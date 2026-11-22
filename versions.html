@@ -54,6 +54,25 @@
         <h1>Versions</h1>
         <div>
             <section class="changelog">
+                <h3>Release v5.0 step 6 - 22/11/2026</h3>
+
+                <h4>⚡ Faster</h4>
+                <ul>
+                    <li>Icons come with the site instead of a 500 KB script from another server that held back every page.</li>
+                    <li>Pages ask for the quiz and course lists as soon as they open, instead of after all their code has loaded.</li>
+                    <li>The homepage builds its course list in one go, and the list pages no longer load the quiz validator.</li>
+                    <li>On a slow phone connection, the homepage's course list now shows in about half the time.</li>
+                </ul>
+
+                <h4>🐛 Fixed</h4>
+                <ul>
+                    <li>Quiz descriptions with angle brackets, like &lt;&lt;include&gt;&gt;, are shown as written.</li>
+                    <li>An error on the quiz page from parts that no longer exist.</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
                 <h3>Release v5.0 step 5 - 21/11/2026</h3>
 
                 <h4>✨ Added</h4>
