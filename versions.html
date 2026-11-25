@@ -54,6 +54,27 @@
         <h1>Versions</h1>
         <div>
             <section class="changelog">
+                <h3>Release v5.2.0 - 26/11/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>Information items: text-only parts of a quiz (a case description, rules for the next questions), shown as “i” in the question list. No answer and no points.</li>
+                    <li>draw.io diagrams inside questions, drawn by the site itself (no images needed). Built for FINKI's OOAID notation: <code>&lt;&lt;includes&gt;&gt;</code>/<code>&lt;&lt;extends&gt;&gt;</code> as loose labels, multiplicities near line ends, class and state compartments, lifelines and activations.</li>
+                    <li>New question type “Draw a diagram”: draw in draw.io and upload the file, or draw on paper. Then compare with the model solution and tick a checklist with points. For uploaded files the site pre-ticks what it recognises; you confirm or fix every tick.</li>
+                    <li>The automatic check is experimental and marked as such on every diagram question: it can miss correct parts (and wrongly take points off) or tick things that aren't there. Diagram scores are self-checked practice, and the results page says how many points came from them.</li>
+                    <li>Creator: information items, diagram questions (upload the solution, “Make checklist from solution”, edit points and other accepted names per item) and draw.io content blocks.</li>
+                    <li>Import (AI): the prompt knows the new types.</li>
+                </ul>
+
+                <h4>🔧 Changed</h4>
+                <ul>
+                    <li>A quiz with information items keeps its order and all its questions (no shuffling or random cut), since the information belongs to the questions after it.</li>
+                    <li>Discord bot: information items are left out without counting as questions; diagram questions are listed as “draw a diagram”.</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
                 <h3>Release v5.1.3 - 25/11/2026</h3>
 
                 <h4>✨ Added</h4>
