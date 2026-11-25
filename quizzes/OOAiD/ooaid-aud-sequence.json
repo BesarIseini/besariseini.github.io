@@ -1,0 +1,876 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-sequence",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "sequence",
+ "category": "Practical",
+ "title": {
+  "en": "Sequence diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the sequence diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram to describe the process for generating the salary list in a company. The company has departments with employees. Each department has one head. For each department take the list of employees and print the amount to be paid as a salary. First, print the salary information about the head of the department. At the end, print the total amount of salary to be paid in the department."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Department\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"head:Employee\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"e:Employee\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"salary = head.getSalary()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c6\" value=\"return salary\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"122\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"print(salary)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"164\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"194\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"164\"/><mxPoint x=\"120.0\" y=\"194\"/></Array></mxGeometry></mxCell><mxCell id=\"c8\" value=\"*[for each e in employees] salary = e.getSalary()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"226\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"226\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"return salary\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"268\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"268\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"print(salary); total = total + salary\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"310\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"340\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"310\"/><mxPoint x=\"120.0\" y=\"340\"/></Array></mxGeometry></mxCell><mxCell id=\"c11\" value=\"print(total)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"372\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"402\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"372\"/><mxPoint x=\"120.0\" y=\"402\"/></Array></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Department"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Department"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: head:Employee"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       "head:Employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: e:Employee"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       "e:Employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Department → head:Employee: salary = head.getSalary()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Department"
+       ],
+       "to": [
+        "head:Employee"
+       ],
+       "type": "flow",
+       "label": [
+        "salary = head.getSalary()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "head:Employee → :Department: return salary"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "head:Employee"
+       ],
+       "to": [
+        ":Department"
+       ],
+       "type": "flow",
+       "label": [
+        "return salary"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: print(salary)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "print(salary)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Department → e:Employee: *[for each e in employees] salary = e.getSalary()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Department"
+       ],
+       "to": [
+        "e:Employee"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each e in employees] salary = e.getSalary()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "e:Employee → :Department: return salary"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "e:Employee"
+       ],
+       "to": [
+        ":Department"
+       ],
+       "type": "flow",
+       "label": [
+        "return salary"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: print(salary); total = total + salary"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "print(salary); total = total + salary"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: print(total)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "print(total)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "The head's salary is printed first, before the loop over the employees"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram to model the ordering section of a company. Based on the received proforma invoice, an order should be created. The products listed in the proforma invoice are added to the order, whereby it should be checked if they are in stock. If they are in stock, then the appropriate quantity of the products is taken from the warehouse and confirmation is sent. After that, the remaining products are checked. When the order is completed, a message FINISHED is returned."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":ProformaInvoice\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"542\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Order\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"542\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Product\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"542\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\":Warehouse\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"470\" y=\"0\" width=\"120\" height=\"542\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"&amp;lt;&amp;lt;create&amp;gt;&amp;gt;\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"products = getProducts()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"152\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"122\"/><mxPoint x=\"120.0\" y=\"152\"/></Array></mxGeometry></mxCell><mxCell id=\"c8\" value=\"*[for each p in products] p.getStock(w)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"184\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"184\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"available = w.checkStock(p)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"226\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"226\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"return available\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"530.0\" y=\"268\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"268\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"[available] w.reduceQuantity(p)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"310\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"310\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"[available] addProduct(p)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"352\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"352\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"confirmation\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"394\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"394\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c14\" value=\"return FINISHED\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"436\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"436\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :ProformaInvoice"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":ProformaInvoice"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Order"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Product"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Product"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Warehouse"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Warehouse"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":ProformaInvoice creates :Order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":ProformaInvoice"
+       ],
+       "to": [
+        ":Order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: products = getProducts()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "products = getProducts()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":ProformaInvoice → :Product: *[for each p in products] p.getStock(w)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":ProformaInvoice"
+       ],
+       "to": [
+        ":Product"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each p in products] p.getStock(w)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Product → :Warehouse: available = w.checkStock(p)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Product"
+       ],
+       "to": [
+        ":Warehouse"
+       ],
+       "type": "flow",
+       "label": [
+        "available = w.checkStock(p)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Warehouse → :Product: return available"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Warehouse"
+       ],
+       "to": [
+        ":Product"
+       ],
+       "type": "flow",
+       "label": [
+        "return available"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Product → :Warehouse: [available] w.reduceQuantity(p)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Product"
+       ],
+       "to": [
+        ":Warehouse"
+       ],
+       "type": "flow",
+       "label": [
+        "[available] w.reduceQuantity(p)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Product → :Order: [available] addProduct(p)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Product"
+       ],
+       "to": [
+        ":Order"
+       ],
+       "type": "flow",
+       "label": [
+        "[available] addProduct(p)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Order → :ProformaInvoice: confirmation"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Order"
+       ],
+       "to": [
+        ":ProformaInvoice"
+       ],
+       "type": "flow",
+       "label": [
+        "confirmation"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Order → :ProformaInvoice: return FINISHED"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Order"
+       ],
+       "to": [
+        ":ProformaInvoice"
+       ],
+       "type": "flow",
+       "label": [
+        "return FINISHED"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for searching in a library. There are members in the library who can use the library system to search through the book fund by entering keywords. After searching, the list of found books is displayed in the format: title, author, number of copies and status."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Member\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Book\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Author\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\":Copy\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"470\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"books = search(keywords)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"*[for each b in books] title = b.getTitle()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"122\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"author = getAuthor()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"164\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"164\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"return author\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"206\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"206\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"*[for each c in copies] c.getStatus()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"248\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"248\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"return status\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"530.0\" y=\"290\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"290\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"return title, author, numCopies, status\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"332\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"332\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Member"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Book"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Author"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Author"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Copy"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Copy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Book: books = search(keywords)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "books = search(keywords)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Book: *[for each b in books] title = b.getTitle()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each b in books] title = b.getTitle()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Book → :Author: author = getAuthor()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Book"
+       ],
+       "to": [
+        ":Author"
+       ],
+       "type": "flow",
+       "label": [
+        "author = getAuthor()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Author → :Book: return author"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Author"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "return author"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Book → :Copy: *[for each c in copies] c.getStatus()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Book"
+       ],
+       "to": [
+        ":Copy"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each c in copies] c.getStatus()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Copy → :Book: return status"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Copy"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "return status"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Book → :Member: return title, author, numCopies, status"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Book"
+       ],
+       "to": [
+        ":Member"
+       ],
+       "type": "flow",
+       "label": [
+        "return title, author, numCopies, status"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for borrowing in a library. Members can borrow a copy of a book (the copy can be borrowed if its status is \"TRUE\"). After the successful borrowing the status of the copy is set to \"FALSE\", and the attribute active in the class Borrowing is set to \"TRUE\"."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Member\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Book\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Copy\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\":Borrowing\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"470\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"copy = getCopy()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"*[for each c in copies] c.getStatus()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"122\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"return status\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"164\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"164\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"return copy\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"206\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"206\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"[status == TRUE] &amp;lt;&amp;lt;create&amp;gt;&amp;gt;\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"248\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"248\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"setStatus(FALSE)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"290\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"290\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"setActive(TRUE)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"332\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"332\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"return borrowing\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"530.0\" y=\"374\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"374\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Member"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Book"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Copy"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Copy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Borrowing"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Borrowing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Book: copy = getCopy()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "copy = getCopy()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Book → :Copy: *[for each c in copies] c.getStatus()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Book"
+       ],
+       "to": [
+        ":Copy"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each c in copies] c.getStatus()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Copy → :Book: return status"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Copy"
+       ],
+       "to": [
+        ":Book"
+       ],
+       "type": "flow",
+       "label": [
+        "return status"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Book → :Member: return copy"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Book"
+       ],
+       "to": [
+        ":Member"
+       ],
+       "type": "flow",
+       "label": [
+        "return copy"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Borrowing: [status == TRUE] <<create>>"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Borrowing"
+       ],
+       "type": "flow",
+       "label": [
+        "[status == TRUE] <<create>>"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Copy: setStatus(FALSE)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Copy"
+       ],
+       "type": "flow",
+       "label": [
+        "setStatus(FALSE)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Member → :Borrowing: setActive(TRUE)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Member"
+       ],
+       "to": [
+        ":Borrowing"
+       ],
+       "type": "flow",
+       "label": [
+        "setActive(TRUE)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Borrowing → :Member: return borrowing"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Borrowing"
+       ],
+       "to": [
+        ":Member"
+       ],
+       "type": "flow",
+       "label": [
+        "return borrowing"
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

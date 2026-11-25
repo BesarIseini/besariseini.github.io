@@ -1,0 +1,663 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-implementation",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "implementation",
+ "category": "Practical",
+ "title": {
+  "en": "Implementation diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the implementation diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 2400,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an implementation diagram for a library. The library is located in Skopje, and has local branches in three cities in Macedonia (Ohrid, Bitola and Stip). The library system should be web-based, except the book rental module. The library in Skopje has 5 points for renting books, while in other cities there is one point. The library system should be installed on a separate server in Skopje (the database should be installed on a separate server). The users can search books online and also on the terminals placed in the halls of the libraries (Skopje - 15, Ohrid and Stip - 10, Bitola - 12). The library in Skopje has a special computer equipped with a scanner, a printer and a bar code reader which is used for inserting new books in the library system."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-10\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"460\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-10\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"server\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-18\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-10\" source=\"OImvpKrJ1HS5R_1yQZ-Q-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;strokeWidth=1;endSize=14;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"80\" y=\"160\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-20\" connectable=\"0\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-18\" style=\"edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];\" value=\"borrow\" vertex=\"1\">\n          <mxGeometry relative=\"1\" x=\"1\" y=\"10\" as=\"geometry\">\n            <mxPoint x=\"10\" as=\"offset\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-29\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-10\" source=\"OImvpKrJ1HS5R_1yQZ-Q-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=oval;endFill=0;endSize=11;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"180\" y=\"84.72727272727263\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-3\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-10\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"Library app\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"30\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-4\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"database server\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"190\" x=\"120\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-5\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"database\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"130\" y=\"140\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-6\" edge=\"1\" parent=\"1\" source=\"OImvpKrJ1HS5R_1yQZ-Q-5\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;dashed=1;startArrow=open;startFill=0;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;\" target=\"OImvpKrJ1HS5R_1yQZ-Q-3\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"490\" y=\"165\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-7\" edge=\"1\" parent=\"1\" source=\"OImvpKrJ1HS5R_1yQZ-Q-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=65;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"OImvpKrJ1HS5R_1yQZ-Q-4\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-8\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"290\" y=\"110\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-9\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"410\" y=\"100\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-11\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"150\" y=\"320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-12\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-11\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"PC for renting\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-19\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-11\" source=\"OImvpKrJ1HS5R_1yQZ-Q-13\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"390\" y=\"-100\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-13\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-11\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"App for borrowing\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"30\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-14\" edge=\"1\" parent=\"1\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.939;entryY=0.981;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"OImvpKrJ1HS5R_1yQZ-Q-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"230\" y=\"320\" as=\"sourcePoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-15\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"400\" y=\"180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-16\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"8\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"200\" y=\"290\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-21\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"290\" y=\"220\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-22\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"460\" y=\"320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-23\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-22\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"terminal for searching\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-25\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-22\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"web browser\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"30\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-26\" edge=\"1\" parent=\"1\" source=\"OImvpKrJ1HS5R_1yQZ-Q-23\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.147;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"OImvpKrJ1HS5R_1yQZ-Q-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-27\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"580\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-28\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"47\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"520\" y=\"290\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-30\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"searching\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"620\" y=\"115\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-24\" edge=\"1\" parent=\"1\" source=\"OImvpKrJ1HS5R_1yQZ-Q-25\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"640\" y=\"150\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-31\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"505\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-39\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"790\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-45\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-39\" source=\"OImvpKrJ1HS5R_1yQZ-Q-40\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"280\" y=\"-19.999999999999886\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-46\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-39\" source=\"OImvpKrJ1HS5R_1yQZ-Q-40\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"50\" y=\"250\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-47\" edge=\"1\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-39\" source=\"OImvpKrJ1HS5R_1yQZ-Q-40\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"40\" y=\"-49.999999999999886\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-40\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-39\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"special PC\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"-40\" y=\"15\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-41\" parent=\"OImvpKrJ1HS5R_1yQZ-Q-39\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"web browser\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"-15\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-43\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"590\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-44\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"710\" y=\"100\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-42\" edge=\"1\" parent=\"1\" source=\"OImvpKrJ1HS5R_1yQZ-Q-40\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.388;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"OImvpKrJ1HS5R_1yQZ-Q-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"630\" y=\"90.00000000000011\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-49\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"Scanner\" vertex=\"1\">\n          <mxGeometry height=\"90\" width=\"70\" x=\"805\" y=\"310\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-51\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"Printer\" vertex=\"1\">\n          <mxGeometry height=\"90\" width=\"70\" x=\"1050\" y=\"-50\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-52\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"Barcode reader\" vertex=\"1\">\n          <mxGeometry height=\"90\" width=\"70\" x=\"790\" y=\"-80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-54\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"830\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-55\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"815\" y=\"40\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-56\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1010\" y=\"50\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-57\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"880\" y=\"150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-58\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"810\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"OImvpKrJ1HS5R_1yQZ-Q-59\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"830\" y=\"270\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "server",
+       "central server",
+       "main server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Library app"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Library app"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: database server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "database server",
+       "db server",
+       "server for the database"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: PC for renting"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "PC for renting",
+       "rental point",
+       "renting computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: App for borrowing"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "App for borrowing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: terminal for searching"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "terminal for searching",
+       "terminal"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: web browser"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "web browser"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: special PC"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "special PC",
+       "special computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Scanner"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Scanner"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Printer"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Printer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Barcode reader"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Barcode reader"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Library app — server"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Library app"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Library app — web browser"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Library app"
+       ],
+       "to": [
+        "web browser"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Library app depends on database (1 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Library app"
+       ],
+       "to": [
+        "database",
+        "db"
+       ],
+       "type": "dependency",
+       "fromMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "server — database server (1 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "to": [
+        "database server",
+        "db server",
+        "server for the database"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "App for borrowing depends on server"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "App for borrowing"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "PC for renting — server (8 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "PC for renting",
+        "rental point",
+        "renting computer"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "8"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "terminal for searching — server (47 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "terminal for searching",
+        "terminal"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "47"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "web browser depends on Library app (? — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "web browser"
+       ],
+       "to": [
+        "Library app"
+       ],
+       "type": "dependency",
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "special PC — Printer (? — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "special PC",
+        "special computer"
+       ],
+       "to": [
+        "Printer"
+       ],
+       "type": "association",
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "special PC — Scanner (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "special PC",
+        "special computer"
+       ],
+       "to": [
+        "Scanner"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "special PC — Barcode reader (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "special PC",
+        "special computer"
+       ],
+       "to": [
+        "Barcode reader"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "special PC — server (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "special PC",
+        "special computer"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an implementation diagram for an airline. The airline has one central server where all data is stored. The ticket sales from the sales points are made by accessing the central server through an appropriate connection. At each point there can be multiple computers that use the data from the server, and all share the same printer. On the central server, apart from the database, the appropriate software application should be stored. This app will be used by the sales points employees and passengers who will make ticket reservations online."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-1\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"230\" width=\"230\" x=\"190\" y=\"-80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-2\" parent=\"xYdhj-15EBquOHrH_9RC-1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"server\" vertex=\"1\">\n          <mxGeometry height=\"230\" width=\"230.00000000000003\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-3\" edge=\"1\" parent=\"xYdhj-15EBquOHrH_9RC-1\" source=\"xYdhj-15EBquOHrH_9RC-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;strokeWidth=1;endSize=14;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"122.66666666666667\" y=\"262.85714285714283\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-4\" connectable=\"0\" parent=\"xYdhj-15EBquOHrH_9RC-3\" style=\"edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];\" value=\"sales points\" vertex=\"1\">\n          <mxGeometry relative=\"1\" x=\"1\" y=\"10\" as=\"geometry\">\n            <mxPoint x=\"9\" y=\"12\" as=\"offset\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-5\" edge=\"1\" parent=\"xYdhj-15EBquOHrH_9RC-1\" source=\"xYdhj-15EBquOHrH_9RC-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=oval;endFill=0;endSize=11;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"276\" y=\"139.19480519480504\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-6\" parent=\"xYdhj-15EBquOHrH_9RC-1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"Application\" vertex=\"1\">\n          <mxGeometry height=\"60.71\" width=\"104\" x=\"46\" y=\"120\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-8\" edge=\"1\" parent=\"xYdhj-15EBquOHrH_9RC-1\" source=\"xYdhj-15EBquOHrH_9RC-7\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;startArrow=open;startFill=0;\" target=\"xYdhj-15EBquOHrH_9RC-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"xYdhj-15EBquOHrH_9RC-7\" parent=\"xYdhj-15EBquOHrH_9RC-1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"database\" vertex=\"1\">\n          <mxGeometry height=\"60.71\" width=\"104\" x=\"90\" y=\"30\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-1\" connectable=\"0\" parent=\"1\" style=\"group\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"40\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-2\" parent=\"7g8v0n3q0bVjL2Mr6NmT-1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"PC\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-3\" edge=\"1\" parent=\"7g8v0n3q0bVjL2Mr6NmT-1\" source=\"7g8v0n3q0bVjL2Mr6NmT-4\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"270\" y=\"-30\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-4\" parent=\"7g8v0n3q0bVjL2Mr6NmT-1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"Application\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"30\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-5\" edge=\"1\" parent=\"1\" source=\"7g8v0n3q0bVjL2Mr6NmT-2\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=120;entryDy=230.00000000000003;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"xYdhj-15EBquOHrH_9RC-2\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-6\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"130\" y=\"30\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"7g8v0n3q0bVjL2Mr6NmT-7\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"100\" y=\"180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-1\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"Printer\" vertex=\"1\">\n          <mxGeometry height=\"90\" width=\"70\" x=\"100\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-2\" edge=\"1\" parent=\"1\" source=\"7g8v0n3q0bVjL2Mr6NmT-2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\" target=\"4OLSE-vk4kLt5bPGMViy-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-4\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"120\" y=\"390\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-5\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"100\" y=\"350\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-6\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"Traveler device\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"150\" x=\"480\" y=\"295\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-11\" edge=\"1\" parent=\"1\" source=\"4OLSE-vk4kLt5bPGMViy-7\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"470\" y=\"60\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-7\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"Application\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"505\" y=\"365\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-8\" edge=\"1\" parent=\"1\" source=\"4OLSE-vk4kLt5bPGMViy-6\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.984;entryY=0.082;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"xYdhj-15EBquOHrH_9RC-2\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-9\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"410\" y=\"140\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-10\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"490\" y=\"265\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4OLSE-vk4kLt5bPGMViy-12\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"traveler\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"460\" y=\"30\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "server",
+       "central server",
+       "main server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Application"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Application"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: PC"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "PC",
+       "computer",
+       "desktop computer",
+       "personal computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Printer"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Printer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Traveler device"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Traveler device",
+       "passenger computer",
+       "passenger device"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "database depends on Application"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "database",
+        "db"
+       ],
+       "to": [
+        "Application"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "PC — server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "PC",
+        "computer",
+        "desktop computer",
+        "personal computer"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "PC — Printer (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "PC",
+        "computer",
+        "desktop computer",
+        "personal computer"
+       ],
+       "to": [
+        "Printer"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Traveler device — server"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Traveler device",
+        "passenger computer",
+        "passenger device"
+       ],
+       "to": [
+        "server",
+        "central server",
+        "main server"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Sales point computers and passengers' devices use the application on the server"
+     },
+     "points": 1
+    }
+   ]
+  }
+ ]
+}

@@ -3069,6 +3069,233 @@
       ]
     },
     {
+      "key": "ooaid-aud-activity",
+      "path": "quizzes/OOAiD/ooaid-aud-activity.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "activity",
+      "category": "Practical",
+      "title": {
+        "en": "Activity diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the activity diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 6000,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Activity diagrams: auditory exercises"
+      ],
+      "questionCount": 5,
+      "estimatedMinutes": 75,
+      "fingerprints": [
+        "4cb6lpqu7j",
+        "v7fffoqpzn",
+        "299n9421sss",
+        "v4vgmrly3g",
+        "1fupzdegnuh"
+      ],
+      "diagrams": 5
+    },
+    {
+      "key": "ooaid-aud-class",
+      "path": "quizzes/OOAiD/ooaid-aud-class.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "class",
+      "category": "Practical",
+      "title": {
+        "en": "Class diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the class diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 6000,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Class diagrams: auditory exercises"
+      ],
+      "questionCount": 5,
+      "estimatedMinutes": 75,
+      "fingerprints": [
+        "1kzb5ty6xjt",
+        "932tb8csps",
+        "28cq8kt4448",
+        "292p0ju3sxn",
+        "1lalnu17s12"
+      ],
+      "diagrams": 5
+    },
+    {
+      "key": "ooaid-aud-implementation",
+      "path": "quizzes/OOAiD/ooaid-aud-implementation.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "implementation",
+      "category": "Practical",
+      "title": {
+        "en": "Implementation diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the implementation diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 2400,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Implementation diagrams: auditory exercises"
+      ],
+      "questionCount": 2,
+      "estimatedMinutes": 30,
+      "fingerprints": [
+        "28wy9o8gzy",
+        "2fdmsz5lwg0"
+      ],
+      "diagrams": 2
+    },
+    {
+      "key": "ooaid-aud-sequence",
+      "path": "quizzes/OOAiD/ooaid-aud-sequence.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "sequence",
+      "category": "Practical",
+      "title": {
+        "en": "Sequence diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the sequence diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Sequence diagrams: auditory exercises"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 60,
+      "fingerprints": [
+        "1wnaivpwq1v",
+        "24gzd4rj1nt",
+        "24aaxzb3hoa",
+        "amrhuosrkv"
+      ],
+      "diagrams": 4
+    },
+    {
+      "key": "ooaid-aud-state",
+      "path": "quizzes/OOAiD/ooaid-aud-state.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "state",
+      "category": "Practical",
+      "title": {
+        "en": "State diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the state diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "State diagrams: auditory exercises"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 60,
+      "fingerprints": [
+        "1t36wrgwnh8",
+        "1khg1w3ozwl",
+        "1963w1xeccy",
+        "1rqq8g07gam"
+      ],
+      "diagrams": 4
+    },
+    {
+      "key": "ooaid-aud-use-case",
+      "path": "quizzes/OOAiD/ooaid-aud-use-case.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "use-case",
+      "category": "Practical",
+      "title": {
+        "en": "Use case diagrams: auditory exercises"
+      },
+      "description": {
+        "en": "Tasks from the auditory exercises: draw the use case diagram, then check it against the model solution."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 3600,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Use case diagrams: auditory exercises"
+      ],
+      "questionCount": 3,
+      "estimatedMinutes": 45,
+      "fingerprints": [
+        "26pxvqg144u",
+        "1ltnln3iip6",
+        "1432nb6g8fm"
+      ],
+      "diagrams": 3
+    },
+    {
       "key": "ooaid-exam-1",
       "path": "quizzes/OOAiD/ooaid-exam-1.json",
       "revision": 1,
@@ -3183,6 +3410,275 @@
         "1df0rmy06uw",
         "6x9gi9nq5m"
       ]
+    },
+    {
+      "key": "ooaid-mid-activity",
+      "path": "quizzes/OOAiD/ooaid-mid-activity.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "activity",
+      "category": "Midterm",
+      "title": {
+        "en": "Activity diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "Activity diagram tasks like the first midterm's, with model solutions drawn in the course's notation."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 3600,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Activity diagrams: midterm tasks"
+      ],
+      "questionCount": 3,
+      "estimatedMinutes": 45,
+      "fingerprints": [
+        "kwm1jmr1uq",
+        "x2hyo6ed51",
+        "9jjeu15aru"
+      ],
+      "diagrams": 3
+    },
+    {
+      "key": "ooaid-mid-class",
+      "path": "quizzes/OOAiD/ooaid-mid-class.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "class",
+      "category": "Midterm",
+      "title": {
+        "en": "Class diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "Class diagram tasks like the first midterm's, with model solutions drawn in the course's notation."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 6000,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Class diagrams: midterm tasks"
+      ],
+      "questionCount": 5,
+      "estimatedMinutes": 75,
+      "fingerprints": [
+        "11fqpalwo68",
+        "2cwgzf0bv1i",
+        "5vokzeruz5",
+        "1fucw1rze0x",
+        "pcfilgk3qa"
+      ],
+      "diagrams": 5
+    },
+    {
+      "key": "ooaid-mid-implementation",
+      "path": "quizzes/OOAiD/ooaid-mid-implementation.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "implementation",
+      "category": "Midterm",
+      "title": {
+        "en": "Implementation diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "Implementation diagram tasks like the second midterm's, with model solutions."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Implementation diagrams: midterm tasks"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 60,
+      "fingerprints": [
+        "emcliqyuow",
+        "2225xil8wdb",
+        "2agt8ydw1dw",
+        "250r4h794ry"
+      ],
+      "diagrams": 4
+    },
+    {
+      "key": "ooaid-mid-sequence",
+      "path": "quizzes/OOAiD/ooaid-mid-sequence.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "sequence",
+      "category": "Midterm",
+      "title": {
+        "en": "Sequence diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "Sequence diagram tasks like the second midterm's, some with the class diagram to complete."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 6000,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Sequence diagrams: midterm tasks"
+      ],
+      "questionCount": 5,
+      "estimatedMinutes": 75,
+      "fingerprints": [
+        "1xurhulss0z",
+        "2113t5ti3td",
+        "fxtgww49vw",
+        "by51zapmbh",
+        "1dl59iivbxo"
+      ],
+      "diagrams": 5
+    },
+    {
+      "key": "ooaid-mid-state",
+      "path": "quizzes/OOAiD/ooaid-mid-state.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "state",
+      "category": "Midterm",
+      "title": {
+        "en": "State diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "State diagram tasks like the second midterm's, with model solutions."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "State diagrams: midterm tasks"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 60,
+      "fingerprints": [
+        "3jyzo4yaak",
+        "2e8l37xqlfd",
+        "2e7e5sdu7nk",
+        "limaz2dgj4"
+      ],
+      "diagrams": 4
+    },
+    {
+      "key": "ooaid-mid-use-case",
+      "path": "quizzes/OOAiD/ooaid-mid-use-case.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "topicId": "use-case",
+      "category": "Midterm",
+      "title": {
+        "en": "Use case diagrams: midterm tasks"
+      },
+      "description": {
+        "en": "Use case tasks like the first midterm's, with model solutions drawn in the course's notation."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML"
+      ],
+      "legacyTitles": [
+        "Use case diagrams: midterm tasks"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 60,
+      "fingerprints": [
+        "1ezwje8is52",
+        "dqkkgjtgmg",
+        "19frhhymk4l",
+        "6u83i7seh3"
+      ],
+      "diagrams": 4
+    },
+    {
+      "key": "ooaid-third-part-car-dealership",
+      "path": "quizzes/OOAiD/ooaid-third-part-car-dealership.json",
+      "revision": 1,
+      "courseId": "OOAiD",
+      "category": "Exam",
+      "title": {
+        "en": "Third part (Moodle): car dealership"
+      },
+      "description": {
+        "en": "Like the third part on Moodle: one case description and four diagrams about it (class, use case, sequence, implementation). Solutions drawn for SeisHub."
+      },
+      "languages": [
+        "en"
+      ],
+      "defaultLanguage": "en",
+      "date": "2026-11-26",
+      "duration": 4800,
+      "timed": false,
+      "shuffleQuestions": false,
+      "tags": [
+        "OOAID",
+        "UML",
+        "third part"
+      ],
+      "legacyTitles": [
+        "Third part (Moodle): car dealership"
+      ],
+      "questionCount": 4,
+      "estimatedMinutes": 61,
+      "fingerprints": [
+        "1nwbgo980jb",
+        "195aembkvs7",
+        "jr6hx255x9",
+        "1s8pmkfnxin",
+        "f0kgwpno7w"
+      ],
+      "diagrams": 4,
+      "information": true
     }
   ]
 }

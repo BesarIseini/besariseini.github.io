@@ -1,0 +1,1388 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-use-case",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "use-case",
+ "category": "Practical",
+ "title": {
+  "en": "Use case diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the use case diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 3600,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram for a restaurant. There are several types of employees in the restaurant: waiter, chef and restaurant manager, who log into the system with their IDs. The restaurant offers various specialties made from several products. The stocks of products are stored in a warehouse. The chef of the restaurant is making plans for new specialties that will be found on the menu. For this purpose, a supply list is generated and it is used to order products from a supplier. Upon receipt of products ordered by a supplier, the product data should be updated in the warehouse. Customers make orders where they specify the menu specialties and their quantity. The waiter needs to enter the order and the table number in the system. After that, the chef receives information on his computer for the recipes he should prepare. After the meal preparation, he activates a command to update the status of products in the warehouse, and the system sends a message to the waiter that the specialties are ready and they can be served to the guests. Once the clients have completed the meal, they call the waiter who needs to close the bill for the specified table and to activate the print command in order the print the receipt. Customers can pay the bill in cash or with a credit card."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"dd9h5Gra1XN_GgclkYjo-1\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Employee&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"110\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-7\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"45\" y=\"160\" />\n              <mxPoint x=\"125\" y=\"160\" />\n            </Array>\n            <mxPoint x=\"125\" y=\"140\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-1\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"30\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-11\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"125\" y=\"130\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-2\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" value=\"Chef\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"110\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-10\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=12;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"215\" y=\"160\" />\n              <mxPoint x=\"125\" y=\"160\" />\n            </Array>\n            <mxPoint x=\"125\" y=\"100\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-3\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" value=\"Manager\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"200\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-13\" parent=\"1\" style=\"swimlane;startSize=0;\" value=\",\" vertex=\"1\">\n          <mxGeometry height=\"1290\" width=\"680\" x=\"425\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-14\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"Restaurant system\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"330\" y=\"10\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-20\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"log in\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"290\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-30\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-27\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-29\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-27\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"Receive order\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"170\" y=\"195\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-42\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-29\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-40\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-29\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"Enter order in system\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"390\" y=\"195\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-31\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"320\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-45\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-40\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-44\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-40\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"Receive info. about recipes\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"120\" y=\"300\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-43\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"290\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-48\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-44\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-47\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-44\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"prepare meal\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"370\" y=\"300\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-46\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"290\" y=\"300\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-51\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-47\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"730\" y=\"379.9999999999999\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-55\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-47\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-53\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-47\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"update status of products\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"220\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-49\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"300\" y=\"370\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-53\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"serve food\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"85\" y=\"540\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-56\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"175\" y=\"480\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-61\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"call waiter\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"205\" y=\"690\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-91\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-65\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-90\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-65\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"close bill\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"120\" y=\"790\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-90\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"print bill\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"430\" y=\"795\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-98\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"pay bill\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"320\" y=\"970\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-99\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"pay bill in cash\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"95\" y=\"910\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-100\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"ellipse;whiteSpace=wrap;html=1;\" value=\"pay bill with card\" vertex=\"1\">\n          <mxGeometry height=\"70\" width=\"140\" x=\"105\" y=\"1010\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-102\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-99\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-98\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-106\" edge=\"1\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" source=\"SJhXyw35G0Bu6sqzMW_L-100\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.014;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-98\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-109\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"270\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-107\" parent=\"SJhXyw35G0Bu6sqzMW_L-13\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"315\" y=\"795\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-21\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-15\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-20\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-15\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" value=\"Employee&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"370\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-22\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" value=\"Employee&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1200\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-23\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-20\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-22\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-28\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-24\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-27\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-24\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"370\" y=\"230\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-34\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1210\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-35\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-29\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-34\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-41\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-36\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-40\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-36\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Chef\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"370\" y=\"340\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-50\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Chef\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1140\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-54\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-52\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-53\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-52\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"370\" y=\"600\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-57\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1180\" y=\"580\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-59\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-53\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-57\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-62\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-60\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-61\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-60\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Customer\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"370\" y=\"750\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-63\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1150\" y=\"750\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-64\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-61\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-63\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-67\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-66\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-65\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-66\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"360\" y=\"870\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-92\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Printer\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1160\" y=\"850\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-94\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-90\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-92\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-101\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-95\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-99\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-95\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Customer\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"360\" y=\"1020\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-103\" parent=\"1\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"30\" x=\"1160\" y=\"1010\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-104\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-98\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"SJhXyw35G0Bu6sqzMW_L-103\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-105\" edge=\"1\" parent=\"1\" source=\"SJhXyw35G0Bu6sqzMW_L-95\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"SJhXyw35G0Bu6sqzMW_L-100\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"SJhXyw35G0Bu6sqzMW_L-108\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"670\" y=\"990\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Actor: Employee"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Waiter"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Waiter"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Chef"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Chef"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Manager"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Manager"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Receive order"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Receive order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Enter order in system"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Enter order in system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Receive info. about recipes"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Receive info. about recipes"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: prepare meal"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "prepare meal"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: update status of products"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "update status of products"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: serve food"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "serve food"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: call waiter"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "call waiter"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: close bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "close bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: print bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "print bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: pay bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "pay bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: pay bill in cash"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "pay bill in cash"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: pay bill with card"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "pay bill with card"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Customer"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Customer",
+       "client",
+       "buyer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Printer"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Printer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Chef is a kind of Employee"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Chef"
+       ],
+       "to": [
+        "Employee"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Manager is a kind of Employee"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Manager"
+       ],
+       "to": [
+        "Employee"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Receive order includes Enter order in system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Receive order"
+       ],
+       "to": [
+        "Enter order in system"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Enter order in system includes Receive info. about recipes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Enter order in system"
+       ],
+       "to": [
+        "Receive info. about recipes"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Receive info. about recipes includes prepare meal"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Receive info. about recipes"
+       ],
+       "to": [
+        "prepare meal"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "prepare meal includes update status of products"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "prepare meal"
+       ],
+       "to": [
+        "update status of products"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Chef uses update status of products"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Chef"
+       ],
+       "to": [
+        "update status of products"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "update status of products includes serve food"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "update status of products"
+       ],
+       "to": [
+        "serve food"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "close bill includes print bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "close bill"
+       ],
+       "to": [
+        "print bill"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "pay bill in cash extends pay bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "pay bill in cash"
+       ],
+       "to": [
+        "pay bill"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "pay bill with card extends pay bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "pay bill with card"
+       ],
+       "to": [
+        "pay bill"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Employee uses log in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Employee"
+       ],
+       "to": [
+        "log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses Receive order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "Receive order"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses Enter order in system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "Enter order in system"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Chef uses Receive info. about recipes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Chef"
+       ],
+       "to": [
+        "Receive info. about recipes"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses serve food"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "serve food"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Customer uses call waiter"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Customer",
+        "client",
+        "buyer"
+       ],
+       "to": [
+        "call waiter"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses call waiter"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "call waiter"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses close bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "close bill"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Printer uses print bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Printer"
+       ],
+       "to": [
+        "print bill"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Customer uses pay bill in cash"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Customer",
+        "client",
+        "buyer"
+       ],
+       "to": [
+        "pay bill in cash"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter uses pay bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiter"
+       ],
+       "to": [
+        "pay bill"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Customer uses pay bill with card"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Customer",
+        "client",
+        "buyer"
+       ],
+       "to": [
+        "pay bill with card"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiter is a kind of Employee (generalization)"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram that describes the functionalities of a library. Librarians who work in the library are responsible for entering data for new books and magazines. Librarians need to prepare different reports at different times of the year. Every six months they have to make a report for the total number of newly purchased samples in the last six months. At the end of the year, they should make a list of all the books and magazines purchased in the current year. Also, at the end of the year they should make a report including all members who are late with the return of borrowed samples for more than a month. Members can search the book fund through the terminals that are placed in the library (by entering the author's data or the book/magazine title). If members want to borrow a book/magazine, they should go to the appropriate rental point and tell the number of the book or magazine they want to rent. If the member is not registered in the system, the librarian should request personal information, and register him/her in the system."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Library\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"810\" height=\"700\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Enter data for new books and magazines\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Prepare report\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Six-month report of new samples\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Yearly list of purchased books and magazines\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Yearly report of late members\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Search book fund\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"490\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Search by author\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"490\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Search by title\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"595\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Borrow book/magazine\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Register member\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"490\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Librarian\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"210.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"Member\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1060\" y=\"437.5\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"445.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c25\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c26\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Enter data for new books and magazines"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Enter data for new books and magazines"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Prepare report"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Prepare report"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Six-month report of new samples"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Six-month report of new samples"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Yearly list of purchased books and magazines"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Yearly list of purchased books and magazines"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Yearly report of late members"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Yearly report of late members"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Search book fund"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search book fund",
+       "search books",
+       "search"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Search by author"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search by author"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Search by title"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search by title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Borrow book/magazine"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Borrow book/magazine",
+       "borrow book",
+       "rent book",
+       "borrow"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Register member"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Register member",
+       "register",
+       "registration"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Librarian"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Librarian",
+       "library employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Member",
+       "user",
+       "reader"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Enter data for new books and magazines"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Enter data for new books and magazines"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Prepare report"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Prepare report"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Search book fund"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user",
+        "reader"
+       ],
+       "to": [
+        "Search book fund",
+        "search books",
+        "search"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Borrow book/magazine"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user",
+        "reader"
+       ],
+       "to": [
+        "Borrow book/magazine",
+        "borrow book",
+        "rent book",
+        "borrow"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Borrow book/magazine"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Borrow book/magazine",
+        "borrow book",
+        "rent book",
+        "borrow"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Register member extends Borrow book/magazine"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Register member",
+        "register",
+        "registration"
+       ],
+       "to": [
+        "Borrow book/magazine",
+        "borrow book",
+        "rent book",
+        "borrow"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Six-month report of new samples is a kind of Prepare report"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Six-month report of new samples"
+       ],
+       "to": [
+        "Prepare report"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Yearly list of purchased books and magazines is a kind of Prepare report"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Yearly list of purchased books and magazines"
+       ],
+       "to": [
+        "Prepare report"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Yearly report of late members is a kind of Prepare report"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Yearly report of late members"
+       ],
+       "to": [
+        "Prepare report"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by author is a kind of Search book fund"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by author"
+       ],
+       "to": [
+        "Search book fund",
+        "search books",
+        "search"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by title is a kind of Search book fund"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by title"
+       ],
+       "to": [
+        "Search book fund",
+        "search books",
+        "search"
+       ],
+       "type": "generalization"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram for booking a ticket for a theater play. Users can search the repertoire of the theater online by selecting a date or entering the title of the play. After the search, users get a list of plays and by selecting one of them, the system displays detailed information about it. On this screen, there is a booking button. When this button is clicked, user can fill a booking form, and after the successful check for free seats, information about the successful/unsuccessful ticket reservation is printed. If the booking is successful, then the user can print a booking confirmation necessary for the purchase of tickets."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Theater\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"520\" height=\"490\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Search repertoire\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Search by date\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Search by title\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"View play details\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Book ticket\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Fill booking form\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Check free seats\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Print booking confirmation\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"User\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"227.5\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c13\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"288.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"340.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"340.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Search repertoire"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search repertoire"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Search by date"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search by date"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Search by title"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search by title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: View play details"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "View play details",
+       "play details",
+       "detailed information"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Book ticket"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Book ticket",
+       "reserve ticket",
+       "booking",
+       "make reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Fill booking form"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Fill booking form"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Check free seats"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Check free seats"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Print booking confirmation"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Print booking confirmation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "User",
+       "customer",
+       "visitor",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Search repertoire"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "visitor",
+        "client"
+       ],
+       "to": [
+        "Search repertoire"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses View play details"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "visitor",
+        "client"
+       ],
+       "to": [
+        "View play details",
+        "play details",
+        "detailed information"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Book ticket"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "visitor",
+        "client"
+       ],
+       "to": [
+        "Book ticket",
+        "reserve ticket",
+        "booking",
+        "make reservation"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Print booking confirmation"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "visitor",
+        "client"
+       ],
+       "to": [
+        "Print booking confirmation"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Book ticket includes Fill booking form"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Book ticket",
+        "reserve ticket",
+        "booking",
+        "make reservation"
+       ],
+       "to": [
+        "Fill booking form"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Book ticket includes Check free seats"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Book ticket",
+        "reserve ticket",
+        "booking",
+        "make reservation"
+       ],
+       "to": [
+        "Check free seats"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Print booking confirmation extends Book ticket"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Print booking confirmation"
+       ],
+       "to": [
+        "Book ticket",
+        "reserve ticket",
+        "booking",
+        "make reservation"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by date is a kind of Search repertoire"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by date"
+       ],
+       "to": [
+        "Search repertoire"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by title is a kind of Search repertoire"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by title"
+       ],
+       "to": [
+        "Search repertoire"
+       ],
+       "type": "generalization"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

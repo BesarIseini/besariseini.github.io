@@ -1,0 +1,1284 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-use-case",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "use-case",
+ "category": "Midterm",
+ "title": {
+  "en": "Use case diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "Use case tasks like the first midterm's, with model solutions drawn in the course's notation."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram that describes the airport check-in: The passenger can check-in online or at the counter. To do an online check-in, the passenger needs to be logged in to the system. Regardless of whether the check-in has been done online or at the counter, the passenger can ask for an invoice."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Airport check-in\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"520\" height=\"385\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Check-in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Online check-in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Check-in at counter\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Log in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Ask for invoice\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Passenger\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"122.5\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c10\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c12\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"530.0\" y=\"183.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"130.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Check-in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Check-in"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Online check-in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Online check-in"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Check-in at counter"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Check-in at counter"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Ask for invoice"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Ask for invoice",
+       "invoice",
+       "request invoice",
+       "get invoice"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Passenger"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Passenger",
+       "traveler",
+       "traveller"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Passenger uses Check-in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Passenger",
+        "traveler",
+        "traveller"
+       ],
+       "to": [
+        "Check-in"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Passenger uses Ask for invoice"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Passenger",
+        "traveler",
+        "traveller"
+       ],
+       "to": [
+        "Ask for invoice",
+        "invoice",
+        "request invoice",
+        "get invoice"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Online check-in includes Log in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Online check-in"
+       ],
+       "to": [
+        "Log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Ask for invoice extends Check-in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Ask for invoice",
+        "invoice",
+        "request invoice",
+        "get invoice"
+       ],
+       "to": [
+        "Check-in"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Online check-in is a kind of Check-in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Online check-in"
+       ],
+       "to": [
+        "Check-in"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Check-in at counter is a kind of Check-in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Check-in at counter"
+       ],
+       "to": [
+        "Check-in"
+       ],
+       "type": "generalization"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram for the system described by the following text: An electronic devices vendor has a website where users can search products. When searching, the users first enter the search criteria (type of product, name or brand), and afterwards a list of results is generated and shown to the user. The user can then click on a certain product to see more detailed information, and if he likes it he can add it to the shopping cart. When doing a check-out, the user pays for the content of the shopping cart online. In order to make an online payment, the user has to be logged in. After the payment, the user gets an email message regarding its status."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Electronic devices web shop\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"810\" height=\"595\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Search products\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Enter search criteria\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"View product details\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Add to shopping cart\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Check out\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Pay online\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Log in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Send payment status email\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"490\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"User\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"227.5\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c13\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"78.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"393.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675.0\" y=\"393.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"530.0\" y=\"445.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c25\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"130.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c27\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"235.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Search products"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search products"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Enter search criteria"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Enter search criteria"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: View product details"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "View product details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Add to shopping cart"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Add to shopping cart",
+       "add to cart"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Check out"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Check out",
+       "checkout"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Pay online"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Pay online",
+       "payment",
+       "pay"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Send payment status email"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Send payment status email",
+       "email",
+       "send email"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "User",
+       "customer",
+       "buyer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Search products"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "buyer",
+        "client"
+       ],
+       "to": [
+        "Search products"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses View product details"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "buyer",
+        "client"
+       ],
+       "to": [
+        "View product details"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Add to shopping cart"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "buyer",
+        "client"
+       ],
+       "to": [
+        "Add to shopping cart",
+        "add to cart"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Check out"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "buyer",
+        "client"
+       ],
+       "to": [
+        "Check out",
+        "checkout"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search products includes Enter search criteria"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search products"
+       ],
+       "to": [
+        "Enter search criteria"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Check out includes Pay online"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Check out",
+        "checkout"
+       ],
+       "to": [
+        "Pay online",
+        "payment",
+        "pay"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Pay online includes Log in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Pay online",
+        "payment",
+        "pay"
+       ],
+       "to": [
+        "Log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Pay online includes Send payment status email"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Pay online",
+        "payment",
+        "pay"
+       ],
+       "to": [
+        "Send payment status email",
+        "email",
+        "send email"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "View product details extends Search products"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "View product details"
+       ],
+       "to": [
+        "Search products"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Add to shopping cart extends View product details"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Add to shopping cart",
+        "add to cart"
+       ],
+       "to": [
+        "View product details"
+       ],
+       "type": "extend"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram for the system described in the following text: The sports center allows users to make reservations for sports halls through a web application. The user can search for available time slots based on selected criteria, such as type of hall (e.g., football, basketball, tennis, etc.) and date. To make a reservation, the user must first log in. After logging in, the user selects a time slot and a hall and makes a reservation. Upon successful reservation, the system automatically sends a confirmation via email. The user can also view their existing reservations and cancel any of them if more than 24 hours remain before the start of the reserved time. Administrators can add new halls, update existing hall information, and manage their availability."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Sports center\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"810\" height=\"385\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Search time slots\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Make reservation\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Log in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Send confirmation email\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"View reservations\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Cancel reservation\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Add hall\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Update hall\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Manage availability\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"User\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"175.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Administrator\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1060\" y=\"175.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"183.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"130.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c25\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"288.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Search time slots"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search time slots",
+       "search slots",
+       "search available time slots",
+       "search"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Make reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Make reservation",
+       "reserve hall",
+       "reservation",
+       "book hall"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Send confirmation email"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Send confirmation email"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: View reservations"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "View reservations"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Cancel reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Cancel reservation",
+       "cancel"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Add hall"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Add hall"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Update hall"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Update hall"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Manage availability"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Manage availability"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "User",
+       "customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Administrator"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Administrator",
+       "admin"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Search time slots"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "client"
+       ],
+       "to": [
+        "Search time slots",
+        "search slots",
+        "search available time slots",
+        "search"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses Make reservation"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "client"
+       ],
+       "to": [
+        "Make reservation",
+        "reserve hall",
+        "reservation",
+        "book hall"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User uses View reservations"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "customer",
+        "client"
+       ],
+       "to": [
+        "View reservations"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Administrator uses Add hall"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Administrator",
+        "admin"
+       ],
+       "to": [
+        "Add hall"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Administrator uses Update hall"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Administrator",
+        "admin"
+       ],
+       "to": [
+        "Update hall"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Administrator uses Manage availability"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Administrator",
+        "admin"
+       ],
+       "to": [
+        "Manage availability"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Make reservation includes Log in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Make reservation",
+        "reserve hall",
+        "reservation",
+        "book hall"
+       ],
+       "to": [
+        "Log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Make reservation includes Send confirmation email"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Make reservation",
+        "reserve hall",
+        "reservation",
+        "book hall"
+       ],
+       "to": [
+        "Send confirmation email"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Cancel reservation extends View reservations"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Cancel reservation",
+        "cancel"
+       ],
+       "to": [
+        "View reservations"
+       ],
+       "type": "extend"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a use case diagram for the system described in the following text: The library allows registered members to search for and borrow books through a web application. Members can search for books by title, author, or genre. To borrow a book, the member must be logged in. After logging in, the member selects a book, and if there is a copy available a loan is created and the copy is reserved. The user receives a confirmation via email for the successfully borrowed book. Additionally, the user can view which books they currently have borrowed, return books, and submit requests to extend the due date. Librarians can update book data, add new copies, and monitor the status of borrowed books."
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Library web application\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"810\" height=\"595\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Search books\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Borrow book\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Log in\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Send confirmation email\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"View borrowed books\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Return book\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Request due date extension\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"490\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Update book data\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Add new copy\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Monitor borrowed books\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Member\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"280.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"Librarian\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1060\" y=\"175.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c12\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"183.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c26\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"385.0\" y=\"130.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Search books"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search books"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Borrow book"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Borrow book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Send confirmation email"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Send confirmation email"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: View borrowed books"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "View borrowed books"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Return book"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Return book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Request due date extension"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Request due date extension",
+       "extend due date",
+       "extension request",
+       "request extension"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Update book data"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Update book data"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Add new copy"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Add new copy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Monitor borrowed books"
+     },
+     "points": 1,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Monitor borrowed books",
+       "monitor status",
+       "monitor loans"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Member",
+       "user"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Librarian"
+     },
+     "points": 1,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Librarian",
+       "library employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Search books"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user"
+       ],
+       "to": [
+        "Search books"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Borrow book"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user"
+       ],
+       "to": [
+        "Borrow book"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses View borrowed books"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user"
+       ],
+       "to": [
+        "View borrowed books"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Return book"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user"
+       ],
+       "to": [
+        "Return book"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Member uses Request due date extension"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Member",
+        "user"
+       ],
+       "to": [
+        "Request due date extension",
+        "extend due date",
+        "extension request",
+        "request extension"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Update book data"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Update book data"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Add new copy"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Add new copy"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Librarian uses Monitor borrowed books"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Librarian",
+        "library employee"
+       ],
+       "to": [
+        "Monitor borrowed books",
+        "monitor status",
+        "monitor loans"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Borrow book includes Log in"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Borrow book"
+       ],
+       "to": [
+        "Log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Borrow book includes Send confirmation email"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Borrow book"
+       ],
+       "to": [
+        "Send confirmation email"
+       ],
+       "type": "include"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

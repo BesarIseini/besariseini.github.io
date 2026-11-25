@@ -1,0 +1,722 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-state",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "state",
+ "category": "Midterm",
+ "title": {
+  "en": "State diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "State diagram tasks like the second midterm's, with model solutions."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the state diagram for objects of the class Ingredient. After a new ingredient is procured, its initial state is \"available\". In this state, it can be used to produce different chocolates, and after each use, its quantity is reduced. An available ingredient can be \"reserved\" for a specific chocolate, and in this state, it can no longer be added to other chocolates. If the ingredient is completely used up (its quantity becomes 0), it becomes \"unavailable\". An ingredient that is unavailable can be procured again and become available, or it may no longer be procured, in which case it becomes \"withdrawn from use\"."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-1\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"90\" y=\"110\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-2\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"240\" y=\"125\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-14\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"LOG8o1EclV1eqn9EW56f-10\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-23\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"LOG8o1EclV1eqn9EW56f-19\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-3\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"available\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"250\" y=\"66\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-7\" parent=\"LOG8o1EclV1eqn9EW56f-3\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"quantity\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-8\" parent=\"LOG8o1EclV1eqn9EW56f-3\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-9\" parent=\"LOG8o1EclV1eqn9EW56f-3\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do / produce chocolates&lt;div&gt;do / use chocolates&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-29\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-10\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"LOG8o1EclV1eqn9EW56f-25\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-30\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-10\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;\" target=\"LOG8o1EclV1eqn9EW56f-7\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"230\" y=\"323\" />\n              <mxPoint x=\"230\" y=\"145\" />\n            </Array>\n            <mxPoint x=\"240\" y=\"150\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-10\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"unavailable\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"250\" y=\"264\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-11\" parent=\"LOG8o1EclV1eqn9EW56f-10\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"quantity\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-12\" parent=\"LOG8o1EclV1eqn9EW56f-10\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-13\" parent=\"LOG8o1EclV1eqn9EW56f-10\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-16\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;\" target=\"LOG8o1EclV1eqn9EW56f-3\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"355\" y=\"20\" />\n              <mxPoint x=\"285\" y=\"20\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-17\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[q-- and q&amp;gt;0]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"280\" y=\"-20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-18\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[q-- and q==0]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"320\" y=\"220\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-36\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-19\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;\" target=\"LOG8o1EclV1eqn9EW56f-10\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-38\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-19\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;\" target=\"LOG8o1EclV1eqn9EW56f-3\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"670\" y=\"46\" />\n              <mxPoint x=\"390\" y=\"46\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-19\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"reserved\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"600\" y=\"66\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-20\" parent=\"LOG8o1EclV1eqn9EW56f-19\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"quantity\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-21\" parent=\"LOG8o1EclV1eqn9EW56f-19\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-22\" parent=\"LOG8o1EclV1eqn9EW56f-19\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do/ do not add to chocolates\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-24\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[reserve ingredient]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"130\" x=\"440\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-35\" edge=\"1\" parent=\"1\" source=\"LOG8o1EclV1eqn9EW56f-25\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"LOG8o1EclV1eqn9EW56f-33\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-25\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"withdrawn from use\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"600\" y=\"264\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-26\" parent=\"LOG8o1EclV1eqn9EW56f-25\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"quantity\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-27\" parent=\"LOG8o1EclV1eqn9EW56f-25\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-28\" parent=\"LOG8o1EclV1eqn9EW56f-25\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do / produce chocolates&lt;div&gt;do / use chocolates&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-31\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[produce again]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"110\" x=\"120\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-32\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[do not produce anymore]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"140\" x=\"440\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-33\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"820\" y=\"308\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-37\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[use all&amp;nbsp; reserved q==0]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"500\" y=\"210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"LOG8o1EclV1eqn9EW56f-39\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[cancel reservation &amp;amp; q&amp;gt;0]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"470\" y=\"10\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: available"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "available"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: unavailable"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "unavailable"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: reserved"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "reserved"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: withdrawn from use"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "withdrawn from use"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "available → unavailable: [q-- and q==0]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "available"
+       ],
+       "to": [
+        "unavailable"
+       ],
+       "type": "flow",
+       "label": [
+        "[q-- and q==0]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "available → reserved: [reserve ingredient]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "available"
+       ],
+       "to": [
+        "reserved"
+       ],
+       "type": "flow",
+       "label": [
+        "[reserve ingredient]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "unavailable → withdrawn from use: [do not produce anymore]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "unavailable"
+       ],
+       "to": [
+        "withdrawn from use"
+       ],
+       "type": "flow",
+       "label": [
+        "[do not produce anymore]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "unavailable → available: [produce again]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "unavailable"
+       ],
+       "to": [
+        "available"
+       ],
+       "type": "flow",
+       "label": [
+        "[produce again]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "reserved → unavailable: [use all reserved q==0]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "reserved"
+       ],
+       "to": [
+        "unavailable"
+       ],
+       "type": "flow",
+       "label": [
+        "[use all reserved q==0]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "reserved → available: [cancel reservation & q>0]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "reserved"
+       ],
+       "to": [
+        "available"
+       ],
+       "type": "flow",
+       "label": [
+        "[cancel reservation & q>0]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Using an available ingredient reduces its quantity (q--)"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a state diagram for the states of the tax return documents generated in the system “e-personal tax”. Each year in March the registered users in the system get a document for tax return which should be confirmed or corrected. The first status of the sent document is “waiting for user confirmation”. The users can either confirm the document, or make some changes. If the document is confirmed, its status is changed to “accepted”, while if there are changes made the new status is “changed – waiting for admin confirmation”. From this state, if the changes are confirmed by the admin, the document gets the status “accepted”, while if the changes are rejected it goes back to the state of “waiting for user confirmation”."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"95\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Waiting for user confirmation\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"40\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Accepted\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"680\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Changed – waiting for admin confirmation\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"735\" y=\"310\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"document generated (March)\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c8\" value=\"user confirms\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c9\" value=\"user makes changes\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c10\" value=\"admin confirms changes\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"admin rejects changes\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c12\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Waiting for user confirmation"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Waiting for user confirmation",
+       "waiting for confirmation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Accepted"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Accepted"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Changed – waiting for admin confirmation"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Changed – waiting for admin confirmation",
+       "changed",
+       "waiting for admin confirmation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for user confirmation → Accepted: user confirms"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for user confirmation",
+        "waiting for confirmation"
+       ],
+       "to": [
+        "Accepted"
+       ],
+       "type": "flow",
+       "label": [
+        "user confirms"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for user confirmation → Changed – waiting for admin confirmation: user makes changes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for user confirmation",
+        "waiting for confirmation"
+       ],
+       "to": [
+        "Changed – waiting for admin confirmation",
+        "changed",
+        "waiting for admin confirmation"
+       ],
+       "type": "flow",
+       "label": [
+        "user makes changes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Changed – waiting for admin confirmation → Accepted: admin confirms changes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Changed – waiting for admin confirmation",
+        "changed",
+        "waiting for admin confirmation"
+       ],
+       "to": [
+        "Accepted"
+       ],
+       "type": "flow",
+       "label": [
+        "admin confirms changes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Changed – waiting for admin confirmation → Waiting for user confirmation: admin rejects changes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Changed – waiting for admin confirmation",
+        "changed",
+        "waiting for admin confirmation"
+       ],
+       "to": [
+        "Waiting for user confirmation",
+        "waiting for confirmation"
+       ],
+       "type": "flow",
+       "label": [
+        "admin rejects changes"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a state diagram for the time slots for museum visits: When a new time slot for a museum visit is defined, its initial state is “available”. In this state, the user still cannot reserve or buy a ticket for a visit. Depending on the admin decision, the time slot can be made available only for ticket reservation (state “available for ticket reservation”) or only for buying tickets (state “available for buying a ticket”). Only premium users can reserve tickets. If a non-premium user tries to reserve a ticket in the state “available for ticket reservation” he/she is added to the wait list. A time slot that is available for ticket reservation after a period can be made available only for buying a ticket, but not otherwise. When a time slot is available for buying a ticket, a notification is sent to the users in the wait list."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"95\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Available\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"40\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Available for ticket reservation\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Available for buying a ticket\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"time slot defined\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c7\" value=\"[admin: reservations]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c8\" value=\"[admin: buying]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c9\" value=\"after a period / notify wait list\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Available"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Available"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Available for ticket reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Available for ticket reservation",
+       "reservation",
+       "available for reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Available for buying a ticket"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Available for buying a ticket",
+       "buying",
+       "available for buying"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Available → Available for ticket reservation: [admin: reservations]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Available"
+       ],
+       "to": [
+        "Available for ticket reservation",
+        "reservation",
+        "available for reservation"
+       ],
+       "type": "flow",
+       "label": [
+        "[admin: reservations]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Available → Available for buying a ticket: [admin: buying]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Available"
+       ],
+       "to": [
+        "Available for buying a ticket",
+        "buying",
+        "available for buying"
+       ],
+       "type": "flow",
+       "label": [
+        "[admin: buying]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Available for ticket reservation → Available for buying a ticket: after a period / notify wait list"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Available for ticket reservation",
+        "reservation",
+        "available for reservation"
+       ],
+       "to": [
+        "Available for buying a ticket",
+        "buying",
+        "available for buying"
+       ],
+       "type": "flow",
+       "label": [
+        "after a period / notify wait list"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "A non-premium user trying to reserve is added to the wait list (internal action or self-transition)"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Users on the wait list are notified when buying becomes possible"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "notify",
+       "notification",
+       "wait list"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "No transition back from buying to reservation"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a state diagram for the following text: When a new application for accommodation in student dorm is created, its initial status is \"created\". In this state, the student can still edit the application. The application remains in the \"created\" state until the student submits it. Once the student submits the application, its status changes to \"submitted\", and it can no longer be changed. A \"submitted\" application can then become \"accepted\" or \"rejected\" by an administrator's decision. An application that has been \"accepted\" can be marked as \"confirmed\" if the student accepts the assigned room within the given deadline, or as \"rejected by student\" if the student refuses the accommodation."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"95\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Created\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"40\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Submitted\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Accepted\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"680\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Rejected\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Confirmed\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1000\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Rejected by student\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"680\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c10\" value=\"student submits\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"[administrator accepts]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c12\" value=\"[administrator rejects]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c13\" value=\"[room accepted within deadline]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"[student refuses]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Created"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Created"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Submitted"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Submitted"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Accepted"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Accepted"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Rejected"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Rejected"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Confirmed"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Confirmed"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Rejected by student"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Rejected by student"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Created → Submitted: student submits"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Created"
+       ],
+       "to": [
+        "Submitted"
+       ],
+       "type": "flow",
+       "label": [
+        "student submits"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Submitted → Accepted: [administrator accepts]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Submitted"
+       ],
+       "to": [
+        "Accepted"
+       ],
+       "type": "flow",
+       "label": [
+        "[administrator accepts]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Submitted → Rejected: [administrator rejects]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Submitted"
+       ],
+       "to": [
+        "Rejected"
+       ],
+       "type": "flow",
+       "label": [
+        "[administrator rejects]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Accepted → Confirmed: [room accepted within deadline]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Accepted"
+       ],
+       "to": [
+        "Confirmed"
+       ],
+       "type": "flow",
+       "label": [
+        "[room accepted within deadline]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Accepted → Rejected by student: [student refuses]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Accepted"
+       ],
+       "to": [
+        "Rejected by student"
+       ],
+       "type": "flow",
+       "label": [
+        "[student refuses]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Editing keeps the application in “created” (internal action or self-transition)"
+     },
+     "points": 1
+    }
+   ]
+  }
+ ]
+}

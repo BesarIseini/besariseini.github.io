@@ -143,6 +143,7 @@
     "MOCK_MINUTES_HINT": "0 minuta: pa kufi kohe.",
     "MOCK_MODE": "Mënyra",
     "MOCK_INCLUDE_CODE": "Përfshi pyetje me kod",
+    "MOCK_INCLUDE_DIAGRAMS": "Përfshi detyra me diagrame",
     "MOCK_AVAILABLE": "{n} pyetje në dispozicion",
     "MOCK_START": "Fillo provimin provë",
     "MOCK_NONE": "Asnjë kuiz nuk përputhet me këto filtra.",

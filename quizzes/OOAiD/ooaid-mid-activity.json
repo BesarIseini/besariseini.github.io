@@ -1,0 +1,1016 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-activity",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "activity",
+ "category": "Midterm",
+ "title": {
+  "en": "Activity diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "Activity diagram tasks like the first midterm's, with model solutions drawn in the course's notation."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 3600,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the activity diagram for setting the working status of artificial satellites. The status is set only for the satellites that are orbiting around Mars. If the satellite shows any error messages, the status is 'idle'. If the satellite doesn't show any error messages, the status will be 'idle' only if the satellite has been working for more than 5 years continuously. Otherwise, the status will be 'in function'."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Select next satellite\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"105\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"orbiting around Mars?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"195\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"shows error messages?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"280\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"working &amp;gt; 5 years continuously?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"560\" y=\"280\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Set status 'idle'\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"360\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Set status 'in function'\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"500\" y=\"360\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"more satellites?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"450\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"540\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c12\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c13\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"240\" y=\"215\"/><mxPoint x=\"240\" y=\"470\"/></Array></mxGeometry></mxCell><mxCell id=\"c15\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"580\" y=\"470\"/></Array></mxGeometry></mxCell><mxCell id=\"c21\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"200\" y=\"470\"/><mxPoint x=\"200\" y=\"130\"/></Array></mxGeometry></mxCell><mxCell id=\"c22\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Select next satellite"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Select next satellite",
+       "select satellite",
+       "take satellite"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: orbiting around Mars?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "orbiting around Mars?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: shows error messages?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "shows error messages?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: working > 5 years continuously?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "working > 5 years continuously?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Set status 'idle'"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Set status 'idle'",
+       "idle",
+       "status idle"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Set status 'in function'"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Set status 'in function'",
+       "in function",
+       "status in function"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: more satellites?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "more satellites?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Select next satellite → orbiting around Mars?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Select next satellite",
+        "select satellite",
+        "take satellite"
+       ],
+       "to": [
+        "orbiting around Mars?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "orbiting around Mars? → shows error messages?: [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "orbiting around Mars?"
+       ],
+       "to": [
+        "shows error messages?"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "orbiting around Mars? → more satellites?: [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "orbiting around Mars?"
+       ],
+       "to": [
+        "more satellites?"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "shows error messages? → Set status 'idle': [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "shows error messages?"
+       ],
+       "to": [
+        "Set status 'idle'",
+        "idle",
+        "status idle"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "shows error messages? → working > 5 years continuously?: [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "shows error messages?"
+       ],
+       "to": [
+        "working > 5 years continuously?"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "working > 5 years continuously? → Set status 'idle': [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "working > 5 years continuously?"
+       ],
+       "to": [
+        "Set status 'idle'",
+        "idle",
+        "status idle"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "working > 5 years continuously? → Set status 'in function': [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "working > 5 years continuously?"
+       ],
+       "to": [
+        "Set status 'in function'",
+        "in function",
+        "status in function"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Set status 'idle' → more satellites?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Set status 'idle'",
+        "idle",
+        "status idle"
+       ],
+       "to": [
+        "more satellites?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Set status 'in function' → more satellites?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Set status 'in function'",
+        "in function",
+        "status in function"
+       ],
+       "to": [
+        "more satellites?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "more satellites? → Select next satellite: [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "more satellites?"
+       ],
+       "to": [
+        "Select next satellite",
+        "select satellite",
+        "take satellite"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Satellites not orbiting Mars are skipped"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Repeats for every satellite"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an activity diagram for the system described by the following text: The system of the electronic devices vendor offers an option to compare multiple products of the same type. When a user is seeing the details of a certain product, they can choose the compare option. After this, they need to add which other products they want to compare with. The comparison can be done with up to 5 other products. When the user adds all the products they want to compare, the user selects “Compare” and a summary report is shown. From here the user can choose some of the products and get details about it, or they can start a new comparison with other products."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"View product details\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"105\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Choose compare option\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"190\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Add product to compare\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"275\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"add another? (at most 5)\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"365\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Select Compare\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"445\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Show summary report\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"530\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"what next?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"620\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Show product details\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"700\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"795\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c13\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"520\" y=\"385\"/><mxPoint x=\"520\" y=\"280\"/></Array></mxGeometry></mxCell><mxCell id=\"c17\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"[product details]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"[new comparison]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"200\" y=\"640\"/><mxPoint x=\"200\" y=\"280\"/></Array></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: View product details"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "View product details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Choose compare option"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Choose compare option",
+       "compare option",
+       "choose compare"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Add product to compare"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Add product to compare",
+       "add product",
+       "select product to compare"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: add another? (at most 5)"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "add another? (at most 5)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Select Compare"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Select Compare"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Show summary report"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Show summary report",
+       "summary report",
+       "show report"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: what next?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "what next?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Show product details"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Show product details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "View product details → Choose compare option"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "View product details"
+       ],
+       "to": [
+        "Choose compare option",
+        "compare option",
+        "choose compare"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Choose compare option → Add product to compare"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Choose compare option",
+        "compare option",
+        "choose compare"
+       ],
+       "to": [
+        "Add product to compare",
+        "add product",
+        "select product to compare"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Add product to compare → add another? (at most 5)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Add product to compare",
+        "add product",
+        "select product to compare"
+       ],
+       "to": [
+        "add another? (at most 5)"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "add another? (at most 5) → Add product to compare: [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "add another? (at most 5)"
+       ],
+       "to": [
+        "Add product to compare",
+        "add product",
+        "select product to compare"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "add another? (at most 5) → Select Compare: [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "add another? (at most 5)"
+       ],
+       "to": [
+        "Select Compare"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Select Compare → Show summary report"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Select Compare"
+       ],
+       "to": [
+        "Show summary report",
+        "summary report",
+        "show report"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Show summary report → what next?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Show summary report",
+        "summary report",
+        "show report"
+       ],
+       "to": [
+        "what next?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "what next? → Show product details: [product details]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "what next?"
+       ],
+       "to": [
+        "Show product details"
+       ],
+       "type": "flow",
+       "label": [
+        "[product details]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "what next? → Add product to compare: [new comparison]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "what next?"
+       ],
+       "to": [
+        "Add product to compare",
+        "add product",
+        "select product to compare"
+       ],
+       "type": "flow",
+       "label": [
+        "[new comparison]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "At most 5 other products can be added"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an activity diagram for the functionality of submitting a paper to a conference. The researcher selects a conference from the list of available conferences and enters the title of the paper to be submitted. Next, the researcher enters the authors one by one, providing their first name, last name, and email address. The system then checks whether the entered author satisfies the conditions for participation in the selected conference (each author may participate in at most three papers at the same conference). If the conditions are not met, an error message is sent to the researcher. Otherwise, the researcher proceeds with the next author, if any. After all required information has been entered, the researcher clicks the “SUBMIT” button, upon which a confirmation message is sent via email to all authors."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Select conference\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"105\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Enter paper title\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"190\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Enter author (first name, last name, email)\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"275\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Check author conditions\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"360\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"at most 3 papers at this conference?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"450\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Send error message\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"500\" y=\"445\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"more authors?\" style=\"rhombus;whiteSpace=wrap;html=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"330\" y=\"535\" width=\"40\" height=\"40\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Click SUBMIT\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"615\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Send confirmation email to all authors\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"270\" y=\"700\" width=\"160\" height=\"50\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"335\" y=\"795\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"580\" y=\"280\"/></Array></mxGeometry></mxCell><mxCell id=\"c20\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"[yes]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"200\" y=\"555\"/><mxPoint x=\"200\" y=\"280\"/></Array></mxGeometry></mxCell><mxCell id=\"c22\" value=\"[no]\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c12\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Select conference"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Select conference"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Enter paper title"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Enter paper title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Enter author (first name, last name, email)"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Enter author (first name, last name, email)",
+       "enter author",
+       "add author"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Check author conditions"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Check author conditions",
+       "check author",
+       "check conditions"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: at most 3 papers at this conference?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "at most 3 papers at this conference?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Send error message"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Send error message"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: more authors?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "more authors?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Click SUBMIT"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Click SUBMIT",
+       "submit"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Send confirmation email to all authors"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Send confirmation email to all authors",
+       "send confirmation",
+       "confirmation email"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Select conference → Enter paper title"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Select conference"
+       ],
+       "to": [
+        "Enter paper title"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Enter paper title → Enter author (first name, last name, email)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Enter paper title"
+       ],
+       "to": [
+        "Enter author (first name, last name, email)",
+        "enter author",
+        "add author"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Enter author (first name, last name, email) → Check author conditions"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Enter author (first name, last name, email)",
+        "enter author",
+        "add author"
+       ],
+       "to": [
+        "Check author conditions",
+        "check author",
+        "check conditions"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Check author conditions → at most 3 papers at this conference?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Check author conditions",
+        "check author",
+        "check conditions"
+       ],
+       "to": [
+        "at most 3 papers at this conference?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "at most 3 papers at this conference? → Send error message: [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "at most 3 papers at this conference?"
+       ],
+       "to": [
+        "Send error message"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Send error message → Enter author (first name, last name, email)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Send error message"
+       ],
+       "to": [
+        "Enter author (first name, last name, email)",
+        "enter author",
+        "add author"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "at most 3 papers at this conference? → more authors?: [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "at most 3 papers at this conference?"
+       ],
+       "to": [
+        "more authors?"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "more authors? → Enter author (first name, last name, email): [yes]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "more authors?"
+       ],
+       "to": [
+        "Enter author (first name, last name, email)",
+        "enter author",
+        "add author"
+       ],
+       "type": "flow",
+       "label": [
+        "[yes]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "more authors? → Click SUBMIT: [no]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "more authors?"
+       ],
+       "to": [
+        "Click SUBMIT",
+        "submit"
+       ],
+       "type": "flow",
+       "label": [
+        "[no]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Click SUBMIT → Send confirmation email to all authors"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Click SUBMIT",
+        "submit"
+       ],
+       "to": [
+        "Send confirmation email to all authors",
+        "send confirmation",
+        "confirmation email"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    }
+   ]
+  }
+ ]
+}

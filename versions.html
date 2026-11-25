@@ -54,6 +54,33 @@
         <h1>Versions</h1>
         <div>
             <section class="changelog">
+                <h3>Release v5.2.1 - 26/11/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>OOAID: 48 “draw a diagram” tasks in 12 quizzes, one auditory-exercises quiz and one midterm-tasks quiz per diagram type (use case, class, activity, state, sequence, implementation). Each has a model solution and a checklist; solutions taken from the auditory exercises say so, the others were drawn for SeisHub in the course's notation.</li>
+                    <li>OOAID third part (Moodle extra): the car dealership case with its four diagrams, weighted 10/5/10/5 like on Moodle.</li>
+                    <li>Mock exams by part: ready-made OOAID “Midterm 1” (use case, class, activity) and “Midterm 2” (state, sequence with the class diagram completed, implementation), one task of each drawn at random, in that order.</li>
+                    <li>Build your own mock exam: “Include diagram tasks” for courses that have them.</li>
+                    <li>A diagram question's solution can have several pages (e.g. a sequence diagram and the completed class diagram); all are shown.</li>
+                </ul>
+
+                <h4>🔧 Changed</h4>
+                <ul>
+                    <li>Mock exams leave out diagram tasks unless asked for, and never draw questions from quizzes with information items (they need the case description).</li>
+                    <li>Automatic diagram check: multi-word names also match when the student's wording has the same words (“Pay the bill” for “pay bill”); creating messages in sequence diagrams are recognised.</li>
+                </ul>
+
+                <h4>🐛 Fixed</h4>
+                <ul>
+                    <li>Diagrams with swimlanes: lines inside the lanes were drawn shifted to the right.</li>
+                    <li>Multiplicities and other labels at the ends of lines are placed where draw.io puts them.</li>
+                    <li>Scores of checklists with fractional points showed as 9.99 or 10.00.</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
                 <h3>Release v5.2.0 - 26/11/2026</h3>
 
                 <h4>✨ Added</h4>

@@ -1,0 +1,1271 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-class",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "class",
+ "category": "Practical",
+ "title": {
+  "en": "Class diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the class diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 6000,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the operation of a bank. For each user, information about the name, surname and PID number is kept. A single user can have multiple accounts. For each account, information about the user and the current balance is stored. The method for checking the current account balance should be provided in the Account class. Users can make transactions on their accounts. For each transaction, the related account, the amount and the type of transaction (payment or deposit) should be indicated. Then, the new balance state is printed."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"412\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"412\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- surname: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"412\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- pid: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"412\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"412\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"+ makeTransaction(a: Account, amount: float, type: char): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"112\" width=\"412\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Account\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"280\" y=\"20\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"- balance: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"+ getBalance(): float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"+ printBalance(): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"Transaction\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"280\" y=\"230\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"- account: Account\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- amount: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"- type: char\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"+ execute(): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c14\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c25\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "User",
+       "client",
+       "customer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User: name, surname, pid, makeTransaction"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Account"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Account"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Account: user, balance, getBalance, printBalance"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "user",
+       "client",
+       "customer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Transaction"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Transaction"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Transaction: account, amount, type, execute"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "account"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User — Account (1 — 1..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "client",
+        "customer"
+       ],
+       "to": [
+        "Account"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Transaction — Account (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Transaction"
+       ],
+       "to": [
+        "Account"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram describing the operation of a library. The library has books and magazines. For books, data about the title, inventory number, number of pages, and number of copies are stored. For the authors, name, surname and year of birth are kept. For the magazines, the title, the inventory number, the journal number, and the number of copies are kept. The library has many members. Each member is described by his/her name and surname, address of residence and membership number. There are multiple book copies. For each copy, the number and status (whether the copy is rented) are kept. One member can borrow up to 5 copies. For borrowing a book, the borrowing date of the book or magazine, the date of return and the status of the borrowing (completed or active) is kept. Provide methods for creating a new borrowing, closing the borrowing, changing the author of the book and a method for returning the book or magazine."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-2\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Book\" vertex=\"1\">\n          <mxGeometry height=\"94\" width=\"210\" x=\"440\" y=\"50\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-3\" parent=\"3vZVtz43jTA3DEqCMu6E-2\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- numOfPages: int&lt;div&gt;- authors: Author[*]&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"34\" width=\"210\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-4\" parent=\"3vZVtz43jTA3DEqCMu6E-2\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"210\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-5\" parent=\"3vZVtz43jTA3DEqCMu6E-2\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ changeAuthor( in a : *Author) : void\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"210\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-6\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Magazine\" vertex=\"1\">\n          <mxGeometry height=\"94\" width=\"160\" x=\"670\" y=\"50\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-7\" parent=\"3vZVtz43jTA3DEqCMu6E-6\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- journalNumber: int&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"34\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-8\" parent=\"3vZVtz43jTA3DEqCMu6E-6\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3vZVtz43jTA3DEqCMu6E-9\" parent=\"3vZVtz43jTA3DEqCMu6E-6\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"RaPGDPXfaryw5GU-9ys8-1\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Item\" vertex=\"1\">\n          <mxGeometry height=\"164\" width=\"160\" x=\"590\" y=\"-200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"RaPGDPXfaryw5GU-9ys8-2\" parent=\"RaPGDPXfaryw5GU-9ys8-1\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- title: String&lt;div&gt;- inventoryNumber: int&lt;/div&gt;&lt;div&gt;- numOfCopies: int&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"104\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"RaPGDPXfaryw5GU-9ys8-3\" parent=\"RaPGDPXfaryw5GU-9ys8-1\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"130\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"RaPGDPXfaryw5GU-9ys8-4\" parent=\"RaPGDPXfaryw5GU-9ys8-1\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"138\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-1\" edge=\"1\" parent=\"1\" source=\"3vZVtz43jTA3DEqCMu6E-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"710\" y=\"20\" />\n              <mxPoint x=\"670\" y=\"20\" />\n            </Array>\n            <mxPoint x=\"710\" y=\"70.00000000000011\" as=\"sourcePoint\" />\n            <mxPoint x=\"670\" y=\"-10\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-2\" edge=\"1\" parent=\"1\" source=\"3vZVtz43jTA3DEqCMu6E-2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=20;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.501;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"RaPGDPXfaryw5GU-9ys8-4\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"540\" y=\"50\" />\n              <mxPoint x=\"540\" y=\"20\" />\n              <mxPoint x=\"670\" y=\"20\" />\n            </Array>\n            <mxPoint x=\"540\" y=\"70.00000000000011\" as=\"sourcePoint\" />\n            <mxPoint x=\"670\" y=\"-30\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-3\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Author\" vertex=\"1\">\n          <mxGeometry height=\"124\" width=\"160\" x=\"310\" y=\"-200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-4\" parent=\"IldSeUjxnC3toLBd66iz-3\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- name: string&lt;div&gt;- surname : string&lt;/div&gt;&lt;div&gt;- yearOfBirth: int&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"64\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-5\" parent=\"IldSeUjxnC3toLBd66iz-3\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-6\" parent=\"IldSeUjxnC3toLBd66iz-3\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"98\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-7\" edge=\"1\" parent=\"1\" source=\"IldSeUjxnC3toLBd66iz-3\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=diamond;startFill=0;startSize=19;\" target=\"3vZVtz43jTA3DEqCMu6E-2\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"500\" y=\"-138\" />\n              <mxPoint x=\"500\" y=\"50\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-8\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"0..*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"480\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-9\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1..*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"460\" y=\"-180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-10\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Member\" vertex=\"1\">\n          <mxGeometry height=\"160\" width=\"160\" x=\"1160\" y=\"-170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-11\" parent=\"IldSeUjxnC3toLBd66iz-10\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- name: *char&lt;div&gt;- surname: *char&lt;/div&gt;&lt;div&gt;- address: *char&lt;/div&gt;&lt;div&gt;- memNumber: int&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"64\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-12\" parent=\"IldSeUjxnC3toLBd66iz-10\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-13\" parent=\"IldSeUjxnC3toLBd66iz-10\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ create() : void&lt;br&gt;&lt;div&gt;+ return() : void&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"62\" width=\"160\" y=\"98\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-14\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Copy\" vertex=\"1\">\n          <mxGeometry height=\"104\" width=\"160\" x=\"910\" y=\"-180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-15\" parent=\"IldSeUjxnC3toLBd66iz-14\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ copyNum : int&lt;div&gt;+ status : bool&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"44\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-16\" parent=\"IldSeUjxnC3toLBd66iz-14\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-17\" parent=\"IldSeUjxnC3toLBd66iz-14\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"78\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-20\" edge=\"1\" parent=\"1\" source=\"IldSeUjxnC3toLBd66iz-19\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;\" target=\"IldSeUjxnC3toLBd66iz-14\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-19\" parent=\"1\" style=\"shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;\" value=\"status true = rented&lt;div&gt;status false = free&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"120\" x=\"960\" y=\"-290\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-21\" edge=\"1\" parent=\"1\" source=\"IldSeUjxnC3toLBd66iz-15\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.359;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"IldSeUjxnC3toLBd66iz-11\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-22\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"0..5\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1060\" y=\"-150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-23\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1120\" y=\"-150\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-24\" edge=\"1\" parent=\"1\" source=\"RaPGDPXfaryw5GU-9ys8-2\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;startSize=21;\" target=\"IldSeUjxnC3toLBd66iz-15\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-25\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"0..*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"860\" y=\"-160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-26\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"740\" y=\"-160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-33\" edge=\"1\" parent=\"1\" source=\"IldSeUjxnC3toLBd66iz-27\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;\" target=\"IldSeUjxnC3toLBd66iz-23\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-27\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Borrowing\" vertex=\"1\">\n          <mxGeometry height=\"150\" width=\"160\" x=\"1100\" y=\"40\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-28\" parent=\"IldSeUjxnC3toLBd66iz-27\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- borrowingDate: Date&lt;div&gt;- returnDate : Date&lt;br&gt;- status : int&lt;br&gt;- member : *Member&lt;/div&gt;&lt;div&gt;- copy : *Copy&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"84\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-29\" parent=\"IldSeUjxnC3toLBd66iz-27\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"110\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-30\" parent=\"IldSeUjxnC3toLBd66iz-27\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ close() : void&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"32\" width=\"160\" y=\"118\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-32\" edge=\"1\" parent=\"1\" source=\"IldSeUjxnC3toLBd66iz-31\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;exitX=0;exitY=0;exitDx=107.49999999999999;exitDy=12.5;exitPerimeter=0;\" target=\"IldSeUjxnC3toLBd66iz-28\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1060\" y=\"131\" as=\"sourcePoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IldSeUjxnC3toLBd66iz-31\" parent=\"1\" style=\"shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;\" value=\"status 1 = active&lt;div&gt;status 2 = completed&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"120\" x=\"930\" y=\"150\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Book"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Book: numOfPages, authors, changeAuthor"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "numOfPages"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Magazine"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Magazine"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Magazine: journalNumber"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "journalNumber"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Item"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Item",
+       "Publication",
+       "LibraryItem"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Item: title, inventoryNumber, numOfCopies"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Author"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Author"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Author: name, surname, yearOfBirth"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Member",
+       "user"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Member: name, surname, address, memNumber, create, return"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Copy"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Copy",
+       "Sample",
+       "BookCopy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Copy: copyNum, status"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "copyNum"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Borrowing"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Borrowing",
+       "Loan",
+       "Rental"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Borrowing: borrowingDate, returnDate, status, member, copy, close"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "borrowingDate"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Magazine is a kind of Item"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Magazine"
+       ],
+       "to": [
+        "Item",
+        "Publication",
+        "LibraryItem"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Book is a kind of Item"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Book"
+       ],
+       "to": [
+        "Item",
+        "Publication",
+        "LibraryItem"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Author has (aggregation) Book (1..* — 0..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Author"
+       ],
+       "to": [
+        "Book"
+       ],
+       "type": "aggregation",
+       "fromMult": [
+        "1..*"
+       ],
+       "toMult": [
+        "0..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Copy — Member (0..5 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Copy",
+        "Sample",
+        "BookCopy"
+       ],
+       "to": [
+        "Member",
+        "user"
+       ],
+       "type": "association",
+       "fromMult": [
+        "0..5"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Item has (aggregation) Copy (1 — 0..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Item",
+        "Publication",
+        "LibraryItem"
+       ],
+       "to": [
+        "Copy",
+        "Sample",
+        "BookCopy"
+       ],
+       "type": "aggregation",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "0..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Borrowing depends on Copy"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Borrowing",
+        "Loan",
+        "Rental"
+       ],
+       "to": [
+        "Copy",
+        "Sample",
+        "BookCopy"
+       ],
+       "type": "dependency"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for booking a ticket for a theater play. For each play, information about the title of the play and description is kept. Each play has multiple performances, so that for each performance, data regarding the performance, time (date and hour) and price of the tickets are kept. Users can reserve tickets by entering their name and surname, and the system also keeps information about the date when the reservation was made. In addition, the reservation refers to a particular performance and a specific seat. There are many seats in the theater, with each seat being characterized by the seat number and status (depending on whether it is reserved by a user or not). Provide methods for searching all performances of a given play, searching for plays by title and date of their performances, as well as getting information about a given performance."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-3\" edge=\"1\" parent=\"1\" source=\"2oXw-jxYej7k53sMy369-2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;startSize=20;\" target=\"2oXw-jxYej7k53sMy369-7\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-2\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Play\" vertex=\"1\">\n          <mxGeometry height=\"190\" width=\"200\" x=\"400\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-3\" parent=\"2oXw-jxYej7k53sMy369-2\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- title : string&lt;div&gt;- desc : string&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"44\" width=\"200\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-4\" parent=\"2oXw-jxYej7k53sMy369-2\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"200\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-5\" parent=\"2oXw-jxYej7k53sMy369-2\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ searchPerformances()&lt;div&gt;+ searchPlays(in t, in d)&lt;/div&gt;&lt;div&gt;+ Play()&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ Play(in t: string, in d: string)&lt;/div&gt;&lt;div&gt;+ ~Play()&lt;/div&gt;&lt;div&gt;+ get_title() : string&lt;/div&gt;&lt;div&gt;+ set_title(in t: string) : void&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"112\" width=\"200\" y=\"78\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-6\" edge=\"1\" parent=\"1\" source=\"2oXw-jxYej7k53sMy369-6\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\" target=\"2oXw-jxYej7k53sMy369-18\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-6\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Performance\" vertex=\"1\">\n          <mxGeometry height=\"104\" width=\"160\" x=\"670\" y=\"136\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-7\" parent=\"2oXw-jxYej7k53sMy369-6\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- time : DateTime&lt;div&gt;- price : float&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"44\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-8\" parent=\"2oXw-jxYej7k53sMy369-6\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-9\" parent=\"2oXw-jxYej7k53sMy369-6\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ getInfo()\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"78\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-14\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Reservation\" vertex=\"1\">\n          <mxGeometry height=\"124\" width=\"160\" x=\"410\" y=\"230\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-7\" edge=\"1\" parent=\"2oXw-jxYej7k53sMy369-14\" source=\"2oXw-jxYej7k53sMy369-15\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"330\" y=\"30\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-15\" parent=\"2oXw-jxYej7k53sMy369-14\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- userName: string&lt;div&gt;- userSurname: string&lt;/div&gt;&lt;div&gt;- createdAt : DateTime&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"64\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-16\" parent=\"2oXw-jxYej7k53sMy369-14\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-17\" parent=\"2oXw-jxYej7k53sMy369-14\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+&amp;nbsp;\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"98\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-18\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Seat\" vertex=\"1\">\n          <mxGeometry height=\"104\" width=\"160\" x=\"640\" y=\"290\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-19\" parent=\"2oXw-jxYej7k53sMy369-18\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- seatNumber : int&lt;div&gt;- status:&amp;nbsp; bool&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"44\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-20\" parent=\"2oXw-jxYej7k53sMy369-18\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"2oXw-jxYej7k53sMy369-21\" parent=\"2oXw-jxYej7k53sMy369-18\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"78\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-1\" edge=\"1\" parent=\"1\" source=\"wNBr5ZJzVctNRAPCWOY6-2\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;\" target=\"2oXw-jxYej7k53sMy369-21\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"600\" y=\"550\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-2\" parent=\"1\" style=\"shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;\" value=\"status true = free&lt;div&gt;status false = rserved&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"60\" width=\"120\" x=\"570\" y=\"440\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-4\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"0..*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"630\" y=\"160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-5\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"610\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-10\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"710\" y=\"270\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"wNBr5ZJzVctNRAPCWOY6-11\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"720\" y=\"240\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Play"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Play"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Play: title, desc, searchPerformances, searchPlays, Play, Play"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Performance"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Performance",
+       "Show"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Performance: time, price, getInfo"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "time"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Reservation: userName, userSurname, createdAt"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "userName"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Seat"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Seat"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Seat: seatNumber, status"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "seatNumber"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Play has (aggregation) Performance (? — 0..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Play"
+       ],
+       "to": [
+        "Performance",
+        "Show"
+       ],
+       "type": "aggregation",
+       "toMult": [
+        "0..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Performance — Seat (? — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Performance",
+        "Show"
+       ],
+       "to": [
+        "Seat"
+       ],
+       "type": "association",
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Reservation depends on Performance (? — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Reservation"
+       ],
+       "to": [
+        "Performance",
+        "Show"
+       ],
+       "type": "dependency",
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the operation of a company that manages warehouses. For each warehouse, the address and contact telephones are known. Warehouses store products, and each product's name and code are kept and the product stocks available in the warehouse. The company receives requirements for the products specified in the proforma invoices. For the proforma invoice, invoice number, description, products, and quantities are kept. Upon the arrival of the proforma invoice, the company creates internal orders that provide the required products. One order refers to one warehouse (it is not necessary to have orders for all warehouses of the company). If a given product is available in any warehouse, an item is inserted for that product (and the requested amount). For any order, besides the item's info, the proforma invoice, and the warehouse, information on the order number and the date created is stored."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-9\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-1\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;\" target=\"Mcl2FNA5XVO_qTwzphjO-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-1\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Warehouse\" vertex=\"1\">\n          <mxGeometry height=\"114\" width=\"160\" x=\"720\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-2\" parent=\"Mcl2FNA5XVO_qTwzphjO-1\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- address: string&lt;div&gt;- telephones: string[*]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"54\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-3\" parent=\"Mcl2FNA5XVO_qTwzphjO-1\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-4\" parent=\"Mcl2FNA5XVO_qTwzphjO-1\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"88\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-28\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-8\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;\" target=\"Mcl2FNA5XVO_qTwzphjO-18\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-5\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Product\" vertex=\"1\">\n          <mxGeometry height=\"106\" width=\"160\" x=\"490\" y=\"260\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-6\" parent=\"Mcl2FNA5XVO_qTwzphjO-5\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- name: string&lt;div&gt;- code: string&lt;/div&gt;&lt;div&gt;- stock : int&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"44\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-7\" parent=\"Mcl2FNA5XVO_qTwzphjO-5\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"160\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-8\" parent=\"Mcl2FNA5XVO_qTwzphjO-5\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-10\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Stock\" vertex=\"1\">\n          <mxGeometry height=\"80\" width=\"160\" x=\"510\" y=\"120\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-14\" edge=\"1\" parent=\"Mcl2FNA5XVO_qTwzphjO-10\" source=\"Mcl2FNA5XVO_qTwzphjO-13\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.009;exitY=1.062;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;exitPerimeter=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"200\" y=\"110\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-11\" parent=\"Mcl2FNA5XVO_qTwzphjO-10\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"-quantity : int\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-12\" parent=\"Mcl2FNA5XVO_qTwzphjO-10\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"46\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-13\" parent=\"Mcl2FNA5XVO_qTwzphjO-10\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"54\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-15\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"630\" y=\"260\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-16\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"740\" y=\"174\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-17\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"ProformaInvoice\" vertex=\"1\">\n          <mxGeometry height=\"144\" width=\"160\" x=\"980\" y=\"350\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-18\" parent=\"Mcl2FNA5XVO_qTwzphjO-17\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- invoiceNumber: string&lt;div&gt;- desc: string&lt;/div&gt;&lt;div&gt;- products: Product[*]&lt;/div&gt;&lt;div&gt;- quantities: int[*]&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"84\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-19\" parent=\"Mcl2FNA5XVO_qTwzphjO-17\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"110\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-20\" parent=\"Mcl2FNA5XVO_qTwzphjO-17\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"118\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-21\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"InternalOrder\" vertex=\"1\">\n          <mxGeometry height=\"114\" width=\"160\" x=\"970\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-22\" parent=\"Mcl2FNA5XVO_qTwzphjO-21\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- products: Product[*]&lt;br&gt;- orderNumber: sting&lt;div&gt;- createdAt: Date&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"54\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-23\" parent=\"Mcl2FNA5XVO_qTwzphjO-21\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-24\" parent=\"Mcl2FNA5XVO_qTwzphjO-21\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"88\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-25\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-2\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;\" target=\"Mcl2FNA5XVO_qTwzphjO-22\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-26\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"860\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-27\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"930\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-29\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-17\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.571;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=diamondThin;startFill=1;startSize=20;exitX=0.5;exitY=0;exitDx=0;exitDy=0;\" target=\"Mcl2FNA5XVO_qTwzphjO-24\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"943\" y=\"297\" as=\"sourcePoint\" />\n            <mxPoint x=\"1350\" y=\"-40\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-32\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"800\" y=\"320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-33\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"640\" y=\"300\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-34\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1050\" y=\"170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-35\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"950\" y=\"270\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-40\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-36\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"780\" y=\"260\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-36\" parent=\"1\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" value=\"Item\" vertex=\"1\">\n          <mxGeometry height=\"86\" width=\"160\" x=\"850\" y=\"260\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-37\" parent=\"Mcl2FNA5XVO_qTwzphjO-36\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"- amount: int\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"26\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-38\" parent=\"Mcl2FNA5XVO_qTwzphjO-36\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"160\" y=\"52\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Mcl2FNA5XVO_qTwzphjO-39\" parent=\"Mcl2FNA5XVO_qTwzphjO-36\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" value=\"+ method(type): type\" vertex=\"1\">\n          <mxGeometry height=\"26\" width=\"160\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"4GuNTH7mlzTyeTn_l-54-1\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-5\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.963;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;endArrow=none;endFill=0;\" target=\"Mcl2FNA5XVO_qTwzphjO-22\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"790\" y=\"270\" as=\"sourcePoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"4GuNTH7mlzTyeTn_l-54-2\" edge=\"1\" parent=\"1\" source=\"Mcl2FNA5XVO_qTwzphjO-38\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;exitX=0;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"800\" y=\"364\" as=\"sourcePoint\" />\n            <mxPoint x=\"740\" y=\"370\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"4GuNTH7mlzTyeTn_l-54-3\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"item in order or item in invoice\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"720\" y=\"310\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Warehouse"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Warehouse"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Warehouse: address, telephones"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "address"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Product"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Product"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Product: name, code, stock"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Stock"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Stock"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Stock: quantity"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "quantity"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: ProformaInvoice"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "ProformaInvoice",
+       "Invoice",
+       "Proforma"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "ProformaInvoice: invoiceNumber, desc, products, quantities"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "invoiceNumber"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: InternalOrder"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "InternalOrder",
+       "Order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "InternalOrder: products, orderNumber, createdAt"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "products"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Item"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Item"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Warehouse — Product (* — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Warehouse"
+       ],
+       "to": [
+        "Product"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Product — ProformaInvoice"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Product"
+       ],
+       "to": [
+        "ProformaInvoice",
+        "Invoice",
+        "Proforma"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Stock depends on Warehouse"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Stock"
+       ],
+       "to": [
+        "Warehouse"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Warehouse — InternalOrder (1 — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Warehouse"
+       ],
+       "to": [
+        "InternalOrder",
+        "Order"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "ProformaInvoice is made of (composition) InternalOrder (? — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "ProformaInvoice",
+        "Invoice",
+        "Proforma"
+       ],
+       "to": [
+        "InternalOrder",
+        "Order"
+       ],
+       "type": "composition",
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Item depends on Product"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Item"
+       ],
+       "to": [
+        "Product"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Product — InternalOrder (* — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Product"
+       ],
+       "to": [
+        "InternalOrder",
+        "Order"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Item depends on Product (* — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Item"
+       ],
+       "to": [
+        "Product"
+       ],
+       "type": "dependency",
+       "fromMult": [
+        "*"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the work organization in a company. Each company is composed of departments, with each department having several sub-departments. For each department, information should be kept about the department's name, the head of the department, and the number of employees. For each office, data about the office address, as well as the phone number should be kept. Several departments of the company can be located in the same office. The employees are described by their name and surname, personal identification number, date of employment, salary points, as well as their salary. Each of the employees at some point can be (or not) engaged in a task. If somebody is currently engaged, it should be known when he/she started to work on the task, the deadline to complete the task, and the priority of the task. For the tasks, the name of the task, short description, and status of the task should be kept (started, ongoing or completed). Provide methods that will check whether an employee works in a given department, whether the employee is the head of a particular department, and whether the employee is working on a task that has exceeded the deadline for completion."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Company\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Department\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- head: Employee\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"- numEmployees: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Office\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"- address: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c12\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"- phone: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c12\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c12\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c12\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"Employee\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"320\" width=\"214\" height=\"268\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"26\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"- surname: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"52\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"- pid: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"78\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"- employedOn: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"104\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"- salaryPoints: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"130\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"- salary: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"156\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"182\" width=\"214\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"+ worksIn(d: Department): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"190\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"+ isHeadOf(d: Department): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"216\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"+ isLate(): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c17\"><mxGeometry x=\"0\" y=\"242\" width=\"214\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"Engagement\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"620\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"- start: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c28\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"- deadline: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c28\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c31\" value=\"- priority: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c28\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c32\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c28\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c33\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c28\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c34\" value=\"Task\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"620\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c35\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c34\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c36\" value=\"- description: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c34\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c37\" value=\"- status: char\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c34\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c38\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c34\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c39\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c34\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c40\" value=\"\" style=\"endArrow=diamondThin;endFill=1;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c41\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c40\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c42\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c40\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c43\" value=\"\" style=\"endArrow=diamondThin;endFill=0;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"><Array as=\"points\"><mxPoint x=\"570\" y=\"61.4\"/><mxPoint x=\"570\" y=\"-5\"/><mxPoint x=\"467.0\" y=\"-5\"/></Array></mxGeometry></mxCell><mxCell id=\"c44\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c43\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c45\" value=\"0..1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c43\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c46\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c12\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c47\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c46\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c48\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c46\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c49\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c17\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c50\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c49\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c51\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c49\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c52\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c17\" target=\"c28\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c53\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c52\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c54\" value=\"0..1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c52\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c55\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c28\" target=\"c34\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c56\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c55\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c57\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c55\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Company"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Company"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Company: name"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Department"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Department"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Department: name, head, numEmployees"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Office"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Office"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Office: address, phone"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "address"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Employee"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Employee: name, surname, pid, employedOn, salaryPoints, salary"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Engagement"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Engagement",
+       "Assignment",
+       "Work",
+       "TaskAssignment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Engagement: start, deadline, priority"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "start"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Task"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Task"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Task: name, description, status"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Company is made of (composition) Department (1 — 1..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Company"
+       ],
+       "to": [
+        "Department"
+       ],
+       "type": "composition",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Department — Office (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Department"
+       ],
+       "to": [
+        "Office"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Employee — Department (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Employee"
+       ],
+       "to": [
+        "Department"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Employee — Engagement (1 — 0..1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Employee"
+       ],
+       "to": [
+        "Engagement",
+        "Assignment",
+        "Work",
+        "TaskAssignment"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "0..1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Engagement — Task (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Engagement",
+        "Assignment",
+        "Work",
+        "TaskAssignment"
+       ],
+       "to": [
+        "Task"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Department has sub-departments (aggregation of Department to itself)"
+     },
+     "points": 1
+    }
+   ]
+  }
+ ]
+}

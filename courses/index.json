@@ -91,7 +91,137 @@
         "sq": "Analiza dhe Dizajn i Orientuar në Objekte"
       },
       "semester": 2,
-      "color": "#ea580c"
+      "color": "#ea580c",
+      "topics": [
+        {
+          "id": "use-case",
+          "title": {
+            "en": "Use case diagrams",
+            "mk": "Дијаграми на кориснички сценарија",
+            "sq": "Diagramet e rasteve të përdorimit"
+          }
+        },
+        {
+          "id": "activity",
+          "title": {
+            "en": "Activity diagrams",
+            "mk": "Дијаграми на активности",
+            "sq": "Diagramet e aktiviteteve"
+          }
+        },
+        {
+          "id": "class",
+          "title": {
+            "en": "Class diagrams",
+            "mk": "Класни дијаграми",
+            "sq": "Diagramet e klasave"
+          }
+        },
+        {
+          "id": "state",
+          "title": {
+            "en": "State diagrams",
+            "mk": "Дијаграми на состојби",
+            "sq": "Diagramet e gjendjeve"
+          }
+        },
+        {
+          "id": "sequence",
+          "title": {
+            "en": "Sequence diagrams",
+            "mk": "Секвенцни дијаграми",
+            "sq": "Diagramet e sekuencës"
+          }
+        },
+        {
+          "id": "collaboration",
+          "title": {
+            "en": "Collaboration diagrams",
+            "mk": "Колаборациски дијаграми",
+            "sq": "Diagramet e bashkëpunimit"
+          }
+        },
+        {
+          "id": "implementation",
+          "title": {
+            "en": "Implementation diagrams",
+            "mk": "Имплементациски дијаграми",
+            "sq": "Diagramet e implementimit"
+          }
+        }
+      ],
+      "exams": [
+        {
+          "questions": 3,
+          "includeDiagrams": true,
+          "parts": [
+            {
+              "topics": [
+                "use-case"
+              ],
+              "questions": 1
+            },
+            {
+              "topics": [
+                "class"
+              ],
+              "questions": 1
+            },
+            {
+              "topics": [
+                "activity"
+              ],
+              "questions": 1
+            }
+          ],
+          "id": "midterm-1",
+          "title": {
+            "en": "Midterm 1 (diagrams)",
+            "mk": "Прв колоквиум (дијаграми)",
+            "sq": "Kolokviumi 1 (diagrame)"
+          },
+          "description": {
+            "en": "Like the first midterm: a use case, a class and an activity diagram to draw. Self-checked practice.",
+            "mk": "Како првиот колоквиум: дијаграм на кориснички сценарија, класен дијаграм и дијаграм на активности. Самопроверка, за вежбање.",
+            "sq": "Si kolokviumi i parë: një diagram i rasteve të përdorimit, një diagram i klasave dhe një diagram i aktiviteteve. Vetëkontroll, për ushtrim."
+          }
+        },
+        {
+          "questions": 3,
+          "includeDiagrams": true,
+          "parts": [
+            {
+              "topics": [
+                "state"
+              ],
+              "questions": 1
+            },
+            {
+              "topics": [
+                "sequence"
+              ],
+              "questions": 1
+            },
+            {
+              "topics": [
+                "implementation"
+              ],
+              "questions": 1
+            }
+          ],
+          "id": "midterm-2",
+          "title": {
+            "en": "Midterm 2 (diagrams)",
+            "mk": "Втор колоквиум (дијаграми)",
+            "sq": "Kolokviumi 2 (diagrame)"
+          },
+          "description": {
+            "en": "Like the second midterm: a state diagram, a sequence diagram (with the class diagram completed) and an implementation diagram. Self-checked practice.",
+            "mk": "Како вториот колоквиум: дијаграм на состојби, секвенцен дијаграм (со дополнет класен дијаграм) и имплементациски дијаграм. Самопроверка, за вежбање.",
+            "sq": "Si kolokviumi i dytë: një diagram i gjendjeve, një diagram i sekuencës (me diagramin e klasave të plotësuar) dhe një diagram i implementimit. Vetëkontroll, për ushtrim."
+          }
+        }
+      ]
     },
     {
       "formatVersion": 1,

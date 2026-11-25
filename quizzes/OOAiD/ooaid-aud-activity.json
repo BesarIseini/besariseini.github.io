@@ -1,0 +1,1749 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-activity",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "activity",
+ "category": "Practical",
+ "title": {
+  "en": "Activity diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the activity diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 6000,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a diagram of activities for user login into an e-mail client. The user should enter a user name and password. The system should check if there is such a user and if it exists to display the corresponding content of the Inbox."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--3\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"290\" y=\"120\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--4\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--3\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"oY1It6p5LnJZQylG-Xw--10\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"305\" y=\"210\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--5\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Enter username and password\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"245\" y=\"260\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--6\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--5\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"oY1It6p5LnJZQylG-Xw--7\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"305\" y=\"330\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--7\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"are the username and password correct?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"265\" y=\"350\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--8\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--7\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"oY1It6p5LnJZQylG-Xw--10\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-0.7143\" y=\"10\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"460\" y=\"370\" />\n              <mxPoint x=\"460\" y=\"180\" />\n              <mxPoint x=\"355\" y=\"180\" />\n            </Array>\n            <mxPoint x=\"450\" y=\"370\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--9\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--7\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"oY1It6p5LnJZQylG-Xw--12\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-0.0909\" y=\"15\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"305\" y=\"490\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--10\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"205\" y=\"230\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--11\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--10\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"oY1It6p5LnJZQylG-Xw--5\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"145\" y=\"390\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--12\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Display content of mailbox\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"245\" y=\"500\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--13\" edge=\"1\" parent=\"1\" source=\"oY1It6p5LnJZQylG-Xw--12\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"oY1It6p5LnJZQylG-Xw--14\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"305\" y=\"600\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"oY1It6p5LnJZQylG-Xw--14\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"290\" y=\"580\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Enter username and password"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Enter username and password",
+       "enter credentials",
+       "log in",
+       "login"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: are the username and password correct?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "are the username and password correct?",
+       "user exists?",
+       "correct?",
+       "valid?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Display content of mailbox"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Display content of mailbox",
+       "show inbox",
+       "display inbox"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Enter username and password → are the username and password correct?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Enter username and password",
+        "enter credentials",
+        "log in",
+        "login"
+       ],
+       "to": [
+        "are the username and password correct?",
+        "user exists?",
+        "correct?",
+        "valid?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "are the username and password correct? → Display content of mailbox: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the username and password correct?",
+        "user exists?",
+        "correct?",
+        "valid?"
+       ],
+       "to": [
+        "Display content of mailbox",
+        "show inbox",
+        "display inbox"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Wrong username or password leads back to entering them"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an activity diagram that describes the functionalities associated with members of a library. Members can come to the library and search the books using the terminals in the library. Searching is done by entering keywords (title and the name of the author). Once the search has been performed, a list of the results is shown. If any book from the list is of interest to the member, he/she can mark it and put it in a wish list. This list can be printed by the member as needed. When the entire search process is completed, members can go to the rental desk and ask for borrowing a book from the wish list. The borrowing can be made only if the member is registered in the library and if he/she has no more than five borrowings. If the member is not registered, he/she applies for registration, and after that the member can borrow the books."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-2\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"280\" y=\"100\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-3\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-2\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.505;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"295\" y=\"250\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-4\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Search by title\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"110\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-5\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-4\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-14\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"170\" y=\"380\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-6\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Search by author\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"350\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-7\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-6\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-14\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"410\" y=\"380\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-10\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"330\" y=\"245\" />\n              <mxPoint x=\"410\" y=\"245\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"195\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-9\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-4\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"260\" y=\"245\" />\n              <mxPoint x=\"170\" y=\"245\" />\n            </Array>\n            <mxPoint x=\"295\" y=\"330\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-12\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Show list of results\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"220\" y=\"500\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-13\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-12\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-16\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"295\" y=\"550\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-14\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"210\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-15\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-14\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-12\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"280\" y=\"450\" />\n              <mxPoint x=\"280\" y=\"450\" />\n            </Array>\n            <mxPoint x=\"450\" y=\"530\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-16\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"is there a book of intrest?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"240\" y=\"600\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-17\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-16\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-29\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"590\" y=\"650\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-18\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-16\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-26\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\" />\n            <mxPoint x=\"280\" y=\"730\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-20\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"search again?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"630\" y=\"550\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-21\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-20\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-23\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"810\" y=\"570\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-22\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-20\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.612;entryY=0.064;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-0.2673\" y=\"-48\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"670\" y=\"650\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-23\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"770\" y=\"550\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-26\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to put in in the wishlist?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"240\" y=\"740\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-27\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-26\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-29\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"550\" y=\"760\" />\n              <mxPoint x=\"550\" y=\"670\" />\n            </Array>\n            <mxPoint x=\"670\" y=\"680\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-28\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-26\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-32\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"280\" y=\"840\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-31\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-29\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-20\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"665\" y=\"610\" />\n              <mxPoint x=\"670\" y=\"610\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-29\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"590\" y=\"640\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-32\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Put the book in the wishlist\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"220\" y=\"850\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-33\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-32\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-38\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"440\" y=\"870\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-38\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"search again?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"240\" y=\"950\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-39\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-38\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-8\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-0.9492\" y=\"-20\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"170\" y=\"970\" />\n              <mxPoint x=\"170\" y=\"870\" />\n              <mxPoint x=\"80\" y=\"870\" />\n              <mxPoint x=\"80\" y=\"160\" />\n              <mxPoint x=\"245\" y=\"160\" />\n            </Array>\n            <mxPoint x=\"640\" y=\"870\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-40\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-38\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"no&lt;div&gt;&lt;br&gt;&lt;/div&gt;\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"500\" y=\"950\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-43\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to print the list?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"500\" y=\"930\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-44\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-43\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.502;entryY=0.13;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-48\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"780\" y=\"950\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-45\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-43\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-46\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"540\" y=\"1050\" />\n            </Array>\n            <mxPoint x=\"590\" y=\"1050\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-46\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"print wishlist\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"620\" y=\"1030\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-47\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-46\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-48\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"680\" y=\"975\" />\n            </Array>\n            <mxPoint x=\"790\" y=\"1000\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-51\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-48\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-49\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-48\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"5\" width=\"100\" x=\"767.5\" y=\"947.5\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-49\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"go to rental desk\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"900\" y=\"930\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-50\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-49\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-52\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1090\" y=\"950\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-52\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"ask for borrowing a book\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1110\" y=\"930\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-53\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-52\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-54\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1170\" y=\"1030\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-54\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"is the member registered?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"1130\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-55\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-54\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-0.4545\" y=\"10\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"1320\" y=\"1070\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-56\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-54\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-59\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"0.1429\" y=\"14\" as=\"geometry\">\n            <mxPoint x=\"-4\" y=\"-10\" as=\"offset\" />\n            <Array as=\"points\" />\n            <mxPoint x=\"1170\" y=\"1160\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-57\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"apply for membership\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1340\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-58\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-57\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-65\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1400\" y=\"1150\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-59\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"1130\" y=\"1180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-60\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-59\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-65\" value=\"num. of borrowings &amp;lt; 5\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1240\" y=\"1200\" />\n              <mxPoint x=\"1240\" y=\"1140\" />\n              <mxPoint x=\"1360\" y=\"1140\" />\n            </Array>\n            <mxPoint x=\"1310\" y=\"1200\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-61\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-59\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-68\" value=\"num. of borrowings &amp;gt;= 5\">\n          <mxGeometry relative=\"1\" x=\"-0.6667\" y=\"20\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"1170\" y=\"1310\" />\n              <mxPoint x=\"1303\" y=\"1310\" />\n              <mxPoint x=\"1303\" y=\"1435\" />\n            </Array>\n            <mxPoint x=\"1170\" y=\"1280\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-67\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-63\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-68\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1410\" y=\"1410\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-63\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"borrow book\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1350\" y=\"1260\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-65\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"1350\" y=\"1160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-66\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-65\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.454;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"ZBTjBVEE1Q8cT0G5K4YJ-63\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1550\" y=\"1220\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-68\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"1395\" y=\"1420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-70\" edge=\"1\" parent=\"1\" source=\"ZBTjBVEE1Q8cT0G5K4YJ-69\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1230\" y=\"1310\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"ZBTjBVEE1Q8cT0G5K4YJ-69\" parent=\"1\" style=\"shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;\" value=\"if the num. of borrowings is greater or equal to 5, member cannot borrow books -&amp;gt; they should return then borrow\" vertex=\"1\">\n          <mxGeometry height=\"100\" width=\"220\" x=\"970\" y=\"1400\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Search by title"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Search by title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Search by author"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Search by author"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Show list of results"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Show list of results"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: is there a book of intrest?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "is there a book of intrest?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: search again?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "search again?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: do you want to put in in the wishlist?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "do you want to put in in the wishlist?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Put the book in the wishlist"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Put the book in the wishlist",
+       "add to wish list",
+       "wish list"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: do you want to print the list?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "do you want to print the list?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: print wishlist"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "print wishlist"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: go to rental desk"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "go to rental desk"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: ask for borrowing a book"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "ask for borrowing a book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: is the member registered?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "is the member registered?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: apply for membership"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "apply for membership",
+       "register",
+       "registration"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: borrow book"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "borrow book",
+       "borrow"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Show list of results → is there a book of intrest?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Show list of results"
+       ],
+       "to": [
+        "is there a book of intrest?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is there a book of intrest? → do you want to put in in the wishlist?: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is there a book of intrest?"
+       ],
+       "to": [
+        "do you want to put in in the wishlist?"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to put in in the wishlist? → Put the book in the wishlist: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to put in in the wishlist?"
+       ],
+       "to": [
+        "Put the book in the wishlist",
+        "add to wish list",
+        "wish list"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Put the book in the wishlist → search again?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Put the book in the wishlist",
+        "add to wish list",
+        "wish list"
+       ],
+       "to": [
+        "search again?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "search again? → do you want to print the list?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "search again?"
+       ],
+       "to": [
+        "do you want to print the list?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to print the list? → print wishlist: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to print the list?"
+       ],
+       "to": [
+        "print wishlist"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "go to rental desk → ask for borrowing a book"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "go to rental desk"
+       ],
+       "to": [
+        "ask for borrowing a book"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "ask for borrowing a book → is the member registered?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "ask for borrowing a book"
+       ],
+       "to": [
+        "is the member registered?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is the member registered? → apply for membership: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is the member registered?"
+       ],
+       "to": [
+        "apply for membership",
+        "register",
+        "registration"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Checks the number of borrowings (at most 5) before borrowing"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an activity diagram for booking a ticket for a theater play. Users can search the repertoire of the theater online by selecting a date or entering the title of the play. After the search, users get a list of plays and by selecting one of them, the system displays detailed information about it. On this screen, there is a booking button. When this button is clicked, user can fill out a booking form, and after the successful check for free seats, information about the successful/unsuccessful ticket reservation is printed. If the booking is successful, then the user can print a booking confirmation necessary for the purchase of tickets."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"iQ9Mu_IPPvaGi6iwzqZD-2\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"260\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"iQ9Mu_IPPvaGi6iwzqZD-3\" edge=\"1\" parent=\"1\" source=\"iQ9Mu_IPPvaGi6iwzqZD-2\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"275\" y=\"170\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-1\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Search by title\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"95\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-2\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-8\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"155\" y=\"350\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-3\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Search by date\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"335\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-4\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-3\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-8\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"395\" y=\"350\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-5\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-3\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"315\" y=\"215\" />\n              <mxPoint x=\"395\" y=\"215\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-6\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"180\" y=\"170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-7\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-6\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-1\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"245\" y=\"215\" />\n              <mxPoint x=\"155\" y=\"215\" />\n            </Array>\n            <mxPoint x=\"280\" y=\"300\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-11\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-8\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-9\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-8\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"195\" y=\"390\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-9\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Display list of play\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"220\" y=\"480\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"dZ7CHmyjIK-IB8O5N3Ib-10\" edge=\"1\" parent=\"1\" source=\"dZ7CHmyjIK-IB8O5N3Ib-9\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"YHQhCaPMmCDml4wDcs0t-1\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"280\" y=\"580\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-1\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"select play\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"220\" y=\"610\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-2\" edge=\"1\" parent=\"1\" source=\"YHQhCaPMmCDml4wDcs0t-1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"YHQhCaPMmCDml4wDcs0t-3\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"280\" y=\"710\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-3\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show detailed info\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"220\" y=\"750\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-4\" edge=\"1\" parent=\"1\" source=\"YHQhCaPMmCDml4wDcs0t-3\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"YHQhCaPMmCDml4wDcs0t-5\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"280\" y=\"850\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-5\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to book tickets?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"245\" y=\"860\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-6\" edge=\"1\" parent=\"1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-13\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"0.1766\" y=\"20\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"240\" y=\"920\" />\n              <mxPoint x=\"125\" y=\"920\" />\n            </Array>\n            <mxPoint x=\"240\" y=\"880\" as=\"sourcePoint\" />\n            <mxPoint x=\"170\" y=\"880\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"YHQhCaPMmCDml4wDcs0t-7\" edge=\"1\" parent=\"1\" source=\"YHQhCaPMmCDml4wDcs0t-5\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-5\" value=\"yes\">\n          <mxGeometry relative=\"1\" y=\"15\" as=\"geometry\">\n            <mxPoint y=\"-1\" as=\"offset\" />\n            <mxPoint x=\"285\" y=\"960\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-1\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"search again?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"60\" y=\"810\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-2\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-3\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint x=\"240\" y=\"830\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-3\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"200\" y=\"810\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-4\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;\" target=\"dZ7CHmyjIK-IB8O5N3Ib-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"100\" y=\"120\" />\n              <mxPoint x=\"230\" y=\"120\" />\n            </Array>\n            <mxPoint x=\"30\" y=\"750\" as=\"sourcePoint\" />\n            <mxPoint x=\"120\" y=\"95\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-5\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"click book button\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"225\" y=\"1000\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-6\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-5\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-7\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"285\" y=\"1100\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-7\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"fill booking form\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"225\" y=\"1110\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-8\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-7\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"285\" y=\"1210\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-9\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"245\" y=\"1210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-10\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-9\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-20\" value=\"[free seats]\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"425\" y=\"1230\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-11\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-9\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-13\" value=\"[no free seats]\">\n          <mxGeometry relative=\"1\" x=\"-0.5441\" y=\"-20\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"80\" y=\"910\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-15\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-13\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"kuvRxKLNHd3Q3Lrayulg-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-13\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-180;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"50\" y=\"890\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-20\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"print information\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"440\" y=\"1210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-21\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-20\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"kuvRxKLNHd3Q3Lrayulg-23\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"500\" y=\"1310\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-23\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"print confirmation\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"650\" y=\"1210\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-24\" edge=\"1\" parent=\"1\" source=\"kuvRxKLNHd3Q3Lrayulg-23\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"710\" y=\"1310\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"kuvRxKLNHd3Q3Lrayulg-27\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"695\" y=\"1310\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Search by title"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Search by title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Search by date"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Search by date"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: Display list of play"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Display list of play",
+       "list of plays",
+       "show plays"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: select play"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "select play"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show detailed info"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show detailed info",
+       "details",
+       "detailed information"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: do you want to book tickets?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "do you want to book tickets?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: search again?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "search again?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: click book button"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "click book button"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: fill booking form"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "fill booking form"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: print information"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "print information"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: print confirmation"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "print confirmation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Display list of play → select play"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Display list of play",
+        "list of plays",
+        "show plays"
+       ],
+       "to": [
+        "select play"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "select play → show detailed info"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "select play"
+       ],
+       "to": [
+        "show detailed info",
+        "details",
+        "detailed information"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show detailed info → do you want to book tickets?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show detailed info",
+        "details",
+        "detailed information"
+       ],
+       "to": [
+        "do you want to book tickets?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to book tickets? → click book button: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to book tickets?"
+       ],
+       "to": [
+        "click book button"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "click book button → fill booking form"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "click book button"
+       ],
+       "to": [
+        "fill booking form"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "print information → print confirmation"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "print information"
+       ],
+       "to": [
+        "print confirmation"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Branch on free seats: [free seats] / [no free seats]"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Describe the activities related to the waiter and the chef in a restaurant. The restaurant has a computer system through which communication will be performed between its employees. When the waiter logs on to the system, he waits for one of the restaurant guests to order something from the menu with specialties. When guests order something, the waiter sends a message through his computer to the chef about the specialty to be prepared. Once the specialty is ready, the chef again informs the waiter through the system, that the order is ready, and that the guests can be served. After serving, the procedure for additional orders can be repeated several times. When guests have finished eating, they can ask the waiter for a bill. He prints the bill, and charges it. If necessary, he can return a change. The chef, when preparing for a particular specialty, should update the data for the products that are available in the warehouse."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" parent=\"1\" style=\"swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"1260\" width=\"1210\" x=\"580\" y=\"-90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" style=\"swimlane;startSize=20;html=1;\" value=\"Guest\" vertex=\"1\">\n          <mxGeometry height=\"1240\" width=\"550\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-13\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"see menu\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"90\" y=\"160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-42\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to order again?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"140\" y=\"440\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-43\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-42\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.506;entryY=-0.084;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-45\" value=\"no\">\n          <mxGeometry relative=\"1\" y=\"-60\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"180\" y=\"560\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-45\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"are the guests finished?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"140\" y=\"590\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-46\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-45\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.757;entryY=0.168;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-48\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"20\" y=\"610\" />\n              <mxPoint x=\"20\" y=\"429\" />\n            </Array>\n            <mxPoint x=\"100\" y=\"450\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-48\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"50\" y=\"450\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-49\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-48\" style=\"html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-42\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"190\" y=\"530\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-69\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-3\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"470\" y=\"1180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" style=\"swimlane;startSize=20;html=1;\" value=\"Waiter\" vertex=\"1\">\n          <mxGeometry height=\"1240\" width=\"270\" x=\"550\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-7\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"log in\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"75\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-9\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"120\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-10\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-9\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-7\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"135\" y=\"110\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-30\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-12\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-17\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-12\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"wait for order\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"75\" y=\"220\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-8\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-7\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-27\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"120\" y=\"180\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-15\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"make an oder\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-60\" y=\"360\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-17\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"is there an order\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"75\" y=\"290\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-18\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-17\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-27\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-0.4237\" y=\"-20\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"205\" y=\"290\" />\n              <mxPoint x=\"205\" y=\"170\" />\n              <mxPoint x=\"130\" y=\"170\" />\n            </Array>\n            <mxPoint x=\"160\" y=\"170\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-19\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-17\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"20\" y=\"310\" />\n            </Array>\n            <mxPoint x=\"20\" y=\"330\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-25\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-23\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint y=\"360\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-23\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"90\" x=\"-45\" y=\"330\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-27\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"90\" x=\"60\" y=\"180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-29\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-27\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.495;entryY=-0.048;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-12\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-39\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"serve order\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-60\" y=\"490\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-52\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"ask for bill\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-65\" y=\"670\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-53\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-52\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"115\" y=\"690\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-54\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-55\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-56\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"175\" y=\"790\" />\n            </Array>\n            <mxPoint x=\"125\" y=\"790\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-55\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"print bill\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"120\" y=\"670\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-60\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-56\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"-2.2737367544323206e-13\" y=\"870\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-56\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"give bill\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-60\" y=\"770\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-61\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-57\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"125.00000000000023\" y=\"890\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-57\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"pay the bill\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-65\" y=\"870\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-62\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"give change?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"135\" y=\"870\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-67\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"give change\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-65\" y=\"950\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-64\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-4\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-62\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-67\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"175\" y=\"970\" />\n            </Array>\n            <mxPoint x=\"30.02325581395371\" y=\"950\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" style=\"swimlane;startSize=20;html=1;\" value=\"Chef\" vertex=\"1\">\n          <mxGeometry height=\"1240\" width=\"390\" x=\"820\" y=\"20\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-31\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"inform&amp;nbsp;&lt;span style=&quot;text-align: left;&quot;&gt;chef about the specialty to be prepared&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-60\" y=\"350\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-34\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"prepare specialty\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"60\" y=\"439.9999999999998\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-32\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-31\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-72\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"170\" y=\"370\" />\n            </Array>\n            <mxPoint x=\"160\" y=\"380\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-37\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"inform&amp;nbsp;&lt;span style=&quot;text-align: left;&quot;&gt;waiter about ready order&amp;nbsp;&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"-60\" y=\"500\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-71\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"update warehouse data\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"190\" y=\"439.9999999999998\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-74\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-72\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-71\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"200\" y=\"420\" />\n              <mxPoint x=\"250\" y=\"420\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-72\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"120\" y=\"390\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-73\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-72\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"120\" y=\"435\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-78\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-75\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-37\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"195\" y=\"540\" />\n              <mxPoint x=\"110\" y=\"540\" />\n              <mxPoint x=\"110\" y=\"520\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-75\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"100\" x=\"145\" y=\"510\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-76\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-34\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.318;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-75\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-77\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-5\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-71\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-75\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-14\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-13\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-23\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"140\" y=\"290\" />\n              <mxPoint x=\"390\" y=\"290\" />\n              <mxPoint x=\"390\" y=\"300\" />\n              <mxPoint x=\"540\" y=\"300\" />\n            </Array>\n            <mxPoint x=\"150\" y=\"280\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-33\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-15\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-31\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-41\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-37\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.605;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-39\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-44\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-42\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-23\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-0.5999\" y=\"30\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"180\" y=\"330\" />\n              <mxPoint x=\"520\" y=\"330\" />\n            </Array>\n            <mxPoint x=\"180\" y=\"560\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-40\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-39\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.374;entryY=0.219;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-48\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"80\" y=\"530\" />\n              <mxPoint x=\"80\" y=\"488\" />\n            </Array>\n            <mxPoint x=\"230\" y=\"530\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-47\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-45\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-52\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"180\" y=\"710\" />\n            </Array>\n            <mxPoint x=\"420\" y=\"710\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-68\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-67\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-69\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"560\" y=\"1075\" />\n              <mxPoint x=\"460\" y=\"1075\" />\n              <mxPoint x=\"460\" y=\"1125\" />\n              <mxPoint x=\"470\" y=\"1125\" />\n            </Array>\n            <mxPoint x=\"610\" y=\"1140\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"IHjnv-Ya9sfw4Jpq1qNQ-63\" edge=\"1\" parent=\"IHjnv-Ya9sfw4Jpq1qNQ-2\" source=\"IHjnv-Ya9sfw4Jpq1qNQ-62\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"IHjnv-Ya9sfw4Jpq1qNQ-69\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"780\" y=\"910\" />\n              <mxPoint x=\"780\" y=\"1125\" />\n            </Array>\n            <mxPoint x=\"865\" y=\"910\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: see menu"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "see menu"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: do you want to order again?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "do you want to order again?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: are the guests finished?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "are the guests finished?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: log in"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "log in",
+       "login",
+       "sign in",
+       "log into the system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: wait for order"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "wait for order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: make an oder"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "make an oder"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: is there an order"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "is there an order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: serve order"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "serve order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: ask for bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "ask for bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: print bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "print bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: give bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "give bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: pay the bill"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "pay the bill"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: give change?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "give change?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: give change"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "give change"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: inform chef about the specialty to be prepared"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "inform chef about the specialty to be prepared"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: prepare specialty"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "prepare specialty"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: inform waiter about ready order"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "inform waiter about ready order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: update warehouse data"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "update warehouse data"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to order again? → are the guests finished?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to order again?"
+       ],
+       "to": [
+        "are the guests finished?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "wait for order → is there an order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "wait for order"
+       ],
+       "to": [
+        "is there an order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "ask for bill → print bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "ask for bill"
+       ],
+       "to": [
+        "print bill"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "print bill → give bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "print bill"
+       ],
+       "to": [
+        "give bill"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "give bill → pay the bill"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "give bill"
+       ],
+       "to": [
+        "pay the bill"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "pay the bill → give change?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "pay the bill"
+       ],
+       "to": [
+        "give change?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "give change? → give change: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "give change?"
+       ],
+       "to": [
+        "give change"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "make an oder → inform chef about the specialty to be prepared"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "make an oder"
+       ],
+       "to": [
+        "inform chef about the specialty to be prepared"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "inform waiter about ready order → serve order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "inform waiter about ready order"
+       ],
+       "to": [
+        "serve order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "are the guests finished? → ask for bill: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the guests finished?"
+       ],
+       "to": [
+        "ask for bill"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Swimlanes for Guest, Waiter and Chef"
+     },
+     "points": 2
+    },
+    {
+     "text": {
+      "en": "Preparing the specialty and updating the warehouse run in parallel (fork/join)"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "A system for displaying and scheduling events (meetings) in a company should be modeled. To use the system, employees of the company should log in with their usernames and passwords. After logging in, on the HOME PAGE the user has a choice to see the new events he has been invited to (and still has not accepted), or to look at the calendar of events he has accepted. By clicking on the NEW EVENTS button, the user gets a list of all new events to which he is invited. By selecting an event from the list, detailed information about the event is displayed as well as buttons for accepting and rejecting the event. If the event is accepted it is added to the calendar. If not, the data for the selected event is updated. After the response, the user returns to the home page. By clicking on the CALENDAR button on the home page, the user can choose a calendar view (weekly, monthly or daily). If he chooses a daily view, a list of events scheduled on the selected day is displayed. Clicking on the event name displays the details of that event. If a weekly view is selected, the days of the week are displayed and each event is displayed with a brief description. The user can click on the name of a day and a complete daily view of that day is displayed. From the daily view or directly from a weekly view, the user can select an event for detailed information. Draw an activity diagram."
+   },
+   "kind": "activity",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-1\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"680\" y=\"-50\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-2\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-7\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"695\" y=\"40\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-3\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"Enter username and password\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"635\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-4\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-3\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-5\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"695\" y=\"160\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-9\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-5\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.48;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-11\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"695\" y=\"319.9999999999998\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-5\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"are the username and password correct?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"655\" y=\"180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-6\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-5\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-7\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-0.7143\" y=\"10\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <Array as=\"points\">\n              <mxPoint x=\"850\" y=\"200\" />\n              <mxPoint x=\"850\" y=\"10\" />\n              <mxPoint x=\"745\" y=\"10\" />\n            </Array>\n            <mxPoint x=\"840\" y=\"200\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-7\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"595\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-8\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-7\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"Dzeq585Q2nQBQXERui7y-3\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"535\" y=\"220\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-10\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"yes\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"650\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-16\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-11\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"800\" y=\"390\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-11\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"600\" y=\"320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-12\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-11\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-13\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"660\" y=\"365\" />\n              <mxPoint x=\"595\" y=\"365\" />\n            </Array>\n            <mxPoint x=\"710\" y=\"420\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-13\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"&lt;span style=&quot;text-align: left;&quot;&gt;see the new events&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"535\" y=\"400\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-14\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-13\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" target=\"Dzeq585Q2nQBQXERui7y-18\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"595\" y=\"500\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-17\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-15\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-18\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"750\" y=\"500\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-15\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"&lt;span style=&quot;text-align: left;&quot;&gt;look at calendar&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"730\" y=\"400\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-21\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-18\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-19\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-18\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"590\" y=\"530\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-19\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"click new events button\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"630\" y=\"600\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-20\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-19\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.489;entryY=-0.095;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-22\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"690\" y=\"700\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-22\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show events list\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"630\" y=\"710\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-23\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-22\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-25\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"690\" y=\"810\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-25\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"click on an event\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"630\" y=\"770\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-26\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-25\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.458;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-27\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"690\" y=\"920\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-27\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show details about the event\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"630\" y=\"840\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-28\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-27\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.498;entryY=-0.1;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-30\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"695\" y=\"960\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-30\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"655\" y=\"980\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-31\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-30\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-33\" value=\"[accepted&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;]&lt;/span&gt;\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"835\" y=\"1000\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-32\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-30\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-35\" value=\"[not accepted]\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <mxPoint as=\"offset\" />\n            <mxPoint x=\"695\" y=\"1080\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-39\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-33\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-37\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"910\" y=\"1080\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-33\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"add event to calendar\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"850\" y=\"980\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-35\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"update event data\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"710\" y=\"1100\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-36\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-35\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.308;entryY=0.168;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-37\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"940\" y=\"1110\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-37\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"110\" x=\"940\" y=\"1080\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-38\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-37\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-40\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1090\" y=\"1170\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-40\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"return to home page\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1030\" y=\"1170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-41\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-40\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1190\" y=\"1190\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-42\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"click CALENDAR button\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1200\" y=\"1170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-43\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-42\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-44\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1260\" y=\"1270\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-50\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-44\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-66\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1443\" y=\"1120\" />\n              <mxPoint x=\"1510\" y=\"1120\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-51\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-44\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-49\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1430\" y=\"1240\" />\n              <mxPoint x=\"1430\" y=\"1240\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-44\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"200\" x=\"1300\" y=\"1185\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-45\" edge=\"1\" parent=\"1\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.25;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"jB9h3cxDdjF_uINVZq5L-1\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1448\" y=\"1100\" />\n              <mxPoint x=\"1448\" y=\"1038\" />\n              <mxPoint x=\"1485\" y=\"1038\" />\n            </Array>\n            <mxPoint x=\"1403\" y=\"1100\" as=\"sourcePoint\" />\n            <mxPoint x=\"1480\" y=\"1080\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-60\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-46\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-59\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-46\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show weekly view\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1490\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-54\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-48\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-53\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-48\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show daily view\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1500\" y=\"1155\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-70\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-49\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-69\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-49\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show monthly view\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1500\" y=\"1220\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-56\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-53\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-55\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-53\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"list daily events\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1700\" y=\"1155\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-58\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-55\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-57\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-55\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"select event\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1900\" y=\"1155\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"jB9h3cxDdjF_uINVZq5L-3\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-57\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"2260\" y=\"1175\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-57\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"show details\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"2100\" y=\"1155\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-62\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-59\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1910\" y=\"1070\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-59\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"display days of the week\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1690\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-63\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to see a specific day?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"1910\" y=\"1050\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-64\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-63\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.661;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-44\" value=\"no\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1950\" y=\"980\" />\n              <mxPoint x=\"1390\" y=\"980\" />\n              <mxPoint x=\"1390\" y=\"1158\" />\n            </Array>\n            <mxPoint x=\"1390\" y=\"1158\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-65\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-63\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;\" value=\"yes\">\n          <mxGeometry relative=\"1\" x=\"-1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1950\" y=\"1100\" />\n              <mxPoint x=\"1540\" y=\"1100\" />\n            </Array>\n            <mxPoint x=\"1540\" y=\"1130\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-68\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-66\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"Dzeq585Q2nQBQXERui7y-48\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-66\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"120\" x=\"1480\" y=\"1130\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-72\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-69\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"Dzeq585Q2nQBQXERui7y-71\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1710\" y=\"1290\" />\n              <mxPoint x=\"1650\" y=\"1290\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-69\" parent=\"1\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"&lt;span style=&quot;text-align: left;&quot;&gt;display days of the current month is displayed&lt;/span&gt;\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"120\" x=\"1710\" y=\"1230\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-73\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-71\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.746;entryY=0.249;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"jB9h3cxDdjF_uINVZq5L-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1460\" y=\"1340\" />\n              <mxPoint x=\"1460\" y=\"1013\" />\n              <mxPoint x=\"1482\" y=\"1013\" />\n            </Array>\n            <mxPoint x=\"1480\" y=\"1050\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-74\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-77\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.769;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.333;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-66\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1650\" y=\"1420\" />\n              <mxPoint x=\"1530\" y=\"1420\" />\n              <mxPoint x=\"1530\" y=\"1280\" />\n              <mxPoint x=\"1620\" y=\"1280\" />\n              <mxPoint x=\"1620\" y=\"1110\" />\n              <mxPoint x=\"1572\" y=\"1110\" />\n            </Array>\n            <mxPoint x=\"1650\" y=\"1410\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-75\" edge=\"1\" parent=\"1\" source=\"Dzeq585Q2nQBQXERui7y-71\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"1960\" y=\"1200\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-71\" parent=\"1\" style=\"rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;\" value=\"do you want to see a specific day?\" vertex=\"1\">\n          <mxGeometry height=\"40\" width=\"80\" x=\"1610\" y=\"1320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-76\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[weekly]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1560\" y=\"1310\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-77\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[daily]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1650\" y=\"1360\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"Dzeq585Q2nQBQXERui7y-78\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[see details]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"1700\" y=\"1300\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"jB9h3cxDdjF_uINVZq5L-1\" parent=\"1\" style=\"shape=line;html=1;strokeWidth=6;strokeColor=#ff0000;rotation=-90;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"10\" width=\"50\" x=\"1460\" y=\"1020\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"jB9h3cxDdjF_uINVZq5L-2\" edge=\"1\" parent=\"1\" source=\"jB9h3cxDdjF_uINVZq5L-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.529;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"Dzeq585Q2nQBQXERui7y-46\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"1554\" y=\"1030\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"jB9h3cxDdjF_uINVZq5L-4\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"...\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"2260\" y=\"1155\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Activity: Enter username and password"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "Enter username and password"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: are the username and password correct?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "are the username and password correct?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: see the new events"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "see the new events"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: look at calendar"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "look at calendar"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: click new events button"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "click new events button"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show events list"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show events list"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: click on an event"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "click on an event"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show details about the event"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show details about the event"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: add event to calendar"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "add event to calendar"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: update event data"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "update event data"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: return to home page"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "return to home page"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: click CALENDAR button"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "click CALENDAR button"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show weekly view"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show weekly view"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show daily view"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show daily view"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show monthly view"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show monthly view"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: list daily events"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "list daily events"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: select event"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "select event"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: show details"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "show details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: display days of the week"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "display days of the week"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Decision: do you want to see a specific day?"
+     },
+     "points": 1,
+     "check": {
+      "element": "decision",
+      "names": [
+       "do you want to see a specific day?"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Activity: display days of the current month is displayed"
+     },
+     "points": 1,
+     "check": {
+      "element": "activity",
+      "names": [
+       "display days of the current month is displayed"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Enter username and password → are the username and password correct?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Enter username and password"
+       ],
+       "to": [
+        "are the username and password correct?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "click new events button → show events list"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "click new events button"
+       ],
+       "to": [
+        "show events list"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show events list → click on an event"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show events list"
+       ],
+       "to": [
+        "click on an event"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "click on an event → show details about the event"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "click on an event"
+       ],
+       "to": [
+        "show details about the event"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "return to home page → click CALENDAR button"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "return to home page"
+       ],
+       "to": [
+        "click CALENDAR button"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show weekly view → display days of the week"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show weekly view"
+       ],
+       "to": [
+        "display days of the week"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show daily view → list daily events"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show daily view"
+       ],
+       "to": [
+        "list daily events"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show monthly view → display days of the current month is displayed"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show monthly view"
+       ],
+       "to": [
+        "display days of the current month is displayed"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "list daily events → select event"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "list daily events"
+       ],
+       "to": [
+        "select event"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "select event → show details"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "select event"
+       ],
+       "to": [
+        "show details"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "display days of the week → do you want to see a specific day?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "display days of the week"
+       ],
+       "to": [
+        "do you want to see a specific day?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "display days of the current month is displayed → do you want to see a specific day?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "display days of the current month is displayed"
+       ],
+       "to": [
+        "do you want to see a specific day?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → select event: [see details]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "select event"
+       ],
+       "type": "flow",
+       "label": [
+        "[see details]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Starts with an initial node and ends in a final node"
+     },
+     "points": 1
+    }
+   ]
+  }
+ ]
+}

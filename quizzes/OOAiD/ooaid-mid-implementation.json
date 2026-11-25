@@ -1,0 +1,1191 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-implementation",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "implementation",
+ "category": "Midterm",
+ "title": {
+  "en": "Implementation diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "Implementation diagram tasks like the second midterm's, with model solutions."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an implementation diagram for the following text: The chocolate factory system, together with the database, is installed on a single central server. At another location, there is a copy of the central server. The users of the system are the administrators, who are responsible for maintaining the information, and customers, who place online orders for chocolate packages. The administrators access the system through desktop computers in their offices, while the customers access it through terminals at the factory's points of sale. The factory has 10 offices, and each office has 5 desktop computers."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-1\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"central server\" vertex=\"1\">\n          <mxGeometry height=\"250\" width=\"260\" x=\"420\" y=\"120\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-30\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-4\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;endSize=13;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"710\" y=\"305\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-31\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-4\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;endSize=13;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"550\" y=\"410\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-4\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"factory system\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"120\" x=\"490\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-5\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"&amp;lt;&amp;lt;table&amp;gt;&amp;gt;&lt;div&gt;database&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"120\" x=\"530\" y=\"170\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-11\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-6\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;\" target=\"3Lzy6pymOLWDZbXnCfAM-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-6\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"copy server\" vertex=\"1\">\n          <mxGeometry height=\"250\" width=\"260\" x=\"30\" y=\"90\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-7\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"factory system\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"120\" x=\"70\" y=\"250\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-9\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-8\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;startArrow=open;startFill=0;dashed=1;\" target=\"3Lzy6pymOLWDZbXnCfAM-7\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-8\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"&amp;lt;&amp;lt;table&amp;gt;&amp;gt;&lt;div&gt;database&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"120\" x=\"120\" y=\"160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-10\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-5\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;startArrow=open;startFill=0;dashed=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;\" target=\"3Lzy6pymOLWDZbXnCfAM-4\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"552\" y=\"250\" as=\"sourcePoint\" />\n            <mxPoint x=\"530\" y=\"290\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-12\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"365\" y=\"240\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-13\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"270\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-14\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"administrator PC\" vertex=\"1\">\n          <mxGeometry height=\"110\" width=\"140\" x=\"260\" y=\"430\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-32\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-16\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"550\" y=\"410\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-16\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"admin app\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"270\" y=\"480\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-17\" parent=\"1\" style=\"verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;\" value=\"customer terminal\" vertex=\"1\">\n          <mxGeometry height=\"110\" width=\"140\" x=\"600\" y=\"450\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-36\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-18\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"710\" y=\"310\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-18\" parent=\"1\" style=\"shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;\" value=\"customer&amp;nbsp;&lt;div&gt;app&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"50\" width=\"100\" x=\"620\" y=\"500\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-19\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-14\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.008;entryY=0.776;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"3Lzy6pymOLWDZbXnCfAM-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-20\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"460\" y=\"380\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-23\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"50\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"410\" y=\"430\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-24\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"320\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-25\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"380\" y=\"380\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-26\" edge=\"1\" parent=\"1\" source=\"3Lzy6pymOLWDZbXnCfAM-1\" style=\"rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=65;entryPerimeter=0;endArrow=none;endFill=0;\" target=\"3Lzy6pymOLWDZbXnCfAM-17\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-27\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"1\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"600\" y=\"370\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-28\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"*\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"630\" y=\"430\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-29\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"&amp;lt;&amp;lt;LAN&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"580\" y=\"400\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-33\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"admin\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"510\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"3Lzy6pymOLWDZbXnCfAM-35\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"customer\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"720\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: central server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "central server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: factory system"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "factory system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: copy server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "copy server",
+       "backup server",
+       "server copy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: administrator PC"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "administrator PC",
+       "office computer",
+       "desktop computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: admin app"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "admin app"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: customer terminal"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "customer terminal",
+       "terminal"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: customer"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "customer",
+       "client",
+       "buyer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "factory system — customer"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "factory system"
+       ],
+       "to": [
+        "customer",
+        "client",
+        "buyer"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "factory system — admin app"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "factory system"
+       ],
+       "to": [
+        "admin app"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "copy server — central server (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "copy server",
+        "backup server",
+        "server copy"
+       ],
+       "to": [
+        "central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "database depends on factory system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "database",
+        "db"
+       ],
+       "to": [
+        "factory system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "admin app depends on factory system (50 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "admin app"
+       ],
+       "to": [
+        "factory system"
+       ],
+       "type": "dependency",
+       "fromMult": [
+        "50"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "customer depends on factory system (* — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "customer",
+        "client",
+        "buyer"
+       ],
+       "to": [
+        "factory system"
+       ],
+       "type": "dependency",
+       "fromMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "administrator PC — central server (1 — ?)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "administrator PC",
+        "office computer",
+        "desktop computer"
+       ],
+       "to": [
+        "central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "central server — customer terminal"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "central server"
+       ],
+       "to": [
+        "customer terminal",
+        "terminal"
+       ],
+       "type": "association"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the implementation diagram for the following text: The ministry of education disposes with a central server where the system for electronic grade diary is installed. The database of the system is installed on a separate server. The users of the system are the teachers and the admins, which can use the web or mobile version of the system."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Central server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Grade diary system\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Database server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"650\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Database\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"PC\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Web browser\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Mobile device\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Mobile app\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=1;exitY=0.85;entryX=0;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c10\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c10\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c13\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c15\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c13\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c16\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: Central server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Central server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Grade diary system"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Grade diary system",
+       "e-diary",
+       "grade diary",
+       "electronic grade diary"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Database server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Database server",
+       "db server",
+       "server for the database"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: PC"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "PC",
+       "computer",
+       "desktop computer",
+       "personal computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Web browser"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Web browser"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Mobile device"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Mobile device",
+       "mobile phone",
+       "smartphone",
+       "phone"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Mobile app"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Mobile app"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Central server — Database server (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Central server"
+       ],
+       "to": [
+        "Database server",
+        "db server",
+        "server for the database"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "PC — Central server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "PC",
+        "computer",
+        "desktop computer",
+        "personal computer"
+       ],
+       "to": [
+        "Central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile device — Central server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile device",
+        "mobile phone",
+        "smartphone",
+        "phone"
+       ],
+       "to": [
+        "Central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Web browser depends on Grade diary system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Web browser"
+       ],
+       "to": [
+        "Grade diary system",
+        "e-diary",
+        "grade diary",
+        "electronic grade diary"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile app depends on Grade diary system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile app"
+       ],
+       "to": [
+        "Grade diary system",
+        "e-diary",
+        "grade diary",
+        "electronic grade diary"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Grade diary system depends on Database"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Grade diary system",
+        "e-diary",
+        "grade diary",
+        "electronic grade diary"
+       ],
+       "to": [
+        "Database",
+        "db"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Teachers and admins use the web or the mobile version"
+     },
+     "points": 1
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an implementation diagram for the following text: The system for museums is installed on one main server, while the database is on a separate server. The users access the system via their computer or mobile phone. The admins access the system via the desktop computers installed in the offices (there are offices in Skopje and Veles, and each office has 3 admins)."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Main server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Museum system\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Database server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"650\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Database\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"User computer\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Web browser\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Mobile phone\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Mobile app\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Office PC (Skopje)\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Admin application\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Office PC (Veles)\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"650\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Admin application\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=1;exitY=0.85;entryX=0;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c14\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c16\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c14\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c17\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=1;exitY=0.85;entryX=0;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c17\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c19\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c17\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c20\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"3\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c25\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c26\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c27\" value=\"3\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c26\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c28\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c26\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c29\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c30\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c31\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c32\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c33\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: Main server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Main server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Museum system"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Museum system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Database server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Database server",
+       "db server",
+       "server for the database"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: User computer"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "User computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Web browser"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Web browser"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Mobile phone"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Mobile phone"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Mobile app"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Mobile app"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Office PC (Skopje)"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Office PC (Skopje)",
+       "office computer",
+       "admin computer",
+       "desktop computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Admin application"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Admin application"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Office PC (Veles)"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Office PC (Veles)",
+       "office computer",
+       "admin computer",
+       "desktop computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Main server — Database server (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Main server"
+       ],
+       "to": [
+        "Database server",
+        "db server",
+        "server for the database"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "User computer — Main server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User computer"
+       ],
+       "to": [
+        "Main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile phone — Main server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile phone"
+       ],
+       "to": [
+        "Main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Office PC (Skopje) — Main server (3 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Office PC (Skopje)",
+        "office computer",
+        "admin computer",
+        "desktop computer"
+       ],
+       "to": [
+        "Main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "3"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Office PC (Veles) — Main server (3 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Office PC (Veles)",
+        "office computer",
+        "admin computer",
+        "desktop computer"
+       ],
+       "to": [
+        "Main server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "3"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Web browser depends on Museum system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Web browser"
+       ],
+       "to": [
+        "Museum system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile app depends on Museum system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile app"
+       ],
+       "to": [
+        "Museum system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Admin application depends on Museum system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Admin application"
+       ],
+       "to": [
+        "Museum system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Museum system depends on Database"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Museum system"
+       ],
+       "to": [
+        "Database",
+        "db"
+       ],
+       "type": "dependency"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw an implementation diagram for the following description: The conference management system is installed on a single central server, while the database is installed on a separate server. The users of the system are researchers-organizers, who are responsible for organizing conferences, and researchers-participants, who submit papers to conferences. Researchers access the system using either their computer or a mobile device."
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Central server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Conference management system\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Database server\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"650\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Database\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Researcher computer\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Web browser\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Mobile device\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Mobile app\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=1;exitY=0.85;entryX=0;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c10\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c10\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c14\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c13\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c15\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c13\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c16\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: Central server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Central server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Conference management system"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Conference management system"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Database server"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Database server",
+       "db server",
+       "server for the database"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Database"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Researcher computer"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Researcher computer",
+       "computer",
+       "PC"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Web browser"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Web browser"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Mobile device"
+     },
+     "points": 1,
+     "check": {
+      "element": "node",
+      "names": [
+       "Mobile device",
+       "mobile phone",
+       "smartphone",
+       "phone"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Mobile app"
+     },
+     "points": 1,
+     "check": {
+      "element": "component",
+      "names": [
+       "Mobile app"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Central server — Database server (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Central server"
+       ],
+       "to": [
+        "Database server",
+        "db server",
+        "server for the database"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Researcher computer — Central server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Researcher computer",
+        "computer",
+        "PC"
+       ],
+       "to": [
+        "Central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile device — Central server (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile device",
+        "mobile phone",
+        "smartphone",
+        "phone"
+       ],
+       "to": [
+        "Central server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Web browser depends on Conference management system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Web browser"
+       ],
+       "to": [
+        "Conference management system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Mobile app depends on Conference management system"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Mobile app"
+       ],
+       "to": [
+        "Conference management system"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Conference management system depends on Database"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Conference management system"
+       ],
+       "to": [
+        "Database",
+        "db"
+       ],
+       "type": "dependency"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

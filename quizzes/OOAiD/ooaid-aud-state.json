@@ -1,0 +1,781 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-aud-state",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "state",
+ "category": "Practical",
+ "title": {
+  "en": "State diagrams: auditory exercises"
+ },
+ "description": {
+  "en": "Tasks from the auditory exercises: draw the state diagram, then check it against the model solution."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Model a state diagram that describes the work of a beverage machine. The beverage machine waits for the customer to insert money. The customer selects the appropriate beverage from the menu. After that, the customer takes the beverage. If necessary, the machine returns change."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"95\" y=\"30\" width=\"30\" height=\"30\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Waiting for money\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"40\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Waiting for selection\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"160\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Dispensing beverage\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Returning change\" style=\"rounded=1;whiteSpace=wrap;html=1;arcSize=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"40\" y=\"300\" width=\"150\" height=\"55\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c8\" value=\"money inserted\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c9\" value=\"beverage selected\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c10\" value=\"[change needed] beverage taken\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c11\" value=\"[no change] beverage taken\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c12\" value=\"change taken\" style=\"endArrow=open;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Waiting for money"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Waiting for money",
+       "waiting",
+       "idle",
+       "ready"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Waiting for selection"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Waiting for selection",
+       "selecting",
+       "money inserted"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Dispensing beverage"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Dispensing beverage",
+       "dispensing",
+       "serving"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Returning change"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Returning change"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for money → Waiting for selection: money inserted"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for money",
+        "waiting",
+        "idle",
+        "ready"
+       ],
+       "to": [
+        "Waiting for selection",
+        "selecting",
+        "money inserted"
+       ],
+       "type": "flow",
+       "label": [
+        "money inserted"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for selection → Dispensing beverage: beverage selected"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for selection",
+        "selecting",
+        "money inserted"
+       ],
+       "to": [
+        "Dispensing beverage",
+        "dispensing",
+        "serving"
+       ],
+       "type": "flow",
+       "label": [
+        "beverage selected"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Dispensing beverage → Returning change: [change needed] beverage taken"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Dispensing beverage",
+        "dispensing",
+        "serving"
+       ],
+       "to": [
+        "Returning change"
+       ],
+       "type": "flow",
+       "label": [
+        "[change needed] beverage taken"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Dispensing beverage → Waiting for money: [no change] beverage taken"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Dispensing beverage",
+        "dispensing",
+        "serving"
+       ],
+       "to": [
+        "Waiting for money",
+        "waiting",
+        "idle",
+        "ready"
+       ],
+       "type": "flow",
+       "label": [
+        "[no change] beverage taken"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Returning change → Waiting for money: change taken"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Returning change"
+       ],
+       "to": [
+        "Waiting for money",
+        "waiting",
+        "idle",
+        "ready"
+       ],
+       "type": "flow",
+       "label": [
+        "change taken"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "A class for describing a mobile phone SIM card is shown (attributes PIN, PUK, phonebook, messages; methods insertPIN, insertPUK, unlock, block, call, sendMessage). If you enter a wrong PIN three times, then you must enter a PUK code. If the PUK code is wrong, the SIM card is blocked. Draw a state diagram for the states of an object from the SIM card class."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-9\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"60\" y=\"240\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-10\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-9\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"155YP5mGqMDbQw1jyCxO-13\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"220\" y=\"234.00000000000006\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-11\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"blocked&lt;div&gt;waiting PIN&lt;/div&gt;&lt;div&gt;waiting PUK&lt;/div&gt;&lt;div&gt;not blocked&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"110\" x=\"370\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-31\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-13\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"155YP5mGqMDbQw1jyCxO-27\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-44\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-13\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"155YP5mGqMDbQw1jyCxO-33\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"290\" y=\"120\" />\n              <mxPoint x=\"1005\" y=\"120\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-13\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Waiting for PIN\" vertex=\"1\">\n          <mxGeometry height=\"140\" width=\"210\" x=\"230\" y=\"196\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-17\" parent=\"155YP5mGqMDbQw1jyCxO-13\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"cPIN = 0\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"210\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-18\" parent=\"155YP5mGqMDbQw1jyCxO-13\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"210\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-19\" parent=\"155YP5mGqMDbQw1jyCxO-13\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / enter PIN&lt;div&gt;do /&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;cPIN = cPIN++]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"47\" width=\"210\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-20\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"State1&lt;br&gt;[invariant1]&lt;br&gt;&amp;lt;&amp;lt;extended/final&amp;gt;&amp;gt;\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"50\" y=\"402\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-21\" parent=\"155YP5mGqMDbQw1jyCxO-20\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"behavior1\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-22\" parent=\"155YP5mGqMDbQw1jyCxO-20\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-23\" parent=\"155YP5mGqMDbQw1jyCxO-20\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"transition1\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-25\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-13\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.275;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"155YP5mGqMDbQw1jyCxO-13\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-26\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[PIN is wrong &amp;amp;&amp;amp; cPIN &amp;lt;= 3]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"180\" x=\"320\" y=\"140\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-36\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-27\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"155YP5mGqMDbQw1jyCxO-33\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-41\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-27\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"155YP5mGqMDbQw1jyCxO-38\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-27\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=66;whiteSpace=wrap;\" value=\"Waiting for PUK\" vertex=\"1\">\n          <mxGeometry height=\"115\" width=\"210\" x=\"540\" y=\"208.5\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-29\" parent=\"155YP5mGqMDbQw1jyCxO-27\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"210\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-30\" parent=\"155YP5mGqMDbQw1jyCxO-27\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / enter PUK&lt;div&gt;do / check if PUK is correct&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"47\" width=\"210\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-33\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=66;whiteSpace=wrap;\" value=\"Active\" vertex=\"1\">\n          <mxGeometry height=\"115\" width=\"210\" x=\"900\" y=\"208.5\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-34\" parent=\"155YP5mGqMDbQw1jyCxO-33\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"210\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-35\" parent=\"155YP5mGqMDbQw1jyCxO-33\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do/ make a call or send text\" vertex=\"1\">\n          <mxGeometry height=\"47\" width=\"210\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-37\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[PUK is correct]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"90\" x=\"770\" y=\"230\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-46\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-38\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"155YP5mGqMDbQw1jyCxO-47\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"910\" y=\"461\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-38\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=66;whiteSpace=wrap;\" value=\"Blocked\" vertex=\"1\">\n          <mxGeometry height=\"115\" width=\"210\" x=\"540\" y=\"403.5\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-39\" parent=\"155YP5mGqMDbQw1jyCxO-38\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"210\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-40\" parent=\"155YP5mGqMDbQw1jyCxO-38\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"&lt;div&gt;&lt;br&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"47\" width=\"210\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-42\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[PUK is wrong]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"60\" x=\"640\" y=\"350\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-43\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[cPIN == 3]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"80\" x=\"440\" y=\"280\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-45\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[PIN is correct]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"110\" x=\"550\" y=\"80\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-47\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=strokeColor;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"940\" y=\"446\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"155YP5mGqMDbQw1jyCxO-48\" edge=\"1\" parent=\"1\" source=\"155YP5mGqMDbQw1jyCxO-33\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.589;entryY=0.289;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"155YP5mGqMDbQw1jyCxO-47\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Waiting for PIN"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Waiting for PIN"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Waiting for PUK"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Waiting for PUK"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Active"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Active",
+       "unlocked"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Blocked"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Blocked",
+       "locked"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for PIN → Waiting for PUK: [cPIN == 3]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for PIN"
+       ],
+       "to": [
+        "Waiting for PUK"
+       ],
+       "type": "flow",
+       "label": [
+        "[cPIN == 3]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for PIN → Active: blocked"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for PIN"
+       ],
+       "to": [
+        "Active",
+        "unlocked"
+       ],
+       "type": "flow",
+       "label": [
+        "blocked"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for PUK → Active: [PUK is correct]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for PUK"
+       ],
+       "to": [
+        "Active",
+        "unlocked"
+       ],
+       "type": "flow",
+       "label": [
+        "[PUK is correct]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Waiting for PUK → Blocked: [PUK is wrong]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Waiting for PUK"
+       ],
+       "to": [
+        "Blocked",
+        "locked"
+       ],
+       "type": "flow",
+       "label": [
+        "[PUK is wrong]"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Model a state diagram which describes the operation of a plane. When a new plane is bought, an object that represents that plane is created and its initial state is free. From this state, the plane can go to the taking-off or testing state. After the testing, it may be free again or declared incapable of driving. From the flight state, the plane can only go to the landing state, from which it can go in testing or taking off state."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-12\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-8\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-17\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-13\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-1\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Free\" vertex=\"1\">\n          <mxGeometry height=\"93\" width=\"140\" x=\"210\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-3\" parent=\"390o-EOTZF5l1ff7S-PN-1\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-4\" parent=\"390o-EOTZF5l1ff7S-PN-1\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do / clean\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-5\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"30\" y=\"228\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-6\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-5\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.022;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"390o-EOTZF5l1ff7S-PN-1\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"45\" y=\"318\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-18\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-8\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"390o-EOTZF5l1ff7S-PN-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"540\" y=\"180\" />\n              <mxPoint x=\"280\" y=\"180\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-23\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-8\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-19\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-8\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Testing\" vertex=\"1\">\n          <mxGeometry height=\"93\" width=\"140\" x=\"470\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-10\" parent=\"390o-EOTZF5l1ff7S-PN-8\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-11\" parent=\"390o-EOTZF5l1ff7S-PN-8\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do / test the plane\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-31\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-13\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-27\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-13\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Taking off\" vertex=\"1\">\n          <mxGeometry height=\"110\" width=\"170\" x=\"180\" y=\"398\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-15\" parent=\"390o-EOTZF5l1ff7S-PN-13\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"170\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-16\" parent=\"390o-EOTZF5l1ff7S-PN-13\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / get ready&lt;div&gt;do / turn on airplane mode&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"42\" width=\"170\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-25\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-19\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-26\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"980\" y=\"259\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-19\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Incapable of driving\" vertex=\"1\">\n          <mxGeometry height=\"93\" width=\"140\" x=\"690\" y=\"200\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-21\" parent=\"390o-EOTZF5l1ff7S-PN-19\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-22\" parent=\"390o-EOTZF5l1ff7S-PN-19\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / park the plane\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-26\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"965\" y=\"244\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-36\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-27\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"390o-EOTZF5l1ff7S-PN-32\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-27\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Flight\" vertex=\"1\">\n          <mxGeometry height=\"93\" width=\"140\" x=\"430\" y=\"398\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-29\" parent=\"390o-EOTZF5l1ff7S-PN-27\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-30\" parent=\"390o-EOTZF5l1ff7S-PN-27\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"do / fly\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-37\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-32\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;\" target=\"390o-EOTZF5l1ff7S-PN-11\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"720\" y=\"350\" />\n              <mxPoint x=\"575\" y=\"350\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-38\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-32\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;\" target=\"390o-EOTZF5l1ff7S-PN-16\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"720\" y=\"560\" />\n              <mxPoint x=\"270\" y=\"560\" />\n              <mxPoint x=\"270\" y=\"508\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-39\" edge=\"1\" parent=\"1\" source=\"390o-EOTZF5l1ff7S-PN-32\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" target=\"390o-EOTZF5l1ff7S-PN-1\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"850\" y=\"445\" />\n              <mxPoint x=\"850\" y=\"600\" />\n              <mxPoint x=\"140\" y=\"600\" />\n              <mxPoint x=\"140\" y=\"247\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-32\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Landing\" vertex=\"1\">\n          <mxGeometry height=\"93\" width=\"140\" x=\"650\" y=\"398\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-34\" parent=\"390o-EOTZF5l1ff7S-PN-32\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-35\" parent=\"390o-EOTZF5l1ff7S-PN-32\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / keep you seatbelt on\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"68\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"390o-EOTZF5l1ff7S-PN-40\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"it can also go in free (not in testing or taking off), and from free it can go into testing or taking off\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"200\" x=\"-80\" y=\"470\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Free"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Free"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Testing"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Testing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Taking off"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Taking off"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Incapable of driving"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Incapable of driving",
+       "incapable",
+       "unusable"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Flight"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Flight"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Landing"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Landing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Free → Testing"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Free"
+       ],
+       "to": [
+        "Testing"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Free → Taking off"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Free"
+       ],
+       "to": [
+        "Taking off"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Testing → Free"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Testing"
+       ],
+       "to": [
+        "Free"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Testing → Incapable of driving"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Testing"
+       ],
+       "to": [
+        "Incapable of driving",
+        "incapable",
+        "unusable"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Taking off → Flight"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Taking off"
+       ],
+       "to": [
+        "Flight"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Flight → Landing"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Flight"
+       ],
+       "to": [
+        "Landing"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Landing → Testing"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Landing"
+       ],
+       "to": [
+        "Testing"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Landing → Taking off"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Landing"
+       ],
+       "to": [
+        "Taking off"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Landing → Free"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Landing"
+       ],
+       "to": [
+        "Free"
+       ],
+       "type": "flow"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Model a state diagram that describes the states of a course in a private school. Once the course is open, students who want to enroll in this course can register. There is a limit for the maximum number of students who can enroll in the course. If the limit is reached, students who want to register are added to the waiting list until a place is released. A place for a student is released if another student withdraws from the course."
+   },
+   "kind": "state",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: from the course's auditory exercises."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\" />\n        <mxCell id=\"1\" parent=\"0\" />\n        <mxCell id=\"9JcbEtZdfceT1SG7s_Zg-2\" parent=\"1\" style=\"ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"50\" y=\"180\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"9JcbEtZdfceT1SG7s_Zg-3\" edge=\"1\" parent=\"1\" source=\"9JcbEtZdfceT1SG7s_Zg-2\" style=\"edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.013;entryY=0.304;entryDx=0;entryDy=0;entryPerimeter=0;\" target=\"6W2-0kSsFY9FOPGT2hds-1\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <mxPoint x=\"170\" y=\"195\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-10\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-1\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"6W2-0kSsFY9FOPGT2hds-6\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-1\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Created\" vertex=\"1\">\n          <mxGeometry height=\"118\" width=\"140\" x=\"170\" y=\"160\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-2\" parent=\"6W2-0kSsFY9FOPGT2hds-1\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"limit&lt;div&gt;nStudents = 0&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-3\" parent=\"6W2-0kSsFY9FOPGT2hds-1\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"140\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-4\" parent=\"6W2-0kSsFY9FOPGT2hds-1\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"transition1\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"140\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-16\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"6W2-0kSsFY9FOPGT2hds-12\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-7\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" target=\"1ZsICYMM7N7cpZHhGbRb-2\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-6\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Open\" vertex=\"1\">\n          <mxGeometry height=\"170\" width=\"190\" x=\"390\" y=\"120\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-7\" parent=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"limit&lt;div&gt;nStudents&lt;/div&gt;&lt;div&gt;waitingList&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"45\" width=\"190\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-8\" parent=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"190\" y=\"105\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-9\" parent=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"entry / waitingList = 0&lt;div&gt;do / enroll students&lt;/div&gt;&lt;div&gt;do / withdraw student application&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"57\" width=\"190\" y=\"113\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-19\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;\" target=\"6W2-0kSsFY9FOPGT2hds-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"438\" y=\"330\" />\n            </Array>\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-6\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"1ZsICYMM7N7cpZHhGbRb-2\" value=\"\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-10\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\">\n          <mxGeometry relative=\"1\" as=\"geometry\">\n            <Array as=\"points\">\n              <mxPoint x=\"280\" y=\"445\" />\n              <mxPoint x=\"280\" y=\"420\" />\n            </Array>\n            <mxPoint x=\"380\" y=\"420\" as=\"targetPoint\" />\n          </mxGeometry>\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-12\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Full\" vertex=\"1\">\n          <mxGeometry height=\"150\" width=\"190\" x=\"390\" y=\"370\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-13\" parent=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"limit&lt;div&gt;nStudents&lt;/div&gt;&lt;div&gt;waitingList&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"45\" width=\"190\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-14\" parent=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"190\" y=\"105\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-15\" parent=\"6W2-0kSsFY9FOPGT2hds-12\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"&lt;div&gt;exit / withdraw student application (nStudents-- &amp;amp;&amp;amp; (waitingList &amp;gt; 0 &amp;amp;&amp;amp; waitingList--&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"37\" width=\"190\" y=\"113\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"6W2-0kSsFY9FOPGT2hds-17\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[nStudents == limit]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"120\" x=\"490\" y=\"310\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-9\" edge=\"1\" parent=\"1\" source=\"1ZsICYMM7N7cpZHhGbRb-2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" target=\"1ZsICYMM7N7cpZHhGbRb-8\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-2\" parent=\"1\" style=\"swimlane;fontStyle=4;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;rounded=1;absoluteArcSize=1;arcSize=50;whiteSpace=wrap;\" value=\"Closed for registration\" vertex=\"1\">\n          <mxGeometry height=\"130\" width=\"190\" x=\"660\" y=\"370\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-3\" parent=\"1ZsICYMM7N7cpZHhGbRb-2\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"limit&lt;div&gt;nStudents&amp;nbsp;&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"25\" width=\"190\" y=\"60\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-4\" parent=\"1ZsICYMM7N7cpZHhGbRb-2\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"8\" width=\"190\" y=\"85\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-5\" parent=\"1ZsICYMM7N7cpZHhGbRb-2\" style=\"fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=5;whiteSpace=wrap;html=1;\" value=\"&lt;div&gt;exit / withdraw student application&lt;/div&gt;\" vertex=\"1\">\n          <mxGeometry height=\"37\" width=\"190\" y=\"93\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-8\" parent=\"1\" style=\"ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;\" value=\"\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"30\" x=\"940\" y=\"420\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-11\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[student withdraws &amp;amp;&amp;amp; nStudents==limit]&amp;nbsp;\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"140\" x=\"170\" y=\"380\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-12\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[nStudents &amp;lt; limit &amp;amp;&amp;amp; waitingList == 0]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"135\" x=\"290\" y=\"320\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-13\" edge=\"1\" parent=\"1\" source=\"6W2-0kSsFY9FOPGT2hds-6\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;\" target=\"6W2-0kSsFY9FOPGT2hds-6\">\n          <mxGeometry relative=\"1\" as=\"geometry\" />\n        </mxCell>\n        <mxCell id=\"1ZsICYMM7N7cpZHhGbRb-14\" parent=\"1\" style=\"text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;\" value=\"[nStudents &amp;lt; limit]\" vertex=\"1\">\n          <mxGeometry height=\"30\" width=\"120\" x=\"490\" y=\"70\" as=\"geometry\" />\n        </mxCell>\n      </root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "State: Created"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Created"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Open"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Open"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Full"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Full"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "State: Closed for registration"
+     },
+     "points": 1,
+     "check": {
+      "element": "state",
+      "names": [
+       "Closed for registration"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Created → Open"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Created"
+       ],
+       "to": [
+        "Open"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Open → Full: [nStudents == limit]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Open"
+       ],
+       "to": [
+        "Full"
+       ],
+       "type": "flow",
+       "label": [
+        "[nStudents == limit]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Open → Closed for registration"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Open"
+       ],
+       "to": [
+        "Closed for registration"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Full → Open"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Full"
+       ],
+       "to": [
+        "Open"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Full → Closed for registration"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Full"
+       ],
+       "to": [
+        "Closed for registration"
+       ],
+       "type": "flow"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

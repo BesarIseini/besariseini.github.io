@@ -137,6 +137,7 @@
     "MOCK_MINUTES_HINT": "0 minutes: no time limit.",
     "MOCK_MODE": "Mode",
     "MOCK_INCLUDE_CODE": "Include code questions",
+    "MOCK_INCLUDE_DIAGRAMS": "Include diagram tasks",
     "MOCK_AVAILABLE": "{n} questions to draw from",
     "MOCK_START": "Start mock exam",
     "MOCK_NONE": "No quizzes match these filters.",

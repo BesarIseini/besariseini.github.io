@@ -1,0 +1,1029 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-sequence",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "sequence",
+ "category": "Midterm",
+ "title": {
+  "en": "Sequence diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "Sequence diagram tasks like the second midterm's, some with the class diagram to complete."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 6000,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "A partially completed class diagram is given for a chocolate factory system. Draw a sequence diagram for the following scenario so that it is consistent with the class diagram, and then complete the class diagram with the necessary methods, attributes, and relationships. Departments are responsible for chocolate production. For that purpose, a chocolate is first selected, and then the ingredients required for its preparation are retrieved. For each ingredient, a check is performed to determine whether it is available in stock by invoking the method is_available(): bool of class Ingredient. If all ingredients required for the chocolate are available in stock, a return message is sent to class Department, after which the chocolate is added to the preparation list; otherwise, information is sent about the ingredients that need to be procured."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    },
+    {
+     "type": "drawio",
+     "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Department\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Chocolate\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"280\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Ingredient\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"230\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"+ is_available(): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+     "caption": {
+      "en": "The given class diagram"
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxfile host=\"SeisHub\"><diagram name=\"Sequence diagram\" id=\"p0\"><mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Department\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Chocolate\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Ingredient\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"c = selectChocolate()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"110\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"80\"/><mxPoint x=\"120.0\" y=\"110\"/></Array></mxGeometry></mxCell><mxCell id=\"c6\" value=\"available = c.checkIngredients()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"142\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"142\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"ingredients = getIngredients()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"184\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"214\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"270.0\" y=\"184\"/><mxPoint x=\"270.0\" y=\"214\"/></Array></mxGeometry></mxCell><mxCell id=\"c8\" value=\"*[for each i in ingredients] i.is_available()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"246\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"246\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"return available\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"288\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"288\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"return available\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"330\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"330\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"[available] addToPreparationList(c)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"372\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"402\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"372\"/><mxPoint x=\"120.0\" y=\"402\"/></Array></mxGeometry></mxCell><mxCell id=\"c12\" value=\"[else] procure(missing)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"434\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"464\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"434\"/><mxPoint x=\"120.0\" y=\"464\"/></Array></mxGeometry></mxCell></root></mxGraphModel></diagram><diagram name=\"Completed class diagram\" id=\"p1\"><mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Department\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"284\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"284\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- preparationList: Chocolate[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"284\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"284\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"+ selectChocolate(): Chocolate\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"86\" width=\"284\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"+ addToPreparationList(c: Chocolate): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"112\" width=\"284\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"+ procure(i: Ingredient[*]): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"138\" width=\"284\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Chocolate\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"227\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"26\" width=\"227\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"- ingredients: Ingredient[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"52\" width=\"227\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"78\" width=\"227\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"+ getIngredients(): Ingredient[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"86\" width=\"227\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"+ checkIngredients(): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"112\" width=\"227\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"Ingredient\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"250\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"- quantity: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"+ is_available(): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c21\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c20\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c15\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c25\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c23\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel></diagram></mxfile>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Department"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Department"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Chocolate"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Chocolate"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Ingredient"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Ingredient"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: c = selectChocolate()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "c = selectChocolate()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Department → :Chocolate: available = c.checkIngredients()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Department"
+       ],
+       "to": [
+        ":Chocolate"
+       ],
+       "type": "flow",
+       "label": [
+        "available = c.checkIngredients()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: ingredients = getIngredients()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "ingredients = getIngredients()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Chocolate → :Ingredient: *[for each i in ingredients] i.is_available()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Chocolate"
+       ],
+       "to": [
+        ":Ingredient"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each i in ingredients] i.is_available()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Ingredient → :Chocolate: return available"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Ingredient"
+       ],
+       "to": [
+        ":Chocolate"
+       ],
+       "type": "flow",
+       "label": [
+        "return available"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Chocolate → :Department: return available"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Chocolate"
+       ],
+       "to": [
+        ":Department"
+       ],
+       "type": "flow",
+       "label": [
+        "return available"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: [available] addToPreparationList(c)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "[available] addToPreparationList(c)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: [else] procure(missing)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "[else] procure(missing)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class diagram: Department — Chocolate and Chocolate — Ingredient associations"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Class diagram: the methods used in the sequence diagram (e.g. checkIngredients, addToPreparationList)"
+     },
+     "points": 2,
+     "check": {
+      "text": [
+       "addToPreparationList",
+       "checkIngredients"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class diagram: attributes (Ingredient quantity, Chocolate ingredients)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "quantity"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "A partially drawn class diagram for a system for museums is given (classes User, Exhibition, Ticket). Draw a sequence diagram for the following text that will be consistent with the class diagram and then complete the class diagram with the necessary methods, attributes, and relations. Users of the system for museums can buy tickets for visiting museum exhibitions. To buy a ticket, the user first selects an exhibition and chooses a date. Then a message to check whether there are free slots is sent to the class Exhibition. If there is a free slot, a message is returned to the user. Then the user inserts the necessary information and sends a message buy_ticket() that sends the information to the class Exhibition. This message creates a new object from the class Ticket."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    },
+    {
+     "type": "drawio",
+     "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Exhibition\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"280\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Ticket\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"230\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+     "caption": {
+      "en": "The given class diagram"
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxfile host=\"SeisHub\"><diagram name=\"Sequence diagram\" id=\"p0\"><mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":User\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Exhibition\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Ticket\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"458\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"e = selectExhibition()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"110\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"80\"/><mxPoint x=\"120.0\" y=\"110\"/></Array></mxGeometry></mxCell><mxCell id=\"c6\" value=\"free = checkFreeSlots(date)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"142\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"142\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"return free slot\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"184\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"184\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"enterInformation()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"226\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"256\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"226\"/><mxPoint x=\"120.0\" y=\"256\"/></Array></mxGeometry></mxCell><mxCell id=\"c9\" value=\"buy_ticket(user, date)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"288\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"288\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Ticket(user, e, date)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"330\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"330\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"return ticket\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"372\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"372\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel></diagram><diagram name=\"Completed class diagram\" id=\"p1\"><mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"220\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"220\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"+ selectExhibition(): Exhibition\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"86\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Exhibition\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"259\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"26\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"- freeSlots: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"52\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"78\" width=\"259\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"+ checkFreeSlots(d: date): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"86\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"+ buy_ticket(u: User, d: date): Ticket\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"112\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Ticket\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"240\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c13\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"- exhibition: Exhibition\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c13\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c13\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c13\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c13\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c21\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c24\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel></diagram></mxfile>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :User"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":User"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Exhibition"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Exhibition"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Ticket"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Ticket"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: e = selectExhibition()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "e = selectExhibition()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Exhibition: free = checkFreeSlots(date)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Exhibition"
+       ],
+       "type": "flow",
+       "label": [
+        "free = checkFreeSlots(date)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Exhibition → :User: return free slot"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Exhibition"
+       ],
+       "to": [
+        ":User"
+       ],
+       "type": "flow",
+       "label": [
+        "return free slot"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Message: enterInformation()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "enterInformation()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Exhibition: buy_ticket(user, date)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Exhibition"
+       ],
+       "type": "flow",
+       "label": [
+        "buy_ticket(user, date)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Exhibition creates :Ticket: Ticket(user, e, date)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Exhibition"
+       ],
+       "to": [
+        ":Ticket"
+       ],
+       "type": "flow",
+       "label": [
+        "Ticket(user, e, date)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Exhibition → :User: return ticket"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Exhibition"
+       ],
+       "to": [
+        ":User"
+       ],
+       "type": "flow",
+       "label": [
+        "return ticket"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Class diagram: Ticket is associated with User and with Exhibition"
+     },
+     "points": 1
+    },
+    {
+     "text": {
+      "en": "Class diagram: buy_ticket() and the free-slot check are methods of Exhibition"
+     },
+     "points": 2,
+     "check": {
+      "text": [
+       "buy_ticket"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for the following text: The user interface of some application has one button. When the user presses that button, the method list() from the class Service is called, and this method calls the method getData() from the class DatabaseAdapter. The user gets a list of all saved items."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":User\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"332\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Service\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"332\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":DatabaseAdapter\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"332\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"list()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c6\" value=\"getData()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"122\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"return data\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"164\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"164\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"return items\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"206\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"206\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :User"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":User"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Service"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Service"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :DatabaseAdapter"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":DatabaseAdapter"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Service: list()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Service"
+       ],
+       "type": "flow",
+       "label": [
+        "list()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Service → :DatabaseAdapter: getData()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Service"
+       ],
+       "to": [
+        ":DatabaseAdapter"
+       ],
+       "type": "flow",
+       "label": [
+        "getData()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":DatabaseAdapter → :Service: return data"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":DatabaseAdapter"
+       ],
+       "to": [
+        ":Service"
+       ],
+       "type": "flow",
+       "label": [
+        "return data"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Service → :User: return items"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Service"
+       ],
+       "to": [
+        ":User"
+       ],
+       "type": "flow",
+       "label": [
+        "return items"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for the functionality of submitting a paper to a conference, which must be consistent with the class diagram, and extend the class diagram with the required classes, methods, attributes, and relationships. Researchers submit their papers to a conference. For this purpose, the researcher first selects a conference and then enters the paper title and the authors. Authors are entered sequentially, one by one. A researcher may be an author of at most three papers at the same conference. The method num_papers(r: Researcher): int returns the number of papers submitted by a given researcher to that conference. If all authors satisfy the condition, the paper is submitted to the conference and the researcher receives a confirmation message. Otherwise, the researcher receives a message with error information."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    },
+    {
+     "type": "drawio",
+     "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Researcher\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Conference\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- organizers: Researcher[2..3]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Paper\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"230\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- title: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"- authors: Researcher[1..*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"organizes\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"2..3\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c19\" value=\"authors\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c21\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c24\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+     "caption": {
+      "en": "The class diagram (from the first midterm task)"
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Researcher\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Conference\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Paper\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"c = selectConference()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"110\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"80\"/><mxPoint x=\"120.0\" y=\"110\"/></Array></mxGeometry></mxCell><mxCell id=\"c6\" value=\"&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Paper(title)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"142\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"142\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c7\" value=\"*[for each author a] addAuthor(a)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"184\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"184\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"n = num_papers(a)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"226\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"226\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"return n\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"268\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"268\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"[n &amp;gt;= 3] return error\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"310\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"310\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"[all authors ok] submit(p)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"352\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"352\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"return confirmation\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"394\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"394\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Researcher"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Researcher"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Conference"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Conference"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Paper"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Paper"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: c = selectConference()"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "c = selectConference()"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Researcher creates :Paper: Paper(title)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Researcher"
+       ],
+       "to": [
+        ":Paper"
+       ],
+       "type": "flow",
+       "label": [
+        "Paper(title)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Researcher → :Paper: *[for each author a] addAuthor(a)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Researcher"
+       ],
+       "to": [
+        ":Paper"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each author a] addAuthor(a)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Paper → :Conference: n = num_papers(a)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Paper"
+       ],
+       "to": [
+        ":Conference"
+       ],
+       "type": "flow",
+       "label": [
+        "n = num_papers(a)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Conference → :Paper: return n"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Conference"
+       ],
+       "to": [
+        ":Paper"
+       ],
+       "type": "flow",
+       "label": [
+        "return n"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Paper → :Researcher: [n >= 3] return error"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Paper"
+       ],
+       "to": [
+        ":Researcher"
+       ],
+       "type": "flow",
+       "label": [
+        "[n >= 3] return error"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Researcher → :Conference: [all authors ok] submit(p)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Researcher"
+       ],
+       "to": [
+        ":Conference"
+       ],
+       "type": "flow",
+       "label": [
+        "[all authors ok] submit(p)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Conference → :Researcher: return confirmation"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Conference"
+       ],
+       "to": [
+        ":Researcher"
+       ],
+       "type": "flow",
+       "label": [
+        "return confirmation"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Class diagram extended with the methods used (num_papers in Conference, addAuthor, submit)"
+     },
+     "points": 2
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for the following text, which should be consistent with the class diagram: In the sports center, when creating a reservation, the type of hall (e.g., football, tennis) and the desired time slot are first selected. The system retrieves the list of all halls of that type and checks each one whether it is available during the selected time slot. This check is performed by calling the method isAvailable(): bool. If at least one hall is available, the user selects a specific hall from the offered options and creates a reservation. The reservation can be canceled by calling the method cancel(), but only if there are at least 24 hours remaining before the reserved time. The reservation can also be confirmed with a payment. In the end, the system returns a message indicating a successful reservation and payment."
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    },
+    {
+     "type": "drawio",
+     "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Hall\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- type: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- capacity: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- location: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"20\" width=\"259\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"- firstName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"26\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"- lastName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"52\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"78\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- phone: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"104\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"130\" width=\"259\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"+ reservationHistory(): Reservation[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"138\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"+ paymentHistory(): Payment[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"164\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"Reservation\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"- hall: Hall\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"- time: time\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"Payment\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"260\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"- reservation: Reservation\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"- amount: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c16\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c31\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c32\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c33\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c16\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c34\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c33\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c35\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c33\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c36\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c23\" target=\"c16\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c37\" value=\"0..1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c36\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c38\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c36\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c39\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c23\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c40\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c39\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c41\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c39\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>",
+     "caption": {
+      "en": "The class diagram (from the first midterm task)"
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":User\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Hall\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Reservation\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\":Payment\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"470\" y=\"0\" width=\"120\" height=\"500\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"selectTypeAndSlot(type, slot)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"110\" as=\"targetPoint\"/><Array as=\"points\"><mxPoint x=\"120.0\" y=\"80\"/><mxPoint x=\"120.0\" y=\"110\"/></Array></mxGeometry></mxCell><mxCell id=\"c7\" value=\"*[for each hall of the type] h.isAvailable(slot)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"142\" as=\"sourcePoint\"/><mxPoint x=\"230.0\" y=\"142\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"return available\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"230.0\" y=\"184\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"184\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"[a hall is available] &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Reservation(user, hall, slot)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"226\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"226\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"[at least 24h before] cancel()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"268\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"268\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"&amp;lt;&amp;lt;create&amp;gt;&amp;gt; Payment(reservation, amount)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"310\" as=\"sourcePoint\"/><mxPoint x=\"530.0\" y=\"310\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"confirm()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"530.0\" y=\"352\" as=\"sourcePoint\"/><mxPoint x=\"380.0\" y=\"352\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"return success\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"380.0\" y=\"394\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"394\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :User"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":User"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Hall"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Hall"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Payment"
+     },
+     "points": 1,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Payment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Message: selectTypeAndSlot(type, slot)"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "selectTypeAndSlot(type, slot)"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Hall: *[for each hall of the type] h.isAvailable(slot)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Hall"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each hall of the type] h.isAvailable(slot)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Hall → :User: return available"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Hall"
+       ],
+       "to": [
+        ":User"
+       ],
+       "type": "flow",
+       "label": [
+        "return available"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Reservation: [a hall is available] <<create>> Reservation(user, hall, slo"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Reservation"
+       ],
+       "type": "flow",
+       "label": [
+        "[a hall is available] <<create>> Reservation(user, hall, slo"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":User → :Reservation: [at least 24h before] cancel()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Reservation"
+       ],
+       "type": "flow",
+       "label": [
+        "[at least 24h before] cancel()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":User creates :Payment: Payment(reservation, amount)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":User"
+       ],
+       "to": [
+        ":Payment"
+       ],
+       "type": "flow",
+       "label": [
+        "Payment(reservation, amount)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Payment → :Reservation: confirm()"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Payment"
+       ],
+       "to": [
+        ":Reservation"
+       ],
+       "type": "flow",
+       "label": [
+        "confirm()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Reservation → :User: return success"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        ":Reservation"
+       ],
+       "to": [
+        ":User"
+       ],
+       "type": "flow",
+       "label": [
+        "return success"
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

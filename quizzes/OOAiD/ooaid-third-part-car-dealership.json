@@ -1,0 +1,1607 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-third-part-car-dealership",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "category": "Exam",
+ "title": {
+  "en": "Third part (Moodle): car dealership"
+ },
+ "description": {
+  "en": "Like the third part on Moodle: one case description and four diagrams about it (class, use case, sequence, implementation). Solutions drawn for SeisHub."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 4800,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML",
+  "third part"
+ ],
+ "questions": [
+  {
+   "type": "info",
+   "question": {
+    "en": "You are asked to model an object-oriented system for a company that manages a chain of car dealerships. Each dealership sells cars. The company employs sales representatives who are responsible for showing cars and conducting test drives, as well as for sales, and technicians who are responsible for car maintenance. The company maintains the following information for its employees: first name, last name, year of birth, place of birth, ID number, and salary points. Additionally, for sales representatives, information on the percentage of monthly turnover they have achieved is maintained, and for technicians, information on completed specialist courses is kept.\n\nThe company has its own website through which clients can search the cars offered by the company. The search is performed by specifying the type of car, the type of fuel, and the maximum price of the car, after which a list of cars that meet the criteria is provided. The client can select a specific car, and additional information about the car is displayed. The additional information is displayed in the following format: car code, type and name of the car, year of manufacture, number of doors, type of fuel, maximum engine capacity, car photo, additional description, car price, and a list of dealerships (their addresses) where the car is available for sale. If the client shows interest in a car, they can schedule an appointment to view the car and test drive it. When scheduling an appointment, the client needs to provide their personal details (first name, last name, ID number, date of birth, address, and contact phone), select the dealership they will visit, select a date for viewing the car and test driving it. After that, the system returns possible appointment times based on the availability of the sales representatives. The client then selects one of the times and clicks the SCHEDULE button.\n\nAfter viewing and test driving the car, the client may decide to purchase a certain car. If the client decides to purchase, the sales representative must create a purchase contract for the car. This is done by selecting the car from the list of unsold cars that the client is interested in. Then, the client's information is filled out, and the purchase date, sale price, and warranty duration are recorded. By clicking the CREATE CONTRACT button, a purchase contract is printed in three copies, and the system generates the invoice that needs to be issued to the customer. The invoice should state the car's price, any discounts, the method of payment, and the total amount due. After this, the customer is issued a fiscal receipt for the paid service, the keys are handed over, and the dealership's data is updated regarding the sale of the car.\n\nThe company has its own dealerships in several cities in the country (Skopje – 3; Bitola, Kumanovo, Ohrid, and Shtip – 1 each). In Skopje, there are three dealerships (Center, Gjorce Petrov, and Aerodrom). The central server (which hosts the web application and the database) of the company is located in the dealership in Aerodrom. Each dealership accesses this central server through which car sales and employee work are conducted. In addition to the internet, clients can also schedule an appointment to view a car through terminals placed in the company's dealerships. Each dealership has 2 offices equipped with 5 personal computers each (used by the company's employees) and one printer per office. Additionally, each dealership has a separate computer with a fiscal device."
+   }
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the class diagram of the system for the car dealership company. (10 pts)"
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Employee\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"216\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- firstName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- lastName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- yearOfBirth: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"- placeOfBirth: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"- idNumber: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- salaryPoints: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"182\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"190\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"SalesRepresentative\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"380\" width=\"220\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- turnoverPercentage: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"26\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"52\" width=\"220\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"+ isFree(d: date, t: time): bool\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"60\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"Technician\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- courses: string[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"Dealership\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"920\" y=\"20\" width=\"220\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c19\"><mxGeometry x=\"0\" y=\"26\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"- address: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c19\"><mxGeometry x=\"0\" y=\"52\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"- city: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c19\"><mxGeometry x=\"0\" y=\"78\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c19\"><mxGeometry x=\"0\" y=\"104\" width=\"220\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"+ getFreeTimes(d: date): time[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c19\"><mxGeometry x=\"0\" y=\"112\" width=\"220\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"Car\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"920\" y=\"380\" width=\"259\" height=\"346\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"- code: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"26\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"- type: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"52\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"78\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"- year: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"104\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"- doors: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"130\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c31\" value=\"- fuel: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"156\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c32\" value=\"- engineCapacity: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"182\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c33\" value=\"- photo: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"208\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c34\" value=\"- description: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"234\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c35\" value=\"- price: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"260\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c36\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"286\" width=\"259\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c37\" value=\"+ search(type, fuel, maxPrice): Car[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"294\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c38\" value=\"+ getDetails(): string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c25\"><mxGeometry x=\"0\" y=\"320\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c39\" value=\"Client\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"740\" width=\"210\" height=\"216\" as=\"geometry\"/></mxCell><mxCell id=\"c40\" value=\"- firstName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c41\" value=\"- lastName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c42\" value=\"- idNumber: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c43\" value=\"- dateOfBirth: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c44\" value=\"- address: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c45\" value=\"- phone: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c46\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"182\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c47\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c39\"><mxGeometry x=\"0\" y=\"190\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c48\" value=\"Appointment\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"380\" width=\"210\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c49\" value=\"- client: Client\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c50\" value=\"- car: Car\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c51\" value=\"- dealership: Dealership\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c52\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c53\" value=\"- time: time\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c54\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c55\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c48\"><mxGeometry x=\"0\" y=\"164\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c56\" value=\"Contract\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"740\" width=\"210\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c57\" value=\"- car: Car\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c58\" value=\"- client: Client\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c59\" value=\"- purchaseDate: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c60\" value=\"- price: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c61\" value=\"- warranty: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c62\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c63\" value=\"+ print(): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c56\"><mxGeometry x=\"0\" y=\"164\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c64\" value=\"Invoice\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"740\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c65\" value=\"- price: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c66\" value=\"- discount: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c67\" value=\"- paymentMethod: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c68\" value=\"- total: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c69\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c70\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c64\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c71\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c72\" value=\"\" style=\"endArrow=block;endFill=0;html=1;rounded=0;endSize=12;\" edge=\"1\" parent=\"1\" source=\"c15\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c73\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c19\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c74\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c73\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c75\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c73\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c76\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c25\" target=\"c19\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c77\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c76\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c78\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c76\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c79\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c48\" target=\"c39\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c80\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c79\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c81\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c79\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c82\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c48\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c83\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c82\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c84\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c82\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c85\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c48\" target=\"c25\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c86\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c85\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c87\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c85\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c88\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c56\" target=\"c39\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c89\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c88\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c90\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c88\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c91\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c56\" target=\"c25\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c92\" value=\"0..1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c91\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c93\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c91\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c94\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c56\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c95\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c94\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c96\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c94\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c97\" value=\"\" style=\"endArrow=diamondThin;endFill=1;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c64\" target=\"c56\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c98\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c97\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c99\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c97\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Employee"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Employee"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Employee: firstName, lastName, yearOfBirth, placeOfBirth, idNumber, salaryPoints"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "firstName"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: SalesRepresentative"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "SalesRepresentative",
+       "SalesRep",
+       "Salesman",
+       "Commercialist"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "SalesRepresentative: turnoverPercentage, isFree"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "turnoverPercentage"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Technician"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Technician"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Technician: courses"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "courses"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Dealership"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Dealership"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Dealership: name, address, city, getFreeTimes"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Car"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Car"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Car: code, type, name, year, doors, fuel"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "code"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Client"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Client",
+       "Customer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Client: firstName, lastName, idNumber, dateOfBirth, address, phone"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "firstName"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Appointment"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Appointment",
+       "TestDrive",
+       "Reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Appointment: client, car, dealership, date, time"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "client",
+       "Customer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Contract"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Contract",
+       "PurchaseContract"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Contract: car, client, purchaseDate, price, warranty, print"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "car"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Invoice"
+     },
+     "points": 0.34,
+     "check": {
+      "element": "class",
+      "names": [
+       "Invoice"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Invoice: price, discount, paymentMethod, total"
+     },
+     "points": 0.34,
+     "check": {
+      "text": [
+       "price"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "SalesRepresentative is a kind of Employee"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "SalesRepresentative",
+        "SalesRep",
+        "Salesman",
+        "Commercialist"
+       ],
+       "to": [
+        "Employee"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Technician is a kind of Employee"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Technician"
+       ],
+       "to": [
+        "Employee"
+       ],
+       "type": "generalization"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Employee — Dealership (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Employee"
+       ],
+       "to": [
+        "Dealership"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Car — Dealership (* — 1..*)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Car"
+       ],
+       "to": [
+        "Dealership"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Appointment — Client (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Appointment",
+        "TestDrive",
+        "Reservation"
+       ],
+       "to": [
+        "Client",
+        "Customer"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Appointment — SalesRepresentative (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Appointment",
+        "TestDrive",
+        "Reservation"
+       ],
+       "to": [
+        "SalesRepresentative",
+        "SalesRep",
+        "Salesman",
+        "Commercialist"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Appointment — Car (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Appointment",
+        "TestDrive",
+        "Reservation"
+       ],
+       "to": [
+        "Car"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Contract — Client (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Contract",
+        "PurchaseContract"
+       ],
+       "to": [
+        "Client",
+        "Customer"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Contract — Car (0..1 — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Contract",
+        "PurchaseContract"
+       ],
+       "to": [
+        "Car"
+       ],
+       "type": "association",
+       "fromMult": [
+        "0..1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Contract — SalesRepresentative (* — 1)"
+     },
+     "points": 0.34,
+     "check": {
+      "link": {
+       "from": [
+        "Contract",
+        "PurchaseContract"
+       ],
+       "to": [
+        "SalesRepresentative",
+        "SalesRep",
+        "Salesman",
+        "Commercialist"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Contract is made of (composition) Invoice (1 — 1)"
+     },
+     "points": 0.48,
+     "check": {
+      "link": {
+       "from": [
+        "Contract",
+        "PurchaseContract"
+       ],
+       "to": [
+        "Invoice"
+       ],
+       "type": "composition",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the use case diagram of the system for the car dealership company. (5 pts)"
+   },
+   "kind": "use_case",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Car dealership system\" style=\"rounded=0;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;fontStyle=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"170\" y=\"20\" width=\"810\" height=\"490\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Search cars\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"70\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"View car details\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Schedule appointment\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Enter personal details\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"200\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Create purchase contract\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"175\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Print contract\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Generate invoice\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"280\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Issue fiscal receipt\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"780\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Update dealership data\" style=\"ellipse;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"490\" y=\"385\" width=\"170\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Client\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"60\" y=\"175.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Sales representative\" style=\"shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"1060\" y=\"280.0\" width=\"30\" height=\"60\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c15\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c5\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c7\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"340.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c22\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675.0\" y=\"235.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c24\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"820.0\" y=\"235.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c26\" value=\"&amp;lt;&amp;lt;include&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675.0\" y=\"393.0\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c4\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c28\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"130.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c30\" value=\"&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"240.0\" y=\"235.5\" width=\"90\" height=\"20\" as=\"geometry\"/></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Use case: Search cars"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Search cars"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: View car details"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "View car details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Schedule appointment"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Schedule appointment",
+       "schedule test drive",
+       "book appointment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Enter personal details"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Enter personal details"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Create purchase contract"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Create purchase contract",
+       "create contract"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Print contract"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Print contract"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Generate invoice"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Generate invoice"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Issue fiscal receipt"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Issue fiscal receipt"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Use case: Update dealership data"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "use_case",
+      "names": [
+       "Update dealership data"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Client"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Client",
+       "customer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Actor: Sales representative"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "actor",
+      "names": [
+       "Sales representative",
+       "salesman",
+       "sales rep"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Client uses Search cars"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Client",
+        "customer"
+       ],
+       "to": [
+        "Search cars"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Client uses View car details"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Client",
+        "customer"
+       ],
+       "to": [
+        "View car details"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Client uses Schedule appointment"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Client",
+        "customer"
+       ],
+       "to": [
+        "Schedule appointment",
+        "schedule test drive",
+        "book appointment"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Sales representative uses Create purchase contract"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Sales representative",
+        "salesman",
+        "sales rep"
+       ],
+       "to": [
+        "Create purchase contract",
+        "create contract"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Sales representative uses Issue fiscal receipt"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Sales representative",
+        "salesman",
+        "sales rep"
+       ],
+       "to": [
+        "Issue fiscal receipt"
+       ],
+       "type": "association"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Schedule appointment includes Enter personal details"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Schedule appointment",
+        "schedule test drive",
+        "book appointment"
+       ],
+       "to": [
+        "Enter personal details"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Create purchase contract includes Print contract"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Create purchase contract",
+        "create contract"
+       ],
+       "to": [
+        "Print contract"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Create purchase contract includes Generate invoice"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Create purchase contract",
+        "create contract"
+       ],
+       "to": [
+        "Generate invoice"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Issue fiscal receipt includes Update dealership data"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Issue fiscal receipt"
+       ],
+       "to": [
+        "Update dealership data"
+       ],
+       "type": "include"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "View car details extends Search cars"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "View car details"
+       ],
+       "to": [
+        "Search cars"
+       ],
+       "type": "extend"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Schedule appointment extends View car details"
+     },
+     "points": 0.17,
+     "check": {
+      "link": {
+       "from": [
+        "Schedule appointment",
+        "schedule test drive",
+        "book appointment"
+       ],
+       "to": [
+        "View car details"
+       ],
+       "type": "extend"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a sequence diagram for the searching that clients can do, along with the possibility of scheduling an appointment for test-driving a car. (10 pts)"
+   },
+   "kind": "sequence",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\":Client\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"0\" width=\"120\" height=\"668\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\":Car\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"190\" y=\"0\" width=\"120\" height=\"668\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\":Dealership\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"360\" y=\"0\" width=\"120\" height=\"668\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\":SalesRepresentative\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"530\" y=\"0\" width=\"120\" height=\"668\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\":Appointment\" style=\"shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"700\" y=\"0\" width=\"120\" height=\"668\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"cars = search(type, fuel, maxPrice)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"80\" as=\"sourcePoint\"/><mxPoint x=\"250.0\" y=\"80\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c8\" value=\"return cars\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"250.0\" y=\"122\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"122\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c9\" value=\"details = getDetails()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"164\" as=\"sourcePoint\"/><mxPoint x=\"250.0\" y=\"164\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c10\" value=\"*[for each d in dealerships] d.getAddress()\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"250.0\" y=\"206\" as=\"sourcePoint\"/><mxPoint x=\"420.0\" y=\"206\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c11\" value=\"return address\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"420.0\" y=\"248\" as=\"sourcePoint\"/><mxPoint x=\"250.0\" y=\"248\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c12\" value=\"return details\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"250.0\" y=\"290\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"290\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c13\" value=\"times = getFreeTimes(date)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"332\" as=\"sourcePoint\"/><mxPoint x=\"420.0\" y=\"332\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c14\" value=\"*[for each s in salesReps] s.isFree(date, time)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"420.0\" y=\"374\" as=\"sourcePoint\"/><mxPoint x=\"590.0\" y=\"374\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c15\" value=\"return free\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"590.0\" y=\"416\" as=\"sourcePoint\"/><mxPoint x=\"420.0\" y=\"416\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c16\" value=\"return times\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"420.0\" y=\"458\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"458\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c17\" value=\"SCHEDULE: &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Appointment(client, car, dealership, time)\" style=\"html=1;endArrow=block;endFill=1;rounded=0;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"80.0\" y=\"500\" as=\"sourcePoint\"/><mxPoint x=\"760.0\" y=\"500\" as=\"targetPoint\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"return confirmation\" style=\"html=1;endArrow=open;dashed=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\"><mxGeometry relative=\"1\" as=\"geometry\"><mxPoint x=\"760.0\" y=\"542\" as=\"sourcePoint\"/><mxPoint x=\"80.0\" y=\"542\" as=\"targetPoint\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Object: :Client"
+     },
+     "points": 0.59,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Car"
+     },
+     "points": 0.59,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Car"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Dealership"
+     },
+     "points": 0.59,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Dealership"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :SalesRepresentative"
+     },
+     "points": 0.59,
+     "check": {
+      "element": "object",
+      "names": [
+       ":SalesRepresentative"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Object: :Appointment"
+     },
+     "points": 0.59,
+     "check": {
+      "element": "object",
+      "names": [
+       ":Appointment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": ":Client → :Car: cars = search(type, fuel, maxPrice)"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Client"
+       ],
+       "to": [
+        ":Car"
+       ],
+       "type": "flow",
+       "label": [
+        "cars = search(type, fuel, maxPrice)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Car → :Client: return cars"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Car"
+       ],
+       "to": [
+        ":Client"
+       ],
+       "type": "flow",
+       "label": [
+        "return cars"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Client → :Car: details = getDetails()"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Client"
+       ],
+       "to": [
+        ":Car"
+       ],
+       "type": "flow",
+       "label": [
+        "details = getDetails()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Car → :Dealership: *[for each d in dealerships] d.getAddress()"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Car"
+       ],
+       "to": [
+        ":Dealership"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each d in dealerships] d.getAddress()"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Dealership → :Car: return address"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Dealership"
+       ],
+       "to": [
+        ":Car"
+       ],
+       "type": "flow",
+       "label": [
+        "return address"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Car → :Client: return details"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Car"
+       ],
+       "to": [
+        ":Client"
+       ],
+       "type": "flow",
+       "label": [
+        "return details"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Client → :Dealership: times = getFreeTimes(date)"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Client"
+       ],
+       "to": [
+        ":Dealership"
+       ],
+       "type": "flow",
+       "label": [
+        "times = getFreeTimes(date)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Dealership → :SalesRepresentative: *[for each s in salesReps] s.isFree(date, time)"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Dealership"
+       ],
+       "to": [
+        ":SalesRepresentative"
+       ],
+       "type": "flow",
+       "label": [
+        "*[for each s in salesReps] s.isFree(date, time)"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":SalesRepresentative → :Dealership: return free"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":SalesRepresentative"
+       ],
+       "to": [
+        ":Dealership"
+       ],
+       "type": "flow",
+       "label": [
+        "return free"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Dealership → :Client: return times"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Dealership"
+       ],
+       "to": [
+        ":Client"
+       ],
+       "type": "flow",
+       "label": [
+        "return times"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Client → :Appointment: SCHEDULE: <<create>> Appointment(client, car, dealership, ti"
+     },
+     "points": 0.59,
+     "check": {
+      "link": {
+       "from": [
+        ":Client"
+       ],
+       "to": [
+        ":Appointment"
+       ],
+       "type": "flow",
+       "label": [
+        "SCHEDULE: <<create>> Appointment(client, car, dealership, ti"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": ":Appointment → :Client: return confirmation"
+     },
+     "points": 0.56,
+     "check": {
+      "link": {
+       "from": [
+        ":Appointment"
+       ],
+       "to": [
+        ":Client"
+       ],
+       "type": "flow",
+       "label": [
+        "return confirmation"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the implementation diagram of the system for the car dealership company. (5 pts)"
+   },
+   "kind": "implementation",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Central server (Aerodrom)\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"230\" height=\"170\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"Web application\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"Database\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"115\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"Client computer\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Web browser\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Terminal\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"650\" y=\"20\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"Web browser\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"675\" y=\"65\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Office PC\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"Dealership application\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"55\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Printer\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"30\" y=\"440\" width=\"230\" height=\"70\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"Fiscal computer\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"230\" width=\"230\" height=\"120\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"Fiscal application\" style=\"shape=component;align=left;spacingLeft=36;html=1;whiteSpace=wrap;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"365\" y=\"275\" width=\"180\" height=\"38\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"Fiscal device\" style=\"shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;size=10;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"440\" width=\"230\" height=\"70\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=1;exitY=0.85;entryX=0;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c5\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c16\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c15\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c17\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c15\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0;exitY=0.85;entryX=1;entryY=0.85;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c19\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c18\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c20\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c18\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c21\" value=\"&amp;lt;&amp;lt;internet&amp;gt;&amp;gt;\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c22\" value=\"70\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c21\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c23\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c21\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c24\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=1;entryX=0.12;entryY=0;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c25\" value=\"5\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c24\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c26\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c24\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c27\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=0;entryX=0.12;entryY=1;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c28\" value=\"7\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c27\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c29\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c27\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c30\" value=\"\" style=\"endArrow=none;html=1;rounded=0;exitX=0.12;exitY=1;entryX=0.12;entryY=0;\" edge=\"1\" parent=\"1\" source=\"c12\" target=\"c14\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c31\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c32\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c33\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c34\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c8\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c35\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c36\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c13\" target=\"c3\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c37\" value=\"\" style=\"endArrow=open;dashed=1;html=1;rounded=0;endSize=8;\" edge=\"1\" parent=\"1\" source=\"c3\" target=\"c4\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Node: Central server (Aerodrom)"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Central server (Aerodrom)",
+       "central server",
+       "server"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Web application"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "component",
+      "names": [
+       "Web application"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Database"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "component",
+      "names": [
+       "Database",
+       "db"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Client computer"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Client computer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Web browser"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "component",
+      "names": [
+       "Web browser"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Terminal"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Terminal"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Office PC"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Office PC",
+       "office computer",
+       "employee computer",
+       "PC"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Dealership application"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "component",
+      "names": [
+       "Dealership application"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Printer"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Printer"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Fiscal computer"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Fiscal computer",
+       "computer with fiscal device"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Component: Fiscal application"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "component",
+      "names": [
+       "Fiscal application"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Node: Fiscal device"
+     },
+     "points": 0.23,
+     "check": {
+      "element": "node",
+      "names": [
+       "Fiscal device"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Client computer — Central server (Aerodrom) (* — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Client computer"
+       ],
+       "to": [
+        "Central server (Aerodrom)",
+        "central server",
+        "server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Terminal — Central server (Aerodrom) (* — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Terminal"
+       ],
+       "to": [
+        "Central server (Aerodrom)",
+        "central server",
+        "server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Office PC — Central server (Aerodrom) (70 — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Office PC",
+        "office computer",
+        "employee computer",
+        "PC"
+       ],
+       "to": [
+        "Central server (Aerodrom)",
+        "central server",
+        "server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "70"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Office PC — Printer (5 — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Office PC",
+        "office computer",
+        "employee computer",
+        "PC"
+       ],
+       "to": [
+        "Printer"
+       ],
+       "type": "association",
+       "fromMult": [
+        "5"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Fiscal computer — Central server (Aerodrom) (7 — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Fiscal computer",
+        "computer with fiscal device"
+       ],
+       "to": [
+        "Central server (Aerodrom)",
+        "central server",
+        "server"
+       ],
+       "type": "association",
+       "fromMult": [
+        "7"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Fiscal computer — Fiscal device (1 — 1)"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Fiscal computer",
+        "computer with fiscal device"
+       ],
+       "to": [
+        "Fiscal device"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Web browser depends on Web application"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Web browser"
+       ],
+       "to": [
+        "Web application"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Dealership application depends on Web application"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Dealership application"
+       ],
+       "to": [
+        "Web application"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Fiscal application depends on Web application"
+     },
+     "points": 0.23,
+     "check": {
+      "link": {
+       "from": [
+        "Fiscal application"
+       ],
+       "to": [
+        "Web application"
+       ],
+       "type": "dependency"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Web application depends on Database"
+     },
+     "points": 0.17,
+     "check": {
+      "link": {
+       "from": [
+        "Web application"
+       ],
+       "to": [
+        "Database",
+        "db"
+       ],
+       "type": "dependency"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

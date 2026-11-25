@@ -1,0 +1,1182 @@
+{
+ "$schema": "../../../schema/quiz.schema.json",
+ "formatVersion": 1,
+ "key": "ooaid-mid-class",
+ "revision": 1,
+ "courseId": "OOAiD",
+ "topicId": "class",
+ "category": "Midterm",
+ "title": {
+  "en": "Class diagrams: midterm tasks"
+ },
+ "description": {
+  "en": "Class diagram tasks like the first midterm's, with model solutions drawn in the course's notation."
+ },
+ "languages": [
+  "en"
+ ],
+ "defaultLanguage": "en",
+ "date": "2026-11-26",
+ "duration": 6000,
+ "timed": false,
+ "shuffleQuestions": false,
+ "tags": [
+  "OOAID",
+  "UML"
+ ],
+ "questions": [
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw the class diagram described by the following text: A basketball team consists of 12 players, one of them being the captain. The team has one trainer and plays in one league. In a league there is a maximum of 10 teams."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Team\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- captain: Player\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"Player\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c7\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Trainer\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"230\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"League\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"230\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c15\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"\" style=\"endArrow=diamondThin;endFill=0;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c7\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"12\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c21\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c11\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c24\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c25\" value=\"\" style=\"endArrow=diamondThin;endFill=0;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c2\" target=\"c15\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c26\" value=\"0..10\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c25\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c27\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c25\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Team"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Team"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Team: name, captain"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Player"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Player"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Player: name"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Trainer"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Trainer",
+       "Coach"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Trainer: name"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: League"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "League"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "League: name"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Team has (aggregation) Player (1 — 12)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Team"
+       ],
+       "to": [
+        "Player"
+       ],
+       "type": "aggregation",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "12"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Team — Trainer (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Team"
+       ],
+       "to": [
+        "Trainer",
+        "Coach"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "League has (aggregation) Team (1 — 0..10)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "League"
+       ],
+       "to": [
+        "Team"
+       ],
+       "type": "aggregation",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "0..10"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the system described by the following text: The system of the electronic devices vendor keeps information about the products - name, type of product, brand, code and price. The users can search these products, add them to their shopping carts and then make orders. For each user the system keeps track of their user number, name, address and phone number. When a user decides to buy the products in their shopping cart, an order is created. For each order we know the number of the order, a short description and the total sum, as well as the user that made the order and which products are ordered with corresponding quantities. The system also offers an option for the users to pay in installments. For each installment payment we know the user that made the payment and the order that the payment is for, as well as the date and the sum that was paid. At any moment we can see the history of orders or the history of payments for a user."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Product\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- type: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- brand: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"- code: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"- price: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"164\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"20\" width=\"210\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"- number: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"- address: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"- phone: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"+ orderHistory(): Order[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"+ paymentHistory(): Payment[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c10\"><mxGeometry x=\"0\" y=\"164\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"ShoppingCart\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"- products: Product[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c18\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c18\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"+ add(p: Product): void\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c18\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"+ order(): Order\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c18\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"Order\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"280\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"- number: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"- description: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"- total: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"OrderItem\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"280\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c31\" value=\"- product: Product\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c32\" value=\"- quantity: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c33\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c34\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c35\" value=\"Payment\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"280\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c36\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c37\" value=\"- order: Order\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c38\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c39\" value=\"- amount: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c40\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c41\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c35\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c42\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c10\" target=\"c18\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c43\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c42\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c44\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c42\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c45\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c18\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c46\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c45\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c47\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c45\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c48\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c23\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c49\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c48\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c50\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c48\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c51\" value=\"\" style=\"endArrow=diamondThin;endFill=1;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c30\" target=\"c23\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c52\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c51\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c53\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c51\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c54\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c30\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c55\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c54\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c56\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c54\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c57\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c35\" target=\"c23\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c58\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c57\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c59\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c57\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c60\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c35\" target=\"c10\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c61\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c60\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c62\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c60\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Product"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Product"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Product: name, type, brand, code, price"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "User",
+       "Customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User: number, name, address, phone, orderHistory, paymentHistory"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "number"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: ShoppingCart"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "ShoppingCart",
+       "Cart"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "ShoppingCart: products, add, order"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "products"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Order"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Order"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Order: number, description, total, user"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "number"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: OrderItem"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "OrderItem",
+       "Item",
+       "OrderLine"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "OrderItem: product, quantity"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "product"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Payment"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Payment",
+       "Installment",
+       "InstallmentPayment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Payment: user, order, date, amount"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "user",
+       "Customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User — ShoppingCart (1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "User",
+        "Customer",
+        "client"
+       ],
+       "to": [
+        "ShoppingCart",
+        "Cart"
+       ],
+       "type": "association",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "ShoppingCart — Product (* — *)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "ShoppingCart",
+        "Cart"
+       ],
+       "to": [
+        "Product"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Order — User (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Order"
+       ],
+       "to": [
+        "User",
+        "Customer",
+        "client"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Order is made of (composition) OrderItem (1 — 1..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Order"
+       ],
+       "to": [
+        "OrderItem",
+        "Item",
+        "OrderLine"
+       ],
+       "type": "composition",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "OrderItem — Product (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "OrderItem",
+        "Item",
+        "OrderLine"
+       ],
+       "to": [
+        "Product"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Payment — Order (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Payment",
+        "Installment",
+        "InstallmentPayment"
+       ],
+       "to": [
+        "Order"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Payment — User (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Payment",
+        "Installment",
+        "InstallmentPayment"
+       ],
+       "to": [
+        "User",
+        "Customer",
+        "client"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the following text: For researchers, information about their email address is stored. For conferences, the name and the researchers responsible for the organization are stored (a conference may have 2 or 3 organizers). Researchers submit papers to conferences through the system, where for each paper the title and the list of researchers-authors are stored (each paper has at least one author)."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Researcher\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"86\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"60\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"Conference\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"340\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"- name: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"- organizers: Researcher[2..3]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c6\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"Paper\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"230\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- title: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"- authors: Researcher[1..*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c11\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"organizes\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c6\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c17\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c18\" value=\"2..3\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c16\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c19\" value=\"authors\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c20\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c21\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c19\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c22\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c11\" target=\"c6\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c23\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c24\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c22\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Researcher"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Researcher",
+       "Author",
+       "Scientist"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Researcher: email"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "email"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Conference"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Conference"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Conference: name, organizers"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "name"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Paper"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Paper",
+       "Article",
+       "Work"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Paper: title, authors"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Conference — Researcher (* — 2..3)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Conference"
+       ],
+       "to": [
+        "Researcher",
+        "Author",
+        "Scientist"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "2..3"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Paper — Researcher (* — 1..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Paper",
+        "Article",
+        "Work"
+       ],
+       "to": [
+        "Researcher",
+        "Author",
+        "Scientist"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Paper — Conference (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Paper",
+        "Article",
+        "Work"
+       ],
+       "to": [
+        "Conference"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the system described in the following text: The system for the sports center stores information about each hall, where every hall has a type, capacity, and location. Users have basic contact information, including first name, last name, email, and phone number. Each use of a hall is recorded through a reservation, which includes data about the user, the hall, the date, and the time of the reservation. Additionally, the system keeps track of payments. For each payment, it is known which user made the payment, which reservation it applies to, the amount paid, and the date of the payment. At any time, a user can view their reservation history as well as the history of their payments."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Hall\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"138\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- type: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- capacity: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- location: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"112\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"User\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"20\" width=\"259\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"- firstName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"26\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"- lastName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"52\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"78\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"- phone: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"104\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"130\" width=\"259\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"+ reservationHistory(): Reservation[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"138\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"+ paymentHistory(): Payment[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c8\"><mxGeometry x=\"0\" y=\"164\" width=\"259\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"Reservation\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"- hall: Hall\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"- time: time\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c16\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"Payment\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"260\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"- user: User\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"- reservation: Reservation\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"- amount: float\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c23\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c16\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c31\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c32\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c30\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c33\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c16\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c34\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c33\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c35\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c33\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c36\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c23\" target=\"c16\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c37\" value=\"0..1\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c36\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c38\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c36\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c39\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c23\" target=\"c8\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c40\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c39\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c41\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c39\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Hall"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Hall"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Hall: type, capacity, location"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "type"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: User"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "User",
+       "customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "User: firstName, lastName, email, phone, reservationHistory, paymentHistory"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "firstName"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Reservation"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Reservation"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Reservation: user, hall, date, time"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "user",
+       "customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Payment"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Payment"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Payment: user, reservation, amount, date"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "user",
+       "customer",
+       "client"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Reservation — Hall (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Reservation"
+       ],
+       "to": [
+        "Hall"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Reservation — User (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Reservation"
+       ],
+       "to": [
+        "User",
+        "customer",
+        "client"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Payment — Reservation (0..1 — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Payment"
+       ],
+       "to": [
+        "Reservation"
+       ],
+       "type": "association",
+       "fromMult": [
+        "0..1"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Payment — User (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Payment"
+       ],
+       "to": [
+        "User",
+        "customer",
+        "client"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "question": {
+    "en": "Draw a class diagram for the system described in the following text: The library system contains data about books, where each book has a title, author, genre, and ISBN (International Standard Book Number). Each book can have multiple copies, and each copy has its own identifier and status (available, borrowed, damaged). Members have information such as first name, last name, membership number, and email. Each loan is associated with a member and a specific book copy, and contains information about the loan date, return due date, and status (active/returned). Members can submit requests to extend the due date of a specific loan. At any moment, a member can view their loan history, as well as the history of extension requests they have submitted."
+   },
+   "kind": "class",
+   "content": [
+    {
+     "type": "text",
+     "text": {
+      "en": "Model solution: drawn for SeisHub in the course's notation. Other correct diagrams exist."
+     }
+    }
+   ],
+   "solution": {
+    "xml": "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><mxCell id=\"c2\" value=\"Book\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"20\" width=\"210\" height=\"164\" as=\"geometry\"/></mxCell><mxCell id=\"c3\" value=\"- title: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c4\" value=\"- author: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c5\" value=\"- genre: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c6\" value=\"- isbn: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c7\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c8\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c2\"><mxGeometry x=\"0\" y=\"138\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c9\" value=\"Copy\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"20\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c10\" value=\"- id: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c11\" value=\"- status: char\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c12\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c13\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c9\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c14\" value=\"Member\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"20\" y=\"260\" width=\"265\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c15\" value=\"- firstName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"26\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c16\" value=\"- lastName: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"52\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c17\" value=\"- number: int\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"78\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c18\" value=\"- email: string\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"104\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c19\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"130\" width=\"265\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c20\" value=\"+ loanHistory(): Loan[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"138\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c21\" value=\"+ requestHistory(): ExtensionRequest[*]\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c14\"><mxGeometry x=\"0\" y=\"164\" width=\"265\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c22\" value=\"Loan\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"320\" y=\"260\" width=\"210\" height=\"190\" as=\"geometry\"/></mxCell><mxCell id=\"c23\" value=\"- member: Member\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c24\" value=\"- copy: Copy\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c25\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c26\" value=\"- dueDate: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"104\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c27\" value=\"- status: char\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"130\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c28\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"156\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c29\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c22\"><mxGeometry x=\"0\" y=\"164\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c30\" value=\"ExtensionRequest\" style=\"swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"1\"><mxGeometry x=\"620\" y=\"260\" width=\"210\" height=\"112\" as=\"geometry\"/></mxCell><mxCell id=\"c31\" value=\"- loan: Loan\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"26\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c32\" value=\"- date: date\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"52\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c33\" value=\"\" style=\"line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"78\" width=\"210\" height=\"8\" as=\"geometry\"/></mxCell><mxCell id=\"c34\" value=\"\" style=\"text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"c30\"><mxGeometry x=\"0\" y=\"86\" width=\"210\" height=\"26\" as=\"geometry\"/></mxCell><mxCell id=\"c35\" value=\"\" style=\"endArrow=diamondThin;endFill=1;html=1;rounded=0;endSize=14;\" edge=\"1\" parent=\"1\" source=\"c9\" target=\"c2\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c36\" value=\"1..*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c35\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c37\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c35\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c38\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c22\" target=\"c14\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c39\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c38\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c40\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c38\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c41\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c22\" target=\"c9\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c42\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c41\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c43\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c41\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c44\" value=\"\" style=\"endArrow=none;html=1;rounded=0;\" edge=\"1\" parent=\"1\" source=\"c30\" target=\"c22\"><mxGeometry relative=\"1\" as=\"geometry\"></mxGeometry></mxCell><mxCell id=\"c45\" value=\"*\" style=\"edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c44\"><mxGeometry x=\"-0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell><mxCell id=\"c46\" value=\"1\" style=\"edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;\" vertex=\"1\" connectable=\"0\" parent=\"c44\"><mxGeometry x=\"0.75\" relative=\"1\" as=\"geometry\"><mxPoint x=\"-4\" y=\"-4\" as=\"offset\"/></mxGeometry></mxCell></root></mxGraphModel>"
+   },
+   "checklist": [
+    {
+     "text": {
+      "en": "Class: Book"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Book"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Book: title, author, genre, isbn"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "title"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Copy"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Copy",
+       "BookCopy"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Copy: id, status"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "id"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Member"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Member",
+       "user"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Member: firstName, lastName, number, email, loanHistory, requestHistory"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "firstName"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: Loan"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "Loan",
+       "Borrowing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Loan: member, copy, date, dueDate, status"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "member",
+       "user"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Class: ExtensionRequest"
+     },
+     "points": 1,
+     "check": {
+      "element": "class",
+      "names": [
+       "ExtensionRequest",
+       "Request",
+       "Extension"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "ExtensionRequest: loan, date"
+     },
+     "points": 1,
+     "check": {
+      "text": [
+       "loan",
+       "Borrowing"
+      ]
+     }
+    },
+    {
+     "text": {
+      "en": "Book is made of (composition) Copy (1 — 1..*)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Book"
+       ],
+       "to": [
+        "Copy",
+        "BookCopy"
+       ],
+       "type": "composition",
+       "fromMult": [
+        "1"
+       ],
+       "toMult": [
+        "1..*"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Loan — Member (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Loan",
+        "Borrowing"
+       ],
+       "to": [
+        "Member",
+        "user"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Loan — Copy (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Loan",
+        "Borrowing"
+       ],
+       "to": [
+        "Copy",
+        "BookCopy"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "ExtensionRequest — Loan (* — 1)"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "ExtensionRequest",
+        "Request",
+        "Extension"
+       ],
+       "to": [
+        "Loan",
+        "Borrowing"
+       ],
+       "type": "association",
+       "fromMult": [
+        "*"
+       ],
+       "toMult": [
+        "1"
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
