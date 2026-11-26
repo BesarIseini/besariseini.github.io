@@ -93,6 +93,24 @@
     },
     {
      "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
+     }
+    },
+    {
+     "text": {
       "en": "available → unavailable: [q-- and q==0]"
      },
      "points": 1,
@@ -278,6 +296,24 @@
     },
     {
      "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
+     }
+    },
+    {
+     "text": {
       "en": "Waiting for user confirmation → Accepted: user confirms"
      },
      "points": 1,
@@ -423,6 +459,15 @@
        "buying",
        "available for buying"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
      }
     },
     {
@@ -608,6 +653,15 @@
       "names": [
        "Rejected by student"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
      }
     },
     {

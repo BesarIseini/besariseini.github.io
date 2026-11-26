@@ -54,6 +54,23 @@
         <h1>Versions</h1>
         <div>
             <section class="changelog">
+                <h3>Release v5.2.2 - 27/11/2026</h3>
+
+                <h4>✨ Added</h4>
+                <ul>
+                    <li>Code problems: statements can be written in Markdown: headings, lists, <code>inline code</code>, code blocks and tables. Turn it on with “Write the statement in Markdown” in the problem creator, with a live preview. Everything typed shows as written, including <code>Map&lt;String, Integer&gt;</code>; raw HTML is never rendered. Existing statements are unchanged.</li>
+                    <li>Import (AI): problems are written in Markdown.</li>
+                    <li>Diagram checklists: “Initial node” and “Final node” items for activity and state diagrams, checked automatically.</li>
+                </ul>
+
+                <h4>🐛 Fixed</h4>
+                <ul>
+                    <li>Automatic diagram check: a name with a word more or less (“Are username and password correct” for “are the username and password correct?”) wasn't recognised, which also failed every line connected to it. Small words like “the” and “of” no longer count, and common verbs are treated as the same (enter/input, display/show).</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="changelog">
                 <h3>Release v5.2.1 - 26/11/2026</h3>
 
                 <h4>✨ Added</h4>

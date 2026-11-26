@@ -100,6 +100,15 @@
     },
     {
      "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
       "en": "Waiting for money → Waiting for selection: money inserted"
      },
      "points": 1,
@@ -289,6 +298,24 @@
     },
     {
      "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
+     }
+    },
+    {
+     "text": {
       "en": "Waiting for PIN → Waiting for PUK: [cPIN == 3]"
      },
      "points": 1,
@@ -462,6 +489,24 @@
       "names": [
        "Landing"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
      }
     },
     {
@@ -685,6 +730,24 @@
       "names": [
        "Closed for registration"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
      }
     },
     {

@@ -135,6 +135,24 @@
     },
     {
      "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
+     }
+    },
+    {
+     "text": {
       "en": "Select next satellite → orbiting around Mars?"
      },
      "points": 1,
@@ -340,12 +358,6 @@
     },
     {
      "text": {
-      "en": "Starts with an initial node and ends in a final node"
-     },
-     "points": 1
-    },
-    {
-     "text": {
       "en": "Satellites not orbiting Mars are skipped"
      },
      "points": 1
@@ -476,6 +488,24 @@
       "names": [
        "Show product details"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
      }
     },
     {
@@ -661,12 +691,6 @@
     },
     {
      "text": {
-      "en": "Starts with an initial node and ends in a final node"
-     },
-     "points": 1
-    },
-    {
-     "text": {
       "en": "At most 5 other products can be added"
      },
      "points": 1
@@ -804,6 +828,24 @@
        "send confirmation",
        "confirmation email"
       ]
+     }
+    },
+    {
+     "text": {
+      "en": "Initial node"
+     },
+     "points": 1,
+     "check": {
+      "element": "start"
+     }
+    },
+    {
+     "text": {
+      "en": "Final node"
+     },
+     "points": 1,
+     "check": {
+      "element": "end"
      }
     },
     {
@@ -1003,12 +1045,6 @@
        "type": "flow"
       }
      }
-    },
-    {
-     "text": {
-      "en": "Starts with an initial node and ends in a final node"
-     },
-     "points": 1
     }
    ]
   }
