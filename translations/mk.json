@@ -959,6 +959,8 @@
     "CREATOR_DIAGRAM_CHECK_ELEMENT": "Има елемент",
     "CREATOR_DIAGRAM_CHECK_LINK": "Има врска",
     "CREATOR_DIAGRAM_CHECK_TEXT": "Има текст",
+    "CREATOR_DIAGRAM_CHECK_ONLY": "Ништо вишок",
+    "CREATOR_DIAGRAM_ONLY_HINT": "Поминува кога секој елемент од овој вид во датотеката е спомнат во листата (со другите прифатени имиња). Вишок или погрешно именувани елементи ги губат поените на оваа ставка.",
     "CREATOR_DIAGRAM_ELEMENT": "Елемент",
     "CREATOR_DIAGRAM_NAMES": "Прифатени имиња",
     "CREATOR_DIAGRAM_NAMES_HINT": "Одделени со запирки. Големи/мали букви и мали грешки не се важни.",

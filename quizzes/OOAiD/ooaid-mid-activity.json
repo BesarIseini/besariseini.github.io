@@ -358,15 +358,14 @@
     },
     {
      "text": {
-      "en": "Satellites not orbiting Mars are skipped"
+      "en": "Nothing extra: no actions the task doesn't need"
      },
-     "points": 1
-    },
-    {
-     "text": {
-      "en": "Repeats for every satellite"
-     },
-     "points": 1
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
+     }
     }
    ]
   },
@@ -687,6 +686,17 @@
         "[new comparison]"
        ]
       }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
      }
     },
     {
@@ -1044,6 +1054,17 @@
        ],
        "type": "flow"
       }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
      }
     }
    ]

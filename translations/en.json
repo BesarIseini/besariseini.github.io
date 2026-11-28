@@ -952,6 +952,8 @@
     "CREATOR_DIAGRAM_CHECK_ELEMENT": "Has an element",
     "CREATOR_DIAGRAM_CHECK_LINK": "Has a connection",
     "CREATOR_DIAGRAM_CHECK_TEXT": "Has some text",
+    "CREATOR_DIAGRAM_CHECK_ONLY": "Nothing extra",
+    "CREATOR_DIAGRAM_ONLY_HINT": "Passes when every element of this kind in the upload is one the checklist names (with its other accepted names). Extra or wrongly named elements cost this item's points.",
     "CREATOR_DIAGRAM_ELEMENT": "Element",
     "CREATOR_DIAGRAM_NAMES": "Accepted names",
     "CREATOR_DIAGRAM_NAMES_HINT": "Separated by commas. Case, accents and small typos don't matter.",

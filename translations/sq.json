@@ -959,6 +959,8 @@
     "CREATOR_DIAGRAM_CHECK_ELEMENT": "Ka një element",
     "CREATOR_DIAGRAM_CHECK_LINK": "Ka një lidhje",
     "CREATOR_DIAGRAM_CHECK_TEXT": "Ka një tekst",
+    "CREATOR_DIAGRAM_CHECK_ONLY": "Asgjë e tepërt",
+    "CREATOR_DIAGRAM_ONLY_HINT": "Kalon kur çdo element i këtij lloji në skedar përmendet në listë (me emrat e tjerë të pranuar). Elementet e tepërta ose me emër të gabuar humbin pikët e këtij elementi.",
     "CREATOR_DIAGRAM_ELEMENT": "Elementi",
     "CREATOR_DIAGRAM_NAMES": "Emrat e pranuar",
     "CREATOR_DIAGRAM_NAMES_HINT": "Të ndara me presje. Shkronjat e mëdha/vogla dhe gabimet e vogla nuk kanë rëndësi.",

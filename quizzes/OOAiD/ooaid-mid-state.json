@@ -231,6 +231,17 @@
     },
     {
      "text": {
+      "en": "Nothing extra: no states the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "state"
+      ]
+     }
+    },
+    {
+     "text": {
       "en": "Using an available ingredient reduces its quantity (q--)"
      },
      "points": 1
@@ -400,6 +411,17 @@
        ]
       }
      }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no states the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "state"
+      ]
+     }
     }
    ]
   },
@@ -536,6 +558,17 @@
         "after a period / notify wait list"
        ]
       }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no states the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "state"
+      ]
      }
     },
     {
@@ -762,6 +795,17 @@
         "[student refuses]"
        ]
       }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no states the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "state"
+      ]
      }
     },
     {

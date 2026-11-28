@@ -159,9 +159,40 @@
     },
     {
      "text": {
-      "en": "Wrong username or password leads back to entering them"
+      "en": "are the username and password correct? → Enter username and password: no"
      },
-     "points": 1
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the username and password correct?",
+        "user exists?",
+        "correct?",
+        "valid?"
+       ],
+       "to": [
+        "Enter username and password",
+        "enter credentials",
+        "log in",
+        "login"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
+     }
     }
    ]
   },
@@ -550,6 +581,209 @@
     },
     {
      "text": {
+      "en": "Search by title → Show list of results"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by title"
+       ],
+       "to": [
+        "Show list of results"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by author → Show list of results"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by author"
+       ],
+       "to": [
+        "Show list of results"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is there a book of intrest? → search again?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is there a book of intrest?"
+       ],
+       "to": [
+        "search again?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "search again? → Search by author: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "search again?"
+       ],
+       "to": [
+        "Search by author"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "search again? → Search by title: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "search again?"
+       ],
+       "to": [
+        "Search by title"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to put in in the wishlist? → search again?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to put in in the wishlist?"
+       ],
+       "to": [
+        "search again?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to print the list? → go to rental desk: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to print the list?"
+       ],
+       "to": [
+        "go to rental desk"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "print wishlist → go to rental desk"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "print wishlist"
+       ],
+       "to": [
+        "go to rental desk"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is the member registered? → borrow book: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is the member registered?"
+       ],
+       "to": [
+        "borrow book",
+        "borrow"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "apply for membership → borrow book"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "apply for membership",
+        "register",
+        "registration"
+       ],
+       "to": [
+        "borrow book",
+        "borrow"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
+     }
+    },
+    {
+     "text": {
       "en": "Checks the number of borrowings (at most 5) before borrowing"
      },
      "points": 1
@@ -837,6 +1071,146 @@
        ],
        "type": "flow"
       }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by title → Display list of play"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by title"
+       ],
+       "to": [
+        "Display list of play",
+        "list of plays",
+        "show plays"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Search by date → Display list of play"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "Search by date"
+       ],
+       "to": [
+        "Display list of play",
+        "list of plays",
+        "show plays"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to book tickets? → search again?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to book tickets?"
+       ],
+       "to": [
+        "search again?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "search again? → Search by date"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "search again?"
+       ],
+       "to": [
+        "Search by date"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "search again? → Search by title"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "search again?"
+       ],
+       "to": [
+        "Search by title"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "fill booking form → print information: [free seats]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "fill booking form"
+       ],
+       "to": [
+        "print information"
+       ],
+       "type": "flow",
+       "label": [
+        "[free seats]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "fill booking form → search again?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "fill booking form"
+       ],
+       "to": [
+        "search again?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
      }
     },
     {
@@ -1279,6 +1653,219 @@
         "yes"
        ]
       }
+     }
+    },
+    {
+     "text": {
+      "en": "are the guests finished? → do you want to order again?: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the guests finished?"
+       ],
+       "to": [
+        "do you want to order again?"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "log in → wait for order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "log in",
+        "login",
+        "sign in",
+        "log into the system"
+       ],
+       "to": [
+        "wait for order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is there an order → wait for order: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is there an order"
+       ],
+       "to": [
+        "wait for order"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "is there an order → make an oder: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "is there an order"
+       ],
+       "to": [
+        "make an oder"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "inform chef about the specialty to be prepared → update warehouse data"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "inform chef about the specialty to be prepared"
+       ],
+       "to": [
+        "update warehouse data"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "inform chef about the specialty to be prepared → prepare specialty"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "inform chef about the specialty to be prepared"
+       ],
+       "to": [
+        "prepare specialty"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "prepare specialty → inform waiter about ready order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "prepare specialty"
+       ],
+       "to": [
+        "inform waiter about ready order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "update warehouse data → inform waiter about ready order"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "update warehouse data"
+       ],
+       "to": [
+        "inform waiter about ready order"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "see menu → make an oder"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "see menu"
+       ],
+       "to": [
+        "make an oder"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to order again? → make an oder: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to order again?"
+       ],
+       "to": [
+        "make an oder"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "serve order → do you want to order again?"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "serve order"
+       ],
+       "to": [
+        "do you want to order again?"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
      }
     },
     {
@@ -1796,6 +2383,336 @@
         "[see details]"
        ]
       }
+     }
+    },
+    {
+     "text": {
+      "en": "are the username and password correct? → look at calendar: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the username and password correct?"
+       ],
+       "to": [
+        "look at calendar"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "are the username and password correct? → see the new events: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the username and password correct?"
+       ],
+       "to": [
+        "see the new events"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "are the username and password correct? → Enter username and password: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "are the username and password correct?"
+       ],
+       "to": [
+        "Enter username and password"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "see the new events → click new events button"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "see the new events"
+       ],
+       "to": [
+        "click new events button"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "look at calendar → click new events button"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "look at calendar"
+       ],
+       "to": [
+        "click new events button"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show details about the event → add event to calendar: [accepted]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show details about the event"
+       ],
+       "to": [
+        "add event to calendar"
+       ],
+       "type": "flow",
+       "label": [
+        "[accepted]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "show details about the event → update event data: [not accepted]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "show details about the event"
+       ],
+       "to": [
+        "update event data"
+       ],
+       "type": "flow",
+       "label": [
+        "[not accepted]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "add event to calendar → return to home page"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "add event to calendar"
+       ],
+       "to": [
+        "return to home page"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "update event data → return to home page"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "update event data"
+       ],
+       "to": [
+        "return to home page"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "click CALENDAR button → show monthly view"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "click CALENDAR button"
+       ],
+       "to": [
+        "show monthly view"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "click CALENDAR button → show daily view"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "click CALENDAR button"
+       ],
+       "to": [
+        "show daily view"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show weekly view"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show weekly view"
+       ],
+       "type": "flow"
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show monthly view: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show monthly view"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show daily view: no"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show daily view"
+       ],
+       "type": "flow",
+       "label": [
+        "no"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show daily view: yes"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show daily view"
+       ],
+       "type": "flow",
+       "label": [
+        "yes"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show weekly view: [weekly]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show weekly view"
+       ],
+       "type": "flow",
+       "label": [
+        "[weekly]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "do you want to see a specific day? → show daily view: [daily]"
+     },
+     "points": 1,
+     "check": {
+      "link": {
+       "from": [
+        "do you want to see a specific day?"
+       ],
+       "to": [
+        "show daily view"
+       ],
+       "type": "flow",
+       "label": [
+        "[daily]"
+       ]
+      }
+     }
+    },
+    {
+     "text": {
+      "en": "Nothing extra: no actions the task doesn't need"
+     },
+     "points": 1,
+     "check": {
+      "only": [
+       "activity"
+      ]
      }
     }
    ]
